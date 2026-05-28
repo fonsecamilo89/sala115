@@ -49,10 +49,18 @@
 :::{toctree}
 :hidden:
 :maxdepth: 1
-:caption: GUÍAS
+:caption: Octavo (Lógica computacional)
 
-1_guias/G811.md
-1_guias/G812.md
+1_guias/G820.md
+1_guias/G821.md
+1_guias/G822.md
+:::
+
+:::{toctree}
+:hidden:
+:maxdepth: 1
+:caption: Décimo
+
 1_guias/G1001.md
 1_guias/G1002.md
 1_guias/G1003.md
@@ -60,6 +68,13 @@
 1_guias/G1011.md
 1_guias/G1012.md
 1_guias/G1013.md
+:::
+
+:::{toctree}
+:hidden:
+:maxdepth: 1
+:caption: Once
+
 1_guias/G1111.md
 1_guias/G1112.md
 1_guias/G1113.md
@@ -70,8 +85,6 @@
 :hidden:
 :caption: LECTURAS
 
-2_lecturas/L811-01.md
-2_lecturas/L812-01.md
 2_lecturas/L1001-01.md
 2_lecturas/L1002-01.md
 2_lecturas/L1002-02.md
@@ -92,8 +105,6 @@
 :hidden:
 :caption: PLANES DE REFUERZO
 
-3_planesRefuerzo/R800-05.md
-3_planesRefuerzo/R800-06.md
 3_planesRefuerzo/R1000-01.md
 3_planesRefuerzo/R1000-02.md
 3_planesRefuerzo/R1000-05.md

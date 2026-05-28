@@ -1,4 +1,4 @@
-# Guía 812: Jerarquía de datos (P2)
+# Guía 822: Jerarquía de datos (P2)
 
 :::{list-table}
 :widths: 35 65
@@ -18,7 +18,12 @@
 :::
 
 :::{tab-set}
+
 ```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
 - **Temática**: Jerarquía de datos.
 - **Objetivo de aprendizaje**: Comprender la diferencia entre **datos**, **información** e identificar los elementos de la **Jerarquía de datos**.
 ```
@@ -37,9 +42,9 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (1)
+```{tab-item} Recursos (0)
 
-- [LECTURA: Información y Jerarquía de datos](../2_lecturas/L812-01.md)
+- La presente guía no contiene recursos.
 
 ```
 :::
@@ -61,8 +66,186 @@
     - ¿En que se diferencian los datos de la información?
 
 ---
-## A01: Datos Vs Información (+0,1)
+## A01: Información y Jerarquía de datos (+0,1)
 {bdg-info}`Estructuración`
+
+1. Lea los siguientes conceptos:
+
+### ¿Qué son los datos?
+
+:::{admonition} Concepto de datos
+
+[^1] Los **datos** son cualquier cantidad, valor o hecho **SIN ORGANIZAR, SIN ANALIZAR o SIN PROCESAR**.
+
+> “Los datos NO ESPECIFICAN significado alguno”.
+
+Ejemplo de datos:
+
+- rojo
+- llueve
+- Alexa
+- 33cm
+- 5kg
+- $1,000,000.00
+
+:::
+
+### ¿Qué es la información?
+
+:::{admonition} Concepto de información
+
+[^1] La **información** es el conjunto de datos organizados, analizados y procesados que tienen significado para las personas.
+
+> "La información tiene contexto y significado".
+
+Ejemplo de información:
+
+- El carro del ingeniero es de color **rojo**.
+- En el campo **llueve**, mientras que en la ciudad no lo está.
+- El nombre de la IA de AMAZON es **Alexa**.
+- La hoja tiene una longitud de **33cm**.
+- Para le receta se necesitan **5kg** de carne de res.
+- Contando los gastos, al usuario le quedó un saldo de **$1,000,000.00** COP.
+
+:::
+
+### ¿Qué es la Jerarquía de datos?
+
+:::{admonition} Concepto de Jerarquía de datos
+
+[^2] La **Jerarquía de datos** es una forma de clasificar la información. La jerarquía de datos se compone de los siguientes elementos organizados así:
+
+$$
+Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
+$$
+
+A continuación se muestra la definición de cada uno de los elementos (ordenados de MENOR a MAYOR) que componen la jerarquía de datos:
+
+:::
+
+---
+#### bit
+
+Un bit es la unidad básica de información en informática. Es como un interruptor que puede estar en dos estados: **encendido** representado por `1` o **apagado** representado por `0`.
+
+```{admonition} ¿Cómo se representa un bit?
+:class: tip
+
+Imagine una **bombilla**. Puede estar *encendida* o *apagada*.  Un bit es como esa bombilla, solo que en vez de luz, representa un valor digital.
+
+:::{centered} `1` o `0`
+```
+
+---
+#### Byte (8 bits)
+
+Un byte es un grupo de **8 bits** que trabajan juntos.
+
+> *"Un Byte, es como si tuviera **8 bombillas** que pueden estar encendidas o apagadas, y cada combinación representa un valor diferente"*. 
+
+Por ejemplo, un byte (8bits) puede representar un **carácter** como la letra **"A"**, un número como **"255"**, o incluso un símbolo como **"#"**. Por ejemplo:
+
+- `10010101` representa {kbd}`A`
+- `11111111` representa {kbd}`255`
+- `10000101` representa {kbd}`#`
+
+---
+#### Carácter
+
+Son representaciones de bytes.
+
+Un carácter es como una "letra" o un "símbolo" que se ve en pantalla. Es una unidad lógica que representa un elemento individual de texto, como una letra, un número, un signo de puntuación o un espacio en blanco.
+
+{kbd}`A`, {kbd}`c`, {kbd}`#`, {kbd}`X`, {kbd}`255`, {kbd}`3`, {kbd}`_`
+
+---
+#### Dato
+
+Los datos se componen de caracteres.
+
+Es un atributo codificado entendible por un sistema de información. Se puede manejar y se puede comparar. Por ejemplo:
+
+ {guilabel}`CAMILO`, {guilabel}`ROJO`, {guilabel}`33°`, {guilabel}`23` , {guilabel}`$33.000,999`, {guilabel}`TRUE`
+
+---
+#### Registro
+
+Un registro es un conjunto de campos en donde cada campo almacena un dato y en donde todos los datos pertenecen a un solo ente informático. Por ejemplo:
+
+```{list-table} Registro de un estudiante
+:class: black
+
+* - **ID**
+  - **Nombre**
+  - **Apellido**
+  - **Edad**
+  - **Grado**
+* - 00
+  - Camilo
+  - Fonseca
+  - 16
+  - 11
+```
+---
+#### Tabla
+
+Una tabla es un conjunto de registros que tienen la misma estructura y que pueden ser manejados como una sola unidad.
+
+> *"Todo REGISTRO debe tener un ID para poder identificar el registro como único"*. 
+
+Por ejemplo:
+
+```{csv-table} Tabla de estudiantes
+:class: black
+
+**ID**,**Nombre**,**Apellido**,**Edad**
+00,Camilo,Fonseca,36
+01,John,Kennedy,16
+02,Daniel,Lopez,19
+03,Luis,Ruiz,23
+```
+
+----
+#### Base de datos
+
+Es un conjunto de tablas técnicamente organizadas. 
+
+> "Una **base de datos** esta compuesta por varias **tablas** relacionadas".
+
+Por ejemplo:
+
+```{csv-table} Tabla estudiantes
+:class: black
+
+**ID**,**Nombre**,**Apellido**,**Grado**
+00,Camilo,Fonseca,9
+01,John,Díaz,11
+02,Daniel,Lopez,11
+03,Luis,Ruiz,8
+```
+
+```{csv-table} Tabla docentes
+:class: black
+
+**ID**,**Nombre**,**Apellido**,**Dirección curso**
+00,Saul,Duarte,10
+01,Dioselina,Mena,11
+02,Julian,Fonseca,8
+```
+
+```{csv-table} Tabla CURSO
+:class: black
+
+**ID**,**ID estudiante**,**Nombre**,**Apellido**,**ID docente**,**Director curso**
+00,01,John,Díaz,01,Dioselina
+01,02,Daniel,Lopez,01,Dioselina
+```
+
+
+
+---
+## A02: Datos Vs Información (+0,1)
+{bdg-warning}`Actividad práctica`
 
 1. En su cuaderno responda las siguientes preguntas:
 
@@ -87,8 +270,8 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
 :::
 
 ---
-## A02: Conceptos Jerarquía de datos (+0,1)
-{bdg-info}`Estructuración`
+## A03: Jerarquía de datos (+0,1)
+{bdg-warning}`Actividad práctica`
 
 1. En su cuaderno responda las siguientes preguntas:
 
@@ -128,7 +311,7 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
 3. DIBUJE la siguiente gráfica en su cuaderno y en cada anillo ubique un elemento de la **Jerarquía de datos**:
 
 :::{list-table}
-* - ```{figure} ./recursos/G812/image01.png
+* - ```{figure} ./recursos/G822/image01.png
     :width: 400
     **Anillo** Jerarquía de datos
     ```
@@ -139,7 +322,7 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
 4. DIBUJE el siguiente gráfico en su cuaderno:
 
     :::{list-table}
-    * - ```{figure} ./recursos/G812/image02.png
+    * - ```{figure} ./recursos/G822/image02.png
         :width: 550
         EJEMPLO Jerarquía de datos
         ```
@@ -157,8 +340,8 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
 
 
 ---
-## A03: Construcción de tablas (+0,2)
-{bdg-info}`Estructuración`
+## A04: Construcción de tablas (+0,1)
+{bdg-warning}`Actividad práctica`
 
 1. En su cuaderno (de forma horizontal) realice una **tabla** de 5 registros de sus compañeros con los siguientes campos (invente los datos):
 
@@ -194,12 +377,13 @@ ID, ID Estudiantes, Nombre, Apellido, correo electrónico institucional
 :::
 
 ---
-## A04: Bases de datos (+0,5)
+## A05: Bases de datos (+0,5)
+{bdg-warning}`Actividad práctica`
 
 1. En una hoja de su cuaderno (de forma horizontal), dibuje la siguiente base de datos:
 
     :::{list-table}
-    * - ```{figure} ./recursos/G812/image03.png
+    * - ```{figure} ./recursos/G822/image03.png
         :width: 620
         EJEMPLO Base de datos
         ```
@@ -222,7 +406,7 @@ ID, ID Estudiantes, Nombre, Apellido, correo electrónico institucional
 7. Con los nuevos registros **Tabla clientes** y **Tabla productos**, ahora cree una nueva *base de datos* compuesta por la **Tabla facturas** y la **Tabla elementos en línea**.
 
 ---
-## A05: Examen escrito (+4,0)
+## A06: Examen escrito (+4,0)
 {bdg-danger}`Transferencia`
 
 :TIEMPO: 30 minutos
@@ -250,3 +434,6 @@ ID, ID Estudiantes, Nombre, Apellido, correo electrónico institucional
 19. Si tuviera que explicar la **jerarquía de datos** completa (desde el bit hasta la base de datos) a alguien que no sabe nada de informática, ¿Cómo resumiría la relación entre estos niveles?
 20. Cree un ejemplo de una **base de datos** con tres tablas de mínimo *3 registros* y *5 datos*.
 :::
+
+[^1]: Trejos Buriticá, O. I. (2017). Lógica de programación. Ediciones de la U
+[^2]: Deitel, P. J., & Deitel, H. (2014). C++: cómo programar (A. V. Romero Elizondo, Trans.). Pearson Educación.
