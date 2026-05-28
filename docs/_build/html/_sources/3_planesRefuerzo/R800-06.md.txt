@@ -1,0 +1,35 @@
+# Plan de refuerzo 800-06 (P2)
+
+Plan de refuerzo Lógica computacional octavo periodo 02.
+
+:::{admonition} EVALUACIÓN: Plan de refuerzo (10 minutos)
+:class: attention
+Estudiar los temas a continuación. Se realiza examen de 5 preguntas. Si el estudiante no asiste en la fecha programada, este será evaluado la próxima vez que asista a clase.
+:::
+
+---
+## Datos
+
+Los datos son cualquier cantidad, valor o hecho SIN ORGANIZAR, ANALIZAR o PROCESAR. Por ejemplo: rojo, llave, Alexa, 12, 5kg.
+
+---
+## Información
+
+Es el conjunto de datos organizados, analizados y procesados que tienen significado para las personas. Por ejemplo cuando decimos que: “el carro del ingeniero es de color rojo”, estamos dando una información.
+
+---
+## Jerarquía de datos
+
+$$
+Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
+$$
+
+La información que procesa una computadora se clasifica en una jerarquía de datos. La información en la computadora se clasifica de MENOR a MAYOR así:
+
+- **bit:** Unidad básica de información en informática. Representado por `1` o `0`.
+- **Byte:** Grupo de ocho bits `1001 0101`.
+- **Carácter:** Representaciones de Bytes para mostrar en pantalla una letra o un número. `a`, `1`, `$`.
+- **Dato:** Es un valor. Se componen de caracteres. `175`, `camilo`, `12`, `0.99`, `True`.
+- **Registro:** Conjunto de datos que pertenecen a un solo ente informático. En una tabla, el registro correspondería a una fila.
+- **Tabla:** Conjunto de registros que tienen la misma estructura.
+- **Base de datos:** Es un conjunto de tablas técnicamente organizadas y relacionadas. Una base de datos esta compuesta por varias tablas.

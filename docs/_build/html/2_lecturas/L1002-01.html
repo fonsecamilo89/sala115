@@ -1,0 +1,962 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L1002-01: Redes de datos &mdash; aula 115</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=4c9c2d9f" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=e2bb6099"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="L1002-02: Ciberseguridad" href="L1002-02.html" />
+    <link rel="prev" title="L1001-01: Historia de la Informática" href="L1001-01.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo_light.png" class="logo" alt="Logotipo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#utiles-escolares">Útiles escolares</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#porcentaje-de-notas">Porcentaje de notas %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#equivalencia-calificacion-instruimos">Equivalencia calificación INSTRUIMOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#sello-docente">Sello docente</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-dentro-y-fuera-del-aula">Acceso dentro y fuera del aula</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#modelo-de-almacenamiento-google-workspace">Modelo de almacenamiento Google WorkSpace®</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-al-aula-115-en-contrajornada">Acceso al aula 115 en contrajornada</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-de-estudiantes-al-pc">Acceso de estudiantes al PC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#estructura-carpeta-de-evidencias">Estructura carpeta de evidencias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#actividades-inicio-de-ano-escolar">Actividades inicio de año escolar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#desempenos">DESEMPEÑOS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#logica-computacional-8">Lógica computacional 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#tecnologia-e-informatica-10">Tecnología e Informática 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#ofimatica-10">Ofimática 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#ofimatica-11">Ofimática 11</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#reglas-del-aula-115">Reglas del aula 115</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#prohibiciones">PRØHIBICIONES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#que-pasa-si-se-incumplen-las-reglas">¿Qué pasa si se incumplen las reglas?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#que-pasa-si-el-incumplimiento-es-reiterativo">¿Qué pasa si el incumplimiento es reiterativo?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/descargas.html#institucional">Institucional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../0_intro/descargas.html#proyecto-de-grado">Proyecto de grado</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">GUÍAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G811.html">Guía 811: Concepto Lógica computacional (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a01-concepto-de-hardware-0-1">A01: Concepto de hardware (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a02-la-cpu-0-1">A02: La CPU (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a03-memoria-ram-0-1">A03: Memoria RAM (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a04-cpu-ram-0-5">A04: CPU &amp; RAM (+0,5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a05-software-0-2">A05: Software (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a06-sistema-computacional-0-1">A06: Sistema computacional (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a07-ejemplos-sistemas-computacionales-0-5">A07: Ejemplos sistemas computacionales (+0,5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a08-informatica-0-1">A08: Informática (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a09-razonamiento-y-logica-0-1">A09: Razonamiento y lógica (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a10-logica-computacional-0-1">A10: Lógica computacional (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G811.html#a11-examen-escrito-3-0">A11: Examen escrito (+3,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G812.html">Guía 812: Jerarquía de datos (P2)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G812.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G812.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G812.html#a01-datos-vs-informacion-0-1">A01: Datos Vs Información (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G812.html#a02-conceptos-jerarquia-de-datos-0-1">A02: Conceptos Jerarquía de datos (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G812.html#a03-construccion-de-tablas-0-2">A03: Construcción de tablas (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G812.html#a04-bases-de-datos-0-5">A04: Bases de datos (+0,5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G812.html#a05-examen-escrito-4-0">A05: Examen escrito (+4,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1001.html">Guía 1001: Historia de la Informática (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a02-arpanet-0-1">A02: ARPANET (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a03-primera-pagina-web-0-1">A03: Primera página web (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a04-primer-navegador-mosaic-0-1">A04: Primer navegador MOSAIC (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a05-origenes-de-la-pc-0-1">A05: Orígenes de la PC (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a06-apple-macintosh-0-1">A06: Apple - Macintosh (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a07-origenes-del-software-0-1">A07: Orígenes del software (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a08-unix-linux-0-1">A08: UNIX-LINUX (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a09-windows-0-1">A09: Windows (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a10-linea-de-tiempo-1-0">A10: Línea de tiempo (+1,0)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1001.html#a11-examen-escrito-3-0">A11: Examen escrito (+3,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1002.html">Guía 1002: REDES (P2)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1002.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1002.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1002.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1002.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1002.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1003.html">Guía 1003: MANTENIMIENTO (P2)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1003.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1003.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1003.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1003.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1003.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1004.html">Guía 1004: OFIMÁTICA (P2)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1004.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1004.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1004.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1004.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1004.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1011.html">Guía 1011: Concepto Ofimática (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1011.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1011.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1011.html#a01-concepto-de-ofimatica-0-1">A01: Concepto de Ofimática (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1011.html#a02-area-de-la-ofimatica-0-1">A02: Área de la ofimática (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1011.html#a03-google-workspace-0-1">A03: Google Workspace (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1011.html#a04-microsoft-office-0-1">A04: Microsoft Office (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1011.html#a05-servicio-indicado-0-5">A05: Servicio indicado (+0,5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1011.html#a06-examen-escrito-4-0">A06: Examen escrito (+4,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1012.html">Guía 1012: Software Libre (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a01-definicion-de-software-0-1">A01: Definición de software (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a02-importancia-del-software-libre-0-1">A02: Importancia del software libre (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a03-ejemplos-de-software-libre-0-1">A03: Ejemplos de software libre (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a04-relacion-entre-software-libre-software-propietario-y-software-pirata-0-1">A04: Relación entre software libre, software propietario y software pirata (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a05-ahorro-usando-software-libre-0-2">A05: Ahorro($) usando software libre (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a06-el-riesgo-del-software-pirata-0-2">A06: El riesgo del software pirata (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a07-identificacion-de-software-propietario-y-libre-0-1">A07: Identificación de software propietario y libre (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1012.html#a08-carta-al-propietario-4-0">A08: Carta al propietario (+4,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1013.html">Guía 1013: LibreOffice (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1013.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1013.html#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1013.html#a01-libreoffice-0-2">A01: LibreOffice (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1013.html#a02-paises-que-usan-libreoffice-0-2">A02: Paises que usan LibreOffice (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1013.html#a03-herramientas-de-libreoffice-0-2">A03: Herramientas de LibreOffice (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1013.html#a04-ventajas-de-libreoffice-0-2">A04: Ventajas de LibreOffice (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1013.html#a05-examen-escrito-4-0">A05: Examen escrito (+4,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1111.html">Guía 1111: Conocimientos previos (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a01-datos-informacion-y-jerarquia-de-datos-0-1">A01: Datos, información y jerarquía de datos (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a02-relacion-entre-datos-e-informacion-0-2">A02: Relación entre datos e información (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a03-jerarquia-de-datos-0-2">A03: Jerarquía de datos (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a04-concepto-de-hardware-ram-y-cpu-0-1">A04: Concepto de hardware (RAM y CPU) (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a05-utilidad-del-hardware-0-2">A05: Utilidad del hardware (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a06-concepto-de-software-0-1">A06: Concepto de software (+0,1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a07-clasificacion-del-software-0-2">A07: Clasificación del software (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1111.html#a08-examen-final-4-0">A08: Examen final (+4,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1112.html">Guía 1112: Diagramas de flujo (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1112.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1112.html#a00-introduccion-0-3">A00: Introducción (+0,3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1112.html#a01-diagramas-de-flujo-0-7">A01: Diagramas de flujo (+0,7)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1112.html#a02-orientaciones-al-extranjero-1-0">A02: Orientaciones al extranjero (+1,0)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1112.html#a03-orientaciones-seguras-3-0">A03: Orientaciones seguras (+3,0)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../1_guias/G1113.html">Guía 1113: Desarrollo de algoritmos (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1113.html#mensaje-del-autor">Mensaje del autor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1113.html#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1113.html#a01-que-son-los-algoritmos-0-2">A01: ¿Qué son los algoritmos? (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1113.html#a02-tipos-del-algoritmos-0-2">A02: Tipos del algoritmos (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1113.html#a03-clasificacion-de-algoritmos-0-2">A03: Clasificación de algoritmos (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1113.html#a04-metodologia-para-desarrollar-un-algoritmo-0-2">A04: Metodología para desarrollar un algoritmo (+0,2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/G1113.html#a05-algoritmos-4-0">A05: Algoritmos (+4,0)</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">LECTURAS</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="L811-01.html">L811-01: Concepto lógica computacional</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L811-01.html#que-es-el-hardware">¿Qué es el HARDWARE?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L811-01.html#que-es-una-cpu">¿Qué es una CPU?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L811-01.html#que-es-la-memoria-ram">¿Qué es la MEMORIA RAM?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L811-01.html#que-es-el-software">¿Qué es el SOFTWARE?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L811-01.html#que-es-una-sistema-computacional">¿Qué es una SISTEMA COMPUTACIONAL?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L811-01.html#que-es-la-informatica">¿Qué es la INFORMÁTICA?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L811-01.html#que-es-razonar">¿Qué es RAZONAR?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L811-01.html#que-es-la-logica">¿Qué es la LÓGICA?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L811-01.html#definicion-de-logica-computacional">DEFINICIÓN DE LÓGICA COMPUTACIONAL</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L812-01.html">L812-01: Información y Jerarquía de datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L812-01.html#que-son-los-datos">¿Qué son los datos?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L812-01.html#que-es-la-informacion">¿Qué es la información?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L812-01.html#jerarquia-de-datos">Jerarquía de datos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L812-01.html#bit">bit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L812-01.html#byte-8-bits">Byte (8 bits)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L812-01.html#caracter">Carácter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L812-01.html#dato">Dato</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L812-01.html#registro">Registro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L812-01.html#tabla">Tabla</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L812-01.html#base-de-datos">Base de datos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1001-01.html">L1001-01: Historia de la Informática</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1001-01.html#historia-del-internet-arpanet">Historia del Internet (ARPANET)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1001-01.html#historia-de-la-computacion-personal">Historia de la Computación Personal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1001-01.html#historia-del-software">Historia del Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">L1002-01: Redes de datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#redes-de-datos">Redes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-redes">Tipos de redes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#diferencia-entre-una-intranet-e-internet">Diferencia entre una Intranet e INTERNET</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#intranet">Intranet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#internet">INTERNET</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#medios-de-transmision">Medios de transmisión</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#redes-inalambricas">Redes inalámbricas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#componentes-de-una-red">Componentes de una Red</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#servidor">Servidor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#equipos-cliente">Equipos cliente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#el-repetidor">El Repetidor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hub-comunicar-varios-equipos">Hub (comunicar varios equipos)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bridge-puentes-de-red-para-comunicar-segmentos-de-red">Bridge (puentes de red para comunicar segmentos de red)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#switch-hub-bridge">Switch (Hub + Bridge)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#access-point-switch-inalambrico">Access Point (Switch inalámbrico)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#router-para-salir-de-una-red-lan">Router (para salir de una red LAN)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modem-switch-access-point-router">Modem (Switch + Access Point + Router)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rack-de-telecomunicaciones">RACK de telecomunicaciones</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#internet-de-las-cosas">Internet de las cosas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacion-de-una-red-de-datos">Instalación de una red de datos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cableado-estructurado">Cableado estructurado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#suministro-electrico">Suministro eléctrico</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware">Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#software">Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acceso-a-internet">Acceso a Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#control-y-mantenimiento">Control y mantenimiento</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#servicios-de-red">Servicios de red</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ssh">SSH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dhcp">DHCP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dns">DNS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ftp">FTP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http">HTTP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#https">HTTPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smtp-pop">SMTP-POP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#voip">VOIP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rdp">RDP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#firewall">FIREWALL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#proxy">PROXY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vpn">VPN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1002-02.html">L1002-02: Ciberseguridad</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1002-02.html#seguridad-informatica">Seguridad informática</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1002-02.html#ingenieria-social">Ingeniería social</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1002-02.html#seguridad-en-redes-wifi">Seguridad en redes WIFI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1002-02.html#seguridad-en-internet-y-redes-de-ordenadores-pentesting">Seguridad en Internet y redes de ordenadores (Pentesting)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1002-02.html#seguridad-perimetral-monitorizacion-y-defensa-de-redes">Seguridad perimetral, monitorización y defensa de redes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1002-02.html#seguridad-de-aplicaciones-o-paginas-web">Seguridad de aplicaciones o páginas web</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1002-02.html#seguridad-de-la-informacion">Seguridad de la información</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1002-02.html#seguridad-informatica-vs-seguridad-de-la-informacion">Seguridad Informática Vs Seguridad de la Información</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1002-02.html#iso-27001">ISO 27001</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1002-02.html#delitos-informaticos-en-colombia">Delitos informáticos en Colombia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1002-02.html#penas-y-multas-por-delitos-informaticos">Penas y multas por delitos informáticos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1002-02.html#hacking-etico">Hacking ético</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1003-01.html">L1003-01: Mantenimiento</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1003-01.html#que-es-el-mantenimiento">¿Qué es el mantenimiento?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1003-01.html#tipos-de-mantenimiento">Tipos de mantenimiento</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1003-01.html#mantenimiento-preventivo-evitar-el-dano">Mantenimiento preventivo (evitar el daño)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="L1003-01.html#clasificacion-mantenimiento-preventivo">Clasificación mantenimiento preventivo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="L1003-01.html#mantenimiento-correctivo-el-dano-ocurre">Mantenimiento correctivo (el daño ocurre)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="L1003-01.html#clasificacion-de-mantenimiento-correctivo">Clasificación de mantenimiento correctivo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="L1003-01.html#mantenimiento-de-actualizacion">Mantenimiento de actualización</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1003-01.html#eleccion-del-tipo-de-mantenimiento">Elección del tipo de mantenimiento</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1003-02.html">L1003-02: Electricidad y Electrónica</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1003-02.html#que-es-la-electricidad">¿Qué es la Electricidad?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1003-02.html#que-es-la-electronica">¿Qué es la Electrónica?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1003-02.html#electronica-digital">Electrónica digital</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1003-02.html#hardware-libre">Hardware libre</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1003-02.html#arduino">ARDUINO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1003-02.html#raspberry-pi">RASPBERRY PI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1004-01.html">L1004-01: Ofimática y programación</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#software">Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#programacion">Programación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#desarrollo-de-software">Desarrollo de software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#programadores-vs-desarrolladores">Programadores Vs Desarrolladores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#tipos-de-desarrollo-de-software">Tipos de desarrollo de software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#proceso-de-desarrollo-de-software">Proceso de desarrollo de software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#tecnologias-usadas-en-el-desarrollo-de-software">Tecnologías usadas en el desarrollo de software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1004-01.html#sistemas-operativos">Sistemas operativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1004-01.html#bases-de-datos">Bases de datos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1004-01.html#servidor-web">Servidor web</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1004-01.html#entornos-de-ejecucion">Entornos de ejecución</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1004-01.html#framework">Framework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1004-01.html#ide">IDE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#desarollo-web">Desarollo web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#lenguajes-de-programacion">Lenguajes de programación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1004-01.html#software-de-aplicacion">Software de aplicación</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1011-01.html">L1011-01: Introducción a la Ofimática</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1011-01.html#que-es-la-ofimatica">¿Qué es la ofimática?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1011-01.html#google-workspace">Google Workspace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1011-01.html#google-one-ai-plus-19-900-mes-2026">Google ONE - AI PLUS ($19,900/mes) (2026)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1011-01.html#microsoft-office">Microsoft Office</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1011-01.html#microsoft-365-family-459-999-ano-2026">MICROSOFT 365 Family ($459,999/año) (2026)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1012-01.html">L1012-01: Software libre</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1012-01.html#que-es-el-software">¿Qué es el software?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#tipos-de-software">Tipos de software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#clasificacion-de-software">Clasificación de software</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1012-01.html#software-libre">Software libre</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#libertades-del-software-libre">4 Libertades del software libre</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1012-01.html#ejemplos-de-software-libre">Ejemplos de software libre</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#sistema-operativo-gnu-linux-0">Sistema Operativo GNU-LINUX ($0)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#navegador-web-mozilla-firefox-0">Navegador web Mozilla FIREFOX ($0)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#editor-de-imagenes-gimp-0">Editor de imágenes GIMP ($0)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#editor-de-graficos-vectoriales-inkscape-0">Editor de gráficos vectoriales INKSCAPE ($0)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#reproductor-multimedia-vlc-0">Reproductor multimedia VLC ($0)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#suite-de-creacion-3d-blender-0">Suite de creación 3D BLENDER ($0)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#edicion-de-sonido-audacity-0">Edición de sonido Audacity ($0)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#suite-ofimatica-libreoffice-0">Suite ofimática Libreoffice ($0)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1012-01.html#software-propietario">Software propietariØ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1012-01.html#ejemplos-de-software-propietario">Ejemplos de software propietario</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#sistema-operativo-microsoft-windows-769-999">Sistema operativo Microsoft Windows ($769,999)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#microsoft-office-suite-ofimatica-459-999-ano">Microsoft Office (suite ofimática) ($459,999/año)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#adobe-photoshop-editor-de-imagenes-48-971-mes">Adobe Photoshop (editor de imágenes) ($48,971/mes)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1012-01.html#autocad-software-de-diseno-2-201-999-ano">AutoCAD (software de diseño) ($2,201,999/año)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1012-01.html#software-pirata">Software PIRATA!!!</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1013-01.html">L1013-01: LibreOffice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1013-01.html#suite-ofimatica-libreoffice">Suite Ofimática LibreOffice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1013-01.html#entidades-que-usan-libreoffice">Entidades que usan LibreOffice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1013-01.html#herramientas-de-libreoffice">Herramientas de LibreOffice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1013-01.html#libreoffice-writer-procesador-de-textos">LibreOffice Writer (procesador de textos)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1013-01.html#libreoffice-calc-hoja-de-calculo">LibreOffice Calc (hoja de cálculo)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1013-01.html#libreoffice-impress-presentaciones">LibreOffice Impress (presentaciones)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1013-01.html#libreoffice-draw-dibujo-vectorial">LibreOffice Draw (Dibujo vectorial)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1013-01.html#libreoffice-base-bases-de-datos">LibreOffice Base (Bases de datos)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1013-01.html#libreoffice-math-editor-de-formulas">LibreOffice Math (Editor de fórmulas)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1013-01.html#ventajas-de-libreoffice">Ventajas de LibreOffice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1111-01.html">L1111-01: Conocimientos previos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1111-01.html#informacion-y-datos">Información y Datos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1111-01.html#datos">Datos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1111-01.html#informacion">Información</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1111-01.html#valores-cuantitativos-y-cualitativos">Valores cuantitativos y cualitativos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1111-01.html#jerarquia-de-datos">Jerarquía de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1111-01.html#hardware">Hardware</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1111-01.html#la-memoria-ram-acceso-rapido-a-los-datos">La memoria RAM (acceso rápido a los datos)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1111-01.html#la-cpu-procesa-los-datos">La CPU (procesa los datos)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1111-01.html#software">Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1111-01.html#software-vs-programa">Software Vs Programa</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1112-01.html">L1112-01: Diagramas de flujo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1112-01.html#operacion">Operación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1112-01.html#limites-de-proceso">Límites de proceso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1112-01.html#punto-de-decision">Punto de decisión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1112-01.html#conector">Conector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1112-01.html#direccion-de-flujo">Dirección de flujo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1112-01.html#entrada-manual">Entrada manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1112-01.html#documento">Documento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1112-01.html#base-de-datos">Base de datos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="L1113-01.html">L1113-01: Algoritmos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="L1113-01.html#tipos-de-algoritmos">Tipos de algoritmos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1113-01.html#algoritmos-cualitativos-informales">Algoritmos cualitativos (informales)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1113-01.html#algoritmos-cuantitativos-formales">Algoritmos cuantitativos (formales)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="L1113-01.html#metodologia-para-desarrollar-un-algoritmo">Metodología para desarrollar un algoritmo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="L1113-01.html#algoritmo-para-ir-al-colegio-ejemplo">Algoritmo para ir al colegio (ejemplo)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="L1113-01.html#fase-01-analisis-de-requisitos">FASE 01: Análisis de requisitos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1113-01.html#fase-02-diseno-del-algoritmo">FASE 02: Diseño del algoritmo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="L1113-01.html#fase-03-construccion-del-algoritmo">FASE 03: Construcción del algoritmo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PLANES DE REFUERZO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R800-05.html">Plan de refuerzo 800-05 (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-05.html#hardware">Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-05.html#software">Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-05.html#sistema-computacional">Sistema computacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-05.html#informatica">Informática</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-05.html#razonar">Razonar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-05.html#logica">Lógica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-05.html#logica-computacional">Lógica computacional</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R800-06.html">Plan de refuerzo 800-06 (P2)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-06.html#datos">Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-06.html#informacion">Información</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R800-06.html#jerarquia-de-datos">Jerarquía de datos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html">Plan de refuerzo 1000-01 (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-internet">Historia del Internet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-hardware">Historia del Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-software">Historia del Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-02.html">Plan de refuerzo 1000-02 (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html">Plan de refuerzo 1000-05 (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-la-ofimatica">¿Qué es la ofimática?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-google-workspace">¿Qué es Google Workspace?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-microsoft-office">¿Qué es Microsoft Office?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-libre">¿Qué es el software libre?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#ejemplos-de-software-libre">Ejemplos de software libre</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-propietario">¿Qué es el software propietario?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#ejemplos-de-software-propietario">Ejemplos de software propietario</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-pirata">¿Qué es el software pirata?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-libreoffice">¿Qué es LibreOffice?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html">Plan de refuerzo 1100-05 (P1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#instruccion">Instrucción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#hardware">Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#software">Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#informacion-y-datos">Información y datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#software-vs-programa">Software Vs Programa</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#id1">Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#programa">Programa</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../4_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">aula115</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">L1002-01: Redes de datos</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/2_lecturas/L1002-01.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="l1002-01-redes-de-datos">
+<h1>L1002-01: Redes de datos<a class="headerlink" href="#l1002-01-redes-de-datos" title="Link to this heading"></a></h1>
+<p>En esta lectura se muestran los conceptos introductorios a las <strong>redes de datos</strong>.</p>
+<hr class="docutils" />
+<section id="redes-de-datos">
+<h2>Redes de datos<a class="headerlink" href="#redes-de-datos" title="Link to this heading"></a></h2>
+<p>Una <strong>red de datos</strong> es un sistema compuesto de dispositivos electrónicos y equipos de comunicación que permiten el intercambio de información en diferentes formatos a través de una red.</p>
+<p>Las organizaciones y empresas dependen de la infraestructura de red para realizar muchas de sus tareas y procesos de negocio.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>OK</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/image019.png"><img alt="../_images/image019.png" src="../_images/image019.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dispositivo de red</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="docutils" />
+<section id="tipos-de-redes">
+<h2>Tipos de redes<a class="headerlink" href="#tipos-de-redes" title="Link to this heading"></a></h2>
+<p>Existen diferentes tipos de redes que se pueden clasificar dependiendo del área que cubra o el tipo de datos o tecnología que utilizan. Algunos ejemplos de redes que se utilizan de forma habitual hoy en día son:</p>
+<ul class="simple">
+<li><p><strong>Red de área local (LAN):</strong> Una red de área local es un tipo de red de telecomunicaciones que conecta dispositivos electrónicos en un área geográfica relativamente pequeña, como un edificio, una oficina, una casa o una sala de informática. Estas redes están diseñadas para facilitar la comunicación y el intercambio de datos entre dispositivos que se encuentran en proximidad física.</p></li>
+<li><p><strong>Red de área metropolitana (MAN):</strong> Una red de área metropolitana es una red de telecomunicaciones que conecta diferentes ubicaciones dentro de una ciudad o área metropolitana, situándose como una solución intermedia entre las redes LAN y las redes WAN.</p></li>
+<li><p><strong>Red de área extensa (WAN):</strong> Las redes de área extensa, son redes de telecomunicaciones que cubren áreas geográficas muy amplias, incluso llegando a interconectar ubicaciones que se encuentran a mucha distancia o a nivel global. Las redes WAN se emplean en entornos empresariales para conectar sucursales, oficinas o puntos de venta en la industria, para supervisar y controlar dispositivos a distancia, y en aplicaciones gubernamentales y de investigación para la transmisión de datos entre ubicaciones distantes.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="diferencia-entre-una-intranet-e-internet">
+<h2>Diferencia entre una Intranet e INTERNET<a class="headerlink" href="#diferencia-entre-una-intranet-e-internet" title="Link to this heading"></a></h2>
+<p>A continuación se muestran las diferencias entre una <strong>Intranet</strong> e <strong>INTERNET</strong>:</p>
+<section id="intranet">
+<h3>Intranet<a class="headerlink" href="#intranet" title="Link to this heading"></a></h3>
+<p>Una <strong>Intranet</strong> es una <strong>red privada local</strong> limitada a una organización. Sus características principales son:</p>
+<ul class="simple">
+<li><p>Acceso restringido solo a miembros de la organización</p></li>
+<li><p>Mayor control y seguridad</p></li>
+<li><p>Optimizada para necesidades específicas</p></li>
+<li><p>Compartición de recursos internos</p></li>
+<li><p>Facilita la colaboración entre empleados</p></li>
+<li><p>Usa protocolos TCP/IP</p></li>
+</ul>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/image025.png"><img alt="../_images/image025.png" src="../_images/image025.png" style="width: 360px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dispositivos de una Intranet</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="internet">
+<h3>INTERNET<a class="headerlink" href="#internet" title="Link to this heading"></a></h3>
+<p><strong>INTERNET</strong> es una <strong>red pública global</strong> que conecta Intranets en todo el mundo. Sus principales características son:</p>
+<ul class="simple">
+<li><p>Acceso público y global</p></li>
+<li><p>Conecta millones de redes diferentes</p></li>
+<li><p>Requiere medidas de seguridad robustas</p></li>
+<li><p>Permite acceder a servicios y recursos públicos</p></li>
+<li><p>Usa protocolos TCP/IP</p></li>
+</ul>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/image034.png"><img alt="../_images/image034.png" src="../_images/image034.png" style="width: 270px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">INTERNET</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<hr class="docutils" />
+<section id="medios-de-transmision">
+<h2>Medios de transmisión<a class="headerlink" href="#medios-de-transmision" title="Link to this heading"></a></h2>
+<p>Se trata de los <strong>canales físicos por los que se transmiten los datos</strong> entre los diferentes nodos o componentes. En este tipo de comunicación se realiza por diferentes medios como los siguientes:</p>
+<ul class="simple">
+<li><p>Coaxial (red cableada)</p></li>
+<li><p>Fibra óptica (red cableada)</p></li>
+<li><p>Par trenzado (red cableada)</p></li>
+<li><p>Infrarrojos (red inalámbrica)</p></li>
+<li><p>Microondas (red inalámbrica)</p></li>
+<li><p>Radiofrecuencia (red inalámbrica)</p></li>
+</ul>
+<section id="redes-inalambricas">
+<h3>Redes inalámbricas<a class="headerlink" href="#redes-inalambricas" title="Link to this heading"></a></h3>
+<p>Las <strong>redes inalámbricas</strong> utilizan tecnologías de comunicación basadas en señales de <strong>radiofrecuencia</strong> o <strong>microondas</strong> para transmitir datos a través del aire, eliminando la necesidad de conexiones físicas por medio de cables.</p>
+<p>Este tipo de redes de telecomunicaciones ofrecen una mayor flexibilidad y movilidad, pues no es necesario que los dispositivos estén situados en una zona fija. Son redes ideales para conectar dispositivos móviles como smartphones, tablets, cámaras de video-vigilancia u ordenadores portátiles, entre otros.</p>
+<p>Entre las distintas clases de redes inalámbricas se tienen:</p>
+<ul class="simple">
+<li><p>Basadas en tecnologías de radiofrecuencia: <strong>redes wifi</strong>.</p></li>
+<li><p>Usando tecnologías como 3G, 4G o 5G: redes de <strong>telefonía móvil</strong>.</p></li>
+<li><p>Redes ad hoc (se crean automáticamente entre dispositivos cercanos utilizando tecnologías como <strong>bluetooth</strong> o <strong>NFC</strong>).</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="componentes-de-una-red">
+<h2>Componentes de una Red<a class="headerlink" href="#componentes-de-una-red" title="Link to this heading"></a></h2>
+<p>Conocer los componentes de red es útil para identificar problemas de conexión, descubrir posibles soluciones y optimizar su funcionamiento.</p>
+<section id="servidor">
+<h3>Servidor<a class="headerlink" href="#servidor" title="Link to this heading"></a></h3>
+<p>Generalmente se trata de una computadora o aplicación encargada de proveer a otros equipos de unos determinados servicios, como el almacenamiento de información.</p>
+<p><strong>Los servidores no se deben confundir con dispositivos cliente.</strong> La mayoría de servidores ni siquiera tienen periféricos como el monitor, teclado o mouse. Para acceder y trabajar en estos, se suele trabajar de forma remota por línea de comandos.</p>
+<blockquote>
+<div><p>Los servidores suelen ser <strong>equipos</strong> que <strong>muy rara vez se apagan</strong> y una vez configurados quedan trabajando con poca intervención del usuario. Solo se intervienen cuando sea necesario.</p>
+</div></blockquote>
+<p>Los servidores se encargan de procesar las solicitudes de esos otros equipos, que en ocasiones se denominan clientes, a los que les entregan datos por medio de una red que puede ser local o por Internet.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/image041.png"><img alt="../_images/image041.png" src="../_images/image041.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">SERVIDORES</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipos-cliente">
+<h3>Equipos cliente<a class="headerlink" href="#equipos-cliente" title="Link to this heading"></a></h3>
+<p>Equipo informático destinado a realizar una determinada labor profesional, técnica o científica. En resumen, en una oficina, los equipos cliente serían cada uno de los ordenadores con los que se lleva a cabo el trabajo y que generalmente están conectados entre sí a través de un servidor para facilitar los flujos de información, conectadas a periféricos (como impresoras, escáneres, pantallas de proyección, etc.) y a la vez conectadas a Internet.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/image051.png"><img alt="../_images/image051.png" src="../_images/image051.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Equipos cliente</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="el-repetidor">
+<h3>El Repetidor<a class="headerlink" href="#el-repetidor" title="Link to this heading"></a></h3>
+<p>Se trata de otro de los <strong>componentes de red</strong> que permiten retransmitir una señal de red débil o de bajo nivel de forma amplificada a una potencia superior. El funcionamiento y características de los repetidores dependerán también del tipo de red que se esté utilizando, por ejemplo si es por cable o por wifi.</p>
+</section>
+<section id="hub-comunicar-varios-equipos">
+<h3>Hub (comunicar varios equipos)<a class="headerlink" href="#hub-comunicar-varios-equipos" title="Link to this heading"></a></h3>
+<p>Los hubs son aparatos que permiten conectar múltiples dispositivos mediante cables, consiguiendo que funcionen como un único segmento de red. La traducción al castellano de este término es “cubo” o “concentrador”.</p>
+</section>
+<section id="bridge-puentes-de-red-para-comunicar-segmentos-de-red">
+<h3>Bridge (puentes de red para comunicar segmentos de red)<a class="headerlink" href="#bridge-puentes-de-red-para-comunicar-segmentos-de-red" title="Link to this heading"></a></h3>
+<p>Estos componentes de redes son dispositivos de interconexión de segmentos de redes. Básicamente se encargan de crear una sola subred conectando equipos sin necesidad de router, a través de segmentos de red que a su vez ya están conectando a diversos equipos.</p>
+</section>
+<section id="switch-hub-bridge">
+<h3>Switch (Hub + Bridge)<a class="headerlink" href="#switch-hub-bridge" title="Link to this heading"></a></h3>
+<p>Son dispositivos que se encargan de interconectar dos o más segmentos de red, de forma similar a como lo hacen los bridges. Permiten formar lo que se conoce como una red de área local (LAN, Local Area Network), cuyas especificaciones técnicas siguen el estándar denominado Ethernet.</p>
+</section>
+<section id="access-point-switch-inalambrico">
+<h3>Access Point (Switch inalámbrico)<a class="headerlink" href="#access-point-switch-inalambrico" title="Link to this heading"></a></h3>
+<p>Los puntos de acceso son esenciales en las redes inalámbricas, ya que, ayudan a ampliar el alcance y la capacidad de conectividad. Recibe la señal de acceso a la red del router y aumenta su potencia cubriendo un área determinada. A diferencia de un repetidor, crea un nueva señal independiente en lugar de amplificarla.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/image061.png"><img alt="../_images/image061.png" src="../_images/image061.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dispositivos de red</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="router-para-salir-de-una-red-lan">
+<h3>Router (para salir de una red LAN)<a class="headerlink" href="#router-para-salir-de-una-red-lan" title="Link to this heading"></a></h3>
+<p>También se le denomina enrutador, ya que se encarga de encontrar el mejor camino para la transmisión de información a través de una red. Sus usos pueden ser más o menos complejos aunque el más común es aquel que permite comunicar a varios equipos, ya sea en casa o en una oficina (aprovechando la misma conexión a Internet).</p>
+<p>El router recibe la conexión de red y la distribuye a todos los dispositivos conectados simultáneamente escogiendo la mejor vía para hacerlo de forma que la información completa llegue de manera adecuada y en el menor tiempo posible.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/image071.png"><img alt="../_images/image071.png" src="../_images/image071.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">ROUTER: Dispositivo para salir a INTERNET</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="modem-switch-access-point-router">
+<h3>Modem (Switch + Access Point + Router)<a class="headerlink" href="#modem-switch-access-point-router" title="Link to this heading"></a></h3>
+<p>Algunos dispositivos de red son dispositivos todo en uno. Es el caso de los modem que son un Switch, un Access Point y un Router a la vez. Suelen ser facilitados por los prestadores de servicio de Internet.</p>
+<p>En empresas grandes donde están conectados varios edificios como las universidades, lo normal es que hayan varios dispositivos de red cumpliendo una única función (Switch, Access Point o Router). Esto se debe a que en dichas empresas suele haber mucha gente conectada y un dispositivo de red todo en uno no resulta suficiente.</p>
+<p>En hogares el número de personas para conectarse a Internet suele ser de una a diez, por ahorro de costos es mejor usar los modem.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/image081.png"><img alt="../_images/image081.png" src="../_images/image081.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">MODEM</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rack-de-telecomunicaciones">
+<h3>RACK de telecomunicaciones<a class="headerlink" href="#rack-de-telecomunicaciones" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/image10.jpg"><img alt="../_images/image10.jpg" src="../_images/image10.jpg" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">RACK servidores OPENBSD 2009</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<hr class="docutils" />
+<section id="internet-de-las-cosas">
+<h2>Internet de las cosas<a class="headerlink" href="#internet-de-las-cosas" title="Link to this heading"></a></h2>
+<p>El <strong>Internet de las Cosas (IoT)</strong> es un concepto tecnológico que describe una red de dispositivos físicos (“cosas”) conectados mediante sensores, software y otras tecnologías que les permiten recopilar y compartir datos a través de redes (como Internet o redes locales). Estos dispositivos pueden incluir desde objetos cotidianos —como electrodomésticos inteligentes o relojes— hasta máquinas industriales complejas.</p>
+</section>
+<hr class="docutils" />
+<section id="instalacion-de-una-red-de-datos">
+<h2>Instalación de una red de datos<a class="headerlink" href="#instalacion-de-una-red-de-datos" title="Link to this heading"></a></h2>
+<p>La instalación de una red de telecomunicaciones profesional requiere de una serie de elementos y componentes esenciales, los cuales son:</p>
+<section id="cableado-estructurado">
+<h3>Cableado estructurado<a class="headerlink" href="#cableado-estructurado" title="Link to this heading"></a></h3>
+<p>El cableado actual está basado en estándares de comunicación que permiten transmitir grandes cantidades de información de forma rápida y segura. La elección del tipo de cable de red adecuado es fundamental para crear una infraestructura sólida, eficiente y que garantice el mayor nivel de rendimiento y seguridad de los datos.</p>
+</section>
+<section id="suministro-electrico">
+<h3>Suministro eléctrico<a class="headerlink" href="#suministro-electrico" title="Link to this heading"></a></h3>
+<p>Una infraestructura de red utiliza diferentes equipos y dispositivos electrónicos que necesitan de corriente eléctrica para funcionar, por lo que es importante contar con un buen sistema de suministro y de elementos que garanticen el acceso a la energía en todo momento, como equipos SAI que, además, ayudan a filtrar las fluctuaciones habituales de la red eléctrica, protegiendo a los dispositivos.</p>
+</section>
+<section id="hardware">
+<h3>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h3>
+<p>En una red de telecomunicaciones se emplean una serie de elementos de hardware que son claves para su funcionamiento, como servidores, routers, switches, patch panels, firewalls, etc. La calidad y prestaciones de estos dispositivos es crucial para construir una infraestructura potente y fiable que garantice el mejor nivel de comunicación.</p>
+</section>
+<section id="software">
+<h3>Software<a class="headerlink" href="#software" title="Link to this heading"></a></h3>
+<p>Otra parte necesaria en una red de telecomunicaciones es el software necesario para gestionar distintas tareas y procesos. Por ejemplo, aplicaciones para el control del acceso a la red (gestiona distintos perfiles y roles de acceso), software para seguridad (anti-malware o cortafuegos) o herramientas de monitoreo de red, para evaluar el funcionamiento de la red, detectar nodos caídos, conocer qué dispositivos y usuarios están conectados.</p>
+</section>
+<section id="acceso-a-internet">
+<h3>Acceso a Internet<a class="headerlink" href="#acceso-a-internet" title="Link to this heading"></a></h3>
+<p>Dentro de una infraestructura de red se debe contar con acceso a internet para maximizar el alcance de la misma y poder llegar a cualquier lugar a nivel global. Para ello es necesario apostar por alternativas de alto rendimiento como es el caso de los servicios de fibra óptica simétricos, que garantizan un gran ancho de banda, tanto de subida como de bajada.</p>
+</section>
+<section id="control-y-mantenimiento">
+<h3>Control y mantenimiento<a class="headerlink" href="#control-y-mantenimiento" title="Link to this heading"></a></h3>
+<p>Es fundamental que una buena red de telecomunicaciones cuente con un sistema adecuado de monitoreo para controlar todo lo que sucede en la misma. Además, es imprescindible disponer de un sistema de mantenimiento que garantice el funcionamiento óptimo en todo momento, y que pueda resolver cualquier incidencia o problema en el menor tiempo posible.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="servicios-de-red">
+<h2>Servicios de red<a class="headerlink" href="#servicios-de-red" title="Link to this heading"></a></h2>
+<p>Los servicios de red son programas y protocolos que permiten a los usuarios realizar tareas específicas a través de la red. Los principales servicios son:</p>
+<section id="ssh">
+<h3>SSH<a class="headerlink" href="#ssh" title="Link to this heading"></a></h3>
+<p>Son las siglas de <strong>Secure Shell</strong> y es un <strong>protocolo de red destinado principalmente a la conexión con máquinas a las que accedemos por línea de comandos</strong>. En otras palabras, con SSH podemos conectarnos con servidores usando la red Internet como vía para las comunicaciones.</p>
+<p>Debido a su seguridad, SSH es el modo preferido para la realización de conexión con servidores que necesitamos administrar. La diferencia con respecto a otros protocolos más antiguos como Telnet es que <strong>el protocolo</strong> <strong>SSH siempre es seguro.</strong> Sin embargo, aprovechando la seguridad de las comunicaciones, también se utiliza para otros objetivos como:</p>
+<ul class="simple">
+<li><p>Transferencia de Archivos Segura: Permite transferir archivos de forma segura entre sistemas locales y remotos utilizando herramientas como el comando SCP o SFTP.</p></li>
+<li><p>Creación de Túneles de Red: SSH se utiliza para crear túneles de datos seguros que redirigen el tráfico de red a través de conexiones SSH, lo que puede ayudar a proteger la comunicación en redes no seguras. Se usan en sistemas como Ngrok, un software que permite a los desarrolladores exponer de manera remota los trabajos, tal como los tienen funcionando en su servidor de desarrollo local.</p></li>
+</ul>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/image09.gif"><img alt="../_images/image09.gif" src="../_images/image09.gif" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">OpenSSH</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dhcp">
+<h3>DHCP<a class="headerlink" href="#dhcp" title="Link to this heading"></a></h3>
+<p>El Protocolo de configuración dinámica de host (DHCP) es un protocolo cliente-servidor que proporciona automáticamente un host de protocolo de Internet (IP) con su dirección IP y otra información de configuración relacionada, como la máscara de subred y la puerta de enlace de predeterminada.</p>
+</section>
+<section id="dns">
+<h3>DNS<a class="headerlink" href="#dns" title="Link to this heading"></a></h3>
+<p>Sistema de nombres de dominio. Traduce los nombres de dominios aptos para lectura humana (por ejemplo, <a class="reference external" href="http://www.amazon.com/" rel="noreferer noopener" target="_blank">www.amazon.com</a>) a direcciones IP aptas para lectura por parte de máquinas (por ejemplo, <span class="guilabel">18.155.246.193</span>).</p>
+<blockquote>
+<div><p>El sistema DNS de Internet funciona como una agenda telefónica donde se administra el mapa entre los nombres y los números. Los servidores DNS convierten las solicitudes de nombres en direcciones IP, controlando a qué servidor se dirigirá un usuario final cuando escriba un nombre de dominio en su navegador web. Estas solicitudes se denominan <strong>consultas</strong>.</p>
+</div></blockquote>
+</section>
+<section id="ftp">
+<h3>FTP<a class="headerlink" href="#ftp" title="Link to this heading"></a></h3>
+<p>Son las siglas en inglés de File Transfer Protocol (protocolo de transferencia de archivos). FTP es el conjunto de reglas que los dispositivos de una red TCP/IP (Internet) utilizan para transferir archivos. Cuando usted usa Internet, en realidad se utiliza una variedad de diferentes protocolos. El FTP es simplemente el protocolo usado para transferir archivos.</p>
+</section>
+<section id="http">
+<h3>HTTP<a class="headerlink" href="#http" title="Link to this heading"></a></h3>
+<p>El http (del inglés HyperText Transfer Protocol o Protocolo de Transferencia de Hiper Textos) es el protocolo de transmisión de información de la World Wide Web. Se trata de un protocolo “sin estado”, es decir, que no lleva registro de visitas anteriores sino que siempre empieza de nuevo. La información relativa a visitas previas se almacena en estos sistemas en las llamadas “cookies”, almacenadas en el sistema cliente.</p>
+</section>
+<section id="https">
+<h3>HTTPS<a class="headerlink" href="#https" title="Link to this heading"></a></h3>
+<p>Por https se entiende HyperText Transfer Procotol Secure o Protocolo Seguro de Transferencia de Hipertexto, que no es más que la versión segura del http, es decir, una variante del mismo protocolo que se basa en la creación de un canal cifrado para la transmisión de la información, lo cual lo hace más apropiado para ciertos datos de tipo sensible (como claves y usuarios personales).</p>
+</section>
+<section id="smtp-pop">
+<h3>SMTP-POP<a class="headerlink" href="#smtp-pop" title="Link to this heading"></a></h3>
+<p>Los servidores de correo electrónico son indispensables para proveer de este servicio. Funcionan de forma similar a un buzón de correos central, donde se almacena y se gestionan mensajes de forma segura, en espera a ser leído por un grupo de clientes (usuarios).</p>
+<ul class="simple">
+<li><p><strong>SMTP (Servidores de correo de salida)</strong>: Es el protocolo más usado por la flexibilidad en su operación al transferir información de un servidor de salida a uno de entrada, guardando la dirección de correo electrónico de quién lo envió.</p></li>
+<li><p><strong>POP (Post Office Protocol Version 3)</strong>: Es una de las versiones más antiguas de protocolo y confiables. Cuando el dispositivo se conecta al servidor de correo, éste detecta el ordenador que realiza la acción y los aloja ahí, una vez descargados se eliminan de inmediato del servidor de entrada.</p></li>
+<li><p><strong>IMAP (Internet Message Access Protocol)</strong>: Es un protocolo en los servidores de correo electrónico entrante que funciona para sincronizar el email a diferentes dispositivos. Se alojan siempre en el servidor y se visualiza a través de una copia de descarga.</p></li>
+</ul>
+</section>
+<section id="voip">
+<h3>VOIP<a class="headerlink" href="#voip" title="Link to this heading"></a></h3>
+<p>En inglés, las siglas VoIP significan <strong>Voice over Internet Protocol</strong>, es decir, voz sobre protocolo de Internet. La telefonía VoIP es un método que permite realizar llamadas de voz a través de la red, utilizando la banda ancha. Estas llamadas capturan el sonido procedente de un dispositivo móvil o fijo con conexión a Internet a través de un micrófono y lo transforman en paquetes de datos digitales. Los datos se transfieren a través de la red IP hasta el dispositivo receptor, al igual que el resto de contenidos transmitidos a través de Internet.</p>
+</section>
+<section id="rdp">
+<h3>RDP<a class="headerlink" href="#rdp" title="Link to this heading"></a></h3>
+<p>Las siglas RDP responden a <strong>Remote Desktop Protocol</strong>, o, en español, Protocolo de Escritorio Remoto. El protocolo RDP, entonces, permite que el escritorio de un equipo informático sea controlado a distancia por un usuario remoto. Existen diferentes programas de RDP como el RDP Remote Desktop de Microsoft –también conocido como RDP Windows–, o los más populares TeamViewer o PC Anywhere.</p>
+</section>
+<section id="firewall">
+<h3>FIREWALL<a class="headerlink" href="#firewall" title="Link to this heading"></a></h3>
+<p>Un firewall es un sistema de seguridad que supervisa y controla el tráfico de la red en base a un conjunto de reglas de seguridad. Los firewalls suelen situarse entre una red de confianza y una red no fiable; con frecuencia, la red no fiable es Internet. Por ejemplo, las redes de oficinas suelen utilizar un firewall para proteger su red de las amenazas en línea.</p>
+</section>
+<section id="proxy">
+<h3>PROXY<a class="headerlink" href="#proxy" title="Link to this heading"></a></h3>
+<p>Un servidor proxy proporciona una puerta de enlace entre los usuarios e Internet. Es un servidor denominado “intermediario”, porque está entre los usuarios finales y las páginas web que visitan en línea. Cuando una computadora se conecta a Internet, utiliza una dirección IP.  Algunas personas usan los proxies para fines personales, como ocultar su ubicación mientras miran películas en línea. Sin embargo, para una compañía, pueden utilizarse para realizar varias tareas clave como las siguientes:</p>
+<ul class="simple">
+<li><p>Mejorar la seguridad.</p></li>
+<li><p>Proteger la actividad de los empleados en Internet de las personas que intentan espiarlas.</p></li>
+<li><p>Equilibrar el tráfico de Internet para evitar choques.</p></li>
+<li><p>Controlar el acceso de los empleados a los sitios web.</p></li>
+<li><p>Guardar el ancho de banda almacenando archivos en caché o comprimiendo el tráfico entrante.</p></li>
+</ul>
+</section>
+<section id="vpn">
+<h3>VPN<a class="headerlink" href="#vpn" title="Link to this heading"></a></h3>
+<p>Una VPN o red privada virtual crea una conexión de red privada entre dispositivos a través de Internet. Las VPN se utilizan para transmitir datos de forma segura y anónima a través de redes públicas. Su funcionamiento consiste en ocultar las direcciones IP de los usuarios y cifrar los datos para que nadie que no esté autorizado a recibirlos pueda leerlos.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="L1001-01.html" class="btn btn-neutral float-left" title="L1001-01: Historia de la Informática" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="L1002-02.html" class="btn btn-neutral float-right" title="L1002-02: Ciberseguridad" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2026, Camilo Fonseca.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>

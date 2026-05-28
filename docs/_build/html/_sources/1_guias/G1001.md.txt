@@ -1,0 +1,200 @@
+# Guía 1001: Historia de la Informática (P1)
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Tecnología e Informática
+        - **GRADO**: DÉCIMO
+        - **PERIODO**: 01
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+- **Temática**: Historia de la computación personal.
+- **Objetivo de aprendizaje**: Conocer los orígenes de la informática por medio del estudio de la evolución del internet, la computación personal y el software.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Naturaleza y evolución de la TI.
+- **Competencia**: Construyo conocimientos y saberes de base tecnológica e informática para la toma de decisiones en el desarrollo de productos tecnológicos. 
+- **Evidencia de aprendizaje**: Sistematizo la evolución tecnológica e informática y la manera cómo incidieron en los cambios estructurales de la sociedad y la cultura a lo largo de la historia.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+- [**LECTURA:** Historia de la informática](../2_lecturas/L1001-01.md)
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"En esta guía, el estudiante aprende sobre el origen de la computación personal para entender la evolución de nuestra propia cultura. Se invita a explorar cómo el desarrollo de Internet, junto con la evolución del hardware y el software, transformó la estructura de la sociedad actual. Al finalizar, el estudiante podrá sistematizar estos hitos históricos y reconocer la huella que la informática ha dejado en cada aspecto de nuestra vida cotidiana."
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (+0,1)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el **mensaje del autor** y en su cuaderno responda:
+    - ¿Por qué es importante estudiar la historia de la informática?
+
+---
+## A01: Orígenes de INTERNET (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno, responda las siguientes preguntas:
+
+    - ¿Cómo se llamó la primera red?
+    - ¿En que año y en que lugar se creó la primera red?
+    - ¿Quienes crearon la tecnología para que funcionara el Internet?
+    - ¿En que año se creó la tecnología para que funcionara el Internet y que protocolos fueron usados en dicha tecnología?
+
+---
+## A02: ARPANET (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno dibuje el mapa de la primera red y responda las siguientes preguntas:
+
+    - ¿Cuántos nodos en el occidente estaban interconectados?
+    - ¿Cuántos nodos en el oriente estaban interconectados?
+
+---
+## A03: Primera página web (+0,1)
+{bdg-info}`Estructuración`
+
+1. Responda la siguiente pregunta en su cuaderno:
+    - ¿En que año se crea el primer navegador y la primera página web?
+
+2. Traduzca los contenidos de la primera página web y haga un breve resumen de dichos contenidos en su cuaderno.
+
+---
+## A04: Primer navegador MOSAIC (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno dibuje un **boceto** de la *interfaz gráfica* del primer navegador web **MOSAIC** y realice una breve descripción de las diferencias de este primer navegador con navegadores actuales como GOOGLE CHROME, MOZILLA FIREFOX o MICROSOFT EDGE.
+
+---
+## A05: Orígenes de la PC (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno responda las siguientes preguntas:
+
+    - ¿Cuál fue la primera computadora personal de la historia y en que año se creó?
+    - ¿Qué lenguajes de programación se usaron en la primera computadora personal?
+    - ¿Cómo APPLE se relaciona con la historia de la computadora personal?
+    - ¿Quién fue Steve Jobs?
+    - ¿Cómo se democratizó el uso de las computadoras personales?
+
+---
+## A06: Apple - Macintosh (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno responda:
+    - ¿Qué características tenía la primera Macintosh y en que año fue creada?
+
+2. En su cuaderno dibuje un bosquejo de la primera Macintosh.
+
+3. Observe el artículo donde se describe la Macintosh y en su cuaderno describa el significado de las siguientes frases:
+
+    - *“La primera APPLE que se puede llevar en un bolso”*
+    - *“Si puedes señalar, puedes usar Macintosh”*
+    - *“PERSONALIDAD DE MACINTOSH: Lado divertido, Lado serio”*
+    - *“Muy pronto habrán dos tipos de personas: Aquellos que usan computadoras y aquellos que usan APPLES”*
+
+---
+## A07: Orígenes del software (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno responda las siguientes preguntas:
+    - ¿En que año y como operaban las computadoras en sus orígenes?
+    - ¿Qué es y en que año se crea **FORTRAN**?
+    - ¿Por qué la década de los 80 fue revolucionaria en el software?
+
+---
+## A08: UNIX-LINUX (+0,1)
+{bdg-info}`Estructuración`
+
+1. Investigue en **INTERNET** o **IA** y realice una descripción del sistema operativo **UNIX** luego en su cuaderno responda la siguiente pregunta: 
+    - ¿Por qué UNIX es considerado el padre de la mayoría de sistemas operativos en la actualidad?
+2. Investigue en **INTERNET** la diferencia entre un **equipo cliente** y un **equipo servidor** y luego realice una descripción en su cuaderno.
+3. Investigue en **INTERNET** que es el sistema operativo **LINUX** luego realice una descripción en su cuaderno e indique por que se usa en la mayoría de servidores a nivel mundial.
+4. En su cuaderno describa 10 distribuciones **LINUX** (con sus fechas de creación).
+
+---
+## A09: Windows (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno responda:
+    - ¿En que año se creo el sistema operativo **Microsoft DOS (MS-DOS)** y por que fue tan importante?
+
+2. Con ayuda de INTERNET o IA, en su cuaderno realice una descripción (con fechas de creación) de los siguientes sistemas operativos de Microsoft:
+
+    - Windows 3.1
+    - Windows 95
+    - Windows 98
+    - Windows 2000
+    - Windows Me
+    - Windows XP
+    - Windows Vista
+    - Windows 7
+    - Windows 8
+    - Windows 8.1
+    - Windows 10
+    - Windows 11
+
+---
+## A10: Línea de tiempo (+1,0)
+{bdg-danger}`Transferencia`
+
+1. En una **hoja de tamaño oficio**, cree una línea de tiempo de la **historia de la computación personal**, desde los orígenes de la primera red con **ARPANET** hasta la creación de los **sistemas operativos de Microsoft**.
+
+---
+## A11: Examen escrito (+3,0)
+{bdg-danger}`Transferencia`
+
+:TIEMPO: 30 minutos
+:PREGUNTAS: 10
+
+:::{admonition} posibles preguntas
+1. ¿Qué es una red de datos y cuál fue la primera red a nivel mundial, (en que año y en que lugar se creo)?
+2. ¿Quién fue la persona que creo la tecnología para que funcionara el INTERNET?
+3. ¿En que año se creo la tecnología para que funcionara el INTERNET y que protocolos fueron usados en dicha tecnología?
+4. ¿En que año se crea el primer navegador y la primera página web?
+5. Realice un descripción del navegador MOSAIC e indique sus diferencias con navegadores actuales
+6. ¿Qué es una computadora y que características debe tener para que sea considerada personal?
+7. ¿Cuál fue la primera computadora personal de la historia?
+8. ¿Qué lenguajes de programación se usaron en la primera computadora personal?
+9.  ¿Cómo APPLE se relaciona con la historia de la computadora personal?
+10. ¿Cómo se democratizó el uso de las computadoras personales?
+11. ¿Qué características tenía la primera Macintosh y en que año fue creada?
+12. ¿En que año se creo el sistema operativo Microsoft DOS y por que fue tan importante?
+13. Realice una descripción de tres sistemas operativos de Microsoft e indique por que se caracterizan
+14. ¿En que año y como operaban las computadoras en sus orígenes?
+15. ¿Qué es y en que año se crea FORTRAN?
+16. ¿Qué es un sistema operativo?
+17. ¿Por qué la década de los 80 fue revolucionaria en el software?
+18. ¿Qué es el sistema operativo LINUX y en que se diferencia con el sistema operativo UNIX?
+19. Realice la descripción de tres distribuciones de sistema operativo tipo LINUX
+20. ¿En que se diferencian los sistemas operativos LINUX y Microsoft WINDOWS?
+:::

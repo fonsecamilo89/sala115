@@ -1,0 +1,252 @@
+# Guía 812: Jerarquía de datos (P2)
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Lógica computacional
+        - **GRADO**: OCTAVO
+        - **PERIODO**: 02
+        - **TIEMPO**: 10 semanas (1 hora / semana)
+        - **TIEMPO DE TRABAJO**: 10/10 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+- **Temática**: Jerarquía de datos.
+- **Objetivo de aprendizaje**: Comprender la diferencia entre **datos**, **información** e identificar los elementos de la **Jerarquía de datos**.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Naturaleza y Evolución de la T&I.
+- **Competencia**: Relaciono saberes, conocimientos tecnológicos e informáticos con los conocimientos de otras disciplinas.
+- **Evidencia de aprendizaje**: Comprendo los principios y conocimientos tecnológicos e informáticos que hacen posible el funcionamiento de productos tecnológicos actuales.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+
+- [LECTURA: Información y Jerarquía de datos](../2_lecturas/L812-01.md)
+
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+“En esta guía, el estudiante comprenderá la **diferencia entre datos e información**, entendiendo cómo un conjunto de registros estructurados cobra significado para guiar la toma de decisiones. Al identificar los elementos de la jerarquía de datos, el estudiante estará dando el primer paso para dominar el lenguaje que emula el pensamiento humano y da vida a la tecnología actual.”
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (+0,1)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+2. Lea el **mensaje del autor** y en su cuaderno con sus palabras responda:
+    - ¿En que se diferencian los datos de la información?
+
+---
+## A01: Datos Vs Información (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno responda las siguientes preguntas:
+
+    - ¿Cuál es la diferencia entre los datos e información?
+    - ¿Podría existir la información sin datos? ¿Por qué?
+    - ¿Podría existir los datos sin información? ¿Por qué?
+
+2. En su cuaderno escriba 10 ejemplos de **DATOS** y luego transfórmelos en **INFORMACIÓN**. Tenga en cuenta lo siguiente:
+
+    - Al momento de transformar los datos a información indicar:
+        - *Contexto*.
+        - *Uso del dato*.
+        - *Consecuencia*.
+    - Usar 5 datos cualitativos.
+    - Usar 5 datos cuantitativos.
+
+:::{table}
+Datos|Información
+-|-
+vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es necesario volver a llenar".
+11|"En una hora abren las puertas del colegio. Son las **11** de la mañana. Llegaré tarde".
+:::
+
+---
+## A02: Conceptos Jerarquía de datos (+0,1)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno responda las siguientes preguntas:
+
+    - ¿Qué es la Jerarquía de datos?
+    - Con la Jerarquía de datos, ¿Es posible también convertir los datos en INFORMACIÓN? ¿Por qué?
+
+2. En su cuaderno complete la siguiente tabla:
+
+    :::{list-table}
+    :header-rows: 1
+    * - Elemento
+      - Descripción
+      - Ejemplo
+    * - bit
+      -
+      -
+    * - Byte
+      -
+      -
+    * - Carácter
+      -
+      -
+    * - Dato
+      -
+      -
+    * - Registro
+      -
+      -
+    * - Tabla
+      -
+      -
+    * - Base de datos
+      -
+      -
+    :::
+
+3. DIBUJE la siguiente gráfica en su cuaderno y en cada anillo ubique un elemento de la **Jerarquía de datos**:
+
+:::{list-table}
+* - ```{figure} ./recursos/G812/image01.png
+    :width: 400
+    **Anillo** Jerarquía de datos
+    ```
+:::
+
+<br/>
+
+4. DIBUJE el siguiente gráfico en su cuaderno:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G812/image02.png
+        :width: 550
+        EJEMPLO Jerarquía de datos
+        ```
+    :::
+
+    Acorde al gráfico anterior, en su cuaderno responda:
+     - ¿Qué elementos de la jerarquía de datos hacen falta y por qué?
+     - ¿Cuantas tablas hay?
+     - ¿Cuáles son los registros?
+     - ¿Cuáles son los datos?
+     - ¿Cuáles son los carácteres?
+     - ¿Cuáles son los Bytes?
+     - ¿Cuáles son los bits?
+
+
+
+---
+## A03: Construcción de tablas (+0,2)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno (de forma horizontal) realice una **tabla** de 5 registros de sus compañeros con los siguientes campos (invente los datos):
+
+:::{csv-table} Tabla Estudiantes
+:header-rows: 1
+ID, Nombre, Apellido, Edad, Curso de Ingreso, Año de Ingreso, Año de Egreso, Software más usado, Hardware más usado
+00,,,,,,,,
+01,,,,,,,,
+02,,,,,,,,
+03,,,,,,,,
+04,,,,,,,,
+:::
+
+:::{admonition} Advertencia
+:class: warning
+Los datos de **Edad**, **Curso de Ingreso**, **Año de Ingreso** y **Año de Egreso** deben tener lógica.
+:::
+
+2. Construya el **correo electrónico** del estudiante y agregarlo en la siguiente tabla, teniendo en cuenta la siguiente estructura (ignore los paréntesis):
+
+$$
+(nombre).(apellido)(CursoIngreso)(AñoIngreso)@jfkennedy.edu.co
+$$
+
+:::{csv-table} Tabla Cuentas Institucionales Estudiantes
+:header-rows: 1
+ID, ID Estudiantes, Nombre, Apellido, correo electrónico institucional 
+00,,,,
+01,,,,
+02,,,,
+03,,,,
+04,,,,
+:::
+
+---
+## A04: Bases de datos (+0,5)
+
+1. En una hoja de su cuaderno (de forma horizontal), dibuje la siguiente base de datos:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G812/image03.png
+        :width: 620
+        EJEMPLO Base de datos
+        ```
+    :::
+
+2. Acorde a la **base de datos**, en su cuaderno responda las siguientes preguntas:
+    - ¿Cuál sería el nombre de la base de datos y por qué?
+    - ¿Cuantas tablas hay en la base de datos? (colocar el nombre de cada tabla)
+    - ¿Cuantos registros hay por cada tabla?
+    - ¿Cuantos datos hay por cada registro de cada tabla?
+
+3. En la base de datos (dibujada en su cuaderno), identifique las tablas, registros y los datos.
+
+4. Con sus palabras, en su cuaderno explique cómo esta compuesta la **Tabla facturas**.
+
+5. En su cuaderno, cree un nuevo registro para la **Tabla clientes**.
+
+6. En su cuaderno, cree un nuevo registro para la **Tabla productos**.
+
+7. Con los nuevos registros **Tabla clientes** y **Tabla productos**, ahora cree una nueva *base de datos* compuesta por la **Tabla facturas** y la **Tabla elementos en línea**.
+
+---
+## A05: Examen escrito (+4,0)
+{bdg-danger}`Transferencia`
+
+:TIEMPO: 30 minutos
+:PREGUNTAS: 10
+
+:::{admonition} Posibles preguntas
+1. ¿Cómo se define un **bit** y cuáles son sus dos posibles estados?
+2. Explique la analogía de la bombilla utilizada para comprender el funcionamiento de un bit.
+3. ¿Cuántos bits conforman un **BYTE** y por qué es importante esta agrupación?
+4. Si un BYTE puede representar una letra, un número o un símbolo, ¿Cómo se logra esto mediante la combinación de **8 bits**? De un ejemplo.
+5. ¿Cuál es la diferencia fundamental entre un **BYTE** y un **carácter**? 
+6. Defina qué es un **carácter** desde la perspectiva de la interfaz de usuario.
+7. ¿Qué se entiende por **Dato** dentro del contexto de los sistemas de información?
+8. ¿Por qué se dice que los datos son **atributos codificados**? 
+9. Mencione 10 ejemplos de datos.
+10. ¿Cuál es la función principal de un "dato" dentro de la **Jerarquía de datos**?
+11. Explique la relación que existe entre un **dato** y un **registro**.
+12. ¿Qué es un **registro** y por qué es necesario identificarlos?
+13. Describa un escenario (ejemplo propio) de un **registro** que contenga al menos cuatro tipos de datos distintos.
+14. ¿Por qué es necesario que todos los datos dentro de un registro pertenezcan a un mismo **ente informático**?
+15. ¿Qué es una **tabla** y qué característica estructural debe cumplir para ser considerado como tal?
+16. ¿Qué es una **base de datos** y cómo se diferencia de una tabla individual?
+17. Explique qué significa que una **base de datos** este compuesta por ***tablas relacionadas***.
+18. ¿Cuál es la ventaja de utilizar **tablas cruzadas** en una *base de datos*?
+19. Si tuviera que explicar la **jerarquía de datos** completa (desde el bit hasta la base de datos) a alguien que no sabe nada de informática, ¿Cómo resumiría la relación entre estos niveles?
+20. Cree un ejemplo de una **base de datos** con tres tablas de mínimo *3 registros* y *5 datos*.
+:::

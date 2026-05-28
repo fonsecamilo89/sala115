@@ -1,0 +1,196 @@
+# Guía 1113: Desarrollo de algoritmos (P1)
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Ofimática
+        - **GRADO**: ONCE
+        - **PERIODO**: 01
+        - **TIEMPO**: 10 semanas (4 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/40 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+- **Temática**: Desarrollo de algoritmos.
+- **Objetivo de aprendizaje**: Desarrollar la capacidad de abstracción y lógica algorítmica mediante la representación gráfica de procesos, permitiéndole modelar soluciones secuenciales y ordenadas a problemas de la vida cotidiana.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con T&I.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+- [LECTURA: Algoritmos](../2_lecturas/L1113-01.md)
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"Entender cómo funciona el mundo actual requiere aprender a pensar de forma organizada. Esta guía invita a usar el desarrollo de algoritmos como una herramienta para abstraer y modelar soluciones. Al visualizar sus ideas, usted podrá comparar distintas rutas lógicas para un mismo problema, evaluando sus beneficios y desafíos."
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (+0,2)
+{bdg-light}`Exploración`
+
+1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. LEA el **mensaje del autor** y en su cuaderno con sus palabras responda:
+    - ¿Qué es abstracción?
+    - ¿Qué es modelar una solución?
+
+---
+## A01: ¿Qué son los algoritmos? (+0,2)
+{bdg-info}`Estructuración`
+
+1. Escriba las siguientes frases en su cuaderno e indique si es **falso** o **verdadero** e indique el por qué.
+    - Un algoritmo está compuesto por elementos informáticos que componen una secuencia organizacional únicamente ___.
+    - Un algoritmo son un conjunto de instrucciones que le dicen a una computadora o un ser humano como realizar una tarea específica, dichas instrucciones pueden estar escritas en código o lenguaje natural. ___.
+    - Un algoritmo se define como cuadros de funcionamiento infinitos que permiten y tienen como propósito reducir la información. ___.
+
+---
+## A02: Tipos del algoritmos (+0,2)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno relacione con líneas los siguientes cuadros según corresponda su significado:
+
+:::{list-table}
+* - ```{figure} ./recursos/G1113/image01.png
+    :width: 500
+    Cuadro comparativo (Tipos de algoritmos)
+    ```
+:::
+
+---
+## A03: Clasificación de algoritmos (+0,2)
+{bdg-info}`Estructuración`
+
+1. Escriba la siguiente tabla en su cuaderno y clasifique los algoritmos según corresponda:
+
+:::{table}
+EJEMPLO|Clasificación|¿Por qué?
+-|-|-
+Instrucciones para llegar a un lugar||
+Instrucciones con medición de tiempo para llegar a un lugar||
+A=10,B=12<br/>C=A+B||
+Microsoft Word||
+LINUX||
+`print("Digite su nombre")`||
+PASO 01: Abra la bandeja de entrada<br/>PASO 02: Inserte hojas tamaño carta<br/>PASO 03: Cierre la bandeja de entrada||
+BIOS||
+**CANVA**||
+LibreOffice Writer||
+Control de vuelo con API de GOOGLE||
+Sensor Temperatura con ARDUINO||
+Instrucciones corte cabello||
+:::
+
+---
+## A04: Metodología para desarrollar un algoritmo (+0,2)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno escriba las 3 fases para desarrollar un algoritmo.
+
+2. Responda la siguiente pregunta en su cuaderno:
+    - ¿Que diferencia hay entre desarrollar un algoritmo, diseñar un algoritmo y construir un algoritmo?
+
+3. Consulte en INTERNET que hace un arquitecto de software y luego en su cuaderno responda:
+    - ¿Cual es la diferencia entre un arquitecto de software y un programador?
+
+
+---
+## A05: Algoritmos (+4,0)
+{bdg-danger}`Transferencia`
+
+1. En su cuaderno desarrolle cada uno de los siguientes ejercicios, siguiendo la metodología para desarrollar un algoritmo.
+
+:::{dropdown} Adquirir un revista física de arte
+Desarrolle un algoritmo para que una persona adquiera una revista física de arte. Tenga en cuenta lo siguiente:
+
+> La persona inicialmente busca en INTERNET una revista física de arte.
+> 
+> 
+> Una vez encontrada la revista, revisar cuanto cuesta y ver si tiene el dinero suficiente para comprarla. Si no tiene el dinero suficiente volver a buscar la revista en INTERNET cuantas veces sea necesario. Si tiene el dinero suficiente alistar el dinero.
+> 
+> Luego la persona debe revisar en GOOGLE MAPS para localizar la dirección de la librería. Activar la función de GOOGLE MAPS y dirigirse caminando hacia la librería. Intentar entrar a la librería. Si la librería no está abierta: volver a buscar la revista en INTERNET e iniciar de nuevo. Si la librería está abierta, entrar a la librería.
+> 
+> Revisar si la revista está en STOCK. Si la revista no está en STOCK, volver a buscar la revista en INTERNET y empezar de nuevo. SI la revista si está en STOCK, comprar la revista física de arte.
+>
+:::
+
+:::{dropdown} Entrar a una casa con llave
+Desarrolle un algoritmo para que una persona entre a una casa cuya cerradura está asegurada con llave. Tenga en cuenta lo siguiente:
+
+> La persona inicialmente buscará la llave en su bolsillo. La persona intentará abrir la cerradura con la llave de su bolsillo.
+> 
+> 
+> Si la cerradura no abre ahora buscará otra llave en un tapete exterior y volverá a intentar abrir la cerradura con dicha llave.
+> 
+> Si la cerradura no abre ahora buscará otra llave en la guantera de un carro y volverá a intentar abrir la cerradura con dicha llave.
+> 
+> Si la cerradura no abre, llamará a un cerrajero para que abra la puerta. Si el cerrajero no contesta, entonces seguir intentando hasta que conteste.
+> 
+> Si la cerradura si abre, intentar abrir la puerta. Si la puerta abre entrar a la casa y confirmar que se logró entrar. Si la cerradura no abre, confirmar que no se logró entrar.
+>
+:::
+
+:::{dropdown} Saludar y despedirse de una persona
+Desarrolle un algoritmo para que el usuario salude y se despida de una persona. Tenga en cuenta lo siguiente:
+
+> La persona debe verificar inicialmente si ya saludo a la otra persona
+> 
+> 
+> Si la persona no ha saludado, saludar a la persona. Esperar a que la persona salude. Si la persona no saluda, seguir intentándolo hasta que salude.
+> 
+> Una vez que la persona salude, preguntar como esta. Si la persona responde NO esta bien, preguntar que le pasa, escuchar a la persona y decirle que el tiempo lo arregla todo. Volver a preguntar si la persona esta bien (cuantas veces sea necesario) hasta que la persona responda que esta bien.  Si la persona responder que SI esta bien entonces manifestar tranquilidad.
+> 
+> Volver a verificar si la persona ya saludo.
+> 
+> Si la persona ya saludo, entonces determinar un tiempo para poder irse.
+> 
+> El usuario debe establecer el tiempo para irse.
+> 
+> Verificar que el tiempo se cumplió. Mientras el tiempo no se cumpla, entonces hablar con la persona de cualquier tema mientras se cumple el tiempo. Ir disminuyendo el tiempo.
+> 
+> Una vez el tiempo esté cumplido, despedirse. Esperar a que la persona responda la despedida. Si la persona no contesta seguir despidiéndose hasta que la persona conteste.
+> 
+> Una vez se despida de la persona generar una mensaje de IRSE.
+>
+:::
+
+:::{dropdown} Calmar a una persona
+Desarrolle un algoritmo para calmar una persona. Tenga en cuenta lo siguiente:
+
+> Identificar el estado de la persona.
+> 
+> 
+> Si la persona esta bien, entonces irse del lugar. Si la persona esta en mal estado realizar lo siguiente:
+> 
+> Identificar la edad de la persona.
+> 
+> Si la persona es un bebe entonces intentar calmarla con un tetero. Si la persona es un niño entonces calmarla dandole un dulce. Si la persona es un adolescente entonces intentar calmarla dandole una gaseosa. Si la persona es un adulto entonces intentar calmarla dandole una cerveza. Si la persona es un anciano entonces intentar calmarla dandole un café.
+> 
+> Luego volver a identificar el estado de la persona y si todavía no se ha calmado, seguir intentando hasta que se calme.
+>
+:::

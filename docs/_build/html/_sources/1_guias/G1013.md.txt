@@ -1,0 +1,169 @@
+# Guía 1013: LibreOffice (P1)
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Ofimática
+        - **GRADO**: DÉCIMO
+        - **PERIODO:** 01
+        - **TIEMPO**: 10 semanas (4 horas / semana)
+        - **TIEMPO DE TRABAJO**: 10/40 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+- **Temática**: Suite ofimática LibreOffice.
+- **Objetivo de aprendizaje**: Identificar las herramientas, funciones y ventajas técnicas de la suite ofimática LibreOffice, reconociendo su naturaleza de código abierto y su capacidad de compatibilidad y portabilidad en diversos entornos operativos.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Uso y apropiación de la Tecnología y la Informática.
+- **Competencia**: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.
+- **Evidencia de aprendizaje**: Reconozco la pertinencia y uso de las licencias de artefactos tecnológicos analógicos y digitales, plataformas y los derechos de autor morales y patrimoniales.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+- [LECTURA: LibreOffice](../2_lecturas/L1013-01.md)
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"Esta guía didáctica está diseñada para potenciar su autonomía digital. Se explora la suite LibreOffice, una herramienta de código abierto que permite crear y gestionar documentos de forma gratuita y legal. Se identifican las funciones y ventajas técnicas de LibreOffice, desde el procesador de textos Writer hasta el editor de ecuaciones Math, reconociendo cómo su compatibilidad con formatos como ODF y su naturaleza multiplataforma facilitan el trabajo en diversos entornos operativos como Windows, macOS o Linux."
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (+0,2)
+{bdg-light}`Exploración`
+
+1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Acorde al mensaje del autor, responda la siguiente pregunta en su cuaderno:
+
+    - ¿Por qué al usar una suite ofimática como **LibreOffice**, se potencia la autonomía digital?
+
+---
+## A01: LibreOffice (+0,2)
+{bdg-info}`Estructuración`
+
+1. RESPONDA en su cuaderno las siguientes preguntas:
+
+    - ¿Que es LibreOffice?
+    - ¿Qué significa **ODF**?
+
+2. COPIE las siguientes frases en su cuaderno e INDIQUE si es **falso**, **verdadero** y por qué:
+
+    - **Calc** es el componente de LibreOffice que se utiliza para la creación y edición de hojas de cálculo. ___
+
+    - **LibreOffice** es una suite ofimática exclusiva para usuarios del sistema operativo Windows. ___
+    
+    - El programa de la suite destinado al diseño y edición de dibujo vectorial recibe el nombre de **Math**. ___
+    
+    - Para la gestión y creación de bases de datos, la suite de LibreOffice incorpora la herramienta llamada **Impress**. ___
+    
+    - **Writer** es el procesador de textos que se incluye dentro del conjunto de programas de LibreOffice. ___
+    
+    - Al ser una suite **multi-plataforma**, los documentos generados en LibreOffice no se pueden abrir en sistemas operativos 
+    diferentes al de origen. ___
+    
+    - El editor que permite trabajar con ecuaciones dentro de esta suite ofimática se llama **Calc**. ___
+    
+    - El programa de presentaciones multimedia de LibreOffice se denomina **Base**. ___
+    
+    - **GNU/Linux** y **MacOS** son dos de los sistemas operativos en los que se puede ejecutar LibreOffice. ___
+    
+    - El término **"multi-plataforma"** significa que el programa solo funciona de manera óptima si se está conectado a una red de servidores local. ___
+
+---
+## A02: Paises que usan LibreOffice (+0,2)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno complete la siguiente tabla:
+
+    :::{table}
+    PAÍS | ¿En donde se emplea LibreOffice? | ¿Número de Instalaciones de LibreOffice? | ¿Para que se emplea LibreOffice?
+    -|-|-|-
+    Francia||||
+    España||||
+    Italia||||
+    Alemania||||
+    Taiwan||||
+    Brasil||||
+    Colombia||||
+    :::
+
+---
+## A03: Herramientas de LibreOffice (+0,2)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno, REALICE un descripción detallada de cada una de las herramientas de LibreOffice.
+
+2. ANALICE los siguientes casos, eliga la mejor herramienta de LibreOffice para cada caso y explique el por qué:
+
+    > **CASO 01**: Un investigador necesita crear fórmulas matemáticas complejas con símbolos avanzados (integrales, matrices) que deben ser interpretadas correctamente por navegadores web. ¿Qué herramienta específica debe usar para generar el código MathML necesario, y por qué es más eficiente usarla como herramienta independiente en lugar de solo dentro de un procesador de textos?
+
+    > **CASO 02**: Una empresa necesita crear diagramas de flujo de procesos industriales donde los nodos deben mantener su posición lógica incluso si se mueven otros elementos, utilizando "Conectores Inteligentes". Además, requieren exportar estos diagramas en formato vectorial (como SVG o WebP) para una página web. ¿Qué herramienta de LibreOffice usaría y por qué?
+
+    > **CASO 03**: Se requiere crear una presentación que incluya no solo diapositivas, sino también efectos de Fontwork, animaciones personalizadas y gráficos técnicos importados directamente de otros componentes de dibujo vectorial. ¿Qué herramienta utilizaría para orquestar este ecosistema de elementos gráficos y multimedia? ¿Por qué?
+
+    > **CASO 04**: Un administrador de sistemas necesita una solución que permita gestionar relaciones entre tablas, realizar consultas SQL (específicamente soporte para ANSI-92) y conectarse a motores externos como PostgreSQL o MySQL. ¿Qué herramienta de la suite debe emplear y cómo se diferencia su interfaz de una simple hoja de cálculo para este propósito?
+
+    > **CASO 05**: Un usuario debe redactar un manual que requiere un estilo de formato coherente, una estructura de capítulos compleja, la inserción de gráficos vectoriales y la capacidad de exportar el resultado final a formatos de lectura digital como EPUB y PDF. ¿Qué herramienta de LibreOffice debería elegir y por qué su capacidad de integración con otros componentes es crítica en este caso?
+
+    > **CASO 06**: Un equipo de contabilidad necesita evaluar la viabilidad de un proyecto financiero. Deben procesar grandes volúmenes de datos usando funciones estadísticas y aplicar el "Gestor de escenarios" para analizar diferentes variables de tipo: ("qué pasaría si"). ¿Por qué esta herramienta debe ser superior a una simple hoja de cálculo básica?
+  
+---
+## A04: Ventajas de LibreOffice (+0,2)
+{bdg-info}`Estructuración`
+
+1. Para cada una de las ventajas de LibreOffice, en su cuaderno responda la siguiente pregunta:
+
+    - Si se implementara LibreOffice en la Institución Educativa, ¿Realmente podríamos **beneficiarnos** de dicha ventaja?
+
+---
+## A05: Examen escrito (+4,0)
+{bdg-danger}`Transferencia`
+
+:TIEMPO: 30 minutos
+:PREGUNTAS: 10
+
+:::{admonition} Posibles preguntas
+1. ¿Cómo se define a LibreOffice desde el punto de vista de su licencia y modelo de desarrollo, y qué implica que sea "código abierto" para el usuario final?
+2. Explique qué significa que LibreOffice sea una suite "multiplataforma" y qué ventajas representa esto para la portabilidad de documentos entre diferentes sistemas operativos.
+3. ¿Cuál es el formato de archivo nativo de LibreOffice y por qué se considera una ventaja frente al "bloqueo de proveedores"?
+4. Mencione tres entidades gubernamentales o académicas mencionadas en el texto que han migrado a LibreOffice y explique brevemente cuál fue la motivación principal de al menos una de ellas.
+5. Si un usuario necesita redactar un informe que incluya texto y gráficos, ¿qué capacidades le ofrece Writer respecto a la exportación de archivos?
+6. ¿Qué función cumple el "Gestor de escenarios" en Calc y por qué es una herramienta clave para la toma de decisiones?
+7. ¿Cómo contribuye la integración con Draw y Math al funcionamiento del programa Impress?
+8. Explique la importancia de los "Conectores Inteligentes" en Draw y cómo facilitan la creación de diagramas.
+9. En cuanto a Base, ¿qué tipos de motores de bases de datos puede manejar y qué permite hacer al usuario respecto a la gestión de consultas y relaciones?
+10. ¿Para qué situaciones específicas es indispensable utilizar Math en lugar de simplemente escribir símbolos en un procesador de textos convencional?
+11. ¿Qué sucede si un usuario intenta abrir un archivo de Draw desde Writer?
+12. ¿En qué consiste la ventaja de "Granularidad" en la configuración de las opciones de LibreOffice?
+13. ¿Qué implicaciones tiene para una organización el soporte de idiomas en LibreOffice?
+14. A diferencia de las suites de pago, ¿cómo garantiza LibreOffice la disponibilidad de funciones avanzadas como la exportación a PDF?
+15. Si una empresa desea disminuir sus gastos en licencias de software privativo, ¿cómo podría LibreOffice ayudarle a alcanzar ese objetivo, basándose en los ejemplos de España o Alemania?
+16. ¿Cómo permite la estructura "abierta y documentada" del formato OpenDocument que los archivos sean leídos incluso por herramientas que no sean parte de la suite LibreOffice?
+17. ¿Por qué se dice que Base facilita la administración de bases de datos relacionales siendo similar a otras aplicaciones populares?
+18. Si usted tuviera que convencer a una institución educativa de migrar a LibreOffice, ¿qué tres ventajas principales usaría como argumentos clave?
+19. En relación con la compatibilidad, ¿qué limitaciones o alcances tiene LibreOffice para trabajar con archivos provenientes de Microsoft Office o formatos como CSV y HTML?
+20. ¿Es posible abrir y editar en LibreOffice archivos creados originalmente en Microsoft Office sin inconvenientes?  
+:::

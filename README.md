@@ -1,2 +1,1 @@
-# sala115
-Libro digital sala 1155
+El presente libro didáctico digital, denominado **aula 115**, es una herramienta utilizada por estudiantes de educación básica y media de la *Institución Educativa John F. Kennedy* en Puerto Boyacá (Colombia), con el propósito de facilitar el *aprendizaje en ofimática* mediante el uso de **software libre**, promoviendo así la productividad, la autonomía e "independencia tecnológica" en el *manejo de la información* del siglo XXI.
