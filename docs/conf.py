@@ -48,10 +48,11 @@ latex_table_style = ['borderless', 'colorrows']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
 html_static_path = ['_static']
 html_title = "aula 115"
-html_logo = './_static/logo_light.png'
+# html_logo = './_static/logo_light.png'
 html_css_files = [
     "css/custom.css",
 ]
@@ -59,30 +60,30 @@ html_css_files = [
 pygments_style = "sphinx"
 pygments_dark_style = "monokai"
 
-# html_theme_options = {
-#     "light_logo": "logo_light.png",
-#     "dark_logo": "logo_dark.png",
-#     "sidebar_hide_name": True,
-#     "light_css_variables": {
-#         "color-guilabel-text": "#FF0000",
-#         "color-brand-primary": "#265787",
-#         "sidebar-caption-font-size": "var(--font-size--normal)",
-#         "toc-font-size": "var(--font-size--small)",
-#         "admonition-font-size": "0.858rem"
-#     },
-# }
+html_theme_options = {
+    "light_logo": "logo_light.png",
+    "dark_logo": "logo_dark.png",
+    "sidebar_hide_name": True,
+    "light_css_variables": {
+        "color-guilabel-text": "#FF0000",
+        "color-brand-primary": "#265787",
+        "sidebar-caption-font-size": "var(--font-size--normal)",
+        "toc-font-size": "var(--font-size--small)",
+        "admonition-font-size": "0.858rem"
+    },
+}
 
 # html_theme_options = {
 #     'logo_only': True,
 # }
 
-html_theme_options = {
-    # if we have a html_logo below, this shows /only/ the logo with no title text
-    "logo_only": True,
-    # Collapse navigation (False makes it tree-like)
-    "collapse_navigation": False,
-    # Remove version and language picker beneath the title
-    "version_selector": False,
-    "language_selector": False,
-    'sticky_navigation': False
-}
+# html_theme_options = {
+#     # if we have a html_logo below, this shows /only/ the logo with no title text
+#     "logo_only": True,
+#     # Collapse navigation (False makes it tree-like)
+#     "collapse_navigation": False,
+#     # Remove version and language picker beneath the title
+#     "version_selector": False,
+#     "language_selector": False,
+#     'sticky_navigation': False
+# }

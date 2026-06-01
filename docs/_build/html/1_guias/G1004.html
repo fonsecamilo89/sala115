@@ -1,539 +1,242 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../genindex.html"><link rel="search" title="Búsqueda" href="../search.html"><link rel="next" title="Guía 1011: OFIMÁTICA (P1)" href="G1011.html"><link rel="prev" title="Guía 1003: REDES (P2)" href="G1003.html">
+        <link rel="prefetch" href="../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../_static/logo_dark.png" as="image">
 
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="es" data-content_root="../">
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guía 1004: OFIMÁTICA (P2) &mdash; aula 115</title>
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+        <title>Guía 1004: MANTENIMIENTO (P2) - aula 115</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=4c9c2d9f" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=e02aa765" />
+    
+    
 
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--normal);
+  --toc-font-size: var(--font-size--small);
+  --admonition-font-size: 0.858rem;
   
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=e2bb6099"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../_static/translations.js?v=f85f4cfb"></script>
-      <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Índice" href="../genindex.html" />
-    <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Guía 1011: Concepto Ofimática (P1)" href="G1011.html" />
-    <link rel="prev" title="Guía 1003: MANTENIMIENTO (P2)" href="G1003.html" /> 
-</head>
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
 
-          
-          
-          <a href="../index.html">
-            
-              <img src="../_static/logo_light.png" class="logo" alt="Logotipo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#utiles-escolares">Útiles escolares</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#porcentaje-de-notas">Porcentaje de notas %</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#equivalencia-calificacion-instruimos">Equivalencia calificación INSTRUIMOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#sello-docente">Sello docente</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-dentro-y-fuera-del-aula">Acceso dentro y fuera del aula</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#modelo-de-almacenamiento-google-workspace">Modelo de almacenamiento Google WorkSpace®</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-al-aula-115-en-contrajornada">Acceso al aula 115 en contrajornada</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-de-estudiantes-al-pc">Acceso de estudiantes al PC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#estructura-carpeta-de-evidencias">Estructura carpeta de evidencias</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#actividades-inicio-de-ano-escolar">Actividades inicio de año escolar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#desempenos">DESEMPEÑOS</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#logica-computacional-8">Lógica computacional 8</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#tecnologia-e-informatica-10">Tecnología e Informática 10</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#ofimatica-10">Ofimática 10</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#ofimatica-11">Ofimática 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#reglas-del-aula-115">Reglas del aula 115</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#prohibiciones">PRØHIBICIONES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#que-pasa-si-se-incumplen-las-reglas">¿Qué pasa si se incumplen las reglas?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#que-pasa-si-el-incumplimiento-es-reiterativo">¿Qué pasa si el incumplimiento es reiterativo?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/descargas.html#institucional">Institucional</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/descargas.html#proyecto-de-grado">Proyecto de grado</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Octavo</span></p>
+<p class="caption" role="heading"><span class="caption-text">Octavo (Lógica computacional)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="G820.html">Guía 820: Planes de refuerzo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G820.html#primero-periodo">PRIMERO PERIODO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#hardware">Hardware</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#software">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#sistema-computacional">Sistema computacional</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#informatica">Informática</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#razonar">Razonar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#logica">Lógica</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#logica-computacional">Lógica computacional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
 </ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G820.html#segundo-periodo">SEGUNDO PERIODO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#datos">Datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#informacion">Información</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#jerarquia-de-datos">Jerarquía de datos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G821.html">Guía 821: Concepto Lógica computacional (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a01-concepto-de-logica-computacional-0-1">A01: Concepto de lógica computacional (+0,1)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-el-hardware">¿Qué es el HARDWARE?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="G821.html#que-es-una-cpu">¿Qué es una CPU?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G821.html#que-es-la-memoria-ram">¿Qué es la MEMORIA RAM?</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-el-software">¿Qué es el SOFTWARE?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-una-sistema-computacional">¿Qué es una SISTEMA COMPUTACIONAL?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-la-informatica">¿Qué es la INFORMÁTICA?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-razonar">¿Qué es RAZONAR?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-la-logica">¿Qué es la LÓGICA?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-logica-computacional">¿Qué es lógica computacional?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a02-hardware-0-3">A02: Hardware (+0,3)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a03-software-0-1">A03: Software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a04-sistema-computacional-0-1">A04: Sistema computacional (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a05-informatica-0-1">A05: Informática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a06-razonamiento-y-logica-0-1">A06: Razonamiento y lógica (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a07-logica-computacional-0-1">A07: Lógica computacional (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a08-examen-escrito-4-0">A08: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G822.html">Guía 822: Jerarquía de datos (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a01-informacion-y-jerarquia-de-datos-0-1">A01: Información y Jerarquía de datos (+0,1)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-son-los-datos">¿Qué son los datos?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-es-la-informacion">¿Qué es la información?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-es-la-jerarquia-de-datos">¿Qué es la Jerarquía de datos?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#bit">bit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#byte-8-bits">Byte (8 bits)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#caracter">Carácter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#dato">Dato</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#registro">Registro</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#tabla">Tabla</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#base-de-datos">Base de datos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a02-datos-vs-informacion-0-1">A02: Datos Vs Información (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a03-jerarquia-de-datos-0-1">A03: Jerarquía de datos (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a04-construccion-de-tablas-0-1">A04: Construcción de tablas (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a05-bases-de-datos-0-5">A05: Bases de datos (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a06-examen-escrito-4-0">A06: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Décimo</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Informática)</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a02-arpanet-0-1">A02: ARPANET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a03-primera-pagina-web-0-1">A03: Primera página web (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a04-primer-navegador-mosaic-0-1">A04: Primer navegador MOSAIC (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a05-origenes-de-la-pc-0-1">A05: Orígenes de la PC (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a06-apple-macintosh-0-1">A06: Apple - Macintosh (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a07-origenes-del-software-0-1">A07: Orígenes del software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a08-unix-linux-0-1">A08: UNIX-LINUX (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a09-windows-0-1">A09: Windows (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a10-linea-de-tiempo-1-0">A10: Línea de tiempo (+1,0)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a11-examen-escrito-3-0">A11: Examen escrito (+3,0)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1002.html">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1003.html">Guía 1003: REDES (P2)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Guía 1004: MANTENIMIENTO (P2)</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1002.html">Guía 1002: REDES (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1003.html">Guía 1003: MANTENIMIENTO (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Guía 1004: OFIMÁTICA (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1011.html">Guía 1011: Concepto Ofimática (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a01-concepto-de-ofimatica-0-1">A01: Concepto de Ofimática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a02-area-de-la-ofimatica-0-1">A02: Área de la ofimática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a03-google-workspace-0-1">A03: Google Workspace (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a04-microsoft-office-0-1">A04: Microsoft Office (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a05-servicio-indicado-0-5">A05: Servicio indicado (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a06-examen-escrito-4-0">A06: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a01-definicion-de-software-0-1">A01: Definición de software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a02-importancia-del-software-libre-0-1">A02: Importancia del software libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a03-ejemplos-de-software-libre-0-1">A03: Ejemplos de software libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a04-relacion-entre-software-libre-software-propietario-y-software-pirata-0-1">A04: Relación entre software libre, software propietario y software pirata (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a05-ahorro-usando-software-libre-0-2">A05: Ahorro($) usando software libre (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a06-el-riesgo-del-software-pirata-0-2">A06: El riesgo del software pirata (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a07-identificacion-de-software-propietario-y-libre-0-1">A07: Identificación de software propietario y libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a08-carta-al-propietario-4-0">A08: Carta al propietario (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1013.html">Guía 1013: LibreOffice (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a01-libreoffice-0-2">A01: LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a02-paises-que-usan-libreoffice-0-2">A02: Paises que usan LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a03-herramientas-de-libreoffice-0-2">A03: Herramientas de LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a04-ventajas-de-libreoffice-0-2">A04: Ventajas de LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a05-examen-escrito-4-0">A05: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Once</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Ofimática)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="G1111.html">Guía 1111: Conocimientos previos (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a01-datos-informacion-y-jerarquia-de-datos-0-1">A01: Datos, información y jerarquía de datos (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a02-relacion-entre-datos-e-informacion-0-2">A02: Relación entre datos e información (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a03-jerarquia-de-datos-0-2">A03: Jerarquía de datos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a04-concepto-de-hardware-ram-y-cpu-0-1">A04: Concepto de hardware (RAM y CPU) (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a05-utilidad-del-hardware-0-2">A05: Utilidad del hardware (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a06-concepto-de-software-0-1">A06: Concepto de software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a07-clasificacion-del-software-0-2">A07: Clasificación del software (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a08-examen-final-4-0">A08: Examen final (+4,0)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1011.html">Guía 1011: OFIMÁTICA (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1112.html">Guía 1112: Diagramas de flujo (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a00-introduccion-0-3">A00: Introducción (+0,3)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a01-diagramas-de-flujo-0-7">A01: Diagramas de flujo (+0,7)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a02-orientaciones-al-extranjero-1-0">A02: Orientaciones al extranjero (+1,0)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a03-orientaciones-seguras-3-0">A03: Orientaciones seguras (+3,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1113.html">Guía 1113: Desarrollo de algoritmos (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a01-que-son-los-algoritmos-0-2">A01: ¿Qué son los algoritmos? (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a02-tipos-del-algoritmos-0-2">A02: Tipos del algoritmos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a03-clasificacion-de-algoritmos-0-2">A03: Clasificación de algoritmos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a04-metodologia-para-desarrollar-un-algoritmo-0-2">A04: Metodología para desarrollar un algoritmo (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a05-algoritmos-4-0">A05: Algoritmos (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">LECTURAS</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Programación)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1001-01.html">L1001-01: Historia de la Informática</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-del-internet-arpanet">Historia del Internet (ARPANET)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-de-la-computacion-personal">Historia de la Computación Personal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-del-software">Historia del Software</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1002-01.html">L1002-01: Redes de datos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#redes-de-datos">Redes de datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#tipos-de-redes">Tipos de redes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#diferencia-entre-una-intranet-e-internet">Diferencia entre una Intranet e INTERNET</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#intranet">Intranet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#internet">INTERNET</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#medios-de-transmision">Medios de transmisión</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#redes-inalambricas">Redes inalámbricas</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#componentes-de-una-red">Componentes de una Red</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#servidor">Servidor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#equipos-cliente">Equipos cliente</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#el-repetidor">El Repetidor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#hub-comunicar-varios-equipos">Hub (comunicar varios equipos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#bridge-puentes-de-red-para-comunicar-segmentos-de-red">Bridge (puentes de red para comunicar segmentos de red)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#switch-hub-bridge">Switch (Hub + Bridge)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#access-point-switch-inalambrico">Access Point (Switch inalámbrico)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#router-para-salir-de-una-red-lan">Router (para salir de una red LAN)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#modem-switch-access-point-router">Modem (Switch + Access Point + Router)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#rack-de-telecomunicaciones">RACK de telecomunicaciones</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#internet-de-las-cosas">Internet de las cosas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#instalacion-de-una-red-de-datos">Instalación de una red de datos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#cableado-estructurado">Cableado estructurado</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#suministro-electrico">Suministro eléctrico</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#hardware">Hardware</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#software">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#acceso-a-internet">Acceso a Internet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#control-y-mantenimiento">Control y mantenimiento</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#servicios-de-red">Servicios de red</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#ssh">SSH</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#dhcp">DHCP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#dns">DNS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#ftp">FTP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#http">HTTP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#https">HTTPS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#smtp-pop">SMTP-POP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#voip">VOIP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#rdp">RDP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#firewall">FIREWALL</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#proxy">PROXY</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#vpn">VPN</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1002-02.html">L1002-02: Ciberseguridad</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-informatica">Seguridad informática</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#ingenieria-social">Ingeniería social</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-en-redes-wifi">Seguridad en redes WIFI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-en-internet-y-redes-de-ordenadores-pentesting">Seguridad en Internet y redes de ordenadores (Pentesting)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-perimetral-monitorizacion-y-defensa-de-redes">Seguridad perimetral, monitorización y defensa de redes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-de-aplicaciones-o-paginas-web">Seguridad de aplicaciones o páginas web</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-de-la-informacion">Seguridad de la información</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-informatica-vs-seguridad-de-la-informacion">Seguridad Informática Vs Seguridad de la Información</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#iso-27001">ISO 27001</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#delitos-informaticos-en-colombia">Delitos informáticos en Colombia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#penas-y-multas-por-delitos-informaticos">Penas y multas por delitos informáticos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#hacking-etico">Hacking ético</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1003-01.html">L1003-01: Mantenimiento</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#que-es-el-mantenimiento">¿Qué es el mantenimiento?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#tipos-de-mantenimiento">Tipos de mantenimiento</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-preventivo-evitar-el-dano">Mantenimiento preventivo (evitar el daño)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../2_lecturas/L1003-01.html#clasificacion-mantenimiento-preventivo">Clasificación mantenimiento preventivo</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-correctivo-el-dano-ocurre">Mantenimiento correctivo (el daño ocurre)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../2_lecturas/L1003-01.html#clasificacion-de-mantenimiento-correctivo">Clasificación de mantenimiento correctivo</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-de-actualizacion">Mantenimiento de actualización</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#eleccion-del-tipo-de-mantenimiento">Elección del tipo de mantenimiento</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1003-02.html">L1003-02: Electricidad y Electrónica</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#que-es-la-electricidad">¿Qué es la Electricidad?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#que-es-la-electronica">¿Qué es la Electrónica?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#electronica-digital">Electrónica digital</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#hardware-libre">Hardware libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#arduino">ARDUINO</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#raspberry-pi">RASPBERRY PI</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1004-01.html">L1004-01: Ofimática y programación</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#programacion">Programación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#desarrollo-de-software">Desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#programadores-vs-desarrolladores">Programadores Vs Desarrolladores</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#tipos-de-desarrollo-de-software">Tipos de desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#proceso-de-desarrollo-de-software">Proceso de desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#tecnologias-usadas-en-el-desarrollo-de-software">Tecnologías usadas en el desarrollo de software</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#sistemas-operativos">Sistemas operativos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#bases-de-datos">Bases de datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#servidor-web">Servidor web</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#entornos-de-ejecucion">Entornos de ejecución</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#framework">Framework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#ide">IDE</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#desarollo-web">Desarollo web</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#lenguajes-de-programacion">Lenguajes de programación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#software-de-aplicacion">Software de aplicación</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1011-01.html">L1011-01: Introducción a la Ofimática</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#que-es-la-ofimatica">¿Qué es la ofimática?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#google-workspace">Google Workspace</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1011-01.html#google-one-ai-plus-19-900-mes-2026">Google ONE - AI PLUS ($19,900/mes) (2026)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#microsoft-office">Microsoft Office</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1011-01.html#microsoft-365-family-459-999-ano-2026">MICROSOFT 365 Family ($459,999/año) (2026)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1012-01.html">L1012-01: Software libre</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#que-es-el-software">¿Qué es el software?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#tipos-de-software">Tipos de software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#clasificacion-de-software">Clasificación de software</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-libre">Software libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#libertades-del-software-libre">4 Libertades del software libre</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#ejemplos-de-software-libre">Ejemplos de software libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#sistema-operativo-gnu-linux-0">Sistema Operativo GNU-LINUX ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#navegador-web-mozilla-firefox-0">Navegador web Mozilla FIREFOX ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#editor-de-imagenes-gimp-0">Editor de imágenes GIMP ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#editor-de-graficos-vectoriales-inkscape-0">Editor de gráficos vectoriales INKSCAPE ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#reproductor-multimedia-vlc-0">Reproductor multimedia VLC ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#suite-de-creacion-3d-blender-0">Suite de creación 3D BLENDER ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#edicion-de-sonido-audacity-0">Edición de sonido Audacity ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#suite-ofimatica-libreoffice-0">Suite ofimática Libreoffice ($0)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-propietario">Software propietariØ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#ejemplos-de-software-propietario">Ejemplos de software propietario</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#sistema-operativo-microsoft-windows-769-999">Sistema operativo Microsoft Windows ($769,999)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#microsoft-office-suite-ofimatica-459-999-ano">Microsoft Office (suite ofimática) ($459,999/año)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#adobe-photoshop-editor-de-imagenes-48-971-mes">Adobe Photoshop (editor de imágenes) ($48,971/mes)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#autocad-software-de-diseno-2-201-999-ano">AutoCAD (software de diseño) ($2,201,999/año)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-pirata">Software PIRATA!!!</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1013-01.html">L1013-01: LibreOffice</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#suite-ofimatica-libreoffice">Suite Ofimática LibreOffice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#entidades-que-usan-libreoffice">Entidades que usan LibreOffice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#herramientas-de-libreoffice">Herramientas de LibreOffice</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-writer-procesador-de-textos">LibreOffice Writer (procesador de textos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-calc-hoja-de-calculo">LibreOffice Calc (hoja de cálculo)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-impress-presentaciones">LibreOffice Impress (presentaciones)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-draw-dibujo-vectorial">LibreOffice Draw (Dibujo vectorial)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-base-bases-de-datos">LibreOffice Base (Bases de datos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-math-editor-de-formulas">LibreOffice Math (Editor de fórmulas)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#ventajas-de-libreoffice">Ventajas de LibreOffice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1111-01.html">L1111-01: Conocimientos previos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#informacion-y-datos">Información y Datos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#datos">Datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#informacion">Información</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#valores-cuantitativos-y-cualitativos">Valores cuantitativos y cualitativos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#jerarquia-de-datos">Jerarquía de datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#hardware">Hardware</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#la-memoria-ram-acceso-rapido-a-los-datos">La memoria RAM (acceso rápido a los datos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#la-cpu-procesa-los-datos">La CPU (procesa los datos)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#software-vs-programa">Software Vs Programa</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1112-01.html">L1112-01: Diagramas de flujo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#operacion">Operación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#limites-de-proceso">Límites de proceso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#punto-de-decision">Punto de decisión</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#conector">Conector</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#direccion-de-flujo">Dirección de flujo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#entrada-manual">Entrada manual</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#documento">Documento</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#base-de-datos">Base de datos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1113-01.html">L1113-01: Algoritmos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#tipos-de-algoritmos">Tipos de algoritmos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmos-cualitativos-informales">Algoritmos cualitativos (informales)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmos-cuantitativos-formales">Algoritmos cuantitativos (formales)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#metodologia-para-desarrollar-un-algoritmo">Metodología para desarrollar un algoritmo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmo-para-ir-al-colegio-ejemplo">Algoritmo para ir al colegio (ejemplo)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-01-analisis-de-requisitos">FASE 01: Análisis de requisitos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-02-diseno-del-algoritmo">FASE 02: Diseño del algoritmo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-03-construccion-del-algoritmo">FASE 03: Construcción del algoritmo</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="G1021.html">Guía 1021: PROGRAMACIÓN (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1022.html">Guía 1022: Datos, Información y Software (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1023.html">Guía 1023: Desarrollo de algoritmos (P1)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">PLANES DE REFUERZO</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html">Plan de refuerzo 1000-01 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-internet">Historia del Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-hardware">Historia del Hardware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-software">Historia del Software</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-02.html">Plan de refuerzo 1000-02 (P2)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html">Plan de refuerzo 1000-05 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-la-ofimatica">¿Qué es la ofimática?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-google-workspace">¿Qué es Google Workspace?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-microsoft-office">¿Qué es Microsoft Office?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-libre">¿Qué es el software libre?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#ejemplos-de-software-libre">Ejemplos de software libre</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-propietario">¿Qué es el software propietario?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#ejemplos-de-software-propietario">Ejemplos de software propietario</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-pirata">¿Qué es el software pirata?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-libreoffice">¿Qué es LibreOffice?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html">Plan de refuerzo 1100-05 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#instruccion">Instrucción</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#hardware">Hardware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#informacion-y-datos">Información y datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#software-vs-programa">Software Vs Programa</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#id1">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#programa">Programa</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="G820.html">Guía 820: Lógica computacional 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1000.html">Guía 1000: Informática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1010.html">Guía 1010: Ofimática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1020.html">Guía 1020: Programación 10</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
 <ul>
@@ -541,46 +244,62 @@
 <li class="toctree-l1"><a class="reference internal" href="../4_referencias/webgrafia.html">Webgrafía</a></li>
 </ul>
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">aula115</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Guía 1004: OFIMÁTICA (P2)</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/1_guias/G1004.md.txt" rel="nofollow"> Ver código fuente de la página</a>
-      </li>
-  </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section class="tex2jax_ignore mathjax_ignore" id="guia-1004-ofimatica-p2">
-<h1>Guía 1004: OFIMÁTICA (P2)<a class="headerlink" href="#guia-1004-ofimatica-p2" title="Link to this heading"></a></h1>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/1_guias/G1004.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1004-mantenimiento-p2">
+<h1>Guía 1004: MANTENIMIENTO (P2)<a class="headerlink" href="#guia-1004-mantenimiento-p2" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 35.0%" />
 <col style="width: 65.0%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><table class="docutils align-default">
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><img alt="escudo" src="../_images/escudo.png" /></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 </td>
-<td><table class="docutils align-left">
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
 <tbody>
 <tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
 <ul class="simple">
@@ -589,23 +308,29 @@
 <li><p><strong>GRADO</strong>: DÉCIMO</p></li>
 <li><p><strong>PERIODO</strong>: 02</p></li>
 <li><p><strong>TIEMPO</strong>: 10 semanas (2 horas / semana)</p></li>
-<li><p><strong>TIEMPO DE TRABAJO</strong>: 6/20 horas</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 8/20 horas</p></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <ul class="simple">
-<li><p><strong>Temática</strong>: Ofimática y Programación.</p></li>
-<li><p><strong>Objetivo de aprendizaje</strong>: Introducir los conceptos relacionados con la temática de ofimática.</p></li>
+<li><p><strong>Temática</strong>: Mantenimiento.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Introducir los conceptos relacionados con la temática de mantenimiento.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
@@ -630,14 +355,14 @@ Criterios de evaluación</label><div class="sd-tab-content docutils">
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
-Recursos (1)</label><div class="sd-tab-content docutils">
+Recursos (0)</label><div class="sd-tab-content docutils">
 <ul class="simple">
-<li><p><a class="reference internal" href="../2_lecturas/L1004-01.html"><span class="std std-doc"><strong>LECTURA:</strong> Ofimática y programación</span></a></p></li>
+<li><p>Esta guía no contiene recursos.</p></li>
 </ul>
 </div>
 </div>
 <section id="mensaje-del-autor">
-<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading"></a></h2>
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
 <blockquote class="pull-quote">
 <div><p>“”</p>
 <p class="attribution">—Camilo Fonseca</p>
@@ -645,78 +370,600 @@ Recursos (1)</label><div class="sd-tab-content docutils">
 </section>
 <hr class="docutils" />
 <section id="a00-introduccion-0-1">
-<h2>A00: Introducción (+0,1)<a class="headerlink" href="#a00-introduccion-0-1" title="Link to this heading"></a></h2>
+<h2>A00: Introducción (+0,1)<a class="headerlink" href="#a00-introduccion-0-1" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
 <ol class="arabic simple">
 <li><p>Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="a01-origenes-de-internet-0-1">
-<h2>A01: Orígenes de INTERNET (+0,1)<a class="headerlink" href="#a01-origenes-de-internet-0-1" title="Link to this heading"></a></h2>
+<section id="a01-mantenimiento-0-1">
+<h2>A01: Mantenimiento (+0,1)<a class="headerlink" href="#a01-mantenimiento-0-1" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
 <ol class="arabic simple">
-<li><p>En su cuaderno, responda las siguientes preguntas:</p></li>
+<li><p>Lea los siguientes conceptos:</p></li>
 </ol>
+<hr class="docutils" />
+<section id="que-es-el-mantenimiento">
+<h3>¿Qué es el mantenimiento?<a class="headerlink" href="#que-es-el-mantenimiento" title="Link to this heading">¶</a></h3>
+<div class="admonition-concepto-de-mantenimiento admonition">
+<p class="admonition-title">Concepto de mantenimiento</p>
+<p>El <strong>mantenimiento</strong> se refiere al conjunto de actividades y procesos destinados a conservar, reparar o mejorar un objeto, sistema o infraestructura. Su objetivo principal es asegurar que un bien funcione adecuadamente y prolongar su vida útil.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/image014.png"><img alt="../_images/image014.png" src="../_images/image014.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Torre de PC</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Los mantenimiento son importantes debido a las siguientes razones:</p>
+<ul class="simple">
+<li><p><strong>Prolongar la vida útil:</strong> Permite mantener los equipos y dispositivos funcionando correctamente durante más tiempo, maximizando la inversión realizada.</p></li>
+<li><p><strong>Prevención de problemas:</strong> Ayuda a identificar y resolver problemas antes de que causen daños mayores como el daño en una persona o pérdida de información sensible.</p></li>
+<li><p><strong>Ahorro económico:</strong> Un mantenimiento adecuado evita costosas reparaciones y reemplazos prematuros de equipos.</p></li>
+<li><p><strong>Seguridad digital:</strong> El mantenimiento incluye aspectos de seguridad informática que protegen contra Malware o pérdidas de información.</p></li>
+<li><p><strong>Eficiencia operativa:</strong> Los equipos bien mantenidos funcionan de manera más eficiente, mejorando la productividad.</p></li>
+</ul>
+<p>Los tipos de mantenimiento son:</p>
+<ul class="simple">
+<li><p>Mantenimiento preventivo.</p></li>
+<li><p>Mantenimiento correctivo.</p></li>
+<li><p>Mantenimiento de actualización.</p></li>
+</ul>
+</div>
 </section>
 <hr class="docutils" />
-<section id="axx-1-preguntas-de-indagacion-0-5">
-<h2>AXX-1: Preguntas de indagación (+0,5)<a class="headerlink" href="#axx-1-preguntas-de-indagacion-0-5" title="Link to this heading"></a></h2>
+<section id="mantenimiento-preventivo-evitar-el-dano">
+<h3>Mantenimiento preventivo (evitar el daño)<a class="headerlink" href="#mantenimiento-preventivo-evitar-el-dano" title="Link to this heading">¶</a></h3>
+<p>Es ideal para:</p>
+<ul class="simple">
+<li><p>Equipos críticos cuya falla causaría grandes pérdidas.</p></li>
+<li><p>Sistemas que requieren alta confiabilidad.</p></li>
+<li><p>Cuando el costo de una falla es mayor que el costo del mantenimiento.</p></li>
+<li><p>Para extender la vida útil de los equipos.</p></li>
+</ul>
+<section id="clasificacion-del-mantenimiento-preventivo">
+<h4>Clasificación del mantenimiento preventivo<a class="headerlink" href="#clasificacion-del-mantenimiento-preventivo" title="Link to this heading">¶</a></h4>
+<p>El mantenimiento preventivo tiene la siguiente clasificación:</p>
+<ul class="simple">
+<li><p><strong>Mantenimiento preventivo programado:</strong> Cuando el mantenimiento se efectúa automáticamente, en función del tiempo de vida transcurrido.</p></li>
+<li><p><strong>Mantenimiento preventivo predictivo:</strong> Es aquel que se realiza cuando se ha ido revisando periódicamente el equipo, de manera que se puede anticipar cuando va a ocurrir un fallo, haciendo en ese momento la respectiva reparación.</p></li>
+<li><p><strong>Mantenimiento preventivo de oportunidad:</strong> Es el mantenimiento que se desarrolla aprovechando que el equipo no está siendo utilizado, por ejemplo, cuando se para la actividad en una temporada de baja demanda. De ese modo, se evita que se tenga que detener la producción en momentos donde sería inoportuno y más costoso. Si el equipo dejara de funcionar en una coyuntura de alta demanda, la empresa tendría que alquilar otra maquinaria o perdería ventas.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="mantenimiento-correctivo-el-dano-ocurre">
+<h3>Mantenimiento correctivo (el daño ocurre)<a class="headerlink" href="#mantenimiento-correctivo-el-dano-ocurre" title="Link to this heading">¶</a></h3>
+<p>Es el mantenimiento que se realiza después de que ocurre una falla para reparar el equipo y devolverlo a su estado operativo.</p>
+<p>Es apropiado para:</p>
+<ul class="simple">
+<li><p>Equipos no críticos cuya falla no afecta significativamente la operación.</p></li>
+<li><p>Cuando el costo de la falla es menor que el costo del mantenimiento preventivo.</p></li>
+<li><p>Componentes con patrones de falla aleatorios.</p></li>
+<li><p>Situaciones donde la reparación es simple y rápida.</p></li>
+</ul>
+<section id="clasificion-del-mantenimiento-correctivo">
+<h4>Clasifición del mantenimiento correctivo<a class="headerlink" href="#clasificion-del-mantenimiento-correctivo" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>Mantenimiento correctivo inmediato:</strong> Es aquel que se realiza en el mismo momento en el que se identifica el daño.</p></li>
+<li><p><strong>Mantenimiento correctivo diferido:</strong> Cuando se detiene la actividad del elemento afectado, pudiendo luego efectuarse la reparación correspondiente.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="mantenimiento-de-actualizacion">
+<h3>Mantenimiento de actualización<a class="headerlink" href="#mantenimiento-de-actualizacion" title="Link to this heading">¶</a></h3>
+<p>Se refiere a las inversiones necesarias frente a la obsolescencia tecnológica. Por ejemplo, puede tratarse de la instalación de un software o hardware que potencia el rendimiento de los ordenadores.</p>
+</section>
+<hr class="docutils" />
+<section id="que-tipo-de-mantenimiento-elegir">
+<h3>¿Qué tipo de mantenimiento elegir?<a class="headerlink" href="#que-tipo-de-mantenimiento-elegir" title="Link to this heading">¶</a></h3>
+<div class="admonition-el-mantenimiento-a-elegir-depende-de-ciertos-factores admonition">
+<p class="admonition-title">El mantenimiento a elegir depende de ciertos factores</p>
+<p>La elección entre un <strong>mantenimiento preventivo</strong>, <strong>correctivo</strong> o de <strong>actualización</strong> depende de factores como:</p>
+<ul class="simple">
+<li><p>Criticidad del equipo.</p></li>
+<li><p>Costos asociados.</p></li>
+<li><p>Impacto de las fallas.</p></li>
+<li><p>Recursos disponibles.</p></li>
+</ul>
+<p>En la práctica, muchas organizaciones implementan una combinación de ambos tipos de mantenimiento según sus necesidades específicas.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a02-electricidad-0-1">
+<h2>A02: Electricidad (+0,1)<a class="headerlink" href="#a02-electricidad-0-1" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
 <ol class="arabic simple">
-<li><p>En su cuaderno, responda las siguientes preguntas:</p></li>
+<li><p>Lea los siguientes conceptos:</p></li>
 </ol>
+<hr class="docutils" />
+<section id="que-es-la-electricidad">
+<h3>¿Qué es la electricidad?<a class="headerlink" href="#que-es-la-electricidad" title="Link to this heading">¶</a></h3>
+<div class="admonition-concepto-de-electricidad admonition">
+<p class="admonition-title">Concepto de electricidad</p>
+<p>La <strong>electricidad</strong> es una forma de energía basada en el movimiento de cargas eléctricas (electrones) a través de materiales conductores. Es un fenómeno físico fundamental que está presente tanto en la naturaleza como en la tecnología moderna. Maneja voltajes y corrientes altos.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/image022.png"><img alt="../_images/image022.png" src="../_images/image022.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Flujo de electrones a través de una PILA</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Las aplicaciones de la electricidad son:</p>
+<ul class="simple">
+<li><p><strong>Funcionamiento de dispositivos:</strong> Todos los dispositivos electrónicos requieren electricidad para funcionar.</p></li>
+<li><p><strong>Procesamiento de datos:</strong> La electricidad permite la transmisión y procesamiento de información digital.</p></li>
+<li><p><strong>Infraestructura tecnológica:</strong> Las redes de comunicación y centros de datos dependen del suministro eléctrico.</p></li>
+<li><p><strong>Innovación:</strong> El desarrollo de nuevas tecnologías está directamente relacionado con avances en el campo eléctrico.</p></li>
+<li><p><strong>Eficiencia energética:</strong> La gestión eficiente de la electricidad es crucial para la sostenibilidad tecnológica.</p></li>
+</ul>
+<blockquote>
+<div><p>La <strong>electricidad</strong> se enfoca en la generación, transmisión y distribución de energía y trabaja principalmente con corriente alterna (AC).</p>
+</div></blockquote>
+<p>Algunos ejemplos de la electricidad son las <em>instalaciones eléctricas</em>, <em>motores eléctricos</em> y los <em>transformadores</em>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/image032.png"><img alt="../_images/image032.png" src="../_images/image032.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Motor eléctrico</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Los componentes de la electricidad son:</p>
+<ul class="simple">
+<li><p><strong>Conductores:</strong> Materiales que permiten el flujo de corriente eléctrica</p></li>
+<li><p><strong>Aislantes:</strong> Materiales que impiden el paso de la corriente eléctrica</p></li>
+<li><p><strong>Interruptores:</strong> Dispositivos para abrir o cerrar circuitos eléctricos</p></li>
+<li><p><strong>Fusibles:</strong> Dispositivos de protección contra sobre-corrientes</p></li>
+<li><p><strong>Transformadores:</strong> Modifican los niveles de voltaje</p></li>
+<li><p><strong>Generadores:</strong> Producen energía eléctrica</p></li>
+<li><p><strong>Motores:</strong> Convierten energía eléctrica en energía mecánica</p></li>
+<li><p><strong>Tableros eléctricos:</strong> Dispositivos de distribución y control</p></li>
+</ul>
+</section>
 </section>
 <hr class="docutils" />
-<section id="axx-analisis-de-reflexion-4-0">
-<h2>AXX: Análisis de reflexión (+4,0)<a class="headerlink" href="#axx-analisis-de-reflexion-4-0" title="Link to this heading"></a></h2>
+<section id="a03-electronica-0-1">
+<h2>A03: Electrónica (+0,1)<a class="headerlink" href="#a03-electronica-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos:</p></li>
+</ol>
+<hr class="docutils" />
+<section id="que-es-la-electronica">
+<h3>¿Qué es la electrónica?<a class="headerlink" href="#que-es-la-electronica" title="Link to this heading">¶</a></h3>
+<div class="admonition-concepto-de-electronica admonition">
+<p class="admonition-title">Concepto de electrónica</p>
+<p>La electrónica se ocupa del control del flujo de electrones a menor escala. Maneja voltajes y corrientes más pequeños.</p>
+</div>
+<blockquote>
+<div><p>La <strong>electrónica</strong> se enfoca en el procesamiento de señales e información y trabaja principalmente con corriente continua (DC).</p>
+</div></blockquote>
+<p>Algunos ejemplos de la electrónica son las <em>computadoras</em>, <em>celulares</em> y <em>circuitos integrados</em>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/image042.png"><img alt="../_images/image042.png" src="../_images/image042.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Microprocesador</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Los componentes de la electrónica son:</p>
+<ul class="simple">
+<li><p><strong>Resistencias:</strong> Controlan el flujo de corriente</p></li>
+<li><p><strong>Capacitores:</strong> Almacenan carga eléctrica</p></li>
+<li><p><strong>Inductores:</strong> Almacenan energía en campo magnético</p></li>
+<li><p><strong>Diodos:</strong> Permiten el flujo de corriente en una dirección</p></li>
+<li><p><strong>Transistores:</strong> Amplifican o conmutan señales</p></li>
+<li><p><strong>Circuitos integrados:</strong> Combinan múltiples componentes</p></li>
+<li><p><strong>Sensores:</strong> Detectan cambios en el entorno</p></li>
+<li><p><strong>Micro-controladores:</strong> Procesan señales y ejecutan programas</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="electronica-digital">
+<h3>Electrónica digital<a class="headerlink" href="#electronica-digital" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/image052.png"><img alt="../_images/image052.png" src="../_images/image052.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Elementos electrónica digital</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La <em>electrónica digital</em> es una rama de la electrónica que se enfoca en el procesamiento de señales y datos utilizando señales discretas, generalmente representadas como combinaciones de ceros y unos (bits).</p>
+<p>A diferencia de la <em>electrónica analógica</em>, que trabaja con señales continuas, la <em>electrónica digital</em> opera con información en formato digital, lo que la hace especialmente adecuada para el procesamiento, almacenamiento y transmisión de información de manera precisa y confiable.</p>
+<p>Los elementos de la electrónica digital son:</p>
+<ul class="simple">
+<li><p><strong>BITS:</strong> El bit es la unidad más básica de información en electrónica digital y puede tener dos valores: 0 o 1. Los bits se utilizan para representar información binaria, como números, caracteres, imágenes, etc.</p></li>
+<li><p><strong>Compuertas lógicas:</strong> Las compuertas lógicas son circuitos electrónicos que realizan operaciones lógicas en señales binarias. Las compuertas lógicas más comunes incluyen: AND, OR, NOT y XOR</p></li>
+<li><p><strong>Circuitos de combinación:</strong> Estos circuitos están formados por compuertas lógicas interconectadas y no tienen memoria. Su salida depende únicamente de las entradas en ese momento.</p></li>
+<li><p><strong>Circuitos secuenciales:</strong>   A diferencia de los circuitos de combinación, los circuitos secuenciales tienen memoria. Utilizan elementos como flip-flops y registros para almacenar información y mantener un estado interno. Ejemplos de circuitos secuenciales incluyen contadores y máquinas de estados finitos.</p></li>
+<li><p><strong>Flip-flops:</strong> Los flip-flops son dispositivos de almacenamiento que contienen un solo bit y se utilizan para mantener el estado en circuitos secuenciales. Los tipos más comunes de flip-flops incluyen el flip-flop D, el flip-flop T, el flip-flop JK y el flip-flop SR.</p></li>
+<li><p><strong>Multiplexores y Demultiplexores:</strong> Los (multi-plexores) son utilizados para seleccionar una de varias entradas y enrutarla a una sola salida. Los demultiplexores hacen lo contrario, tomando una entrada y seleccionando una de varias salidas posibles.</p></li>
+<li><p><strong>Decodificadores y Codificadores:</strong> Los decodificadores se utilizan para convertir una entrada binaria en una selección de una de varias salidas posibles. Los codificadores hacen lo contrario, convierten una selección en una representación binaria.</p></li>
+<li><p><strong>Contadores:</strong>  Los contadores son circuitos secuenciales que generan una secuencia de números binarios en respuesta a un reloj de entrada. Se utilizan en una variedad de aplicaciones, como la medición del tiempo y la creación de divisores de frecuencia.</p></li>
+<li><p><strong>Memorias:</strong> Las memorias digitales se utilizan para almacenar datos en sistemas digitales. Esto puede incluir RAM (memoria de acceso aleatorio) para almacenamiento temporal y ROM (memoria de solo lectura) para almacenamiento permanente. También existen tipos de memoria intermedios, como las memorias Flash.</p></li>
+<li><p><strong>Convertidores Analógico-Digitales (ADC) y Digitales-Analógicos (DAC):</strong> Estos dispositivos permiten la conversión de señales entre dominios analógicos y digitales. Los ADC convierten señales analógicas en digitales, mientras que los DAC hacen lo contrario.</p></li>
+<li><p><strong>Puertos de Entrada/Salida (E/S):</strong> Estos son interfaces que permiten que un sistema digital se comunique con el mundo exterior, ya sea para recibir datos (E/S de entrada) o enviar datos (E/S de salida).</p></li>
+<li><p><strong>Micro-controladores y Micro-procesadores:</strong> Estos son dispositivos complejos que incorporan CPU (unidad central de procesamiento), memoria y periféricos en un solo chip. Se utilizan en una gran variedad de aplicaciones, desde electrodomésticos hasta sistemas embebidos.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="diferencia-entre-microprocesador-y-microcontrolador">
+<h3>Diferencia entre microprocesador y microcontrolador<a class="headerlink" href="#diferencia-entre-microprocesador-y-microcontrolador" title="Link to this heading">¶</a></h3>
+<div class="hint admonition">
+<p class="admonition-title">Un micro-procesador requiere periféricos para funcionar. Un micro-controlador es un elemento completo</p>
+<p>Un <strong>micro-procesador</strong> es un elemento que realiza operaciones lógico aritméticas. No dispone de entradas y salidas como un <strong>micro-controlador</strong>. Requiere de más periféricos adicionales para funcionar, como memorias o controladores de bus. Sin embargo, son más veloces al realizar estas operaciones que un <strong>micro-controlador</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/image042.png"><img alt="../_images/image042.png" src="../_images/image042.png" style="width: 320px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Microprocesador</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Un <strong>micro-controlador</strong> es un circuito integrado compuesto de entradas salidas, memoria y unidades lógico aritméticas. Son en sí, un elemento completo y funcional para realizar operaciones digitales. Comparados con un micro-procesador, los micro-controladores son más “lentos” dado que realizan menos instrucciones por segundo.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/image062.png"><img alt="../_images/image062.png" src="../_images/image062.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Microcontrolador</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="hardware-libre">
+<h3>Hardware libre<a class="headerlink" href="#hardware-libre" title="Link to this heading">¶</a></h3>
+<p>El <strong>hardware libre</strong> son los dispositivos cuyas especificaciones y diagramas son de acceso público, de manera que cualquiera puede replicarlos. Esto quiere decir que Arduino ofrece las bases <strong>para que cualquier otra persona o empresa pueda crear sus propias placas</strong>, pudiendo ser diferentes entre ellas pero igualmente funcionales al partir de la misma base.</p>
+<section id="arduino">
+<h4>ARDUINO<a class="headerlink" href="#arduino" title="Link to this heading">¶</a></h4>
+<div class="admonition-orientado-a-micro-controladores admonition">
+<p class="admonition-title">Orientado a micro-controladores</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/image072.png"><img alt="../_images/image072.png" src="../_images/image072.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Placa ARDUINO</span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Arduino</strong> es una plataforma de creación de electrónica de código abierto, la cual está basada en hardware y software libre, flexible y fácil de utilizar para los creadores y desarrolladores.</p>
+<p>Esta plataforma permite crear diferentes tipos de micro-controladores de una sola placa a los que la comunidad de creadores puede darles diferentes tipos de uso.</p>
+<p>Los <strong>micro-controladores</strong> son circuitos integrados en los que se pueden grabar instrucciones, las cuales usted escribe con el lenguaje de programación que se utiliza en el entorno <strong>Arduino IDE</strong>. Estas instrucciones permiten crear programas que interactúan con los circuitos de la placa.</p>
+<p><strong>Arduino</strong> posee lo que se llama una interfaz de entrada, que es una conexión en la que se puede conectar en la placa diferentes tipos de periféricos. La información de estos periféricos que usted conecte se trasladará al micro-controlador, el cual se encargará de procesar los datos que le lleguen a través de ellos.</p>
+<p>El tipo de periféricos que usted pueda utilizar para enviar datos al micro-controlador depende en gran medida de qué uso le esté pensando dar. Pueden ser:</p>
+<ul class="simple">
+<li><p>Cámaras para obtener imágenes</p></li>
+<li><p>Teclados para introducir datos</p></li>
+<li><p>Diferentes tipos de sensores.</p></li>
+</ul>
+<p>También cuenta con una interfaz de salida, que es la que se encarga de llevar la información que se ha procesado en el Arduino a otros periféricos. Estos periféricos pueden ser:</p>
+<ul class="simple">
+<li><p>Pantallas</p></li>
+<li><p>Altavoces en los que reproducir los datos procesados</p></li>
+<li><p>Otras placas o controladores.</p></li>
+</ul>
+</div>
+</section>
+<section id="raspberry-pi">
+<h4>Raspberry PI<a class="headerlink" href="#raspberry-pi" title="Link to this heading">¶</a></h4>
+<div class="admonition-orientado-a-microprocesadores admonition">
+<p class="admonition-title">Orientado a microprocesadores</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/image082.png"><img alt="../_images/image082.png" src="../_images/image082.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Placa RASPBERRY PI 5</span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Una <strong>Raspberry PI</strong> es un <strong>ordenador</strong> del tamaño de una tarjeta de crédito. Consiste en una placa base que soporta distintos componentes de un ordenador como un micro-procesador ARM de hasta 1500 MHz, un chip gráfico y una memoria RAM de hasta 8 GB.</p>
+<p>Gracias a sus puertos y entradas, permite conectar dispositivos periféricos. Por ejemplo:</p>
+<ul class="simple">
+<li><p>Una pantalla táctil.</p></li>
+<li><p>Un teclado e incluso un televisor.</p></li>
+</ul>
+<p>Contiene un procesador gráfico VideoCoreIV, con lo que permite la reproducción de vídeo “incluso en alta definición”. Permite la conexión a la red a través del puerto de Ethernet, y algunos modelos permiten conexión Wifi y Bluetooth. Consta de una ranura SD que permite instalar (a través de una tarjeta microSD) sistemas operativos libres basados en LINUX.</p>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a04-importancia-de-los-mantenimientos-0-3">
+<h2>A04: Importancia de los mantenimientos (+0,3)<a class="headerlink" href="#a04-importancia-de-los-mantenimientos-0-3" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Dibuje la siguiente pirámide en su cuaderno. Divídala por secciones y de menor a mayor coloque (según su criterio) 5 razones del por que son importantes los mantenimientos. La base de la pirámide es la razón menos importante.</p></li>
+</ol>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/image092.png"><img alt="../_images/image092.png" src="../_images/image092.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Nivel de importancia</span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>En su cuaderno escriba los siguientes casos, luego especifique que tipo de mantenimiento haría por cada caso y explique por qué:</p></li>
+</ol>
+<blockquote>
+<div><p><strong>CASO 01:</strong> <em>“El lote de equipos de cómputo que recién llegaron a la empresa es de la misma tecnología del lote de equipos anteriores. Serán asignados a las oficinas de secretaría y tesorería. La última vez en que fallaron los equipos, los funcionarios trabajaron con su celular. Ese día al final entregamos el pedido al cliente a tiempo”</em>.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 02:</strong> <em>“La máquina de <strong>torno</strong> llegó hace dos días y nada que se ha puesto en <strong>producción</strong>. Estamos perdiendo <strong>$6,000,000</strong> al día. Este rublo es considerado <strong>crítico</strong>. Se espera que la máquina esté en producción a más tardar en tres días y garantizar que funcione 24/7”</em>.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 03:</strong> <em>“Este año tampoco llegaron computadoras nuevas al colegio. Así que tenemos que volver a usar los equipos obsoletos de hace 8 años. Necesitamos la ayuda de los estudiantes para que cuiden estos equipos. Asimismo, para extender la vida útil de los equipos, será necesario instalar el sistema operativo <strong>LINUX</strong>”</em>.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a05-electricidad-vs-electronica-0-3">
+<h2>A05: Electricidad Vs Electrónica (+0,3)<a class="headerlink" href="#a05-electricidad-vs-electronica-0-3" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Responda las siguientes preguntas en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿Cómo funciona la electricidad?</p></li>
+<li><p>¿De que forma se transmite la electricidad?</p></li>
+</ul>
+</li>
+<li><p>Describa y dibuje en su cuaderno 10 dispositivos electrónicos, luego por cada uno responda:</p>
+<ul class="simple">
+<li><p>¿Que tocaría hacer si no existiera dicho dispositivo electrónico?</p></li>
+</ul>
+</li>
+<li><p>Consulte en INTERNET qué es un <strong>PANEL SOLAR</strong> y luego escríba la información en su cuaderno.</p></li>
+<li><p>Consulte en INTERNET los <strong>precios de compra e instalación de paneles solares</strong> en el municipio. Luego escriba la información consultada en el cuaderno. (También escribir los enlaces a la página web donde encontró la información).</p></li>
+<li><p>Complete la siguiente tabla en su cuaderno:</p></li>
+</ol>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Característica</p></th>
+<th class="head"><p>Electricidad</p></th>
+<th class="head"><p>Electrónica</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Definición</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Aplicaciones</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Componentes</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="a06-analisis-y-reflexion-4-0">
+<h2>A06: Análisis y reflexión (+4,0)<a class="headerlink" href="#a06-analisis-y-reflexion-4-0" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <dl class="myst field-list simple">
 <dt class="field-odd">TIEMPO<span class="colon">:</span></dt>
-<dd class="field-odd"><p>30 minutos</p>
+<dd class="field-odd"><p>59 minutos.</p>
 </dd>
 <dt class="field-even">PREGUNTAS<span class="colon">:</span></dt>
-<dd class="field-even"><p>10</p>
+<dd class="field-even"><ol class="arabic simple" start="10">
+<li></li>
+</ol>
+</dd>
+<dt class="field-odd">OBJETIVO<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Identificar qué le llamó la atención de la temática de <strong>Mantenimiento</strong>.</p>
 </dd>
 </dl>
-<div class="admonition-posibles-preguntas admonition">
-<p class="admonition-title">posibles preguntas</p>
+<ul class="simple">
+<li><p>En una hoja al final de su cuaderno, desarrolle un texto reflexivo utilizando las siguientes preguntas como guía para estructurar su escrito:</p></li>
+</ul>
+<div class="admonition-preguntas-de-reflexion admonition">
+<p class="admonition-title">Preguntas de reflexión</p>
 <ol class="arabic simple">
-<li></li>
+<li><p>En el mantenimiento, ¿se ve más como alguien que planifica todo para que nada falle (preventivo) o como la persona que llega a salvar el día cuando algo ya se rompió (correctivo)? (¿Por qué?)</p></li>
+<li><p>¿Le parece valioso aprender a revisar un equipo periódicamente para predecir cuándo va a fallar antes de que ocurra un desastre? (¿Por qué?)</p></li>
+<li><p>¿Le entusiasma más la idea de trabajar con grandes energías, motores y voltajes altos (electricidad), o prefiere el mundo detallado de procesar información con voltajes pequeños (electrónica)? (¿Por qué?)</p></li>
+<li><p>¿Le parece interesante que toda la tecnología actual funcione mediante la combinación de ceros y unos para que sea precisa y confiable? (¿Por qué?)</p></li>
+<li><p>Al ver un dispositivo electrónico o eléctrico por dentro, ¿siente curiosidad de entender qué función cumplen componentes como las resistencias, los transistores o los diodos? (¿Por qué?)</p></li>
+<li><p>¿Le agrada la idea del hardware libre, donde usted puede ver los planos de un invento para aprender de él o incluso mejorarlo? (¿Por qué?)</p></li>
+<li><p>¿Le motiva aprender a escribir instrucciones para que un cerebro electrónico (micro-controlador) interactúe con el mundo físico y no se quede solo dentro de una pantalla? (¿Por qué?)</p></li>
+<li><p>¿Le genera curiosidad saber por qué un micro-procesador es tan veloz pero un micro-controlador es más práctico para realizar tareas por sí solo? (¿Por qué?)</p></li>
+<li><p>¿Aceptaría el reto de configurar su propio ordenador del tamaño de una tarjeta de crédito e instalar sistemas operativos como Linux? (¿Por qué?)</p></li>
+<li><p>¿Le llama la atención entender temáticas relacionadas con el hardware libre (ARDUINO o Raspberry PI) (¿Por qué?)</p></li>
 </ol>
 </div>
 </section>
 </section>
 
-
-           </div>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G1011.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 1011: OFIMÁTICA (P1)</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1003.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1003: REDES (P2)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="G1003.html" class="btn btn-neutral float-left" title="Guía 1003: MANTENIMIENTO (P2)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="G1011.html" class="btn btn-neutral float-right" title="Guía 1011: Concepto Ofimática (P1)" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1004: MANTENIMIENTO (P2)</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li><a class="reference internal" href="#a01-mantenimiento-0-1">A01: Mantenimiento (+0,1)</a><ul>
+<li><a class="reference internal" href="#que-es-el-mantenimiento">¿Qué es el mantenimiento?</a></li>
+<li><a class="reference internal" href="#mantenimiento-preventivo-evitar-el-dano">Mantenimiento preventivo (evitar el daño)</a><ul>
+<li><a class="reference internal" href="#clasificacion-del-mantenimiento-preventivo">Clasificación del mantenimiento preventivo</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mantenimiento-correctivo-el-dano-ocurre">Mantenimiento correctivo (el daño ocurre)</a><ul>
+<li><a class="reference internal" href="#clasificion-del-mantenimiento-correctivo">Clasifición del mantenimiento correctivo</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mantenimiento-de-actualizacion">Mantenimiento de actualización</a></li>
+<li><a class="reference internal" href="#que-tipo-de-mantenimiento-elegir">¿Qué tipo de mantenimiento elegir?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a02-electricidad-0-1">A02: Electricidad (+0,1)</a><ul>
+<li><a class="reference internal" href="#que-es-la-electricidad">¿Qué es la electricidad?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a03-electronica-0-1">A03: Electrónica (+0,1)</a><ul>
+<li><a class="reference internal" href="#que-es-la-electronica">¿Qué es la electrónica?</a></li>
+<li><a class="reference internal" href="#electronica-digital">Electrónica digital</a></li>
+<li><a class="reference internal" href="#diferencia-entre-microprocesador-y-microcontrolador">Diferencia entre microprocesador y microcontrolador</a></li>
+<li><a class="reference internal" href="#hardware-libre">Hardware libre</a><ul>
+<li><a class="reference internal" href="#arduino">ARDUINO</a></li>
+<li><a class="reference internal" href="#raspberry-pi">Raspberry PI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a04-importancia-de-los-mantenimientos-0-3">A04: Importancia de los mantenimientos (+0,3)</a></li>
+<li><a class="reference internal" href="#a05-electricidad-vs-electronica-0-3">A05: Electricidad Vs Electrónica (+0,3)</a></li>
+<li><a class="reference internal" href="#a06-analisis-y-reflexion-4-0">A06: Análisis y reflexión (+4,0)</a></li>
+</ul>
+</li>
+</ul>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Derechos de autor 2026, Camilo Fonseca.</p>
-  </div>
-
-  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+          </div>
         </div>
       </div>
-    </section>
+      
+      
+    </aside>
   </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script> 
-
-</body>
+</div><script src="../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
 </html>

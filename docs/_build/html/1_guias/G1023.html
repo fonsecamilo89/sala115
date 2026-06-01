@@ -1,0 +1,1193 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../genindex.html"><link rel="search" title="Búsqueda" href="../search.html"><link rel="next" title="Guía 820: Lógica computacional 8" href="G820.html"><link rel="prev" title="Guía 1022: Datos, Información y Software (P1)" href="G1022.html">
+        <link rel="prefetch" href="../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../_static/logo_dark.png" as="image">
+
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+        <title>Guía 1023: Desarrollo de algoritmos (P1) - aula 115</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=e02aa765" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--normal);
+  --toc-font-size: var(--font-size--small);
+  --admonition-font-size: 0.858rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Octavo (Lógica computacional)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Informática)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1002.html">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1003.html">Guía 1003: REDES (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1004.html">Guía 1004: MANTENIMIENTO (P2)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Ofimática)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="G1011.html">Guía 1011: OFIMÁTICA (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Programación)</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="G1021.html">Guía 1021: PROGRAMACIÓN (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1022.html">Guía 1022: Datos, Información y Software (P1)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Guía 1023: Desarrollo de algoritmos (P1)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PLANES DE REFUERZO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="G820.html">Guía 820: Lógica computacional 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1000.html">Guía 1000: Informática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1010.html">Guía 1010: Ofimática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1020.html">Guía 1020: Programación 10</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../4_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/1_guias/G1023.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1023-desarrollo-de-algoritmos-p1">
+<h1>Guía 1023: Desarrollo de algoritmos (P1)<a class="headerlink" href="#guia-1023-desarrollo-de-algoritmos-p1" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="escudo" src="../_images/escudo.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
+<ul class="simple">
+<li><p><strong>DOCENTE</strong>: Julian Camilo Fonseca Romero</p></li>
+<li><p><strong>ASIGNATURA</strong>: Ofimática</p></li>
+<li><p><strong>GRADO</strong>: ONCE</p></li>
+<li><p><strong>PERIODO</strong>: 01</p></li>
+<li><p><strong>TIEMPO</strong>: 10 semanas (4 horas / semana)</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 20/40 horas</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Objetivo</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Temática</strong>: Desarrollo de algoritmos.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Desarrollar la capacidad de abstracción y lógica algorítmica mediante la representación gráfica de procesos, permitiéndole modelar soluciones secuenciales y ordenadas a problemas de la vida cotidiana.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Orientaciones curriculares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Componente</strong>: Solución de problemas con T&amp;I.</p></li>
+<li><p><strong>Competencia</strong>: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Criterios de evaluación</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Actividades desarrolladas en su totalidad.</p></li>
+<li><p>Participación en clase.</p></li>
+<li><p>Explicación clara de conceptos.</p></li>
+<li><p>Argumentación de ideas.</p></li>
+<li><p>Cumplimiento de las reglas del aula.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Recursos (0)</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>La presente guía no contiene recursos.</p></li>
+</ul>
+</div>
+</div>
+<section id="mensaje-del-autor">
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
+<blockquote class="pull-quote">
+<div><p>“Entender cómo funciona el mundo actual requiere aprender a pensar de forma organizada. Esta guía invita a usar el desarrollo de algoritmos como una herramienta para abstraer y modelar soluciones. Al visualizar sus ideas, usted podrá comparar distintas rutas lógicas para un mismo problema, evaluando sus beneficios y desafíos.”</p>
+<p class="attribution">—Camilo Fonseca</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a00-introduccion-0-2">
+<h2>A00: Introducción (+0,2)<a class="headerlink" href="#a00-introduccion-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
+<ol class="arabic simple">
+<li><p>TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>LEA el <strong>mensaje del autor</strong> y en su cuaderno con sus palabras responda:</p>
+<ul class="simple">
+<li><p>¿Qué es abstracción?</p></li>
+<li><p>¿Qué es modelar una solución?</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a01-diagramas-de-flujo">
+<h2>A01: Diagramas de flujo<a class="headerlink" href="#a01-diagramas-de-flujo" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos relacionados con diagramas de flujo.</p></li>
+</ol>
+<hr class="docutils" />
+<section id="que-es-un-diagrama-de-flujo">
+<h3>¿Qué es un diagrama de flujo?<a class="headerlink" href="#que-es-un-diagrama-de-flujo" title="Link to this heading">¶</a></h3>
+<p><a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> Un diagrama de flujo es un <strong>esquema gráfico</strong> donde se muestra el paso a paso para cumplir un objetivo.</p>
+<p>Los diagramas de flujo usados en informática, son útiles porque ayudan a los programadores a organizar y visualizar el código haciendo más fácil encontrar y corregir errores.</p>
+</section>
+<hr class="docutils" />
+<section id="tipos-de-diagramas-de-flujo">
+<h3>Tipos de diagramas de flujo<a class="headerlink" href="#tipos-de-diagramas-de-flujo" title="Link to this heading">¶</a></h3>
+<p>A continuación se explican los símbolos que componen los diagramas de flujo del estándar (ANSI/ISO):</p>
+<section id="operacion">
+<h4>Operación<a class="headerlink" href="#operacion" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/image019.png"><img alt="../_images/image019.png" src="../_images/image019.png" style="width: 250px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Acción o Instrucción</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Se usa para describir cualquier acción o instrucción. En el interior se escribe una descripción de alguna acción o instrucción a ejecutar.</p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué es una instrucción?</p>
+<p>Una <strong>instrucción</strong> es una orden o indicación que se da para realizar una acción específica. Puede estar presente en distintos ámbitos. Por ejemplo:</p>
+<ul class="simple">
+<li><p><strong>Una instrucción de educación:</strong> Indicaciones que un profesor da a los estudiantes sobre cómo realizar una tarea o actividad.</p></li>
+<li><p><strong>Instrucciones de programación:</strong> Son comandos que le indican a una computadora qué hacer. Las instrucciones son parte del código fuente de un programa.</p></li>
+<li><p><strong>Instrucciones de cocina:</strong> Son pasos a seguir para una receta.</p></li>
+<li><p><strong>Instrucciones técnicas:</strong> Guías que explican cómo usar o ensamblar un producto. También aplica en el software.</p></li>
+</ul>
+<blockquote>
+<div><p>Reglas para dar buenas instrucciones</p>
+<ul class="simple">
+<li><p><strong>CLARIDAD:</strong> Ayudan a entender qué se espera hacer.</p></li>
+<li><p><strong>EFICIENCIA:</strong> Permiten realizar tareas de manera correcta y rápida.</p></li>
+<li><p><strong>SEGURIDAD:</strong> En ciertos contextos, como el uso de maquinaria, las instrucciones son vitales para evitar accidentes.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</section>
+<section id="limites-de-proceso">
+<h4>Límites de proceso<a class="headerlink" href="#limites-de-proceso" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/image027.png"><img alt="../_images/image027.png" src="../_images/image027.png" style="width: 250px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Inicio - Fin</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Indica el inicio (círculo blanco) y final (círculo negro) del algoritmo.</p>
+</section>
+<section id="punto-de-decision">
+<h4>Punto de decisión<a class="headerlink" href="#punto-de-decision" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/image036.png"><img alt="../_images/image036.png" src="../_images/image036.png" style="width: 150px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Condicional</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Denota que en este punto se toma una decisión. Las únicas posibles opciones son SI/NO.</p>
+</section>
+<section id="conector">
+<h4>Conector<a class="headerlink" href="#conector" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/image044.png"><img alt="../_images/image044.png" src="../_images/image044.png" style="width: 150px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Conexión</span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Señala que la salida de un proceso/algoritmo, puede ser la entrada de otro proceso.</p>
+</section>
+<section id="direccion-de-flujo">
+<h4>Dirección de flujo<a class="headerlink" href="#direccion-de-flujo" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/image054.png"><img alt="../_images/image054.png" src="../_images/image054.png" style="width: 150px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dirección</span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Denota la dirección y el orden de los pasos del proceso/algoritmo.</p>
+</section>
+<section id="entrada-manual">
+<h4>Entrada manual<a class="headerlink" href="#entrada-manual" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/image064.png"><img alt="../_images/image064.png" src="../_images/image064.png" style="width: 150px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Entrada</span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Permite una entrada manual del usuario para ser procesada en el algoritmo.</p>
+</section>
+<section id="documento">
+<h4>Documento<a class="headerlink" href="#documento" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id11">
+<a class="reference internal image-reference" href="../_images/image074.png"><img alt="../_images/image074.png" src="../_images/image074.png" style="width: 150px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Documento</span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Documento o registro generado en el proceso/algoritmo.</p>
+</section>
+<section id="base-de-datos">
+<h4>Base de datos<a class="headerlink" href="#base-de-datos" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id12">
+<a class="reference internal image-reference" href="../_images/image084.png"><img alt="../_images/image084.png" src="../_images/image084.png" style="width: 120px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Base de datos</span><a class="headerlink" href="#id12" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Conjunto de tablas donde se retiene la información. En espera que se cumplan otras condiciones para continuar con el proceso/algoritmo.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a02-algoritmos">
+<h2>A02: Algoritmos<a class="headerlink" href="#a02-algoritmos" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos relacionados con la temática de algoritmos.</p></li>
+</ol>
+<hr class="docutils" />
+<section id="que-es-una-algoritmo">
+<h3>¿Qué es una algoritmo?<a class="headerlink" href="#que-es-una-algoritmo" title="Link to this heading">¶</a></h3>
+<div class="admonition-los-algoritmos-son-utiles-para-resolver-problemas admonition">
+<p class="admonition-title">Los algoritmos son útiles para resolver problemas</p>
+<p><a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> Un algoritmo es un conjunto de <strong>instrucciones</strong> que le dicen a un ser humano COMO REALIZAR una tarea específica, dichas instrucciones pueden estar escritas en código o lenguaje natural.</p>
+<p>Un algoritmo puede ser expresado con palabras o números.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="tipos-de-algoritmos">
+<h3>Tipos de algoritmos<a class="headerlink" href="#tipos-de-algoritmos" title="Link to this heading">¶</a></h3>
+<p>Un algoritmo es cualquier actividad o evento con inicio y final, que tenga una serie de pasos lógicos para lograr su ejecución. Y estos suelen ser representados mediante diagramas de flujo.</p>
+<p>Existen dos tipos de algoritmos:</p>
+<ul class="simple">
+<li><p>Algoritmos cualitativos (informales)</p></li>
+<li><p>Algoritmos cuantitativos (formales)</p></li>
+</ul>
+<section id="algoritmos-cualitativos-informales">
+<h4>Algoritmos cualitativos (informales)<a class="headerlink" href="#algoritmos-cualitativos-informales" title="Link to this heading">¶</a></h4>
+<p>No requieren de cálculos numéricos para su ejecución. En su lugar, se deben ejecutar secuencias lógicas. Por ejemplo: las instrucciones para ensamblar un artefacto.</p>
+</section>
+<section id="algoritmos-cuantitativos-formales">
+<h4>Algoritmos cuantitativos (formales)<a class="headerlink" href="#algoritmos-cuantitativos-formales" title="Link to this heading">¶</a></h4>
+<p>Requieren de cálculos numéricos (por ejemplo la solución de una ecuación). Si el cálculo numérico puede ser procesado por una persona, entonces es un <strong>algoritmo cuantitativo no computacional</strong>.</p>
+<p>Si los cálculos numéricos son muy complejos entonces requieren poder computacional. A esta clase de algoritmos se les dice que son <strong>algoritmos cuantitativos computacionales</strong>.</p>
+<ul class="simple">
+<li><p><strong>Algoritmo cuantitativo no computacional:</strong> Estos algoritmos requieren de operaciones numéricas simples, que un ser humano puede resolver sin necesidad de usar un sistema computacional. Por ejemplo una receta de cocina, un cálculo numérico sencillo o las instrucciones para llegar a un lugar.</p></li>
+<li><p><strong>Algoritmo cuantitativo computacional:</strong> Estos algoritmos requieren de operaciones numéricas complejas que deben resolverse con dispositivos de cálculo, como una computadora o calculadora. Ecuaciones de mucha complejidad o códigos que solo pueden ser interpretados por una máquina, son ejemplos de este tipo de algoritmo.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="metodologia-para-desarrollar-un-algoritmo">
+<h3>Metodología para desarrollar un algoritmo<a class="headerlink" href="#metodologia-para-desarrollar-un-algoritmo" title="Link to this heading">¶</a></h3>
+<p>Cuando se desarrolla un algoritmo, cualquier usuario podría ejecutarlo siempre y cuando cumpla unos requisitos iniciales.</p>
+<p>Para desarrollar un algoritmo, se tienen las siguientes fases:</p>
+<section id="fase-01-analisis-de-requisitos-objetivo-y-condiciones">
+<h4>FASE 01:  Análisis de requisitos (objetivo y condiciones)<a class="headerlink" href="#fase-01-analisis-de-requisitos-objetivo-y-condiciones" title="Link to this heading">¶</a></h4>
+<p>En esta fase se identifica lo siguiente:</p>
+<ul class="simple">
+<li><p><strong>Objetivo:</strong> Identificar el objetivo claro del algoritmo.</p></li>
+<li><p><strong>Condiciones iniciales:</strong> Identificar los requisitos que debe cumplir el usuario para poder desarrollar el algoritmo.</p></li>
+<li><p><strong>Condiciones de incumplimiento:</strong> Identificar todos los condicionales del algoritmo.</p></li>
+<li><p><strong>Condiciones de cumplimiento:</strong> Identificar el estado del usuario cuando se cumple el algoritmo.</p></li>
+</ul>
+</section>
+<section id="fase-02-diseno-del-algoritmo-diagrama-de-flujo">
+<h4>FASE 02: Diseño del algoritmo (diagrama de flujo)<a class="headerlink" href="#fase-02-diseno-del-algoritmo-diagrama-de-flujo" title="Link to this heading">¶</a></h4>
+<p>Realizar un diagrama de flujo donde muestre el paso a paso lógico por medio de las siguientes figuras:</p>
+<ul class="simple">
+<li><p><strong>Círculos:</strong> INICIO y FIN</p></li>
+<li><p><strong>Rectángulos:</strong> Acciones</p></li>
+<li><p><strong>Rombos:</strong> Condicionales</p></li>
+<li><p><strong>Rombos anidados:</strong> Bucles</p></li>
+<li><p><strong>Flechas:</strong> Orden de secuencia.</p></li>
+</ul>
+<p>Después de tener el diagrama de flujo, realizar un análisis.</p>
+</section>
+<section id="fase-03-construccion-del-algoritmo-codigo-fuente">
+<h4>FASE 03: Construcción del algoritmo (código fuente)<a class="headerlink" href="#fase-03-construccion-del-algoritmo-codigo-fuente" title="Link to this heading">¶</a></h4>
+<p>Conversión del <strong>diagrama de flujo</strong> a <strong>CÓDIGO FUENTE</strong>.
+El código fuente es cualquier código que usa un lenguaje de programación que entienda una PC.
+En este caso sería PYTHON pero de momento se usará PSEUDOCÓDIGO.
+Se debe identificar el algoritmo. La identificación debe tener:</p>
+<ul class="simple">
+<li><p><strong>TÍTULO:</strong> “Nombre del algoritmo”</p></li>
+<li><p><strong>AUTOR:</strong> “Creador del algoritmo”</p></li>
+<li><p><strong>FECHA:</strong> “Fecha de creación o última modificación del algoritmo”</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ejemplo-algoritmo-para-ir-al-colegio">
+<h3>EJEMPLO: Algoritmo para ir al colegio<a class="headerlink" href="#ejemplo-algoritmo-para-ir-al-colegio" title="Link to this heading">¶</a></h3>
+<p>Desarrolle el siguiente ejercicio:</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Algoritmo para ir al colegio</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">En su cuaderno desarrolle un <strong>algoritmo que permita a un estudiante ir al colegio</strong>. Tenga en cuenta lo siguiente:</p>
+<blockquote>
+<div><p class="sd-card-text">El estudiante inicialmente está en su casa. Luego debe ponerse el uniforme e ir al garaje para intentar prender la moto.</p>
+<p class="sd-card-text">Si la moto NO prende, entonces salir del garaje, luego salir de la casa para llegar al colegio a pie.</p>
+<p class="sd-card-text">Si la moto SI prende, entonces abrir el garaje, luego salir del garaje para llegar al colegio en moto.</p>
+</div></blockquote>
+</div>
+</details><p>A continuación se muestra la solución del desarrollo del algoritmo.</p>
+<section id="fase-01-analisis-de-requisitos">
+<h4>FASE 01: Análisis de requisitos<a class="headerlink" href="#fase-01-analisis-de-requisitos" title="Link to this heading">¶</a></h4>
+<div class="tip admonition">
+<p class="admonition-title">(Objetivo y condiciones)</p>
+<ul class="simple">
+<li><p>OBJETIVO:</p>
+<ul>
+<li><p>Llegar al colegio.</p></li>
+</ul>
+</li>
+<li><p>CONDICIONES INICIALES:</p>
+<ul>
+<li><p>El estudiante debe estar en su casa</p></li>
+<li><p>La casa del estudiante debe tener un garaje.</p></li>
+<li><p>El estudiante no debe tener puesto el uniforme.</p></li>
+<li><p>El estudiante debe tener una moto en el garaje.</p></li>
+</ul>
+</li>
+<li><p>CONDICIONES DE INCUMPLIMIENTO:</p>
+<ul>
+<li><p>La moto no prende.</p></li>
+</ul>
+</li>
+<li><p>CONDICIONES DE CUMPLIMIENTO:</p>
+<ul>
+<li><p>El estudiante está en el colegio.</p></li>
+<li><p>El estudiante tiene el uniforme puesto.</p></li>
+<li><p>La moto puede estar en el colegio o en el garaje.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="fase-02-diseno-del-algoritmo">
+<h4>FASE 02: Diseño del algoritmo<a class="headerlink" href="#fase-02-diseno-del-algoritmo" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/image094.png"><img alt="../_images/image094.png" src="../_images/image094.png" style="width: 400px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="fase-03-construccion-del-algoritmo">
+<h4>FASE 03: Construcción del algoritmo<a class="headerlink" href="#fase-03-construccion-del-algoritmo" title="Link to this heading">¶</a></h4>
+<div class="tip admonition">
+<p class="admonition-title">(Código fuente)</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>TÍTULO</p></td>
+<td><p>Algoritmo para que un estudiante pueda ir al colegio</p></td>
+</tr>
+<tr class="row-even"><td><p>AUTOR</p></td>
+<td><p>Camilo Fonseca</p></td>
+</tr>
+<tr class="row-odd"><td><p>FECHA</p></td>
+<td><p>Domingo, 12 de Abril de 2026 - 03:38pm</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span> <span class="n">INICIO</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span> <span class="mf">1.</span> <span class="n">Ponerse</span> <span class="n">el</span> <span class="n">uniforme</span>
+<span class="linenos"> 4</span> <span class="mf">3.</span> <span class="n">Ir</span> <span class="n">al</span> <span class="n">garaje</span>
+<span class="linenos"> 5</span> <span class="mf">4.</span> <span class="n">Intentar</span> <span class="n">prender</span> <span class="n">la</span> <span class="n">moto</span>
+<span class="linenos"> 6</span> <span class="mf">5.</span> <span class="n">Si</span> <span class="p">(</span><span class="n">la</span> <span class="n">moto</span> <span class="n">SI</span> <span class="n">prende</span><span class="p">)</span>
+<span class="linenos"> 7</span>     <span class="mf">5.1</span> <span class="n">Abrir</span> <span class="n">el</span> <span class="n">garaje</span>
+<span class="linenos"> 8</span>     <span class="mf">5.2</span> <span class="n">Sacar</span> <span class="n">la</span> <span class="n">moto</span>
+<span class="linenos"> 9</span>     <span class="mf">5.3</span> <span class="n">Cerrar</span> <span class="n">el</span> <span class="n">garaje</span>
+<span class="linenos">10</span>     <span class="mf">5.4</span> <span class="n">Conducir</span> <span class="n">hasta</span> <span class="n">el</span> <span class="n">colegio</span>
+<span class="linenos">11</span> <span class="mf">6.</span> <span class="n">Si</span> <span class="p">(</span><span class="n">la</span> <span class="n">moto</span> <span class="n">NO</span> <span class="n">prende</span><span class="p">)</span>
+<span class="linenos">12</span>     <span class="mf">6.1</span> <span class="n">Salir</span> <span class="k">del</span> <span class="n">garage</span>
+<span class="linenos">13</span>     <span class="mf">6.2</span> <span class="n">Salir</span> <span class="n">de</span> <span class="n">la</span> <span class="n">casa</span>
+<span class="linenos">14</span>     <span class="mf">6.3</span> <span class="n">Cerrar</span> <span class="n">la</span> <span class="n">puerta</span>
+<span class="linenos">15</span>     <span class="mf">6.4</span> <span class="n">Caminar</span> <span class="n">hasta</span> <span class="n">el</span> <span class="n">colegio</span>
+<span class="linenos">16</span> <span class="mf">7.</span> <span class="n">Llegar</span> <span class="n">al</span> <span class="n">colegio</span>
+<span class="linenos">17</span> 
+<span class="linenos">18</span> <span class="n">FIN</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a03-diagramas-de-flujo-0-7">
+<h2>A03: Diagramas de flujo (+0,7)<a class="headerlink" href="#a03-diagramas-de-flujo-0-7" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>En su cuaderno responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Qué es una <strong>instrucción</strong>?</p></li>
+<li><p>¿Por que la <strong>claridad</strong>, la <strong>eficiencia</strong> y la <strong>seguridad</strong> son importantes al momento de dar instrucciones?</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno escriba una serie de <strong>instrucciones</strong> (seguras, claras y eficientes) para que un estudiante vaya al colegio desde que se despierta hasta que llega al aula de clase.</p></li>
+<li><p>En su cuaderno describa cada una de las figuras de un <strong>diagrama de flujo</strong> y dibuje sus símbolos.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-orientaciones-al-extranjero-1-0">
+<h2>A04: Orientaciones al extranjero (+1,0)<a class="headerlink" href="#a04-orientaciones-al-extranjero-1-0" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ol class="arabic">
+<li><p>Lea el siguiente caso:</p>
+<blockquote>
+<div><p>“Suponga que un extranjero visita <strong>Puerto Boyacá</strong> y quiere hacer turismo en el pueblo.
+El extranjero se encuentra en las afueras del hospital <strong>JOSE CAYETANO VASQUEZ</strong> y quiere conocer cada una de las <strong>iglesias católicas</strong> en Puerto Boyacá.”</p>
+<ul class="simple">
+<li><p>Iglesia San José Obrero (Barrio la Paz).</p></li>
+<li><p>Iglesia San Pedro Claver (Centro).</p></li>
+<li><p>Iglesia Cristo Rey (Cra 4a, Calle 5).</p></li>
+</ul>
+</div></blockquote>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id13">
+<a class="reference internal image-reference" href="../_images/image019.png"><img alt="../_images/image019.png" src="../_images/image019.png" style="width: 650px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa Puerto Boyacá</span><a class="headerlink" href="#id13" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su <strong>cuaderno</strong>, cree un <strong>diagrama de flujo</strong> con 15 instrucciones que le permitan al extranjero llegar a cada una de las iglesias. Tenga en cuenta lo siguiente:</p>
+<blockquote>
+<div><ul>
+<li><p>5 instrucciones por iglesia (15 instrucciones).</p></li>
+<li><p>2 direcciones por instrucción (30 direcciones).</p></li>
+<li><p>Cree un inventario de las 30 direcciones por medio de variables así:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">d01</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hospital José Cayetano Vasquez, (Cra 5 con calle 29)&quot;</span>
+<span class="nv">d02</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;UPTC, (Cra 5 # 25 - 2)&quot;</span>
+
+<span class="nv">d10</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Iglesia San José Obrero, (Calle 28 # 3A - 54)&quot;</span>
+
+<span class="nv">d20</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Iglesia San Pedro Claver, (Calle 14 # 3 - 21)&quot;</span>
+
+<span class="nv">d30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Iglesia Cristo Rey, (Cra 4a con calle 5)&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Cada instrucción(operación) debe describir como ir de una <strong>dirección A</strong> a una <strong>dirección B</strong>. Por ejemplo:</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id14">
+<a class="reference internal image-reference" href="../_images/image027.png"><img alt="../_images/image027.png" src="../_images/image027.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Diagrama de flujo:</strong> Orientaciones al extranjero</span><a class="headerlink" href="#id14" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Usar una <strong>página de cuaderno</strong> por cada diagrama.</p></li>
+<li><p>Para identificar las direcciones, se recomienda usar <a class="reference external" href="https://www.google.com/maps/&#64;5.9736064,-74.5865216,7242m" rel="noreferer noopener" target="_blank">Google Maps</a>.</p></li>
+<li><p>No olvide que el extranjero prefiere caminar.</p></li>
+<li><p>Antes de orientar al extranjero para ir a una nueva dirección, siempre verificar la ubicación actual para evitar que el extranjero se <strong>teletransporte por error</strong>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a05-orientaciones-seguras-3-0">
+<h2>A05: Orientaciones seguras (+3,0)<a class="headerlink" href="#a05-orientaciones-seguras-3-0" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ol class="arabic">
+<li><p>En su cuaderno, adapte el algoritmo de la actividad anterior, de tal forma que contenga 3 condicionales.</p>
+<blockquote>
+<div><p>Los condicionales permitiran al extranjero tomar caminos alternos en caso de la ocurrencia de algún evento inesperado (vías cerradas, semáforos en rojo, perros bravos, negocios cerrados, etc.).</p>
+</div></blockquote>
+<p>Por ejemplo:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id15">
+<a class="reference internal image-reference" href="../_images/image036.png"><img alt="../_images/image036.png" src="../_images/image036.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Diagrama de flujo:</strong> Instrucciones seguras</span><a class="headerlink" href="#id15" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>Usar una <strong>página de cuaderno</strong> por cada diagrama.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a06-que-son-los-algoritmos-0-2">
+<h2>A06: ¿Qué son los algoritmos? (+0,2)<a class="headerlink" href="#a06-que-son-los-algoritmos-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Escriba las siguientes frases en su cuaderno e indique si es <strong>falso</strong> o <strong>verdadero</strong> e indique el por qué.</p>
+<ul class="simple">
+<li><p>Un algoritmo está compuesto por elementos informáticos que componen una secuencia organizacional únicamente ___.</p></li>
+<li><p>Un algoritmo son un conjunto de instrucciones que le dicen a una computadora o un ser humano como realizar una tarea específica, dichas instrucciones pueden estar escritas en código o lenguaje natural. ___.</p></li>
+<li><p>Un algoritmo se define como cuadros de funcionamiento infinitos que permiten y tienen como propósito reducir la información. ___.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a07-tipos-del-algoritmos-0-2">
+<h2>A07: Tipos del algoritmos (+0,2)<a class="headerlink" href="#a07-tipos-del-algoritmos-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>En su cuaderno relacione con líneas los siguientes cuadros según corresponda su significado:</p></li>
+</ol>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id16">
+<a class="reference internal image-reference" href="../_images/image019.png"><img alt="../_images/image019.png" src="../_images/image019.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Cuadro comparativo (Tipos de algoritmos)</span><a class="headerlink" href="#id16" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="a08-clasificacion-de-algoritmos-0-2">
+<h2>A08: Clasificación de algoritmos (+0,2)<a class="headerlink" href="#a08-clasificacion-de-algoritmos-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Escriba la siguiente tabla en su cuaderno y clasifique los algoritmos según corresponda:</p></li>
+</ol>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>EJEMPLO</p></th>
+<th class="head"><p>Clasificación</p></th>
+<th class="head"><p>¿Por qué?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Instrucciones para llegar a un lugar</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Instrucciones con medición de tiempo para llegar a un lugar</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>A=10,B=12<br/>C=A+B</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Microsoft Word</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>LINUX</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">print(&quot;Digite</span> <span class="pre">su</span> <span class="pre">nombre&quot;)</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>PASO 01: Abra la bandeja de entrada<br/>PASO 02: Inserte hojas tamaño carta<br/>PASO 03: Cierre la bandeja de entrada</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>BIOS</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>CANVA</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>LibreOffice Writer</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Control de vuelo con API de GOOGLE</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Sensor Temperatura con ARDUINO</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Instrucciones corte cabello</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="a09-metodologia-para-desarrollar-un-algoritmo-0-2">
+<h2>A09: Metodología para desarrollar un algoritmo (+0,2)<a class="headerlink" href="#a09-metodologia-para-desarrollar-un-algoritmo-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>En su cuaderno escriba las 3 fases para desarrollar un algoritmo.</p></li>
+<li><p>Responda la siguiente pregunta en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿Que diferencia hay entre desarrollar un algoritmo, diseñar un algoritmo y construir un algoritmo?</p></li>
+</ul>
+</li>
+<li><p>Consulte en INTERNET que hace un arquitecto de software y luego en su cuaderno responda:</p>
+<ul class="simple">
+<li><p>¿Cual es la diferencia entre un arquitecto de software y un programador?</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a10-algoritmos-4-0">
+<h2>A10: Algoritmos (+4,0)<a class="headerlink" href="#a10-algoritmos-4-0" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ol class="arabic simple">
+<li><p>En su cuaderno desarrolle cada uno de los siguientes ejercicios, siguiendo la metodología para desarrollar un algoritmo.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Adquirir un revista física de arte</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Desarrolle un algoritmo para que una persona adquiera una revista física de arte. Tenga en cuenta lo siguiente:</p>
+<blockquote>
+<div><p class="sd-card-text">La persona inicialmente busca en INTERNET una revista física de arte.</p>
+<p class="sd-card-text">Una vez encontrada la revista, revisar cuanto cuesta y ver si tiene el dinero suficiente para comprarla. Si no tiene el dinero suficiente volver a buscar la revista en INTERNET cuantas veces sea necesario. Si tiene el dinero suficiente alistar el dinero.</p>
+<p class="sd-card-text">Luego la persona debe revisar en GOOGLE MAPS para localizar la dirección de la librería. Activar la función de GOOGLE MAPS y dirigirse caminando hacia la librería. Intentar entrar a la librería. Si la librería no está abierta: volver a buscar la revista en INTERNET e iniciar de nuevo. Si la librería está abierta, entrar a la librería.</p>
+<p class="sd-card-text">Revisar si la revista está en STOCK. Si la revista no está en STOCK, volver a buscar la revista en INTERNET y empezar de nuevo. SI la revista si está en STOCK, comprar la revista física de arte.</p>
+</div></blockquote>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Entrar a una casa con llave</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Desarrolle un algoritmo para que una persona entre a una casa cuya cerradura está asegurada con llave. Tenga en cuenta lo siguiente:</p>
+<blockquote>
+<div><p class="sd-card-text">La persona inicialmente buscará la llave en su bolsillo. La persona intentará abrir la cerradura con la llave de su bolsillo.</p>
+<p class="sd-card-text">Si la cerradura no abre ahora buscará otra llave en un tapete exterior y volverá a intentar abrir la cerradura con dicha llave.</p>
+<p class="sd-card-text">Si la cerradura no abre ahora buscará otra llave en la guantera de un carro y volverá a intentar abrir la cerradura con dicha llave.</p>
+<p class="sd-card-text">Si la cerradura no abre, llamará a un cerrajero para que abra la puerta. Si el cerrajero no contesta, entonces seguir intentando hasta que conteste.</p>
+<p class="sd-card-text">Si la cerradura si abre, intentar abrir la puerta. Si la puerta abre entrar a la casa y confirmar que se logró entrar. Si la cerradura no abre, confirmar que no se logró entrar.</p>
+</div></blockquote>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Saludar y despedirse de una persona</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Desarrolle un algoritmo para que el usuario salude y se despida de una persona. Tenga en cuenta lo siguiente:</p>
+<blockquote>
+<div><p class="sd-card-text">La persona debe verificar inicialmente si ya saludo a la otra persona</p>
+<p class="sd-card-text">Si la persona no ha saludado, saludar a la persona. Esperar a que la persona salude. Si la persona no saluda, seguir intentándolo hasta que salude.</p>
+<p class="sd-card-text">Una vez que la persona salude, preguntar como esta. Si la persona responde NO esta bien, preguntar que le pasa, escuchar a la persona y decirle que el tiempo lo arregla todo. Volver a preguntar si la persona esta bien (cuantas veces sea necesario) hasta que la persona responda que esta bien.  Si la persona responder que SI esta bien entonces manifestar tranquilidad.</p>
+<p class="sd-card-text">Volver a verificar si la persona ya saludo.</p>
+<p class="sd-card-text">Si la persona ya saludo, entonces determinar un tiempo para poder irse.</p>
+<p class="sd-card-text">El usuario debe establecer el tiempo para irse.</p>
+<p class="sd-card-text">Verificar que el tiempo se cumplió. Mientras el tiempo no se cumpla, entonces hablar con la persona de cualquier tema mientras se cumple el tiempo. Ir disminuyendo el tiempo.</p>
+<p class="sd-card-text">Una vez el tiempo esté cumplido, despedirse. Esperar a que la persona responda la despedida. Si la persona no contesta seguir despidiéndose hasta que la persona conteste.</p>
+<p class="sd-card-text">Una vez se despida de la persona generar una mensaje de IRSE.</p>
+</div></blockquote>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Calmar a una persona</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Desarrolle un algoritmo para calmar una persona. Tenga en cuenta lo siguiente:</p>
+<blockquote>
+<div><p class="sd-card-text">Identificar el estado de la persona.</p>
+<p class="sd-card-text">Si la persona esta bien, entonces irse del lugar. Si la persona esta en mal estado realizar lo siguiente:</p>
+<p class="sd-card-text">Identificar la edad de la persona.</p>
+<p class="sd-card-text">Si la persona es un bebe entonces intentar calmarla con un tetero. Si la persona es un niño entonces calmarla dandole un dulce. Si la persona es un adolescente entonces intentar calmarla dandole una gaseosa. Si la persona es un adulto entonces intentar calmarla dandole una cerveza. Si la persona es un anciano entonces intentar calmarla dandole un café.</p>
+<p class="sd-card-text">Luego volver a identificar el estado de la persona y si todavía no se ha calmado, seguir intentando hasta que se calme.</p>
+</div></blockquote>
+</div>
+</details></section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Deitel, P. J., &amp; Deitel, H. (2014). C++: cómo programar (A. V. Romero Elizondo, Trans.). Pearson Educación.</p>
+</aside>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Trejos Buriticá, O. I. (2017). Lógica de programación. Ediciones de la U.</p>
+</aside>
+</aside>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G820.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 820: Lógica computacional 8</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1022.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1022: Datos, Información y Software (P1)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1023: Desarrollo de algoritmos (P1)</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
+<li><a class="reference internal" href="#a01-diagramas-de-flujo">A01: Diagramas de flujo</a><ul>
+<li><a class="reference internal" href="#que-es-un-diagrama-de-flujo">¿Qué es un diagrama de flujo?</a></li>
+<li><a class="reference internal" href="#tipos-de-diagramas-de-flujo">Tipos de diagramas de flujo</a><ul>
+<li><a class="reference internal" href="#operacion">Operación</a></li>
+<li><a class="reference internal" href="#limites-de-proceso">Límites de proceso</a></li>
+<li><a class="reference internal" href="#punto-de-decision">Punto de decisión</a></li>
+<li><a class="reference internal" href="#conector">Conector</a></li>
+<li><a class="reference internal" href="#direccion-de-flujo">Dirección de flujo</a></li>
+<li><a class="reference internal" href="#entrada-manual">Entrada manual</a></li>
+<li><a class="reference internal" href="#documento">Documento</a></li>
+<li><a class="reference internal" href="#base-de-datos">Base de datos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a02-algoritmos">A02: Algoritmos</a><ul>
+<li><a class="reference internal" href="#que-es-una-algoritmo">¿Qué es una algoritmo?</a></li>
+<li><a class="reference internal" href="#tipos-de-algoritmos">Tipos de algoritmos</a><ul>
+<li><a class="reference internal" href="#algoritmos-cualitativos-informales">Algoritmos cualitativos (informales)</a></li>
+<li><a class="reference internal" href="#algoritmos-cuantitativos-formales">Algoritmos cuantitativos (formales)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#metodologia-para-desarrollar-un-algoritmo">Metodología para desarrollar un algoritmo</a><ul>
+<li><a class="reference internal" href="#fase-01-analisis-de-requisitos-objetivo-y-condiciones">FASE 01:  Análisis de requisitos (objetivo y condiciones)</a></li>
+<li><a class="reference internal" href="#fase-02-diseno-del-algoritmo-diagrama-de-flujo">FASE 02: Diseño del algoritmo (diagrama de flujo)</a></li>
+<li><a class="reference internal" href="#fase-03-construccion-del-algoritmo-codigo-fuente">FASE 03: Construcción del algoritmo (código fuente)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ejemplo-algoritmo-para-ir-al-colegio">EJEMPLO: Algoritmo para ir al colegio</a><ul>
+<li><a class="reference internal" href="#fase-01-analisis-de-requisitos">FASE 01: Análisis de requisitos</a></li>
+<li><a class="reference internal" href="#fase-02-diseno-del-algoritmo">FASE 02: Diseño del algoritmo</a></li>
+<li><a class="reference internal" href="#fase-03-construccion-del-algoritmo">FASE 03: Construcción del algoritmo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a03-diagramas-de-flujo-0-7">A03: Diagramas de flujo (+0,7)</a></li>
+<li><a class="reference internal" href="#a04-orientaciones-al-extranjero-1-0">A04: Orientaciones al extranjero (+1,0)</a></li>
+<li><a class="reference internal" href="#a05-orientaciones-seguras-3-0">A05: Orientaciones seguras (+3,0)</a></li>
+<li><a class="reference internal" href="#a06-que-son-los-algoritmos-0-2">A06: ¿Qué son los algoritmos? (+0,2)</a></li>
+<li><a class="reference internal" href="#a07-tipos-del-algoritmos-0-2">A07: Tipos del algoritmos (+0,2)</a></li>
+<li><a class="reference internal" href="#a08-clasificacion-de-algoritmos-0-2">A08: Clasificación de algoritmos (+0,2)</a></li>
+<li><a class="reference internal" href="#a09-metodologia-para-desarrollar-un-algoritmo-0-2">A09: Metodología para desarrollar un algoritmo (+0,2)</a></li>
+<li><a class="reference internal" href="#a10-algoritmos-4-0">A10: Algoritmos (+4,0)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

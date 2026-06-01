@@ -1,4 +1,4 @@
-# Guía 1002: REDES (P2)
+# Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)
 
 :::{list-table}
 :widths: 35 65
@@ -13,20 +13,21 @@
         - **GRADO**: DÉCIMO
         - **PERIODO**: 02
         - **TIEMPO**: 10 semanas (2 horas / semana)
-        - **TIEMPO DE TRABAJO**: 8/20 horas
+        - **TIEMPO DE TRABAJO**: 4/20 horas
     ```
 :::
 
 :::{tab-set}
 ```{tab-item} Objetivo
-- **Temática**: Redes de datos.
-- **Objetivo de aprendizaje**: Introducir los conceptos relacionados con la temática de redes de datos.
+{bdg-danger}`Transferencia`
+- **Temática**: Reflexión sobre la Ofimática y Programación.
+- **Objetivo de aprendizaje**: Identificar el nivel de interés del estudiante sobre las temáticas de Ofimática y Programación vistas en el periodo anterior.
 ```
 
 ```{tab-item} Orientaciones curriculares
-- **Componente**: .
-- **Competencia**: . 
-- **Evidencia de aprendizaje**: .
+- **Componente**: Uso y apropiación de la Tecnología y la Informática.
+- **Competencia**: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos. 
+- **Evidencia de aprendizaje**: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.
 ```
 
 ```{tab-item} Criterios de evaluación
@@ -37,47 +38,87 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (2)
-- [**LECTURA:** Redes de datos](../2_lecturas/L1002-01.md)
-- [**LECTURA:** Ciberseguridad](../2_lecturas/L1002-02.md)
+```{tab-item} Recursos (0)
+- La presente guía no contiene recursos.
 ```
 :::
 
 ## Mensaje del autor
 
 :::{pull-quote}
-""
+"Hasta el momento, se ha explorado las temáticas de: la **ofimática** (que nos da el poder de organizar, analizar y presentar información de forma profesional) y la **programación**, que nos permite dar instrucciones a una computadora para crear soluciones desde cero y dar vida a nuestras propias ideas.
+
+Esta guía no trata de un examen para calificar sus conocimientos teóricos, sino de un espacio para identificar si siente interés por las temáticas.
+
+A continuación, encontrará dos actividades con preguntas de reflexión. Desarrolle las actividades con honestidad; sus respuestas le ayudarán a identificar cuál de estas dos rutas (Ofimática o Programación) le despierta más curiosidad y cómo puede aprovechar ese conocimiento a futuro".
 
 -- Camilo Fonseca
 :::
 
 ---
-## A00: Introducción (+0,1)
-{bdg-light}`Exploración`
-
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-
-
----
-## A01: Orígenes de INTERNET (+0,1)
-{bdg-info}`Estructuración`
-
-1. En su cuaderno, responda las siguientes preguntas:
-
-
----
-## AXX-1: Preguntas de indagación (+0,5)
-{bdg-info}`Estructuración`
-
-1. En su cuaderno, responda las siguientes preguntas:
-
----
-## AXX: Análisis de reflexión (+4,0)
+## A01: Análisis y reflexión (OFIMÁTICA) (+2,5)
 {bdg-danger}`Transferencia`
 
-:TIEMPO: 30 minutos
-:PREGUNTAS: 10
+```{csv-table}
+:delim: ;
+**TIEMPO**; 59 minutos
+**PREGUNTAS**; 10
+**OBJETIVO**; Identificar qué le llamó la atención de la temática de **OFIMÁTICA**.
+**ACTIVIDAD**; En una hoja al final de su cuaderno, desarrolle un **texto reflexivo** utilizando las siguientes preguntas como guía para estructurar su escrito.
+```
 
-:::{admonition} posibles preguntas
-1. 
+:::{admonition} Preguntas de reflexión
+1. ¿Qué aspecto de la ofimática le parece más interesante o útil para su vida académica o personal?
+---
+2. ¿Le gustaría aprender más sobre alguna herramienta específica de ofimática, como Google Workspace o Microsoft 365? ¿Cuál y por qué?
+---
+3. ¿Cree que el manejo de herramientas ofimáticas puede facilitar su trabajo diario o sus estudios? ¿Qué le motiva o desmotiva de esta temática?
+---
+4. ¿Le interesa conocer y usar programas cuyo código fuente está disponible para que cualquiera pueda estudiarlo y modificarlo? (¿por qué?)
+---
+5. ¿Ha utilizado alguna vez software libre como LibreOffice, GIMP o Linux? ¿Qué le pareció la experiencia?
+---
+6. Cree que es importante que el software sea accesible y modificable por todos, sin restricciones de licencia propietaria? (¿por qué?)
+---
+7. ¿Le gustaría aprender a contribuir con proyectos de software libre, como mejorar programas o crear nuevas herramientas? (¿por qué?)
+---
+8. ¿Qué opina sobre la idea de compartir y colaborar en el desarrollo de software en lugar de usar programas cerrados y comerciales?
+---
+9. ¿Le atrae la posibilidad de personalizar el software que usa para adaptarlo a sus necesidades específicas? (¿por qué?)
+---
+10. ¿Considera que el software libre puede ser una alternativa viable y segura frente al software propietario? (¿por qué?)
+:::
+
+---
+## A02: Análisis y reflexión (PROGRAMACIÓN) (+2,5)
+{bdg-danger}`Transferencia`
+
+```{csv-table}
+:delim: ;
+**TIEMPO** ; 59 minutos
+**PREGUNTAS** ; 10
+**OBJETIVO** ; Identificar qué le llamó la atención de la temática de **PROGRAMACIÓN**.
+**ACTIVIDAD** ; En una hoja al final de su cuaderno, desarrolle un **texto reflexivo** utilizando las siguientes preguntas como guía para estructurar su escrito.
+```
+
+:::{admonition} Preguntas de reflexión
+1. ¿Se siente motivado al pensar que, mediante la creación de código, se pueden dar instrucciones exactas a una computadora para que resuelva un problema complejo por usted? (¿por qué?)
+---
+2. Al conocer la diferencia entre programador y desarrollador, ¿le atrae más la parte técnica de "escribir código" para construir funcionalidades específicas, o le interesa más la visión global de "planificar y gestionar" todo el ciclo de vida de un software? (¿por qué?)
+---
+3. Sobre el software y la innovación: Al entender que existen diferentes tipos de software (sistema, aplicación, embebido, programación), ¿hay alguna categoría en particular que le genere curiosidad sobre cómo se construyen o cómo funcionan por dentro? (¿por qué?)
+---
+4. De las tecnologías mencionadas (bases de datos, servidores web, entornos como Node.js o Frameworks), ¿hay alguna que le entusiasme aprender a usar para crear tu propio proyecto? (¿por qué?)
+---
+5. ¿Qué parte del desarrollo web le parece más interesante: el Front-end (crear la parte visual con la que interactúan los usuarios) o el Back-end (trabajar con la lógica, servidores y bases de datos que hacen que todo funcione)? (¿por qué?)
+---
+6. De los lenguajes mencionados (HTML, CSS, JavaScript, PHP, Java, Python), ¿alguno te llama especialmente la atención para empezar a crear sus primeros programas o sitios web? (¿por qué?)
+---
+7. Considerando que el desarrollo de software implica análisis, diseño, pruebas y mantenimiento, ¿le atrae la idea de enfrentar el reto de identificar errores y optimizar código para mejorar continuamente una aplicación? (¿por qué?)
+---
+8. Después de analizar cómo los datos simples se transforman en información útil para la toma de decisiones, ¿considera que comprender la jerarquía de datos cambia tu perspectiva sobre cómo la tecnología influye en tu vida cotidiana?. ¿Tendría interés en profundizar cómo se organiza la información en sistemas complejos?
+---
+9. Después de conocer que los diagramas de flujo nos permiten visualizar procesos paso a paso para resolver problemas de manera organizada, ¿se siente cómodo(a) utilizando esta herramienta gráfica para planear sus propias soluciones, o prefiere otro método para organizar sus ideas? (¿por qué?)
+---
+10. Considerando que los algoritmos nos permiten descomponer cualquier situación de la vida diaria en una secuencia de pasos claros para resolverla, ¿qué tan interesante le resulta el desafío de diseñar instrucciones precisas para que otros (o una computadora) puedan completar una tarea siguiendo su lógica, o prefiere otro tipo de desafíos intelectuales? (¿por qué?)
 :::

@@ -1,0 +1,773 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../genindex.html"><link rel="search" title="Búsqueda" href="../search.html"><link rel="next" title="Guía 1022: Datos, Información y Software (P1)" href="G1022.html"><link rel="prev" title="Guía 1012: Software Libre (P1)" href="G1012.html">
+        <link rel="prefetch" href="../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../_static/logo_dark.png" as="image">
+
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+        <title>Guía 1021: PROGRAMACIÓN (P1) - aula 115</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=e02aa765" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--normal);
+  --toc-font-size: var(--font-size--small);
+  --admonition-font-size: 0.858rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Octavo (Lógica computacional)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Informática)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1002.html">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1003.html">Guía 1003: REDES (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1004.html">Guía 1004: MANTENIMIENTO (P2)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Ofimática)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="G1011.html">Guía 1011: OFIMÁTICA (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Programación)</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Guía 1021: PROGRAMACIÓN (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1022.html">Guía 1022: Datos, Información y Software (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1023.html">Guía 1023: Desarrollo de algoritmos (P1)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PLANES DE REFUERZO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="G820.html">Guía 820: Lógica computacional 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1000.html">Guía 1000: Informática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1010.html">Guía 1010: Ofimática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1020.html">Guía 1020: Programación 10</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../4_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/1_guias/G1021.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1021-programacion-p1">
+<h1>Guía 1021: PROGRAMACIÓN (P1)<a class="headerlink" href="#guia-1021-programacion-p1" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="escudo" src="../_images/escudo.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
+<ul class="simple">
+<li><p><strong>DOCENTE</strong>: Julian Camilo Fonseca Romero</p></li>
+<li><p><strong>ASIGNATURA</strong>: Programación</p></li>
+<li><p><strong>GRADO</strong>: ONCE</p></li>
+<li><p><strong>PERIODO</strong>: 01</p></li>
+<li><p><strong>TIEMPO</strong>: 10 semanas (4 horas / semana)</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 10/40 horas</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ul class="simple">
+<li><p><strong>Temática</strong>: .</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: .</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Orientaciones curriculares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Componente</strong>: .</p></li>
+<li><p><strong>Competencia</strong>: .</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Criterios de evaluación</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Actividades desarrolladas en su totalidad.</p></li>
+<li><p>Participación en clase.</p></li>
+<li><p>Explicación clara de conceptos.</p></li>
+<li><p>Argumentación de ideas.</p></li>
+<li><p>Cumplimiento de las reglas del aula.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Recursos (0)</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>La presente guía no contiene recursos.</p></li>
+</ul>
+</div>
+</div>
+<section id="mensaje-del-autor">
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
+<blockquote class="pull-quote">
+<div><p>“.”</p>
+<p class="attribution">—Camilo Fonseca</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a00-introduccion-0-1">
+<h2>A00: Introducción (+0,1)<a class="headerlink" href="#a00-introduccion-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
+<ol class="arabic simple">
+<li><p>TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a01-programacion">
+<h2>A01: PROGRAMACIÓN<a class="headerlink" href="#a01-programacion" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos relacionados con programación:</p></li>
+</ol>
+<hr class="docutils" />
+<section id="que-es-la-programacion">
+<h3>¿Qué es la programación?<a class="headerlink" href="#que-es-la-programacion" title="Link to this heading">¶</a></h3>
+<p>La programación se refiere específicamente a la escritura de código para crear funcionalidades dentro del software. Es una parte esencial del desarrollo, pero no abarca todo el proceso.</p>
+<p>En la programación, las actividades a desarrollar están orientadas a la creación de código fuente. Es decir, una serie de instrucciones que se le da al PC para realizar alguna acción. También se realiza depuración y optimización de código lo cual permite que solucionen muchos errores. Es muy importante que el programador entienda la responsabilidad de salvaguardar el código fuente construido, por tanto debe sacar tiempo para tareas de <strong>copias de seguridad</strong> y <strong>control de versiones</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/image017.png"><img alt="../_images/image017.png" src="../_images/image017.png" style="width: 360px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Código fuente</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="que-es-el-software">
+<h3>¿Qué es el software?<a class="headerlink" href="#que-es-el-software" title="Link to this heading">¶</a></h3>
+<p><strong>El software</strong> es el conjunto de programas, bases de datos y diferentes tipos de archivos que controlan el hardware a través de instrucciones. El software debe tener requisitos y funcionalidades. Es la parte intangible de un sistema informático, en contraste con el hardware, que es la parte física. El software se puede clasificar en dos tipos:</p>
+<ul class="simple">
+<li><p><strong>Software de sistema:</strong> Ejecuta la funcionalidades básicas de un hardware (encender la máquina, mostrar imagen, monitoreo de temperatura, etc.).</p></li>
+<li><p><strong>Software de aplicación:</strong> Trabaja en función del software del sistema para que el usuario pueda realizar una tarea específica (procesar texto, edición de imágenes, navegar en Internet, programar, etc.)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="que-es-el-desarrollo-de-software">
+<h3>¿Qué es el desarrollo de software?<a class="headerlink" href="#que-es-el-desarrollo-de-software" title="Link to this heading">¶</a></h3>
+<p>El <strong>desarrollo de software</strong> es un proceso que abarca la programación, pero también incluye planificación, diseño, pruebas y mantenimiento. Es un enfoque más holístico que busca crear software funcional y útil.</p>
+<p>En el <strong>desarrollo de software</strong> se realizan tareas como el análisis de requisitos que busca identificar que funciones debe tener dicho software. También se hacen tareas de diseño donde se trabaja con bocetos iniciales para tener una idea general de como estará compuesto y de que forma funcionará el software. Otra tarea muy común es la programación la cual consiste en crear código fuente para la construcción del programa. Finalmente se realizan pruebas, implementación, mantenimiento y documentación.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/image025.png"><img alt="../_images/image025.png" src="../_images/image025.png" style="width: 360px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Equipo de desarrollo de software</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="programadores-vs-desarrolladores">
+<h3>Programadores Vs Desarrolladores<a class="headerlink" href="#programadores-vs-desarrolladores" title="Link to this heading">¶</a></h3>
+<p>El desarrollo de software lo llevan a cabo principalmente programadores y desarrolladores de software. Estos roles interactúan y se superponen, y la dinámica entre ellos varía mucho entre los departamentos de desarrollo y las comunidades.</p>
+<ul class="simple">
+<li><p><strong>Programadores:</strong> Escriben código fuente para programar ordenadores que realicen tareas específicas, como fusionar bases de datos, procesar pedidos en línea, enrutar comunicaciones, realizar búsquedas o mostrar textos y gráficos. Los programadores suelen interpretar las instrucciones de los desarrolladores e ingenieros de software y utilizan lenguajes de programación como C++ o Java para llevarlas a cabo.</p></li>
+<li><p><strong>Desarrollador de software:</strong> Estan estrechamente involucrados en áreas específicas del proyecto, incluida la escritura de código. Al mismo tiempo, dirigen todo el ciclo de vida del desarrollo de software, lo que implica colaborar con los equipos funcionales para transformar los requisitos en características, gestionar los equipos y procesos de desarrollo, y realizar pruebas y mantenimiento del software.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">¿Cuál es la diferencia entre un programador y un desarrollador?</p>
+<p>Construir un software es como construir una misma casa varias veces. El lograr que cada persona aporte significativamente en su campo de acción ya sea como desarrollador o como programador, hará que la casa se construya de forma óptima.</p>
+<ul class="simple">
+<li><p>Un <strong>desarrollador</strong> diseña, construye y mantiene software mediante un proceso compuesto por etapas o fases(análisis de requisitos, diseño, construcción, pruebas, implementación y mantenimiento).</p></li>
+<li><p>Un <strong>programador</strong> codifica programas que hacen parte del software.</p></li>
+</ul>
+</div>
+</section>
+<hr class="docutils" />
+<section id="tipos-de-software">
+<h3>Tipos de software<a class="headerlink" href="#tipos-de-software" title="Link to this heading">¶</a></h3>
+<p>El software es el conjunto de instrucciones o programas que indican a un ordenador lo que debe hacer. Es independiente del hardware y hace que los ordenadores sean programables. Hay tres tipos básicos:</p>
+<ul class="simple">
+<li><p><strong>Software de sistema:</strong> Proporciona funciones básicas, como sistemas operativos, gestión de discos, servicios, gestión de hardware y otras necesidades operativas.</p></li>
+<li><p><strong>Software de aplicación:</strong> Ayuda a los usuarios a realizar tareas. Por ejemplo, conjuntos de productividad ofimática, software de gestión de datos, reproductores multimedia y programas de seguridad. Las aplicaciones también se refieren a aplicaciones web y móviles como las que se utilizan para comprar en <a class="reference external" href="https://amazon.com/" rel="noreferer noopener" target="_blank">Amazon.com</a>, socializar con Facebook o publicar fotos en Instagram.</p></li>
+<li><p><strong>Software de programación:</strong> Proporciona herramientas a los programadores, como editores de texto, compiladores, enlazadores, depuradores y otras herramientas para crear código.</p></li>
+<li><p><strong>Software embebido:</strong> Se utiliza para controlar máquinas y dispositivos que normalmente no se consideran ordenadores: redes de telecomunicaciones, automóviles, robots industriales, etc. Estos dispositivos, y su software pueden conectarse como parte del Internet de las cosas (IoT).</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="proceso-de-desarrollo-de-software">
+<h3>Proceso de desarrollo de software<a class="headerlink" href="#proceso-de-desarrollo-de-software" title="Link to this heading">¶</a></h3>
+<p>Los pasos del proceso de desarrollo de software se pueden agrupar en las fases del ciclo de vida, pero la importancia del ciclo de vida es que se recicla para permitir una mejora continua. Por ejemplo, los problemas de los usuarios que surgen en la fase de mantenimiento y soporte pueden convertirse en requisitos al inicio del siguiente ciclo.</p>
+<ul>
+<li><p><strong>FASE 01 (Análisis y especificación de requisitos)</strong></p>
+<p>En esta fase se comprende y documenta lo que necesitan los usuarios y otras partes interesadas. Se analiza la estructura tecnológica donde funcionará el software.</p>
+</li>
+<li><p><strong>FASE 02 (Diseño y desarrollo)</strong></p>
+<p>Se diseña en torno a soluciones a los problemas presentados por los requisitos, lo que a menudo implica modelos de procesos y guiones gráficos.
+Se crean los modelos con una herramienta de modelado que utilice un lenguaje de modelado como UML para llevar a cabo la validación temprana, la creación de prototipos y la simulación del diseño. En el desarrollo se usa un lenguaje de programación adecuado al aplicativo que se quiere construir. Implica la revisión por pares y en equipo para eliminar problemas de forma temprana y producir software de calidad más rápido.</p>
+</li>
+<li><p><strong>FASE 03 (Pruebas)</strong></p>
+<p>Se realizan dos tipos de pruebas:</p>
+<ul class="simple">
+<li><p>Pruebas con escenarios planificados de antemano como parte del diseño y la codificación del software. Por ejemplo identificación de errores de código, de lógica de negocio o de seguridad.</p></li>
+<li><p>Pruebas de rendimiento para simular niveles de carga de uso en la aplicación. Por ejemplo Identificar en que momento el aplicativo puede presentar fallos cuando varios usuarios lo usen al mismo tiempo.</p></li>
+</ul>
+</li>
+<li><p><strong>FASE 04 (Implementación)</strong></p>
+<p>El software se instala o pone en producción para capacitar a los usuarios y lograr que se familiaricen con las funciones que este contenga. Se resuelven dudas de los usuarios. Si hay una versión anterior del software, la información alojada en el software anterior debe ser migrada el software nuevo desde aplicaciones o fuentes de datos existentes, si es necesario.</p>
+</li>
+<li><p><strong>FASE 05 (Mantenimiento y soporte)</strong></p>
+<p>Para mantener la calidad y la entrega a lo largo del ciclo de vida de la aplicación, se deben tener fechas de seguimiento y soporte. Los usuarios nuevos deben ser capacitados. El software en lo posible debe ser escalable es decir, en la medida que requiera nuevas funcionalidades, estas se deben ir implementando para que el software no quede desactualizado en la medida que pase el tiempo.</p>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="tecnologias-usadas-en-el-desarrollo-de-software">
+<h3>Tecnologías usadas en el desarrollo de software<a class="headerlink" href="#tecnologias-usadas-en-el-desarrollo-de-software" title="Link to this heading">¶</a></h3>
+<p>Hoy en día son bastantes las tecnologías que  como herramientas que nos ayudan a construir software. Estas se pueden clasificar de la siguiente forma:</p>
+<section id="sistemas-operativos">
+<h4>Sistemas operativos<a class="headerlink" href="#sistemas-operativos" title="Link to this heading">¶</a></h4>
+<p>Un sistema operativo (OS) es un software esencial que actúa como intermediario entre el usuario y el hardware de la computadora. Su función principal es gestionar los recursos del sistema y proporcionar una interfaz para que los usuarios y las aplicaciones interactúen con el hardware. Por ejemplo:</p>
+<ul class="simple">
+<li><p><strong>LINUX:</strong> Sistema operativo libre.</p></li>
+<li><p><strong>Windows:</strong> Sistema operativo privativo.</p></li>
+<li><p><strong>MACOS:</strong> Sistema operativo privativo para equipos de computo de APPLE.</p></li>
+</ul>
+</section>
+<section id="bases-de-datos">
+<h4>Bases de datos<a class="headerlink" href="#bases-de-datos" title="Link to this heading">¶</a></h4>
+<p>Una base de datos (DB) es un sistema organizado que permite almacenar, gestionar y recuperar información de manera eficiente. Una base de datos es como un archivo digital muy bien estructurado donde se guarda información que se puede buscar y manipular fácilmente. Por ejemplo:</p>
+<ul class="simple">
+<li><p><strong>MongoDB:</strong> Almacena los datos en documentos.</p></li>
+<li><p><strong>MySQL:</strong> Utiliza tablas para almacenar datos. La empresa propietaria es ORACLE.</p></li>
+<li><p><strong>SQL_Server:</strong> Utiliza tablas para almacenar datos. La empresa propietaria es MICROSOFT.</p></li>
+</ul>
+</section>
+<section id="servidor-web">
+<h4>Servidor web<a class="headerlink" href="#servidor-web" title="Link to this heading">¶</a></h4>
+<p>Un servidor web permite alojar páginas web y ejecutar aplicaciones web. Ejemplo:</p>
+<ul class="simple">
+<li><p><strong>APACHE:</strong> Es un servidor web tradicional que se basa en un modelo de procesamiento de solicitudes por separado. Cada solicitud genera un hilo diferente.</p></li>
+</ul>
+</section>
+<section id="entornos-de-ejecucion">
+<h4>Entornos de ejecución<a class="headerlink" href="#entornos-de-ejecucion" title="Link to this heading">¶</a></h4>
+<p>Un entorno de ejecución es un software que contiene todo lo necesario para que otro software se ejecute correctamente. Esto incluye desde un intermediario con el sistema operativo hasta librerías y demás recursos necesarios como la documentación. Por ejemplo:</p>
+<ul class="simple">
+<li><p><strong>NODE:</strong> También conocido como NODEJS, es un <strong>entorno de ejecución</strong> que permite ejecutar código JavaScript en el lado del servidor. A diferencia de JavaScript tradicional, que se ejecuta en el navegador, Node.js permite que los desarrolladores utilicen JavaScript para crear aplicaciones del lado del servidor, lo que lo hace muy versátil y poderoso.</p></li>
+</ul>
+</section>
+<section id="framework">
+<h4>Framework<a class="headerlink" href="#framework" title="Link to this heading">¶</a></h4>
+<p>Un framework es un conjunto de librerías, documentación que ayudan a desarrollar o ejecutar un software en específico. Por ejemplo:</p>
+<ul class="simple">
+<li><p><strong>.NET:</strong> Creado por Microsoft, permite crear aplicaciones de software más fácil y eficiente.</p></li>
+<li><p><strong>EXPRESS:</strong> Es un <strong>framework de aplicación web</strong> para Node.js que facilita la creación de aplicaciones que se ejecutan en el servidor web.</p></li>
+<li><p><strong>ANGULAR:</strong> Es un <strong>framework de aplicación web</strong> para Node.js que facilita la creación de aplicaciones que se ejecutan en el navegador web.</p></li>
+</ul>
+</section>
+<section id="ide">
+<h4>IDE<a class="headerlink" href="#ide" title="Link to this heading">¶</a></h4>
+<p>Un IDE son las siglas para (<strong>entorno de desarrollo de software)</strong>. Es una aplicación que proporciona un conjunto completo de herramientas para facilitar el desarrollo de software. Un IDE combina diferentes herramientas y funciones en un solo lugar para ayudar a los programadores a escribir, depurar y mantener su código de manera más eficiente. Por ejemplo:</p>
+<ul class="simple">
+<li><p><strong>VISUAL STUDIO CODE:</strong> IDE de Microsoft para programar con cualquier lenguaje de programación.</p></li>
+<li><p><strong>THONNY:</strong> IDE para programar con el lenguaje de programación PYTHON.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="desarollo-web">
+<h3>Desarollo web<a class="headerlink" href="#desarollo-web" title="Link to this heading">¶</a></h3>
+<p>Se conoce como desarrollo web al proceso de crear y mantener un sitio web que sea funcional en internet, a través de diferentes lenguajes de programación, según el modelo y la parte de la página que corresponda. Cada sitio tiene una URL única que lo distingue de los demás en la red informática mundial.</p>
+<p>Un sitio web puede clasificarse de diferentes formas. Para cuestiones de desarrollo web principalmente se divide en dos partes:</p>
+<ul class="simple">
+<li><p><strong>Front-end:</strong> Es la parte que interactúa con el usuario, tanto en imagen como en función. Por ello está íntimamente relacionada con la experiencia del usuario (UX) y la interfaz de usuario (IU).</p></li>
+<li><p><strong>Back-end:</strong> Se refiere a la parte que está en contacto directo con el servidor; es donde se aplica el código de programación para crear la estructura. Permanece en un segundo plano a cargo de la accesibilidad, actualización, bases de datos y cambios del sitio.</p></li>
+</ul>
+<p>Los desarrolladores web se enfocan en la codificación y programación del sitio web utilizando lenguajes como HTML, CSS, JavaScript y otros. Su objetivo es que el sitio responda correctamente a las interacciones que realice el usuario en él y concretar un stack tecnológico adecuado. Algunos ejemplos de STACK son:</p>
+<ul class="simple">
+<li><p>LAMP: Linux, Apache, MySQL, PHP/Python/Perl</p></li>
+<li><p>MEAN: MongoDB, Express.js, Angular, Node.js</p></li>
+<li><p>.NET stack: .NET, C#, SQL Server y Visual Studio</p></li>
+<li><p>DJANGO: Python</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="lenguajes-de-programacion">
+<h3>Lenguajes de programación<a class="headerlink" href="#lenguajes-de-programacion" title="Link to this heading">¶</a></h3>
+<p>Un <strong>lenguaje de programación</strong> es un conjunto de instrucciones que le damos a una computadora para que realice tareas específicas. Es como un idioma que usamos para comunicarnos con las máquinas. Estas instrucciones se escriben siguiendo reglas gramaticales y de sintaxis definidas, y el objetivo es crear programas que resuelvan problemas o hagan cosas útiles.</p>
+<p>A continuación se muestran los 6 lenguajes de programación más usados en el desarrollo web. HTML, CSS y JavaScript suelen pertenecer al Front-end mientras que PHP, JAVA y Python suelen pertenecer al Back-end.</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://developer.mozilla.org/es/docs/Web/HTML" rel="noreferer noopener" target="_blank">HTML</a></strong>: Es uno de los lenguajes de marcado más importantes que se usa en el Front-end de un sitio. Su escritura ayuda a dar estructura y organización al contenido de una página web, a través de una acomodación tipo árbol. Se configura por medio de etiquetas o hipertextos que permiten que los sitios web se encuentren en los motores de búsqueda.</p></li>
+<li><p><strong><a class="reference external" href="https://developer.mozilla.org/es/docs/Web/CSS" rel="noreferer noopener" target="_blank">CSS</a></strong>: El nombre extendido de CSS es Cascading Style Sheets, en español significa hojas de estilo en cascada. Este es un lenguaje que trabaja en perfecta armonía con el HTML en el Front-end. Para los programadores web es una herramienta muy útil para especificar el aspecto y la posición de los elementos en el sitio.</p></li>
+<li><p><strong><a class="reference external" href="https://developer.mozilla.org/es/docs/Web/JavaScript" rel="noreferer noopener" target="_blank">Javascript</a></strong>: Uno de los lenguajes más apreciados es JavaScript, ya que con él es muy fácil crear sitios interactivos y dinámicos (como animaciones, formularios, juegos, galerías, botones, etc.), los cuales son muy demandados hoy en día. Su código también se refleja en el Front-end. Se basa en objetos que se pueden acomodar y reutilizar de forma sencilla.</p></li>
+<li><p><strong><a class="reference external" href="https://www.php.net" rel="noreferer noopener" target="_blank">PHP</a></strong>: En el lado del Back-end se tiene el lenguaje PHP, uno de los pioneros de la transición de sitios fijos a sitios interactivos. Es uno de los lenguajes más utilizados por ser de código abierto, con casi 30 años de trayectoria; también es considerado uno de los más extensos que hay. Puede ser incrustado en el HTML sin ningún problema.</p></li>
+<li><p><strong><a class="reference external" href="https://www.java.com/es" rel="noreferer noopener" target="_blank">Java</a></strong>: Una de las grandes ventajas es que se escribe una sola vez y se puede ejecutar en distintos dispositivos y sistemas operativos, gracias a su máquina virtual (JVM). Corresponde al Back-end de una aplicación web. Tiene un código eficiente, memoria automática y detección de errores oportuna.</p></li>
+<li><p><strong><a class="reference external" href="https://www.python.org" rel="noreferer noopener" target="_blank">Python</a></strong>: Es uno de los lenguajes de desarrollo web más innovadores que hay hasta el momento, debido a su característica multiparadigma, que es capaz de adaptarse a varios estilos de programación y crear aplicaciones de cualquier tipo. Es de código abierto y su escritura es muy parecida al lenguaje humano. Forma parte del Back-end de un sitio.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="software-de-aplicacion">
+<h3>Software de aplicación<a class="headerlink" href="#software-de-aplicacion" title="Link to this heading">¶</a></h3>
+<p>Dentro del software de aplicación se encuentran varios ejemplos relacionados con áreas específicas como diseño, ofimática, gráfico, financiero, musical, etc.</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://inkscape.org/" rel="noreferer noopener" target="_blank">Inkscape</a></strong>: Es un editor de gráficos vectoriales de código abierto, gratuito y disponible para múltiples sistemas operativos. Permite crear y editar imágenes vectoriales de alta calidad, ideal para ilustraciones, logotipos, diagramas y más.</p></li>
+<li><p><strong><a class="reference external" href="https://www.gimp.org/" rel="noreferer noopener" target="_blank">Gimp</a></strong>: Es un editor de imágenes de código abierto, gratuito y multiplataforma. Ofrece una amplia gama de herramientas para manipular, retocar y crear imágenes rasterizadas, similar a Photoshop pero sin costo.</p></li>
+<li><p><strong><a class="reference external" href="https://www.blender.org/" rel="noreferer noopener" target="_blank">Blender</a></strong>: Es un software de modelado 3D, animación y renderizado gratuito y de código abierto. Es una herramienta potente y versátil utilizada para crear gráficos 3D, animaciones, juegos y más.</p></li>
+<li><p><strong><a class="reference external" href="https://audiofloss.melisa.gal/" rel="noreferer noopener" target="_blank">Audiofloss</a></strong>: Es una recopilación de software portable para Windows orientado a edición, producción y composición musical.</p></li>
+<li><p><strong><a class="reference external" href="https://godotengine.org/" rel="noreferer noopener" target="_blank">Godot</a></strong>: Es un motor de juego de código abierto, gratuito y multiplataforma. Proporciona un entorno completo para desarrollar videojuegos 2D y 3D, con un editor visual intuitivo y una gran comunidad de apoyo.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a02-desarrolladores-y-programadores-0-2">
+<h2>A02: Desarrolladores y programadores (+0,2)<a class="headerlink" href="#a02-desarrolladores-y-programadores-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>COPIE la siguiente tabla en su cuaderno y escriba las tareas o actividades que realiza un programador y un desarrollador de software:</p></li>
+</ol>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Desarrollador de software</p></th>
+<th class="head"><p>Programador</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>2.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>3.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>4.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>5.</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>6.</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="a03-tecnologias-usadas-en-el-desarrollo-de-software-0-2">
+<h2>A03: Tecnologías usadas en el desarrollo de software (+0,2)<a class="headerlink" href="#a03-tecnologias-usadas-en-el-desarrollo-de-software-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>COPIE la siguiente <strong>sopa de letras</strong> en su cuaderno y encuentre 14 términos de tecnologías que se usan para desarrollar software. Posteriormente escriba su significado.</p></li>
+</ol>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/image034.png"><img alt="../_images/image034.png" src="../_images/image034.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Servicios de red</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Ejemplo:</p>
+<blockquote>
+<div><p><strong>SQL_SERVER:</strong> Sistema de gestión de base de datos relacional de Microsoft.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="axx-examen-final-4-0">
+<h2>AXX: Examen final (+4,0)<a class="headerlink" href="#axx-examen-final-4-0" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<dl class="myst field-list simple">
+<dt class="field-odd">TIEMPO DEL EXAMEN<span class="colon">:</span></dt>
+<dd class="field-odd"><p>30 minutos</p>
+</dd>
+<dt class="field-even">NÚMERO DE PREGUNTAS<span class="colon">:</span></dt>
+<dd class="field-even"><p>10</p>
+</dd>
+</dl>
+<div class="admonition-posibles-preguntas admonition">
+<p class="admonition-title">Posibles preguntas</p>
+<ol class="arabic simple">
+<li></li>
+</ol>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G1022.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 1022: Datos, Información y Software (P1)</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1012.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1012: Software Libre (P1)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1021: PROGRAMACIÓN (P1)</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li><a class="reference internal" href="#a01-programacion">A01: PROGRAMACIÓN</a><ul>
+<li><a class="reference internal" href="#que-es-la-programacion">¿Qué es la programación?</a></li>
+<li><a class="reference internal" href="#que-es-el-software">¿Qué es el software?</a></li>
+<li><a class="reference internal" href="#que-es-el-desarrollo-de-software">¿Qué es el desarrollo de software?</a></li>
+<li><a class="reference internal" href="#programadores-vs-desarrolladores">Programadores Vs Desarrolladores</a></li>
+<li><a class="reference internal" href="#tipos-de-software">Tipos de software</a></li>
+<li><a class="reference internal" href="#proceso-de-desarrollo-de-software">Proceso de desarrollo de software</a></li>
+<li><a class="reference internal" href="#tecnologias-usadas-en-el-desarrollo-de-software">Tecnologías usadas en el desarrollo de software</a><ul>
+<li><a class="reference internal" href="#sistemas-operativos">Sistemas operativos</a></li>
+<li><a class="reference internal" href="#bases-de-datos">Bases de datos</a></li>
+<li><a class="reference internal" href="#servidor-web">Servidor web</a></li>
+<li><a class="reference internal" href="#entornos-de-ejecucion">Entornos de ejecución</a></li>
+<li><a class="reference internal" href="#framework">Framework</a></li>
+<li><a class="reference internal" href="#ide">IDE</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#desarollo-web">Desarollo web</a></li>
+<li><a class="reference internal" href="#lenguajes-de-programacion">Lenguajes de programación</a></li>
+<li><a class="reference internal" href="#software-de-aplicacion">Software de aplicación</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a02-desarrolladores-y-programadores-0-2">A02: Desarrolladores y programadores (+0,2)</a></li>
+<li><a class="reference internal" href="#a03-tecnologias-usadas-en-el-desarrollo-de-software-0-2">A03: Tecnologías usadas en el desarrollo de software (+0,2)</a></li>
+<li><a class="reference internal" href="#axx-examen-final-4-0">AXX: Examen final (+4,0)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

@@ -51,7 +51,6 @@
 :maxdepth: 1
 :caption: Octavo (Lógica computacional)
 
-1_guias/G820.md
 1_guias/G821.md
 1_guias/G822.md
 :::
@@ -59,56 +58,42 @@
 :::{toctree}
 :hidden:
 :maxdepth: 1
-:caption: Décimo
+:caption: Décimo (Informática)
 
 1_guias/G1001.md
 1_guias/G1002.md
 1_guias/G1003.md
 1_guias/G1004.md
+:::
+
+:::{toctree}
+:hidden:
+:maxdepth: 1
+:caption: Décimo (Ofimática)
+
 1_guias/G1011.md
 1_guias/G1012.md
-1_guias/G1013.md
 :::
 
 :::{toctree}
 :hidden:
 :maxdepth: 1
-:caption: Once
+:caption: Décimo (Programación)
 
-1_guias/G1111.md
-1_guias/G1112.md
-1_guias/G1113.md
+1_guias/G1021.md
+1_guias/G1022.md
+1_guias/G1023.md
 :::
-
-:::{toctree}
-:maxdepth: 1
-:hidden:
-:caption: LECTURAS
-
-2_lecturas/L1001-01.md
-2_lecturas/L1002-01.md
-2_lecturas/L1002-02.md
-2_lecturas/L1003-01.md
-2_lecturas/L1003-02.md
-2_lecturas/L1004-01.md
-2_lecturas/L1011-01.md
-2_lecturas/L1012-01.md
-2_lecturas/L1013-01.md
-2_lecturas/L1111-01.md
-2_lecturas/L1112-01.md
-2_lecturas/L1113-01.md
-:::
-
 
 :::{toctree}
 :maxdepth: 1
 :hidden:
 :caption: PLANES DE REFUERZO
 
-3_planesRefuerzo/R1000-01.md
-3_planesRefuerzo/R1000-02.md
-3_planesRefuerzo/R1000-05.md
-3_planesRefuerzo/R1100-05.md
+1_guias/G820.md
+1_guias/G1000.md
+1_guias/G1010.md
+1_guias/G1020.md
 :::
 
 :::{toctree}

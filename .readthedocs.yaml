@@ -11,7 +11,7 @@ build:
     python: "3.13"
   jobs:
     pre_install:
-      - pip install myst-parser sphinx_design sphinx_rtd_theme
+      - pip install myst-parser sphinx_design furo
     post_build:
       - echo "Build finished!"
 

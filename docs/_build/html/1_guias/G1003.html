@@ -1,539 +1,242 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../genindex.html"><link rel="search" title="Búsqueda" href="../search.html"><link rel="next" title="Guía 1004: MANTENIMIENTO (P2)" href="G1004.html"><link rel="prev" title="Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)" href="G1002.html">
+        <link rel="prefetch" href="../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../_static/logo_dark.png" as="image">
 
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="es" data-content_root="../">
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guía 1003: MANTENIMIENTO (P2) &mdash; aula 115</title>
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+        <title>Guía 1003: REDES (P2) - aula 115</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=4c9c2d9f" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=e02aa765" />
+    
+    
 
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--normal);
+  --toc-font-size: var(--font-size--small);
+  --admonition-font-size: 0.858rem;
   
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=e2bb6099"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../_static/translations.js?v=f85f4cfb"></script>
-      <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Índice" href="../genindex.html" />
-    <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Guía 1004: OFIMÁTICA (P2)" href="G1004.html" />
-    <link rel="prev" title="Guía 1002: REDES (P2)" href="G1002.html" /> 
-</head>
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
 
-          
-          
-          <a href="../index.html">
-            
-              <img src="../_static/logo_light.png" class="logo" alt="Logotipo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#utiles-escolares">Útiles escolares</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#porcentaje-de-notas">Porcentaje de notas %</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#equivalencia-calificacion-instruimos">Equivalencia calificación INSTRUIMOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#sello-docente">Sello docente</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-dentro-y-fuera-del-aula">Acceso dentro y fuera del aula</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#modelo-de-almacenamiento-google-workspace">Modelo de almacenamiento Google WorkSpace®</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-al-aula-115-en-contrajornada">Acceso al aula 115 en contrajornada</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-de-estudiantes-al-pc">Acceso de estudiantes al PC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#estructura-carpeta-de-evidencias">Estructura carpeta de evidencias</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#actividades-inicio-de-ano-escolar">Actividades inicio de año escolar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#desempenos">DESEMPEÑOS</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#logica-computacional-8">Lógica computacional 8</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#tecnologia-e-informatica-10">Tecnología e Informática 10</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#ofimatica-10">Ofimática 10</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#ofimatica-11">Ofimática 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#reglas-del-aula-115">Reglas del aula 115</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#prohibiciones">PRØHIBICIONES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#que-pasa-si-se-incumplen-las-reglas">¿Qué pasa si se incumplen las reglas?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#que-pasa-si-el-incumplimiento-es-reiterativo">¿Qué pasa si el incumplimiento es reiterativo?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/descargas.html#institucional">Institucional</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/descargas.html#proyecto-de-grado">Proyecto de grado</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Octavo</span></p>
+<p class="caption" role="heading"><span class="caption-text">Octavo (Lógica computacional)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="G820.html">Guía 820: Planes de refuerzo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G820.html#primero-periodo">PRIMERO PERIODO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#hardware">Hardware</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#software">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#sistema-computacional">Sistema computacional</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#informatica">Informática</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#razonar">Razonar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#logica">Lógica</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#logica-computacional">Lógica computacional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
 </ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G820.html#segundo-periodo">SEGUNDO PERIODO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#datos">Datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#informacion">Información</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#jerarquia-de-datos">Jerarquía de datos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G821.html">Guía 821: Concepto Lógica computacional (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a01-concepto-de-logica-computacional-0-1">A01: Concepto de lógica computacional (+0,1)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-el-hardware">¿Qué es el HARDWARE?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="G821.html#que-es-una-cpu">¿Qué es una CPU?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G821.html#que-es-la-memoria-ram">¿Qué es la MEMORIA RAM?</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-el-software">¿Qué es el SOFTWARE?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-una-sistema-computacional">¿Qué es una SISTEMA COMPUTACIONAL?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-la-informatica">¿Qué es la INFORMÁTICA?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-razonar">¿Qué es RAZONAR?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-la-logica">¿Qué es la LÓGICA?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-logica-computacional">¿Qué es lógica computacional?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a02-hardware-0-3">A02: Hardware (+0,3)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a03-software-0-1">A03: Software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a04-sistema-computacional-0-1">A04: Sistema computacional (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a05-informatica-0-1">A05: Informática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a06-razonamiento-y-logica-0-1">A06: Razonamiento y lógica (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a07-logica-computacional-0-1">A07: Lógica computacional (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a08-examen-escrito-4-0">A08: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G822.html">Guía 822: Jerarquía de datos (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a01-informacion-y-jerarquia-de-datos-0-1">A01: Información y Jerarquía de datos (+0,1)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-son-los-datos">¿Qué son los datos?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-es-la-informacion">¿Qué es la información?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-es-la-jerarquia-de-datos">¿Qué es la Jerarquía de datos?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#bit">bit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#byte-8-bits">Byte (8 bits)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#caracter">Carácter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#dato">Dato</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#registro">Registro</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#tabla">Tabla</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#base-de-datos">Base de datos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a02-datos-vs-informacion-0-1">A02: Datos Vs Información (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a03-jerarquia-de-datos-0-1">A03: Jerarquía de datos (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a04-construccion-de-tablas-0-1">A04: Construcción de tablas (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a05-bases-de-datos-0-5">A05: Bases de datos (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a06-examen-escrito-4-0">A06: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Décimo</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Informática)</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a02-arpanet-0-1">A02: ARPANET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a03-primera-pagina-web-0-1">A03: Primera página web (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a04-primer-navegador-mosaic-0-1">A04: Primer navegador MOSAIC (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a05-origenes-de-la-pc-0-1">A05: Orígenes de la PC (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a06-apple-macintosh-0-1">A06: Apple - Macintosh (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a07-origenes-del-software-0-1">A07: Orígenes del software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a08-unix-linux-0-1">A08: UNIX-LINUX (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a09-windows-0-1">A09: Windows (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a10-linea-de-tiempo-1-0">A10: Línea de tiempo (+1,0)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a11-examen-escrito-3-0">A11: Examen escrito (+3,0)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1002.html">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Guía 1003: REDES (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1004.html">Guía 1004: MANTENIMIENTO (P2)</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1002.html">Guía 1002: REDES (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1002.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Guía 1003: MANTENIMIENTO (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1004.html">Guía 1004: OFIMÁTICA (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1011.html">Guía 1011: Concepto Ofimática (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a01-concepto-de-ofimatica-0-1">A01: Concepto de Ofimática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a02-area-de-la-ofimatica-0-1">A02: Área de la ofimática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a03-google-workspace-0-1">A03: Google Workspace (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a04-microsoft-office-0-1">A04: Microsoft Office (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a05-servicio-indicado-0-5">A05: Servicio indicado (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a06-examen-escrito-4-0">A06: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a01-definicion-de-software-0-1">A01: Definición de software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a02-importancia-del-software-libre-0-1">A02: Importancia del software libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a03-ejemplos-de-software-libre-0-1">A03: Ejemplos de software libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a04-relacion-entre-software-libre-software-propietario-y-software-pirata-0-1">A04: Relación entre software libre, software propietario y software pirata (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a05-ahorro-usando-software-libre-0-2">A05: Ahorro($) usando software libre (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a06-el-riesgo-del-software-pirata-0-2">A06: El riesgo del software pirata (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a07-identificacion-de-software-propietario-y-libre-0-1">A07: Identificación de software propietario y libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a08-carta-al-propietario-4-0">A08: Carta al propietario (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1013.html">Guía 1013: LibreOffice (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a01-libreoffice-0-2">A01: LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a02-paises-que-usan-libreoffice-0-2">A02: Paises que usan LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a03-herramientas-de-libreoffice-0-2">A03: Herramientas de LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a04-ventajas-de-libreoffice-0-2">A04: Ventajas de LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a05-examen-escrito-4-0">A05: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Once</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Ofimática)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="G1111.html">Guía 1111: Conocimientos previos (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a01-datos-informacion-y-jerarquia-de-datos-0-1">A01: Datos, información y jerarquía de datos (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a02-relacion-entre-datos-e-informacion-0-2">A02: Relación entre datos e información (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a03-jerarquia-de-datos-0-2">A03: Jerarquía de datos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a04-concepto-de-hardware-ram-y-cpu-0-1">A04: Concepto de hardware (RAM y CPU) (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a05-utilidad-del-hardware-0-2">A05: Utilidad del hardware (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a06-concepto-de-software-0-1">A06: Concepto de software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a07-clasificacion-del-software-0-2">A07: Clasificación del software (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a08-examen-final-4-0">A08: Examen final (+4,0)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1011.html">Guía 1011: OFIMÁTICA (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1112.html">Guía 1112: Diagramas de flujo (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a00-introduccion-0-3">A00: Introducción (+0,3)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a01-diagramas-de-flujo-0-7">A01: Diagramas de flujo (+0,7)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a02-orientaciones-al-extranjero-1-0">A02: Orientaciones al extranjero (+1,0)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a03-orientaciones-seguras-3-0">A03: Orientaciones seguras (+3,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1113.html">Guía 1113: Desarrollo de algoritmos (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a01-que-son-los-algoritmos-0-2">A01: ¿Qué son los algoritmos? (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a02-tipos-del-algoritmos-0-2">A02: Tipos del algoritmos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a03-clasificacion-de-algoritmos-0-2">A03: Clasificación de algoritmos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a04-metodologia-para-desarrollar-un-algoritmo-0-2">A04: Metodología para desarrollar un algoritmo (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a05-algoritmos-4-0">A05: Algoritmos (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">LECTURAS</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Programación)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1001-01.html">L1001-01: Historia de la Informática</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-del-internet-arpanet">Historia del Internet (ARPANET)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-de-la-computacion-personal">Historia de la Computación Personal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-del-software">Historia del Software</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1002-01.html">L1002-01: Redes de datos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#redes-de-datos">Redes de datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#tipos-de-redes">Tipos de redes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#diferencia-entre-una-intranet-e-internet">Diferencia entre una Intranet e INTERNET</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#intranet">Intranet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#internet">INTERNET</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#medios-de-transmision">Medios de transmisión</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#redes-inalambricas">Redes inalámbricas</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#componentes-de-una-red">Componentes de una Red</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#servidor">Servidor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#equipos-cliente">Equipos cliente</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#el-repetidor">El Repetidor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#hub-comunicar-varios-equipos">Hub (comunicar varios equipos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#bridge-puentes-de-red-para-comunicar-segmentos-de-red">Bridge (puentes de red para comunicar segmentos de red)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#switch-hub-bridge">Switch (Hub + Bridge)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#access-point-switch-inalambrico">Access Point (Switch inalámbrico)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#router-para-salir-de-una-red-lan">Router (para salir de una red LAN)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#modem-switch-access-point-router">Modem (Switch + Access Point + Router)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#rack-de-telecomunicaciones">RACK de telecomunicaciones</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#internet-de-las-cosas">Internet de las cosas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#instalacion-de-una-red-de-datos">Instalación de una red de datos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#cableado-estructurado">Cableado estructurado</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#suministro-electrico">Suministro eléctrico</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#hardware">Hardware</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#software">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#acceso-a-internet">Acceso a Internet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#control-y-mantenimiento">Control y mantenimiento</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#servicios-de-red">Servicios de red</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#ssh">SSH</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#dhcp">DHCP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#dns">DNS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#ftp">FTP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#http">HTTP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#https">HTTPS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#smtp-pop">SMTP-POP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#voip">VOIP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#rdp">RDP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#firewall">FIREWALL</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#proxy">PROXY</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#vpn">VPN</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1002-02.html">L1002-02: Ciberseguridad</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-informatica">Seguridad informática</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#ingenieria-social">Ingeniería social</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-en-redes-wifi">Seguridad en redes WIFI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-en-internet-y-redes-de-ordenadores-pentesting">Seguridad en Internet y redes de ordenadores (Pentesting)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-perimetral-monitorizacion-y-defensa-de-redes">Seguridad perimetral, monitorización y defensa de redes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-de-aplicaciones-o-paginas-web">Seguridad de aplicaciones o páginas web</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-de-la-informacion">Seguridad de la información</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-informatica-vs-seguridad-de-la-informacion">Seguridad Informática Vs Seguridad de la Información</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#iso-27001">ISO 27001</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#delitos-informaticos-en-colombia">Delitos informáticos en Colombia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#penas-y-multas-por-delitos-informaticos">Penas y multas por delitos informáticos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#hacking-etico">Hacking ético</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1003-01.html">L1003-01: Mantenimiento</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#que-es-el-mantenimiento">¿Qué es el mantenimiento?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#tipos-de-mantenimiento">Tipos de mantenimiento</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-preventivo-evitar-el-dano">Mantenimiento preventivo (evitar el daño)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../2_lecturas/L1003-01.html#clasificacion-mantenimiento-preventivo">Clasificación mantenimiento preventivo</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-correctivo-el-dano-ocurre">Mantenimiento correctivo (el daño ocurre)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../2_lecturas/L1003-01.html#clasificacion-de-mantenimiento-correctivo">Clasificación de mantenimiento correctivo</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-de-actualizacion">Mantenimiento de actualización</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#eleccion-del-tipo-de-mantenimiento">Elección del tipo de mantenimiento</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1003-02.html">L1003-02: Electricidad y Electrónica</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#que-es-la-electricidad">¿Qué es la Electricidad?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#que-es-la-electronica">¿Qué es la Electrónica?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#electronica-digital">Electrónica digital</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#hardware-libre">Hardware libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#arduino">ARDUINO</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#raspberry-pi">RASPBERRY PI</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1004-01.html">L1004-01: Ofimática y programación</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#programacion">Programación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#desarrollo-de-software">Desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#programadores-vs-desarrolladores">Programadores Vs Desarrolladores</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#tipos-de-desarrollo-de-software">Tipos de desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#proceso-de-desarrollo-de-software">Proceso de desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#tecnologias-usadas-en-el-desarrollo-de-software">Tecnologías usadas en el desarrollo de software</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#sistemas-operativos">Sistemas operativos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#bases-de-datos">Bases de datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#servidor-web">Servidor web</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#entornos-de-ejecucion">Entornos de ejecución</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#framework">Framework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#ide">IDE</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#desarollo-web">Desarollo web</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#lenguajes-de-programacion">Lenguajes de programación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#software-de-aplicacion">Software de aplicación</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1011-01.html">L1011-01: Introducción a la Ofimática</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#que-es-la-ofimatica">¿Qué es la ofimática?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#google-workspace">Google Workspace</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1011-01.html#google-one-ai-plus-19-900-mes-2026">Google ONE - AI PLUS ($19,900/mes) (2026)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#microsoft-office">Microsoft Office</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1011-01.html#microsoft-365-family-459-999-ano-2026">MICROSOFT 365 Family ($459,999/año) (2026)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1012-01.html">L1012-01: Software libre</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#que-es-el-software">¿Qué es el software?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#tipos-de-software">Tipos de software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#clasificacion-de-software">Clasificación de software</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-libre">Software libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#libertades-del-software-libre">4 Libertades del software libre</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#ejemplos-de-software-libre">Ejemplos de software libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#sistema-operativo-gnu-linux-0">Sistema Operativo GNU-LINUX ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#navegador-web-mozilla-firefox-0">Navegador web Mozilla FIREFOX ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#editor-de-imagenes-gimp-0">Editor de imágenes GIMP ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#editor-de-graficos-vectoriales-inkscape-0">Editor de gráficos vectoriales INKSCAPE ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#reproductor-multimedia-vlc-0">Reproductor multimedia VLC ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#suite-de-creacion-3d-blender-0">Suite de creación 3D BLENDER ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#edicion-de-sonido-audacity-0">Edición de sonido Audacity ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#suite-ofimatica-libreoffice-0">Suite ofimática Libreoffice ($0)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-propietario">Software propietariØ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#ejemplos-de-software-propietario">Ejemplos de software propietario</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#sistema-operativo-microsoft-windows-769-999">Sistema operativo Microsoft Windows ($769,999)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#microsoft-office-suite-ofimatica-459-999-ano">Microsoft Office (suite ofimática) ($459,999/año)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#adobe-photoshop-editor-de-imagenes-48-971-mes">Adobe Photoshop (editor de imágenes) ($48,971/mes)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#autocad-software-de-diseno-2-201-999-ano">AutoCAD (software de diseño) ($2,201,999/año)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-pirata">Software PIRATA!!!</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1013-01.html">L1013-01: LibreOffice</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#suite-ofimatica-libreoffice">Suite Ofimática LibreOffice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#entidades-que-usan-libreoffice">Entidades que usan LibreOffice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#herramientas-de-libreoffice">Herramientas de LibreOffice</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-writer-procesador-de-textos">LibreOffice Writer (procesador de textos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-calc-hoja-de-calculo">LibreOffice Calc (hoja de cálculo)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-impress-presentaciones">LibreOffice Impress (presentaciones)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-draw-dibujo-vectorial">LibreOffice Draw (Dibujo vectorial)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-base-bases-de-datos">LibreOffice Base (Bases de datos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-math-editor-de-formulas">LibreOffice Math (Editor de fórmulas)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#ventajas-de-libreoffice">Ventajas de LibreOffice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1111-01.html">L1111-01: Conocimientos previos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#informacion-y-datos">Información y Datos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#datos">Datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#informacion">Información</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#valores-cuantitativos-y-cualitativos">Valores cuantitativos y cualitativos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#jerarquia-de-datos">Jerarquía de datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#hardware">Hardware</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#la-memoria-ram-acceso-rapido-a-los-datos">La memoria RAM (acceso rápido a los datos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#la-cpu-procesa-los-datos">La CPU (procesa los datos)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#software-vs-programa">Software Vs Programa</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1112-01.html">L1112-01: Diagramas de flujo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#operacion">Operación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#limites-de-proceso">Límites de proceso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#punto-de-decision">Punto de decisión</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#conector">Conector</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#direccion-de-flujo">Dirección de flujo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#entrada-manual">Entrada manual</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#documento">Documento</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#base-de-datos">Base de datos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1113-01.html">L1113-01: Algoritmos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#tipos-de-algoritmos">Tipos de algoritmos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmos-cualitativos-informales">Algoritmos cualitativos (informales)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmos-cuantitativos-formales">Algoritmos cuantitativos (formales)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#metodologia-para-desarrollar-un-algoritmo">Metodología para desarrollar un algoritmo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmo-para-ir-al-colegio-ejemplo">Algoritmo para ir al colegio (ejemplo)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-01-analisis-de-requisitos">FASE 01: Análisis de requisitos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-02-diseno-del-algoritmo">FASE 02: Diseño del algoritmo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-03-construccion-del-algoritmo">FASE 03: Construcción del algoritmo</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="G1021.html">Guía 1021: PROGRAMACIÓN (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1022.html">Guía 1022: Datos, Información y Software (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1023.html">Guía 1023: Desarrollo de algoritmos (P1)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">PLANES DE REFUERZO</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html">Plan de refuerzo 1000-01 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-internet">Historia del Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-hardware">Historia del Hardware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-software">Historia del Software</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-02.html">Plan de refuerzo 1000-02 (P2)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html">Plan de refuerzo 1000-05 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-la-ofimatica">¿Qué es la ofimática?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-google-workspace">¿Qué es Google Workspace?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-microsoft-office">¿Qué es Microsoft Office?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-libre">¿Qué es el software libre?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#ejemplos-de-software-libre">Ejemplos de software libre</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-propietario">¿Qué es el software propietario?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#ejemplos-de-software-propietario">Ejemplos de software propietario</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-pirata">¿Qué es el software pirata?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-libreoffice">¿Qué es LibreOffice?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html">Plan de refuerzo 1100-05 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#instruccion">Instrucción</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#hardware">Hardware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#informacion-y-datos">Información y datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#software-vs-programa">Software Vs Programa</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#id1">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#programa">Programa</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="G820.html">Guía 820: Lógica computacional 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1000.html">Guía 1000: Informática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1010.html">Guía 1010: Ofimática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1020.html">Guía 1020: Programación 10</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
 <ul>
@@ -541,46 +244,62 @@
 <li class="toctree-l1"><a class="reference internal" href="../4_referencias/webgrafia.html">Webgrafía</a></li>
 </ul>
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">aula115</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Guía 1003: MANTENIMIENTO (P2)</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/1_guias/G1003.md.txt" rel="nofollow"> Ver código fuente de la página</a>
-      </li>
-  </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section class="tex2jax_ignore mathjax_ignore" id="guia-1003-mantenimiento-p2">
-<h1>Guía 1003: MANTENIMIENTO (P2)<a class="headerlink" href="#guia-1003-mantenimiento-p2" title="Link to this heading"></a></h1>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/1_guias/G1003.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1003-redes-p2">
+<h1>Guía 1003: REDES (P2)<a class="headerlink" href="#guia-1003-redes-p2" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 35.0%" />
 <col style="width: 65.0%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><table class="docutils align-default">
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><img alt="escudo" src="../_images/escudo.png" /></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 </td>
-<td><table class="docutils align-left">
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
 <tbody>
 <tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
 <ul class="simple">
@@ -589,23 +308,29 @@
 <li><p><strong>GRADO</strong>: DÉCIMO</p></li>
 <li><p><strong>PERIODO</strong>: 02</p></li>
 <li><p><strong>TIEMPO</strong>: 10 semanas (2 horas / semana)</p></li>
-<li><p><strong>TIEMPO DE TRABAJO</strong>: 6/20 horas</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 8/20 horas</p></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <ul class="simple">
-<li><p><strong>Temática</strong>: Mantenimiento.</p></li>
-<li><p><strong>Objetivo de aprendizaje</strong>: Introducir los conceptos relacionados con la temática de mantenimiento.</p></li>
+<li><p><strong>Temática</strong>: Redes de datos.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Introducir los conceptos relacionados con la temática de redes de datos.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
@@ -630,15 +355,14 @@ Criterios de evaluación</label><div class="sd-tab-content docutils">
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
-Recursos (2)</label><div class="sd-tab-content docutils">
+Recursos (0)</label><div class="sd-tab-content docutils">
 <ul class="simple">
-<li><p><a class="reference internal" href="../2_lecturas/L1003-01.html"><span class="std std-doc"><strong>LECTURA:</strong> Mantenimiento</span></a></p></li>
-<li><p><a class="reference internal" href="../2_lecturas/L1003-02.html"><span class="std std-doc"><strong>LECTURA:</strong> Electrónica y electricidad</span></a></p></li>
+<li><p>Esta guía no contiene recursos</p></li>
 </ul>
 </div>
 </div>
 <section id="mensaje-del-autor">
-<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading"></a></h2>
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
 <blockquote class="pull-quote">
 <div><p>“”</p>
 <p class="attribution">—Camilo Fonseca</p>
@@ -646,78 +370,1070 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 </section>
 <hr class="docutils" />
 <section id="a00-introduccion-0-1">
-<h2>A00: Introducción (+0,1)<a class="headerlink" href="#a00-introduccion-0-1" title="Link to this heading"></a></h2>
+<h2>A00: Introducción (+0,1)<a class="headerlink" href="#a00-introduccion-0-1" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
 <ol class="arabic simple">
 <li><p>Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="a01-origenes-de-internet-0-1">
-<h2>A01: Orígenes de INTERNET (+0,1)<a class="headerlink" href="#a01-origenes-de-internet-0-1" title="Link to this heading"></a></h2>
+<section id="a01-redes-de-datos-e-internet-0-1">
+<h2>A01: Redes de datos e Internet (+0,1)<a class="headerlink" href="#a01-redes-de-datos-e-internet-0-1" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
 <ol class="arabic simple">
-<li><p>En su cuaderno, responda las siguientes preguntas:</p></li>
+<li><p>Lea los siguientes conceptos relacionados con redes de datos e Internet.</p></li>
+</ol>
+<hr class="docutils" />
+<section id="que-son-las-redes-de-datos">
+<h3>¿Qué son las Redes de datos?<a class="headerlink" href="#que-son-las-redes-de-datos" title="Link to this heading">¶</a></h3>
+<div class="admonition-concepto-de-redes-de-datos admonition">
+<p class="admonition-title">Concepto de redes de datos</p>
+<p>Una <strong>red de datos</strong> es un sistema compuesto de dispositivos electrónicos y equipos de comunicación que permiten el intercambio de información en diferentes formatos a través de una red.</p>
+<p>Las organizaciones y empresas dependen de la infraestructura de red para realizar muchas de sus tareas y procesos de negocio.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/image013.png"><img alt="../_images/image013.png" src="../_images/image013.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dispositivo de red</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="tipos-de-redes">
+<h3>Tipos de redes<a class="headerlink" href="#tipos-de-redes" title="Link to this heading">¶</a></h3>
+<p>Los tipos de redes son:</p>
+<section id="red-de-area-local-lan">
+<h4>Red de área local (LAN)<a class="headerlink" href="#red-de-area-local-lan" title="Link to this heading">¶</a></h4>
+<blockquote>
+<div><p>Una red de área local es un tipo de red de telecomunicaciones que conecta dispositivos electrónicos en un área geográfica relativamente pequeña, como un edificio, una oficina, una casa o una sala de informática. Estas redes están diseñadas para facilitar la comunicación y el intercambio de datos entre dispositivos que se encuentran en proximidad física.</p>
+</div></blockquote>
+</section>
+<section id="red-de-area-metropolitana-man">
+<h4>Red de área metropolitana (MAN)<a class="headerlink" href="#red-de-area-metropolitana-man" title="Link to this heading">¶</a></h4>
+<blockquote>
+<div><p>Una red de área metropolitana es una red de telecomunicaciones que conecta diferentes ubicaciones dentro de una ciudad o área metropolitana, situándose como una solución intermedia entre las redes LAN y las redes WAN.</p>
+</div></blockquote>
+</section>
+<section id="red-de-area-extensa-wan">
+<h4>Red de área extensa (WAN)<a class="headerlink" href="#red-de-area-extensa-wan" title="Link to this heading">¶</a></h4>
+<blockquote>
+<div><p>Las redes de área extensa, son redes de telecomunicaciones que cubren áreas geográficas muy amplias, incluso llegando a interconectar ubicaciones que se encuentran a mucha distancia o a nivel global. Las redes WAN se emplean en entornos empresariales para conectar sucursales, oficinas o puntos de venta en la industria, para supervisar y controlar dispositivos a distancia, y en aplicaciones gubernamentales y de investigación para la transmisión de datos entre ubicaciones distantes.</p>
+</div></blockquote>
+</section>
+</section>
+<hr class="docutils" />
+<section id="clasificacion-de-redes">
+<h3>Clasificación de redes<a class="headerlink" href="#clasificacion-de-redes" title="Link to this heading">¶</a></h3>
+<p>Las redes se clasifican en:</p>
+<section id="redes-alambricas">
+<h4>Redes alámbricas<a class="headerlink" href="#redes-alambricas" title="Link to this heading">¶</a></h4>
+<div class="admonition-con-cables admonition">
+<p class="admonition-title">CON CABLES</p>
+<p>Las <strong>redes alámbricas</strong> utilizan tecnologías de comunicación basadas en cables físicos (como cables de par trenzado, coaxiales o fibra óptica) para transmitir datos de un punto a otro, dependiendo de conexiones estructuradas y tangibles para el transporte de la información.</p>
+<p>Este tipo de redes de telecomunicaciones ofrecen una mayor estabilidad, velocidad y seguridad en la transmisión de datos, ya que la señal no está sujeta a interferencias ambientales ni a obstáculos físicos. Son redes ideales para conectar dispositivos que requieren un alto rendimiento y están situados en una zona fija, como ordenadores de escritorio, servidores, consolas de videojuegos o sistemas de almacenamiento en red (NAS).</p>
+<p>Entre las distintas clases de <em>redes alámbricas</em> se tienen:</p>
+<ul class="simple">
+<li><p>Basadas en tecnología Ethernet: redes locales domésticas o empresariales (LAN) que utilizan cables de cobre (UTP/STP).</p></li>
+<li><p>Usando tecnologías de alta velocidad: redes de fibra óptica, ideales para conexiones troncales o internet de banda ancha simétrica.</p></li>
+<li><p>Redes de infraestructura dedicada: conexiones de redes de área amplia (WAN) o líneas telefónicas tradicionales (como las antiguas conexiones ADSL).</p></li>
+</ul>
+</div>
+</section>
+<section id="redes-inalambricas">
+<h4>Redes inalámbricas<a class="headerlink" href="#redes-inalambricas" title="Link to this heading">¶</a></h4>
+<div class="admonition-sin-clables admonition">
+<p class="admonition-title">SIN CLABLES</p>
+<p>Las <strong>redes inalámbricas</strong> utilizan tecnologías de comunicación basadas en señales de <strong>radiofrecuencia</strong> o <strong>microondas</strong> para transmitir datos a través del aire, eliminando la necesidad de conexiones físicas por medio de cables.</p>
+<p>Este tipo de redes de telecomunicaciones ofrecen una mayor flexibilidad y movilidad, pues no es necesario que los dispositivos estén situados en una zona fija. Son redes ideales para conectar dispositivos móviles como smartphones, tablets, cámaras de video-vigilancia u ordenadores portátiles, entre otros.</p>
+<p>Entre las distintas clases de <em>redes inalámbricas</em> se tienen:</p>
+<ul class="simple">
+<li><p>Basadas en tecnologías de radiofrecuencia: <strong>redes wifi</strong>.</p></li>
+<li><p>Usando tecnologías como 3G, 4G o 5G: redes de <strong>telefonía móvil</strong>.</p></li>
+<li><p>Redes ad hoc (se crean automáticamente entre dispositivos cercanos utilizando tecnologías como <strong>bluetooth</strong> o <strong>NFC</strong>).</p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="que-es-una-intranet">
+<h3>¿Qué es una Intranet?<a class="headerlink" href="#que-es-una-intranet" title="Link to this heading">¶</a></h3>
+<div class="admonition-concepto-de-intranet admonition">
+<p class="admonition-title">Concepto de Intranet</p>
+<p>Una <strong>Intranet</strong> es una <strong>red privada local</strong> limitada a una organización. Sus características principales son:</p>
+<ul class="simple">
+<li><p>Acceso restringido solo a miembros de la organización</p></li>
+<li><p>Mayor control y seguridad</p></li>
+<li><p>Optimizada para necesidades específicas</p></li>
+<li><p>Compartición de recursos internos</p></li>
+<li><p>Facilita la colaboración entre empleados</p></li>
+<li><p>Usa protocolos TCP/IP</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/image021.png"><img alt="../_images/image021.png" src="../_images/image021.png" style="width: 360px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dispositivos de una Intranet</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="que-es-internet">
+<h3>¿Qué es INTERNET?<a class="headerlink" href="#que-es-internet" title="Link to this heading">¶</a></h3>
+<div class="admonition-concepto-de-internet admonition">
+<p class="admonition-title">Concepto de Internet</p>
+<p><strong>INTERNET</strong> es una <strong>red pública global</strong> que conecta Intranets en todo el mundo. Sus principales características son:</p>
+<ul class="simple">
+<li><p>Acceso público y global</p></li>
+<li><p>Conecta millones de redes diferentes</p></li>
+<li><p>Requiere medidas de seguridad robustas</p></li>
+<li><p>Permite acceder a servicios y recursos públicos</p></li>
+<li><p>Usa protocolos TCP/IP</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/image031.png"><img alt="../_images/image031.png" src="../_images/image031.png" style="width: 270px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">INTERNET</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="componentes-de-una-red">
+<h3>Componentes de una red<a class="headerlink" href="#componentes-de-una-red" title="Link to this heading">¶</a></h3>
+<section id="servidor">
+<h4>Servidor<a class="headerlink" href="#servidor" title="Link to this heading">¶</a></h4>
+<div class="admonition-los-equipos-servidores-proveen-o-suministran-servicios admonition">
+<p class="admonition-title">Los equipos servidores proveen o suministran servicios</p>
+<p>Un servidor se trata de una computadora o aplicación encargada de proveer a otros equipos de unos determinados servicios, como el almacenamiento de información.</p>
+<p>La mayoría de servidores ni siquiera tienen periféricos como el monitor, teclado o mouse. Para acceder y trabajar en estos, se suele trabajar de forma remota por línea de comandos.</p>
+<blockquote>
+<div><p>Los servidores suelen ser <strong>equipos</strong> que <strong>muy rara vez se apagan</strong> y una vez configurados quedan trabajando con poca intervención del usuario. Solo se intervienen cuando sea necesario.</p>
+</div></blockquote>
+<p>Los servidores se encargan de procesar las solicitudes de esos otros equipos, que en ocasiones se denominan clientes, a los que les entregan datos por medio de una red que puede ser local o por Internet.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/image041.png"><img alt="../_images/image041.png" src="../_images/image041.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">SERVIDORES</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="equipos-cliente">
+<h4>Equipos cliente<a class="headerlink" href="#equipos-cliente" title="Link to this heading">¶</a></h4>
+<div class="admonition-los-equipos-cliente-consumen-servicios admonition">
+<p class="admonition-title">Los equipos cliente consumen servicios</p>
+<p>Un equipo cliente es un dispositivo destinado a realizar una determinada labor profesional, técnica o científica. En resumen, en una oficina, los equipos cliente serían cada uno de los ordenadores con los que se lleva a cabo el trabajo y que generalmente están conectados entre sí a través de un servidor para facilitar los flujos de información, conectadas a periféricos (como impresoras, escáneres, pantallas de proyección, etc.) y a la vez conectadas a Internet.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/image051.png"><img alt="../_images/image051.png" src="../_images/image051.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Equipos cliente</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="switch">
+<h4>Switch<a class="headerlink" href="#switch" title="Link to this heading">¶</a></h4>
+<div class="admonition-conecta-dispositivos-de-forma-alambrica admonition">
+<p class="admonition-title">Conecta dispositivos de forma alámbrica</p>
+<p>Los switches son dispositivos que se encargan de interconectar dos o más segmentos de red. Permiten formar lo que se conoce como una red de área local (LAN, Local Area Network), cuyas especificaciones técnicas siguen el estándar denominado Ethernet.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/image061.png"><img alt="../_images/image061.png" src="../_images/image061.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">SWITCH</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="access-point">
+<h4>Access Point<a class="headerlink" href="#access-point" title="Link to this heading">¶</a></h4>
+<div class="admonition-conecta-dispositivos-de-forma-inalambrica admonition">
+<p class="admonition-title">Conecta dispositivos de forma inalámbrica</p>
+<p>Los puntos de acceso (ACCESS POINT) son esenciales en las redes inalámbricas, ya que, ayudan a ampliar el alcance y la capacidad de conectividad. Recibe la señal de acceso a la red del router y aumenta su potencia cubriendo un área determinada. A diferencia de un repetidor, crea un nueva señal independiente en lugar de amplificarla.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/image071.png"><img alt="../_images/image071.png" src="../_images/image071.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Access Point</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="router">
+<h4>Router<a class="headerlink" href="#router" title="Link to this heading">¶</a></h4>
+<div class="admonition-se-usa-para-que-los-datos-salgan-de-una-red-lan admonition">
+<p class="admonition-title">Se usa para que los datos salgan de una RED LAN</p>
+<p>También se le denomina enrutador, ya que se encarga de encontrar el mejor camino para la transmisión de información a través de una red. Sus usos pueden ser más o menos complejos aunque el más común es aquel que permite comunicar a varios equipos, ya sea en casa o en una oficina (aprovechando la misma conexión a Internet).</p>
+<p>El router recibe la conexión de red y la distribuye a todos los dispositivos conectados simultáneamente escogiendo la mejor vía para hacerlo de forma que la información completa llegue de manera adecuada y en el menor tiempo posible.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/image081.png"><img alt="../_images/image081.png" src="../_images/image081.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">ROUTER: Dispositivo para salir a INTERNET</span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="modem">
+<h4>Modem<a class="headerlink" href="#modem" title="Link to this heading">¶</a></h4>
+<div class="admonition-switch-access-point-router admonition">
+<p class="admonition-title">(Switch + Access Point + Router)</p>
+<p>Algunos dispositivos de red son dispositivos todo en uno. Es el caso de los modem que son un Switch, un Access Point y un Router a la vez. Suelen ser facilitados por los prestadores de servicio de Internet.</p>
+<p>En empresas grandes donde están conectados varios edificios como las universidades, lo normal es que hayan varios dispositivos de red cumpliendo una única función (Switch, Access Point o Router). Esto se debe a que en dichas empresas suele haber mucha gente conectada y un dispositivo de red todo en uno no resulta suficiente.</p>
+<p>En hogares el número de personas para conectarse a Internet suele ser de una a diez, por ahorro de costos es mejor usar los modem.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/image091.png"><img alt="../_images/image091.png" src="../_images/image091.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">MODEM (Switch + Access Point + Router)</span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="rack-de-telecomunicaciones">
+<h4>RACK de telecomunicaciones<a class="headerlink" href="#rack-de-telecomunicaciones" title="Link to this heading">¶</a></h4>
+<div class="admonition-centralizar-diferentes-dispositivos-de-red-o-servidores admonition">
+<p class="admonition-title">centralizar diferentes dispositivos de red o servidores</p>
+<p>Un rack de telecomunicaciones es una estructura metálica diseñada para alojar, organizar y proteger de forma centralizada equipos informáticos y de redes, como switches, routers, servidores, paneles de parcheo (patch panels) y sistemas de alimentación ininterrumpida (UPS).</p>
+<p>Su principal función es optimizar el espacio en los cuartos de cableado o centros de datos, facilitando la ventilación de los dispositivos y el orden del cableado estructurado. Sus dimensiones internas están estandarizadas en anchura (generalmente 19 pulgadas) y la altura de los equipos se mide en Unidades de Rack (U).</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/image101.png"><img alt="../_images/image101.png" src="../_images/image101.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">RACK servidores OPENBSD 2009</span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="servicios-de-red">
+<h3>Servicios de red<a class="headerlink" href="#servicios-de-red" title="Link to this heading">¶</a></h3>
+<p>A continuación se muestran los servicios que suelen haber en una red de datos.</p>
+<section id="ssh">
+<h4>SSH<a class="headerlink" href="#ssh" title="Link to this heading">¶</a></h4>
+<div class="admonition-conexiones-remotas-y-seguras admonition">
+<p class="admonition-title">Conexiones remotas y seguras</p>
+<p>Son las siglas de <strong>Secure Shell</strong> y es un <strong>protocolo de red destinado principalmente a la conexión con máquinas a las que accedemos por línea de comandos</strong>. En otras palabras, con SSH podemos conectarnos con servidores usando la red Internet como vía para las comunicaciones.</p>
+<p>Debido a su seguridad, SSH es el modo preferido para la realización de conexión con servidores que necesitamos administrar. La diferencia con respecto a otros protocolos más antiguos como Telnet es que <strong>el protocolo</strong> <strong>SSH siempre es seguro.</strong> Sin embargo, aprovechando la seguridad de las comunicaciones, también se utiliza para otros objetivos como:</p>
+<ul class="simple">
+<li><p><strong>Transferencia de Archivos Segura</strong>: Permite transferir archivos de forma segura entre sistemas locales y remotos utilizando herramientas como el comando SCP o SFTP.</p></li>
+<li><p><strong>Creación de Túneles de Red</strong>: SSH se utiliza para crear túneles de datos seguros que redirigen el tráfico de red a través de conexiones SSH, lo que puede ayudar a proteger la comunicación en redes no seguras. Se usan en sistemas como Ngrok, un software que permite a los desarrolladores exponer de manera remota los trabajos, tal como los tienen funcionando en su servidor de desarrollo local.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id11">
+<a class="reference internal image-reference" href="../_images/image12.gif"><img alt="../_images/image12.gif" src="../_images/image12.gif" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">OpenSSH</span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="dhcp">
+<h4>DHCP<a class="headerlink" href="#dhcp" title="Link to this heading">¶</a></h4>
+<div class="admonition-proveedor-de-direcciones-ip-ejemplo-192-168-115-100 admonition">
+<p class="admonition-title">Proveedor de direcciones IP (ejemplo: 192.168.115.100)</p>
+<p>El Protocolo de configuración dinámica de host (DHCP) es un protocolo cliente-servidor que proporciona automáticamente un host de protocolo de Internet (IP) con su dirección IP y otra información de configuración relacionada, como la máscara de subred y la puerta de enlace de predeterminada.</p>
+</div>
+</section>
+<section id="dns">
+<h4>DNS<a class="headerlink" href="#dns" title="Link to this heading">¶</a></h4>
+<div class="admonition-proveedor-de-nombres-de-dominio-ejemplo-www-jfkennedy-edu-co admonition">
+<p class="admonition-title">Proveedor de nombres de dominio (ejemplo: www.jfkennedy.edu.co)</p>
+<p>Sistema de nombres de dominio. Traduce los nombres de dominios aptos para lectura humana (por ejemplo, <a class="reference external" href="http://www.amazon.com/" rel="noreferer noopener" target="_blank">www.amazon.com</a>) a direcciones IP aptas para lectura por parte de máquinas (por ejemplo, <span class="guilabel">18.155.246.193</span>).</p>
+<blockquote>
+<div><p>El sistema DNS de Internet funciona como una agenda telefónica donde se administra el mapa entre los nombres y los números. Los servidores DNS convierten las solicitudes de nombres en direcciones IP, controlando a qué servidor se dirigirá un usuario final cuando escriba un nombre de dominio en su navegador web. Estas solicitudes se denominan <strong>consultas</strong>.</p>
+</div></blockquote>
+</div>
+</section>
+<section id="ftp">
+<h4>FTP<a class="headerlink" href="#ftp" title="Link to this heading">¶</a></h4>
+<div class="admonition-proveedor-de-archivos admonition">
+<p class="admonition-title">Proveedor de archivos</p>
+<p>Son las siglas en inglés de File Transfer Protocol (protocolo de transferencia de archivos). FTP es el conjunto de reglas que los dispositivos de una red TCP/IP (Internet) utilizan para transferir archivos. Cuando usted usa Internet, en realidad se utiliza una variedad de diferentes protocolos. El FTP es simplemente el protocolo usado para transferir archivos.</p>
+</div>
+</section>
+<section id="http">
+<h4>HTTP://<a class="headerlink" href="#http" title="Link to this heading">¶</a></h4>
+<div class="admonition-proveedor-de-paginas-web admonition">
+<p class="admonition-title">Proveedor de páginas web</p>
+<p>El http (del inglés HyperText Transfer Protocol o Protocolo de Transferencia de Hiper Textos) es el protocolo de transmisión de información de la World Wide Web. Se trata de un protocolo “sin estado”, es decir, que no lleva registro de visitas anteriores sino que siempre empieza de nuevo. La información relativa a visitas previas se almacena en estos sistemas en las llamadas “cookies”, almacenadas en el sistema cliente.</p>
+</div>
+</section>
+<section id="https">
+<h4>HTTPS://<a class="headerlink" href="#https" title="Link to this heading">¶</a></h4>
+<div class="admonition-proveedor-de-paginas-web-seguras admonition">
+<p class="admonition-title">Proveedor de páginas web seguras</p>
+<p>Por <strong>https</strong> se entiende HyperText Transfer Procotol Secure o Protocolo Seguro de Transferencia de Hipertexto, que no es más que la versión segura del http, es decir, una variante del mismo protocolo que se basa en la creación de un canal cifrado para la transmisión de la información, lo cual lo hace más apropiado para ciertos datos de tipo sensible (como claves y usuarios personales).</p>
+</div>
+</section>
+<section id="smtp-pop-imap">
+<h4>SMTP-POP-IMAP<a class="headerlink" href="#smtp-pop-imap" title="Link to this heading">¶</a></h4>
+<div class="admonition-proveedor-de-correo-electronico admonition">
+<p class="admonition-title">Proveedor de correo electrónico</p>
+<p>Los servidores de correo electrónico son indispensables para proveer de este servicio. Funcionan de forma similar a un buzón de correos central, donde se almacena y se gestionan mensajes de forma segura, en espera a ser leído por un grupo de clientes (usuarios).</p>
+<ul class="simple">
+<li><p><strong>SMTP (Servidores de correo de salida)</strong>: Es el protocolo más usado por la flexibilidad en su operación al transferir información de un servidor de salida a uno de entrada, guardando la dirección de correo electrónico de quién lo envió.</p></li>
+<li><p><strong>POP (Post Office Protocol Version 3)</strong>: Es una de las versiones más antiguas de protocolo y confiables. Cuando el dispositivo se conecta al servidor de correo, éste detecta el ordenador que realiza la acción y los aloja ahí, una vez descargados se eliminan de inmediato del servidor de entrada.</p></li>
+<li><p><strong>IMAP (Internet Message Access Protocol)</strong>: Es un protocolo en los servidores de correo electrónico entrante que funciona para sincronizar el email a diferentes dispositivos. Se alojan siempre en el servidor y se visualiza a través de una copia de descarga.</p></li>
+</ul>
+</div>
+</section>
+<section id="voip">
+<h4>VOIP<a class="headerlink" href="#voip" title="Link to this heading">¶</a></h4>
+<div class="admonition-voz-ip admonition">
+<p class="admonition-title">Voz IP</p>
+<p>En inglés, las siglas VoIP significan <strong>Voice over Internet Protocol</strong>, es decir, voz sobre protocolo de Internet. La telefonía VoIP es un método que permite realizar llamadas de voz a través de la red, utilizando la banda ancha. Estas llamadas capturan el sonido procedente de un dispositivo móvil o fijo con conexión a Internet a través de un micrófono y lo transforman en paquetes de datos digitales. Los datos se transfieren a través de la red IP hasta el dispositivo receptor, al igual que el resto de contenidos transmitidos a través de Internet.</p>
+</div>
+</section>
+<section id="rdp">
+<h4>RDP<a class="headerlink" href="#rdp" title="Link to this heading">¶</a></h4>
+<div class="admonition-escritorio-remoto admonition">
+<p class="admonition-title">Escritorio remoto</p>
+<p>Las siglas RDP responden a <strong>Remote Desktop Protocol</strong>, o, en español, Protocolo de Escritorio Remoto. El protocolo RDP, entonces, permite que el escritorio de un equipo informático sea controlado a distancia por un usuario remoto. Existen diferentes programas de RDP como el RDP Remote Desktop de Microsoft –también conocido como RDP Windows–, o los más populares TeamViewer o PC Anywhere.</p>
+</div>
+</section>
+<section id="firewall">
+<h4>FIREWALL<a class="headerlink" href="#firewall" title="Link to this heading">¶</a></h4>
+<div class="admonition-proteccion-y-control-de-trafico-en-la-red admonition">
+<p class="admonition-title">Protección y control de tráfico en la red</p>
+<p>Un firewall es un sistema de seguridad que supervisa y controla el tráfico de la red en base a un conjunto de reglas de seguridad. Los firewalls suelen situarse entre una red de confianza y una red no fiable; con frecuencia, la red no fiable es Internet. Por ejemplo, las redes de oficinas suelen utilizar un firewall para proteger su red de las amenazas en línea.</p>
+</div>
+</section>
+<section id="proxy">
+<h4>PROXY<a class="headerlink" href="#proxy" title="Link to this heading">¶</a></h4>
+<div class="admonition-intermediario-en-la-red admonition">
+<p class="admonition-title">Intermediario en la red</p>
+<p>Un servidor proxy proporciona una puerta de enlace entre los usuarios e Internet. Es un servidor denominado “intermediario”, porque está entre los usuarios finales y las páginas web que visitan en línea. Cuando una computadora se conecta a Internet, utiliza una dirección IP.  Algunas personas usan los proxies para fines personales, como ocultar su ubicación mientras miran películas en línea. Sin embargo, para una compañía, pueden utilizarse para realizar varias tareas clave como las siguientes:</p>
+<ul class="simple">
+<li><p>Mejorar la seguridad.</p></li>
+<li><p>Proteger la actividad de los empleados en Internet de las personas que intentan espiarlas.</p></li>
+<li><p>Equilibrar el tráfico de Internet para evitar choques.</p></li>
+<li><p>Controlar el acceso de los empleados a los sitios web.</p></li>
+<li><p>Guardar el ancho de banda almacenando archivos en caché o comprimiendo el tráfico entrante.</p></li>
+</ul>
+</div>
+</section>
+<section id="vpn">
+<h4>VPN<a class="headerlink" href="#vpn" title="Link to this heading">¶</a></h4>
+<div class="admonition-red-privada-virtual admonition">
+<p class="admonition-title">Red Privada Virtual</p>
+<p>Una VPN o red privada virtual crea una conexión de red privada entre dispositivos a través de Internet. Las VPN se utilizan para transmitir datos de forma segura y anónima a través de redes públicas. Su funcionamiento consiste en ocultar las direcciones IP de los usuarios y cifrar los datos para que nadie que no esté autorizado a recibirlos pueda leerlos.</p>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a02-ciberseguridad-0-1">
+<h2>A02: Ciberseguridad (+0,1)<a class="headerlink" href="#a02-ciberseguridad-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos relacionados con la ciberseguridad:</p></li>
+</ol>
+<hr class="docutils" />
+<section id="que-es-la-ciberseguridad">
+<h3>¿Qué es la ciberseguridad?<a class="headerlink" href="#que-es-la-ciberseguridad" title="Link to this heading">¶</a></h3>
+<div class="admonition-proteccion-de-sistemas-y-redes admonition">
+<p class="admonition-title">Protección de sistemas y redes</p>
+<p>La ciberseguridad es la implementación de tecnologías, prácticas y políticas diseñadas para <strong>proteger</strong> sistemas, redes y programas de ataques digitales.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id12">
+<a class="reference internal image-reference" href="../_images/image11.png"><img alt="../_images/image11.png" src="../_images/image11.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Acceso remoto al sistema</span><a class="headerlink" href="#id12" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La ciberseguridad tiene los siguiente enfoques:</p>
+<ol class="arabic simple">
+<li><p><strong>Protección de datos</strong>: Se enfoca en salvaguardar la información sensible de accesos no autorizados y ataques maliciosos.</p></li>
+<li><p><strong>Defensa de sistemas</strong>: Incluye la protección de computadoras, servidores, dispositivos móviles y redes contra amenazas cibernéticas.</p></li>
+<li><p><strong>Prevención de ciberataques</strong>: Busca mitigar el impacto de ataques como malware, phishing y ransomware.</p></li>
+<li><p><strong>Convergencia de personas y tecnología</strong>: La ciberseguridad combina la colaboración de personas, procesos y tecnología para crear un entorno seguro.</p></li>
+</ol>
+<p>La ciberseguridad se puede clasificar en <strong>seguridad informática</strong> y <strong>seguridad de la información</strong>.</p>
+<blockquote>
+<div><p>Una empresa debe implementar <em>Antivirus</em> y <em>Firewalls</em> (<strong>seguridad informática</strong>) pero también debe establecer políticas sobre por ejemplo, quién puede <em>acceder a documentos confidenciales</em> o cómo <em>deben manejarse las copias físicas</em> (<strong>seguridad de la información</strong>).</p>
+</div></blockquote>
+</div>
+</section>
+<hr class="docutils" />
+<section id="seguridad-informatica">
+<h3>Seguridad informática<a class="headerlink" href="#seguridad-informatica" title="Link to this heading">¶</a></h3>
+<p>La <strong>seguridad informática</strong> es el estudio e implementación de tecnologías para proteger sistemas informáticos, redes y datos en una organización.</p>
+<blockquote>
+<div><p><em>“Someter un sistema informático a constantes intentos de intrusión controlados, puede ser la mejor vía para garantizar su seguridad”</em>.</p>
+</div></blockquote>
+<p>La seguridad informática estudia los siguientes campos:</p>
+<section id="ingenieria-social">
+<h4>Ingeniería social_<a class="headerlink" href="#ingenieria-social" title="Link to this heading">¶</a></h4>
+<div class="admonition-hacking-de-seres-humanos admonition">
+<p class="admonition-title">Hacking de seres humanos</p>
+<p>La ingeniería social es una técnica de manipulación que aprovecha el error humano para obtener información privada, acceso a sistemas u objetos de valor. En el caso del delito cibernético, estas estafas de “hackeo de humanos” tienden a hacer que los usuarios desprevenidos expongan datos, propaguen infecciones de malware o den acceso a sistemas restringidos.</p>
+<p>Los ataques de ingeniería social pueden ocurrir en línea, en persona y a través de otras interacciones.</p>
+<p>Las estafas basadas en la ingeniería social se basan en cómo las personas piensan y actúan. Como tal, los ataques de ingeniería social son muy útiles para manipular el comportamiento de un usuario. Una vez que un atacante comprende qué motiva las acciones de un usuario, puede engañar y manipular al usuario de manera efectiva. Además, los piratas informáticos intentan explotar la falta de conocimiento de un usuario.</p>
+<p>Gracias a la velocidad de la tecnología, muchos consumidores y empleados no son conscientes de ciertas amenazas, como las descargas no autorizadas (drive-in). Es posible que los usuarios no se den cuenta del valor real de sus datos personales, como el número de teléfono. Como resultado, muchos usuarios no están seguros de cómo protegerse mejor a sí mismos y a su información.</p>
+</div>
+</section>
+<section id="seguridad-en-redes-wifi">
+<h4>Seguridad en redes WIFI_<a class="headerlink" href="#seguridad-en-redes-wifi" title="Link to this heading">¶</a></h4>
+<div class="admonition-hacking-en-conexiones-inalambricas admonition">
+<p class="admonition-title">Hacking en conexiones inalámbricas</p>
+<p>Las redes WIFI se encuentran en muchos lugares desde el hogar hasta en la empresa. Una gran cantidad de la lugares públicos también las adoptan y usan. Esto resulta en un canal de comunicación muy usado y a su vez vulnerable.</p>
+<p>En redes WIFI se debe conocer de:</p>
+<ul class="simple">
+<li><p>Protocolos.</p></li>
+<li><p>Estándares.</p></li>
+<li><p>Algoritmos de cifrado.</p></li>
+<li><p>Sentencias legales.</p></li>
+</ul>
+<p>Con estos conceptos en mente es posible tratar temas de seguridad en diferentes redes inalámbricas, el equipo de laboratorio necesario y las herramientas que se pueden usar. Con este equipo ya sería posible analizar señales, monitorizar tráfico y simular diferentes ataques sobre redes abiertas como WEP, WPA y WPA2.</p>
+</div>
+</section>
+<section id="ataques-controlados-a-redes">
+<h4>Ataques controlados a redes_<a class="headerlink" href="#ataques-controlados-a-redes" title="Link to this heading">¶</a></h4>
+<div class="admonition-pentesting-controlado admonition">
+<p class="admonition-title">Pentesting controlado</p>
+<p>El <strong>pentesting</strong> es la técnica de ciberseguridad consistente en atacar entornos informáticos con la intención de descubrir vulnerabilidades en los mismos, con el objetivo de reunir la información necesaria para poder prevenir en el futuro ataques externos hacia esos mismos equipos.</p>
+<p>El <strong>pentesting</strong> es una técnica 100% legal… siempre y cuando los ataques se realicen en sistemas de nuestra propiedad o con permiso del propietario.</p>
+<p>La realización de un <code class="docutils literal notranslate"><span class="pre">pentest</span></code> requiere de un amplio conocimiento de múltiples tecnologías y sistemas operativos. Las herramientas necesarias (escáner de puertos, software de sniffing de redes, etc) suelen venir agrupadas en ‘toolkits’, en algún caso como parte integrante de versiones ‘live’ de GNU/Linux, como el popular y reputado Kali Linux (el antiguo Backtrack).</p>
+</div>
+</section>
+<section id="defensa-de-redes-seguridad-perimetral-y-monitorizacion">
+<h4>Defensa de redes, seguridad perimetral y monitorización_<a class="headerlink" href="#defensa-de-redes-seguridad-perimetral-y-monitorizacion" title="Link to this heading">¶</a></h4>
+<div class="admonition-defensa-de-la-red admonition">
+<p class="admonition-title">Defensa de la red</p>
+<p>Las <strong>redes de telecomunicaciones</strong> envían y reciben grandes cantidades de información. Este campo se centra en proteger los datos que circulan por ellas. Para conocer el nivel de seguridad es necesario interceptar las comunicaciones desde un punto de vista ético y legal. De hacerlo de forma diferente conllevaría a problemas de millonarias multas o cárcel.</p>
+<p>La monitorización y defensa de redes tiene como objetivo mantener seguras las redes por medio de la detección de intrusos y pruebas de pentesting. La confidencialidad de la información debe asegurarse con herramientas como:</p>
+<ul class="simple">
+<li><p>Certificados digitales.</p></li>
+<li><p>Cifrado de datos.</p></li>
+<li><p>Comunicaciones seguras con SSH.</p></li>
+<li><p>IPsec.</p></li>
+<li><p>VNP-SSL.</p></li>
+<li><p>Wireshark.</p></li>
+</ul>
+</div>
+</section>
+<section id="seguridad-de-aplicaciones-o-paginas-web">
+<h4>Seguridad de aplicaciones o páginas web_<a class="headerlink" href="#seguridad-de-aplicaciones-o-paginas-web" title="Link to this heading">¶</a></h4>
+<div class="admonition-hacking-controlado-en-aplicaciones-web admonition">
+<p class="admonition-title">Hacking controlado en aplicaciones web</p>
+<p>El pentesting web o la seguridad en páginas o aplicaciones web consiste en diferentes técnicas de ataque de manera guiada contra aplicativos web, así como las contramedidas necesarias para proteger este tipo de sistemas.</p>
+<p>Las aplicaciones web son unas de las tecnologías de mayor uso hoy en día. Esto se debe a que los ingenieros quieren llevar todos los servicios a la web. Para mejorar la seguridad de los sitios web es necesario saber como se realizan los ataques y como se explotan vulnerabilidades. A continuación se listan técnicas usadas en el pentesting de páginas web:</p>
+<ul class="simple">
+<li><p>SQL Injection.</p></li>
+<li><p>Blind SQL injection.</p></li>
+<li><p>XSS Reflected.</p></li>
+<li><p>XSS stored.</p></li>
+<li><p>CSRF.</p></li>
+<li><p>XML Injection.</p></li>
+<li><p>Session fixation.</p></li>
+<li><p>Botnet DDOS html5.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="seguridad-de-la-informacion">
+<h3>Seguridad de la información<a class="headerlink" href="#seguridad-de-la-informacion" title="Link to this heading">¶</a></h3>
+<p>La <strong>seguridad de la información</strong> es algo más que la seguridad informática. Se centra en toda la empresa. Al fin y al cabo, la seguridad de la información no sólo se dirige a los datos procesados por los sistemas electrónicos, también abarca todos los activos de la empresa que deben protegerse, incluidos los que se encuentran en soportes de datos analógicos, como el papel.</p>
+<blockquote>
+<div><p>La <strong>seguridad de la información</strong> tiene un alcance más amplio que la seguridad informática. <strong>La seguridad informática</strong>, se refiere “sólo” al uso e implementación de tecnología para proteger la información. No tiene en cuenta normatividades. Por tanto la seguridad informática hace parte de la seguridad de la información.</p>
+</div></blockquote>
+<section id="principios-de-seguridad-de-la-informacion">
+<h4>3 principios de seguridad de la información<a class="headerlink" href="#principios-de-seguridad-de-la-informacion" title="Link to this heading">¶</a></h4>
+<div class="admonition-confidencialidad-integridad-y-disponibilidad admonition">
+<p class="admonition-title">Confidencialidad, integridad y disponibilidad</p>
+<p>Los tres principios de la seguridad de la información son:</p>
+<ul class="simple">
+<li><p><strong>Confidencialidad:</strong> Garantizar que solo personas autorizadas accedan a la información.</p></li>
+<li><p><strong>Integridad:</strong> Asegurar que la información no sea alterada indebidamente.</p></li>
+<li><p><strong>Disponibilidad:</strong> Garantizar el acceso a la información cuando se necesite.</p></li>
+</ul>
+<p>Se aplican, por tanto, también a documentos importantes, que debe llegar a la puerta de su destinatario a tiempo, de forma fiable e intacta, transportada por un mensajero, pero totalmente analógico. Y estos principios se aplican igualmente a una hoja de papel que contenga información confidencial, pero que esté sobre un escritorio desatendido para que cualquiera pueda verla o que esté esperando en la fotocopiadora, libremente accesible, para un acceso no autorizado.</p>
+<p>A continuación se muestran unos temas relacionados con la seguridad de la información:</p>
+<ul class="simple">
+<li><p>Asegurar alimentación energética del hardware.</p></li>
+<li><p>Medidas contra el sobre-calentamiento del hardware.</p></li>
+<li><p>Análisis de virus y programas seguros.</p></li>
+<li><p>Organización de las estructuras de las carpetas.</p></li>
+<li><p>Configuración y actualización de los cortafuegos.</p></li>
+<li><p>Formación de los empleados en temas de de ingeniería social.</p></li>
+</ul>
+<p>En la seguridad de la información, lo importante es identificar los <strong>activos de información</strong> y lograr una clasificación certera de los <strong>activos de información críticos</strong>. De esta forma encaminar todos los recursos disponibles para poder proteger la información de estos activos críticos. Para ello entonces se usa el análisis de riesgos.</p>
+</div>
+</section>
+<section id="iso-27001">
+<h4>ISO 27001<a class="headerlink" href="#iso-27001" title="Link to this heading">¶</a></h4>
+<div class="admonition-sistema-de-gestion-de-seguridad-de-la-informacion admonition">
+<p class="admonition-title">Sistema de gestión de seguridad de la Información</p>
+<p>La <strong>norma ISO 27001</strong> es un estándar internacional que establece los requisitos para la implementación, mantenimiento y mejora continua de un Sistema de Gestión de la Seguridad de la Información (SGSI). Este sistema se utiliza para proteger la confidencialidad, integridad y disponibilidad de la información. La norma proporciona un marco para la seguridad de la información que ayuda a las organizaciones a identificar y gestionar sus riesgos de seguridad de la información de manera efectiva.</p>
+<p>La <strong>norma ISO 27001</strong> se aplica a cualquier tipo de organización, incluyendo pequeñas y medianas empresas, grandes corporaciones, instituciones gubernamentales y sin fines de lucro. También se puede aplicar en cualquier sector, incluyendo tecnología de la información, finanzas, salud y servicios públicos.</p>
+<p>Para la implementación de <strong>ISO 27001</strong> en una empresa se deben cumplir las siguientes fases:</p>
+<ul class="simple">
+<li><p><strong>Fase de planificación:</strong> Durante la fase de planificación, la organización identifica sus requisitos de seguridad de la información y establece un plan para implementar el SGSI.</p></li>
+<li><p><strong>Fase de implementación:</strong> La fase de implementación incluye la creación de políticas, procedimientos y controles para proteger la información.</p></li>
+<li><p><strong>Fase de evaluación:</strong> Durante la fase de evaluación, la organización evalúa la eficacia de su SGSI e identifica áreas de mejora.</p></li>
+<li><p><strong>Fase de mejora continua:</strong> La fase de mejora continua implica la identificación y aplicación de mejoras a los procesos y controles del SGSI.</p></li>
+</ul>
+</div>
+</section>
+<section id="seguridad-informatica-vs-seguridad-de-la-informacion">
+<h4>Seguridad Informática Vs Seguridad de la Información<a class="headerlink" href="#seguridad-informatica-vs-seguridad-de-la-informacion" title="Link to this heading">¶</a></h4>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Seguridad Informática</p></th>
+<th class="head"><p>Seguridad de la Información</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Se centra en la protección de la infraestructura tecnológica y sistemas computacionales</p></td>
+<td><p>Abarca la protección de toda la información independiente de su formato o medio.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Protege contra amenazas técnicas como Virus, Malware y ciber-delincuentes</p></td>
+<td><p>Protege contra amenazas físicas, digitales y humanas.</p></td>
+</tr>
+<tr class="row-even"><td><p>Implementa soluciones como Firewalls, antivirus y cifrado</p></td>
+<td><p>Implementa políticas, procedimientos y controles organizacionales.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="delitos-informaticos-en-colombia">
+<h3>Delitos informáticos en Colombia<a class="headerlink" href="#delitos-informaticos-en-colombia" title="Link to this heading">¶</a></h3>
+<div class="admonition-regulaciones-en-la-legislacion-colombiana admonition">
+<p class="admonition-title">Regulaciones en la legislación Colombiana</p>
+<p>La legislación en el ámbito de la tecnología e informática es fundamental por los siguientes aspectos:</p>
+<ul class="simple">
+<li><p><strong>Protección de datos personales:</strong> Establece normas para el manejo seguro y ético de la información personal de los usuarios.</p></li>
+<li><p><strong>Derechos digitales:</strong> Define y protege los derechos de los ciudadanos en el entorno digital.</p></li>
+<li><p><strong>Seguridad cibernética:</strong> Establece marcos legales para combatir delitos informáticos y proteger la infraestructura digital.</p></li>
+<li><p><strong>Comercio electrónico:</strong> Regula las transacciones en línea y protege tanto a consumidores como a empresas.</p></li>
+<li><p><strong>Propiedad intelectual:</strong> Protege los derechos de autor en contenidos digitales y desarrollos tecnológicos.</p></li>
+<li><p><strong>Responsabilidad digital:</strong> Define las obligaciones y responsabilidades de usuarios y proveedores de servicios tecnológicos.</p></li>
+</ul>
+<p>En Colombia, estas regulaciones son especialmente importantes para garantizar un desarrollo tecnológico seguro y equitativo en la sociedad digital.</p>
+</div>
+<section id="penas-y-multas-por-delitos-informaticos-en-colombia">
+<h4>Penas y multas por delitos informáticos en Colombia<a class="headerlink" href="#penas-y-multas-por-delitos-informaticos-en-colombia" title="Link to this heading">¶</a></h4>
+<div class="admonition-ley-1273-de-2009 admonition">
+<p class="admonition-title">Ley 1273 de 2009</p>
+<p>De acuerdo con la <strong>Ley 1273 de 2009</strong>, las penas por delitos informáticos en Colombia varían según el delito:</p>
+<ul class="simple">
+<li><p><strong>Acceso abusivo a sistemas informáticos:</strong> Prisión de 48 a 96 meses y multas de 100 a 1000 salarios mínimos legales mensuales vigentes.</p></li>
+<li><p><strong>Interceptación de datos:</strong> Prisión de 36 a 72 meses y multas de 100 a 1000 salarios mínimos.</p></li>
+<li><p><strong>Daño informático:</strong> Prisión de 48 a 96 meses y multas de 100 a 1000 salarios mínimos.</p></li>
+<li><p><strong>Suplantación de sitios web:</strong> Prisión de 48 a 96 meses y multas de 100 a 1000 salarios mínimos.</p></li>
+</ul>
+<p>Las penas pueden aumentar de la mitad a las tres cuartas partes si el delito se comete sobre redes o sistemas informáticos gubernamentales, del sector financiero, o contra sistemas de seguridad nacional.</p>
+</div>
+</section>
+</section>
+<section id="hacking-etico">
+<h3>Hacking ético<a class="headerlink" href="#hacking-etico" title="Link to this heading">¶</a></h3>
+<div class="admonition-ataques-autorizados admonition">
+<p class="admonition-title">Ataques autorizados</p>
+<p>El <strong>hacking ético</strong> es la práctica de utilizar las mismas técnicas y herramientas que los hackers maliciosos, pero con el permiso y el objetivo de mejorar la seguridad de un sistema o red. En esencia, los hackers éticos actúan como “inspectores de seguridad” para identificar vulnerabilidades antes de que los atacantes puedan explotarlas.</p>
+<p>Aquí hay algunos puntos clave sobre el hacking ético:</p>
+<ul class="simple">
+<li><p><strong>Autorización:</strong> Los hackers éticos siempre deben tener el permiso explícito del propietario del sistema o red que están probando.</p></li>
+<li><p><strong>Objetivo:</strong> El objetivo principal es identificar y solucionar vulnerabilidades de seguridad.</p></li>
+<li><p><strong>Metodología:</strong> Siguen un proceso estructurado que incluye:</p>
+<ul>
+<li><p><strong>Reconocimiento:</strong> Recopilación de información sobre el objetivo.</p></li>
+<li><p><strong>Escaneo:</strong> Identificación de puertos abiertos, servicios y sistemas operativos.</p></li>
+<li><p><strong>Obtención de acceso:</strong> Explotación de vulnerabilidades para acceder al sistema (con permiso).</p></li>
+<li><p><strong>Mantenimiento del acceso:</strong> Asegurar el acceso continuo para evaluar la seguridad.</p></li>
+<li><p><strong>Análisis y reporte:</strong> Documentación de las vulnerabilidades encontradas y recomendaciones para su corrección.</p></li>
+</ul>
+</li>
+<li><p><strong>Herramientas:</strong> Utilizan una amplia gama de herramientas, muchas de las cuales son las mismas que usan los hackers maliciosos, como escáneres de vulnerabilidades, analizadores de red, herramientas de cracking de contraseñas, etc.</p></li>
+<li><p><strong>Certificaciones:</strong> Existen certificaciones profesionales como Certified Ethical Hacker (CEH) que validan los conocimientos y habilidades de los hackers éticos.</p></li>
+</ul>
+<p>El hacking ético es una parte crucial de la <strong>ciberseguridad moderna</strong>. Ayuda a las organizaciones a proteger sus sistemas y datos de ataques maliciosos al identificar y solucionar las debilidades de seguridad.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a03-mapa-conceptual-0-1">
+<h2>A03: Mapa conceptual (+0,1)<a class="headerlink" href="#a03-mapa-conceptual-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>En una hoja de cuaderno, cree un mapa conceptual con los temas de <strong>A01: Redes de datos e Internet</strong>.</p></li>
+<li><p>En una hoja de cuaderno, cree un mapa conceptual con los temas de <strong>A02: Ciberseguridad</strong>.</p></li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="axx-1-preguntas-de-indagacion-0-5">
-<h2>AXX-1: Preguntas de indagación (+0,5)<a class="headerlink" href="#axx-1-preguntas-de-indagacion-0-5" title="Link to this heading"></a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<section id="a04-red-de-datos-0-1">
+<h2>A04: Red de datos (+0,1)<a class="headerlink" href="#a04-red-de-datos-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
 <ol class="arabic simple">
-<li><p>En su cuaderno, responda las siguientes preguntas:</p></li>
+<li><p>En su cuaderno, responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Qué es una red de datos?</p></li>
+<li><p>¿En que se diferencian el INTERNET de una Intranet?</p></li>
+<li><p>¿En que se diferencian los dispositivos de <strong>tipo cliente</strong> y los dispositivos de <strong>tipo servidor</strong>?</p></li>
+<li><p>¿Por que existen los dispositivos todo en uno?</p></li>
+<li><p>¿Que son los servicios de red?</p></li>
+</ul>
+</li>
+<li><p>Escriba las siguientes frases en su cuaderno y responda si es <code class="docutils literal notranslate"><span class="pre">falso</span></code> o <code class="docutils literal notranslate"><span class="pre">verdadero</span></code> y diga el por qué:</p>
+<ul class="simple">
+<li><p>INTERNET permite conectar personas al rededor el mundo así como acceder a diferentes servicios en la nube. ___</p></li>
+<li><p>En un INTRANET se deben tener accesos restringidos. No todo el mundo puede ingresar. ___</p></li>
+<li><p>INTERNET interconecta varias INTRANETS de forma controlada. ___</p></li>
+<li><p>A la página web de la institución educativa John F. Kennedy solo se puede acceder desde la INTRANET. ___</p></li>
+<li><p>La INTRANET del portal del aula 115 se puede acceder desde cualquier lugar del mundo. ___</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="axx-analisis-de-reflexion-4-0">
-<h2>AXX: Análisis de reflexión (+4,0)<a class="headerlink" href="#axx-analisis-de-reflexion-4-0" title="Link to this heading"></a></h2>
+<section id="a05-dispositivos-de-red-0-1">
+<h2>A05: Dispositivos de red (+0,1)<a class="headerlink" href="#a05-dispositivos-de-red-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Indique qué es y en su cuaderno haga un dibujo de los siguientes dispositivos:</p>
+<ul class="simple">
+<li><p>Servidores.</p></li>
+<li><p>Equipos cliente.</p></li>
+<li><p>Switch.</p></li>
+<li><p>Access Point.</p></li>
+<li><p>Router.</p></li>
+<li><p>Modem.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a06-plano-de-red-aula-115-0-1">
+<h2>A06: Plano de red (aula 115) (+0,1)<a class="headerlink" href="#a06-plano-de-red-aula-115-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>El siguiente es un plano de la ubicación de diferentes <em>dispositivos</em>* del aula 115 de la <strong>Institución Educativa John F. Kennedy</strong>. En una hoja de cuaderno, identifique en el plano los siguientes dispositivos:</p>
+<ul class="simple">
+<li><p>11 portátiles (numerarlos)</p></li>
+<li><p>11 PCs de escritorio (numerarlos)</p></li>
+<li><p>1 impresora</p></li>
+<li><p>1 smart-TV</p></li>
+<li><p>1 servidor</p></li>
+<li><p>1 switch</p></li>
+<li><p>1 modem</p></li>
+</ul>
+<blockquote>
+<div><p><strong>ATENCIÓN:</strong> El plano puede estar desactualizado. En ese caso ajustar el plano al estado actual del aula.</p>
+</div></blockquote>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id13">
+<a class="reference internal image-reference" href="../_images/image13.png"><img alt="../_images/image13.png" src="../_images/image13.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Plano de red aula 115</span><a class="headerlink" href="#id13" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Con el plano anterior terminado, conecte los dispositivos de la siguiente forma:</p>
+<ul class="simple">
+<li><p>Dibuje con líneas, las conexiones de los dispositivos que están conectados con <strong>cable de red</strong> a la INTRANET.</p></li>
+<li><p>Dibuje con puntos, las conexiones de los dispositivos que están conectados de <strong>forma inalámbrica</strong> a la INTRANET.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a07-servicios-de-red-0-1">
+<h2>A07: Servicios de red (+0,1)<a class="headerlink" href="#a07-servicios-de-red-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Copie la siguiente sopa de letras en su cuaderno e IDENTIFIQUE 10 ejemplos de servicios de red:</p></li>
+</ol>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id14">
+<a class="reference internal image-reference" href="../_images/image14.png"><img alt="../_images/image14.png" src="../_images/image14.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Servicios de red</span><a class="headerlink" href="#id14" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Ejemplo:</p>
+<blockquote>
+<div><p><strong>FIREWALL:</strong> Supervisa y controla un tráfico de red en base a unas reglas de seguridad.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a08-seguridad-informatica-vs-seguridad-de-la-informacion-0-1">
+<h2>A08: Seguridad informática Vs Seguridad de la información (+0,1)<a class="headerlink" href="#a08-seguridad-informatica-vs-seguridad-de-la-informacion-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Complete la siguiente tabla en su cuaderno:</p></li>
+</ol>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Aspecto</p></th>
+<th class="head"><p>Seguridad de la Información</p></th>
+<th class="head"><p>Seguridad Informática</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Enfoque</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Amenazas</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Elementos</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>En su cuaderno escriba y analice los siguientes casos e indique cual de los 3 principios de la seguridad de la información se ajusta a dicho caso. Justifique su respuesta.</p></li>
+</ol>
+<blockquote>
+<div><p><strong>CASO 01:</strong> Por medio de un ataque cibernético el día de ayer a la empresa X le robaron toda la información personal de sus empleados. Ahora sus datos como su localización, teléfono y lugar de nacimiento están expuestos en internet. Esto dio a que suplantaran muchas identidades.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 02:</strong> Debido a un software malicioso en los servidores principales del banco X los servicios de cajero automático no van a estar disponibles por 2 días. Esto hará que muchas personas pierdan su confianza en la nueva planta administrativa del banco elegida recientemente.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 03:</strong> Un error humano de un técnico practicante modificó la información en las bases de datos de la nómina de este mes. Esto genera incumplimiento en el pago de salarios de los trabajadores de la empresa. Los funcionarios tendrán que esperar una semana más para que reciban su sueldo.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a09-delitos-informaticos-0-1">
+<h2>A09: Delitos informáticos (+0,1)<a class="headerlink" href="#a09-delitos-informaticos-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Lea la sección de <strong>Delitos informáticos en Colombia</strong> y complete las siguientes frases en su cuaderno:</p>
+<ul class="simple">
+<li><p>Un artista está involucrado en un problema de plagio de una canción. La _______________ corresponde al abuelo de una actriz que debutó en los primeros años en YouTube.</p></li>
+<li><p>Nuevamente atentaron contra la _________________. Esta vez ingresaron sin autorización al servidor y robaron los datos personales de varias personas.</p></li>
+<li><p>El prestador del servicio de INTERNET últimamente ha invertido bastante en calidad. Tanto es así que ya gano varios cliente nuevos. Definitivamente se tomaron en serio su ________________.</p></li>
+<li><p>Estoy cansado de que cada vez que intento ingresar al portal me manden a leer sobre los riesgos de exponer mi información personal. Ya se que tengo derecho a la _____________________ pero están muy intensos.</p></li>
+<li><p>Ya está listo el programa con la nueva funcionalidad de ____________________. Ahora si tenemos pasarela de pagos en línea.</p></li>
+</ul>
+</li>
+<li><p>Suponga que usted es un juez de delitos informáticos. Copie y analice los siguientes casos en su cuaderno, e imponga las penas necesarias según la <strong>ley 1273 del 2009</strong>:</p></li>
+</ol>
+<blockquote>
+<div><p><strong>CASO 01:</strong> El acusado se declara culpable de haber clonado el sitio web y así engañar a varias amas de casa vendiéndoles productos falsos de aseo.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 02:</strong> La víctima testificó con evidencia probatoria que sus comunicaciones fueron chuzadas por su ex-esposa mientras conducía la noche anterior.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 03:</strong> El ingeniero accedió sin permiso al sistema empresarial. Esto fue 24 horas después de haber sido despedido. Por tanto todos sus accesos ya habían sido retirados. Sin embargo previamente había dejado una backdoor.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a10-analisis-y-reflexion-4-0">
+<h2>A10: Análisis y reflexión (+4,0)<a class="headerlink" href="#a10-analisis-y-reflexion-4-0" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <dl class="myst field-list simple">
 <dt class="field-odd">TIEMPO<span class="colon">:</span></dt>
-<dd class="field-odd"><p>30 minutos</p>
+<dd class="field-odd"><p>59 minutos.</p>
 </dd>
 <dt class="field-even">PREGUNTAS<span class="colon">:</span></dt>
-<dd class="field-even"><p>10</p>
+<dd class="field-even"><ol class="arabic simple" start="10">
+<li></li>
+</ol>
+</dd>
+<dt class="field-odd">OBJETIVO<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Identificar qué le llamó la atención de la temática de <strong>REDES y Ciberseguridad</strong>.</p>
 </dd>
 </dl>
-<div class="admonition-posibles-preguntas admonition">
-<p class="admonition-title">posibles preguntas</p>
+<ul class="simple">
+<li><p>En una hoja al final de su cuaderno, desarrolle un texto reflexivo utilizando las siguientes preguntas como guía para estructurar su escrito:</p></li>
+</ul>
+<div class="admonition-preguntas-de-reflexion admonition">
+<p class="admonition-title">Preguntas de reflexión</p>
 <ol class="arabic simple">
-<li></li>
+<li><p>¿Le genera curiosidad saber cómo viaja la información desde un dispositivo hasta un servidor en otro continente? ¿Por qué?</p></li>
+<li><p>Cuando el internet falla en casa, ¿Se siente motivado por intentar diagnosticar si es un problema del módem, del cableado o de la señal inalámbrica? ¿Por qué?</p></li>
+<li><p>¿Le llama la atención la idea de configurar dispositivos para que otras personas puedan comunicarse de forma segura dentro de una organización (Intranet)? ¿Por qué?</p></li>
+<li><p>¿Prefiere entender cómo funciona un “Switch” o un “Router” por dentro en lugar de simplemente usarlos como cajas negras que dan internet? ¿Por qué?</p></li>
+<li><p>¿Le parece interesante el concepto de “Hacking Ético” como una forma de ayudar a las empresas a protegerse, en lugar de ser solo un hacker malicioso? ¿Por qué?</p></li>
+<li><p>¿Siente curiosidad por aprender a detectar vulnerabilidades en páginas web (como inyecciones SQL o XSS) para poder corregirlas? ¿Por qué?</p></li>
+<li><p>¿Le interesaría aprender a administrar servidores de forma remota, trabajando mediante líneas de comandos y protocolos seguros como SSH? ¿Por qué?</p></li>
+<li><p>¿Le motiva aprender sobre leyes y normas (como la Ley 1273 de 2009 en Colombia) para entender qué es legal y qué no en el entorno digital? ¿Por qué?</p></li>
+<li><p>¿Le gustaría trabajar en el diseño de planes de seguridad para proteger activos críticos, asegurando que la información sea confidencial, íntegra y disponible? ¿Por qué?</p></li>
+<li><p>¿Le gustaría la idea de estar constantemente actualizado sobre nuevas amenazas informáticas para implementar medidas de defensa como Firewalls o cifrados avanzados? ¿Por qué?</p></li>
 </ol>
 </div>
 </section>
 </section>
 
-
-           </div>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G1004.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 1004: MANTENIMIENTO (P2)</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1002.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="G1002.html" class="btn btn-neutral float-left" title="Guía 1002: REDES (P2)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="G1004.html" class="btn btn-neutral float-right" title="Guía 1004: OFIMÁTICA (P2)" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1003: REDES (P2)</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li><a class="reference internal" href="#a01-redes-de-datos-e-internet-0-1">A01: Redes de datos e Internet (+0,1)</a><ul>
+<li><a class="reference internal" href="#que-son-las-redes-de-datos">¿Qué son las Redes de datos?</a></li>
+<li><a class="reference internal" href="#tipos-de-redes">Tipos de redes</a><ul>
+<li><a class="reference internal" href="#red-de-area-local-lan">Red de área local (LAN)</a></li>
+<li><a class="reference internal" href="#red-de-area-metropolitana-man">Red de área metropolitana (MAN)</a></li>
+<li><a class="reference internal" href="#red-de-area-extensa-wan">Red de área extensa (WAN)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clasificacion-de-redes">Clasificación de redes</a><ul>
+<li><a class="reference internal" href="#redes-alambricas">Redes alámbricas</a></li>
+<li><a class="reference internal" href="#redes-inalambricas">Redes inalámbricas</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#que-es-una-intranet">¿Qué es una Intranet?</a></li>
+<li><a class="reference internal" href="#que-es-internet">¿Qué es INTERNET?</a></li>
+<li><a class="reference internal" href="#componentes-de-una-red">Componentes de una red</a><ul>
+<li><a class="reference internal" href="#servidor">Servidor</a></li>
+<li><a class="reference internal" href="#equipos-cliente">Equipos cliente</a></li>
+<li><a class="reference internal" href="#switch">Switch</a></li>
+<li><a class="reference internal" href="#access-point">Access Point</a></li>
+<li><a class="reference internal" href="#router">Router</a></li>
+<li><a class="reference internal" href="#modem">Modem</a></li>
+<li><a class="reference internal" href="#rack-de-telecomunicaciones">RACK de telecomunicaciones</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#servicios-de-red">Servicios de red</a><ul>
+<li><a class="reference internal" href="#ssh">SSH</a></li>
+<li><a class="reference internal" href="#dhcp">DHCP</a></li>
+<li><a class="reference internal" href="#dns">DNS</a></li>
+<li><a class="reference internal" href="#ftp">FTP</a></li>
+<li><a class="reference internal" href="#http">HTTP://</a></li>
+<li><a class="reference internal" href="#https">HTTPS://</a></li>
+<li><a class="reference internal" href="#smtp-pop-imap">SMTP-POP-IMAP</a></li>
+<li><a class="reference internal" href="#voip">VOIP</a></li>
+<li><a class="reference internal" href="#rdp">RDP</a></li>
+<li><a class="reference internal" href="#firewall">FIREWALL</a></li>
+<li><a class="reference internal" href="#proxy">PROXY</a></li>
+<li><a class="reference internal" href="#vpn">VPN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a02-ciberseguridad-0-1">A02: Ciberseguridad (+0,1)</a><ul>
+<li><a class="reference internal" href="#que-es-la-ciberseguridad">¿Qué es la ciberseguridad?</a></li>
+<li><a class="reference internal" href="#seguridad-informatica">Seguridad informática</a><ul>
+<li><a class="reference internal" href="#ingenieria-social">Ingeniería social_</a></li>
+<li><a class="reference internal" href="#seguridad-en-redes-wifi">Seguridad en redes WIFI_</a></li>
+<li><a class="reference internal" href="#ataques-controlados-a-redes">Ataques controlados a redes_</a></li>
+<li><a class="reference internal" href="#defensa-de-redes-seguridad-perimetral-y-monitorizacion">Defensa de redes, seguridad perimetral y monitorización_</a></li>
+<li><a class="reference internal" href="#seguridad-de-aplicaciones-o-paginas-web">Seguridad de aplicaciones o páginas web_</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#seguridad-de-la-informacion">Seguridad de la información</a><ul>
+<li><a class="reference internal" href="#principios-de-seguridad-de-la-informacion">3 principios de seguridad de la información</a></li>
+<li><a class="reference internal" href="#iso-27001">ISO 27001</a></li>
+<li><a class="reference internal" href="#seguridad-informatica-vs-seguridad-de-la-informacion">Seguridad Informática Vs Seguridad de la Información</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#delitos-informaticos-en-colombia">Delitos informáticos en Colombia</a><ul>
+<li><a class="reference internal" href="#penas-y-multas-por-delitos-informaticos-en-colombia">Penas y multas por delitos informáticos en Colombia</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hacking-etico">Hacking ético</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a03-mapa-conceptual-0-1">A03: Mapa conceptual (+0,1)</a></li>
+<li><a class="reference internal" href="#a04-red-de-datos-0-1">A04: Red de datos (+0,1)</a></li>
+<li><a class="reference internal" href="#a05-dispositivos-de-red-0-1">A05: Dispositivos de red (+0,1)</a></li>
+<li><a class="reference internal" href="#a06-plano-de-red-aula-115-0-1">A06: Plano de red (aula 115) (+0,1)</a></li>
+<li><a class="reference internal" href="#a07-servicios-de-red-0-1">A07: Servicios de red (+0,1)</a></li>
+<li><a class="reference internal" href="#a08-seguridad-informatica-vs-seguridad-de-la-informacion-0-1">A08: Seguridad informática Vs Seguridad de la información (+0,1)</a></li>
+<li><a class="reference internal" href="#a09-delitos-informaticos-0-1">A09: Delitos informáticos (+0,1)</a></li>
+<li><a class="reference internal" href="#a10-analisis-y-reflexion-4-0">A10: Análisis y reflexión (+4,0)</a></li>
+</ul>
+</li>
+</ul>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Derechos de autor 2026, Camilo Fonseca.</p>
-  </div>
-
-  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+          </div>
         </div>
       </div>
-    </section>
+      
+      
+    </aside>
   </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script> 
-
-</body>
+</div><script src="../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
 </html>

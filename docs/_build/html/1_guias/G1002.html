@@ -1,539 +1,242 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../genindex.html"><link rel="search" title="Búsqueda" href="../search.html"><link rel="next" title="Guía 1003: REDES (P2)" href="G1003.html"><link rel="prev" title="Guía 1001: Historia de la Informática (P1)" href="G1001.html">
+        <link rel="prefetch" href="../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../_static/logo_dark.png" as="image">
 
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="es" data-content_root="../">
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guía 1002: REDES (P2) &mdash; aula 115</title>
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+        <title>Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2) - aula 115</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=4c9c2d9f" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=e02aa765" />
+    
+    
 
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--normal);
+  --toc-font-size: var(--font-size--small);
+  --admonition-font-size: 0.858rem;
   
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=e2bb6099"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../_static/translations.js?v=f85f4cfb"></script>
-      <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../_static/js/theme.js"></script>
-    <link rel="index" title="Índice" href="../genindex.html" />
-    <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Guía 1003: MANTENIMIENTO (P2)" href="G1003.html" />
-    <link rel="prev" title="Guía 1001: Historia de la Informática (P1)" href="G1001.html" /> 
-</head>
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
 
-          
-          
-          <a href="../index.html">
-            
-              <img src="../_static/logo_light.png" class="logo" alt="Logotipo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#utiles-escolares">Útiles escolares</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#porcentaje-de-notas">Porcentaje de notas %</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#equivalencia-calificacion-instruimos">Equivalencia calificación INSTRUIMOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#sello-docente">Sello docente</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-dentro-y-fuera-del-aula">Acceso dentro y fuera del aula</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#modelo-de-almacenamiento-google-workspace">Modelo de almacenamiento Google WorkSpace®</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-al-aula-115-en-contrajornada">Acceso al aula 115 en contrajornada</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#acceso-de-estudiantes-al-pc">Acceso de estudiantes al PC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#estructura-carpeta-de-evidencias">Estructura carpeta de evidencias</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#actividades-inicio-de-ano-escolar">Actividades inicio de año escolar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/informacion.html#desempenos">DESEMPEÑOS</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#logica-computacional-8">Lógica computacional 8</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#tecnologia-e-informatica-10">Tecnología e Informática 10</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#ofimatica-10">Ofimática 10</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../0_intro/informacion.html#ofimatica-11">Ofimática 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/reglas.html">Reglas del aula</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#reglas-del-aula-115">Reglas del aula 115</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#prohibiciones">PRØHIBICIONES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#que-pasa-si-se-incumplen-las-reglas">¿Qué pasa si se incumplen las reglas?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/reglas.html#que-pasa-si-el-incumplimiento-es-reiterativo">¿Qué pasa si el incumplimiento es reiterativo?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../0_intro/descargas.html">Descargas</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/descargas.html#institucional">Institucional</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../0_intro/descargas.html#proyecto-de-grado">Proyecto de grado</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Octavo</span></p>
+<p class="caption" role="heading"><span class="caption-text">Octavo (Lógica computacional)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="G820.html">Guía 820: Planes de refuerzo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G820.html#primero-periodo">PRIMERO PERIODO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#hardware">Hardware</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#software">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#sistema-computacional">Sistema computacional</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#informatica">Informática</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#razonar">Razonar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#logica">Lógica</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#logica-computacional">Lógica computacional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
 </ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G820.html#segundo-periodo">SEGUNDO PERIODO</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#datos">Datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#informacion">Información</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G820.html#jerarquia-de-datos">Jerarquía de datos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G821.html">Guía 821: Concepto Lógica computacional (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a01-concepto-de-logica-computacional-0-1">A01: Concepto de lógica computacional (+0,1)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-el-hardware">¿Qué es el HARDWARE?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="G821.html#que-es-una-cpu">¿Qué es una CPU?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G821.html#que-es-la-memoria-ram">¿Qué es la MEMORIA RAM?</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-el-software">¿Qué es el SOFTWARE?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-una-sistema-computacional">¿Qué es una SISTEMA COMPUTACIONAL?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-la-informatica">¿Qué es la INFORMÁTICA?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-razonar">¿Qué es RAZONAR?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-la-logica">¿Qué es la LÓGICA?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G821.html#que-es-logica-computacional">¿Qué es lógica computacional?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a02-hardware-0-3">A02: Hardware (+0,3)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a03-software-0-1">A03: Software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a04-sistema-computacional-0-1">A04: Sistema computacional (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a05-informatica-0-1">A05: Informática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a06-razonamiento-y-logica-0-1">A06: Razonamiento y lógica (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a07-logica-computacional-0-1">A07: Lógica computacional (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G821.html#a08-examen-escrito-4-0">A08: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G822.html">Guía 822: Jerarquía de datos (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a01-informacion-y-jerarquia-de-datos-0-1">A01: Información y Jerarquía de datos (+0,1)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-son-los-datos">¿Qué son los datos?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-es-la-informacion">¿Qué es la información?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="G822.html#que-es-la-jerarquia-de-datos">¿Qué es la Jerarquía de datos?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#bit">bit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#byte-8-bits">Byte (8 bits)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#caracter">Carácter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#dato">Dato</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#registro">Registro</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#tabla">Tabla</a></li>
-<li class="toctree-l4"><a class="reference internal" href="G822.html#base-de-datos">Base de datos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a02-datos-vs-informacion-0-1">A02: Datos Vs Información (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a03-jerarquia-de-datos-0-1">A03: Jerarquía de datos (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a04-construccion-de-tablas-0-1">A04: Construcción de tablas (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a05-bases-de-datos-0-5">A05: Bases de datos (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G822.html#a06-examen-escrito-4-0">A06: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Décimo</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Informática)</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a02-arpanet-0-1">A02: ARPANET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a03-primera-pagina-web-0-1">A03: Primera página web (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a04-primer-navegador-mosaic-0-1">A04: Primer navegador MOSAIC (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a05-origenes-de-la-pc-0-1">A05: Orígenes de la PC (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a06-apple-macintosh-0-1">A06: Apple - Macintosh (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a07-origenes-del-software-0-1">A07: Orígenes del software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a08-unix-linux-0-1">A08: UNIX-LINUX (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a09-windows-0-1">A09: Windows (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a10-linea-de-tiempo-1-0">A10: Línea de tiempo (+1,0)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1001.html#a11-examen-escrito-3-0">A11: Examen escrito (+3,0)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática (P1)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1003.html">Guía 1003: REDES (P2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1004.html">Guía 1004: MANTENIMIENTO (P2)</a></li>
 </ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Guía 1002: REDES (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1003.html">Guía 1003: MANTENIMIENTO (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1003.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1004.html">Guía 1004: OFIMÁTICA (P2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#a01-origenes-de-internet-0-1">A01: Orígenes de INTERNET (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#axx-1-preguntas-de-indagacion-0-5">AXX-1: Preguntas de indagación (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1004.html#axx-analisis-de-reflexion-4-0">AXX: Análisis de reflexión (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1011.html">Guía 1011: Concepto Ofimática (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a01-concepto-de-ofimatica-0-1">A01: Concepto de Ofimática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a02-area-de-la-ofimatica-0-1">A02: Área de la ofimática (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a03-google-workspace-0-1">A03: Google Workspace (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a04-microsoft-office-0-1">A04: Microsoft Office (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a05-servicio-indicado-0-5">A05: Servicio indicado (+0,5)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1011.html#a06-examen-escrito-4-0">A06: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a01-definicion-de-software-0-1">A01: Definición de software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a02-importancia-del-software-libre-0-1">A02: Importancia del software libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a03-ejemplos-de-software-libre-0-1">A03: Ejemplos de software libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a04-relacion-entre-software-libre-software-propietario-y-software-pirata-0-1">A04: Relación entre software libre, software propietario y software pirata (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a05-ahorro-usando-software-libre-0-2">A05: Ahorro($) usando software libre (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a06-el-riesgo-del-software-pirata-0-2">A06: El riesgo del software pirata (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a07-identificacion-de-software-propietario-y-libre-0-1">A07: Identificación de software propietario y libre (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1012.html#a08-carta-al-propietario-4-0">A08: Carta al propietario (+4,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1013.html">Guía 1013: LibreOffice (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a01-libreoffice-0-2">A01: LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a02-paises-que-usan-libreoffice-0-2">A02: Paises que usan LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a03-herramientas-de-libreoffice-0-2">A03: Herramientas de LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a04-ventajas-de-libreoffice-0-2">A04: Ventajas de LibreOffice (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1013.html#a05-examen-escrito-4-0">A05: Examen escrito (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Once</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Ofimática)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="G1111.html">Guía 1111: Conocimientos previos (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a01-datos-informacion-y-jerarquia-de-datos-0-1">A01: Datos, información y jerarquía de datos (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a02-relacion-entre-datos-e-informacion-0-2">A02: Relación entre datos e información (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a03-jerarquia-de-datos-0-2">A03: Jerarquía de datos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a04-concepto-de-hardware-ram-y-cpu-0-1">A04: Concepto de hardware (RAM y CPU) (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a05-utilidad-del-hardware-0-2">A05: Utilidad del hardware (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a06-concepto-de-software-0-1">A06: Concepto de software (+0,1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a07-clasificacion-del-software-0-2">A07: Clasificación del software (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1111.html#a08-examen-final-4-0">A08: Examen final (+4,0)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1011.html">Guía 1011: OFIMÁTICA (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1112.html">Guía 1112: Diagramas de flujo (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a00-introduccion-0-3">A00: Introducción (+0,3)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a01-diagramas-de-flujo-0-7">A01: Diagramas de flujo (+0,7)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a02-orientaciones-al-extranjero-1-0">A02: Orientaciones al extranjero (+1,0)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1112.html#a03-orientaciones-seguras-3-0">A03: Orientaciones seguras (+3,0)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="G1113.html">Guía 1113: Desarrollo de algoritmos (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#mensaje-del-autor">Mensaje del autor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a00-introduccion-0-2">A00: Introducción (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a01-que-son-los-algoritmos-0-2">A01: ¿Qué son los algoritmos? (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a02-tipos-del-algoritmos-0-2">A02: Tipos del algoritmos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a03-clasificacion-de-algoritmos-0-2">A03: Clasificación de algoritmos (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a04-metodologia-para-desarrollar-un-algoritmo-0-2">A04: Metodología para desarrollar un algoritmo (+0,2)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1113.html#a05-algoritmos-4-0">A05: Algoritmos (+4,0)</a></li>
-</ul>
-</li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">LECTURAS</span></p>
+<p class="caption" role="heading"><span class="caption-text">Décimo (Programación)</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1001-01.html">L1001-01: Historia de la Informática</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-del-internet-arpanet">Historia del Internet (ARPANET)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-de-la-computacion-personal">Historia de la Computación Personal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1001-01.html#historia-del-software">Historia del Software</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1002-01.html">L1002-01: Redes de datos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#redes-de-datos">Redes de datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#tipos-de-redes">Tipos de redes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#diferencia-entre-una-intranet-e-internet">Diferencia entre una Intranet e INTERNET</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#intranet">Intranet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#internet">INTERNET</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#medios-de-transmision">Medios de transmisión</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#redes-inalambricas">Redes inalámbricas</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#componentes-de-una-red">Componentes de una Red</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#servidor">Servidor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#equipos-cliente">Equipos cliente</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#el-repetidor">El Repetidor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#hub-comunicar-varios-equipos">Hub (comunicar varios equipos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#bridge-puentes-de-red-para-comunicar-segmentos-de-red">Bridge (puentes de red para comunicar segmentos de red)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#switch-hub-bridge">Switch (Hub + Bridge)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#access-point-switch-inalambrico">Access Point (Switch inalámbrico)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#router-para-salir-de-una-red-lan">Router (para salir de una red LAN)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#modem-switch-access-point-router">Modem (Switch + Access Point + Router)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#rack-de-telecomunicaciones">RACK de telecomunicaciones</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#internet-de-las-cosas">Internet de las cosas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#instalacion-de-una-red-de-datos">Instalación de una red de datos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#cableado-estructurado">Cableado estructurado</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#suministro-electrico">Suministro eléctrico</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#hardware">Hardware</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#software">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#acceso-a-internet">Acceso a Internet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#control-y-mantenimiento">Control y mantenimiento</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-01.html#servicios-de-red">Servicios de red</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#ssh">SSH</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#dhcp">DHCP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#dns">DNS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#ftp">FTP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#http">HTTP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#https">HTTPS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#smtp-pop">SMTP-POP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#voip">VOIP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#rdp">RDP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#firewall">FIREWALL</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#proxy">PROXY</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-01.html#vpn">VPN</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1002-02.html">L1002-02: Ciberseguridad</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-informatica">Seguridad informática</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#ingenieria-social">Ingeniería social</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-en-redes-wifi">Seguridad en redes WIFI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-en-internet-y-redes-de-ordenadores-pentesting">Seguridad en Internet y redes de ordenadores (Pentesting)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-perimetral-monitorizacion-y-defensa-de-redes">Seguridad perimetral, monitorización y defensa de redes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-de-aplicaciones-o-paginas-web">Seguridad de aplicaciones o páginas web</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-de-la-informacion">Seguridad de la información</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#seguridad-informatica-vs-seguridad-de-la-informacion">Seguridad Informática Vs Seguridad de la Información</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#iso-27001">ISO 27001</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#delitos-informaticos-en-colombia">Delitos informáticos en Colombia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#penas-y-multas-por-delitos-informaticos">Penas y multas por delitos informáticos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1002-02.html#hacking-etico">Hacking ético</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1003-01.html">L1003-01: Mantenimiento</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#que-es-el-mantenimiento">¿Qué es el mantenimiento?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#tipos-de-mantenimiento">Tipos de mantenimiento</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-preventivo-evitar-el-dano">Mantenimiento preventivo (evitar el daño)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../2_lecturas/L1003-01.html#clasificacion-mantenimiento-preventivo">Clasificación mantenimiento preventivo</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-correctivo-el-dano-ocurre">Mantenimiento correctivo (el daño ocurre)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../2_lecturas/L1003-01.html#clasificacion-de-mantenimiento-correctivo">Clasificación de mantenimiento correctivo</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-01.html#mantenimiento-de-actualizacion">Mantenimiento de actualización</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-01.html#eleccion-del-tipo-de-mantenimiento">Elección del tipo de mantenimiento</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1003-02.html">L1003-02: Electricidad y Electrónica</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#que-es-la-electricidad">¿Qué es la Electricidad?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#que-es-la-electronica">¿Qué es la Electrónica?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#electronica-digital">Electrónica digital</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1003-02.html#hardware-libre">Hardware libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#arduino">ARDUINO</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1003-02.html#raspberry-pi">RASPBERRY PI</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1004-01.html">L1004-01: Ofimática y programación</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#programacion">Programación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#desarrollo-de-software">Desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#programadores-vs-desarrolladores">Programadores Vs Desarrolladores</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#tipos-de-desarrollo-de-software">Tipos de desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#proceso-de-desarrollo-de-software">Proceso de desarrollo de software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#tecnologias-usadas-en-el-desarrollo-de-software">Tecnologías usadas en el desarrollo de software</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#sistemas-operativos">Sistemas operativos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#bases-de-datos">Bases de datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#servidor-web">Servidor web</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#entornos-de-ejecucion">Entornos de ejecución</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#framework">Framework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1004-01.html#ide">IDE</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#desarollo-web">Desarollo web</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#lenguajes-de-programacion">Lenguajes de programación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1004-01.html#software-de-aplicacion">Software de aplicación</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1011-01.html">L1011-01: Introducción a la Ofimática</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#que-es-la-ofimatica">¿Qué es la ofimática?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#google-workspace">Google Workspace</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1011-01.html#google-one-ai-plus-19-900-mes-2026">Google ONE - AI PLUS ($19,900/mes) (2026)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1011-01.html#microsoft-office">Microsoft Office</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1011-01.html#microsoft-365-family-459-999-ano-2026">MICROSOFT 365 Family ($459,999/año) (2026)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1012-01.html">L1012-01: Software libre</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#que-es-el-software">¿Qué es el software?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#tipos-de-software">Tipos de software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#clasificacion-de-software">Clasificación de software</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-libre">Software libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#libertades-del-software-libre">4 Libertades del software libre</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#ejemplos-de-software-libre">Ejemplos de software libre</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#sistema-operativo-gnu-linux-0">Sistema Operativo GNU-LINUX ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#navegador-web-mozilla-firefox-0">Navegador web Mozilla FIREFOX ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#editor-de-imagenes-gimp-0">Editor de imágenes GIMP ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#editor-de-graficos-vectoriales-inkscape-0">Editor de gráficos vectoriales INKSCAPE ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#reproductor-multimedia-vlc-0">Reproductor multimedia VLC ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#suite-de-creacion-3d-blender-0">Suite de creación 3D BLENDER ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#edicion-de-sonido-audacity-0">Edición de sonido Audacity ($0)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#suite-ofimatica-libreoffice-0">Suite ofimática Libreoffice ($0)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-propietario">Software propietariØ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#ejemplos-de-software-propietario">Ejemplos de software propietario</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#sistema-operativo-microsoft-windows-769-999">Sistema operativo Microsoft Windows ($769,999)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#microsoft-office-suite-ofimatica-459-999-ano">Microsoft Office (suite ofimática) ($459,999/año)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#adobe-photoshop-editor-de-imagenes-48-971-mes">Adobe Photoshop (editor de imágenes) ($48,971/mes)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1012-01.html#autocad-software-de-diseno-2-201-999-ano">AutoCAD (software de diseño) ($2,201,999/año)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1012-01.html#software-pirata">Software PIRATA!!!</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1013-01.html">L1013-01: LibreOffice</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#suite-ofimatica-libreoffice">Suite Ofimática LibreOffice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#entidades-que-usan-libreoffice">Entidades que usan LibreOffice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#herramientas-de-libreoffice">Herramientas de LibreOffice</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-writer-procesador-de-textos">LibreOffice Writer (procesador de textos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-calc-hoja-de-calculo">LibreOffice Calc (hoja de cálculo)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-impress-presentaciones">LibreOffice Impress (presentaciones)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-draw-dibujo-vectorial">LibreOffice Draw (Dibujo vectorial)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-base-bases-de-datos">LibreOffice Base (Bases de datos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1013-01.html#libreoffice-math-editor-de-formulas">LibreOffice Math (Editor de fórmulas)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1013-01.html#ventajas-de-libreoffice">Ventajas de LibreOffice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1111-01.html">L1111-01: Conocimientos previos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#informacion-y-datos">Información y Datos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#datos">Datos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#informacion">Información</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#valores-cuantitativos-y-cualitativos">Valores cuantitativos y cualitativos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#jerarquia-de-datos">Jerarquía de datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#hardware">Hardware</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#la-memoria-ram-acceso-rapido-a-los-datos">La memoria RAM (acceso rápido a los datos)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1111-01.html#la-cpu-procesa-los-datos">La CPU (procesa los datos)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1111-01.html#software-vs-programa">Software Vs Programa</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1112-01.html">L1112-01: Diagramas de flujo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#operacion">Operación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#limites-de-proceso">Límites de proceso</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#punto-de-decision">Punto de decisión</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#conector">Conector</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#direccion-de-flujo">Dirección de flujo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#entrada-manual">Entrada manual</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#documento">Documento</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1112-01.html#base-de-datos">Base de datos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_lecturas/L1113-01.html">L1113-01: Algoritmos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#tipos-de-algoritmos">Tipos de algoritmos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmos-cualitativos-informales">Algoritmos cualitativos (informales)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmos-cuantitativos-formales">Algoritmos cuantitativos (formales)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#metodologia-para-desarrollar-un-algoritmo">Metodología para desarrollar un algoritmo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../2_lecturas/L1113-01.html#algoritmo-para-ir-al-colegio-ejemplo">Algoritmo para ir al colegio (ejemplo)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-01-analisis-de-requisitos">FASE 01: Análisis de requisitos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-02-diseno-del-algoritmo">FASE 02: Diseño del algoritmo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../2_lecturas/L1113-01.html#fase-03-construccion-del-algoritmo">FASE 03: Construcción del algoritmo</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="G1021.html">Guía 1021: PROGRAMACIÓN (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1022.html">Guía 1022: Datos, Información y Software (P1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1023.html">Guía 1023: Desarrollo de algoritmos (P1)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">PLANES DE REFUERZO</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html">Plan de refuerzo 1000-01 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-internet">Historia del Internet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-hardware">Historia del Hardware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-01.html#historia-del-software">Historia del Software</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-02.html">Plan de refuerzo 1000-02 (P2)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html">Plan de refuerzo 1000-05 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-la-ofimatica">¿Qué es la ofimática?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-google-workspace">¿Qué es Google Workspace?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-microsoft-office">¿Qué es Microsoft Office?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-libre">¿Qué es el software libre?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#ejemplos-de-software-libre">Ejemplos de software libre</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-propietario">¿Qué es el software propietario?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#ejemplos-de-software-propietario">Ejemplos de software propietario</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-el-software-pirata">¿Qué es el software pirata?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1000-05.html#que-es-libreoffice">¿Qué es LibreOffice?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html">Plan de refuerzo 1100-05 (P1)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#instruccion">Instrucción</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#hardware">Hardware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#software">Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#informacion-y-datos">Información y datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#software-vs-programa">Software Vs Programa</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#id1">Software</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../3_planesRefuerzo/R1100-05.html#programa">Programa</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="G820.html">Guía 820: Lógica computacional 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1000.html">Guía 1000: Informática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1010.html">Guía 1010: Ofimática 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="G1020.html">Guía 1020: Programación 10</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
 <ul>
@@ -541,46 +244,62 @@
 <li class="toctree-l1"><a class="reference internal" href="../4_referencias/webgrafia.html">Webgrafía</a></li>
 </ul>
 
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">aula115</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Guía 1002: REDES (P2)</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/1_guias/G1002.md.txt" rel="nofollow"> Ver código fuente de la página</a>
-      </li>
-  </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section class="tex2jax_ignore mathjax_ignore" id="guia-1002-redes-p2">
-<h1>Guía 1002: REDES (P2)<a class="headerlink" href="#guia-1002-redes-p2" title="Link to this heading"></a></h1>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/1_guias/G1002.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1002-ofimatica-y-programacion-p2">
+<h1>Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)<a class="headerlink" href="#guia-1002-ofimatica-y-programacion-p2" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 35.0%" />
 <col style="width: 65.0%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><table class="docutils align-default">
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><img alt="escudo" src="../_images/escudo.png" /></p></td>
 </tr>
 </tbody>
 </table>
+</div>
 </td>
-<td><table class="docutils align-left">
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
 <tbody>
 <tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
 <ul class="simple">
@@ -589,32 +308,35 @@
 <li><p><strong>GRADO</strong>: DÉCIMO</p></li>
 <li><p><strong>PERIODO</strong>: 02</p></li>
 <li><p><strong>TIEMPO</strong>: 10 semanas (2 horas / semana)</p></li>
-<li><p><strong>TIEMPO DE TRABAJO</strong>: 8/20 horas</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 4/20 horas</p></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <ul class="simple">
-<li><p><strong>Temática</strong>: Redes de datos.</p></li>
-<li><p><strong>Objetivo de aprendizaje</strong>: Introducir los conceptos relacionados con la temática de redes de datos.</p></li>
+<li><p><strong>Temática</strong>: Reflexión sobre la Ofimática y Programación.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Identificar el nivel de interés del estudiante sobre las temáticas de Ofimática y Programación vistas en el periodo anterior.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Orientaciones curriculares</label><div class="sd-tab-content docutils">
 <ul class="simple">
-<li><p><strong>Componente</strong>: .</p></li>
-<li><p><strong>Competencia</strong>: .</p></li>
-<li><p><strong>Evidencia de aprendizaje</strong>: .</p></li>
+<li><p><strong>Componente</strong>: Uso y apropiación de la Tecnología y la Informática.</p></li>
+<li><p><strong>Competencia</strong>: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
@@ -630,94 +352,228 @@ Criterios de evaluación</label><div class="sd-tab-content docutils">
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
-Recursos (2)</label><div class="sd-tab-content docutils">
+Recursos (0)</label><div class="sd-tab-content docutils">
 <ul class="simple">
-<li><p><a class="reference internal" href="../2_lecturas/L1002-01.html"><span class="std std-doc"><strong>LECTURA:</strong> Redes de datos</span></a></p></li>
-<li><p><a class="reference internal" href="../2_lecturas/L1002-02.html"><span class="std std-doc"><strong>LECTURA:</strong> Ciberseguridad</span></a></p></li>
+<li><p>La presente guía no contiene recursos.</p></li>
 </ul>
 </div>
 </div>
 <section id="mensaje-del-autor">
-<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading"></a></h2>
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
 <blockquote class="pull-quote">
-<div><p>“”</p>
+<div><p>«Hasta el momento, se ha explorado las temáticas de: la <strong>ofimática</strong> (que nos da el poder de organizar, analizar y presentar información de forma profesional) y la <strong>programación</strong>, que nos permite dar instrucciones a una computadora para crear soluciones desde cero y dar vida a nuestras propias ideas.</p>
+<p>Esta guía no trata de un examen para calificar sus conocimientos teóricos, sino de un espacio para identificar si siente interés por las temáticas.</p>
+<p>A continuación, encontrará dos actividades con preguntas de reflexión. Desarrolle las actividades con honestidad; sus respuestas le ayudarán a identificar cuál de estas dos rutas (Ofimática o Programación) le despierta más curiosidad y cómo puede aprovechar ese conocimiento a futuro».</p>
 <p class="attribution">—Camilo Fonseca</p>
 </div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="a00-introduccion-0-1">
-<h2>A00: Introducción (+0,1)<a class="headerlink" href="#a00-introduccion-0-1" title="Link to this heading"></a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
-<ol class="arabic simple">
-<li><p>Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="a01-origenes-de-internet-0-1">
-<h2>A01: Orígenes de INTERNET (+0,1)<a class="headerlink" href="#a01-origenes-de-internet-0-1" title="Link to this heading"></a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
-<ol class="arabic simple">
-<li><p>En su cuaderno, responda las siguientes preguntas:</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="axx-1-preguntas-de-indagacion-0-5">
-<h2>AXX-1: Preguntas de indagación (+0,5)<a class="headerlink" href="#axx-1-preguntas-de-indagacion-0-5" title="Link to this heading"></a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
-<ol class="arabic simple">
-<li><p>En su cuaderno, responda las siguientes preguntas:</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="axx-analisis-de-reflexion-4-0">
-<h2>AXX: Análisis de reflexión (+4,0)<a class="headerlink" href="#axx-analisis-de-reflexion-4-0" title="Link to this heading"></a></h2>
+<section id="a01-analisis-y-reflexion-ofimatica-2-5">
+<h2>A01: Análisis y reflexión (OFIMÁTICA) (+2,5)<a class="headerlink" href="#a01-analisis-y-reflexion-ofimatica-2-5" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
-<dl class="myst field-list simple">
-<dt class="field-odd">TIEMPO<span class="colon">:</span></dt>
-<dd class="field-odd"><p>30 minutos</p>
-</dd>
-<dt class="field-even">PREGUNTAS<span class="colon">:</span></dt>
-<dd class="field-even"><p>10</p>
-</dd>
-</dl>
-<div class="admonition-posibles-preguntas admonition">
-<p class="admonition-title">posibles preguntas</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>TIEMPO</strong></p></td>
+<td><p>59 minutos</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PREGUNTAS</strong></p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>OBJETIVO</strong></p></td>
+<td><p>Identificar qué le llamó la atención de la temática de <strong>OFIMÁTICA</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ACTIVIDAD</strong></p></td>
+<td><p>En una hoja al final de su cuaderno, desarrolle un <strong>texto reflexivo</strong> utilizando las siguientes preguntas como guía para estructurar su escrito.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-preguntas-de-reflexion admonition">
+<p class="admonition-title">Preguntas de reflexión</p>
 <ol class="arabic simple">
-<li></li>
+<li><p>¿Qué aspecto de la ofimática le parece más interesante o útil para su vida académica o personal?</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="2">
+<li><p>¿Le gustaría aprender más sobre alguna herramienta específica de ofimática, como Google Workspace o Microsoft 365? ¿Cuál y por qué?</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="3">
+<li><p>¿Cree que el manejo de herramientas ofimáticas puede facilitar su trabajo diario o sus estudios? ¿Qué le motiva o desmotiva de esta temática?</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="4">
+<li><p>¿Le interesa conocer y usar programas cuyo código fuente está disponible para que cualquiera pueda estudiarlo y modificarlo? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="5">
+<li><p>¿Ha utilizado alguna vez software libre como LibreOffice, GIMP o Linux? ¿Qué le pareció la experiencia?</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="6">
+<li><p>Cree que es importante que el software sea accesible y modificable por todos, sin restricciones de licencia propietaria? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="7">
+<li><p>¿Le gustaría aprender a contribuir con proyectos de software libre, como mejorar programas o crear nuevas herramientas? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="8">
+<li><p>¿Qué opina sobre la idea de compartir y colaborar en el desarrollo de software en lugar de usar programas cerrados y comerciales?</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="9">
+<li><p>¿Le atrae la posibilidad de personalizar el software que usa para adaptarlo a sus necesidades específicas? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="10">
+<li><p>¿Considera que el software libre puede ser una alternativa viable y segura frente al software propietario? (¿por qué?)</p></li>
+</ol>
+</div>
+</section>
+<hr class="docutils" />
+<section id="a02-analisis-y-reflexion-programacion-2-5">
+<h2>A02: Análisis y reflexión (PROGRAMACIÓN) (+2,5)<a class="headerlink" href="#a02-analisis-y-reflexion-programacion-2-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>TIEMPO</strong></p></td>
+<td><p>59 minutos</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PREGUNTAS</strong></p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>OBJETIVO</strong></p></td>
+<td><p>Identificar qué le llamó la atención de la temática de <strong>PROGRAMACIÓN</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ACTIVIDAD</strong></p></td>
+<td><p>En una hoja al final de su cuaderno, desarrolle un <strong>texto reflexivo</strong> utilizando las siguientes preguntas como guía para estructurar su escrito.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-preguntas-de-reflexion admonition">
+<p class="admonition-title">Preguntas de reflexión</p>
+<ol class="arabic simple">
+<li><p>¿Se siente motivado al pensar que, mediante la creación de código, se pueden dar instrucciones exactas a una computadora para que resuelva un problema complejo por usted? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="2">
+<li><p>Al conocer la diferencia entre programador y desarrollador, ¿le atrae más la parte técnica de “escribir código” para construir funcionalidades específicas, o le interesa más la visión global de “planificar y gestionar” todo el ciclo de vida de un software? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="3">
+<li><p>Sobre el software y la innovación: Al entender que existen diferentes tipos de software (sistema, aplicación, embebido, programación), ¿hay alguna categoría en particular que le genere curiosidad sobre cómo se construyen o cómo funcionan por dentro? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="4">
+<li><p>De las tecnologías mencionadas (bases de datos, servidores web, entornos como Node.js o Frameworks), ¿hay alguna que le entusiasme aprender a usar para crear tu propio proyecto? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="5">
+<li><p>¿Qué parte del desarrollo web le parece más interesante: el Front-end (crear la parte visual con la que interactúan los usuarios) o el Back-end (trabajar con la lógica, servidores y bases de datos que hacen que todo funcione)? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="6">
+<li><p>De los lenguajes mencionados (HTML, CSS, JavaScript, PHP, Java, Python), ¿alguno te llama especialmente la atención para empezar a crear sus primeros programas o sitios web? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="7">
+<li><p>Considerando que el desarrollo de software implica análisis, diseño, pruebas y mantenimiento, ¿le atrae la idea de enfrentar el reto de identificar errores y optimizar código para mejorar continuamente una aplicación? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="8">
+<li><p>Después de analizar cómo los datos simples se transforman en información útil para la toma de decisiones, ¿considera que comprender la jerarquía de datos cambia tu perspectiva sobre cómo la tecnología influye en tu vida cotidiana?. ¿Tendría interés en profundizar cómo se organiza la información en sistemas complejos?</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="9">
+<li><p>Después de conocer que los diagramas de flujo nos permiten visualizar procesos paso a paso para resolver problemas de manera organizada, ¿se siente cómodo(a) utilizando esta herramienta gráfica para planear sus propias soluciones, o prefiere otro método para organizar sus ideas? (¿por qué?)</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="10">
+<li><p>Considerando que los algoritmos nos permiten descomponer cualquier situación de la vida diaria en una secuencia de pasos claros para resolverla, ¿qué tan interesante le resulta el desafío de diseñar instrucciones precisas para que otros (o una computadora) puedan completar una tarea siguiendo su lógica, o prefiere otro tipo de desafíos intelectuales? (¿por qué?)</p></li>
 </ol>
 </div>
 </section>
 </section>
 
-
-           </div>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G1003.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 1003: REDES (P2)</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1001.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1001: Historia de la Informática (P1)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="G1001.html" class="btn btn-neutral float-left" title="Guía 1001: Historia de la Informática (P1)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="G1003.html" class="btn btn-neutral float-right" title="Guía 1003: MANTENIMIENTO (P2)" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a01-analisis-y-reflexion-ofimatica-2-5">A01: Análisis y reflexión (OFIMÁTICA) (+2,5)</a></li>
+<li><a class="reference internal" href="#a02-analisis-y-reflexion-programacion-2-5">A02: Análisis y reflexión (PROGRAMACIÓN) (+2,5)</a></li>
+</ul>
+</li>
+</ul>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Derechos de autor 2026, Camilo Fonseca.</p>
-  </div>
-
-  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
-    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+          </div>
         </div>
       </div>
-    </section>
+      
+      
+    </aside>
   </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script> 
-
-</body>
+</div><script src="../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
 </html>
