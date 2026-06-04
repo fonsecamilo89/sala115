@@ -1,0 +1,12 @@
+# Ofimática 10
+
+:ASIGNATURA: Ofimática
+:GRADO: Décimo
+
+:::{toctree}
+:maxdepth: 2
+
+G1011.md
+G1012.md
+G1019.md
+:::

@@ -67,8 +67,8 @@ html_theme_options = {
     "light_css_variables": {
         "color-guilabel-text": "#FF0000",
         "color-brand-primary": "#265787",
-        "sidebar-caption-font-size": "var(--font-size--normal)",
-        "toc-font-size": "var(--font-size--small)",
+        "sidebar-caption-font-size": "var(--font-size--small)",
+        "toc-font-size": "var(--font-size--small--2)",
         "admonition-font-size": "0.858rem"
     },
 }

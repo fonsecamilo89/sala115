@@ -1,0 +1,906 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../../genindex.html"><link rel="search" title="Búsqueda" href="../../search.html"><link rel="next" title="Guía 1023: Desarrollo de algoritmos (P1)" href="G1023.html"><link rel="prev" title="Guía 1021: PROGRAMACIÓN (P1)" href="G1021.html">
+        <link rel="prefetch" href="../../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../../_static/logo_dark.png" as="image">
+
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+        <title>Guía 1022: Datos, Información y Software (P1) - aula 115</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e02aa765" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--small);
+  --toc-font-size: var(--font-size--small--2);
+  --admonition-font-size: 0.858rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/descargas.html">Descargas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guías</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../8logica/G820.html">Lógica computacional 8</a><input aria-label="Toggle navigation of Lógica computacional 8" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G829.html">Guía 829: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10informatica/G1000.html">Informática 10</a><input aria-label="Toggle navigation of Informática 10" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1001.html">Guía 1001: Historia de la Informática (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1002.html">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1003.html">Guía 1003: REDES (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1004.html">Guía 1004: MANTENIMIENTO (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1009.html">Guía 1009: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10ofimatica/G1010.html">Ofimática 10</a><input aria-label="Toggle navigation of Ofimática 10" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1011.html">Guía 1011: OFIMÁTICA (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1012.html">Guía 1012: Software Libre (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1019.html">Guía 1019: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="G1020.html">Programación 10</a><input aria-label="Toggle navigation of Programación 10" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="G1021.html">Guía 1021: PROGRAMACIÓN (P1)</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Guía 1022: Datos, Información y Software (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1023.html">Guía 1023: Desarrollo de algoritmos (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1029.html">Guía 1029: Plan de refuerzo</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../../_sources/1_guias/10programacion/G1022.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1022-datos-informacion-y-software-p1">
+<h1>Guía 1022: Datos, Información y Software (P1)<a class="headerlink" href="#guia-1022-datos-informacion-y-software-p1" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="escudo" src="../../_images/escudo.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
+<ul class="simple">
+<li><p><strong>DOCENTE</strong>: Julian Camilo Fonseca Romero</p></li>
+<li><p><strong>ASIGNATURA</strong>: Ofimática</p></li>
+<li><p><strong>GRADO</strong>: ONCE</p></li>
+<li><p><strong>PERIODO</strong>: 01</p></li>
+<li><p><strong>TIEMPO</strong>: 10 semanas (4 horas / semana)</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 10/40 horas</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ul class="simple">
+<li><p><strong>Temática</strong>: Concepto de hardware, software, diferencias entre software y programa, información, datos y jerarquía de datos.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Entender los fundamentos de arquitectura y lógica computacional.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Orientaciones curriculares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Componente</strong>: Naturaleza y Evolución de la T&amp;I.</p></li>
+<li><p><strong>Competencia</strong>: Relaciono saberes, conocimientos tecnológicos e informáticos con los conocimientos de otras disciplinas.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Comprendo los principios y conocimientos tecnológicos e informáticos que hacen posible el funcionamiento de productos tecnológicos actuales.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Criterios de evaluación</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Actividades desarrolladas en su totalidad.</p></li>
+<li><p>Participación en clase.</p></li>
+<li><p>Explicación clara de conceptos.</p></li>
+<li><p>Argumentación de ideas.</p></li>
+<li><p>Cumplimiento de las reglas del aula.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Recursos (0)</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>La presente guía no contiene recursos.</p></li>
+</ul>
+</div>
+</div>
+<section id="mensaje-del-autor">
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
+<blockquote class="pull-quote">
+<div><p>“En esta guía, el estudiante recuerda conceptos básicos de informática para aplicar más adelante en el aprendizaje de la programación.”</p>
+<p class="attribution">—Camilo Fonseca</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a00-introduccion-0-1">
+<h2>A00: Introducción (+0,1)<a class="headerlink" href="#a00-introduccion-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
+<ol class="arabic simple">
+<li><p>TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>LEA el <strong>mensaje del autor</strong> y en su cuaderno responda:</p>
+<ul class="simple">
+<li><p>¿Es posible entender la tecnología actual sin conocer como funciona el hardware y como se organizan los datos?</p></li>
+<li><p>¿Qué es para usted un hardware?</p></li>
+<li><p>¿Qué es para usted un software?</p></li>
+<li><p>¿Qué es para usted información y en que se diferencia con los datos?</p></li>
+<li><p>¿Cómo se relacionan los datos con el hardware y el software?</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a01-informacion-y-datos">
+<h2>A01: Información y datos<a class="headerlink" href="#a01-informacion-y-datos" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos relacionados con el tema de información y datos.</p></li>
+</ol>
+<section id="que-son-los-datos">
+<h3>¿Qué son los datos?<a class="headerlink" href="#que-son-los-datos" title="Link to this heading">¶</a></h3>
+<p>Los datos son valores en bruto, hechos o símbolos que por sí solos no tienen significado. Por ejemplo:</p>
+<ul class="simple">
+<li><p>Números sueltos.</p></li>
+<li><p>Caracteres sin contexto.</p></li>
+<li><p>Valores sin procesar.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="que-es-la-informacion">
+<h3>¿Qué es la información?<a class="headerlink" href="#que-es-la-informacion" title="Link to this heading">¶</a></h3>
+<p>La información es el resultado de procesar, organizar e interpretar los datos de manera que tengan sentido y sean útiles. La información:</p>
+<ul class="simple">
+<li><p>Tiene significado y contexto.</p></li>
+<li><p>Es comprensible para el usuario.</p></li>
+<li><p>Ayuda en la toma de decisiones.</p></li>
+</ul>
+<p>Por ejemplo:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Datos</p></th>
+<th class="head"><p>Información</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>37,5</p></td>
+<td><p>La temperatura del paciente es 37.5°C, lo cual indica fiebre</p></td>
+</tr>
+<tr class="row-odd"><td><p>4,5</p></td>
+<td><p>La nota final del estudiante es 4.5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La transformación de datos en información es una parte fundamental del procesamiento computacional, ya que permite convertir valores sin sentido en conocimiento útil y aplicable.</p>
+</section>
+<hr class="docutils" />
+<section id="valores-cuantitativos-y-cualitativos">
+<h3>Valores cuantitativos y cualitativos<a class="headerlink" href="#valores-cuantitativos-y-cualitativos" title="Link to this heading">¶</a></h3>
+<p><a class="footnote-reference brackets" href="#id5" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> Los valores cualitativos y cuantitativos son dos tipos diferentes de información:</p>
+<ul class="simple">
+<li><p><strong>Valores cualitativos:</strong> Describen cualidades o características que no se pueden medir numéricamente. Por ejemplo:</p>
+<ul>
+<li><p>Color de ojos</p></li>
+<li><p>Estado de ánimo</p></li>
+<li><p>Nivel de satisfacción (excelente, bueno, regular)</p></li>
+</ul>
+</li>
+<li><p><strong>Valores cuantitativos:</strong> Son aquellos que se pueden medir y expresar en números. Por ejemplo:</p>
+<ul>
+<li><p>Edad: 12 años</p></li>
+<li><p>Peso: 99 Kg</p></li>
+<li><p>Temperatura: 40°C</p></li>
+<li><p>Calificaciones numéricas: 3,0</p></li>
+</ul>
+</li>
+</ul>
+<p>La principal diferencia es que los valores cualitativos describen atributos o cualidades, mientras que los cuantitativos expresan cantidades medibles.</p>
+</section>
+<hr class="docutils" />
+<section id="jerarquia-de-datos">
+<h3>Jerarquía de datos<a class="headerlink" href="#jerarquia-de-datos" title="Link to this heading">¶</a></h3>
+<p><a class="footnote-reference brackets" href="#id6" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> La jerarquía de datos es la organización lógica de los datos en niveles sucesivos de complejidad, desde la unidad más pequeña hasta la más completa. En informática, se utiliza para entender cómo se estructura la información dentro de un sistema o base de datos.</p>
+<p>Los datos en la computadora se clasifican de MENOR a MAYOR en el siguiente ranking:</p>
+<ol class="arabic">
+<li><p><strong>bit:</strong> unidad lógica puede ser <code class="docutils literal notranslate"><span class="pre">1</span></code> o <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+<li><p><strong>BYTE:</strong> Son 8 bits. Ejemplo: <code class="docutils literal notranslate"><span class="pre">10010010</span></code></p></li>
+<li><p><strong>Caracteres:</strong> Representaciones de Bytes. Ejemplo: <strong><code class="docutils literal notranslate"><span class="pre">A</span></code></strong>: <code class="docutils literal notranslate"><span class="pre">10001001</span></code>, <strong><code class="docutils literal notranslate"><span class="pre">B</span></code>:</strong> <code class="docutils literal notranslate"><span class="pre">10001001</span></code></p></li>
+<li><p><strong>Dato:</strong> Se componen de representaciones de Caracteres. Ejemplo: <code class="docutils literal notranslate"><span class="pre">'CAMILO'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ROJO'</span></code>, <code class="docutils literal notranslate"><span class="pre">'FRIO'</span></code>, <code class="docutils literal notranslate"><span class="pre">23</span></code> , <code class="docutils literal notranslate"><span class="pre">0.0999</span></code>, <span class="guilabel">True</span>,</p></li>
+<li><p><strong>Campo:</strong> Nombre que se le coloca a un dato para identificarlo. Ejemplo: <code class="docutils literal notranslate"><span class="pre">nombre</span></code>, <code class="docutils literal notranslate"><span class="pre">color</span></code>, <code class="docutils literal notranslate"><span class="pre">clima</span></code>, <code class="docutils literal notranslate"><span class="pre">edad</span></code>, <code class="docutils literal notranslate"><span class="pre">temperatura</span></code>, <code class="docutils literal notranslate"><span class="pre">estado</span></code></p></li>
+<li><p><strong>Registro:</strong> Conjunto de campos que conforman un solo objeto. Ejemplo: El observador de un estudiante, la hoja técnica de una moto.</p></li>
+<li><p><strong>Tablas:</strong> Conjunto de registros que tienen la misma estructura y que pertenecen a una organización. Ejemplo:</p>
+<blockquote>
+<div><p>“La <strong>tabla</strong> de los <em>estudiantes</em> de un colegio”.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Bases de datos:</strong> Conjunto de tablas relacionadas técnicamente y organizadas. Ejemplo:</p>
+<blockquote>
+<div><p>“La <strong>base de datos</strong> donde están relacionadas las tablas de los estudiantes junto con las tablas de las notas”.</p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="hardware">
+<h3>Hardware<a class="headerlink" href="#hardware" title="Link to this heading">¶</a></h3>
+<p><a class="footnote-reference brackets" href="#id6" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> El hardware es el conjunto de componentes de un sistema informático o computacional que se puede ver o tocar. Por ejemplo:</p>
+<ul class="simple">
+<li><p><strong>Dispositivos de entrada:</strong> Teclados, mouse, micrófonos.</p></li>
+<li><p><strong>Dispositivos de salida:</strong> Monitores, impresoras, bafles.</p></li>
+<li><p><strong>Procesamiento:</strong> CPU.</p></li>
+<li><p><strong>Memoria:</strong> memoria RAM, memoria CACHE.</p></li>
+<li><p><strong>Almacenamiento:</strong> Discos duros, memorias USB.</p></li>
+</ul>
+<section id="la-memoria-ram-acceso-rapido-a-los-datos">
+<h4>La memoria RAM (acceso rápido a los datos)<a class="headerlink" href="#la-memoria-ram-acceso-rapido-a-los-datos" title="Link to this heading">¶</a></h4>
+<p>La <strong>memoria RAM</strong> (<em>Random Access Memory o Memoria de Acceso Aleatorio</em>) es un componente fundamental del hardware que:</p>
+<ul class="simple">
+<li><p>Almacena temporalmente los datos y programas que el computador está usando activamente.</p></li>
+<li><p>Permite acceder rápidamente a la información mientras el equipo está encendido.</p></li>
+<li><p>Se borra cuando se apaga el computador (memoria volátil).</p></li>
+</ul>
+<p>Características importantes de la RAM:</p>
+<ul class="simple">
+<li><p>A mayor cantidad de RAM, más programas pueden ejecutarse simultáneamente.</p></li>
+<li><p>Su velocidad afecta directamente el rendimiento del sistema.</p></li>
+<li><p>Es diferente al almacenamiento permanente (disco duro) porque es temporal.</p></li>
+</ul>
+</section>
+<section id="la-cpu-procesa-los-datos">
+<h4>La CPU (procesa los datos)<a class="headerlink" href="#la-cpu-procesa-los-datos" title="Link to this heading">¶</a></h4>
+<p>La <strong>CPU (Unidad Central de Procesamiento)</strong> es el “cerebro” del computador. Es el componente principal que se encarga de:</p>
+<ul class="simple">
+<li><p>Procesar todas las instrucciones y cálculos del sistema</p></li>
+<li><p>Coordinar el funcionamiento de los demás componentes</p></li>
+<li><p>Ejecutar los programas y aplicaciones</p></li>
+</ul>
+<p>La <strong>CPU</strong> está compuesta principalmente por:</p>
+<ul class="simple">
+<li><p><strong>Unidad de Control:</strong> Coordina y dirige todas las operaciones</p></li>
+<li><p><strong>Unidad Aritmético-Lógica (ALU):</strong> Realiza cálculos matemáticos y operaciones lógicas</p></li>
+<li><p><strong>Registros:</strong> Pequeñas unidades de memoria de alta velocidad</p></li>
+</ul>
+<p>La velocidad de la <strong>CPU</strong> se mide en Hertz (Hz) y determina qué tan rápido puede procesar las instrucciones. A mayor velocidad, mejor rendimiento del sistema.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="software">
+<h3>Software<a class="headerlink" href="#software" title="Link to this heading">¶</a></h3>
+<p><a class="footnote-reference brackets" href="#id6" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> Un <strong>Software</strong> es el conjunto de <strong>programas</strong>, bases de datos, archivos y documentación que permiten realizar diferentes tareas en un sistema computacional.</p>
+<p>Existen dos tipos de software: Software de sistema y software de aplicación.</p>
+<ul class="simple">
+<li><p><strong>Software de sistema:</strong> Ejecutan todas las funciones básicas de una computadora (por ejemplo encender la máquina, mostrar imagen en pantalla, monitorear temperatura, comunicarse con los diferentes periféricos, etc.). El <strong>software de sistema</strong> controla e intercambia datos con el hardware. Un ejemplo de software de sistema es el sistema operativo Windows. Inclusive los controladores o drivers también hacen parte del software de sistema.</p></li>
+<li><p><strong>Software de aplicación:</strong> Permite al usuario trabajar en una tarea específica (procesar texto, edición de video, edición de imágenes, navegación en INTERNET, desarrollo de software, etc.). Por lo general, el software de aplicación trabaja en función del software de sistema.</p></li>
+</ul>
+<p>A diferencia del hardware que es físico y tangible, el software no se puede tocar - solo puede verse su funcionamiento en la pantalla.</p>
+<section id="software-vs-programa">
+<h4>Software Vs Programa<a class="headerlink" href="#software-vs-programa" title="Link to this heading">¶</a></h4>
+<p>Un programa es un <strong>conjunto de instrucciones</strong> que le dicen a una <strong>computadora</strong> COMO HACER una tarea específica. Las instrucciones están escritas en código y son diseñadas por programadores con conocimiento en un lenguaje de programación.</p>
+<p>A diferencia de un <strong>algoritmo</strong>, las instrucciones de un programa <strong>NO pueden ser escritas en lenguaje natural</strong>.</p>
+<blockquote>
+<div><p>“Aunque se usa el término <strong>software</strong> como sinónimo, la realidad es que un <strong>programa</strong> es solo una parte del <strong>software</strong>”.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a02-datos-informacion-y-jerarquia-de-datos-0-1">
+<h2>A02: Datos, información y jerarquía de datos (+0,1)<a class="headerlink" href="#a02-datos-informacion-y-jerarquia-de-datos-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>En su cuaderno responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Qué son los datos?</p></li>
+<li><p>¿Qué es información?</p></li>
+<li><p>¿Cuál es la diferencia entre un valor cualitativo y un valor cuantitativo?</p></li>
+<li><p>¿Qué es una jerarquía de datos?</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno describa cada uno de los componentes de la jerarquía de datos y de un ejemplo de cada uno.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a03-relacion-entre-datos-e-informacion-0-2">
+<h2>A03: Relación entre datos e información (+0,2)<a class="headerlink" href="#a03-relacion-entre-datos-e-informacion-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Responda las siguientes preguntas en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿Qué es tener sentido?</p></li>
+<li><p>¿Por qué es importante tener “sentido” para diferenciar entre datos e información?</p></li>
+</ul>
+</li>
+<li><p>Dibuje una tabla en su cuaderno y en la primera columna escriba 15 ejemplos de datos. En la segunda columna convierta estos datos en información. En la tercera columna indique si la información es un valor cualitativo o cuantitativo.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Datos</p></th>
+<th class="head"><p>Información</p></th>
+<th class="head"><p>Valor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Rojo</p></td>
+<td><p>“Semáforo en estado rojo, carros no pueden pasar”</p></td>
+<td><p>cualitativo</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>“La edad del estudiante es 16 años, por tanto es menor de edad”</p></td>
+<td><p>cuantitativo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-jerarquia-de-datos-0-2">
+<h2>A04: Jerarquía de datos (+0,2)<a class="headerlink" href="#a04-jerarquia-de-datos-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Dibuje los siguientes círculos, ingrese ejemplos de datos según su jerarquía (ver la sección de <strong>jerarquía de datos</strong>).</p></li>
+</ol>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../../_images/image018.png"><img alt="../../_images/image018.png" src="../../_images/image018.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Diagrama:</strong> Jerarquía de datos</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="a05-concepto-de-hardware-ram-y-cpu-0-1">
+<h2>A05: Concepto de hardware (RAM y CPU) (+0,1)<a class="headerlink" href="#a05-concepto-de-hardware-ram-y-cpu-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>En su cuaderno responda:</p>
+<ul class="simple">
+<li><p>¿Qué es hardware?</p></li>
+<li><p>¿Cómo se puede clasificar el hardware de un sistema computacional?</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno mencione diferentes ejemplos de hardware y clasifíquelos.</p></li>
+<li><p>En su cuaderno responda:</p>
+<ul class="simple">
+<li><p>¿Qué es la memoria RAM?</p></li>
+<li><p>¿Cuales son las características de la memoria RAM?</p></li>
+</ul>
+</li>
+<li><p>En INTERNET consulte 3 fabricantes de memorias RAM y escríbalos en su cuaderno. Tenga en cuenta lo siguiente:</p>
+<ul class="simple">
+<li><p>Mencionar la nacionalidad del fabricante.</p></li>
+<li><p>Mencionar los clientes del fabricante.</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno responda:</p>
+<ul>
+<li><p>¿Qué es la CPU?</p></li>
+<li><p>¿Qué son los Hertz(Hz)?</p></li>
+<li><p>La CPU tiene 3 componentes. En su cuaderno complete el siguiente gráfico:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../../_images/image026.png"><img alt="../../_images/image026.png" src="../../_images/image026.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Diagrama:</strong> Componentes CPU</span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a06-utilidad-del-hardware-0-2">
+<h2>A06: Utilidad del hardware (+0,2)<a class="headerlink" href="#a06-utilidad-del-hardware-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Teniendo en cuenta la siguiente imagen, responda en su cuaderno la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿En que se diferencian los dispositivos de entrada con los dispositivos de salida?</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../../_images/image035.png"><img alt="../../_images/image035.png" src="../../_images/image035.png" style="width: 360px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Diagrama:</strong> CPU</span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En media hoja de cuaderno, explique por que la CPU y la memoria RAM son los dispositivos más importantes para dar instrucciones.</p></li>
+<li><p>Respecto a la memoria <strong>RAM</strong>, en las siguientes frases diga si es falso o verdadero y explique el por qué:</p>
+<ul class="simple">
+<li><p>La memoria <strong>RAM</strong> almacena infinitamente los datos y programas ___</p></li>
+<li><p>Para acceder velozmente a la información en el equipo usamos la memoria <strong>RAM</strong> ___</p></li>
+<li><p>La memoriam <strong>RAM</strong> no es volátil ___</p></li>
+<li><p>La velocidad de trabajo de un computador, depende exclusivamente de la velocidad de la memoria <strong>RAM</strong> ___</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a07-concepto-de-software-0-1">
+<h2>A07: Concepto de software (+0,1)<a class="headerlink" href="#a07-concepto-de-software-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>En su cuaderno responda la siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Qué es el software?</p></li>
+<li><p>¿Cómo se clasifica el software?</p></li>
+<li><p>¿Cuál es la diferencia entre un software y un programa?</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a08-clasificacion-del-software-0-2">
+<h2>A08: Clasificación del software (+0,2)<a class="headerlink" href="#a08-clasificacion-del-software-0-2" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Clasifique el siguiente software en la siguiente tabla:</p>
+<ul class="simple">
+<li><p>Windows 11, WORD, cpa000.exe, Linux UBUNTU, LibreOffice Calc, UNIX, hii.bin, ANDROID, FIREFOX, LibreOffice Writer, windowSys.exe, IOS, CHROME, FIFA, Photoshop, BIOS</p></li>
+</ul>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Software de sistema</p></th>
+<th class="head"><p>Software de aplicación</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>_</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>_</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>_</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>_</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>_</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a09-examen-final-4-0">
+<h2>A09: Examen final (+4,0)<a class="headerlink" href="#a09-examen-final-4-0" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<dl class="myst field-list simple">
+<dt class="field-odd">TIEMPO DEL EXAMEN<span class="colon">:</span></dt>
+<dd class="field-odd"><p>30 minutos</p>
+</dd>
+<dt class="field-even">NÚMERO DE PREGUNTAS<span class="colon">:</span></dt>
+<dd class="field-even"><p>10</p>
+</dd>
+</dl>
+<div class="admonition-posibles-preguntas admonition">
+<p class="admonition-title">Posibles preguntas</p>
+<ol class="arabic simple">
+<li><p>Explique la diferencia entre datos e información y de un ejemplo de cada uno.</p></li>
+<li><p>¿Por qué es importante que los datos tengan un contexto para convertirse en información útil?</p></li>
+<li><p>Describa qué son los valores cualitativos y cuantitativos y proporcione un ejemplo de cada uno.</p></li>
+<li><p>Explique la jerarquía de datos desde el bit hasta la base de datos, indicando qué representa cada nivel.</p></li>
+<li><p>¿Por qué un byte está compuesto por 8 bits y qué importancia tiene esta unidad en la informática?</p></li>
+<li><p>Define qué es un registro y cómo se relaciona con los campos y archivos en la organización de datos.</p></li>
+<li><p>Explique qué es el hardware y mencione al menos cinco componentes físicos que lo conforman.</p></li>
+<li><p>Describa la función principal de la memoria RAM y por qué se considera una memoria volátil.</p></li>
+<li><p>¿Cuál es el papel de la CPU en un sistema computacional y cuáles son sus componentes principales?</p></li>
+<li><p>Explique la diferencia entre software de sistema y software de aplicación con ejemplos.</p></li>
+<li><p>¿Qué es un programa y cómo se relaciona con el software en general?</p></li>
+<li><p>Describa cómo la información procesada por un computador puede influir en la toma de decisiones.</p></li>
+<li><p>¿Por qué es fundamental entender la arquitectura de un computador para programar eficientemente?</p></li>
+<li><p>Explique cómo los datos se almacenan y organizan en un sistema informático para facilitar su acceso.</p></li>
+<li><p>Describa el proceso que sigue un computador para transformar datos en información.</p></li>
+<li><p>¿Qué papel juegan los Hertz dentro de la CPU y cómo afecta el rendimiento del sistema?</p></li>
+<li><p>Explique la importancia de la memoria RAM en la ejecución de programas y qué sucede cuando se apaga el computador.</p></li>
+<li><p>Describa cómo el hardware y el software trabajan juntos para realizar tareas computacionales.</p></li>
+<li><p>¿Qué diferencias existen entre los distintos tipos de memoria en un computador y para qué se usa cada una?</p></li>
+<li><p>Reflexione sobre cómo la evolución de la arquitectura computacional ha impactado en el desarrollo de tecnologías actuales.</p></li>
+</ol>
+</div>
+</section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id5" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Trejos Buriticá, O. I. (2017). Lógica de programación. Ediciones de la U.</p>
+</aside>
+<aside class="footnote brackets" id="id6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id3">2</a>,<a role="doc-backlink" href="#id4">3</a>)</span>
+<p>Deitel, P. J., &amp; Deitel, H. (2014). C++: cómo programar (A. V. Romero Elizondo, Trans.). Pearson Educación.</p>
+</aside>
+</aside>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G1023.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 1023: Desarrollo de algoritmos (P1)</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1021.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1021: PROGRAMACIÓN (P1)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1022: Datos, Información y Software (P1)</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
+<li><a class="reference internal" href="#a01-informacion-y-datos">A01: Información y datos</a><ul>
+<li><a class="reference internal" href="#que-son-los-datos">¿Qué son los datos?</a></li>
+<li><a class="reference internal" href="#que-es-la-informacion">¿Qué es la información?</a></li>
+<li><a class="reference internal" href="#valores-cuantitativos-y-cualitativos">Valores cuantitativos y cualitativos</a></li>
+<li><a class="reference internal" href="#jerarquia-de-datos">Jerarquía de datos</a></li>
+<li><a class="reference internal" href="#hardware">Hardware</a><ul>
+<li><a class="reference internal" href="#la-memoria-ram-acceso-rapido-a-los-datos">La memoria RAM (acceso rápido a los datos)</a></li>
+<li><a class="reference internal" href="#la-cpu-procesa-los-datos">La CPU (procesa los datos)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#software">Software</a><ul>
+<li><a class="reference internal" href="#software-vs-programa">Software Vs Programa</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a02-datos-informacion-y-jerarquia-de-datos-0-1">A02: Datos, información y jerarquía de datos (+0,1)</a></li>
+<li><a class="reference internal" href="#a03-relacion-entre-datos-e-informacion-0-2">A03: Relación entre datos e información (+0,2)</a></li>
+<li><a class="reference internal" href="#a04-jerarquia-de-datos-0-2">A04: Jerarquía de datos (+0,2)</a></li>
+<li><a class="reference internal" href="#a05-concepto-de-hardware-ram-y-cpu-0-1">A05: Concepto de hardware (RAM y CPU) (+0,1)</a></li>
+<li><a class="reference internal" href="#a06-utilidad-del-hardware-0-2">A06: Utilidad del hardware (+0,2)</a></li>
+<li><a class="reference internal" href="#a07-concepto-de-software-0-1">A07: Concepto de software (+0,1)</a></li>
+<li><a class="reference internal" href="#a08-clasificacion-del-software-0-2">A08: Clasificación del software (+0,2)</a></li>
+<li><a class="reference internal" href="#a09-examen-final-4-0">A09: Examen final (+4,0)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

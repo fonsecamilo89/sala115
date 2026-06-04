@@ -30,10 +30,10 @@
 :::
 
 ::: {admonition} SECUENCIA DIDÁCTICA (MODELO ACTIVO)
-1. Exploración.
-2. Estructuración.
-3. Actividad práctica.
-4. Transferencia.
+1. {bdg-light}`Exploración`
+2. {bdg-info}`Estructuración`.
+3. {bdg-warning}`Actividad práctica`.
+4. {bdg-danger}`Transferencia`.
 :::
 
 :::{toctree}
@@ -48,52 +48,13 @@
 
 :::{toctree}
 :hidden:
-:maxdepth: 1
-:caption: Octavo (Lógica computacional)
+:maxdepth: 2
+:caption: Guías
 
-1_guias/G821.md
-1_guias/G822.md
-:::
-
-:::{toctree}
-:hidden:
-:maxdepth: 1
-:caption: Décimo (Informática)
-
-1_guias/G1001.md
-1_guias/G1002.md
-1_guias/G1003.md
-1_guias/G1004.md
-:::
-
-:::{toctree}
-:hidden:
-:maxdepth: 1
-:caption: Décimo (Ofimática)
-
-1_guias/G1011.md
-1_guias/G1012.md
-:::
-
-:::{toctree}
-:hidden:
-:maxdepth: 1
-:caption: Décimo (Programación)
-
-1_guias/G1021.md
-1_guias/G1022.md
-1_guias/G1023.md
-:::
-
-:::{toctree}
-:maxdepth: 1
-:hidden:
-:caption: PLANES DE REFUERZO
-
-1_guias/G820.md
-1_guias/G1000.md
-1_guias/G1010.md
-1_guias/G1020.md
+1_guias/8logica/G820.md
+1_guias/10informatica/G1000.md
+1_guias/10ofimatica/G1010.md
+1_guias/10programacion/G1020.md
 :::
 
 :::{toctree}
@@ -101,8 +62,8 @@
 :hidden:
 :caption: REFERENCIAS
 
-4_referencias/bibliografia.md
-4_referencias/webgrafia.md
+2_referencias/bibliografia.md
+2_referencias/webgrafia.md
 :::
 
 

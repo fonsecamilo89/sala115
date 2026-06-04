@@ -1,0 +1,12 @@
+# Lógica computacional 8
+
+:ASIGNATURA: Lógica computacional
+:GRADO: Octavo
+
+:::{toctree}
+:maxdepth: 2
+
+G821.md
+G822.md
+G829.md
+:::
