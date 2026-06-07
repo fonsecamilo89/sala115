@@ -38,7 +38,7 @@
 
 :::{toctree}
 :hidden:
-:maxdepth: 1
+:maxdepth: 2
 :caption: INTRO
 
 0_intro/informacion.md
@@ -58,7 +58,7 @@
 :::
 
 :::{toctree}
-:maxdepth: 1
+:maxdepth: 2
 :hidden:
 :caption: REFERENCIAS
 

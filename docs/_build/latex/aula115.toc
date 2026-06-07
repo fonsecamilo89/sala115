@@ -1,0 +1,329 @@
+\xpg@aux {}{spanish}
+\contentsline {chapter}{\numberline {1}Información}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Útiles escolares}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Porcentaje de notas \%}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Equivalencia calificación INSTRUIMOS}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Sello docente}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Acceso dentro y fuera del aula}{4}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Modelo de almacenamiento Google WorkSpace®}{5}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Acceso al aula 115 en contrajornada}{5}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Acceso de estudiantes al PC}{6}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Estructura carpeta de evidencias}{6}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Actividades inicio de año escolar}{7}{section.1.10}%
+\contentsline {section}{\numberline {1.11}DESEMPEÑOS}{7}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Lógica computacional 8}{7}{subsection.1.11.1}%
+\contentsline {subsection}{\numberline {1.11.2}Tecnología e Informática 10}{7}{subsection.1.11.2}%
+\contentsline {subsection}{\numberline {1.11.3}Ofimática 10}{8}{subsection.1.11.3}%
+\contentsline {subsection}{\numberline {1.11.4}Ofimática 11}{8}{subsection.1.11.4}%
+\contentsline {chapter}{\numberline {2}Reglas del aula}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Reglas del aula 115}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}PRØHIBICIONES}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}¿Qué pasa si se incumplen las reglas?}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}¿Qué pasa si el incumplimiento es reiterativo?}{12}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Descargas}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Institucional}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Proyecto de grado}{13}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Lógica computacional 8}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Guía 821: Concepto Lógica computacional (P1)}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Mensaje del autor}{16}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}A00: Introducción (+0,1)}{16}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}A01: Concepto de lógica computacional (+0,1)}{16}{subsection.4.1.3}%
+\contentsline {subsubsection}{¿Qué es el HARDWARE?}{16}{subsubsection*.3}%
+\contentsline {paragraph}{¿Qué es una CPU?}{17}{paragraph*.5}%
+\contentsline {paragraph}{¿Qué es la MEMORIA RAM?}{18}{paragraph*.6}%
+\contentsline {subsubsection}{¿Qué es el SOFTWARE?}{18}{subsubsection*.7}%
+\contentsline {subsubsection}{¿Qué es una SISTEMA COMPUTACIONAL?}{19}{subsubsection*.8}%
+\contentsline {subsubsection}{¿Qué es la INFORMÁTICA?}{19}{subsubsection*.10}%
+\contentsline {subsubsection}{¿Qué es RAZONAR?}{20}{subsubsection*.11}%
+\contentsline {subsubsection}{¿Qué es la LÓGICA?}{20}{subsubsection*.13}%
+\contentsline {subsubsection}{¿Qué es lógica computacional?}{20}{subsubsection*.14}%
+\contentsline {subsection}{\numberline {4.1.4}A02: Hardware (+0,3)}{20}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}A03: Software (+0,1)}{21}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}A04: Sistema computacional (+0,1)}{22}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}A05: Informática (+0,1)}{22}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}A06: Razonamiento y lógica (+0,1)}{23}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.9}A07: Lógica computacional (+0,1)}{24}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.10}A08: Examen escrito (+4,0)}{24}{subsection.4.1.10}%
+\contentsline {section}{\numberline {4.2}Guía 822: Jerarquía de datos (P2)}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Mensaje del autor}{26}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}A00: Introducción (+0,1)}{26}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}A01: Información y Jerarquía de datos (+0,1)}{26}{subsection.4.2.3}%
+\contentsline {subsubsection}{¿Qué son los datos?}{26}{subsubsection*.15}%
+\contentsline {subsubsection}{¿Qué es la información?}{27}{subsubsection*.17}%
+\contentsline {subsubsection}{¿Qué es la Jerarquía de datos?}{27}{subsubsection*.18}%
+\contentsline {paragraph}{bit}{27}{paragraph*.20}%
+\contentsline {paragraph}{Byte (8 bits)}{28}{paragraph*.21}%
+\contentsline {paragraph}{Carácter}{28}{paragraph*.22}%
+\contentsline {paragraph}{Dato}{28}{paragraph*.23}%
+\contentsline {paragraph}{Registro}{28}{paragraph*.24}%
+\contentsline {paragraph}{Tabla}{29}{paragraph*.25}%
+\contentsline {paragraph}{Base de datos}{29}{paragraph*.26}%
+\contentsline {subsection}{\numberline {4.2.4}A02: Datos Vs Información (+0,1)}{29}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}A03: Jerarquía de datos (+0,1)}{30}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}A04: Construcción de tablas (+0,1)}{32}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}A05: Bases de datos (+0,5)}{33}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}A06: Examen escrito (+4,0)}{34}{subsection.4.2.8}%
+\contentsline {section}{\numberline {4.3}Guía 829: Plan de refuerzo}{35}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}PRIMER PERIODO}{35}{subsection.4.3.1}%
+\contentsline {subsubsection}{Hardware}{36}{subsubsection*.27}%
+\contentsline {subsubsection}{Software}{36}{subsubsection*.28}%
+\contentsline {subsubsection}{Sistema computacional}{36}{subsubsection*.29}%
+\contentsline {subsubsection}{Informática}{36}{subsubsection*.30}%
+\contentsline {subsubsection}{Razonar}{36}{subsubsection*.31}%
+\contentsline {subsubsection}{Lógica}{36}{subsubsection*.32}%
+\contentsline {subsubsection}{Lógica computacional}{36}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {4.3.2}SEGUNDO PERIODO}{37}{subsection.4.3.2}%
+\contentsline {subsubsection}{Datos}{37}{subsubsection*.34}%
+\contentsline {subsubsection}{Información}{37}{subsubsection*.35}%
+\contentsline {subsubsection}{Jerarquía de datos}{37}{subsubsection*.36}%
+\contentsline {chapter}{\numberline {5}Informática 10}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Guía 1001: Historia de la Informática (P1)}{39}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Mensaje del autor}{40}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}A00: Introducción (+0,1)}{40}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}A01: Historia de la Informática (+0,1)}{40}{subsection.5.1.3}%
+\contentsline {subsubsection}{Historia del INTERNET (ARPANET)}{41}{subsubsection*.37}%
+\contentsline {subsubsection}{Historia de la Computación Personal}{42}{subsubsection*.42}%
+\contentsline {subsubsection}{Historia del software}{45}{subsubsection*.48}%
+\contentsline {subsection}{\numberline {5.1.4}A02: Orígenes de INTERNET (+0,1)}{48}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}A04: Primera página web (+0,1)}{48}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}A05: Primer navegador MOSAIC (+0,1)}{48}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}A06: Orígenes de la PC (+0,1)}{49}{subsection.5.1.7}%
+\contentsline {subsection}{\numberline {5.1.8}A07: Apple \sphinxhyphen {} Macintosh (+0,1)}{49}{subsection.5.1.8}%
+\contentsline {subsection}{\numberline {5.1.9}A08: Orígenes del software (+0,1)}{49}{subsection.5.1.9}%
+\contentsline {subsection}{\numberline {5.1.10}A09: Sistemas Operativos (+0,1)}{49}{subsection.5.1.10}%
+\contentsline {subsection}{\numberline {5.1.11}A10: Windows (+0,1)}{50}{subsection.5.1.11}%
+\contentsline {subsection}{\numberline {5.1.12}A11: Línea de tiempo (+1,0)}{50}{subsection.5.1.12}%
+\contentsline {subsection}{\numberline {5.1.13}A12: Examen escrito (+3,0)}{50}{subsection.5.1.13}%
+\contentsline {section}{\numberline {5.2}Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)}{51}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Mensaje del autor}{52}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}A00: Recordando los temas vistos (+1,0)}{52}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}A01: Análisis y reflexión (OFIMÁTICA) (+2,0)}{53}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}A02: Análisis y reflexión (PROGRAMACIÓN) (+2,0)}{54}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Guía 1003: REDES (P2)}{55}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Mensaje del autor}{56}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}A00: Introducción (+0,1)}{56}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}A01: Redes de datos e Internet (+0,1)}{56}{subsection.5.3.3}%
+\contentsline {subsubsection}{¿Qué son las Redes de datos?}{56}{subsubsection*.52}%
+\contentsline {subsubsection}{Tipos de redes}{57}{subsubsection*.53}%
+\contentsline {subsubsection}{Clasificación de redes}{58}{subsubsection*.54}%
+\contentsline {subsubsection}{¿Qué es una Intranet?}{59}{subsubsection*.55}%
+\contentsline {subsubsection}{¿Qué es INTERNET?}{59}{subsubsection*.56}%
+\contentsline {subsubsection}{Componentes de una red}{60}{subsubsection*.57}%
+\contentsline {subsubsection}{Servicios de red}{64}{subsubsection*.58}%
+\contentsline {subsection}{\numberline {5.3.4}A02: Ciberseguridad (+0,1)}{67}{subsection.5.3.4}%
+\contentsline {subsubsection}{¿Qué es la ciberseguridad?}{67}{subsubsection*.59}%
+\contentsline {subsubsection}{Seguridad informática}{68}{subsubsection*.60}%
+\contentsline {subsubsection}{Seguridad de la información}{70}{subsubsection*.61}%
+\contentsline {subsubsection}{Delitos informáticos en Colombia}{72}{subsubsection*.62}%
+\contentsline {subsubsection}{Hacking ético}{73}{subsubsection*.63}%
+\contentsline {subsection}{\numberline {5.3.5}A03: Mapa conceptual (+0,1)}{73}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}A04: Red de datos (+0,1)}{73}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}A05: Dispositivos de red (+0,1)}{74}{subsection.5.3.7}%
+\contentsline {subsection}{\numberline {5.3.8}A06: Plano de red (aula 115) (+0,1)}{74}{subsection.5.3.8}%
+\contentsline {subsection}{\numberline {5.3.9}A07: Servicios de red (+0,1)}{75}{subsection.5.3.9}%
+\contentsline {subsection}{\numberline {5.3.10}A08: Seguridad informática Vs Seguridad de la información (+0,1)}{76}{subsection.5.3.10}%
+\contentsline {subsection}{\numberline {5.3.11}A09: Delitos informáticos (+0,1)}{77}{subsection.5.3.11}%
+\contentsline {subsection}{\numberline {5.3.12}A10: Análisis y reflexión (+4,0)}{77}{subsection.5.3.12}%
+\contentsline {section}{\numberline {5.4}Guía 1004: MANTENIMIENTO (P2)}{79}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Mensaje del autor}{79}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}A00: Introducción (+0,1)}{80}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}A01: Mantenimiento (+0,1)}{80}{subsection.5.4.3}%
+\contentsline {subsubsection}{¿Qué es el mantenimiento?}{80}{subsubsection*.64}%
+\contentsline {subsubsection}{Mantenimiento preventivo (evitar el daño)}{81}{subsubsection*.65}%
+\contentsline {subsubsection}{Mantenimiento correctivo (el daño ocurre)}{81}{subsubsection*.66}%
+\contentsline {subsubsection}{Mantenimiento de actualización}{82}{subsubsection*.67}%
+\contentsline {subsubsection}{¿Qué tipo de mantenimiento elegir?}{82}{subsubsection*.68}%
+\contentsline {subsection}{\numberline {5.4.4}A02: Electrónica (+0,1)}{82}{subsection.5.4.4}%
+\contentsline {subsubsection}{¿Qué es la electricidad?}{82}{subsubsection*.69}%
+\contentsline {subsubsection}{¿Qué es la electrónica?}{84}{subsubsection*.70}%
+\contentsline {subsubsection}{Electrónica digital}{85}{subsubsection*.71}%
+\contentsline {subsubsection}{Diferencia entre microprocesador y microcontrolador}{86}{subsubsection*.72}%
+\contentsline {subsubsection}{Hardware libre}{87}{subsubsection*.73}%
+\contentsline {paragraph}{ARDUINO}{87}{paragraph*.74}%
+\contentsline {paragraph}{Raspberry PI}{88}{paragraph*.75}%
+\contentsline {subsection}{\numberline {5.4.5}A03: Importancia de los mantenimientos (+0,3)}{89}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}A04: Electricidad Vs Electrónica (+0,4)}{90}{subsection.5.4.6}%
+\contentsline {subsection}{\numberline {5.4.7}A05: Análisis y reflexión (+4,0)}{90}{subsection.5.4.7}%
+\contentsline {section}{\numberline {5.5}Guía 1009: Plan de refuerzo}{91}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}PRIMER PERIODO}{91}{subsection.5.5.1}%
+\contentsline {subsubsection}{Historia del Internet}{91}{subsubsection*.76}%
+\contentsline {subsubsection}{Historia de la computación personal}{92}{subsubsection*.77}%
+\contentsline {subsubsection}{Historia del Software}{92}{subsubsection*.78}%
+\contentsline {subsection}{\numberline {5.5.2}SEGUNDO PERIODO}{92}{subsection.5.5.2}%
+\contentsline {subsubsection}{Ofimática y Programación}{93}{subsubsection*.79}%
+\contentsline {subsubsection}{Redes}{93}{subsubsection*.80}%
+\contentsline {subsubsection}{Mantenimiento}{94}{subsubsection*.81}%
+\contentsline {chapter}{\numberline {6}Ofimática 10}{95}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Guía 1011: OFIMÁTICA (P1)}{95}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Mensaje del autor}{96}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}A00: Introducción (+0,1)}{96}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}A01: OFIMÁTICA (+0,1)}{96}{subsection.6.1.3}%
+\contentsline {subsubsection}{¿Qué es la ofimática?}{96}{subsubsection*.82}%
+\contentsline {subsubsection}{Google Workspace}{97}{subsubsection*.84}%
+\contentsline {paragraph}{Google ONE \sphinxhyphen {} AI PLUS (\$19,900/mes) (2026)}{97}{paragraph*.86}%
+\contentsline {subsubsection}{Microsoft Office}{98}{subsubsection*.87}%
+\contentsline {paragraph}{MICROSOFT 365 Family (\$459,999/año) (2026)}{98}{paragraph*.89}%
+\contentsline {subsection}{\numberline {6.1.4}A02: Concepto de Ofimática (+0,1)}{99}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}A03: Google Workspace (+0,1)}{99}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}A04: Microsoft Office (+0,1)}{100}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}A05: Servicio indicado (+0,5)}{100}{subsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.1.8}A06: Examen escrito (+4,0)}{101}{subsection.6.1.8}%
+\contentsline {section}{\numberline {6.2}Guía 1012: Software Libre (P1)}{102}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Mensaje del autor}{103}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}A00: Introducción (+0,1)}{103}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}A01: Software libre (+0,1)}{103}{subsection.6.2.3}%
+\contentsline {subsubsection}{¿Qué es el software?}{104}{subsubsection*.90}%
+\contentsline {subsubsection}{Software libre}{104}{subsubsection*.93}%
+\contentsline {subsubsection}{Ejemplos de software libre}{105}{subsubsection*.94}%
+\contentsline {subsubsection}{Software propietariØ}{109}{subsubsection*.103}%
+\contentsline {subsubsection}{Ejemplos de software propietario}{110}{subsubsection*.104}%
+\contentsline {subsubsection}{Software pirata}{112}{subsubsection*.109}%
+\contentsline {subsection}{\numberline {6.2.4}A02: LibreOffice (+0,1)}{113}{subsection.6.2.4}%
+\contentsline {subsubsection}{Suite Ofimática LibreOffice}{113}{subsubsection*.111}%
+\contentsline {subsubsection}{Entidades que usan LibreOffice}{113}{subsubsection*.113}%
+\contentsline {subsubsection}{Herramientas de LibreOffice}{114}{subsubsection*.115}%
+\contentsline {subsubsection}{Ventajas de LibreOffice}{116}{subsubsection*.116}%
+\contentsline {subsection}{\numberline {6.2.5}A03: Definición de software (+0,1)}{116}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}A04: Importancia del software libre (+0,6)}{117}{subsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.2.7}A05: Relación entre software libre, software propietario y software pirata (+0,2)}{119}{subsection.6.2.7}%
+\contentsline {subsection}{\numberline {6.2.8}A06: El riesgo del software pirata (+0,1)}{119}{subsection.6.2.8}%
+\contentsline {subsection}{\numberline {6.2.9}A07: Identificación de software propietario y libre (+0,1)}{120}{subsection.6.2.9}%
+\contentsline {subsection}{\numberline {6.2.10}A08: Uso de LibreOffice (+0,6)}{120}{subsection.6.2.10}%
+\contentsline {subsection}{\numberline {6.2.11}A09: Carta al propietario (+3,0)}{122}{subsection.6.2.11}%
+\contentsline {section}{\numberline {6.3}Guía 1013: LibreOffice Writer (P2)}{123}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Mensaje del autor}{124}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}A00: Introducción (+0,1)}{124}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}A01: LibreOffice Writer (+0,1)}{124}{subsection.6.3.3}%
+\contentsline {subsubsection}{¿Qué es LibreOffice Writer?}{125}{subsubsection*.117}%
+\contentsline {subsubsection}{LibreOffice Writer Vs Microsoft Word}{127}{subsubsection*.118}%
+\contentsline {subsubsection}{Características de LibreOffice Writer}{127}{subsubsection*.119}%
+\contentsline {subsection}{\numberline {6.3.4}A02: Teoría LibreOffice Writer (+0,1)}{129}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}A03: Información de identificación \sphinxstyleliteralintitle {\sphinxupquote {011}} (+0,1)}{130}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.6}A04: Exploración de la interfaz \sphinxstyleliteralintitle {\sphinxupquote {114}} (+0,1)}{131}{subsection.6.3.6}%
+\contentsline {subsection}{\numberline {6.3.7}A05: Creación y edición de documentos \sphinxstyleliteralintitle {\sphinxupquote {111}} (+0,1)}{135}{subsection.6.3.7}%
+\contentsline {subsection}{\numberline {6.3.8}A06: Guardado de documentos \sphinxstyleliteralintitle {\sphinxupquote {301}} (+0,1)}{136}{subsection.6.3.8}%
+\contentsline {subsection}{\numberline {6.3.9}A07: Cortar, copiar y pegar \sphinxstyleliteralintitle {\sphinxupquote {101}} (+0,1)}{137}{subsection.6.3.9}%
+\contentsline {subsection}{\numberline {6.3.10}A08: Buscar y reemplazar \sphinxstyleliteralintitle {\sphinxupquote {124}} (+0,1)}{138}{subsection.6.3.10}%
+\contentsline {subsection}{\numberline {6.3.11}A09: Corrector ortográfico \sphinxstyleliteralintitle {\sphinxupquote {102}} (+0,1)}{140}{subsection.6.3.11}%
+\contentsline {subsection}{\numberline {6.3.12}A10: Presentación de evidencias (+4,0)}{141}{subsection.6.3.12}%
+\contentsline {section}{\numberline {6.4}Guía 1014: Formato en LibreOffice Writer (P3)}{142}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Mensaje del autor}{143}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}A00: Introducción (+0,05)}{143}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}A01: LibreOffice Writer (+0,05)}{143}{subsection.6.4.3}%
+\contentsline {subsubsection}{Formato de texto}{143}{subsubsection*.120}%
+\contentsline {subsubsection}{Trabajando con estilos}{144}{subsubsection*.121}%
+\contentsline {subsection}{\numberline {6.4.4}A02: Formato en LibreOffice Writer (+0,05)}{145}{subsection.6.4.4}%
+\contentsline {subsection}{\numberline {6.4.5}A03: Formato de carácter 1.0 \sphinxstyleliteralintitle {\sphinxupquote {101}} (+0,05)}{145}{subsection.6.4.5}%
+\contentsline {subsection}{\numberline {6.4.6}A04: Formato de carácter 2.0 \sphinxstyleliteralintitle {\sphinxupquote {102}} (+0,1)}{148}{subsection.6.4.6}%
+\contentsline {subsection}{\numberline {6.4.7}A05: Formato de carácter 3.0 \sphinxstyleliteralintitle {\sphinxupquote {101}} (+0,1)}{149}{subsection.6.4.7}%
+\contentsline {subsection}{\numberline {6.4.8}A06: Clonando formato \sphinxstyleliteralintitle {\sphinxupquote {101}} (+0,1)}{151}{subsection.6.4.8}%
+\contentsline {subsection}{\numberline {6.4.9}A07: Formato de párrafo \sphinxstyleliteralintitle {\sphinxupquote {103}} (+0,1)}{153}{subsection.6.4.9}%
+\contentsline {subsection}{\numberline {6.4.10}A08: Sangría Francesa \sphinxstyleliteralintitle {\sphinxupquote {101}} (+0,1)}{157}{subsection.6.4.10}%
+\contentsline {subsection}{\numberline {6.4.11}A09: Esquema numerado \sphinxstyleliteralintitle {\sphinxupquote {102}} (+0,1)}{159}{subsection.6.4.11}%
+\contentsline {subsection}{\numberline {6.4.12}A10: Currículum de estilos \sphinxstyleliteralintitle {\sphinxupquote {101}} (+0,1)}{161}{subsection.6.4.12}%
+\contentsline {subsection}{\numberline {6.4.13}A11: Estilo personalizado \sphinxstyleliteralintitle {\sphinxupquote {101}} (+0,1)}{165}{subsection.6.4.13}%
+\contentsline {subsection}{\numberline {6.4.14}A12: Presentación de evidencias (+4,0)}{168}{subsection.6.4.14}%
+\contentsline {section}{\numberline {6.5}Guía 1019: Plan de refuerzo}{168}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}PRIMER PERIODO}{168}{subsection.6.5.1}%
+\contentsline {subsubsection}{¿Qué es la ofimática?}{168}{subsubsection*.122}%
+\contentsline {subsubsection}{¿Qué es Google Workspace?}{168}{subsubsection*.123}%
+\contentsline {subsubsection}{¿Qué es Microsoft Office?}{169}{subsubsection*.124}%
+\contentsline {subsubsection}{¿Qué es el software libre?}{169}{subsubsection*.125}%
+\contentsline {paragraph}{Ejemplos de software libre}{169}{paragraph*.126}%
+\contentsline {subsubsection}{¿Qué es el software propietario?}{169}{subsubsection*.127}%
+\contentsline {paragraph}{Ejemplos de software propietario}{170}{paragraph*.128}%
+\contentsline {subsubsection}{¿Qué es el software pirata?}{170}{subsubsection*.129}%
+\contentsline {subsubsection}{¿Qué es LibreOffice?}{170}{subsubsection*.130}%
+\contentsline {subsection}{\numberline {6.5.2}SEGUNDO PERIODO}{170}{subsection.6.5.2}%
+\contentsline {chapter}{\numberline {7}Programación 10}{171}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Guía 1021: PROGRAMACIÓN (P1)}{171}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Mensaje del autor}{172}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}A00: Introducción (+0,1)}{172}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}A01: PROGRAMACIÓN}{172}{subsection.7.1.3}%
+\contentsline {subsubsection}{¿Qué es la programación?}{172}{subsubsection*.131}%
+\contentsline {subsubsection}{¿Qué es el software?}{173}{subsubsection*.132}%
+\contentsline {subsubsection}{¿Qué es el desarrollo de software?}{173}{subsubsection*.133}%
+\contentsline {subsubsection}{Programadores Vs Desarrolladores}{174}{subsubsection*.134}%
+\contentsline {subsubsection}{Tipos de software}{174}{subsubsection*.135}%
+\contentsline {subsubsection}{Proceso de desarrollo de software}{175}{subsubsection*.136}%
+\contentsline {subsubsection}{Tecnologías usadas en el desarrollo de software}{176}{subsubsection*.137}%
+\contentsline {paragraph}{Sistemas operativos}{176}{paragraph*.138}%
+\contentsline {paragraph}{Bases de datos}{176}{paragraph*.139}%
+\contentsline {paragraph}{Servidor web}{176}{paragraph*.140}%
+\contentsline {paragraph}{Entornos de ejecución}{176}{paragraph*.141}%
+\contentsline {paragraph}{Framework}{176}{paragraph*.142}%
+\contentsline {paragraph}{IDE}{177}{paragraph*.143}%
+\contentsline {subsubsection}{Desarollo web}{177}{subsubsection*.144}%
+\contentsline {subsubsection}{Lenguajes de programación}{177}{subsubsection*.145}%
+\contentsline {subsubsection}{Software de aplicación}{178}{subsubsection*.146}%
+\contentsline {subsection}{\numberline {7.1.4}A02: Desarrolladores y programadores (+0,2)}{178}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}A03: Tecnologías usadas en el desarrollo de software (+0,2)}{179}{subsection.7.1.5}%
+\contentsline {subsection}{\numberline {7.1.6}AXX: Examen final (+4,0)}{179}{subsection.7.1.6}%
+\contentsline {section}{\numberline {7.2}Guía 1022: Datos, Información y Software (P1)}{180}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Mensaje del autor}{181}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}A00: Introducción (+0,1)}{181}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}A01: Información y datos}{181}{subsection.7.2.3}%
+\contentsline {subsubsection}{¿Qué son los datos?}{181}{subsubsection*.147}%
+\contentsline {subsubsection}{¿Qué es la información?}{181}{subsubsection*.148}%
+\contentsline {subsubsection}{Valores cuantitativos y cualitativos}{182}{subsubsection*.149}%
+\contentsline {subsubsection}{Jerarquía de datos}{182}{subsubsection*.151}%
+\contentsline {subsubsection}{Hardware}{183}{subsubsection*.153}%
+\contentsline {paragraph}{La memoria RAM (acceso rápido a los datos)}{183}{paragraph*.154}%
+\contentsline {paragraph}{La CPU (procesa los datos)}{183}{paragraph*.155}%
+\contentsline {subsubsection}{Software}{184}{subsubsection*.156}%
+\contentsline {paragraph}{Software Vs Programa}{184}{paragraph*.157}%
+\contentsline {subsection}{\numberline {7.2.4}A02: Datos, información y jerarquía de datos (+0,1)}{184}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}A03: Relación entre datos e información (+0,2)}{184}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}A04: Jerarquía de datos (+0,2)}{185}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.2.7}A05: Concepto de hardware (RAM y CPU) (+0,1)}{186}{subsection.7.2.7}%
+\contentsline {subsection}{\numberline {7.2.8}A06: Utilidad del hardware (+0,2)}{187}{subsection.7.2.8}%
+\contentsline {subsection}{\numberline {7.2.9}A07: Concepto de software (+0,1)}{187}{subsection.7.2.9}%
+\contentsline {subsection}{\numberline {7.2.10}A08: Clasificación del software (+0,2)}{188}{subsection.7.2.10}%
+\contentsline {subsection}{\numberline {7.2.11}A09: Examen final (+4,0)}{188}{subsection.7.2.11}%
+\contentsline {section}{\numberline {7.3}Guía 1023: Desarrollo de algoritmos (P2)}{189}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Mensaje del autor}{190}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}A00: Introducción (+0,2)}{190}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}A01: Diagramas de flujo}{190}{subsection.7.3.3}%
+\contentsline {subsubsection}{¿Qué es un diagrama de flujo?}{190}{subsubsection*.158}%
+\contentsline {subsubsection}{Tipos de diagramas de flujo}{190}{subsubsection*.160}%
+\contentsline {paragraph}{Operación}{191}{paragraph*.161}%
+\contentsline {paragraph}{Límites de proceso}{191}{paragraph*.162}%
+\contentsline {paragraph}{Punto de decisión}{192}{paragraph*.163}%
+\contentsline {paragraph}{Conector}{192}{paragraph*.164}%
+\contentsline {paragraph}{Dirección de flujo}{192}{paragraph*.165}%
+\contentsline {paragraph}{Entrada manual}{192}{paragraph*.166}%
+\contentsline {paragraph}{Documento}{193}{paragraph*.167}%
+\contentsline {paragraph}{Base de datos}{193}{paragraph*.168}%
+\contentsline {subsection}{\numberline {7.3.4}A02: Algoritmos}{193}{subsection.7.3.4}%
+\contentsline {subsubsection}{¿Qué es una algoritmo?}{193}{subsubsection*.169}%
+\contentsline {subsubsection}{Tipos de algoritmos}{193}{subsubsection*.171}%
+\contentsline {paragraph}{Algoritmos cualitativos (informales)}{194}{paragraph*.172}%
+\contentsline {paragraph}{Algoritmos cuantitativos (formales)}{194}{paragraph*.173}%
+\contentsline {subsubsection}{Metodología para desarrollar un algoritmo}{194}{subsubsection*.174}%
+\contentsline {paragraph}{FASE 01: Análisis de requisitos (objetivo y condiciones)}{194}{paragraph*.175}%
+\contentsline {paragraph}{FASE 02: Diseño del algoritmo (diagrama de flujo)}{194}{paragraph*.176}%
+\contentsline {paragraph}{FASE 03: Construcción del algoritmo (código fuente)}{195}{paragraph*.177}%
+\contentsline {subsubsection}{EJEMPLO: Algoritmo para ir al colegio}{195}{subsubsection*.178}%
+\contentsline {paragraph}{FASE 01: Análisis de requisitos}{195}{paragraph*.179}%
+\contentsline {paragraph}{FASE 02: Diseño del algoritmo}{196}{paragraph*.180}%
+\contentsline {paragraph}{FASE 03: Construcción del algoritmo}{196}{paragraph*.181}%
+\contentsline {subsection}{\numberline {7.3.5}A03: Diagramas de flujo (+0,7)}{197}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}A04: Orientaciones al extranjero (+1,0)}{197}{subsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.3.7}A05: Orientaciones seguras (+3,0)}{199}{subsection.7.3.7}%
+\contentsline {subsection}{\numberline {7.3.8}A06: ¿Qué son los algoritmos? (+0,2)}{200}{subsection.7.3.8}%
+\contentsline {subsection}{\numberline {7.3.9}A07: Tipos del algoritmos (+0,2)}{201}{subsection.7.3.9}%
+\contentsline {subsection}{\numberline {7.3.10}A08: Clasificación de algoritmos (+0,2)}{201}{subsection.7.3.10}%
+\contentsline {subsection}{\numberline {7.3.11}A09: Metodología para desarrollar un algoritmo (+0,2)}{202}{subsection.7.3.11}%
+\contentsline {subsection}{\numberline {7.3.12}A10: Algoritmos (+4,0)}{202}{subsection.7.3.12}%
+\contentsline {section}{\numberline {7.4}Guía 1029: Plan de refuerzo}{203}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}PRIMER PERIODO}{204}{subsection.7.4.1}%
+\contentsline {subsubsection}{Instrucción}{204}{subsubsection*.182}%
+\contentsline {subsubsection}{Hardware}{204}{subsubsection*.183}%
+\contentsline {subsubsection}{Software}{204}{subsubsection*.184}%
+\contentsline {subsubsection}{Información y datos}{204}{subsubsection*.185}%
+\contentsline {subsubsection}{Software Vs Programa}{204}{subsubsection*.186}%
+\contentsline {paragraph}{Software}{204}{paragraph*.187}%
+\contentsline {paragraph}{Programa}{205}{paragraph*.188}%
+\contentsline {subsection}{\numberline {7.4.2}SEGUNDO PERIODO}{205}{subsection.7.4.2}%
+\contentsline {chapter}{\numberline {8}Bibliografía}{207}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Webgrafía}{209}{chapter.9}%

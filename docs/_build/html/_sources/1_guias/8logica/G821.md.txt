@@ -373,8 +373,8 @@ Para el siguiente razonamiento, verifique si es correcto o no:
 :delim: ;
 **TIEMPO** ; 29 minutos
 **PREGUNTAS** ; 10
-**OBJETIVO** ; Comprobar conocimientos adquiridos de los conceptos de lógica computacional.
-**ACTIVIDAD** ; Responda las siguientes preguntas a continuación. Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.
+**OBJETIVO** ; Comprobar conocimientos adquiridos.
+**ACTIVIDAD** ; Responda las siguientes preguntas. Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.
 :::
 
 :::{admonition} Posibles preguntas

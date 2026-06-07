@@ -1,0 +1,1713 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../../genindex.html"><link rel="search" title="Búsqueda" href="../../search.html"><link rel="next" title="Guía 1019: Plan de refuerzo" href="G1019.html"><link rel="prev" title="Guía 1013: LibreOffice Writer (P2)" href="G1013.html">
+        <link rel="prefetch" href="../../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../../_static/logo_dark.png" as="image">
+
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+        <title>Guía 1014: Formato en LibreOffice Writer (P3) - aula 115</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e02aa765" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--small);
+  --toc-font-size: var(--font-size--small--2);
+  --admonition-font-size: 0.858rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/descargas.html">Descargas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guías</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../8logica/G820.html">Lógica computacional 8</a><input aria-label="Toggle navigation of Lógica computacional 8" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G829.html">Guía 829: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10informatica/G1000.html">Informática 10</a><input aria-label="Toggle navigation of Informática 10" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1001.html">Guía 1001: Historia de la Informática (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1002.html">Guía 1002: OFIMÁTICA y PROGRAMACIÓN (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1003.html">Guía 1003: REDES (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1004.html">Guía 1004: MANTENIMIENTO (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1009.html">Guía 1009: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="G1010.html">Ofimática 10</a><input aria-label="Toggle navigation of Ofimática 10" checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="G1011.html">Guía 1011: OFIMÁTICA (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1012.html">Guía 1012: Software Libre (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1013.html">Guía 1013: LibreOffice Writer (P2)</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Guía 1014: Formato en LibreOffice Writer (P3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1019.html">Guía 1019: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10programacion/G1020.html">Programación 10</a><input aria-label="Toggle navigation of Programación 10" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1021.html">Guía 1021: PROGRAMACIÓN (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1022.html">Guía 1022: Datos, Información y Software (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1023.html">Guía 1023: Desarrollo de algoritmos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1029.html">Guía 1029: Plan de refuerzo</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../../_sources/1_guias/10ofimatica/G1014.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1014-formato-en-libreoffice-writer-p3">
+<h1>Guía 1014: Formato en LibreOffice Writer (P3)<a class="headerlink" href="#guia-1014-formato-en-libreoffice-writer-p3" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="escudo" src="../../_images/escudo.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
+<ul class="simple">
+<li><p><strong>DOCENTE</strong>: Julian Camilo Fonseca Romero</p></li>
+<li><p><strong>ASIGNATURA</strong>: Ofimática</p></li>
+<li><p><strong>GRADO</strong>: DÉCIMO</p></li>
+<li><p><strong>PERIODO:</strong> 03</p></li>
+<li><p><strong>TIEMPO</strong>: 10 semanas (2 horas / semana)</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 20/20 horas</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ul class="simple">
+<li><p><strong>Temática</strong>: Uso de formato de carácter, párrafo y estilo en LibreOffice Writer.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Aplicar adecuadamente los formatos de carácter, párrafo y estilo en el software LibreOffice Writer.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Orientaciones curriculares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Componente</strong>: Uso y apropiación de la Tecnología y la Informática.</p></li>
+<li><p><strong>Competencia</strong>: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Criterios de evaluación</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Actividades desarrolladas en su totalidad.</p></li>
+<li><p>Participación en clase.</p></li>
+<li><p>Explicación clara de conceptos.</p></li>
+<li><p>Argumentación de ideas.</p></li>
+<li><p>Cumplimiento de las reglas del aula.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Recursos (9)</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.libreoffice.org/download/" rel="noreferer noopener" target="_blank">Descarga de <strong>LibreOffice</strong></a>.</p></li>
+<li><p>G1014A04-practica_fuentes.odt <a class="reference download internal" download="" href="../../_downloads/09a639a2947850e62e1c65fcb3ae799b/G1014A04-practica_fuentes.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1014A05-mitos.odt <a class="reference download internal" download="" href="../../_downloads/838a8a1fde84945ec8be9176611beedd/G1014A05-mitos.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1014A06-enfermedades.odt <a class="reference download internal" download="" href="../../_downloads/294a8a6701641905ee2a1cf173ac3469/G1014A06-enfermedades.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1014A07-nueces.odt <a class="reference download internal" download="" href="../../_downloads/b8034735e05fba1743ff1f776e1e8bb7/G1014A07-nueces.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1014A08-certificado.odt <a class="reference download internal" download="" href="../../_downloads/f6bc2bf13169e7a3a3a7bddbb185b015/G1014A08-certificado.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1014A09-temario.odt <a class="reference download internal" download="" href="../../_downloads/c0d5881a6e4250afd9719d36048dd408/G1014A09-temario.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1014A10-curriculum.odt <a class="reference download internal" download="" href="../../_downloads/fec1b7c7a7cdff231c401523435391b0/G1014A10-curriculum.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1014A11-estilo_personalizado.odt <a class="reference download internal" download="" href="../../_downloads/879d983278a1844a11b627dad6fbdf01/G1014A11-estilo_personalizado.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</div>
+</div>
+<section id="mensaje-del-autor">
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
+<blockquote class="pull-quote">
+<div><p>“Esta guía didáctica ha sido diseñada para facilitar el aprendizaje práctico y efectivo del formato de documentos en LibreOffice Writer. El objetivo es que, a través de actividades claras y orientadas, los estudiantes desarrollen competencias en el manejo de herramientas digitales, promoviendo la autonomía y la creatividad en la elaboración de textos”.</p>
+<p class="attribution">—Camilo Fonseca</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a00-introduccion-0-05">
+<h2>A00: Introducción (+0,05)<a class="headerlink" href="#a00-introduccion-0-05" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
+<ol class="arabic simple">
+<li><p>Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>Lea el mensaje del autor.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a01-libreoffice-writer-0-05">
+<h2>A01: LibreOffice Writer (+0,05)<a class="headerlink" href="#a01-libreoffice-writer-0-05" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos:</p></li>
+</ol>
+<hr class="docutils" />
+<section id="formato-de-texto">
+<h3>Formato de texto<a class="headerlink" href="#formato-de-texto" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/image018.png"><img alt="../../_images/image018.png" src="../../_images/image018.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Barra de herramientas formato</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La forma más productiva, eficiente y elegante para dar formato al texto del documento es mediante los estilos, entendidos como conjuntos de formatos.</p>
+<p>Pero para poder aplicar, modificar o crear estilos es necesario conocer los diferentes formatos que podemos aplicar al tipo de letra, párrafos o listas de nuestro documento.</p>
+<p>Por este motivo, es recomendable familiarizarnos con los diferentes formatos que podemos utilizar con el procesador de textos LibreOffice Writer y las diferentes maneras de aplicarlos.</p>
+</section>
+<hr class="docutils" />
+<section id="trabajando-con-estilos">
+<h3>Trabajando con estilos<a class="headerlink" href="#trabajando-con-estilos" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/image026.png"><img alt="../../_images/image026.png" src="../../_images/image026.png" style="width: 200px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Jerarquía de estilos</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Con <strong>LibreOffice Writer</strong> podemos aplicar formatos directamente al texto del documento. Pero si trabajamos con documentos largos y estructurados como memorias, proyectos o informes, la aplicación directa de formatos es muy improductiva.</p>
+<p>La solución está en trabajar con estilos. Los estilos son conjuntos de formatos agrupados bajo un nombre y gracias a ellos, podemos dotar a nuestros documentos de la estructura adecuada de títulos y subtítulos, crear índices automáticamente o numerar capítulos. Modificando un estilo podemos cambiar en cuatro clics la apariencia de un documento de decenas o cientos de páginas.</p>
+<div class="tip admonition">
+<p class="admonition-title">RECOMENDACIONES USO DE ESTILOS</p>
+<p>Para el uso de estilos se recomienda lo siguiente:</p>
+<ul class="simple">
+<li><p>Los colores de texto y fondo deben estar suficientemente contrastados.</p></li>
+<li><p>El tamaño mínimo recomendable para la tipografía debe ser de 12 puntos. Nunca usar
+tipografías de tamaño inferior a 10 puntos.</p></li>
+<li><p>Uso de tipografías <em>sans serif</em> (sin remate) habituales. Arial o Verdana son muy buenas elecciones.</p></li>
+<li><p>Evitar el uso de variantes <em>thin</em>, <em>light</em> o <em>narrow</em> de las tipografías (variantes más estrechas de los tipos de letra).</p></li>
+<li><p>Precaución con el uso de las negritas, cursivas o subrayados.</p></li>
+<li><p>Evitar el uso de efectos de contorno o intermitencias.</p></li>
+<li><p>Evitar el uso de características incompatibles con otros formatos de documento (sup_rarayados, por ejemplo)</p></li>
+<li><p>El interlineado simple no facilita la lectura; casi siempre será más apropiado un interlineado
+proporcional del 120% como mínimo.</p></li>
+<li><p>Establecer un espaciado anterior y posterior al párrafo.</p></li>
+<li><p>Evitar el uso de características incompatibles con otros formatos de documento (rellenos
+degradados o de imagen, por ejemplo)</p></li>
+</ul>
+</div>
+<p>Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan sólo se necesita disponer de un documento bien estructurado y organizado. Para ello se tiene en cuenta otras configuraciones como el tamaño y formato del papel donde se imprimirá, los márgenes del documento, la orientación, los encabezados y pies que se deben repetir en todas las páginas o la numeración de las páginas.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a02-formato-en-libreoffice-writer-0-05">
+<h2>A02: Formato en LibreOffice Writer (+0,05)<a class="headerlink" href="#a02-formato-en-libreoffice-writer-0-05" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Responda las siguientes preguntas en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿Qué es dar formato a un documento?</p></li>
+<li><p>¿Cuál es la forma más eficiente y productiva de dar formato a un texto?</p></li>
+<li><p>¿Qué son los estilos?</p></li>
+</ul>
+</li>
+<li><p>Con 10 terminos de las <strong>recomendaciones en el uso de estilos</strong>, en una hoja de cuaderno cree una <em>sopa de letras</em>.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a03-formato-de-caracter-1-0-101-0-05">
+<h2>A03: Formato de carácter 1.0 <kbd class="kbd docutils literal notranslate">101</kbd> (+0,05)<a class="headerlink" href="#a03-formato-de-caracter-1-0-101-0-05" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>EJECUTE el software LibreOffice Writer.</p></li>
+<li><p>En la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>FORMATO DE CARÁCTER 1.0</strong></p></li>
+<li><p>GUARDE el documento en su <strong>carpeta de evidencias</strong> del periodo actual con el nombre: <strong>G1014A03-formato_caracter_1.odt</strong></p></li>
+<li><p>AGREGUE el siguiente fragmento de texto al documento:</p>
+<blockquote>
+<div><p>“La ofimática es el conjunto de aplicaciones y herramientas informáticas diseñadas para facilitar y mejorar las tareas relacionadas con la creación, edición, almacenamiento y distribución de información en el entorno de una oficina o empresa”.</p>
+</div></blockquote>
+</li>
+<li><p>En el documento, SELECCIONE el texto recién copiado y en el Menú superior PULSE: <span class="guilabel">Formato</span> &gt; <span class="guilabel">Carácter…</span> para abrir la ventana <span class="guilabel">Carácter</span>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/image035.png"><img alt="../../_images/image035.png" src="../../_images/image035.png" style="width: 260px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Menú</strong> formato de carácter</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la ventana <span class="guilabel">Carácter</span> configure las siguientes opciones:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../../_images/image045.png"><img alt="../../_images/image045.png" src="../../_images/image045.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Menú</strong> Ventana formato de carácter</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>En la pestaña <span class="guilabel">Tipo de letra</span> configurar:</p>
+<ul class="simple">
+<li><p><strong>Tipo de letra:</strong> Liberation Serif</p></li>
+<li><p><strong>Estilo:</strong> Negrita Itálica</p></li>
+<li><p><strong>Tamaño:</strong> 12 pt</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Efectos tipográficos</span> configurar:</p>
+<ul class="simple">
+<li><p><strong>Color de letra:</strong> Verde claro 1</p></li>
+<li><p><strong>Suprarrayado:</strong> Punteado, Color: Azul</p></li>
+<li><p><strong>Tachado:</strong> Con /</p></li>
+<li><p><strong>Subrayado:</strong> Trazo, Color: Magenta</p></li>
+<li><p><strong>Mayusculación:</strong> Mayúsculas iniciales</p></li>
+<li><p><strong>Relieve:</strong> Sin</p></li>
+<li><p>Marcar opción de <strong>Contorno</strong></p></li>
+<li><p>Marcar opción de <strong>Sombra</strong></p></li>
+<li><p>Desmarcar opción de <strong>Oculto</strong></p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Bordes</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Disposición de líneas</strong> configurar:</p>
+<ul>
+<li><p><strong>Definido por el usuario:</strong> <em>Seleccionar bordes superior y derecho así:</em></p>
+<a class="reference internal image-reference" href="../../_images/image055.png"><img alt="../../_images/image055.png" class="align-center" src="../../_images/image055.png" style="width: 250px;" />
+</a>
+</li>
+</ul>
+</li>
+<li><p>En la sección <strong>Línea</strong> configurar:</p>
+<ul>
+<li><p><strong>Estilo:</strong> <em>Traza-punto-punto</em></p></li>
+<li><p><strong>Color:</strong> Amarillo</p></li>
+<li><p><strong>Grosor:</strong> Muy grueso (4,5 pt)</p>
+<a class="reference internal image-reference" href="../../_images/image065.png"><img alt="../../_images/image065.png" class="align-center" src="../../_images/image065.png" style="width: 250px;" />
+</a>
+</li>
+</ul>
+</li>
+<li><p>En la sección <strong>Estilo de sombra</strong> configurar:</p>
+<ul class="simple">
+<li><p><strong>Posición:</strong> Proyectar sombra a la parte inferior derecha</p></li>
+<li><p><strong>Color:</strong> Lima</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Pulsar el botón <span class="guilabel">Aceptar</span></p></li>
+</ul>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Que pasó con el texto que había pegado inicialmente?</p></li>
+<li><p>Al momento de crear informes, memorias, cartas o proyectos ¿Qué se necesita para que el contenido tenga un buen formato?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software <strong>LibreOffice Writer</strong>.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-formato-de-caracter-2-0-102-0-1">
+<h2>A04: Formato de carácter 2.0 <kbd class="kbd docutils literal notranslate">102</kbd> (+0,1)<a class="headerlink" href="#a04-formato-de-caracter-2-0-102-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1014A04-practica_fuentes.odt <a class="reference download internal" download="" href="../../_downloads/09a639a2947850e62e1c65fcb3ae799b/G1014A04-practica_fuentes.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1014A04-practica_fuentes.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>FORMATO DE CARÁCTER 2.0</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué contiene el documento?</p>
+<p>El documento tiene varios párrafos que especifican la configuración de formato de carácter que debe tener cada uno.</p>
+</div>
+</li>
+<li><p>SELECCIONE cada párrafo y aplique la <strong>configuración indicada</strong> PULSANDO en el menú superior: <span class="guilabel">Formato</span> &gt; <span class="guilabel">carácter…</span></p>
+<div class="warning admonition">
+<p class="admonition-title">Advertencia</p>
+<ul class="simple">
+<li><p>NO USE la <strong>barra de herramientas de formato</strong>!!!</p></li>
+<li><p>Puede que <strong>algunas opciones no coincidan</strong>…</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>En caso de que <strong>algunas opciones no coincidan</strong> (por ejemplo los colores), elegir la opción más cercana y en su cuaderno escribir las opciones que no coincidieron y cómo las reemplazó.</p>
+</div>
+</div>
+</li>
+<li><p>Después de aplicar todos los formatos a los párrafos, el documento debería tener el siguiente aspecto:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image075.png"><img alt="../../_images/image075.png" src="../../_images/image075.png" style="width: 500px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Cuál es la ventaja de aplicar <strong>formato de carácter</strong> por medio del <strong>menú superior</strong> frente a aplicar <strong>formato de carácter</strong> por medio de la <strong>barra de herramientas formato</strong>?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y luego cierre el software <strong>LibreOffice Writer</strong>.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a05-formato-de-caracter-3-0-101-0-1">
+<h2>A05: Formato de carácter 3.0 <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)<a class="headerlink" href="#a05-formato-de-caracter-3-0-101-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1014A05-mitos.odt <a class="reference download internal" download="" href="../../_downloads/838a8a1fde84945ec8be9176611beedd/G1014A05-mitos.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1014A05-mitos.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>FORMATO DE CARÁCTER 3.0</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Que contiene el documento?</p>
+<p>El documento contienen las descripciones de Dioses de la mitología griega. A los títulos: ADONIS, AFRODITA y AGON se les debe aplicar una configuración de <strong>formato de carácter</strong>.</p>
+</div>
+</li>
+<li><p>Seleccione el título <strong>ADONIS</strong> y PULSE en el <strong>Menú superior</strong> &gt; <span class="guilabel">Formato</span> &gt; <span class="guilabel">Carácter…</span></p>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Resalte</span> configurar:</p>
+<ul>
+<li><p><strong>Color:</strong> Verde claro 3</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Bordes</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Disposición de líneas</strong> configurar:</p>
+<ul>
+<li><p><strong>Preconfigs:</strong> Los cuatro bordes</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Línea</strong> configurar:</p>
+<ul>
+<li><p><strong>Estilo:</strong> Sólido</p></li>
+<li><p><strong>Color:</strong> Azul</p></li>
+<li><p><strong>Grosor:</strong> Grueso 2.25 pt</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Separación</strong> configurar:</p>
+<ul>
+<li><p>0.50cm por cada lado (izquierda, derecha, superior e inferior)</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Estilo de sombra</strong> configurar:</p>
+<ul>
+<li><p><strong>Posición:</strong> Abajo y a la derecha</p></li>
+<li><p><strong>Color:</strong> Azul claro 3</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Aplique la misma configuración de <strong>formato de carácter</strong> a los títulos <strong>AFRODITA</strong> y <strong>AGÓN</strong>.</p></li>
+<li><p>En cada párrafo, RESALTE la primera palabra con color amarillo.</p>
+<div class="warning admonition">
+<p class="admonition-title">Advertencia</p>
+<p>Use el <strong>formato de carácter</strong>. No use la <strong>barra de herramientas formato</strong>.</p>
+</div>
+</li>
+<li><p>Después de aplicar <strong>todos los formatos</strong> al texto, el documento debería tener el siguiente aspecto:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image085.png"><img alt="../../_images/image085.png" src="../../_images/image085.png" style="width: 500px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Que desventajas ha encontrado hasta el momento usando la herramienta de <strong>formato de carácter (Menú superior &gt; Formato &gt; Carácter…)</strong>?</p></li>
+<li><p>¿Que pasaría si en vez de 3, hubiesen sido 300 títulos a los que era necesario configurar formato de carácter?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a06-clonando-formato-101-0-1">
+<h2>A06: Clonando formato <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)<a class="headerlink" href="#a06-clonando-formato-101-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1014A06-enfermedades.odt <a class="reference download internal" download="" href="../../_downloads/294a8a6701641905ee2a1cf173ac3469/G1014A06-enfermedades.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1014A06-enfermedades.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>CLONANDO FORMATO</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué contiene el documento?</p>
+<p>En este documento se encuentra la descripción de unas enfermedades.</p>
+<p>Es necesario dar formato a los títulos de las enfermedades.</p>
+<p>Se debe aplicar un formato de carácter en el título Gota. Luego este formato será clonado en los demás títulos (Artrosis y Aftas).</p>
+</div>
+</li>
+<li><p>SELECCIONE el título <strong>Gota</strong> y aplique las siguientes configuraciones de <strong>formato de carácter:</strong></p>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Tipo de letra</span> configurar:</p>
+<ul>
+<li><p><strong>Familia:</strong> Verdana</p></li>
+<li><p><strong>Tamaño:</strong> 28 pt</p></li>
+<li><p><strong>Estilo:</strong> Negrita</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Efectos tipográficos</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Efectos</strong> configurar:</p>
+<ul>
+<li><p>MARCAR la opción de <strong>contorno</strong>.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Resalte</span> configurar:</p>
+<ul>
+<li><p><strong>Color:</strong> verde claro 4</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Bordes</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Disposición de líneas</strong> configurar:</p>
+<ul>
+<li><p><strong>Preconfigs:</strong> los cuatro bordes</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Separación</strong> configurar:</p>
+<ul>
+<li><p>0,20 cm por cada lado (izquierda, derecha, superior e inferior)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSAR el botón <strong>Aceptar.</strong></p></li>
+</ul>
+</li>
+<li><p>El <strong>formato de carácter</strong> del título Gota debería quedar así:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image095.png"><img alt="../../_images/image095.png" src="../../_images/image095.png" style="width: 200px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Al párrafo de la descripción de la enfermedad <strong>Gota</strong>, APLICAR: <strong>tipo de letra:</strong> Tahoma y el <strong>tamaño de letra:</strong> 14pt (En este caso puede usar el formato de la <strong>barra de herramientas formato</strong>)</p></li>
+<li><p>SELECCIONE el título <strong>Gota</strong> y en la <strong>barra de herramientas estándar</strong>, PULSE el botón <strong>Clonar formato</strong> dos veces para dejar la herramienta activa.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image104.png"><img alt="../../_images/image104.png" src="../../_images/image104.png" style="width: 30px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué esta pasando en el mouse?</p>
+<p>El <strong>mouse</strong> ahora tendrá un <strong>ícono</strong> de un <strong>bote de pintura derramándose</strong>, esto quiere decir que cualquier palabra que seleccione, recibirá el formato previamente seleccionado.</p>
+<p>Cuando termine de clonar formato, presione la tecla <kbd class="kbd docutils literal notranslate">ESC</kbd>.</p>
+</div>
+</li>
+<li><p>COPIE el formato a los títulos de las enfermedades: <strong>Artrosis</strong> y <strong>Aftas</strong>. Cuando termine presione la tecla <kbd class="kbd docutils literal notranslate">ESC</kbd>.</p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Cómo la herramienta <strong>clonar formato</strong> puede ayudar a superar las desventajas al usar la herramienta: <strong>formato de carácter?</strong></p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software <strong>LibreOffice Writer</strong>.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a07-formato-de-parrafo-103-0-1">
+<h2>A07: Formato de párrafo <kbd class="kbd docutils literal notranslate">103</kbd> (+0,1)<a class="headerlink" href="#a07-formato-de-parrafo-103-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1014A07-nueces.odt <a class="reference download internal" download="" href="../../_downloads/b8034735e05fba1743ff1f776e1e8bb7/G1014A07-nueces.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1014A07-nueces.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>FORMATO DE PÁRRAFO</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué contiene el documento?</p>
+<p>En este documento encontrará la descripción de algunas vitaminas presentes en las nueces. Por medio de la herramienta formato de párrafo el documento tendrá una mejor apariencia para el lector.</p>
+</div>
+</li>
+<li><p>En la <strong>barra de herramientas estándar</strong>, PULSE el botón <strong>Alternar marcas de formato</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image113.png"><img alt="../../_images/image113.png" src="../../_images/image113.png" style="width: 50px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Una vez activó las marcas de formato, en su cuaderno describa que acabó de pasar en el documento.</p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué significan las marcas de formato?</p>
+<ul class="simple">
+<li><p>Una <strong>marca</strong> (¶) significa un párrafo.</p></li>
+<li><p>Un <strong>punto</strong> (.) significa un espacio.</p></li>
+<li><p>Una <strong>flecha</strong> (→) significa una tabulación.</p></li>
+</ul>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Cuántas marcas, puntos y flechas salieron en el documento?</p></li>
+</ul>
+</div>
+</li>
+<li><p>SITUE el cursor al final de la segunda marca (segundo párrafo) y en el <strong>menú superior</strong>, PULSE <span class="guilabel">Formato</span> &gt; <span class="guilabel">Párrafo…</span> para abrir la ventana <strong>Párrafo</strong></p></li>
+<li><p>En la ventana <strong>Párrafo</strong> configure las siguientes opciones:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image123.png"><img alt="../../_images/image123.png" src="../../_images/image123.png" style="width: 650px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Sangrías y espaciado</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Espaciado</strong> configurar:</p>
+<ul>
+<li><p>Bajo el párrafo: 0,30 cm</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Interlineado</strong> configurar:</p>
+<ul>
+<li><p><strong>Proporcional</strong> de <strong>120%</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong></p></li>
+</ul>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Describa que acabó de pasar en el documento.</p>
+</div>
+</li>
+<li><p>SELECCIONE desde el principio del segundo párrafo hasta el final y aplique la siguiente configuración de <strong>formato de párrafo</strong>:</p>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Sangrías y espaciado</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Espaciado</strong> configurar:</p>
+<ul>
+<li><p>Bajo el párrafo: 0,30 cm</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Interlineado</strong> configurar:</p>
+<ul>
+<li><p><strong>Proporcional</strong> de <strong>120%</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong></p></li>
+</ul>
+</li>
+<li><p>SELECCIONE el título “<strong>Las nueces contienen”</strong> y aplique la siguiente configuración de <strong>formato de párrafo</strong>:</p>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Alineación</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Opciones</strong> seleccionar <strong>Centro.</strong></p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Área</span> configurar:</p>
+<ul>
+<li><p><strong>Color:</strong> Amarillo</p></li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>SELECCIONE el título “<strong>Las nueces contienen”</strong> y aplique la siguiente configuración de <strong>formato de carácter</strong>:</p>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Tipo de letra</span> configurar:</p>
+<ul>
+<li><p><strong>Familia:</strong> Liberation Sans</p></li>
+<li><p><strong>Tamaño:</strong> 16 pt</p></li>
+<li><p><strong>Estilo:</strong> Negrita</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Efectos tipográficos</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Color de letra</strong> configurar:</p>
+<ul>
+<li><p><strong>Color de letra:</strong> Púrpura</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Decoración de texto</strong> configurar:</p>
+<ul>
+<li><p><strong>Subrayado:</strong> Sencillo</p></li>
+<li><p><strong>Color:</strong> Púrpura</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Efectos</strong> configurar:</p>
+<ul>
+<li><p>Marcar la opción Sombra.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>SELECCIONE desde el principio del segundo párrafo hasta el final y aplique la siguiente configuración de <strong>formato de carácter</strong>:</p>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Efectos tipográficos</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Color de letra</strong> configurar:</p>
+<ul>
+<li><p><strong>Color de letra:</strong> Gris oscuro 2</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSAR el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>SELECCIONE desde el principio del segundo párrafo al penúltimo párrafo (no seleccione el último párrafo) y en el <strong>menú superior</strong> PULSE <span class="guilabel">Formato</span> &gt; <span class="guilabel">Numeración y bolos</span> para abrir la ventana de <strong>Numeración y bolos</strong> y configure las siguientes opciones:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image133.png"><img alt="../../_images/image133.png" src="../../_images/image133.png" style="width: 650px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>En la <span class="guilabel">pestaña No ordenada</span> configurar:</p>
+<ul>
+<li><p>SELECCIONAR cualquier modelo.</p></li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>En el documento SELECCIONE el último párrafo y aplique la siguiente configuración de <strong>Formato de párrafo</strong>:</p>
+<ul class="simple">
+<li><p>En la pestaña de <span class="guilabel">Sangría y espaciado</span> configure:</p>
+<ul>
+<li><p>En la sección <strong>Sangría</strong> configure:</p>
+<ul>
+<li><p>Antes del texto: 4cm</p></li>
+<li><p>Después del texto: 4cm</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Espaciado</strong> configure:</p>
+<ul>
+<li><p>Sobre el párrafo: 2cm</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Alineación</span> configure:</p>
+<ul>
+<li><p>En la sección <strong>Opciones</strong> configure <strong>Centro</strong>.</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Bordes</span> configure:</p>
+<ul>
+<li><p>En las sección <strong>Disposición de líneas</strong> configure:</p>
+<ul>
+<li><p><strong>Preconfigs:</strong> Los cuatro bordes</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Separación</strong> configure:</p>
+<ul>
+<li><p>0,20 cm en todos los lados</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Área</span> configurar:</p>
+<ul>
+<li><p><strong>Color:</strong> Gris claro 4.</p></li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>Después de aplicar todas las configuraciones, el documento debería tener la siguiente apariencia:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image143.png"><img alt="../../_images/image143.png" src="../../_images/image143.png" style="width: 600px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Cuantas veces y en que pasos se usaron el <strong>formato de carácter</strong>, <strong>formato de párrafo</strong> y <strong>la numeración y bolos</strong>?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a08-sangria-francesa-101-0-1">
+<h2>A08: Sangría Francesa <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)<a class="headerlink" href="#a08-sangria-francesa-101-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1014A08-certificado.odt <a class="reference download internal" download="" href="../../_downloads/f6bc2bf13169e7a3a3a7bddbb185b015/G1014A08-certificado.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1014A08-certificado.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>SANGRÍA FRANCESA</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué contiene el documento?</p>
+<p>El documento muestra información relacionada con un certificado laboral.</p>
+<p>Se debe configurar el documento para que el certificado tenga una mejor presentación.</p>
+</div>
+</li>
+<li><p>La palabra “Certifica” debe estar en <strong>negrita</strong> (usar la <strong>barra de herramientas formato</strong>).</p></li>
+<li><p>SELECCIONE todo el documento y aplique la siguiente configuración de <strong>formato de párrafo:</strong></p>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Sangrías y espaciado</span>:</p>
+<ul>
+<li><p>En la sección <strong>Espaciado</strong> configurar:</p>
+<ul>
+<li><p>Bajo el párrafo: 0,40 cm</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>Al tercer párrafo APLIQUE el siguiente <strong>formato de párrafo</strong>:</p>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Sangría y espaciado</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Sangría</strong> configurar:</p>
+<ul>
+<li><p><strong>Antes del texto:</strong> 3,00 cm</p></li>
+<li><p><strong>Primer renglón:</strong> -3,00 cm (Esto es la sangría francesa)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>Después de aplicar todas las configuraciones, el documento debería tener la siguiente apariencia:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image152.png"><img alt="../../_images/image152.png" src="../../_images/image152.png" style="width: 720px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Qué es una <strong>sangría francesa</strong> y explique en que otros tipos de documentos podría usarse?</p></li>
+</ul>
+</div>
+</li>
+<li><p>GUARDE los cambios y cierre el software Libreoffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a09-esquema-numerado-102-0-1">
+<h2>A09: Esquema numerado <kbd class="kbd docutils literal notranslate">102</kbd> (+0,1)<a class="headerlink" href="#a09-esquema-numerado-102-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1014A09-temario.odt <a class="reference download internal" download="" href="../../_downloads/c0d5881a6e4250afd9719d36048dd408/G1014A09-temario.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1014A09-temario.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>ESQUEMA NUMERADO</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué contiene el documento?</p>
+<p>El documento muestra un contenido el cual no esta numerado. Es necesario aplicar esquemas numerados.</p>
+</div>
+</li>
+<li><p>En la <strong>barra de herramientas estándar</strong>, PULSE: <span class="guilabel">Alternar marcas de formato</span>.</p></li>
+<li><p>SELECCIONE todo el documento y aplique la siguiente configuración de <strong>formato de párrafo</strong>:</p>
+<ul class="simple">
+<li><p>En la pestaña de <span class="guilabel">Sangrías y espaciado</span> configure:</p>
+<ul>
+<li><p>En la sección de <strong>Espaciado</strong> configure:</p>
+<ul>
+<li><p>Bajo el párrafo: 0.30 cm</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>SELECCIONE todo el documento y en el <strong>menú superior,</strong> PULSE <span class="guilabel">Formato</span> &gt; <span class="guilabel">Numeración y bolos</span>.</p>
+<ul class="simple">
+<li><p>En la pestaña de <span class="guilabel">Esquema</span> seleccione el siguiente:</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image162.png"><img alt="../../_images/image162.png" src="../../_images/image162.png" style="width: 180px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>SITUE el cursor al comienzo del párrafo <strong>2. Generalidades</strong> y PULSE la tecla <kbd class="kbd docutils literal notranslate">TAB</kbd>.</p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Que pasó en el documento cuanto presionó la tecla <kbd class="kbd docutils literal notranslate">TAB</kbd>?</p></li>
+</ul>
+</div>
+</li>
+<li><p>El título <strong>Generalidades</strong> aplique <strong>Tipo de letra:</strong> negrita</p></li>
+<li><p>APLIQUE <kbd class="kbd docutils literal notranslate">TAB</kbd> y <strong>negrita</strong> a los siguientes títulos:</p>
+<ul class="simple">
+<li><p>Control de comunicaciones de la red.</p></li>
+<li><p>Polling</p></li>
+<li><p>Paso de testigo</p></li>
+<li><p>Normas estándares para redes locales</p></li>
+</ul>
+</li>
+<li><p>APLIQUE 2 veces <kbd class="kbd docutils literal notranslate">TAB</kbd> y <strong>negrita</strong> a los siguientes títulos:</p>
+<ul class="simple">
+<li><p>Concepto de red local</p></li>
+<li><p>Ventajas de redes locales</p></li>
+<li><p>Gestores de una red local</p></li>
+<li><p>Introducción</p></li>
+<li><p>Protocolos</p></li>
+<li><p>Protocolos de contienda</p></li>
+<li><p>Contienda simple</p></li>
+<li><p>Factores de evaluación del protocolo de paso de testigo</p></li>
+</ul>
+</li>
+<li><p>APLIQUE 3 veces <kbd class="kbd docutils literal notranslate">TAB</kbd> a los títulos que no estén en <strong>negrita</strong>.</p></li>
+<li><p>Después de aplicar todas las configuraciones, el documento debería tener la siguiente apariencia:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image172.png"><img alt="../../_images/image172.png" src="../../_images/image172.png" style="width: 400px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Cuales son los títulos de primer, segundo, tercer y cuarto nivel?</p></li>
+</ul>
+</div>
+</li>
+<li><p>GUARDE los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a10-curriculum-de-estilos-101-0-1">
+<h2>A10: Currículum de estilos <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)<a class="headerlink" href="#a10-curriculum-de-estilos-101-0-1" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1014A10-curriculum.odt <a class="reference download internal" download="" href="../../_downloads/fec1b7c7a7cdff231c401523435391b0/G1014A10-curriculum.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1014A10-curriculum.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>FORMATO DE ESTILOS</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué contiene el documento?</p>
+<p>El documento muestra la hoja de vida de una persona. Sin embargo no es entendible.</p>
+<p>Es necesario aplicar estilos para mejorar la apariencia del documento y así sea más entendible.</p>
+</div>
+</li>
+<li><p>SELECCIONE los títulos: <strong>Formación Reglada, Formación No Reglada y Experiencia Laboral</strong>.</p>
+<div class="hint admonition">
+<p class="admonition-title">¿Cómo seleccionar varios títulos al mismo tiempo?</p>
+<p>Para seleccionar varios títulos al mismo tiempo, mantenga PULSADA la tecla <kbd class="kbd docutils literal notranslate">CTRL</kbd> y selecciona los títulos uno por uno.</p>
+</div>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image182.png"><img alt="../../_images/image182.png" src="../../_images/image182.png" style="width: 620px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la <strong>barra de herramientas lateral</strong>, PULSE el ícono Estilos.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image191.png"><img alt="../../_images/image191.png" src="../../_images/image191.png" style="width: 89px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la <em>herramienta de estilos</em> encontrará 6 herramientas para aplicar formato de estilo al documento. PULSE el <strong>icono de Estilo de párrafos</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image202.png"><img alt="../../_images/image202.png" src="../../_images/image202.png" style="width: 180px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Observe la <em>Jerarquía de estilos de párrafo</em> y localice el estilo de nombre: <strong>Título</strong>.</p>
+<div class="tip admonition">
+<p class="admonition-title">¿Qué es el estilo de título?</p>
+<p>El estilo <strong>Título</strong>, a su vez tiene mas <strong>sub-estilos</strong>. Si no aparecen, PULSAR clic sobre la flecha apuntando hacia abajo a la izquierda del nombre del estilo.</p>
+</div>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image212.png"><img alt="../../_images/image212.png" src="../../_images/image212.png" style="width: 300px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>ANTES DE CONTINUAR, ASEGURESE que los títulos del documento previamente seleccionados siguen estando seleccionados!!!</p></li>
+<li><p>PULSE <strong>doble clic</strong> sobre el sub-estilo <strong>Título 1.</strong> (<em>Usted acaba de aplicar un estilo en el documento</em>). <em><strong>Responda las siguientes preguntas en su cuaderno:</strong></em></p>
+<ul class="simple">
+<li><p>¿Qué acabo de pasar en el documento cuando aplicó el estilo?</p></li>
+<li><p>¿Qué es mejor: aplicar <strong>formato de párrafo</strong> o aplicar <strong>formato de estilo</strong> y por qué?</p></li>
+</ul>
+</li>
+<li><p>SELECCIONE todos los párrafos del documento (NO SELECCIONE los títulos) y en la <strong>Jerarquía de estilos de párrafo</strong>, APLIQUE el estilo: <strong>Cuerpo de texto</strong>.</p></li>
+<li><p>En la herramienta: <strong>Jerarquía de estilos de párrafo</strong>, SELECCIONE nuevamente el estilo <strong>Cuerpo de texto</strong> y PULSE el botón derecho del mouse para abrir un <strong>menú contextual</strong>. En el <strong>menú contextual</strong> de <strong>Cuerpo de texto</strong>, seleccione la opción: <strong>Editar estilo…</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué es el menú contextual?</p>
+<p>Un <strong>menú contextual</strong> es una lista de opciones que aparece cuando PULSA clic derecho (o un gesto similar) en un elemento en la pantalla de una computadora o dispositivo.</p>
+<p>Esto permite realizar acciones específicas relacionadas con ese elemento, como copiar, pegar, eliminar, o acceder a propiedades.</p>
+</div>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image22.png"><img alt="../../_images/image22.png" src="../../_images/image22.png" style="width: 250px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la ventana <span class="guilabel">Estilo de párrafo: Cuerpo de texto</span>, configurar las siguientes opciones:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image23.png"><img alt="../../_images/image23.png" src="../../_images/image23.png" style="width: 630px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>En la pestaña <span class="guilabel">Tipo de letra</span> configurar:</p>
+<ul>
+<li><p><strong>Familia:</strong> Times New Roman</p></li>
+<li><p><strong>Tamaño:</strong> 14pt</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Esquema y lista</span> configurar:</p>
+<ul>
+<li><p><strong>Nivel de esquema:</strong> Nivel 1</p></li>
+<li><p><strong>Estilo de esquema:</strong> Bolo -</p></li>
+</ul>
+</li>
+<li><p>PULSAR el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>En la <strong>Jerarquía de estilos de párrafo</strong>, IDENTIFIQUE el estilo: <strong>Título 1</strong> y en su menú contextual PULSE <strong>Editar estilo…</strong></p></li>
+<li><p>En la ventana: <strong>Estilo de párrafo: Título 1</strong> configure lo siguiente:</p>
+<ul>
+<li><p>En la pestaña <span class="guilabel">Tipo de letra</span> configurar:</p>
+<ul class="simple">
+<li><p><strong>Familia:</strong> Arial</p></li>
+<li><p><strong>Estilo:</strong> Negrita itálica</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Efectos tipográficos</span> configurar:</p>
+<ul class="simple">
+<li><p><strong>Color de letra:</strong> Azul</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Bordes</span> configurar:</p>
+<ul>
+<li><p>En la sección <strong>Disposición de líneas:</strong></p>
+<ul class="simple">
+<li><p>Definido por el usuario: Agregar línea inferior</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/image24.png"><img alt="../../_images/image24.png" class="align-center" src="../../_images/image24.png" style="width: 180px;" />
+</a>
+</li>
+<li><p>En la sección <strong>Línea</strong>:</p>
+<ul class="simple">
+<li><p><strong>Color:</strong> Azul</p></li>
+<li><p><strong>Grosor:</strong> Grueso (2,25pt)</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Estilo de sombra</strong>:</p>
+<ul class="simple">
+<li><p><strong>Posición:</strong> Proyectar sombra a la parte superior izquierda</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Cuál es la diferencia entre editar el estilo de párrafo de <strong>Cuerpo de texto</strong> y editar el estilo de párrafo de <strong>Título 1?</strong></p></li>
+</ul>
+</div>
+</li>
+<li><p>Con las configuraciones aplicadas hasta el momento, el documento debería tener la siguiente apariencia:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image25.png"><img alt="../../_images/image25.png" src="../../_images/image25.png" style="width: 500px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a11-estilo-personalizado-101-0-1">
+<h2>A11: Estilo personalizado <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)<a class="headerlink" href="#a11-estilo-personalizado-101-0-1" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1014A11-estilo_personalizado.odt <a class="reference download internal" download="" href="../../_downloads/879d983278a1844a11b627dad6fbdf01/G1014A11-estilo_personalizado.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1014A11-estilo_personalizado.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>ESTILO PERSONALIZADO</strong></p></li>
+<li><p>En la <strong>Jerarquía de estilos de párrafo</strong>, IDENTIFIQUE el estilo: <strong>Estilo de párrafo predeterminado</strong> y en su <strong>menú contextual</strong>, PULSE la opción: <strong>Nuevo…</strong></p></li>
+<li><p>En la ventana: <strong>Estilo de párrafo: Sin Título1</strong>, configure las siguiente opciones:</p>
+<ul>
+<li><p>En la pestaña <span class="guilabel">Generales</span> configurar:</p>
+<ul class="simple">
+<li><p>En la sección <strong>Estilo:</strong></p>
+<ul>
+<li><p><strong>Nombre:</strong> Mi estilo</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Sangrías y espaciado</span> configurar:</p>
+<ul class="simple">
+<li><p>En la sección <strong>Sangría</strong>:</p>
+<ul>
+<li><p><strong>Antes de texto:</strong> 5,00cm</p></li>
+<li><p><strong>Después del texto:</strong> 5,00cm</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Espaciado:</strong></p>
+<ul>
+<li><p><strong>Sobre el párrafo:</strong> 1,00cm</p></li>
+<li><p><strong>Bajo el párrafo:</strong> 1,00cm</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Interlineado</strong>:</p>
+<ul>
+<li><p>1,5 renglones</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Alineación</span> configurar:</p>
+<ul class="simple">
+<li><p>En la sección <strong>Opciones</strong>:</p>
+<ul>
+<li><p>Centro</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Tipo de letra</span> configurar:</p>
+<ul class="simple">
+<li><p><strong>Familia:</strong> Arial</p></li>
+<li><p><strong>Estilo:</strong> Itálica</p></li>
+<li><p><strong>Tamaño:</strong> 11pt</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Bordes</span> configurar:</p>
+<ul class="simple">
+<li><p>En la sección <strong>Disposición de líneas</strong>:</p>
+<ul>
+<li><p>Preconfigs: Los cuatro bordes</p></li>
+</ul>
+</li>
+<li><p>En la sección <strong>Separación:</strong></p>
+<ul>
+<li><p>0,20cm en Izquierda, Derecha, Superior e Inferior.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>En la pestaña <span class="guilabel">Área</span> configurar:</p>
+<ul>
+<li><p>PULSAR el botón <strong>Degradado.</strong></p>
+<ul class="simple">
+<li><p>En la sección <strong>Degradado</strong> seleccionar: Luz solar</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/image26.png"><img alt="../../_images/image26.png" class="align-center" src="../../_images/image26.png" style="width: 200px;" />
+</a>
+<ul class="simple">
+<li><p>En la sección <strong>Opciones</strong>:</p>
+<ul>
+<li><p>Tipo: Axial</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PULSE el botón <strong>Aceptar</strong>.</p></li>
+</ul>
+</li>
+<li><p>Al final del texto, AGREGUE el siguiente párrafo:</p>
+<blockquote>
+<div><p>“De necesitar referencias, solicítelas directamente al candidato. Gracias”.</p>
+</div></blockquote>
+</li>
+<li><p>SELECCIONE el texto que acabó de agregar y APLIQUE el estilo: <strong>mi estilo.</strong></p></li>
+<li><p>Con las configuración aplicada hasta el momento, el texto debería tener la siguiente apariencia:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image27.png"><img alt="../../_images/image27.png" src="../../_images/image27.png" style="width: 300px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Para que casos es útil configurar un estilo personalizado en <strong>LibreOffice Writer</strong>?</p></li>
+</ul>
+</div>
+</li>
+<li><p>GUARDE los cambios y cierre el software <strong>LibreOffice Writer</strong>.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a12-presentacion-de-evidencias-4-0">
+<h2>A12: Presentación de evidencias (+4,0)<a class="headerlink" href="#a12-presentacion-de-evidencias-4-0" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<div class="admonition-como-se-evalua admonition">
+<p class="admonition-title">¿Cómo se evalúa?</p>
+<ol class="arabic simple">
+<li><p>Los estudiantes deben presentar lo siguiente:</p>
+<ul class="simple">
+<li><p>Carpeta de evidencias con todos los archivos editados en la presente guía. (Los archivos deben estar abiertos).</p></li>
+<li><p>Cuaderno con las actividades desarrolladas.</p></li>
+</ul>
+</li>
+<li><p>El docente realiza unas preguntas para verificación de conocimientos.</p></li>
+<li><p>El estudiante debe demostrar de forma práctica sus conocimientos en el uso de <strong>LibreOffice Writer</strong>.</p></li>
+</ol>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G1019.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 1019: Plan de refuerzo</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1013.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1013: LibreOffice Writer (P2)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1014: Formato en LibreOffice Writer (P3)</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a00-introduccion-0-05">A00: Introducción (+0,05)</a></li>
+<li><a class="reference internal" href="#a01-libreoffice-writer-0-05">A01: LibreOffice Writer (+0,05)</a><ul>
+<li><a class="reference internal" href="#formato-de-texto">Formato de texto</a></li>
+<li><a class="reference internal" href="#trabajando-con-estilos">Trabajando con estilos</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a02-formato-en-libreoffice-writer-0-05">A02: Formato en LibreOffice Writer (+0,05)</a></li>
+<li><a class="reference internal" href="#a03-formato-de-caracter-1-0-101-0-05">A03: Formato de carácter 1.0 <kbd class="kbd docutils literal notranslate">101</kbd> (+0,05)</a></li>
+<li><a class="reference internal" href="#a04-formato-de-caracter-2-0-102-0-1">A04: Formato de carácter 2.0 <kbd class="kbd docutils literal notranslate">102</kbd> (+0,1)</a></li>
+<li><a class="reference internal" href="#a05-formato-de-caracter-3-0-101-0-1">A05: Formato de carácter 3.0 <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)</a></li>
+<li><a class="reference internal" href="#a06-clonando-formato-101-0-1">A06: Clonando formato <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)</a></li>
+<li><a class="reference internal" href="#a07-formato-de-parrafo-103-0-1">A07: Formato de párrafo <kbd class="kbd docutils literal notranslate">103</kbd> (+0,1)</a></li>
+<li><a class="reference internal" href="#a08-sangria-francesa-101-0-1">A08: Sangría Francesa <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)</a></li>
+<li><a class="reference internal" href="#a09-esquema-numerado-102-0-1">A09: Esquema numerado <kbd class="kbd docutils literal notranslate">102</kbd> (+0,1)</a></li>
+<li><a class="reference internal" href="#a10-curriculum-de-estilos-101-0-1">A10: Currículum de estilos <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)</a></li>
+<li><a class="reference internal" href="#a11-estilo-personalizado-101-0-1">A11: Estilo personalizado <kbd class="kbd docutils literal notranslate">101</kbd> (+0,1)</a></li>
+<li><a class="reference internal" href="#a12-presentacion-de-evidencias-4-0">A12: Presentación de evidencias (+4,0)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

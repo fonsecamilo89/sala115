@@ -12,8 +12,8 @@
         - **ASIGNATURA**: Programación
         - **GRADO**: ONCE
         - **PERIODO**: 01
-        - **TIEMPO**: 10 semanas (4 horas / semana)
-        - **TIEMPO DE TRABAJO**: 10/40 horas
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 8/20 horas
     ```
 :::
 
