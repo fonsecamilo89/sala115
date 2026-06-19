@@ -71,9 +71,8 @@
 
 1. Lea los siguientes conceptos:
 
+---
 ### ¿Qué son los datos?
-
-:::{admonition} Concepto de datos
 
 [^1] Los **datos** son cualquier cantidad, valor o hecho **SIN ORGANIZAR, SIN ANALIZAR o SIN PROCESAR**.
 
@@ -88,11 +87,8 @@ Ejemplo de datos:
 - 5kg
 - $1,000,000.00
 
-:::
-
+---
 ### ¿Qué es la información?
-
-:::{admonition} Concepto de información
 
 [^1] La **información** es el conjunto de datos organizados, analizados y procesados que tienen significado para las personas.
 
@@ -107,11 +103,8 @@ Ejemplo de información:
 - Para le receta se necesitan **5kg** de carne de res.
 - Contando los gastos, al usuario le quedó un saldo de **$1,000,000.00** COP.
 
-:::
-
+---
 ### ¿Qué es la Jerarquía de datos?
-
-:::{admonition} Concepto de Jerarquía de datos
 
 [^2] La **Jerarquía de datos** es una forma de clasificar la información. La jerarquía de datos se compone de los siguientes elementos organizados así:
 
@@ -120,8 +113,6 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 $$
 
 A continuación se muestra la definición de cada uno de los elementos (ordenados de MENOR a MAYOR) que componen la jerarquía de datos:
-
-:::
 
 ---
 #### bit
@@ -214,15 +205,17 @@ Es un conjunto de tablas técnicamente organizadas.
 
 Por ejemplo:
 
-```{csv-table} Tabla estudiantes
-:class: black
+:::{list-table} Tabla estudiantes
+* - ```{csv-table}
+    :class: black
 
-**ID**,**Nombre**,**Apellido**,**Grado**
-00,Camilo,Fonseca,9
-01,John,Díaz,11
-02,Daniel,Lopez,11
-03,Luis,Ruiz,8
-```
+    **ID**,**Nombre**,**Apellido**,**Grado**
+    00,Camilo,Fonseca,9
+    01,John,Díaz,11
+    02,Daniel,Lopez,11
+    03,Luis,Ruiz,8
+    ```
+:::
 
 ```{csv-table} Tabla docentes
 :class: black
@@ -244,7 +237,7 @@ Por ejemplo:
 
 
 ---
-## A02: Datos Vs Información (+0,1)
+## A02: Taller (+0,8)
 {bdg-warning}`Actividad práctica`
 
 1. En su cuaderno responda las siguientes preguntas:
@@ -269,16 +262,12 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
 11|"En una hora abren las puertas del colegio. Son las **11** de la mañana. Llegaré tarde".
 :::
 
----
-## A03: Jerarquía de datos (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+3. En su cuaderno responda las siguientes preguntas:
 
     - ¿Qué es la Jerarquía de datos?
     - Con la Jerarquía de datos, ¿Es posible también convertir los datos en INFORMACIÓN? ¿Por qué?
 
-2. En su cuaderno complete la siguiente tabla:
+4. En su cuaderno complete la siguiente tabla:
 
     :::{list-table}
     :header-rows: 1
@@ -308,7 +297,7 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
       -
     :::
 
-3. DIBUJE la siguiente gráfica en su cuaderno y en cada anillo ubique un elemento de la **Jerarquía de datos**:
+5. DIBUJE la siguiente gráfica en su cuaderno y en cada anillo ubique un elemento de la **Jerarquía de datos**:
 
 :::{list-table}
 * - ```{figure} ./recursos/G822/image01.png
@@ -319,7 +308,7 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
 
 <br/>
 
-4. DIBUJE el siguiente gráfico en su cuaderno:
+6. DIBUJE el siguiente gráfico en su cuaderno:
 
     :::{list-table}
     * - ```{figure} ./recursos/G822/image02.png
@@ -337,22 +326,20 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
      - ¿Cuáles son los Bytes?
      - ¿Cuáles son los bits?
 
+7. En su cuaderno (de forma horizontal) realice una **tabla** de 5 registros de sus compañeros con los siguientes campos (invente los datos):
 
-
----
-## A04: Construcción de tablas (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno (de forma horizontal) realice una **tabla** de 5 registros de sus compañeros con los siguientes campos (invente los datos):
-
-:::{csv-table} Tabla Estudiantes
-:header-rows: 1
-ID, Nombre, Apellido, Edad, Curso de Ingreso, Año de Ingreso, Año de Egreso, Software más usado, Hardware más usado
-00,,,,,,,,
-01,,,,,,,,
-02,,,,,,,,
-03,,,,,,,,
-04,,,,,,,,
+:::{list-table}
+* - ```{csv-table}
+    :header-rows: 1
+    ID, Nombre, Apellido, Edad, Curso de Ingreso, Año de Ingreso, Año de Egreso, Software más usado, Hardware más usado
+    00,,,,,,,,
+    01,,,,,,,,
+    02,,,,,,,,
+    03,,,,,,,,
+    04,,,,,,,,
+    ```
+* - ```{centered} Tabla Estudiantes
+    ```
 :::
 
 :::{admonition} Advertencia
@@ -360,27 +347,27 @@ ID, Nombre, Apellido, Edad, Curso de Ingreso, Año de Ingreso, Año de Egreso, S
 Los datos de **Edad**, **Curso de Ingreso**, **Año de Ingreso** y **Año de Egreso** deben tener lógica.
 :::
 
-2. Construya el **correo electrónico** del estudiante y agregarlo en la siguiente tabla, teniendo en cuenta la siguiente estructura (ignore los paréntesis):
+8. Construya el **correo electrónico** del estudiante y agregarlo en la siguiente tabla, teniendo en cuenta la siguiente estructura (ignore los paréntesis):
 
 $$
 (nombre).(apellido)(CursoIngreso)(AñoIngreso)@jfkennedy.edu.co
 $$
 
-:::{csv-table} Tabla Cuentas Institucionales Estudiantes
-:header-rows: 1
-ID, ID Estudiantes, Nombre, Apellido, correo electrónico institucional 
-00,,,,
-01,,,,
-02,,,,
-03,,,,
-04,,,,
+:::{list-table} Tabla Cuentas Institucionales Estudiantes
+* - ```{csv-table}
+    :header-rows: 1
+    ID, ID Estudiantes, Nombre, Apellido, correo electrónico institucional 
+    00,,,,
+    01,,,,
+    02,,,,
+    03,,,,
+    04,,,,
+    ```
+* - ```{centered} Tabla Cuentas Institucionales Estudiantes
+    ```
 :::
 
----
-## A05: Bases de datos (+0,5)
-{bdg-warning}`Actividad práctica`
-
-1. En una hoja de su cuaderno (de forma horizontal), dibuje la siguiente base de datos:
+9. En una hoja de su cuaderno (de forma horizontal), dibuje la siguiente base de datos:
 
     :::{list-table}
     * - ```{figure} ./recursos/G822/image03.png
@@ -389,24 +376,24 @@ ID, ID Estudiantes, Nombre, Apellido, correo electrónico institucional
         ```
     :::
 
-2. Acorde a la **base de datos**, en su cuaderno responda las siguientes preguntas:
+10. Acorde a la **base de datos**, en su cuaderno responda las siguientes preguntas:
     - ¿Cuál sería el nombre de la base de datos y por qué?
     - ¿Cuantas tablas hay en la base de datos? (colocar el nombre de cada tabla)
     - ¿Cuantos registros hay por cada tabla?
     - ¿Cuantos datos hay por cada registro de cada tabla?
 
-3. En la base de datos (dibujada en su cuaderno), identifique las tablas, registros y los datos.
+11. En la base de datos (dibujada en su cuaderno), identifique las tablas, registros y los datos.
 
-4. Con sus palabras, en su cuaderno explique cómo esta compuesta la **Tabla facturas**.
+12. Con sus palabras, en su cuaderno explique cómo esta compuesta la **Tabla facturas**.
 
-5. En su cuaderno, cree un nuevo registro para la **Tabla clientes**.
+13. En su cuaderno, cree un nuevo registro para la **Tabla clientes**.
 
-6. En su cuaderno, cree un nuevo registro para la **Tabla productos**.
+14. En su cuaderno, cree un nuevo registro para la **Tabla productos**.
 
-7. Con los nuevos registros **Tabla clientes** y **Tabla productos**, ahora cree una nueva *base de datos* compuesta por la **Tabla facturas** y la **Tabla elementos en línea**.
+15. Con los nuevos registros **Tabla clientes** y **Tabla productos**, ahora cree una nueva *base de datos* compuesta por la **Tabla facturas** y la **Tabla elementos en línea**.
 
 ---
-## A06: Examen escrito (+4,0)
+## A03: Examen escrito (+4,0)
 {bdg-danger}`Transferencia`
 
 :::{csv-table}

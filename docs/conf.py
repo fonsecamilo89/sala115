@@ -16,11 +16,11 @@ author = 'Camilo Fonseca'
 extensions = ["myst_parser","sphinx_design"]
 
 myst_enable_extensions = [
-    "dollarmath", #ecuaciones matematicas con $
+    "dollarmath", # ecuaciones matematicas con $
     "tasklist", # listas con casillas de verificacion
-    "colon_fence", #bloques con ::: en vez de ```
+    "colon_fence", # bloques con ::: en vez de ```
     "attrs_inline", # para agregar atributos en linea ejemplo: IMAGENES
-    "smartquotes", #comillas inteligentes
+    "smartquotes", # comillas inteligentes
     "fieldlist" # listas de campos
 ]
 

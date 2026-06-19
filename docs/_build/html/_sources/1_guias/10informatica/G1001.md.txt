@@ -69,6 +69,7 @@
 
 1. Lea las siguientes historias del INTERNET, la computación personal y el software:
 
+---
 ### Historia del INTERNET (ARPANET)
 
 [^1] El Internet tiene sus orígenes en **ARPANET**, un proyecto militar desarrollado en 1969 por el *Departamento de defensa de Estados Unidos*. Esta red inicial conectaba un número reducido de computadoras en distintas universidades.
@@ -101,6 +102,7 @@ En los años 70 y 80 (exactamente en el año 1983), se desarrollaron los protoco
 
 [^4] El **Internet moderno** ha evolucionado considerablemente desde entonces, pasando por la era de la Web 2.0 (redes sociales e interactividad las cuales tienen su origen en el año 2004), hasta la actual era del Internet móvil cuyo origen fue en el año 2007.  Hoy en día la nube y el Internet de las Cosas (IoT) conectan a miles de millones de dispositivos y usuarios en todo el mundo.
 
+---
 ### Historia de la Computación Personal
 
 La historia de la computadora personal comienza en la década de 1970.
@@ -143,6 +145,7 @@ La **Macintosh 128K** no solo fue un éxito comercial, sino que también sentó 
 
 [^9] En 2012, la **Raspberry Pi** revolucionó el concepto de computadora personal al ofrecer un dispositivo del tamaño de una tarjeta de crédito a bajo costo, enfocado en la educación y proyectos de programación.
 
+---
 ### Historia del software
 
 El software tiene su origen en los primeros días de la computación. En la década de 1940, las primeras computadoras ejecutaban instrucciones básicas mediante cables e interruptores físicos.
@@ -188,7 +191,7 @@ Con la llegada de **ALTAIR** en 1975, Microsoft desarrolla el lenguaje de progra
 En la actualidad, el software ha evolucionado hacia aplicaciones en la nube, inteligencia artificial y desarrollo ágil, transformando completamente la manera en la que interactuamos con la tecnología.
 
 ---
-## A02: Orígenes de INTERNET (+0,1)
+## A02: Taller (+0,8)
 {bdg-warning}`Actividad práctica`
 
 1. En su cuaderno, responda las siguientes preguntas:
@@ -203,26 +206,14 @@ En la actualidad, el software ha evolucionado hacia aplicaciones en la nube, int
     - ¿Cuántos nodos en el occidente estaban interconectados?
     - ¿Cuántos nodos en el oriente estaban interconectados?
 
----
-## A04: Primera página web (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. Responda la siguiente pregunta en su cuaderno:
+3. Responda la siguiente pregunta en su cuaderno:
     - ¿En que año se crea el primer navegador y la primera página web?
 
-2. Traduzca los contenidos de la primera página web y haga un breve resumen de dichos contenidos en su cuaderno.
+4. Traduzca los contenidos de la primera página web y haga un breve resumen de dichos contenidos en su cuaderno.
 
----
-## A05: Primer navegador MOSAIC (+0,1)
-{bdg-warning}`Actividad práctica`
+5. En su cuaderno dibuje un **boceto** de la *interfaz gráfica* del primer navegador web **MOSAIC** y realice una breve descripción de las diferencias de este primer navegador con navegadores actuales como GOOGLE CHROME, MOZILLA FIREFOX o MICROSOFT EDGE.
 
-1. En su cuaderno dibuje un **boceto** de la *interfaz gráfica* del primer navegador web **MOSAIC** y realice una breve descripción de las diferencias de este primer navegador con navegadores actuales como GOOGLE CHROME, MOZILLA FIREFOX o MICROSOFT EDGE.
-
----
-## A06: Orígenes de la PC (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+6. En su cuaderno responda las siguientes preguntas:
 
     - ¿Cuál fue la primera computadora personal de la historia y en que año se creó?
     - ¿Qué lenguajes de programación se usaron en la primera computadora personal?
@@ -230,49 +221,36 @@ En la actualidad, el software ha evolucionado hacia aplicaciones en la nube, int
     - ¿Quién fue Steve Jobs?
     - ¿Cómo se democratizó el uso de las computadoras personales?
 
----
-## A07: Apple - Macintosh (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda:
+7. En su cuaderno responda:
     - ¿Qué características tenía la primera Macintosh y en que año fue creada?
 
-2. En su cuaderno dibuje un bosquejo de la primera Macintosh.
+8. En su cuaderno dibuje un bosquejo de la primera Macintosh.
 
-3. Observe el artículo donde se describe la Macintosh y en su cuaderno describa el significado de las siguientes frases:
+9. Observe el artículo donde se describe la Macintosh y en su cuaderno describa el significado de las siguientes frases:
 
     - *“La primera APPLE que se puede llevar en un bolso”*
     - *“Si puedes señalar, puedes usar Macintosh”*
     - *“PERSONALIDAD DE MACINTOSH: Lado divertido, Lado serio”*
     - *“Muy pronto habrán dos tipos de personas: Aquellos que usan computadoras y aquellos que usan APPLES”*
 
----
-## A08: Orígenes del software (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+10. En su cuaderno responda las siguientes preguntas:
     - ¿En que año y como operaban las computadoras en sus orígenes?
     - ¿Qué es y en que año se crea **FORTRAN**?
     - ¿Por qué la década de los 80 fue revolucionaria en el software?
 
----
-## A09: Sistemas Operativos (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. Investigue en **INTERNET** o **IA** y realice una descripción del sistema operativo **UNIX** luego en su cuaderno responda la siguiente pregunta: 
+11. Investigue en **INTERNET** o **IA** y realice una descripción del sistema operativo **UNIX** luego en su cuaderno responda la siguiente pregunta: 
     - ¿Por qué UNIX es considerado el padre de la mayoría de sistemas operativos en la actualidad?
-2. Investigue en **INTERNET** la diferencia entre un **equipo cliente** y un **equipo servidor** y luego realice una descripción en su cuaderno.
-3. Investigue en **INTERNET** que es el sistema operativo **LINUX** luego realice una descripción en su cuaderno e indique por que se usa en la mayoría de servidores a nivel mundial.
-4. En su cuaderno describa 10 distribuciones **LINUX** (con sus fechas de creación).
 
----
-## A10: Windows (+0,1)
-{bdg-warning}`Actividad práctica`
+12. Investigue en **INTERNET** la diferencia entre un **equipo cliente** y un **equipo servidor** y luego realice una descripción en su cuaderno.
 
-1. En su cuaderno responda:
+13. Investigue en **INTERNET** que es el sistema operativo **LINUX** luego realice una descripción en su cuaderno e indique por que se usa en la mayoría de servidores a nivel mundial.
+
+14. En su cuaderno describa 10 distribuciones **LINUX** (con sus fechas de creación).
+
+15. En su cuaderno responda:
     - ¿En que año se creo el sistema operativo **Microsoft DOS (MS-DOS)** y por que fue tan importante?
 
-2. Con ayuda de INTERNET o IA, en su cuaderno realice una descripción (con fechas de creación) de los siguientes sistemas operativos de Microsoft:
+16. Con ayuda de INTERNET o IA, en su cuaderno realice una descripción (con fechas de creación) de los siguientes sistemas operativos de Microsoft:
 
     - Windows 3.1
     - Windows 95
@@ -288,18 +266,18 @@ En la actualidad, el software ha evolucionado hacia aplicaciones en la nube, int
     - Windows 11
 
 ---
-## A11: Línea de tiempo (+1,0)
+## A03: Línea de tiempo (+1,0)
 {bdg-warning}`Actividad práctica`
 
-1. En una **hoja de tamaño oficio**, cree una línea de tiempo de la **historia de la computación personal**, desde los orígenes de la primera red con **ARPANET** hasta la creación de los **sistemas operativos de Microsoft**.
+1. En **medio pliego de cartulina**, cree una línea de tiempo de la **historia de la computación personal**, desde los orígenes de la primera red con **ARPANET** hasta la creación de los **sistemas operativos de Microsoft**.
 
 ---
-## A12: Examen escrito (+3,0)
+## A04: Examen escrito (+3,0)
 {bdg-danger}`Transferencia`
 
 :::{csv-table}
 :delim: ;
-**TIEMPO** ; 59 minutos
+**TIEMPO** ; 29 minutos
 **PREGUNTAS** ; 10
 **OBJETIVO** ; Comprobar conocimientos adquiridos.
 **ACTIVIDAD** ; Responda las siguientes preguntas a continuación. Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.

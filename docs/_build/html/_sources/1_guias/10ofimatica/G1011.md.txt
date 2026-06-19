@@ -153,7 +153,7 @@ Algunas de las aplicaciones más conocidas que forman parte de Microsoft Office
 - Acceso a correo electrónico sin anuncios.
 
 ---
-## A02: Concepto de Ofimática (+0,1)
+## A02: Taller (+0,8)
 {bdg-warning}`Actividad práctica`
 
 1. En su cuaderno responda las siguientes preguntas:
@@ -177,44 +177,32 @@ Algunas de las aplicaciones más conocidas que forman parte de Microsoft Office
     
     > **CASO 07**: "El tesorero de una pequeña empresa organiza los gastos mensuales mediante el uso de fórmulas automáticas para calcular el IVA, generar gráficos de barras que muestren las tendencias de consumo y filtrar datos por categorías de proveedores."
 
----
-## A03: Google Workspace (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+3. En su cuaderno responda las siguientes preguntas:
     - ¿Qué es Google Workspace?
     - ¿Qué herramientas incluye Google Workspace?
     - ¿En qué consiste la suscripción de Google ONE?
     - ¿Qué servicios recibe el usuario por suscribirse a **Google ONE - IA PLUS** y cuanto cuesta?
 
-2. En Internet, consulte que otros planes de **Google ONE** existen y por cada plan en su cuaderno responda:
+4. En Internet, consulte que otros planes de **Google ONE** existen y por cada plan en su cuaderno responda:
 
     - ¿Cuanto cuesta el plan?
     - ¿Que servicios carece dicho plan respecto a **Google ONE - IA PLUS**?
     - ¿Que servicios extra ofrece dicho plan respecto a **Google ONE - IA PLUS**?
 
----
-## A04: Microsoft Office (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+5. En su cuaderno responda las siguientes preguntas:
     - ¿Qué es Microsoft Office?
     - ¿Cúales son las aplicaciones más conocidas de Microsoft Office?
     - ¿Qué sistemas operativos son compatibles con Microsoft Office?
     - ¿En qué consiste la suscripción **Microsoft 365 Family**?
     - ¿Qué servicios recibe el usuario por suscribirse a **Microsoft 365 Family** y cuanto cuesta?
 
-2. En Internet, consulte que otros planes de Microsoft 365 existen y por cada plan en su cuaderno responda:
+6. En Internet, consulte que otros planes de Microsoft 365 existen y por cada plan en su cuaderno responda:
 
     - ¿Cuanto cuesta dicho plan?
     - ¿Que servicios carece dicho plan respecto a **Microsoft Family 365**?
     - ¿Que servicios extra ofrece dicho plan respecto a **Microsoft Family 365**?
 
----
-## A05: Servicio indicado (+0,5)
-{bdg-warning}`Actividad práctica`
-
-1. Para cada uno de los casos, seleccione el servicio que más convenga. No olvide explicar el por qué. Los servicios son:
+7. Para cada uno de los casos, seleccione el servicio que más convenga. No olvide explicar el por qué. Los servicios son:
 
     - Microsoft 365 Personal.
     - Microsoft 365 Familia.
@@ -250,7 +238,7 @@ Algunas de las aplicaciones más conocidas que forman parte de Microsoft Office
     > **CASO 10:** La familia Martínez tiene 5 integrantes (padres y 3 hijos en el colegio). Todos necesitan las aplicaciones de Office para sus tareas y quieren que cada uno tenga su propio espacio privado de almacenamiento de 1 TB sin pagar suscripciones por separado.
 
 ---
-## A06: Examen escrito (+4,0)
+## A03: Examen escrito (+4,0)
 {bdg-danger}`Transferencia`
 
 ```{csv-table}
@@ -260,7 +248,6 @@ Algunas de las aplicaciones más conocidas que forman parte de Microsoft Office
 **OBJETIVO** ; Comprobar conocimientos adquiridos.
 **ACTIVIDAD** ; Responda las siguientes preguntas. Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.
 ```
-
 
 :::{admonition} Posibles preguntas
 1. Explique con sus propias palabras qué es la **ofimática** y de qué combinación de términos surge su nombre.

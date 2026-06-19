@@ -235,7 +235,9 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../10programacion/G1020.html">Programación 10</a><input aria-label="Toggle navigation of Programación 10" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../10programacion/G1021.html">Guía 1021: PROGRAMACIÓN (P1)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../10programacion/G1022.html">Guía 1022: Datos, Información y Software (P1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1023.html">Guía 1023: Desarrollo de algoritmos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1023.html">Guía 1023: Algoritmos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1024.html">Guía 1024: PYTHON (P3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1025.html">Guía 1025: Variables en Python (P4)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../10programacion/G1029.html">Guía 1029: Plan de refuerzo</a></li>
 </ul>
 </li>
@@ -390,10 +392,9 @@ Recursos (0)</label><div class="sd-tab-content docutils">
 <ol class="arabic simple">
 <li><p>Lea los siguientes conceptos:</p></li>
 </ol>
+<hr class="docutils" />
 <section id="que-son-los-datos">
 <h3>¿Qué son los datos?<a class="headerlink" href="#que-son-los-datos" title="Link to this heading">¶</a></h3>
-<div class="admonition-concepto-de-datos admonition">
-<p class="admonition-title">Concepto de datos</p>
 <p><a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> Los <strong>datos</strong> son cualquier cantidad, valor o hecho <strong>SIN ORGANIZAR, SIN ANALIZAR o SIN PROCESAR</strong>.</p>
 <blockquote>
 <div><p>“Los datos NO ESPECIFICAN significado alguno”.</p>
@@ -407,12 +408,10 @@ Recursos (0)</label><div class="sd-tab-content docutils">
 <li><p>5kg</p></li>
 <li><p>$1,000,000.00</p></li>
 </ul>
-</div>
 </section>
+<hr class="docutils" />
 <section id="que-es-la-informacion">
 <h3>¿Qué es la información?<a class="headerlink" href="#que-es-la-informacion" title="Link to this heading">¶</a></h3>
-<div class="admonition-concepto-de-informacion admonition">
-<p class="admonition-title">Concepto de información</p>
 <p><a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> La <strong>información</strong> es el conjunto de datos organizados, analizados y procesados que tienen significado para las personas.</p>
 <blockquote>
 <div><p>“La información tiene contexto y significado”.</p>
@@ -426,12 +425,10 @@ Recursos (0)</label><div class="sd-tab-content docutils">
 <li><p>Para le receta se necesitan <strong>5kg</strong> de carne de res.</p></li>
 <li><p>Contando los gastos, al usuario le quedó un saldo de <strong>$1,000,000.00</strong> COP.</p></li>
 </ul>
-</div>
 </section>
+<hr class="docutils" />
 <section id="que-es-la-jerarquia-de-datos">
 <h3>¿Qué es la Jerarquía de datos?<a class="headerlink" href="#que-es-la-jerarquia-de-datos" title="Link to this heading">¶</a></h3>
-<div class="admonition-concepto-de-jerarquia-de-datos admonition">
-<p class="admonition-title">Concepto de Jerarquía de datos</p>
 <p><a class="footnote-reference brackets" href="#id5" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> La <strong>Jerarquía de datos</strong> es una forma de clasificar la información. La jerarquía de datos se compone de los siguientes elementos organizados así:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
@@ -440,7 +437,6 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 \]</div>
 </div>
 <p>A continuación se muestra la definición de cada uno de los elementos (ordenados de MENOR a MAYOR) que componen la jerarquía de datos:</p>
-</div>
 <hr class="docutils" />
 <section id="bit">
 <h4>bit<a class="headerlink" href="#bit" title="Link to this heading">¶</a></h4>
@@ -552,9 +548,12 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 <div><p>“Una <strong>base de datos</strong> esta compuesta por varias <strong>tablas</strong> relacionadas”.</p>
 </div></blockquote>
 <p>Por ejemplo:</p>
-<div class="table-wrapper black docutils container" id="id8">
-<table class="black docutils align-default" id="id8">
+<div class="table-wrapper docutils container" id="id8">
+<table class="docutils align-default" id="id8">
 <caption><span class="caption-text">Tabla estudiantes</span><a class="headerlink" href="#id8" title="Link to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper black docutils container">
+<table class="black docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><strong>ID</strong></p></td>
 <td><p><strong>Nombre</strong></p></td>
@@ -580,6 +579,11 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 <td><p>Luis</p></td>
 <td><p>Ruiz</p></td>
 <td><p>8</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -643,8 +647,8 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 </section>
 </section>
 <hr class="docutils" />
-<section id="a02-datos-vs-informacion-0-1">
-<h2>A02: Datos Vs Información (+0,1)<a class="headerlink" href="#a02-datos-vs-informacion-0-1" title="Link to this heading">¶</a></h2>
+<section id="a02-taller-0-8">
+<h2>A02: Taller (+0,8)<a class="headerlink" href="#a02-taller-0-8" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
 <ol class="arabic simple">
 <li><p>En su cuaderno responda las siguientes preguntas:</p>
@@ -685,12 +689,7 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 </tbody>
 </table>
 </div>
-</section>
-<hr class="docutils" />
-<section id="a03-jerarquia-de-datos-0-1">
-<h2>A03: Jerarquía de datos (+0,1)<a class="headerlink" href="#a03-jerarquia-de-datos-0-1" title="Link to this heading">¶</a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
-<ol class="arabic">
+<ol class="arabic" start="3">
 <li><p>En su cuaderno responda las siguientes preguntas:</p>
 <ul class="simple">
 <li><p>¿Qué es la Jerarquía de datos?</p></li>
@@ -745,7 +744,7 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 <table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td><figure class="align-default" id="id11">
-<a class="reference internal image-reference" href="../../_images/image0113.png"><img alt="../../_images/image0113.png" src="../../_images/image0113.png" style="width: 400px;" />
+<a class="reference internal image-reference" href="../../_images/image0115.png"><img alt="../../_images/image0115.png" src="../../_images/image0115.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text"><strong>Anillo</strong> Jerarquía de datos</span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
@@ -757,13 +756,13 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 </table>
 </div>
 <br/>
-<ol class="arabic" start="4">
+<ol class="arabic" start="6">
 <li><p>DIBUJE el siguiente gráfico en su cuaderno:</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td><figure class="align-default" id="id12">
-<a class="reference internal image-reference" href="../../_images/image0211.png"><img alt="../../_images/image0211.png" src="../../_images/image0211.png" style="width: 550px;" />
+<a class="reference internal image-reference" href="../../_images/image0212.png"><img alt="../../_images/image0212.png" src="../../_images/image0212.png" style="width: 550px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">EJEMPLO Jerarquía de datos</span><a class="headerlink" href="#id12" title="Link to this image">¶</a></p>
@@ -785,18 +784,13 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 <li><p>¿Cuáles son los bits?</p></li>
 </ul>
 </li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="a04-construccion-de-tablas-0-1">
-<h2>A04: Construcción de tablas (+0,1)<a class="headerlink" href="#a04-construccion-de-tablas-0-1" title="Link to this heading">¶</a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
-<ol class="arabic simple">
 <li><p>En su cuaderno (de forma horizontal) realice una <strong>tabla</strong> de 5 registros de sus compañeros con los siguientes campos (invente los datos):</p></li>
 </ol>
-<div class="table-wrapper docutils container" id="id13">
-<table class="docutils align-default" id="id13">
-<caption><span class="caption-text">Tabla Estudiantes</span><a class="headerlink" href="#id13" title="Link to this table">¶</a></caption>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>ID</p></th>
 <th class="head"><p>Nombre</p></th>
@@ -863,11 +857,19 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 </tbody>
 </table>
 </div>
+</td>
+</tr>
+<tr class="row-even"><td><p class="centered">
+<strong>Tabla Estudiantes</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="warning admonition">
 <p class="admonition-title">Advertencia</p>
 <p>Los datos de <strong>Edad</strong>, <strong>Curso de Ingreso</strong>, <strong>Año de Ingreso</strong> y <strong>Año de Egreso</strong> deben tener lógica.</p>
 </div>
-<ol class="arabic simple" start="2">
+<ol class="arabic simple" start="8">
 <li><p>Construya el <strong>correo electrónico</strong> del estudiante y agregarlo en la siguiente tabla, teniendo en cuenta la siguiente estructura (ignore los paréntesis):</p></li>
 </ol>
 <div class="math-wrapper docutils container">
@@ -876,9 +878,12 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 (nombre).(apellido)(CursoIngreso)(AñoIngreso)&#64;jfkennedy.edu.co
 \]</div>
 </div>
-<div class="table-wrapper docutils container" id="id14">
-<table class="docutils align-default" id="id14">
-<caption><span class="caption-text">Tabla Cuentas Institucionales Estudiantes</span><a class="headerlink" href="#id14" title="Link to this table">¶</a></caption>
+<div class="table-wrapper docutils container" id="id13">
+<table class="docutils align-default" id="id13">
+<caption><span class="caption-text">Tabla Cuentas Institucionales Estudiantes</span><a class="headerlink" href="#id13" title="Link to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>ID</p></th>
 <th class="head"><p>ID Estudiantes</p></th>
@@ -921,21 +926,24 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 </tbody>
 </table>
 </div>
-</section>
-<hr class="docutils" />
-<section id="a05-bases-de-datos-0-5">
-<h2>A05: Bases de datos (+0,5)<a class="headerlink" href="#a05-bases-de-datos-0-5" title="Link to this heading">¶</a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
-<ol class="arabic">
+</td>
+</tr>
+<tr class="row-even"><td><p class="centered">
+<strong>Tabla Cuentas Institucionales Estudiantes</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic" start="9">
 <li><p>En una hoja de su cuaderno (de forma horizontal), dibuje la siguiente base de datos:</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
-<tr class="row-odd"><td><figure class="align-default" id="id15">
-<a class="reference internal image-reference" href="../../_images/image0310.png"><img alt="../../_images/image0310.png" src="../../_images/image0310.png" style="width: 620px;" />
+<tr class="row-odd"><td><figure class="align-default" id="id14">
+<a class="reference internal image-reference" href="../../_images/image0311.png"><img alt="../../_images/image0311.png" src="../../_images/image0311.png" style="width: 620px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">EJEMPLO Base de datos</span><a class="headerlink" href="#id15" title="Link to this image">¶</a></p>
+<p><span class="caption-text">EJEMPLO Base de datos</span><a class="headerlink" href="#id14" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </td>
@@ -960,8 +968,8 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 </ol>
 </section>
 <hr class="docutils" />
-<section id="a06-examen-escrito-4-0">
-<h2>A06: Examen escrito (+4,0)<a class="headerlink" href="#a06-examen-escrito-4-0" title="Link to this heading">¶</a></h2>
+<section id="a03-examen-escrito-4-0">
+<h2>A03: Examen escrito (+4,0)<a class="headerlink" href="#a03-examen-escrito-4-0" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
@@ -1094,11 +1102,8 @@ Base\_de\_datos(Tabla(Registro(Dato(Carácter(Byte(bit))))))
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#a02-datos-vs-informacion-0-1">A02: Datos Vs Información (+0,1)</a></li>
-<li><a class="reference internal" href="#a03-jerarquia-de-datos-0-1">A03: Jerarquía de datos (+0,1)</a></li>
-<li><a class="reference internal" href="#a04-construccion-de-tablas-0-1">A04: Construcción de tablas (+0,1)</a></li>
-<li><a class="reference internal" href="#a05-bases-de-datos-0-5">A05: Bases de datos (+0,5)</a></li>
-<li><a class="reference internal" href="#a06-examen-escrito-4-0">A06: Examen escrito (+4,0)</a></li>
+<li><a class="reference internal" href="#a02-taller-0-8">A02: Taller (+0,8)</a></li>
+<li><a class="reference internal" href="#a03-examen-escrito-4-0">A03: Examen escrito (+4,0)</a></li>
 </ul>
 </li>
 </ul>

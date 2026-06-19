@@ -1,13 +1,12 @@
 # Programación 10
 
-:ASIGNATURA: Programación
-:GRADO: Décimo
-
 :::{toctree}
 :maxdepth: 2
 
 G1021.md
 G1022.md
 G1023.md
+G1024.md
+G1025.md
 G1029.md
 :::

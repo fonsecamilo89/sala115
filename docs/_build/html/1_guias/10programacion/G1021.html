@@ -235,7 +235,9 @@
 <li class="toctree-l1 current has-children"><a class="reference internal" href="G1020.html">Programación 10</a><input aria-label="Toggle navigation of Programación 10" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Guía 1021: PROGRAMACIÓN (P1)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="G1022.html">Guía 1022: Datos, Información y Software (P1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="G1023.html">Guía 1023: Desarrollo de algoritmos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1023.html">Guía 1023: Algoritmos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1024.html">Guía 1024: PYTHON (P3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1025.html">Guía 1025: Variables en Python (P4)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="G1029.html">Guía 1029: Plan de refuerzo</a></li>
 </ul>
 </li>
@@ -331,16 +333,17 @@ Objetivo</label><div class="sd-tab-content docutils">
 <span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
 <span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <ul class="simple">
-<li><p><strong>Temática</strong>: .</p></li>
-<li><p><strong>Objetivo de aprendizaje</strong>: .</p></li>
+<li><p><strong>Temática</strong>: Introducción a la programación.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Dar a conocer los conceptos introductorios a la programación.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Orientaciones curriculares</label><div class="sd-tab-content docutils">
 <ul class="simple">
-<li><p><strong>Componente</strong>: .</p></li>
-<li><p><strong>Competencia</strong>: .</p></li>
+<li><p><strong>Componente</strong>: Solución de problemas con Tecnología e Informática.</p></li>
+<li><p><strong>Competencia</strong>: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Represento ideas sobre diseños, innovaciones tecnológicas o informáticas mediante el uso de registros, textos, diagramas, figuras… empleando para ello herramientas informáticas.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
@@ -365,7 +368,7 @@ Recursos (0)</label><div class="sd-tab-content docutils">
 <section id="mensaje-del-autor">
 <h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
 <blockquote class="pull-quote">
-<div><p>“.”</p>
+<div><p>“En esta guía didáctica, se exploraran los fundamentos esenciales en el desarrollo de software. El objetivo es obtener conocimientos básicos, para entender el cómo funciona el mundo digital y que a su vez impulsen la motivación hacia el aprendizaje de la programación”.</p>
 <p class="attribution">—Camilo Fonseca</p>
 </div></blockquote>
 </section>
@@ -375,11 +378,17 @@ Recursos (0)</label><div class="sd-tab-content docutils">
 <p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
 <ol class="arabic simple">
 <li><p>TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿En qué se relacionan el mundo digital y el software?</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="a01-programacion">
-<h2>A01: PROGRAMACIÓN<a class="headerlink" href="#a01-programacion" title="Link to this heading">¶</a></h2>
+<section id="a01-programacion-0-1">
+<h2>A01: PROGRAMACIÓN (+0,1)<a class="headerlink" href="#a01-programacion-0-1" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
 <ol class="arabic simple">
 <li><p>Lea los siguientes conceptos relacionados con programación:</p></li>
 </ol>
@@ -409,8 +418,10 @@ Recursos (0)</label><div class="sd-tab-content docutils">
 <h3>¿Qué es el software?<a class="headerlink" href="#que-es-el-software" title="Link to this heading">¶</a></h3>
 <p><strong>El software</strong> es el conjunto de programas, bases de datos y diferentes tipos de archivos que controlan el hardware a través de instrucciones. El software debe tener requisitos y funcionalidades. Es la parte intangible de un sistema informático, en contraste con el hardware, que es la parte física. El software se puede clasificar en dos tipos:</p>
 <ul class="simple">
-<li><p><strong>Software de sistema:</strong> Ejecuta la funcionalidades básicas de un hardware (encender la máquina, mostrar imagen, monitoreo de temperatura, etc.).</p></li>
-<li><p><strong>Software de aplicación:</strong> Trabaja en función del software del sistema para que el usuario pueda realizar una tarea específica (procesar texto, edición de imágenes, navegar en Internet, programar, etc.)</p></li>
+<li><p><strong>Software de sistema:</strong> Proporciona funciones básicas, como sistemas operativos, gestión de discos, servicios, gestión de hardware y otras necesidades operativas.</p></li>
+<li><p><strong>Software de aplicación:</strong> Ayuda a los usuarios a realizar tareas. Por ejemplo, conjuntos de productividad ofimática, software de gestión de datos, reproductores multimedia y programas de seguridad. Las aplicaciones también se refieren a aplicaciones web y móviles como las que se utilizan para comprar en <strong>Amazon</strong>, socializar con <strong>Facebook</strong> o publicar fotos en <strong>Instagram</strong>.</p></li>
+<li><p><strong>Software de programación:</strong> Proporciona herramientas a los programadores, como editores de texto, compiladores, enlazadores, depuradores y otras herramientas para crear código.</p></li>
+<li><p><strong>Software embebido:</strong> Se utiliza para controlar máquinas y dispositivos que normalmente no se consideran ordenadores: redes de telecomunicaciones, automóviles, robots industriales, etc. Estos dispositivos, y su software pueden conectarse como parte del Internet de las cosas (IoT).</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -452,39 +463,31 @@ Recursos (0)</label><div class="sd-tab-content docutils">
 </div>
 </section>
 <hr class="docutils" />
-<section id="tipos-de-software">
-<h3>Tipos de software<a class="headerlink" href="#tipos-de-software" title="Link to this heading">¶</a></h3>
-<p>El software es el conjunto de instrucciones o programas que indican a un ordenador lo que debe hacer. Es independiente del hardware y hace que los ordenadores sean programables. Hay tres tipos básicos:</p>
-<ul class="simple">
-<li><p><strong>Software de sistema:</strong> Proporciona funciones básicas, como sistemas operativos, gestión de discos, servicios, gestión de hardware y otras necesidades operativas.</p></li>
-<li><p><strong>Software de aplicación:</strong> Ayuda a los usuarios a realizar tareas. Por ejemplo, conjuntos de productividad ofimática, software de gestión de datos, reproductores multimedia y programas de seguridad. Las aplicaciones también se refieren a aplicaciones web y móviles como las que se utilizan para comprar en <a class="reference external" href="https://amazon.com/" rel="noreferer noopener" target="_blank">Amazon.com</a>, socializar con Facebook o publicar fotos en Instagram.</p></li>
-<li><p><strong>Software de programación:</strong> Proporciona herramientas a los programadores, como editores de texto, compiladores, enlazadores, depuradores y otras herramientas para crear código.</p></li>
-<li><p><strong>Software embebido:</strong> Se utiliza para controlar máquinas y dispositivos que normalmente no se consideran ordenadores: redes de telecomunicaciones, automóviles, robots industriales, etc. Estos dispositivos, y su software pueden conectarse como parte del Internet de las cosas (IoT).</p></li>
-</ul>
-</section>
-<hr class="docutils" />
 <section id="proceso-de-desarrollo-de-software">
 <h3>Proceso de desarrollo de software<a class="headerlink" href="#proceso-de-desarrollo-de-software" title="Link to this heading">¶</a></h3>
 <p>Los pasos del proceso de desarrollo de software se pueden agrupar en las fases del ciclo de vida, pero la importancia del ciclo de vida es que se recicla para permitir una mejora continua. Por ejemplo, los problemas de los usuarios que surgen en la fase de mantenimiento y soporte pueden convertirse en requisitos al inicio del siguiente ciclo.</p>
 <ul>
-<li><p><strong>FASE 01 (Análisis y especificación de requisitos)</strong></p>
+<li><p><strong>FASE 01 (Análisis de requisitos)</strong></p>
 <p>En esta fase se comprende y documenta lo que necesitan los usuarios y otras partes interesadas. Se analiza la estructura tecnológica donde funcionará el software.</p>
 </li>
-<li><p><strong>FASE 02 (Diseño y desarrollo)</strong></p>
+<li><p><strong>FASE 02 (Diseño)</strong></p>
 <p>Se diseña en torno a soluciones a los problemas presentados por los requisitos, lo que a menudo implica modelos de procesos y guiones gráficos.
-Se crean los modelos con una herramienta de modelado que utilice un lenguaje de modelado como UML para llevar a cabo la validación temprana, la creación de prototipos y la simulación del diseño. En el desarrollo se usa un lenguaje de programación adecuado al aplicativo que se quiere construir. Implica la revisión por pares y en equipo para eliminar problemas de forma temprana y producir software de calidad más rápido.</p>
+Se crean los modelos con una herramienta de modelado que utilice un lenguaje de modelado como UML para llevar a cabo la validación temprana, la creación de prototipos y la simulación del diseño.</p>
 </li>
-<li><p><strong>FASE 03 (Pruebas)</strong></p>
+<li><p><strong>FASE 03 (Construcción)</strong></p>
+<p>En la construcción se usa un lenguaje de programación adecuado al aplicativo que se quiere construir. Implica la revisión por pares y en equipo para eliminar problemas de forma temprana y producir software de calidad más rápido.</p>
+</li>
+<li><p><strong>FASE 04 (Pruebas)</strong></p>
 <p>Se realizan dos tipos de pruebas:</p>
 <ul class="simple">
 <li><p>Pruebas con escenarios planificados de antemano como parte del diseño y la codificación del software. Por ejemplo identificación de errores de código, de lógica de negocio o de seguridad.</p></li>
 <li><p>Pruebas de rendimiento para simular niveles de carga de uso en la aplicación. Por ejemplo Identificar en que momento el aplicativo puede presentar fallos cuando varios usuarios lo usen al mismo tiempo.</p></li>
 </ul>
 </li>
-<li><p><strong>FASE 04 (Implementación)</strong></p>
+<li><p><strong>FASE 05 (Implementación)</strong></p>
 <p>El software se instala o pone en producción para capacitar a los usuarios y lograr que se familiaricen con las funciones que este contenga. Se resuelven dudas de los usuarios. Si hay una versión anterior del software, la información alojada en el software anterior debe ser migrada el software nuevo desde aplicaciones o fuentes de datos existentes, si es necesario.</p>
 </li>
-<li><p><strong>FASE 05 (Mantenimiento y soporte)</strong></p>
+<li><p><strong>FASE 06 (Mantenimiento y soporte)</strong></p>
 <p>Para mantener la calidad y la entrega a lo largo del ciclo de vida de la aplicación, se deben tener fechas de seguimiento y soporte. Los usuarios nuevos deben ser capacitados. El software en lo posible debe ser escalable es decir, en la medida que requiera nuevas funcionalidades, estas se deben ir implementando para que el software no quede desactualizado en la medida que pase el tiempo.</p>
 </li>
 </ul>
@@ -493,55 +496,55 @@ Se crean los modelos con una herramienta de modelado que utilice un lenguaje de 
 <section id="tecnologias-usadas-en-el-desarrollo-de-software">
 <h3>Tecnologías usadas en el desarrollo de software<a class="headerlink" href="#tecnologias-usadas-en-el-desarrollo-de-software" title="Link to this heading">¶</a></h3>
 <p>Hoy en día son bastantes las tecnologías que  como herramientas que nos ayudan a construir software. Estas se pueden clasificar de la siguiente forma:</p>
-<section id="sistemas-operativos">
-<h4>Sistemas operativos<a class="headerlink" href="#sistemas-operativos" title="Link to this heading">¶</a></h4>
+<div class="admonition-sistemas-operativos admonition">
+<p class="admonition-title">Sistemas operativos</p>
 <p>Un sistema operativo (OS) es un software esencial que actúa como intermediario entre el usuario y el hardware de la computadora. Su función principal es gestionar los recursos del sistema y proporcionar una interfaz para que los usuarios y las aplicaciones interactúen con el hardware. Por ejemplo:</p>
 <ul class="simple">
 <li><p><strong>LINUX:</strong> Sistema operativo libre.</p></li>
 <li><p><strong>Windows:</strong> Sistema operativo privativo.</p></li>
 <li><p><strong>MACOS:</strong> Sistema operativo privativo para equipos de computo de APPLE.</p></li>
 </ul>
-</section>
-<section id="bases-de-datos">
-<h4>Bases de datos<a class="headerlink" href="#bases-de-datos" title="Link to this heading">¶</a></h4>
+</div>
+<div class="admonition-bases-de-datos admonition">
+<p class="admonition-title">Bases de datos</p>
 <p>Una base de datos (DB) es un sistema organizado que permite almacenar, gestionar y recuperar información de manera eficiente. Una base de datos es como un archivo digital muy bien estructurado donde se guarda información que se puede buscar y manipular fácilmente. Por ejemplo:</p>
 <ul class="simple">
 <li><p><strong>MongoDB:</strong> Almacena los datos en documentos.</p></li>
 <li><p><strong>MySQL:</strong> Utiliza tablas para almacenar datos. La empresa propietaria es ORACLE.</p></li>
 <li><p><strong>SQL_Server:</strong> Utiliza tablas para almacenar datos. La empresa propietaria es MICROSOFT.</p></li>
 </ul>
-</section>
-<section id="servidor-web">
-<h4>Servidor web<a class="headerlink" href="#servidor-web" title="Link to this heading">¶</a></h4>
+</div>
+<div class="admonition-servidor-web admonition">
+<p class="admonition-title">Servidor web</p>
 <p>Un servidor web permite alojar páginas web y ejecutar aplicaciones web. Ejemplo:</p>
 <ul class="simple">
 <li><p><strong>APACHE:</strong> Es un servidor web tradicional que se basa en un modelo de procesamiento de solicitudes por separado. Cada solicitud genera un hilo diferente.</p></li>
 </ul>
-</section>
-<section id="entornos-de-ejecucion">
-<h4>Entornos de ejecución<a class="headerlink" href="#entornos-de-ejecucion" title="Link to this heading">¶</a></h4>
+</div>
+<div class="admonition-entornos-de-ejecucion admonition">
+<p class="admonition-title">Entornos de ejecución</p>
 <p>Un entorno de ejecución es un software que contiene todo lo necesario para que otro software se ejecute correctamente. Esto incluye desde un intermediario con el sistema operativo hasta librerías y demás recursos necesarios como la documentación. Por ejemplo:</p>
 <ul class="simple">
 <li><p><strong>NODE:</strong> También conocido como NODEJS, es un <strong>entorno de ejecución</strong> que permite ejecutar código JavaScript en el lado del servidor. A diferencia de JavaScript tradicional, que se ejecuta en el navegador, Node.js permite que los desarrolladores utilicen JavaScript para crear aplicaciones del lado del servidor, lo que lo hace muy versátil y poderoso.</p></li>
 </ul>
-</section>
-<section id="framework">
-<h4>Framework<a class="headerlink" href="#framework" title="Link to this heading">¶</a></h4>
+</div>
+<div class="admonition-framework admonition">
+<p class="admonition-title">Framework</p>
 <p>Un framework es un conjunto de librerías, documentación que ayudan a desarrollar o ejecutar un software en específico. Por ejemplo:</p>
 <ul class="simple">
 <li><p><strong>.NET:</strong> Creado por Microsoft, permite crear aplicaciones de software más fácil y eficiente.</p></li>
 <li><p><strong>EXPRESS:</strong> Es un <strong>framework de aplicación web</strong> para Node.js que facilita la creación de aplicaciones que se ejecutan en el servidor web.</p></li>
 <li><p><strong>ANGULAR:</strong> Es un <strong>framework de aplicación web</strong> para Node.js que facilita la creación de aplicaciones que se ejecutan en el navegador web.</p></li>
 </ul>
-</section>
-<section id="ide">
-<h4>IDE<a class="headerlink" href="#ide" title="Link to this heading">¶</a></h4>
+</div>
+<div class="admonition-ide admonition">
+<p class="admonition-title">IDE</p>
 <p>Un IDE son las siglas para (<strong>entorno de desarrollo de software)</strong>. Es una aplicación que proporciona un conjunto completo de herramientas para facilitar el desarrollo de software. Un IDE combina diferentes herramientas y funciones en un solo lugar para ayudar a los programadores a escribir, depurar y mantener su código de manera más eficiente. Por ejemplo:</p>
 <ul class="simple">
 <li><p><strong>VISUAL STUDIO CODE:</strong> IDE de Microsoft para programar con cualquier lenguaje de programación.</p></li>
 <li><p><strong>THONNY:</strong> IDE para programar con el lenguaje de programación PYTHON.</p></li>
 </ul>
-</section>
+</div>
 </section>
 <hr class="docutils" />
 <section id="desarollo-web">
@@ -582,64 +585,110 @@ Se crean los modelos con una herramienta de modelado que utilice un lenguaje de 
 <li><p><strong><a class="reference external" href="https://inkscape.org/" rel="noreferer noopener" target="_blank">Inkscape</a></strong>: Es un editor de gráficos vectoriales de código abierto, gratuito y disponible para múltiples sistemas operativos. Permite crear y editar imágenes vectoriales de alta calidad, ideal para ilustraciones, logotipos, diagramas y más.</p></li>
 <li><p><strong><a class="reference external" href="https://www.gimp.org/" rel="noreferer noopener" target="_blank">Gimp</a></strong>: Es un editor de imágenes de código abierto, gratuito y multiplataforma. Ofrece una amplia gama de herramientas para manipular, retocar y crear imágenes rasterizadas, similar a Photoshop pero sin costo.</p></li>
 <li><p><strong><a class="reference external" href="https://www.blender.org/" rel="noreferer noopener" target="_blank">Blender</a></strong>: Es un software de modelado 3D, animación y renderizado gratuito y de código abierto. Es una herramienta potente y versátil utilizada para crear gráficos 3D, animaciones, juegos y más.</p></li>
-<li><p><strong><a class="reference external" href="https://audiofloss.melisa.gal/" rel="noreferer noopener" target="_blank">Audiofloss</a></strong>: Es una recopilación de software portable para Windows orientado a edición, producción y composición musical.</p></li>
+<li><p><strong><a class="reference external" href="https://www.audacityteam.org" rel="noreferer noopener" target="_blank">Audacity</a></strong>: Audacity es el software gratuito más popular del mundo para grabar y editar audio. Así que, si esta produciendo música, un podcast o simplemente experimentando con audio, Audacity es para usted.</p></li>
 <li><p><strong><a class="reference external" href="https://godotengine.org/" rel="noreferer noopener" target="_blank">Godot</a></strong>: Es un motor de juego de código abierto, gratuito y multiplataforma. Proporciona un entorno completo para desarrollar videojuegos 2D y 3D, con un editor visual intuitivo y una gran comunidad de apoyo.</p></li>
 </ul>
 </section>
 </section>
 <hr class="docutils" />
-<section id="a02-desarrolladores-y-programadores-0-2">
-<h2>A02: Desarrolladores y programadores (+0,2)<a class="headerlink" href="#a02-desarrolladores-y-programadores-0-2" title="Link to this heading">¶</a></h2>
+<section id="a02-taller-0-8">
+<h2>A02: Taller (+0,8)<a class="headerlink" href="#a02-taller-0-8" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
 <ol class="arabic simple">
+<li><p>Responda las siguientes preguntas en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿Que tiene que ver la <strong>programación</strong> con el <strong>desarrollo de software</strong>?</p></li>
+<li><p>¿Qué es <strong>código fuente</strong>?</p></li>
+</ul>
+</li>
+<li><p>Indique los diferentes <strong>tipos de software</strong> y escriba 5 ejemplos por cada tipo.</p></li>
+<li><p>Realice una descripción en su cuaderno sobre el <strong>desarrollo de software</strong>.</p></li>
 <li><p>COPIE la siguiente tabla en su cuaderno y escriba las tareas o actividades que realiza un programador y un desarrollador de software:</p></li>
 </ol>
 <div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Desarrollador de software</p></th>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Desarrollador de software</p></th>
 <th class="head"><p>Programador</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>1.</p></td>
 <td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p>2.</p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p>3.</p></td>
 <td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p>4.</p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p>5.</p></td>
 <td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p>6.</p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</section>
-<hr class="docutils" />
-<section id="a03-tecnologias-usadas-en-el-desarrollo-de-software-0-2">
-<h2>A03: Tecnologías usadas en el desarrollo de software (+0,2)<a class="headerlink" href="#a03-tecnologias-usadas-en-el-desarrollo-de-software-0-2" title="Link to this heading">¶</a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
-<ol class="arabic simple">
+<ol class="arabic simple" start="5">
+<li><p>COPIE la siguiente tabla en su cuaderno y escriba el nombre de las fases y las actividades que se realizan en cada fase durante el proceso de <strong>desarrollo de software</strong>:</p></li>
+</ol>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Nombre</p></th>
+<th class="head"><p>Actividades</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FASE 1.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>FASE 2.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>FASE 3.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>FASE 4.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>FASE 5.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>FASE 6.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple" start="6">
 <li><p>COPIE la siguiente <strong>sopa de letras</strong> en su cuaderno y encuentre 14 términos de tecnologías que se usan para desarrollar software. Posteriormente escriba su significado.</p></li>
 </ol>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
-<tr class="row-odd"><td><figure class="align-default" id="id3">
+<tr class="row-odd"><td><figure class="align-default">
 <a class="reference internal image-reference" href="../../_images/image036.png"><img alt="../../_images/image036.png" src="../../_images/image036.png" style="width: 550px;" />
 </a>
-<figcaption>
-<p><span class="caption-text">Servicios de red</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
-</figcaption>
 </figure>
 </td>
 </tr>
@@ -650,23 +699,116 @@ Se crean los modelos con una herramienta de modelado que utilice un lenguaje de 
 <blockquote>
 <div><p><strong>SQL_SERVER:</strong> Sistema de gestión de base de datos relacional de Microsoft.</p>
 </div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p>En su cuaderno dibuje la siguiente <em>nube de términos</em> de los <strong>STACK tecnológicos del desarrollo web</strong>, una el STACK con sus componentes por medio de líneas.</p></li>
+</ol>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image046.png"><img alt="../../_images/image046.png" src="../../_images/image046.png" style="width: 500px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic" start="8">
+<li><p>Para los siguientes casos, en su cuaderno elegir el lenguaje de programación más apropiado. Especificar el por qué.</p>
+<blockquote>
+<div><p><strong>CASO 01</strong>: Un programador está trabajando en el Back-end de una plataforma educativa muy grande. Necesita un lenguaje pionero, de código abierto, con casi tres décadas de trayectoria y que sea sumamente extenso para gestionar los datos. Además, requiere que este código se pueda incrustar directamente dentro del código HTML sin generar conflictos.</p>
+<ul class="simple">
+<li><p>¿Qué lenguaje del Back-end cumple con tener esta larga trayectoria y la capacidad de incrustarse en HTML?</p></li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 02</strong>: Diego ha creado un sitio web para su club de videojuegos. La información ya está en la pantalla, pero se ve muy simple: el fondo es completamente blanco, los textos están desalineados y las imágenes se ven desordenadas. Él quiere cambiar el aspecto del sitio, definir los colores de los fondos, elegir los tipos de letra y especificar la posición exacta de cada elemento en la pantalla para que se vea genial.</p>
+<ul class="simple">
+<li><p>¿Qué lenguaje trabaja en armonía con la estructura existente y es la herramienta perfecta para cambiar el aspecto visual y la posición de los elementos?</p></li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 03</strong>: Valentina está diseñando una página web y quiere que deje de ser un sitio fijo y aburrido. Su objetivo es que, cuando los usuarios hagan clic en un botón, aparezca una animación, las galerías de fotos se muevan solas y los formularios validen los datos del usuario de forma inmediata con ventanas interactivas. Busque un lenguaje del lado del Front-end que se base en objetos reutilizables.</p>
+<ul class="simple">
+<li><p>¿Qué lenguaje es el más apreciado para crear este tipo de sitios interactivos, dinámicos y muy demandados hoy en día?</p></li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 04</strong>: El equipo de robótica del instituto quiere crear una aplicación web innovadora en el Back-end. Como el equipo está aprendiendo, buscan un lenguaje de código abierto cuya escritura sea muy parecida al lenguaje humano (fácil de leer y escribir). Además, como el proyecto cambiará constantemente, necesitan que sea “multiparadigma”, es decir, que se adapte a varios estilos de programación.</p>
+<ul class="simple">
+<li><p>¿Cuál es este innovador lenguaje multiparadigma que facilita el desarrollo gracias a su similitud con el lenguaje humano?</p></li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 05</strong>: Sofía quiere crear una página web para la cafetería del colegio. Ella ya tiene todo el texto, los precios de los productos y las imágenes que quiere mostrar, pero necesita organizar esta información de forma ordenada (por ejemplo, los títulos arriba, el menú en el centro y los datos de contacto al final) para que los motores de búsqueda como Google puedan encontrar la página fácilmente.</p>
+<ul class="simple">
+<li><p>¿Qué lenguaje debe utilizar Sofía para dar esta estructura tipo árbol y organizar el contenido de su sitio web mediante etiquetas?</p></li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 06</strong>: Carlos está desarrollando el sistema de inscripciones del colegio (una aplicación web en el Back-end). El director le ha pedido que el sistema funcione de manera eficiente tanto en las computadoras de la sala de informática como en servidores con otros sistemas operativos. Carlos necesita un lenguaje que se escriba una sola vez y corra en cualquier lado gracias a una máquina virtual, además de que detecte errores a tiempo y maneje la memoria automáticamente.</p>
+<ul class="simple">
+<li><p>¿Qué lenguaje del Back-end es famoso por usar una máquina virtual para ejecutarse en distintos dispositivos?</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Para los siguientes <strong>softwares de aplicación</strong>, en su cuaderno realice una descripción de cada uno y dibuje su logotipo (buscar en INTERNET). Al mismo tiempo responda la siguiente pregunta: <em>¿el logotipo tiene que ver con el software?</em></p>
+<ul class="simple">
+<li><p>Godot</p></li>
+<li><p>Audacity</p></li>
+<li><p>Blender</p></li>
+<li><p>Gimp</p></li>
+<li><p>Inkscape</p></li>
+</ul>
+</li>
+</ol>
 </section>
 <hr class="docutils" />
-<section id="axx-examen-final-4-0">
-<h2>AXX: Examen final (+4,0)<a class="headerlink" href="#axx-examen-final-4-0" title="Link to this heading">¶</a></h2>
+<section id="a03-examen-escrito-4-0">
+<h2>A03: Examen escrito (+4,0)<a class="headerlink" href="#a03-examen-escrito-4-0" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
-<dl class="myst field-list simple">
-<dt class="field-odd">TIEMPO DEL EXAMEN<span class="colon">:</span></dt>
-<dd class="field-odd"><p>30 minutos</p>
-</dd>
-<dt class="field-even">NÚMERO DE PREGUNTAS<span class="colon">:</span></dt>
-<dd class="field-even"><p>10</p>
-</dd>
-</dl>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>TIEMPO</strong></p></td>
+<td><p>29 minutos</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PREGUNTAS</strong></p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>OBJETIVO</strong></p></td>
+<td><p>Comprobar conocimientos adquiridos.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ACTIVIDAD</strong></p></td>
+<td><p>Responda las siguientes preguntas. Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="admonition-posibles-preguntas admonition">
 <p class="admonition-title">Posibles preguntas</p>
 <ol class="arabic simple">
-<li></li>
+<li><p>¿Qué es la <strong>programación</strong> y cuál es el objetivo principal de escribir código fuente?</p></li>
+<li><p>Además de escribir código, ¿qué otras dos tareas importantes debe realizar un <strong>programador</strong> para mantener la calidad del software?</p></li>
+<li><p>¿Cómo se define el <strong>software</strong> en contraste con el <strong>hardware</strong> de un sistema informático?</p></li>
+<li><p>Explique la diferencia entre el “<strong>software de sistema</strong>” y el “<strong>software de aplicación</strong>”, dando un ejemplo de cada uno.</p></li>
+<li><p>¿Qué es el “<strong>software embebido</strong>” y en qué tipo de dispositivos suele encontrarse?</p></li>
+<li><p>¿Qué se entiende por “<strong>desarrollo de software</strong>” y por qué se considera un proceso más holístico que la simple programación? (holístico es un enfoque donde todos los componentes se ven integrados y hacen parte de un mismo ente).</p></li>
+<li><p>¿Cuáles son las diferencias fundamentales entre el rol de un <strong>programador</strong> y el de un <strong>desarrollador de software</strong>?</p></li>
+<li><p>Describa brevemente la “<strong>FASE 01: Análisis de requisitos</strong>” y por qué es fundamental para el éxito del proyecto.</p></li>
+<li><p>En la <strong>fase de diseño</strong>, ¿qué herramientas se suelen utilizar para la validación temprana y creación de prototipos?</p></li>
+<li><p>¿Por qué es importante realizar pruebas de rendimiento durante el proceso de <strong>desarrollo de software</strong>?</p></li>
+<li><p>¿En qué consiste la “<strong>FASE 05: Implementación</strong>” y qué ocurre si ya existe una versión previa del software?</p></li>
+<li><p>Explique por qué el <strong>mantenimiento</strong> y <strong>soporte</strong> son cruciales para evitar que el software quede desactualizado.</p></li>
+<li><p>¿Qué es un <strong>sistema operativo</strong> y cómo actúa como intermediario entre el usuario y el hardware?</p></li>
+<li><p>Explique la función de una <strong>base de datos</strong> y mencione dos ejemplos de sistemas que utilizan <strong>tablas</strong> para almacenar información.</p></li>
+<li><p>¿Qué diferencia principal existe entre un entorno de ejecución (como <strong>Node.js</strong>) y un <strong>framework de aplicación web</strong>?</p></li>
+<li><p>¿Qué es un <strong>IDE</strong> (Entorno de Desarrollo Integrado) y qué ventajas ofrece para el trabajo de un programador?</p></li>
+<li><p>Explique la diferencia entre las responsabilidades del “<strong>Front-end</strong>” y el “<strong>Back-end</strong>” en el desarrollo web.</p></li>
+<li><p>¿Por qué se dice que el lenguaje <strong>HTML</strong> ayuda a dar una “<strong>acomodación tipo árbol</strong>” al contenido de un sitio web?</p></li>
+<li><p>¿Cuáles son las características distintivas que hacen que el lenguaje <strong>Python</strong> sea considerado innovador para el <strong>desarrollo web</strong>?</p></li>
+<li><p>¿Qué aporta el lenguaje <strong>JavaScript</strong> a un sitio web en comparación con el uso exclusivo de <strong>HTML</strong> y <strong>CSS</strong>?</p></li>
 </ol>
 </div>
 </section>
@@ -730,30 +872,20 @@ Se crean los modelos con una herramienta de modelado que utilice un lenguaje de 
 <li><a class="reference internal" href="#">Guía 1021: PROGRAMACIÓN (P1)</a><ul>
 <li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
 <li><a class="reference internal" href="#a00-introduccion-0-1">A00: Introducción (+0,1)</a></li>
-<li><a class="reference internal" href="#a01-programacion">A01: PROGRAMACIÓN</a><ul>
+<li><a class="reference internal" href="#a01-programacion-0-1">A01: PROGRAMACIÓN (+0,1)</a><ul>
 <li><a class="reference internal" href="#que-es-la-programacion">¿Qué es la programación?</a></li>
 <li><a class="reference internal" href="#que-es-el-software">¿Qué es el software?</a></li>
 <li><a class="reference internal" href="#que-es-el-desarrollo-de-software">¿Qué es el desarrollo de software?</a></li>
 <li><a class="reference internal" href="#programadores-vs-desarrolladores">Programadores Vs Desarrolladores</a></li>
-<li><a class="reference internal" href="#tipos-de-software">Tipos de software</a></li>
 <li><a class="reference internal" href="#proceso-de-desarrollo-de-software">Proceso de desarrollo de software</a></li>
-<li><a class="reference internal" href="#tecnologias-usadas-en-el-desarrollo-de-software">Tecnologías usadas en el desarrollo de software</a><ul>
-<li><a class="reference internal" href="#sistemas-operativos">Sistemas operativos</a></li>
-<li><a class="reference internal" href="#bases-de-datos">Bases de datos</a></li>
-<li><a class="reference internal" href="#servidor-web">Servidor web</a></li>
-<li><a class="reference internal" href="#entornos-de-ejecucion">Entornos de ejecución</a></li>
-<li><a class="reference internal" href="#framework">Framework</a></li>
-<li><a class="reference internal" href="#ide">IDE</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#tecnologias-usadas-en-el-desarrollo-de-software">Tecnologías usadas en el desarrollo de software</a></li>
 <li><a class="reference internal" href="#desarollo-web">Desarollo web</a></li>
 <li><a class="reference internal" href="#lenguajes-de-programacion">Lenguajes de programación</a></li>
 <li><a class="reference internal" href="#software-de-aplicacion">Software de aplicación</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#a02-desarrolladores-y-programadores-0-2">A02: Desarrolladores y programadores (+0,2)</a></li>
-<li><a class="reference internal" href="#a03-tecnologias-usadas-en-el-desarrollo-de-software-0-2">A03: Tecnologías usadas en el desarrollo de software (+0,2)</a></li>
-<li><a class="reference internal" href="#axx-examen-final-4-0">AXX: Examen final (+4,0)</a></li>
+<li><a class="reference internal" href="#a02-taller-0-8">A02: Taller (+0,8)</a></li>
+<li><a class="reference internal" href="#a03-examen-escrito-4-0">A03: Examen escrito (+4,0)</a></li>
 </ul>
 </li>
 </ul>

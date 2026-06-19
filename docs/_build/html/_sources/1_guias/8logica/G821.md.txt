@@ -70,9 +70,8 @@
 
 1. Lea los siguientes conceptos:
 
+---
 ### ¿Qué es el HARDWARE?
-
-:::{admonition} Definición de HARDWARE
 
 [^1] El **HARDWARE**, es el conjunto de componentes de un **sistema informático** (por ejemplo un computador) los cuales se pueden ver o tocar.
 
@@ -85,11 +84,8 @@ A continuación se muestran algunos ejemplos:
 - **Procesamiento:** CPU
 - **Memoria:** memoria RAM, memoria CACHE
 - **Almacenamiento:** Discos duros, memorias USB
-:::
 
-#### ¿Qué es una CPU?
-
-:::{admonition} Definición de CPU
+#### CPU (Unidad de procesamiento central)
 
 ```{list-table}
 * - ```{figure} ./recursos/G821/image01.png
@@ -113,11 +109,9 @@ La CPU está compuesta principalmente por:
 - **Registros**: Son unidades pequeñas de memoria de alta velocidad
 
 La velocidad de la CPU se mide en Hertz (Hz) y determina qué tan rápido puede procesar las instrucciones. A mayor velocidad, mejor rendimiento del sistema.
-:::
 
-#### ¿Qué es la MEMORIA RAM?
 
-:::{admonition} Definición de Memoria RAM
+#### MEMORIA RAM
 
 ```{list-table}
 * - ```{figure} ./recursos/G821/image02.png
@@ -137,11 +131,9 @@ Las características de la memoria RAM son:
 - A mayor cantidad de RAM, más programas pueden ejecutarse simultáneamente.
 - Su velocidad afecta directamente el rendimiento del sistema.
 - Es diferente al almacenamiento permanente (disco duro) porque la memoria RAM es temporal.
-:::
 
+---
 ### ¿Qué es el SOFTWARE?
-
-:::{admonition} Definición de Software
 
 ```{list-table}
 * - ```{figure} ./recursos/G821/image03.png
@@ -158,11 +150,9 @@ El software solo puede verse su funcionamiento en la pantalla. El software es la
 - **Aplicaciones:** Diferente software que funciona sobre un sistema operativo como por ejemplo: Procesadores de texto, navegadores web, juegos, editores de imagen, modelado en 3D. La mayoría suelen tener interfáz gráfica.
 
 Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar con dispositivos electrónicos a través de elementos visuales en la pantalla, como iconos, botones y menús. Esto facilita la realización de acciones sin necesidad de conocimientos de programación, haciendo la experiencia más intuitiva y accesible.
-:::
 
+---
 ### ¿Qué es una SISTEMA COMPUTACIONAL?
-
-:::{admonition} Definición de Sistema Computacional
 
 [^2] Un **sistema computacional** es el conjunto de hardware que interactúa con un software para almacenar, procesar y mostrar información.
 
@@ -172,11 +162,9 @@ Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar c
     Computadora 
     ```
 ```
-:::
 
+---
 ### ¿Qué es la INFORMÁTICA?
-
-:::{admonition} Definición de Informática
 
 [^2] **La informática** es la ciencia o disciplina que estudia el diseño, construcción e implementación de **sistemas computacionales** para garantizar la **integridad** y **disponibilidad** de la información.
 
@@ -185,11 +173,8 @@ Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar c
 - REGLA 02: (Disponibilidad de la información)
     > *“Toda información debe estar disponible y llegar oportunamente”.*
 
-:::
-
+---
 ### ¿Qué es RAZONAR?
-
-:::{admonition} Definición de Razonar
 
 [^3] **Razonar** es la *actividad mental* mediante la cual se relacionan ideas o premisas para inferir una conclusión de manera coherente o justificada.
 
@@ -199,11 +184,8 @@ Por ejemplo:
 > - Premisa 02: Sócrates es humano
 > - **Conclusión:** Sócrates es mortal
 
-:::
-
+---
 ### ¿Qué es la LÓGICA?
-
-:::{admonition} Definición de Lógica
 
 [^3] La **lógica** es la *disciplina* que permite analizar y verificar la validez de los razonamientos, determinando si una conclusión se deriva correctamente de unas premisas.
 
@@ -217,18 +199,13 @@ Para el siguiente razonamiento, verifique si es correcto o no:
 
 > **ANÁLISIS:** Si Sócrates es un ser humano, entonces Sócrates es mortal porque todos los humanos son mortales. El razonamiento es correcto.
 
-:::
-
+---
 ### ¿Qué es lógica computacional?
-
-:::{admonition} Definición de **LÓGICA COMPUTACIONAL**
 
 [^3] La **lógica computacional** es el área de la **informática** que aplica los principios de la **lógica** para representar y automatizar el **razonamiento**, con el objetivo de resolver problemas de forma estructurada y eficiente.
 
-:::
-
 ---
-## A02: Hardware (+0,3)
+## A02: Taller (+0,8)
 {bdg-warning}`Actividad práctica`
 
 1. En su cuaderno responda las siguientes preguntas:
@@ -263,79 +240,61 @@ Para el siguiente razonamiento, verifique si es correcto o no:
 
     - ¿Por qué la memoria RAM y la CPU son tan importantes al momento de procesar información?
 
----
-## A03: Software (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+9. En su cuaderno responda las siguientes preguntas:
     - ¿Qué es el software?
     - ¿En qué se diferencian el HARDWARE y el SOFTWARE?
     - ¿Por qué los controladores de HARDWARE no necesitan interfaz gráfica?
 
-2. En su cuaderno, cree un mapa conceptual que presente la **clasificación del software**.
+10. En su cuaderno, cree un mapa conceptual que presente la **clasificación del software**.
 
-3. Consulte en Internet y luego en su cuaderno realice una descripción de lo siguiente:
+11. Consulte en Internet y luego en su cuaderno realice una descripción de lo siguiente:
     - 10 sistemas operativos de la empresa MICROSOFT.
     - 1 sistema operativo de la empresa GOOGLE.
     - 3 sistemas operativos de la empresa APPLE.
 
-4. En Internet, consulte dos ejemplos para cada una de las siguientes aplicaciones, luego descríbalas en su cuaderno:
+12. En Internet, consulte dos ejemplos para cada una de las siguientes aplicaciones, luego descríbalas en su cuaderno:
     - Procesadores de texto
     - Navegadores web
     - Videojuegos
     - Editores de imágenes
     - Modelado 3D
 
----
-## A04: Sistema computacional (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+13. En su cuaderno responda las siguientes preguntas:
 
     - ¿Qué es un sistema computacional?
     - ¿De qué manera un hardware interactúa con un software? (piense en un smartphone, un smart-TV, etc.)
     - ¿Cómo un sistema computacional interactúa con la información? (piense en un software como Microsoft EXCEL o WHATSAPP)
 
-2. En su cuaderno, con sus palabras escriba 5 ejemplos de sistemas computacionales (no usar IA). Tenga en cuenta el siguiente ejemplo:
+14. En su cuaderno, con sus palabras escriba 5 ejemplos de sistemas computacionales (no usar IA). Tenga en cuenta el siguiente ejemplo:
 
     > **EJEMPLO 01**: Un *portátil* es un ejemplo de **sistema computacional** porque su *hardware* (teclado, pantalla, touchpad) y *software* (OS, aplicaciones de escritorio) permite registrar, almacenar y mostrar información para un usuario”.
 
----
-## A05: Informática (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. responda las siguientes preguntas en su cuaderno:
+15. responda las siguientes preguntas en su cuaderno:
 
     - ¿En que se relacionan la informática y la información?
     - Aparte de la **integridad** y **disponibilidad**, ¿Qué otras reglas pueden ser aplicadas en la información?
 
-2. En su cuaderno, escriba los siguientes casos y por cada uno indique si aplica la regla 01 (*Integridad de la información*) o aplica la regla 02 (*disponibilidad de la información*) (escribir el por qué)
+16. En su cuaderno, escriba los siguientes casos y por cada uno indique si aplica la regla 01 (*Integridad de la información*) o aplica la regla 02 (*disponibilidad de la información*) (escribir el por qué)
 
     - **CASO 01**: *“De nada sirve que un banco entregue el valor de un saldo 10 meses después de ser solicitado. Es por eso que se usan las computadoras, porque permiten que la información este disponible y llegue oportunamente (milésimas de segundo)”*.
 
     - **CASO 02:** *“De nada sirve que una persona vaya al banco a consultar su saldo si este no corresponde al saldo real. Es por eso que se usan las computadoras, porque permiten que la información conserve su estado sin los riesgos que representa tenerla en otros medios como el papel o en la memoria de las personas”*.
 
+    :::{list-table}
+    * - ```{figure} ./recursos/G821/image05.png
+        :width: 300
+        **BANCOS:** Los bancos deben garantizar integridad y disponibilidad
+        ```
+    :::
 
-:::{list-table}
-* - ```{figure} ./recursos/G821/image05.png
-    :align: center
-    :width: 300
-    **BANCOS:** Los bancos deben garantizar integridad y disponibilidad
-    ```
-:::
-
----
-## A06: Razonamiento y lógica (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+17. En su cuaderno responda las siguientes preguntas:
 
     - ¿Qué es razonar?
     - ¿Qué es lógica?
     - ¿Cómo se relacionan los conceptos de razonar y lógica?
     - ¿Se podrían comprobar resultados de razonamiento sin aplicar lógica? (explique su respuesta).
 
-2. Razone la siguiente situación y en su cuaderno DEDUZCA que pudo haber pasado (3 conclusiones con temáticas diferentes):
+18. Razone la siguiente situación y en su cuaderno DEDUZCA que pudo haber pasado (3 conclusiones con temáticas diferentes):
 
     > - Premisa 01: Una persona escuchó ruidos extraños en su casa.
     > - Premisa 02: Los ruidos fueron en horas de la noche.
@@ -347,26 +306,21 @@ Para el siguiente razonamiento, verifique si es correcto o no:
     > - **Conclusión 02:** ?
     > - **Conclusión 03:** ?
 
----
-## A07: Lógica computacional (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda las siguientes preguntas:
+19. En su cuaderno responda las siguientes preguntas:
 
     - ¿Qué es un algoritmo?
     - ¿Qué es lógica computacional?
     - ¿Cómo se relaciona la lógica computacional y la informática?
     - ¿Cómo se relacionan los algoritmos y la lógica computacional?
 
-2. En su cuaderno escriba las siguientes frases e indique si es FALSO, VERDADERO y explique el por qué:
+20. En su cuaderno escriba las siguientes frases e indique si es FALSO, VERDADERO y explique el por qué:
 
     - “*La **lógica computacional** establece las reglas para programar una persona y modificar su comportamiento*”. __
 
     - “*Optimizar **algoritmos** permite solucionar problemas más rápido pero con los mismos recursos*”. __
 
-
 ---
-## A08: Examen escrito (+4,0)
+## A03: Examen escrito (+4,0)
 {bdg-danger}`Transferencia`
 
 :::{csv-table}

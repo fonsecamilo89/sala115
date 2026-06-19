@@ -66,7 +66,7 @@
     - ¿Qué tienen que ver las **redes de datos** y la **ciberseguridad** con el estudio de la informática?
 
 ---
-## A01: Redes de datos e Internet (+0,1)
+## A01: Redes de datos, Internet y Ciberseguridad (+0,1)
 
 {bdg-info}`Estructuración`
 
@@ -370,12 +370,6 @@ Una VPN o red privada virtual crea una conexión de red privada entre dispositiv
 :::
 
 ---
-## A02: Ciberseguridad (+0,1)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos relacionados con la ciberseguridad:
-
----
 ### ¿Qué es la ciberseguridad?
 
 :::{admonition} Protección de sistemas y redes
@@ -570,19 +564,12 @@ El hacking ético es una parte crucial de la **ciberseguridad moderna**. Ayu
 :::
 
 ---
-## A03: Mapa conceptual (+0,1)
+## A02: Taller (+0,8)
 {bdg-warning}`Actividad práctica`
 
-1. En una hoja de cuaderno, cree un mapa conceptual con los temas de **A01: Redes de datos e Internet**.
+1. En una hoja de cuaderno, cree un mapa conceptual con los temas de **A01: Redes de datos, Internet y Ciberseguridad**.
 
-1. En una hoja de cuaderno, cree un mapa conceptual con los temas de **A02: Ciberseguridad**.
-
-
----
-## A04: Red de datos (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno, responda las siguientes preguntas:
+2. En su cuaderno, responda las siguientes preguntas:
 
     - ¿Qué es una red de datos?
     - ¿En que se diferencian el INTERNET de una Intranet?
@@ -590,7 +577,7 @@ El hacking ético es una parte crucial de la **ciberseguridad moderna**. Ayu
     - ¿Por que existen los dispositivos todo en uno?
     - ¿Que son los servicios de red?
 
-2. Escriba las siguientes frases en su cuaderno y responda si es `falso` o `verdadero` y diga el por qué:
+3. Escriba las siguientes frases en su cuaderno y responda si es {guilabel}`falso` o {guilabel}`verdadero` y diga el por qué:
 
     - INTERNET permite conectar personas al rededor el mundo así como acceder a diferentes servicios en la nube. ___
     - En un INTRANET se deben tener accesos restringidos. No todo el mundo puede ingresar. ___
@@ -598,11 +585,7 @@ El hacking ético es una parte crucial de la **ciberseguridad moderna**. Ayu
     - A la página web de la institución educativa John F. Kennedy solo se puede acceder desde la INTRANET. ___
     - La INTRANET del portal del aula 115 se puede acceder desde cualquier lugar del mundo. ___
 
----
-## A05: Dispositivos de red (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. Indique qué es y en su cuaderno haga un dibujo de los siguientes dispositivos:
+4. Indique qué es y en su cuaderno haga un dibujo de los siguientes dispositivos:
 
     - Servidores.
     - Equipos cliente.
@@ -611,11 +594,7 @@ El hacking ético es una parte crucial de la **ciberseguridad moderna**. Ayu
     - Router.
     - Modem.
 
----
-## A06: Plano de red (aula 115) (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. El siguiente es un plano de la ubicación de diferentes *dispositivos** del aula 115 de la **Institución Educativa John F. Kennedy**. En una hoja de cuaderno, identifique en el plano los siguientes dispositivos:
+5. El siguiente es un plano de la ubicación de diferentes *dispositivos** del aula 115 de la **Institución Educativa John F. Kennedy**. En una hoja de cuaderno, identifique en el plano los siguientes dispositivos:
 
     - 11 portátiles (numerarlos)
     - 11 PCs de escritorio (numerarlos)
@@ -635,16 +614,12 @@ El hacking ético es una parte crucial de la **ciberseguridad moderna**. Ayu
         ```
     :::
 
-2. Con el plano anterior terminado, conecte los dispositivos de la siguiente forma:
+6. Con el plano anterior terminado, conecte los dispositivos de la siguiente forma:
 
     - Dibuje con líneas, las conexiones de los dispositivos que están conectados con **cable de red** a la INTRANET.
     - Dibuje con puntos, las conexiones de los dispositivos que están conectados de **forma inalámbrica** a la INTRANET.
 
----
-## A07: Servicios de red (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. Copie la siguiente sopa de letras en su cuaderno e IDENTIFIQUE 10 ejemplos de servicios de red:
+7. Copie la siguiente sopa de letras en su cuaderno e IDENTIFIQUE 10 ejemplos de servicios de red:
 
 :::{list-table}
 * - ```{figure} ./recursos/G1003/image14.png
@@ -656,11 +631,7 @@ El hacking ético es una parte crucial de la **ciberseguridad moderna**. Ayu
 Ejemplo:
 > **FIREWALL:** Supervisa y controla un tráfico de red en base a unas reglas de seguridad.
 
----
-## A08: Seguridad informática Vs Seguridad de la información (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. Complete la siguiente tabla en su cuaderno:
+8. Complete la siguiente tabla en su cuaderno:
 
 :::{table}
 
@@ -671,7 +642,7 @@ Ejemplo:
 | Elementos |  |  |
 :::
 
-2. En su cuaderno escriba y analice los siguientes casos e indique cual de los 3 principios de la seguridad de la información se ajusta a dicho caso. Justifique su respuesta.
+9. En su cuaderno escriba y analice los siguientes casos e indique cual de los 3 principios de la seguridad de la información se ajusta a dicho caso. Justifique su respuesta.
 
 > **CASO 01:** Por medio de un ataque cibernético el día de ayer a la empresa X le robaron toda la información personal de sus empleados. Ahora sus datos como su localización, teléfono y lugar de nacimiento están expuestos en internet. Esto dio a que suplantaran muchas identidades.
 
@@ -679,11 +650,7 @@ Ejemplo:
 
 > **CASO 03:** Un error humano de un técnico practicante modificó la información en las bases de datos de la nómina de este mes. Esto genera incumplimiento en el pago de salarios de los trabajadores de la empresa. Los funcionarios tendrán que esperar una semana más para que reciban su sueldo.
 
----
-## A09: Delitos informáticos (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. Lea la sección de **Delitos informáticos en Colombia** y complete las siguientes frases en su cuaderno:
+10. Lea la sección de **Delitos informáticos en Colombia** y complete las siguientes frases en su cuaderno:
 
     - Un artista está involucrado en un problema de plagio de una canción. La _______________ corresponde al abuelo de una actriz que debutó en los primeros años en YouTube.
     
@@ -695,17 +662,16 @@ Ejemplo:
     
     - Ya está listo el programa con la nueva funcionalidad de ____________________. Ahora si tenemos pasarela de pagos en línea.
 
-2. Suponga que usted es un juez de delitos informáticos. Copie y analice los siguientes casos en su cuaderno, e imponga las penas necesarias según la **ley 1273 del 2009**:
+11. Suponga que usted es un juez de delitos informáticos. Copie y analice los siguientes casos en su cuaderno, e imponga las penas necesarias según la **ley 1273 del 2009**:
 
-> **CASO 01:** El acusado se declara culpable de haber clonado el sitio web y así engañar a varias amas de casa vendiéndoles productos falsos de aseo.
+    > **CASO 01:** El acusado se declara culpable de haber clonado el sitio web y así engañar a varias amas de casa vendiéndoles productos falsos de aseo.
 
-> **CASO 02:** La víctima testificó con evidencia probatoria que sus comunicaciones fueron chuzadas por su ex-esposa mientras conducía la noche anterior.
+    > **CASO 02:** La víctima testificó con evidencia probatoria que sus comunicaciones fueron chuzadas por su ex-esposa mientras conducía la noche anterior.
 
-> **CASO 03:** El ingeniero accedió sin permiso al sistema empresarial. Esto fue 24 horas después de haber sido despedido. Por tanto todos sus accesos ya habían sido retirados. Sin embargo previamente había dejado una backdoor.
-
+    > **CASO 03:** El ingeniero accedió sin permiso al sistema empresarial. Esto fue 24 horas después de haber sido despedido. Por tanto todos sus accesos ya habían sido retirados. Sin embargo previamente había dejado una backdoor.
 
 ---
-## A10: Análisis y reflexión (+4,0)
+## A03: Análisis y reflexión (+4,0)
 {bdg-danger}`Transferencia`
 
 ```{csv-table}

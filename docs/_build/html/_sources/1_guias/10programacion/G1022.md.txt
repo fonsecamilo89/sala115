@@ -67,11 +67,12 @@
     - ¿Cómo se relacionan los datos con el hardware y el software?
 
 ---
-## A01: Información y datos
+## A01: Información y datos (+0,1)
 {bdg-info}`Estructuración`
 
 1. Lea los siguientes conceptos relacionados con el tema de información y datos.
 
+---
 ### ¿Qué son los datos?
 
 Los datos son valores en bruto, hechos o símbolos que por sí solos no tienen significado. Por ejemplo:
@@ -200,7 +201,7 @@ A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden s
 > “Aunque se usa el término **software** como sinónimo, la realidad es que un **programa** es solo una parte del **software**”.
 
 ---
-## A02: Datos, información y jerarquía de datos (+0,1)
+## A02: Taller (+0,8)
 {bdg-warning}`Actividad práctica`
 
 1. En su cuaderno responda las siguientes preguntas:
@@ -211,15 +212,11 @@ A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden s
 
 2.  En su cuaderno describa cada uno de los componentes de la jerarquía de datos y de un ejemplo de cada uno.
 
----
-## A03: Relación entre datos e información (+0,2)
-{bdg-warning}`Actividad práctica`
-
-1. Responda las siguientes preguntas en su cuaderno:
+3. Responda las siguientes preguntas en su cuaderno:
     - ¿Qué es tener sentido?
     - ¿Por qué es importante tener "sentido" para diferenciar entre datos e información?
 
-2. Dibuje una tabla en su cuaderno y en la primera columna escriba 15 ejemplos de datos. En la segunda columna convierta estos datos en información. En la tercera columna indique si la información es un valor cualitativo o cuantitativo.
+4. Dibuje una tabla en su cuaderno y en la primera columna escriba 15 ejemplos de datos. En la segunda columna convierta estos datos en información. En la tercera columna indique si la información es un valor cualitativo o cuantitativo.
 
     :::{list-table}
     :header-rows: 1
@@ -233,12 +230,8 @@ A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden s
       - "La edad del estudiante es 16 años, por tanto es menor de edad"
       - cuantitativo
     :::
-    
----
-## A04: Jerarquía de datos (+0,2)
-{bdg-warning}`Actividad práctica`
 
-1. Dibuje los siguientes círculos, ingrese ejemplos de datos según su jerarquía (ver la sección de **jerarquía de datos**).
+5. Dibuje los siguientes círculos, ingrese ejemplos de datos según su jerarquía (ver la sección de **jerarquía de datos**).
 
   :::{list-table}
   * - ```{figure} ./recursos/G1022/image01.png
@@ -247,25 +240,21 @@ A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden s
       ```
   :::
 
----
-## A05: Concepto de hardware (RAM y CPU) (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda:
+6. En su cuaderno responda:
     - ¿Qué es hardware?
     - ¿Cómo se puede clasificar el hardware de un sistema computacional?
 
-2. En su cuaderno mencione diferentes ejemplos de hardware y clasifíquelos.
+7. En su cuaderno mencione diferentes ejemplos de hardware y clasifíquelos.
 
-3. En su cuaderno responda:
+8. En su cuaderno responda:
     - ¿Qué es la memoria RAM?
     - ¿Cuales son las características de la memoria RAM?
 
-4. En INTERNET consulte 3 fabricantes de memorias RAM y escríbalos en su cuaderno. Tenga en cuenta lo siguiente:
+9. En INTERNET consulte 3 fabricantes de memorias RAM y escríbalos en su cuaderno. Tenga en cuenta lo siguiente:
     - Mencionar la nacionalidad del fabricante.
     - Mencionar los clientes del fabricante.
 
-5. En su cuaderno responda:
+10. En su cuaderno responda:
     - ¿Qué es la CPU?
     - ¿Qué son los Hertz(Hz)?
     - La CPU tiene 3 componentes. En su cuaderno complete el siguiente gráfico:
@@ -277,11 +266,7 @@ A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden s
           ```
       :::
 
----
-## A06: Utilidad del hardware (+0,2)
-{bdg-warning}`Actividad práctica`
-
-1. Teniendo en cuenta la siguiente imagen, responda en su cuaderno la siguiente pregunta:
+11. Teniendo en cuenta la siguiente imagen, responda en su cuaderno la siguiente pregunta:
     - ¿En que se diferencian los dispositivos de entrada con los dispositivos de salida?
 
     :::{list-table}
@@ -291,30 +276,22 @@ A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden s
         ```
     :::
 
-2. En media hoja de cuaderno, explique por que la CPU y la memoria RAM son los dispositivos más importantes para dar instrucciones.
+12. En media hoja de cuaderno, explique por que la CPU y la memoria RAM son los dispositivos más importantes para dar instrucciones.
 
-3. Respecto a la memoria **RAM**, en las siguientes frases diga si es falso o verdadero y explique el por qué:
+13. Respecto a la memoria **RAM**, en las siguientes frases diga si es falso o verdadero y explique el por qué:
 
     - La memoria **RAM** almacena infinitamente los datos y programas ___
     - Para acceder velozmente a la información en el equipo usamos la memoria **RAM** ___
     - La memoriam **RAM** no es volátil ___
     - La velocidad de trabajo de un computador, depende exclusivamente de la velocidad de la memoria **RAM** ___
 
----
-## A07: Concepto de software (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. En su cuaderno responda la siguientes preguntas:
+14. En su cuaderno responda la siguientes preguntas:
 
     - ¿Qué es el software?
     - ¿Cómo se clasifica el software?
     - ¿Cuál es la diferencia entre un software y un programa?
 
----
-## A08: Clasificación del software (+0,2)
-{bdg-warning}`Actividad práctica`
-
-1. Clasifique el siguiente software en la siguiente tabla:
+15. Clasifique el siguiente software en la siguiente tabla:
     - Windows 11, WORD, cpa000.exe, Linux UBUNTU, LibreOffice Calc, UNIX, hii.bin, ANDROID, FIREFOX, LibreOffice Writer, windowSys.exe, IOS, CHROME, FIFA, Photoshop, BIOS
 
     :::{table}
@@ -328,34 +305,39 @@ A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden s
     :::
 
 ---
-## A09: Examen final (+4,0)
+## A03: Examen final (+4,0)
 {bdg-danger}`Transferencia`
 
-:TIEMPO DEL EXAMEN: 30 minutos
-:NÚMERO DE PREGUNTAS: 10
+```{csv-table}
+:delim: ;
+**TIEMPO** ; 29 minutos
+**PREGUNTAS** ; 10
+**OBJETIVO** ; Comprobar conocimientos adquiridos.
+**ACTIVIDAD** ; Responda las siguientes preguntas. Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.
+```
 
 :::{admonition} Posibles preguntas
 
-1. Explique la diferencia entre datos e información y de un ejemplo de cada uno.
-2. ¿Por qué es importante que los datos tengan un contexto para convertirse en información útil?
-3. Describa qué son los valores cualitativos y cuantitativos y proporcione un ejemplo de cada uno.
-4. Explique la jerarquía de datos desde el bit hasta la base de datos, indicando qué representa cada nivel.
-5. ¿Por qué un byte está compuesto por 8 bits y qué importancia tiene esta unidad en la informática?
-6. Define qué es un registro y cómo se relaciona con los campos y archivos en la organización de datos.
-7. Explique qué es el hardware y mencione al menos cinco componentes físicos que lo conforman.
-8. Describa la función principal de la memoria RAM y por qué se considera una memoria volátil.
+1. Explique la diferencia entre **datos** e **información** y de un ejemplo de cada uno.
+2. ¿Por qué es importante que los **datos** tengan un contexto para convertirse en **información útil**?
+3. Describa qué son los **valores cualitativos** y **cuantitativos** y proporcione un ejemplo de cada uno.
+4. Explique la **jerarquía de datos** desde el **bit** hasta la **base de datos**, indicando qué representa cada nivel.
+5. ¿Por qué un **byte** está compuesto por 8 bits y qué importancia tiene esta unidad en la informática?
+6. Define qué es un **registro** y cómo se relaciona con los **campos** y **archivos** en la organización de datos.
+7. Explique qué es el **hardware** y mencione al menos **cinco componentes físicos** que lo conforman.
+8. Describa la función principal de la **memoria RAM** y por qué se considera una memoria volátil.
 9. ¿Cuál es el papel de la CPU en un sistema computacional y cuáles son sus componentes principales?
-10. Explique la diferencia entre software de sistema y software de aplicación con ejemplos.
-11. ¿Qué es un programa y cómo se relaciona con el software en general?
-12. Describa cómo la información procesada por un computador puede influir en la toma de decisiones.
-13. ¿Por qué es fundamental entender la arquitectura de un computador para programar eficientemente?
-14. Explique cómo los datos se almacenan y organizan en un sistema informático para facilitar su acceso.
-15. Describa el proceso que sigue un computador para transformar datos en información.
-16. ¿Qué papel juegan los Hertz dentro de la CPU y cómo afecta el rendimiento del sistema?
-17. Explique la importancia de la memoria RAM en la ejecución de programas y qué sucede cuando se apaga el computador.
-18. Describa cómo el hardware y el software trabajan juntos para realizar tareas computacionales.
-19. ¿Qué diferencias existen entre los distintos tipos de memoria en un computador y para qué se usa cada una?
-20. Reflexione sobre cómo la evolución de la arquitectura computacional ha impactado en el desarrollo de tecnologías actuales.
+10. Explique la diferencia entre **software de sistema** y **software de aplicación** con ejemplos.
+11. ¿Qué es un **programa** y cómo se relaciona con el **software en general**?
+12. Describa cómo la **información procesada** por un computador puede influir en la toma de decisiones.
+13. ¿Por qué es fundamental entender la **arquitectura de un computador** para programar eficientemente?
+14. Explique cómo los datos se almacenan y organizan en un **sistema informático** para facilitar su acceso.
+15. Describa el proceso que sigue un computador para transformar **datos** en **información**.
+16. ¿Qué papel juegan los **Hertz** dentro de la **CPU** y cómo afecta el rendimiento del sistema?
+17. Explique la importancia de la **memoria RAM** en la ejecución de programas y qué sucede cuando se apaga el computador.
+18. Describa cómo el **hardware** y el **software** trabajan juntos para realizar tareas computacionales.
+19. ¿Qué diferencias existen entre los distintos tipos de **memoria** en un computador y para qué se usa cada una?
+20. Reflexione sobre cómo la evolución de la **arquitectura computacional** ha impactado en el desarrollo de tecnologías actuales.
 :::
 
 [^1]: Trejos Buriticá, O. I. (2017). Lógica de programación. Ediciones de la U.
