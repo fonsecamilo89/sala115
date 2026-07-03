@@ -58,7 +58,7 @@
 :::
 
 ---
-## A00: Introducción (+0,1)
+## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
 1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
@@ -66,7 +66,7 @@
     - ¿En que se diferencian los datos de la información?
 
 ---
-## A01: Información y Jerarquía de datos (+0,1)
+## A01: Información y Jerarquía de datos (5%)
 {bdg-info}`Estructuración`
 
 1. Lea los siguientes conceptos:
@@ -237,8 +237,8 @@ Por ejemplo:
 
 
 ---
-## A02: Taller (+0,8)
-{bdg-warning}`Actividad práctica`
+## A02: Taller (10%)
+{bdg-info}`Estructuración`
 
 1. En su cuaderno responda las siguientes preguntas:
 
@@ -255,12 +255,14 @@ Por ejemplo:
     - Usar 5 datos cualitativos.
     - Usar 5 datos cuantitativos.
 
-:::{table}
-Datos|Información
--|-
-vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es necesario volver a llenar".
-11|"En una hora abren las puertas del colegio. Son las **11** de la mañana. Llegaré tarde".
-:::
+    :::{list-table} Ejemplo
+    * - ```{table}
+        Datos|Información
+        -|-
+        vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es necesario volver a llenar".
+        11|"En una hora abren las puertas del colegio. Son las **11** de la mañana. Llegaré tarde".
+        ```
+    :::
 
 3. En su cuaderno responda las siguientes preguntas:
 
@@ -306,8 +308,6 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
     ```
 :::
 
-<br/>
-
 6. DIBUJE el siguiente gráfico en su cuaderno:
 
     :::{list-table}
@@ -326,9 +326,13 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
      - ¿Cuáles son los Bytes?
      - ¿Cuáles son los bits?
 
-7. En su cuaderno (de forma horizontal) realice una **tabla** de 5 registros de sus compañeros con los siguientes campos (invente los datos):
+---
+## A03: TRABAJO CON TABLAS (20%)
+{bdg-warning}`Actividad práctica`
 
-:::{list-table}
+1. En su cuaderno (de forma horizontal) realice una **tabla** de 5 registros de sus compañeros con los siguientes campos (invente los datos):
+
+:::{list-table} Tabla Estudiantes
 * - ```{csv-table}
     :header-rows: 1
     ID, Nombre, Apellido, Edad, Curso de Ingreso, Año de Ingreso, Año de Egreso, Software más usado, Hardware más usado
@@ -338,8 +342,6 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
     03,,,,,,,,
     04,,,,,,,,
     ```
-* - ```{centered} Tabla Estudiantes
-    ```
 :::
 
 :::{admonition} Advertencia
@@ -347,7 +349,7 @@ vacío|"El agua fue bebida por el ciclista. El vaso ahora está **vacío**. Es n
 Los datos de **Edad**, **Curso de Ingreso**, **Año de Ingreso** y **Año de Egreso** deben tener lógica.
 :::
 
-8. Construya el **correo electrónico** del estudiante y agregarlo en la siguiente tabla, teniendo en cuenta la siguiente estructura (ignore los paréntesis):
+2. Construya el **correo electrónico** del estudiante y agregarlo en la siguiente tabla, teniendo en cuenta la siguiente estructura (ignore los paréntesis):
 
 $$
 (nombre).(apellido)(CursoIngreso)(AñoIngreso)@jfkennedy.edu.co
@@ -363,11 +365,9 @@ $$
     03,,,,
     04,,,,
     ```
-* - ```{centered} Tabla Cuentas Institucionales Estudiantes
-    ```
 :::
 
-9. En una hoja de su cuaderno (de forma horizontal), dibuje la siguiente base de datos:
+3. En una hoja de su cuaderno (de forma horizontal), dibuje la siguiente base de datos:
 
     :::{list-table}
     * - ```{figure} ./recursos/G822/image03.png
@@ -376,24 +376,24 @@ $$
         ```
     :::
 
-10. Acorde a la **base de datos**, en su cuaderno responda las siguientes preguntas:
+4. Acorde a la **base de datos**, en su cuaderno responda las siguientes preguntas:
     - ¿Cuál sería el nombre de la base de datos y por qué?
     - ¿Cuantas tablas hay en la base de datos? (colocar el nombre de cada tabla)
     - ¿Cuantos registros hay por cada tabla?
     - ¿Cuantos datos hay por cada registro de cada tabla?
 
-11. En la base de datos (dibujada en su cuaderno), identifique las tablas, registros y los datos.
+5. En la base de datos (dibujada en su cuaderno), identifique las **tablas**, **registros** y los **datos**.
 
-12. Con sus palabras, en su cuaderno explique cómo esta compuesta la **Tabla facturas**.
+6. Con sus palabras, en su cuaderno explique cómo esta compuesta la **Tabla facturas**.
 
-13. En su cuaderno, cree un nuevo registro para la **Tabla clientes**.
+7. En su cuaderno, cree un nuevo registro para la **Tabla clientes**.
 
-14. En su cuaderno, cree un nuevo registro para la **Tabla productos**.
+8. En su cuaderno, cree un nuevo registro para la **Tabla productos**.
 
-15. Con los nuevos registros **Tabla clientes** y **Tabla productos**, ahora cree una nueva *base de datos* compuesta por la **Tabla facturas** y la **Tabla elementos en línea**.
+9. Con los nuevos registros **Tabla clientes** y **Tabla productos**, ahora cree una nueva *base de datos* compuesta por la **Tabla facturas** y la **Tabla elementos en línea**.
 
 ---
-## A03: Examen escrito (+4,0)
+## A04: Examen escrito (60%)
 {bdg-danger}`Transferencia`
 
 :::{csv-table}
@@ -401,7 +401,7 @@ $$
 **TIEMPO** ; 29 minutos
 **PREGUNTAS** ; 10
 **OBJETIVO** ; Comprobar conocimientos adquiridos.
-**ACTIVIDAD** ; Responda las siguientes preguntas a continuación. Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.
+**INSTRUCCIONES** ; Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.
 :::
 
 :::{admonition} Posibles preguntas

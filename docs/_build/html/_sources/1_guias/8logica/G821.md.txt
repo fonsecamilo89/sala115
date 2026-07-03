@@ -57,7 +57,7 @@
 :::
 
 ---
-## A00: Introducción (+0,1)
+## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
 1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
@@ -65,7 +65,7 @@
     - ¿Qué tienen en común un smartphone, un smartTV y un computador?
 
 ---
-## A01: Concepto de lógica computacional (+0,1)
+## A01: Concepto de lógica computacional (5%)
 {bdg-info}`Estructuración`
 
 1. Lea los siguientes conceptos:
@@ -205,80 +205,100 @@ Para el siguiente razonamiento, verifique si es correcto o no:
 [^3] La **lógica computacional** es el área de la **informática** que aplica los principios de la **lógica** para representar y automatizar el **razonamiento**, con el objetivo de resolver problemas de forma estructurada y eficiente.
 
 ---
-## A02: Taller (+0,8)
-{bdg-warning}`Actividad práctica`
+## A02: Taller (10%)
+{bdg-info}`Estructuración`
+
 
 1. En su cuaderno responda las siguientes preguntas:
 
-    - ¿Qué es el hardware?
-    - ¿De que se compone el hardware de un sistema informático?
+    - ¿Qué es el **hardware**?
+    - ¿De que se compone el hardware de un **sistema informático**?
     - ¿El concepto de hardware solo puede aplicarse a computadores? ¿Por qué?
 
 2. En su cuaderno cree un **mapa conceptual** que muestre los diferentes componentes del hardware y dos ejemplos por cada componente.
 
 3. En su cuaderno responda las siguientes preguntas:
 
-    - ¿Qué es la CPU?
-    - ¿Por qué la CPU es considerada el cerebro del computador?
-    - ¿En que se mide la velocidad de las CPUs?
-    - ¿Qué significa que una velocidad en la CPU sea alta o baja?
+    - ¿Qué es la **CPU**?
+    - ¿Por qué la **CPU** es considerada el cerebro del computador?
+    - ¿En que se mide la velocidad de las **CPUs**?
+    - ¿Qué significa que una velocidad en la **CPU** sea alta o baja?
 
-4. En su cuaderno cree un **mapa conceptual** de los tres principales componentes de la CPU y descríbalos.
+4. En su cuaderno cree un **mapa conceptual** de los tres componentes principales de la **CPU** y descríbalos.
 
-5. En INTERNET, consulte 3 marcas de fabricantes de CPU y descríbalas en su cuaderno.
+5. En INTERNET, consulte **3 marcas de fabricantes de CPU** y descríbalas en su cuaderno.
 
 6. En su cuaderno responda las siguientes preguntas:
 
-    - ¿Qué es la memoria RAM?
-    - ¿De que se encarga la memoria RAM?
-    - ¿Por qué la memoria RAM es tan importante al momento de procesar la información?
-    - ¿Cuales son las características de la memoria RAM?
+    - ¿Qué es la memoria **RAM**?
+    - ¿De que se encarga la memoria **RAM**?
+    - ¿Por qué la memoria **RAM** es tan importante al momento de procesar la información?
+    - ¿Cuales son las características de la memoria **RAM**?
 
-7. En Internet, consulte las diferentes generaciones de memoria RAM y con esta información en su cuaderno CREE un mapa conceptual.
+7. En Internet, consulte las diferentes **generaciones de memoria RAM** y describalas en su cuaderno.
 
-8. Con los temas vistos hasta ahora, en **UNA PÁGINA DE CUADERNO**, con sus palabras (no usar IA) responda la siguiente pregunta:
+8. En su cuaderno responda las siguientes preguntas:
+    - ¿Qué es el **software**?
+    - ¿En qué se diferencian el **HARDWARE** y el **SOFTWARE**?
+    - ¿Por qué los controladores de **HARDWARE** no necesitan *interfaz gráfica*?
 
-    - ¿Por qué la memoria RAM y la CPU son tan importantes al momento de procesar información?
+9. En su cuaderno, cree un *mapa conceptual* que presente la **clasificación del software**.
 
-9. En su cuaderno responda las siguientes preguntas:
-    - ¿Qué es el software?
-    - ¿En qué se diferencian el HARDWARE y el SOFTWARE?
-    - ¿Por qué los controladores de HARDWARE no necesitan interfaz gráfica?
+10. Consulte en Internet y luego en su cuaderno realice una descripción de lo siguiente:
+    
+    - 10 sistemas operativos de la empresa **MICROSOFT**.
+    - 1 sistema operativo de la empresa **GOOGLE**.
+    - 3 sistemas operativos de la empresa **APPLE**.
 
-10. En su cuaderno, cree un mapa conceptual que presente la **clasificación del software**.
+11. En Internet, consulte *dos ejemplos* para cada uno de los siguientes **tipos de aplicación**. Las características de los ejemplos encontrados descríbalas en su cuaderno:
+    
+    - Procesadores de texto.
+    - Navegadores web.
+    - Videojuegos.
+    - Editores de imágenes.
+    - Modelado 3D.
 
-11. Consulte en Internet y luego en su cuaderno realice una descripción de lo siguiente:
-    - 10 sistemas operativos de la empresa MICROSOFT.
-    - 1 sistema operativo de la empresa GOOGLE.
-    - 3 sistemas operativos de la empresa APPLE.
+12. En su cuaderno responda las siguientes preguntas:
 
-12. En Internet, consulte dos ejemplos para cada una de las siguientes aplicaciones, luego descríbalas en su cuaderno:
-    - Procesadores de texto
-    - Navegadores web
-    - Videojuegos
-    - Editores de imágenes
-    - Modelado 3D
-
-13. En su cuaderno responda las siguientes preguntas:
-
-    - ¿Qué es un sistema computacional?
-    - ¿De qué manera un hardware interactúa con un software? (piense en un smartphone, un smart-TV, etc.)
+    - ¿Qué es un **sistema computacional**?
+    - ¿De qué manera un *hardware* interactúa con un *software*? (piense en un smartphone, un smart-TV, etc.)
     - ¿Cómo un sistema computacional interactúa con la información? (piense en un software como Microsoft EXCEL o WHATSAPP)
 
-14. En su cuaderno, con sus palabras escriba 5 ejemplos de sistemas computacionales (no usar IA). Tenga en cuenta el siguiente ejemplo:
+13. Responda las siguientes preguntas en su cuaderno:
+
+    - ¿En que se relacionan la *informática* y la *información*?
+    - Aparte de la **integridad** y **disponibilidad**, ¿Qué otras reglas pueden ser aplicadas en la *información*?
+    - ¿Qué es **razonar**?
+    - ¿Qué es **lógica**?
+    - ¿Cómo se relacionan los conceptos de *razonar* y *lógica*?
+    - ¿Se podrían comprobar resultados de razonamiento sin aplicar lógica? (explique su respuesta).
+    - ¿Qué es un *algoritmo*?
+    - ¿Qué es *lógica computacional*?
+    - ¿Cómo se relaciona la *lógica computacional* y la *informática*?
+    - ¿Cómo se relacionan los *algoritmos* y la *lógica computacional*?
+
+14. En su cuaderno escriba las siguientes frases e indique si es FALSO, VERDADERO y explique el por qué:
+
+    - “*La **lógica computacional** establece las reglas para programar una persona y modificar su comportamiento*”. __
+    - “*Optimizar **algoritmos** permite solucionar problemas más rápido pero con los mismos recursos*”. __
+
+---
+## A03: Análisis (20%)
+{bdg-warning}`Actividad práctica`
+
+1. Con los temas vistos hasta ahora, en **UNA PÁGINA DE CUADERNO**, con sus palabras (no usar IA) responda la siguiente pregunta:
+
+    - ¿Por qué la memoria **RAM** y la **CPU** son tan importantes al momento de *procesar información*?
+
+2. En su cuaderno, con sus palabras escriba 5 ejemplos de *sistemas computacionales* (no usar IA). Tenga en cuenta el siguiente ejemplo:
 
     > **EJEMPLO 01**: Un *portátil* es un ejemplo de **sistema computacional** porque su *hardware* (teclado, pantalla, touchpad) y *software* (OS, aplicaciones de escritorio) permite registrar, almacenar y mostrar información para un usuario”.
 
-15. responda las siguientes preguntas en su cuaderno:
+3. En su cuaderno, escriba los siguientes casos y por cada uno indique si aplica la regla 01 (*Integridad de la información*) o aplica la regla 02 (*disponibilidad de la información*) (escribir el por qué)
 
-    - ¿En que se relacionan la informática y la información?
-    - Aparte de la **integridad** y **disponibilidad**, ¿Qué otras reglas pueden ser aplicadas en la información?
+    - **CASO 01**: *“Un banco suele entregar valores de saldo una hora después de ser solicitado. El uso de computadoras permiten que la información este disponible y llegue oportunamente (milésimas de segundo)”*. El Administrador está revisando si el problema es de los PCs o incompetencia laboral.
 
-16. En su cuaderno, escriba los siguientes casos y por cada uno indique si aplica la regla 01 (*Integridad de la información*) o aplica la regla 02 (*disponibilidad de la información*) (escribir el por qué)
-
-    - **CASO 01**: *“De nada sirve que un banco entregue el valor de un saldo 10 meses después de ser solicitado. Es por eso que se usan las computadoras, porque permiten que la información este disponible y llegue oportunamente (milésimas de segundo)”*.
-
-    - **CASO 02:** *“De nada sirve que una persona vaya al banco a consultar su saldo si este no corresponde al saldo real. Es por eso que se usan las computadoras, porque permiten que la información conserve su estado sin los riesgos que representa tenerla en otros medios como el papel o en la memoria de las personas”*.
+    - **CASO 02:** “De nada sirve que una persona vaya al banco a consultar su saldo si este no corresponde al saldo real. Las computadoras permiten que la información **conserve su estado** sin los riesgos que representa tenerla en otros medios como el papel”.
 
     :::{list-table}
     * - ```{figure} ./recursos/G821/image05.png
@@ -287,14 +307,13 @@ Para el siguiente razonamiento, verifique si es correcto o no:
         ```
     :::
 
-17. En su cuaderno responda las siguientes preguntas:
+    - **CASO 03:** Al finalizar el período, el profesor sube las calificaciones definitivas a la plataforma. Cuando un estudiante entra a revisar su reporte, nota que en la asignatura de Tecnología tiene un 5.0, a pesar de que sabe que su nota real era 3.5 porque no entregó el último trabajo. Al investigar, se descubre que hubo un fallo en la base de datos que alteró los números de varios alumnos.
 
-    - ¿Qué es razonar?
-    - ¿Qué es lógica?
-    - ¿Cómo se relacionan los conceptos de razonar y lógica?
-    - ¿Se podrían comprobar resultados de razonamiento sin aplicar lógica? (explique su respuesta).
+    - **CASO 04:** Faltan 10 minutos para que se cierre la plataforma virtual donde los estudiantes deben subir su proyecto de grado. De repente, el servidor del colegio sufre una sobrecarga debido a la cantidad de accesos simultáneos y se cae por completo. Ningún estudiante puede entrar a la página ni enviar sus archivos durante las siguientes dos horas. Los documentos están intactos en los computadores, pero nadie puede entregarlos.
+  
+    - **CASO 05:** Un estudiante está trabajando en su guía de laboratorio dentro del aula de sistemas. Mientras el archivo se está guardando en el disco duro, otro compañero tropieza accidentalmente con el cable de energía de la torre y el computador se apaga bruscamente. Al reiniciar el equipo e intentar abrir el documento, aparece un mensaje de error que dice: "El archivo está dañado o su formato no es válido".
 
-18. Razone la siguiente situación y en su cuaderno DEDUZCA que pudo haber pasado (3 conclusiones con temáticas diferentes):
+4.  Razone la siguiente situación y en su cuaderno DEDUZCA que pudo haber pasado (3 conclusiones con temáticas diferentes):
 
     > - Premisa 01: Una persona escuchó ruidos extraños en su casa.
     > - Premisa 02: Los ruidos fueron en horas de la noche.
@@ -306,21 +325,8 @@ Para el siguiente razonamiento, verifique si es correcto o no:
     > - **Conclusión 02:** ?
     > - **Conclusión 03:** ?
 
-19. En su cuaderno responda las siguientes preguntas:
-
-    - ¿Qué es un algoritmo?
-    - ¿Qué es lógica computacional?
-    - ¿Cómo se relaciona la lógica computacional y la informática?
-    - ¿Cómo se relacionan los algoritmos y la lógica computacional?
-
-20. En su cuaderno escriba las siguientes frases e indique si es FALSO, VERDADERO y explique el por qué:
-
-    - “*La **lógica computacional** establece las reglas para programar una persona y modificar su comportamiento*”. __
-
-    - “*Optimizar **algoritmos** permite solucionar problemas más rápido pero con los mismos recursos*”. __
-
 ---
-## A03: Examen escrito (+4,0)
+## A04: Examen escrito (60%)
 {bdg-danger}`Transferencia`
 
 :::{csv-table}
@@ -328,7 +334,7 @@ Para el siguiente razonamiento, verifique si es correcto o no:
 **TIEMPO** ; 29 minutos
 **PREGUNTAS** ; 10
 **OBJETIVO** ; Comprobar conocimientos adquiridos.
-**ACTIVIDAD** ; Responda las siguientes preguntas. Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.
+**INSTRUCCIONES** ; Cuadernos y celulares guardados. Solo se permite hoja, lapiz y borrador.
 :::
 
 :::{admonition} Posibles preguntas
@@ -346,7 +352,7 @@ Para el siguiente razonamiento, verifique si es correcto o no:
 
 7. Defina qué es un **"sistema computacional"** y cómo interactúan sus componentes para procesar información.
 
-8. ¿Qué es la **informática** y cuáles son sus objetivos principales en relación con los sistemas computacionales?
+8. ¿Qué es la **informática** y cuáles son sus objetivos principales en relación con los *sistemas computacionales*?
 
 9. Explique las dos **reglas fundamentales de la informática** (Integridad y Disponibilidad de la información) y por qué son importantes.
 
