@@ -1,0 +1,767 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Redes de datos</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure,
+aside,
+details {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="3862daca-7698-802a-bf3e-e391218d5fec" class="page sans"><header><h1 class="page-title" dir="auto">Redes de datos</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h1 id="3862daca-7698-8000-878a-e7c549ae960c" style="display:inline-block" dir="auto">¿Qué son las redes de datos?</h1><p id="3862daca-7698-8019-9f14-f53f11f446e9" class="" dir="auto">Una <strong>red de datos</strong> es un sistema compuesto de dispositivos electrónicos y equipos de comunicación que permiten el intercambio de información en diferentes formatos a través de una red.</p><p id="3862daca-7698-8097-8ded-d935c1d30787" class="" dir="auto">Las organizaciones y empresas dependen de la infraestructura de red para realizar muchas de sus tareas y procesos de negocio.</p><figure id="3862daca-7698-8083-b7b6-e9c1c3bc3be1" class="image" data-notion-image="Redes%20de%20datos/image.png" dir="ltr"><a href="Redes%20de%20datos/image.png"><img style="width:432px" src="Redes%20de%20datos/image.png"/></a><figcaption>Configuración dispositivo de red</figcaption></figure><hr id="3862daca-7698-801f-b0b8-d81621df2073" dir="auto"/><h1 id="3862daca-7698-8012-b50f-e3004db0770c" style="display:inline-block" dir="auto">Tipos de redes</h1><h2 id="3862daca-7698-8027-9699-d09ff7d08bd8" style="display:inline-block" dir="auto">Red LAN</h2><p id="3862daca-7698-806a-9281-d1d57e148b94" class="" dir="auto"><em>Una red de área local es un tipo de red de telecomunicaciones que conecta dispositivos electrónicos en un área geográfica relativamente pequeña, como un edificio, una oficina, una casa o una sala de informática. Estas redes están diseñadas para facilitar la comunicación y el intercambio de datos entre dispositivos que se encuentran en proximidad física.</em></p><h2 id="3862daca-7698-80a3-9d4d-c5c4db67fd29" style="display:inline-block" dir="auto">Red MAN</h2><p id="3862daca-7698-80d3-a317-eacd695948c0" class="" dir="auto"><em>Una red de área metropolitana es una red de telecomunicaciones que conecta diferentes ubicaciones dentro de una ciudad o área metropolitana, situándose como una solución intermedia entre las redes LAN y las redes WAN.</em></p><h2 id="3862daca-7698-80bf-8a25-fad83457ba79" style="display:inline-block" dir="auto">Red WAN</h2><p id="3862daca-7698-8080-b615-e1a989f90ace" class="" dir="auto"><em>Las redes de área extensa, son redes de telecomunicaciones que cubren áreas geográficas muy amplias, incluso llegando a interconectar ubicaciones que se encuentran a mucha distancia o a nivel global. Las redes WAN se emplean en entornos empresariales para conectar sucursales, oficinas o puntos de venta en la industria, para supervisar y controlar dispositivos a distancia, y en aplicaciones gubernamentales y de investigación para la transmisión de datos entre ubicaciones distantes.</em></p><hr id="3862daca-7698-8050-8267-e77b60396c75" dir="auto"/><h1 id="3862daca-7698-80d9-9a51-eb02f1e50f66" style="display:inline-block" dir="auto">Clasificación de las redes</h1><h2 id="3862daca-7698-80cd-b58a-f89aa9407ccc" style="display:inline-block" dir="auto">Redes alámbricas</h2><p id="3862daca-7698-8047-8243-fb0abd461607" class="" dir="auto">Las <strong>redes alámbricas</strong> utilizan tecnologías de comunicación basadas en cables físicos (como cables de par trenzado, coaxiales o fibra óptica) para transmitir datos de un punto a otro, dependiendo de conexiones estructuradas y tangibles para el transporte de la información.</p><p id="3862daca-7698-80f1-a5c5-fcda42a66f9f" class="" dir="auto">Este tipo de redes de telecomunicaciones ofrecen una mayor estabilidad, velocidad y seguridad en la transmisión de datos, ya que la señal no está sujeta a interferencias ambientales ni a obstáculos físicos. Son redes ideales para conectar dispositivos que requieren un alto rendimiento y están situados en una zona fija, como ordenadores de escritorio, servidores, consolas de videojuegos o sistemas de almacenamiento en red (NAS).</p><p id="3862daca-7698-80e3-a5e5-dbf44c5c761e" class="" dir="auto">Entre las distintas clases de <em>redes alámbricas</em> se tienen:</p><ul id="3862daca-7698-802f-8a9e-daf5879cf463" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Basadas en tecnología Ethernet: redes locales domésticas o empresariales (LAN) que utilizan cables de cobre (UTP/STP).</li></ul><ul id="3862daca-7698-8011-b4ba-dc8f5f69e31c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Usando tecnologías de alta velocidad: redes de fibra óptica, ideales para conexiones troncales o internet de banda ancha simétrica.</li></ul><ul id="3862daca-7698-80a3-be72-c595f646f748" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Redes de infraestructura dedicada: conexiones de redes de área amplia (WAN) o líneas telefónicas tradicionales (como las antiguas conexiones ADSL).</li></ul><h2 id="3862daca-7698-80ba-85d9-d82593304ffd" style="display:inline-block" dir="auto">Redes inalámbricas</h2><p id="3862daca-7698-8085-a03a-ea9c8f677b52" class="" dir="auto">Las <strong>redes inalámbricas</strong> utilizan tecnologías de comunicación basadas en señales de <strong>radiofrecuencia</strong> o <strong>microondas</strong> para transmitir datos a través del aire, eliminando la necesidad de conexiones físicas por medio de cables.</p><p id="3862daca-7698-802c-b165-cbe75c7aa63c" class="" dir="auto">Este tipo de redes de telecomunicaciones ofrecen una mayor flexibilidad y movilidad, pues no es necesario que los dispositivos estén situados en una zona fija. Son redes ideales para conectar dispositivos móviles como smartphones, tablets, cámaras de video-vigilancia u ordenadores portátiles, entre otros.</p><p id="3862daca-7698-80ca-b99c-f62e4af5bb7f" class="" dir="auto">Entre las distintas clases de <em>redes inalámbricas</em> se tienen:</p><ul id="3862daca-7698-8014-9add-c51996366f4e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Basadas en tecnologías de radiofrecuencia: <strong>redes wifi</strong>.</li></ul><ul id="3862daca-7698-8007-9dd8-eebf843dc085" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Usando tecnologías como 3G, 4G o 5G: redes de <strong>telefonía móvil</strong>.</li></ul><ul id="3862daca-7698-8017-9482-cda1570c2751" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Redes ad hoc (se crean automáticamente entre dispositivos cercanos utilizando tecnologías como <strong>bluetooth</strong> o <strong>NFC</strong>).</li></ul><hr id="3862daca-7698-802a-9857-e804f610fc91" dir="auto"/><h1 id="3862daca-7698-80b8-94da-eb3d702b8253" style="display:inline-block" dir="auto">¿Qué es una Intranet?</h1><p id="3862daca-7698-80d3-a033-cce1bd6f94f1" class="" dir="auto">Una <strong>Intranet</strong> es una <strong>red privada local</strong> limitada a una organización. Sus características principales son:</p><ul id="3862daca-7698-80d5-8cee-d0677f4e2f75" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Acceso restringido solo a miembros de la organización.</li></ul><ul id="3862daca-7698-8025-bdb7-c6b8da8dd941" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Mayor control y seguridad.</li></ul><ul id="3862daca-7698-8056-9325-fa0f7cf901bb" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Optimizada para necesidades específicas.</li></ul><ul id="3862daca-7698-80bc-ad76-fb672824b242" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Compartición de recursos internos.</li></ul><ul id="3862daca-7698-808a-92cc-d1251dce1276" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Facilita la colaboración entre empleados.</li></ul><ul id="3862daca-7698-80df-8b61-d8521eed12c1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Usa protocolos TCP/IP.</li></ul><figure id="3862daca-7698-80e1-903f-f13caebe7463" class="image" data-notion-image="Redes%20de%20datos/image%201.png" dir="ltr"><a href="Redes%20de%20datos/image%201.png"><img style="width:432px" src="Redes%20de%20datos/image%201.png"/></a><figcaption>Dispositivos de una Intranet</figcaption></figure><hr id="3862daca-7698-80ff-929c-c6e8c6acf4c7" dir="auto"/><h1 id="3862daca-7698-80d7-af1e-ee0053b14f07" style="display:inline-block" dir="auto">¿Qué es INTERNET?</h1><p id="3862daca-7698-80cd-8244-f22bb729eb51" class="" dir="auto"><strong>INTERNET</strong> es una <strong>red pública global</strong> que conecta Intranets en todo el mundo. Sus principales características son:</p><ul id="3862daca-7698-80eb-9b7f-e7330500e643" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Acceso público y global.</li></ul><ul id="3862daca-7698-8066-a8ca-f73cb738603f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Conecta millones de redes diferentes.</li></ul><ul id="3862daca-7698-80cc-a5e7-e167ea022a19" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Requiere medidas de seguridad robustas.</li></ul><ul id="3862daca-7698-80e4-8e6c-f5501bfe4bd3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Permite acceder a servicios y recursos públicos.</li></ul><ul id="3862daca-7698-80f6-bc67-ff205da794ca" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Usa protocolos TCP/IP.</li></ul><figure id="3862daca-7698-8005-9ee5-e94313a1eb8d" class="image" data-notion-image="Redes%20de%20datos/image%202.png" dir="ltr"><a href="Redes%20de%20datos/image%202.png"><img style="width:336px" src="Redes%20de%20datos/image%202.png"/></a><figcaption>INTERNET</figcaption></figure><hr id="3862daca-7698-808f-b4f6-fdb6fd13b081" dir="auto"/><h1 id="3862daca-7698-80ea-ac4a-cb9ab3009c2b" style="display:inline-block" dir="auto">Componentes de una red</h1><p id="3922daca-7698-809e-b3b7-d684a2a07da9" class="" dir="auto">A continuación se describen los componentes de una red:</p><h2 id="3862daca-7698-80c5-91d5-c64e0a19e1d6" style="display:inline-block" dir="auto">Servidores</h2><p id="3862daca-7698-8031-9071-d73106e0f189" class="" dir="auto">Un servidor se trata de una computadora o aplicación encargada de proveer a otros equipos de unos determinados servicios, como el almacenamiento de información.</p><p id="3862daca-7698-80b7-bbe3-c357e11cc9d6" class="" dir="auto">La mayoría de servidores ni siquiera tienen periféricos como el monitor, teclado o mouse. Para acceder y trabajar en estos, se suele trabajar de forma remota por línea de comandos.</p><blockquote id="3862daca-7698-80bc-adcd-d64c98d6e7a3" class="" dir="auto"><em>Los servidores suelen ser </em><em><strong>equipos</strong></em><em> que </em><em><strong>muy rara vez se apagan</strong></em><em> y una vez configurados quedan trabajando con poca intervención del usuario. Solo se intervienen cuando sea necesario.</em></blockquote><p id="3862daca-7698-8058-ac03-fe222e3454aa" class="" dir="auto">Los servidores se encargan de procesar las solicitudes de esos otros equipos, que en ocasiones se denominan clientes, a los que les entregan datos por medio de una red que puede ser local o por Internet.</p><figure id="3862daca-7698-80cb-b048-c2423b0bd0ca" class="image" data-notion-image="Redes%20de%20datos/image%203.png" dir="ltr"><a href="Redes%20de%20datos/image%203.png"><img style="width:372.984375px" src="Redes%20de%20datos/image%203.png"/></a><figcaption>Conjunto de servidores</figcaption></figure><h2 id="3862daca-7698-80ec-80ca-f7bc5829b4e0" style="display:inline-block" dir="auto">Equipos cliente</h2><p id="3862daca-7698-8040-ab93-fffab8aaf690" class="" dir="auto">Un equipo cliente es un dispositivo destinado a realizar una determinada labor profesional, técnica o científica. En resumen, en una oficina, los equipos cliente serían cada uno de los ordenadores con los que se lleva a cabo el trabajo y que generalmente están conectados entre sí a través de un servidor para facilitar los flujos de información, conectadas a periféricos (como impresoras, escáneres, pantallas de proyección, etc.) y a la vez conectadas a Internet.</p><figure id="3862daca-7698-8057-8762-fb0169afca73" class="image" data-notion-image="Redes%20de%20datos/image%204.png" dir="ltr"><a href="Redes%20de%20datos/image%204.png"><img style="width:624px" src="Redes%20de%20datos/image%204.png"/></a><figcaption>Equipos cliente</figcaption></figure><h2 id="3862daca-7698-801a-ac42-f3e05a6e2784" style="display:inline-block" dir="auto">Switch</h2><p id="3862daca-7698-805d-a92c-d4f5b92dad99" class="" dir="auto">Los switches son dispositivos que se encargan de interconectar dos o más segmentos de red. Permiten formar lo que se conoce como una red de área local (LAN, Local Area Network), cuyas especificaciones técnicas siguen el estándar denominado Ethernet.</p><figure id="3862daca-7698-807c-b90b-d163d6505380" class="image" data-notion-image="Redes%20de%20datos/image%205.png" dir="ltr"><a href="Redes%20de%20datos/image%205.png"><img style="width:704px" src="Redes%20de%20datos/image%205.png"/></a><figcaption>Modelo de Switch</figcaption></figure><h2 id="3862daca-7698-8020-9578-c497bbbb00db" style="display:inline-block" dir="auto">Access Point</h2><p id="3862daca-7698-8083-b42a-ef22b949ed3c" class="" dir="auto">Los puntos de acceso (ACCESS POINT) son esenciales en las redes inalámbricas, ya que, ayudan a ampliar el alcance y la capacidad de conectividad. Recibe la señal de acceso a la red del router y aumenta su potencia cubriendo un área determinada. A diferencia de un repetidor, crea un nueva señal independiente en lugar de amplificarla.</p><figure id="3862daca-7698-80a3-962f-d33991d60f7d" class="image" data-notion-image="Redes%20de%20datos/image%206.png" dir="ltr"><a href="Redes%20de%20datos/image%206.png"><img style="width:480px" src="Redes%20de%20datos/image%206.png"/></a><figcaption>Modelo de Access Point</figcaption></figure><h2 id="3862daca-7698-8021-8a4b-c97fe4a8fefc" style="display:inline-block" dir="auto">Router</h2><p id="3862daca-7698-80f5-9ab7-f3f07bd97e9e" class="" dir="auto">También se le denomina enrutador, ya que se encarga de encontrar el mejor camino para la transmisión de información a través de una red. Sus usos pueden ser más o menos complejos aunque el más común es aquel que permite comunicar a varios equipos, ya sea en casa o en una oficina (aprovechando la misma conexión a Internet).</p><p id="3862daca-7698-80e7-9378-c180dba3e6fc" class="" dir="auto">El router recibe la conexión de red y la distribuye a todos los dispositivos conectados simultáneamente escogiendo la mejor vía para hacerlo de forma que la información completa llegue de manera adecuada y en el menor tiempo posible.</p><figure id="3862daca-7698-800e-9608-df4d0789edab" class="image" data-notion-image="Redes%20de%20datos/image%207.png" dir="ltr"><a href="Redes%20de%20datos/image%207.png"><img style="width:576px" src="Redes%20de%20datos/image%207.png"/></a><figcaption>Modelo de Router</figcaption></figure><h2 id="3862daca-7698-80ca-8770-fe8eb7eaf206" style="display:inline-block" dir="auto">MODEM = (<strong>Switch + Access Point + Router)</strong></h2><p id="3862daca-7698-8064-beb9-c7937dabfc05" class="" dir="auto">Algunos dispositivos de red son dispositivos todo en uno. Es el caso de los modem que son un Switch, un Access Point y un Router a la vez. Suelen ser facilitados por los prestadores de servicio de Internet.</p><p id="3862daca-7698-8052-be49-c1ea9e258fc8" class="" dir="auto">En empresas grandes donde están conectados varios edificios como las universidades, lo normal es que hayan varios dispositivos de red cumpliendo una única función (Switch, Access Point o Router). Esto se debe a que en dichas empresas suele haber mucha gente conectada y un dispositivo de red todo en uno no resulta suficiente.</p><p id="3862daca-7698-80af-964f-e20fb0b7d204" class="" dir="auto">En hogares el número de personas para conectarse a Internet suele ser de una a diez, por ahorro de costos es mejor usar los modem.</p><figure id="3862daca-7698-80bf-9e2e-d829cb575a11" class="image" data-notion-image="Redes%20de%20datos/image%208.png" dir="ltr"><a href="Redes%20de%20datos/image%208.png"><img style="width:292.984375px" src="Redes%20de%20datos/image%208.png"/></a><figcaption>Modelo de MODEM</figcaption></figure><h2 id="3862daca-7698-805e-85b2-cafe2c9de04f" style="display:inline-block" dir="auto">Rack de telecomunicaciones</h2><p id="3862daca-7698-80fd-b141-e5aa3c28c820" class="" dir="auto">Un rack de telecomunicaciones es una estructura metálica diseñada para alojar, organizar y proteger de forma centralizada equipos informáticos y de redes, como switches, routers, servidores, paneles de parcheo (patch panels) y sistemas de alimentación ininterrumpida (UPS).</p><p id="3862daca-7698-80e4-b220-e079c3d6542f" class="" dir="auto">Su principal función es optimizar el espacio en los cuartos de cableado o centros de datos, facilitando la ventilación de los dispositivos y el orden del cableado estructurado. Sus dimensiones internas están estandarizadas en anchura (generalmente 19 pulgadas) y la altura de los equipos se mide en Unidades de Rack (U).</p><figure id="3862daca-7698-800a-a5aa-c79239ecdae8" class="image" data-notion-image="Redes%20de%20datos/image101.png" dir="ltr"><a href="Redes%20de%20datos/image101.png"><img style="width:480px" src="Redes%20de%20datos/image101.png"/></a></figure><hr id="3862daca-7698-8002-af9c-ed5ba07148bb" dir="auto"/><h1 id="3862daca-7698-8056-a5f4-fd5df7b106a7" style="display:inline-block" dir="auto">Servicios de red</h1><p id="3922daca-7698-8047-b5d8-d60a1cf05d11" class="" dir="auto">A continuación se describen los servicios de red:</p><h2 id="3862daca-7698-809c-9cf9-d0ed687d746e" style="display:inline-block" dir="auto">SSH</h2><blockquote id="3922daca-7698-8038-8076-eb4703887aef" class="" dir="auto">Secure Shell</blockquote><p id="3862daca-7698-80b5-914c-c0cff75cc907" class="" dir="auto">Son las siglas de <strong>Secure Shell</strong> y es un <strong>protocolo de red destinado principalmente a la conexión con máquinas a las que accedemos por línea de comandos</strong>. En otras palabras, con SSH podemos conectarnos con servidores usando la red Internet como vía para las comunicaciones.</p><p id="3862daca-7698-80ee-b2ae-fa2fa5da5bb8" class="" dir="auto">Debido a su seguridad, SSH es el modo preferido para la realización de conexión con servidores que necesitamos administrar. La diferencia con respecto a otros protocolos más antiguos como Telnet es que <strong>el protocolo</strong> <strong>SSH siempre es seguro.</strong> Sin embargo, aprovechando la seguridad de las comunicaciones, también se utiliza para otros objetivos como:</p><ul id="3862daca-7698-8080-80f0-e85324447af5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Transferencia de Archivos Segura</strong>: Permite transferir archivos de forma segura entre sistemas locales y remotos utilizando herramientas como el comando SCP o SFTP.</li></ul><ul id="3862daca-7698-8067-84fa-e8a263904ddb" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Creación de Túneles de Red</strong>: SSH se utiliza para crear túneles de datos seguros que redirigen el tráfico de red a través de conexiones SSH, lo que puede ayudar a proteger la comunicación en redes no seguras. Se usan en sistemas como Ngrok, un software que permite a los desarrolladores exponer de manera remota los trabajos, tal como los tienen funcionando en su servidor de desarrollo local.</li></ul><figure id="3862daca-7698-80b2-bb59-da947b371a3a" class="image" data-notion-image="Redes%20de%20datos/image%209.png" dir="ltr"><a href="Redes%20de%20datos/image%209.png"><img style="width:480px" src="Redes%20de%20datos/image%209.png"/></a><figcaption>Logo OpenSSH</figcaption></figure><h2 id="3862daca-7698-805b-9b5e-e2a4e94aa5c6" style="display:inline-block" dir="auto">DHCP</h2><blockquote id="3862daca-7698-804a-980b-e17346375e13" class="" dir="auto"><strong>Proveedor de direcciones IP (ejemplo: 192.168.115.100)</strong></blockquote><p id="3862daca-7698-8055-9020-fe3945789ce1" class="" dir="auto">El Protocolo de configuración dinámica de host (DHCP) es un protocolo cliente-servidor que proporciona automáticamente un host de protocolo de Internet (IP) con su dirección IP y otra información de configuración relacionada, como la máscara de subred y la puerta de enlace de predeterminada.</p><h2 id="3862daca-7698-8099-b0da-e6cfed0016de" style="display:inline-block" dir="auto">DNS</h2><blockquote id="3862daca-7698-805c-9659-cfff7fd46d78" class="" dir="auto"><strong>Proveedor de nombres de dominio (ejemplo: www.jfkennedy.edu.co)</strong></blockquote><p id="3862daca-7698-8097-a065-d5cc68798ef9" class="" dir="auto">Sistema de nombres de dominio. Traduce los nombres de dominios aptos para lectura humana (por ejemplo, <a href="http://www.amazon.com/">www.amazon.com</a>) a direcciones IP aptas para lectura por parte de máquinas (por ejemplo, 18.155.246.193).</p><blockquote id="3862daca-7698-80d3-b836-e715654ff494" class="" dir="auto"><em>El sistema DNS de Internet funciona como una agenda telefónica donde se administra el mapa entre los nombres y los números. Los servidores DNS convierten las solicitudes de nombres en direcciones IP, controlando a qué servidor se dirigirá un usuario final cuando escriba un nombre de dominio en su navegador web. Estas solicitudes se denominan </em><em><strong>consultas</strong></em><em>.</em></blockquote><h2 id="3862daca-7698-80db-879f-d248b7768dd8" style="display:inline-block" dir="auto">FTP</h2><blockquote id="3862daca-7698-80ef-a4ee-cf2e33523976" class="" dir="auto"><strong>Proveedor de archivos</strong></blockquote><p id="3862daca-7698-805b-a8e0-d3729b14f790" class="" dir="auto">Son las siglas en inglés de File Transfer Protocol (protocolo de transferencia de archivos). FTP es el conjunto de reglas que los dispositivos de una red TCP/IP (Internet) utilizan para transferir archivos. Cuando usted usa Internet, en realidad se utiliza una variedad de diferentes protocolos. El FTP es simplemente el protocolo usado para transferir archivos.</p><h2 id="3862daca-7698-8095-ba9f-e84e307cff79" style="display:inline-block" dir="auto">HTTP</h2><blockquote id="3862daca-7698-8013-8c19-c6d9219e96ad" class="" dir="auto"><strong>Proveedor de páginas web</strong></blockquote><p id="3862daca-7698-80d0-a07f-f32811bd0aee" class="" dir="auto">El http (del inglés HyperText Transfer Protocol o Protocolo de Transferencia de Hiper Textos) es el protocolo de transmisión de información de la World Wide Web. Se trata de un protocolo “sin estado”, es decir, que no lleva registro de visitas anteriores sino que siempre empieza de nuevo. La información relativa a visitas previas se almacena en estos sistemas en las llamadas “cookies”, almacenadas en el sistema cliente.</p><h2 id="3862daca-7698-807e-bac1-fef7bcfee5b2" style="display:inline-block" dir="auto">HTTPS</h2><blockquote id="3862daca-7698-805c-870b-faa546493162" class="" dir="auto"><strong>Proveedor de páginas web seguras</strong></blockquote><p id="3862daca-7698-8015-b84e-dc9312e50497" class="" dir="auto">Por <strong>https</strong> se entiende HyperText Transfer Procotol Secure o Protocolo Seguro de Transferencia de Hipertexto, que no es más que la versión segura del http, es decir, una variante del mismo protocolo que se basa en la creación de un canal cifrado para la transmisión de la información, lo cual lo hace más apropiado para ciertos datos de tipo sensible (como claves y usuarios personales).</p><h2 id="3862daca-7698-80f1-961a-ffec737ed236" style="display:inline-block" dir="auto"><strong>SMTP-POP-IMAP</strong></h2><blockquote id="3862daca-7698-80c0-8171-ea9fcfd0f297" class="" dir="auto"><strong>Proveedor de correo electrónico</strong></blockquote><p id="3862daca-7698-8049-a6a6-ccd122573942" class="" dir="auto">Los servidores de correo electrónico son indispensables para proveer de este servicio. Funcionan de forma similar a un buzón de correos central, donde se almacena y se gestionan mensajes de forma segura, en espera a ser leído por un grupo de clientes (usuarios).</p><ul id="3862daca-7698-8096-a0c2-c9fe3f95869e" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>SMTP (Servidores de correo de salida)</strong>: Es el protocolo más usado por la flexibilidad en su operación al transferir información de un servidor de salida a uno de entrada, guardando la dirección de correo electrónico de quién lo envió.</li></ul><ul id="3862daca-7698-8051-a1c5-f5f995c6f8e9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>POP (Post Office Protocol Version 3)</strong>: Es una de las versiones más antiguas de protocolo y confiables. Cuando el dispositivo se conecta al servidor de correo, éste detecta el ordenador que realiza la acción y los aloja ahí, una vez descargados se eliminan de inmediato del servidor de entrada.</li></ul><ul id="3862daca-7698-80bd-969c-c4112b2e08f0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>IMAP (Internet Message Access Protocol)</strong>: Es un protocolo en los servidores de correo electrónico entrante que funciona para sincronizar el email a diferentes dispositivos. Se alojan siempre en el servidor y se visualiza a través de una copia de descarga.</li></ul><h2 id="3862daca-7698-80e8-b660-de8cf99e9651" style="display:inline-block" dir="auto"><strong>VOIP</strong></h2><blockquote id="3862daca-7698-800b-8752-f9a07a6829a5" class="" dir="auto"><strong>Proveedor de Voz IP</strong></blockquote><p id="3862daca-7698-803d-b9b3-f1aadb9e0042" class="" dir="auto">En inglés, las siglas VoIP significan <strong>Voice over Internet Protocol</strong>, es decir, voz sobre protocolo de Internet. La telefonía VoIP es un método que permite realizar llamadas de voz a través de la red, utilizando la banda ancha. Estas llamadas capturan el sonido procedente de un dispositivo móvil o fijo con conexión a Internet a través de un micrófono y lo transforman en paquetes de datos digitales. Los datos se transfieren a través de la red IP hasta el dispositivo receptor, al igual que el resto de contenidos transmitidos a través de Internet.</p><h2 id="3862daca-7698-8013-bf12-f9b64427c134" style="display:inline-block" dir="auto">RDP</h2><blockquote id="3862daca-7698-8096-bf38-f862ab8c3c45" class="" dir="auto">Proveedor de escritorio remoto</blockquote><p id="3862daca-7698-80d0-9a33-e1038e8431ad" class="" dir="auto">Las siglas RDP responden a <strong>Remote Desktop Protocol</strong>, o, en español, Protocolo de Escritorio Remoto. El protocolo RDP, entonces, permite que el escritorio de un equipo informático sea controlado a distancia por un usuario remoto. Existen diferentes programas de RDP como el RDP Remote Desktop de Microsoft –también conocido como RDP Windows–, o los más populares TeamViewer o PC Anywhere.</p><h2 id="3862daca-7698-80f5-a20c-f3e74119b26c" style="display:inline-block" dir="auto"><strong>FIREWALL</strong></h2><blockquote id="3862daca-7698-8037-80b3-ee1a4a4479eb" class="" dir="auto"><strong>Protección y control de tráfico en la red</strong></blockquote><p id="3862daca-7698-8007-8c07-eb00d2d03fe4" class="" dir="auto">Un firewall es un sistema de seguridad que supervisa y controla el tráfico de la red en base a un conjunto de reglas de seguridad. Los firewalls suelen situarse entre una red de confianza y una red no fiable; con frecuencia, la red no fiable es Internet. Por ejemplo, las redes de oficinas suelen utilizar un firewall para proteger su red de las amenazas en línea.</p><h2 id="3862daca-7698-8057-9e68-c3613f7153ab" style="display:inline-block" dir="auto"><strong>PROXY</strong></h2><blockquote id="3862daca-7698-8002-9a74-c39c77496c85" class="" dir="auto"><strong>Intermediario en la red</strong></blockquote><p id="3862daca-7698-80c5-ad0e-f543f292b984" class="" dir="auto">Un servidor proxy proporciona una puerta de enlace entre los usuarios e Internet. Es un servidor denominado “intermediario”, porque está entre los usuarios finales y las páginas web que visitan en línea. Cuando una computadora se conecta a Internet, utiliza una dirección IP. Algunas personas usan los proxies para fines personales, como ocultar su ubicación mientras miran películas en línea. Sin embargo, para una compañía, pueden utilizarse para realizar varias tareas clave como las siguientes:</p><ul id="3862daca-7698-801e-b3ba-d9ca388d18d9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Mejorar la seguridad.</li></ul><ul id="3862daca-7698-802b-95c5-f22c6e3cf6c9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Proteger la actividad de los empleados en Internet de las personas que intentan espiarlas.</li></ul><ul id="3862daca-7698-805b-b964-cb4929ee703b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Equilibrar el tráfico de Internet para evitar choques.</li></ul><ul id="3862daca-7698-80ef-aa87-c536f5a0a21d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Controlar el acceso de los empleados a los sitios web.</li></ul><ul id="3862daca-7698-8064-bd99-e00b43ceea47" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Guardar el ancho de banda almacenando archivos en caché o comprimiendo el tráfico entrante.</li></ul><h2 id="3862daca-7698-8082-a117-e121afb78394" style="display:inline-block" dir="auto"><strong>VPN</strong></h2><blockquote id="3862daca-7698-806b-a085-d10fb275a935" class="" dir="auto"><strong>Red Privada Virtual</strong></blockquote><p id="3862daca-7698-8043-90ae-dbc812a41457" class="" dir="auto">Una VPN o red privada virtual crea una conexión de red privada entre dispositivos a través de Internet. Las VPN se utilizan para transmitir datos de forma segura y anónima a través de redes públicas. Su funcionamiento consiste en ocultar las direcciones IP de los usuarios y cifrar los datos para que nadie que no esté autorizado a recibirlos pueda leerlos.</p><hr id="3862daca-7698-80f1-bc2a-c90ce01f6ed7" dir="auto"/><h1 id="3862daca-7698-80e9-bd96-e34b05b10217" style="display:inline-block" dir="auto">Ciberseguridad</h1><p id="3862daca-7698-808c-9314-db3e996f0ec3" class="" dir="auto">La ciberseguridad es la implementación de tecnologías, prácticas y políticas diseñadas para <strong>proteger</strong> sistemas, redes y programas de ataques digitales.</p><figure id="3862daca-7698-80e3-845e-e339f181eba3" class="image" data-notion-image="Redes%20de%20datos/image%2010.png" dir="ltr"><a href="Redes%20de%20datos/image%2010.png"><img style="width:480px" src="Redes%20de%20datos/image%2010.png"/></a><figcaption>Acceso remoto al sistema</figcaption></figure><p id="3862daca-7698-8080-b2f3-d8959ce068ad" class="" dir="auto">La ciberseguridad tiene los siguiente enfoques:</p><ol type="1" id="3862daca-7698-804e-919a-f2d3b4bf64b9" class="numbered-list" start="1" dir="auto"><li><strong>Protección de datos</strong>: Se enfoca en salvaguardar la información sensible de accesos no autorizados y ataques maliciosos.</li></ol><ol type="1" id="3862daca-7698-80c9-85a1-c57bd3eff7ce" class="numbered-list" start="2" dir="auto"><li><strong>Defensa de sistemas</strong>: Incluye la protección de computadoras, servidores, dispositivos móviles y redes contra amenazas cibernéticas.</li></ol><ol type="1" id="3862daca-7698-8036-ae7c-db19ce062f97" class="numbered-list" start="3" dir="auto"><li><strong>Prevención de ciberataques</strong>: Busca mitigar el impacto de ataques como malware, phishing y ransomware.</li></ol><ol type="1" id="3862daca-7698-807c-84f5-ee5857de1229" class="numbered-list" start="4" dir="auto"><li><strong>Convergencia de personas y tecnología</strong>: La ciberseguridad combina la colaboración de personas, procesos y tecnología para crear un entorno seguro.</li></ol><p id="3862daca-7698-804d-ae07-e55a0fb17d5f" class="" dir="auto">La ciberseguridad se puede clasificar en <strong>seguridad informática</strong> y <strong>seguridad de la información</strong>.</p><blockquote id="3862daca-7698-8056-8005-ddd3e4c18365" class="" dir="auto"><em>Una empresa debe implementar Antivirus y Firewalls (</em><em><strong>seguridad informática</strong></em><em>) pero también debe establecer políticas sobre por ejemplo, quién puede acceder a documentos confidenciales o cómo deben manejarse las copias físicas (</em><em><strong>seguridad de la información</strong></em><em>).</em></blockquote><hr id="3862daca-7698-8080-979b-d0e3a34f367b" dir="auto"/><h1 id="3862daca-7698-8039-a1c6-d25878486df8" style="display:inline-block" dir="auto">Seguridad informática</h1><p id="3862daca-7698-80d8-97c0-c1dacf028219" class="" dir="auto">La <strong>seguridad informática</strong> es el estudio e implementación de tecnologías para proteger sistemas informáticos, redes y datos en una organización.</p><blockquote id="3862daca-7698-8040-9681-dd565c74dc80" class="" dir="auto"><em>“Someter un sistema informático a constantes intentos de intrusión controlados, puede ser la mejor vía para garantizar su seguridad”.</em></blockquote><p id="3862daca-7698-80ab-88e4-ed3c3a4f94cb" class="" dir="auto">La seguridad informática estudia los siguientes campos:</p><h2 id="3862daca-7698-8080-96f2-fe7c60f859a4" style="display:inline-block" dir="auto"><strong>Ingeniería social: Hacking de seres humanos</strong></h2><p id="3862daca-7698-80ff-85fb-cf96613ea121" class="" dir="auto">La ingeniería social es una técnica de manipulación que aprovecha el error humano para obtener información privada, acceso a sistemas u objetos de valor. En el caso del delito cibernético, estas estafas de “hackeo de humanos” tienden a hacer que los usuarios desprevenidos expongan datos, propaguen infecciones de malware o den acceso a sistemas restringidos.</p><p id="3862daca-7698-8076-ac42-ed029d86806d" class="" dir="auto">Los ataques de ingeniería social pueden ocurrir en línea, en persona y a través de otras interacciones.</p><p id="3862daca-7698-801c-ae2f-d9e27a3ebe04" class="" dir="auto">Las estafas basadas en la ingeniería social se basan en cómo las personas piensan y actúan. Como tal, los ataques de ingeniería social son muy útiles para manipular el comportamiento de un usuario. Una vez que un atacante comprende qué motiva las acciones de un usuario, puede engañar y manipular al usuario de manera efectiva. Además, los piratas informáticos intentan explotar la falta de conocimiento de un usuario.</p><p id="3862daca-7698-802f-8afd-eb581416e5d3" class="" dir="auto">Gracias a la velocidad de la tecnología, muchos consumidores y empleados no son conscientes de ciertas amenazas, como las descargas no autorizadas (drive-in). Es posible que los usuarios no se den cuenta del valor real de sus datos personales, como el número de teléfono. Como resultado, muchos usuarios no están seguros de cómo protegerse mejor a sí mismos y a su información.</p><h2 id="3862daca-7698-804a-a28b-f22179fdfdaa" style="display:inline-block" dir="auto"><strong>Hacking en conexiones inalámbricas: (WIFI, infrarojo, microondas, Bluetooth)</strong></h2><p id="3862daca-7698-8007-a65f-f6e28fb07d58" class="" dir="auto">Las redes WIFI se encuentran en muchos lugares desde el hogar hasta en la empresa. Una gran cantidad de la lugares públicos también las adoptan y usan. Esto resulta en un canal de comunicación muy usado y a su vez vulnerable.</p><p id="3862daca-7698-805a-8efb-d31f76747ce4" class="" dir="auto">En redes WIFI se debe conocer de:</p><ul id="3862daca-7698-80ec-9757-e3363c0afadc" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Protocolos.</li></ul><ul id="3862daca-7698-8094-be36-f83fba6255b8" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Estándares.</li></ul><ul id="3862daca-7698-8027-88f6-f257e3ea366d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Algoritmos de cifrado.</li></ul><ul id="3862daca-7698-8018-9677-da91483dea1f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Sentencias legales.</li></ul><p id="3862daca-7698-80b8-94d8-ff8b48081931" class="" dir="auto">Con estos conceptos en mente es posible tratar temas de seguridad en diferentes redes inalámbricas, el equipo de laboratorio necesario y las herramientas que se pueden usar. Con este equipo ya sería posible analizar señales, monitorizar tráfico y simular diferentes ataques sobre redes abiertas como WEP, WPA y WPA2.</p><h2 id="3862daca-7698-80e7-bd07-eae2f63edcef" style="display:inline-block" dir="auto"><strong>Ataques controlados a la red: (PENTEST)</strong></h2><p id="3862daca-7698-80fa-879b-e6280ef79cfc" class="" dir="auto">El <strong>pentesting</strong> es la técnica de ciberseguridad consistente en atacar entornos informáticos con la intención de descubrir vulnerabilidades en los mismos, con el objetivo de reunir la información necesaria para poder prevenir en el futuro ataques externos hacia esos mismos equipos.</p><p id="3862daca-7698-8060-8561-f541f0ea8707" class="" dir="auto">El <strong>pentesting</strong> es una técnica 100% legal… siempre y cuando los ataques se realicen en sistemas de nuestra propiedad o con permiso del propietario.</p><p id="3862daca-7698-803f-8a19-e8686fd34d51" class="" dir="auto">La realización de un <code>pentest</code> requiere de un amplio conocimiento de múltiples tecnologías y sistemas operativos. Las herramientas necesarias (escáner de puertos, software de sniffing de redes, etc) suelen venir agrupadas en ‘toolkits’, en algún caso como parte integrante de versiones ‘live’ de GNU/Linux, como el popular y reputado Kali Linux (el antiguo Backtrack).</p><h2 id="3862daca-7698-80de-84e6-c1a5012f9139" style="display:inline-block" dir="auto"><strong>Defensa de la red: Seguridad perimetral y monitorización</strong></h2><p id="3862daca-7698-80ce-81ad-c6631e0e595f" class="" dir="auto">Las <strong>redes de telecomunicaciones</strong> envían y reciben grandes cantidades de información. Este campo se centra en proteger los datos que circulan por ellas. Para conocer el nivel de seguridad es necesario interceptar las comunicaciones desde un punto de vista ético y legal. De hacerlo de forma diferente conllevaría a problemas de millonarias multas o cárcel.</p><p id="3862daca-7698-80d8-b945-cb57765bfa07" class="" dir="auto">La monitorización y defensa de redes tiene como objetivo mantener seguras las redes por medio de la detección de intrusos y pruebas de pentesting. La confidencialidad de la información debe asegurarse con herramientas como:</p><ul id="3862daca-7698-8079-9d82-e8716e7f5b54" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Certificados digitales.</li></ul><ul id="3862daca-7698-80b1-847d-d0420f3026d8" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Cifrado de datos.</li></ul><ul id="3862daca-7698-802a-aad1-c9186485375b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Comunicaciones seguras con SSH.</li></ul><ul id="3862daca-7698-8016-abf5-dbc7818e9300" class="bulleted-list" dir="auto"><li style="list-style-type:disc">IPsec.</li></ul><ul id="3862daca-7698-8048-a530-d7b9dcafceb9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">VNP-SSL.</li></ul><ul id="3862daca-7698-805c-bea3-c61edd669f81" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Wireshark.</li></ul><h2 id="3862daca-7698-8051-bc60-d93ea3ac4ebd" style="display:inline-block" dir="auto"><strong>Hacking controlado en aplicaciones web</strong></h2><p id="3862daca-7698-80e2-86e9-d9de91f7c222" class="" dir="auto">El pentesting web o la seguridad en páginas o aplicaciones web consiste en diferentes técnicas de ataque de manera guiada contra aplicativos web, así como las contramedidas necesarias para proteger este tipo de sistemas.</p><p id="3862daca-7698-800b-9581-e7da2cde911c" class="" dir="auto">Las aplicaciones web son unas de las tecnologías de mayor uso hoy en día. Esto se debe a que los ingenieros quieren llevar todos los servicios a la web. Para mejorar la seguridad de los sitios web es necesario saber como se realizan los ataques y como se explotan vulnerabilidades. A continuación se listan técnicas usadas en el pentesting de páginas web:</p><ul id="3862daca-7698-8099-9227-f832ccf4ad72" class="bulleted-list" dir="auto"><li style="list-style-type:disc">SQL Injection.</li></ul><ul id="3862daca-7698-8093-bc7c-ee7f361746fd" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Blind SQL injection.</li></ul><ul id="3862daca-7698-8069-bfe2-ec634c70476a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">XSS Reflected.</li></ul><ul id="3862daca-7698-8020-8cbd-edbebe13086b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">XSS stored.</li></ul><ul id="3862daca-7698-80c4-9630-ffaa29beb4fa" class="bulleted-list" dir="auto"><li style="list-style-type:disc">CSRF.</li></ul><ul id="3862daca-7698-800a-b352-f7a01c536ae7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">XML Injection.</li></ul><ul id="3862daca-7698-80f8-9c24-ffa300e25604" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Session fixation.</li></ul><ul id="3862daca-7698-808c-9ef7-ccfa49b84934" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Botnet DDOS html5.</li></ul><hr id="3862daca-7698-80a4-a4bd-f0929e867cb0" dir="auto"/><h1 id="3862daca-7698-80a2-b6b3-e936d92e49d8" style="display:inline-block" dir="auto">Seguridad de la información</h1><p id="3862daca-7698-807e-a59c-d50b6a796056" class="" dir="auto">La <strong>seguridad de la información</strong> es algo más que la seguridad informática. Se centra en toda la empresa. Al fin y al cabo, la seguridad de la información no sólo se dirige a los datos procesados por los sistemas electrónicos, también abarca todos los activos de la empresa que deben protegerse, incluidos los que se encuentran en soportes de datos analógicos, como el papel.</p><blockquote id="3862daca-7698-8047-a5cc-fbf4f2e39e30" class="" dir="auto"><em>La </em><em><strong>seguridad de la información</strong></em><em> tiene un alcance más amplio que la seguridad informática. </em><em><strong>La seguridad informática</strong></em><em>, se refiere “sólo” al uso e implementación de tecnología para proteger la información. No tiene en cuenta normatividades. Por tanto la seguridad informática hace parte de la seguridad de la información.</em></blockquote><h2 id="3862daca-7698-8020-81b6-fca8b8ff6713" style="display:inline-block" dir="auto">Tres principios de seguridad de la información</h2><p id="3862daca-7698-80b6-acac-ed64743de5dc" class="" dir="auto">Los tres principios de la seguridad de la información son:</p><ul id="3862daca-7698-80fd-a0f7-fdf85b58571d" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Confidencialidad:</strong> Garantizar que solo personas autorizadas accedan a la información.</li></ul><ul id="3862daca-7698-804a-8a55-f04f1539d03f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Integridad:</strong> Asegurar que la información no sea alterada indebidamente.</li></ul><ul id="3862daca-7698-8034-8fb0-f5b693e9dc13" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Disponibilidad:</strong> Garantizar el acceso a la información cuando se necesite.</li></ul><p id="3862daca-7698-8028-9ab4-ce3754ae19d3" class="" dir="auto">Se aplican, por tanto, también a documentos importantes, que debe llegar a la puerta de su destinatario a tiempo, de forma fiable e intacta, transportada por un mensajero, pero totalmente analógico. Y estos principios se aplican igualmente a una hoja de papel que contenga información confidencial, pero que esté sobre un escritorio desatendido para que cualquiera pueda verla o que esté esperando en la fotocopiadora, libremente accesible, para un acceso no autorizado.</p><p id="3862daca-7698-80a8-88f7-f4cec91ae14a" class="" dir="auto">A continuación se muestran unos temas relacionados con la seguridad de la información:</p><ul id="3862daca-7698-80db-aa24-e802ecb66816" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Asegurar alimentación energética del hardware.</li></ul><ul id="3862daca-7698-8037-90ea-d402b8742e53" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Medidas contra el sobre-calentamiento del hardware.</li></ul><ul id="3862daca-7698-80c9-b751-d63b1db3d2b6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Análisis de virus y programas seguros.</li></ul><ul id="3862daca-7698-803c-b5fa-f27c83293bb5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Organización de las estructuras de las carpetas.</li></ul><ul id="3862daca-7698-80c7-9f43-e548bc771097" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Configuración y actualización de los cortafuegos.</li></ul><ul id="3862daca-7698-8026-9666-d22e17e4a97f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Formación de los empleados en temas de de ingeniería social.</li></ul><p id="3862daca-7698-80ec-9379-d5211dfc73c5" class="" dir="auto">En la seguridad de la información, lo importante es identificar los <strong>activos de información</strong> y lograr una clasificación certera de los <strong>activos de información críticos</strong>. De esta forma encaminar todos los recursos disponibles para poder proteger la información de estos activos críticos. Para ello entonces se usa el análisis de riesgos.</p><h2 id="3862daca-7698-80f8-a796-f552e0f91199" style="display:inline-block" dir="auto">ISO 27001</h2><p id="3862daca-7698-8004-b2c9-dbf272b347ce" class="" dir="auto">La <strong>norma ISO 27001</strong> es un estándar internacional que establece los requisitos para la implementación, mantenimiento y mejora continua de un Sistema de Gestión de la Seguridad de la Información (SGSI). Este sistema se utiliza para proteger la confidencialidad, integridad y disponibilidad de la información. La norma proporciona un marco para la seguridad de la información que ayuda a las organizaciones a identificar y gestionar sus riesgos de seguridad de la información de manera efectiva.</p><p id="3862daca-7698-80de-96a3-d51f4be46592" class="" dir="auto">La <strong>norma ISO 27001</strong> se aplica a cualquier tipo de organización, incluyendo pequeñas y medianas empresas, grandes corporaciones, instituciones gubernamentales y sin fines de lucro. También se puede aplicar en cualquier sector, incluyendo tecnología de la información, finanzas, salud y servicios públicos.</p><p id="3862daca-7698-8040-806a-d36f0d17e837" class="" dir="auto">Para la implementación de <strong>ISO 27001</strong> en una empresa se deben cumplir las siguientes fases:</p><ul id="3862daca-7698-8054-88f2-ca07b6f1336b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Fase de planificación:</strong> Durante la fase de planificación, la organización identifica sus requisitos de seguridad de la información y establece un plan para implementar el SGSI.</li></ul><ul id="3862daca-7698-8027-a887-c583351e0ff7" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Fase de implementación:</strong> La fase de implementación incluye la creación de políticas, procedimientos y controles para proteger la información.</li></ul><ul id="3862daca-7698-8042-ba3c-fca6e0a15d0d" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Fase de evaluación:</strong> Durante la fase de evaluación, la organización evalúa la eficacia de su SGSI e identifica áreas de mejora.</li></ul><ul id="3862daca-7698-80fb-b0e0-e2630499fcbd" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Fase de mejora continua:</strong> La fase de mejora continua implica la identificación y aplicación de mejoras a los procesos y controles del SGSI.</li></ul><h2 id="3862daca-7698-8032-bfe1-e10dc8b2d396" style="display:inline-block" dir="auto"><strong>Seguridad Informática Vs Seguridad de la Información</strong></h2><table id="3862daca-7698-80d4-98a7-cd0fdc753d87" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3862daca-7698-8042-9122-ee4f1029084c" dir="ltr"><th id="CDb~" class="simple-table-header-color simple-table-header" style="width:353.5px">Seguridad Informática</th><th id="i~FQ" class="simple-table-header-color simple-table-header" style="width:353.5px">Seguridad de la Información</th></tr></thead><tbody><tr id="3862daca-7698-80dd-8d7a-d3567017268a" dir="ltr"><td id="CDb~" class="" style="width:353.5px">Se centra en la protección de la infraestructura tecnológica y sistemas computacionales</td><td id="i~FQ" class="" style="width:353.5px">Abarca la protección de toda la información independiente de su formato o medio.</td></tr><tr id="3862daca-7698-808c-a916-dd9af9f54318" dir="ltr"><td id="CDb~" class="" style="width:353.5px">Protege contra amenazas técnicas como Virus, Malware y ciber-delincuentes</td><td id="i~FQ" class="" style="width:353.5px">Protege contra amenazas físicas, digitales y humanas.</td></tr><tr id="3862daca-7698-8037-86ab-c4bfa85b7c75" dir="ltr"><td id="CDb~" class="" style="width:353.5px">Implementa soluciones como Firewalls, antivirus y cifrado</td><td id="i~FQ" class="" style="width:353.5px">Implementa políticas, procedimientos y controles organizacionales.</td></tr></tbody></table><hr id="3862daca-7698-80e6-b4ee-c13ad501b3fa" dir="auto"/><h1 id="3862daca-7698-80fb-9e87-cb9702bdd85e" style="display:inline-block" dir="auto">Delitos informáticos en Colombia</h1><h2 id="3862daca-7698-803e-bebf-d9922d0f4226" style="display:inline-block" dir="auto"><strong>Regulaciones en la legislación Colombiana</strong></h2><p id="3862daca-7698-8017-ba0f-f38beb394319" class="" dir="auto">La legislación en el ámbito de la tecnología e informática es fundamental por los siguientes aspectos:</p><ul id="3862daca-7698-80a0-99f1-fc576ff57905" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Protección de datos personales:</strong> Establece normas para el manejo seguro y ético de la información personal de los usuarios.</li></ul><ul id="3862daca-7698-80e4-a541-ed8c761ad324" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Derechos digitales:</strong> Define y protege los derechos de los ciudadanos en el entorno digital.</li></ul><ul id="3862daca-7698-8021-869c-f265b5b61e65" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Seguridad cibernética:</strong> Establece marcos legales para combatir delitos informáticos y proteger la infraestructura digital.</li></ul><ul id="3862daca-7698-80f1-bb0a-dfd45c4bd9c7" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Comercio electrónico:</strong> Regula las transacciones en línea y protege tanto a consumidores como a empresas.</li></ul><ul id="3862daca-7698-8052-9a91-ddfd455d497e" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Propiedad intelectual:</strong> Protege los derechos de autor en contenidos digitales y desarrollos tecnológicos.</li></ul><ul id="3862daca-7698-8087-be8b-e27570d6ee7a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Responsabilidad digital:</strong> Define las obligaciones y responsabilidades de usuarios y proveedores de servicios tecnológicos.</li></ul><p id="3862daca-7698-80f3-99b3-e4e097a805af" class="" dir="auto">En Colombia, estas regulaciones son especialmente importantes para garantizar un desarrollo tecnológico seguro y equitativo en la sociedad digital.</p><h2 id="3862daca-7698-801b-b3d3-f026dfe10156" style="display:inline-block" dir="auto"><strong>Ley 1273 de 2009: Penas y multas por delitos informáticos en Colombia</strong></h2><p id="3862daca-7698-800a-9867-dee50d26b123" class="" dir="auto">De acuerdo con la <strong>Ley 1273 de 2009</strong>, las penas por delitos informáticos en Colombia varían según el delito:</p><ul id="3862daca-7698-8033-a727-ea70e4c7c60f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Acceso abusivo a sistemas informáticos:</strong> Prisión de 48 a 96 meses y multas de 100 a 1000 salarios mínimos legales mensuales vigentes.</li></ul><ul id="3862daca-7698-8044-b71d-e5fd7290fd69" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Interceptación de datos:</strong> Prisión de 36 a 72 meses y multas de 100 a 1000 salarios mínimos.</li></ul><ul id="3862daca-7698-80a9-9b89-d890430547f2" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Daño informático:</strong> Prisión de 48 a 96 meses y multas de 100 a 1000 salarios mínimos.</li></ul><ul id="3862daca-7698-80cf-af4c-c52e2b904011" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Suplantación de sitios web:</strong> Prisión de 48 a 96 meses y multas de 100 a 1000 salarios mínimos.</li></ul><p id="3862daca-7698-80f4-9067-cd765eb85c15" class="" dir="auto">Las penas pueden aumentar de la mitad a las tres cuartas partes si el delito se comete sobre redes o sistemas informáticos gubernamentales, del sector financiero, o contra sistemas de seguridad nacional.</p><h2 id="3862daca-7698-80b9-a8e7-c0af272c51f1" style="display:inline-block" dir="auto">Hacking ético</h2><p id="3862daca-7698-8096-bd5e-c140c9b4615d" class="" dir="auto">El <strong>hacking ético</strong> es la práctica de utilizar las mismas técnicas y herramientas que los hackers maliciosos, pero con el permiso y el objetivo de mejorar la seguridad de un sistema o red. En esencia, los hackers éticos actúan como “inspectores de seguridad” para identificar vulnerabilidades antes de que los atacantes puedan explotarlas.</p><p id="3862daca-7698-80dd-9af1-c15f9bb114eb" class="" dir="auto">Aquí hay algunos puntos clave sobre el hacking ético:</p><ul id="3862daca-7698-80f1-8c06-d76effedd529" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Autorización:</strong> Los hackers éticos siempre deben tener el permiso explícito del propietario del sistema o red que están probando.</li></ul><ul id="3862daca-7698-8075-ac16-ecf9ca8daf30" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Objetivo:</strong> El objetivo principal es identificar y solucionar vulnerabilidades de seguridad.</li></ul><ul id="3862daca-7698-801c-875f-ebb319d6d54b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Metodología:</strong> Siguen un proceso estructurado que incluye:<ul id="3862daca-7698-8032-8a06-e04c3749078e" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>Reconocimiento:</strong> Recopilación de información sobre el objetivo.</li></ul><ul id="3862daca-7698-802a-9594-f62ca84eb6dc" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>Escaneo:</strong> Identificación de puertos abiertos, servicios y sistemas operativos.</li></ul><ul id="3862daca-7698-80dc-a66c-dd1882101614" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>Obtención de acceso:</strong> Explotación de vulnerabilidades para acceder al sistema (con permiso).</li></ul><ul id="3862daca-7698-8040-8910-fd515f117909" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>Mantenimiento del acceso:</strong> Asegurar el acceso continuo para evaluar la seguridad.</li></ul><ul id="3862daca-7698-800a-8223-e8de39a84bac" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><strong>Análisis y reporte:</strong> Documentación de las vulnerabilidades encontradas y recomendaciones para su corrección.</li></ul></li></ul><ul id="3862daca-7698-80bc-bc0f-d7f5d7508909" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Herramientas:</strong> Utilizan una amplia gama de herramientas, muchas de las cuales son las mismas que usan los hackers maliciosos, como escáneres de vulnerabilidades, analizadores de red, herramientas de cracking de contraseñas, etc.</li></ul><ul id="3862daca-7698-80ef-b4e9-f918e2be3db9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Certificaciones:</strong> Existen certificaciones profesionales como Certified Ethical Hacker (CEH) que validan los conocimientos y habilidades de los hackers éticos.</li></ul><p id="3862daca-7698-8035-9d46-d6ce68791eca" class="" dir="auto">El hacking ético es una parte crucial de la <strong>ciberseguridad moderna</strong>. Ayuda a las organizaciones a proteger sus sistemas y datos de ataques maliciosos al identificar y solucionar las debilidades de seguridad.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
