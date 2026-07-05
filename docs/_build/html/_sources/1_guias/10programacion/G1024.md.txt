@@ -1,4 +1,4 @@
-# Guía 1024: PYTHON (P3)
+# Guía 1024: Variables en Python (P4)
 
 :::{list-table}
 :widths: 35 65
@@ -11,7 +11,7 @@
         - **DOCENTE**: Julian Camilo Fonseca Romero
         - **ASIGNATURA**: Programación
         - **GRADO**: ONCE
-        - **PERIODO**: 03
+        - **PERIODO**: 04
         - **TIEMPO**: 10 semanas (2 horas / semana)
         - **TIEMPO DE TRABAJO**: 20/20 horas
     ```
@@ -23,14 +23,14 @@
 {bdg-info}`Estructuración`
 {bdg-warning}`Actividad práctica`
 {bdg-danger}`Transferencia`
-- **Temática**: Fundamentos del lenguaje de programación Python, historia, características y uso práctico en la consola interactiva.
-- **Objetivo de aprendizaje**: Comprender la importancia de Python y aprender a utilizar la consola interactiva para consultar documentación y explorar el lenguaje de forma autónoma.
+- **Temática**: Variables y operaciones en PYTHON.
+- **Objetivo de aprendizaje**: Comprender, modelar y aplicar el concepto de variables y operadores aritméticos en el lenguaje de programación Python.
 ```
 
 ```{tab-item} Orientaciones curriculares
-- **Componente**: Uso y apropiación de la T&I.
-- **Competencia**: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.
-- **Evidencia de aprendizaje**: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.
+- **Componente**: Solución de problemas con T&I.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Identifico condiciones, especificaciones y restricciones de diseño, utilizadas en una solución tecnológica o del campo de la informática verificando su cumplimiento en diversos contextos.
 ```
 
 ```{tab-item} Criterios de evaluación
@@ -41,560 +41,963 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (1)
+```{tab-item} Recursos (2)
 - [PYTHON ONLINE](https://www.online-python.com). Ejercutar la consola interactiva PYTHON en el navegador.
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com). Libro digital en inglés.
 ```
 :::
 
 ## Mensaje del autor
 
 :::{pull-quote}
-"En esta guía didáctica, el estudiante se familiariza con la consola interactiva de Python, una herramienta fundamental para explorar y conocer las características básicas del lenguaje. Este primer acercamiento le permite al estudiante comprender cómo funciona Python y sentar las bases necesarias para un aprendizaje más profundo y estructurado en programación".
+"Esta guía didáctica ha sido diseñada para facilitar la comprensión de las variables en Python, enfocándose en su definición, tipos y uso básico. El objetivo es que los estudiantes adquieran una base sólida para manejar datos y operaciones en programación, fomentando un aprendizaje claro y práctico que les permita avanzar con confianza en el mundo de la programación".
 
 -- Camilo Fonseca
 :::
 
 ---
-## A00: Introducción (+0,1)
+## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
 1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
 
-2. LEA el **mensaje del autor** y en su cuaderno responda las siguientes preguntas:
+2. LEA el **mensaje del autor** y responda la siguiente pregunta en su cuaderno:
 
-    - ¿Qué entiende por consola interactiva?
-    - ¿Qué es para usted la palabra interactivo?
-    - Por medio de un lenguaje de programación ¿Puedo comunicarme con una máquina? ¿Por qué?
-    - El proceso de comunicación, ¿Se limita a solo dar órdenes o instrucciones? ¿Por qué?
+    - ¿Cómo los datos y las operaciones se relacionan con la programación?
 
 ---
-## A01: Lenguaje de programación PYTHON (+0,1)
+## A01: Variables y operaciones (5%)
 {bdg-info}`Estructuración`
 
 1. Lea los siguientes conceptos:
 
 ---
-### ¿Qué es PYTHON?
+### ¿Qué son las variables?
 
-:::{card} PYTHON
-:link: https://www.python.org/
-:shadow: lg
-:img-top: ./recursos/G1024/image01.png
-:width: 25%
-Acceder a la web PYTHON
-:::
+[^1] Las **variables** almacenan información. Es por eso que a través de las variables es que se accede a la memoria RAM del computador. Tener en cuenta lo siguiente:
 
-**Python** es un *lenguaje de programación* interpretado de alto nivel creado por **Guido van Rossum** y publicado por primera vez en **1991**. Está diseñado pensando en la legibilidad del código, y su sintaxis permite a los programadores expresar conceptos en menos líneas de **código**.
+> La diferencia entre una variable y otra radica en el **tipo de contenido** que esta almacena.
 
-:::{admonition} ¿Qué es un lenguaje de programación?
-:class: tip
-Un **lenguaje de programación** es un conjunto de reglas y sintaxis que permite a los programadores dar *instrucciones* a una computadora para que realice tareas específicas. Es una forma de comunicarse con las máquinas.
-:::
-
----
-### Principales características de Python
-
-A continuación se muestran algunas de las características de Python que lo convierten en un lenguaje de programación tan versátil y ampliamente utilizado:
-
-- **Legibilidad**. Python es conocido por su sintaxis clara y legible, que se parece en cierto modo a la inglesa.
-
-    ```python
-    import time
-
-    saludo = "Buenos días"
-
-    def saludar():
-        print(saludo)
-
-    saludo()
-    ```
-- **Fácil de aprender**. La legibilidad de Python hace que sea relativamente fácil para los principiantes entender lo que hace el código.
-- **Versatilidad**. Python no está limitado a un tipo de tarea: Usted puede utilizarlo en muchos campos. Si le interesa el desarrollo web, la automatización de tareas o la ciencia de datos, Python tiene las herramientas necesarias.
-- **Amplia compatibilidad con bibliotecas**. Incluye una gran biblioteca estándar con código pre-escrito para diversas tareas, lo que te ahorra tiempo y esfuerzo. Además, la vibrante comunidad de Python ha desarrollado miles de paquetes de terceros, que amplían aún más la funcionalidad de Python.
-- **Independencia de la plataforma**. Una de las grandes ventajas del lenguaje es que se puede escribir el código una vez y ejecutarlo en cualquier sistema operativo. Esta característica hace que Python sea una gran elección si trabaja en un equipo con diferentes sistemas operativos.
-- **Lenguaje interpretado**. Python es un lenguaje interpretado, lo que significa que el código se ejecuta línea a línea. Esto puede facilitar la depuración, ya que se puede probar pequeños fragmentos de código sin tener que compilar todo el programa.
-- **Código abierto y gratuito**. También es un lenguaje de código abierto, lo que significa que su código fuente está disponible libremente y puede distribuirse y modificarse. Esto ha llevado a una gran comunidad de desarrolladores a contribuir a su desarrollo y crear un vasto ecosistema de bibliotecas Python.
-
-    :::{card} PYTHON GIT
-    :link: https://github.com/python
-    :shadow: lg
-    Acceder al código fuente PYTHON
-    :::
-
-- **Tipado dinámico:** Python está tipado dinámicamente, lo que significa que no es necesario declarar el tipo de datos de una variable. El intérprete de Python infiere el tipo, lo que hace que el código sea más flexible y sea más fácil trabajar con él.
-
-> PYTHON ES UN LENGUAJE DE PROGRAMACIÓN MULTI-PROPÓSITO.
-
----
-### INDICE TIOBE
-
-A lo largo de los años, Python se ha convertido en uno de los lenguajes de programación más populares debido a su sencillez, versatilidad y amplia gama de aplicaciones. Esto se comprueba en el **índice TIOBE**.
-
-:::{admonition} ¿Qué es el índice TIOBE?
-:class: tip
-
-```{card}
-:link: https://www.tiobe.com/
-:shadow: lg
-:width: 50%
-:img-background: ./recursos/G1024/logo-tiobe.svg
-```
-
-El **índice de la comunidad de programación** (TIOBE) es un indicador de la popularidad de los lenguajes de programación creado por la compañía **TIOBE**. El índice se actualiza una vez al mes. Las calificaciones se basan en el número de ingenieros calificados en todo el mundo, cursos y proveedores de terceros.
-:::
-
-:::{admonition} ¿Cuales son las fuentes del índice TIOBE?
-:class: tip
-El índice TIOBE se basa en la consulta de sitios web populares como Google, Amazon, Wikipedia, Bing y más de 20 otros para calcular las calificaciones.
-
-Es importante señalar que el índice TIOBE no se trata del mejor lenguaje de programación ni del lenguaje en el que se han escrito más líneas de código.
-:::
-
-En la siguiente gráfica se muestra la **evolución del uso de PYTHON desde el año 2002** hasta la actualidad:
+> El contenido de una variable puede **cambiar** cuantas veces sea necesario.
 
 :::{list-table}
-+ - ```{figure} ./recursos/G1024/image02.png
-    :target: https://www.tiobe.com/tiobe-index/python/
-    :width: 700
-    Evolución uso de PYTHON 2002-2026
+* - ```{figure} ./recursos/G1024/image01.png
+    :width: 250
     ```
 :::
 
-La siguiente tabla muestra el ranking de lenguajes de programación más usados en **Diciembre de 2024 y Diciembre de 2025**:
+Una variable se compone de:
+
+- El nombre de la variable.
+- Un signo igual (=) (llamado operador de asignación).
+- Un valor a almacenar.
+
+En este ejemplo, la caja puede ser modelada así:
+
+```python
+spam = 42
+```
+
+Igualmente las variables pueden cambiar su valor cuantas veces sea necesario. Por ejemplo la variable spam puede ser:
+
+```python
+spam = 42
+spam = 9.8
+spam = "hola"
+spam = True
+```
+
+---
+#### ¿Cómo se almacenan los datos en las variables?
+Los datos se llevan a las variables a través del signo (=).
+
+> En el caso de los ***algoritmos computacionales y programas***, el signo (=) tiene una connotación diferente a la que se le da en matemáticas. El signo igual (=) significa que el computador va a realizar lo que está a la derecha del igual y lo va a almacenar en la variable que se encuentre a la izquierda del igual.
+
+Al momento de asignar valores correctamente a las variables, se debe tener en cuenta lo siguiente: 
+
+- Al lado izquierdo del igual (=) solo puede haber un nombre de variable.
+- Al lado derecho del igual (=) puede haber un valor constante, un valor variable o una expresión.
+- El computador siempre resuelve lo de la derecha del igual y su resultado lo almacena en la variable que esté a la izquierda del igual.
+
+> Cada vez que se asigna un nuevo valor a una variable, ***el valor anterior se pierde***.
+
+Por ejemplo:
 
 :::{list-table}
-* - ```{figure} ./recursos/G1024/image03.png
-    :target: https://www.tiobe.com/tiobe-index/
-    :width: 500
-    Ranking lenguajes de programación más usados
-    ```
+:width: 200
+:widths: 35 165
+:header-rows: 1
+* - Variables
+  - Descripción
+* - `A = 8`
+  - Le indica al computador que guarde el valor 8 en la variable de nombre **A**.
+* - `B = A`
+  - Le indica al computador que guarde en la variable **B** el contenido de la variable **A** que en la instrucción había sido “cargada” con 8, por lo tanto en la variable **B** queda el valor de 8 al igual que en la variable **B**.
+* - `C = A + B`
+  - Le indica al computador que en la variable **C** guarde el resultado de sumar el contenido de la variable **A** con el contenido de la variable **B**. Como la variable **A** tenía el contenido 8 y la variable **B** también tenía el contenido 8 entonces el computador sumara 8+8 y ese 16 de resultado lo almacenará en la variable **C**.
 :::
 
 ---
-### Aplicaciones de PYTHON
+### Tipos de variables
 
-:::{admonition} Desarrollo de software
+Las variables son de 4 tipos:
 
-Python se usa para la creación de scripts, automatización de tareas y pruebas que se ejecutan en **sistema operativo de computadores**. Por ejemplo:
-- Scripts para leer y escribir archivos, mostrar mensajes en pantalla, mostrar interfaces gráficas con botones o formularios.
-- Automatización de tareas de escritorio para emular clics del mouse, entradas por teclado para tareas repetitivas, envío automático de correos electrónicos y recolección automática de datos de sitios web. (Herramienta **schedule**)
+:::{admonition} ENTERO (int)
+Un dato de tipo entero es un número **QUE NO TIENE PUNTO DECIMAL**, por lo tanto en sus operaciones jamás va a generar decimales. Una variable que se declare de tipo entero podrá almacenar solamente datos de tipo entero. Las variables enteras cumplen con las reglas de la Aritmética Entera.
 
-    ```{card} Schedule
-    :shadow: lg
-    :img-bottom: ./recursos/G1024/image04.svg
-    :img-alt: Enlace a shedule
-    :width: 25%
-    :link: https://pypi.org/project/schedule/
-    ```
+Las variables de tipo entero pueden ser positivas o negativas.
 
-- Pruebas de depuración en funciones específicas de ejecución para encontrar comportamientos no deseados en la aplicación. (herramienta PyTest)
+Ejemplos de variables enteras son:
 
-    ```{card} Pytest
-    :shadow: lg
-    :img-bottom: ./recursos/G1024/image05.png
-    :img-alt: Enlace a PyTest
-    :width: 25%
-    :link: https://docs.pytest.org/en/stable/
-    ```
-:::
-
-:::{admonition} Desarrollo web
-Con Python se puede desarrollar programas que se ejecutan en un **navegador web**. Por ejemplo:
-
-- Con librerías como **Django** o **Flask**, se crean aplicaciones web que tengan sistemas de autenticación, paneles de administración e interacción con bases de datos.
-- **FASTAPI** permite la construcción sistemas que validen datos rápidamente entre el cliente y el servidor.
-
-:::{grid} 3
-```{grid-item-card} Django
-:link: https://www.djangoproject.com
-:img-bottom: ./recursos/G1024/image06.png
-:img-alt: Enlace a Django
-```
-```{grid-item-card} Flask
-:link: https://flask.palletsprojects.com/es/stable/
-:img-bottom: ./recursos/G1024/image07.png
-:img-alt: Enlace a Flask
-```
-```{grid-item-card} FastAPI
-:link: https://fastapi.tiangolo.com
-:img-bottom: ./recursos/G1024/image08.png
-:img-alt: Enlace a FASTAPI
+```python
+a = -2
+b = -100
+e = 0
+numero = 20
+H = 34
+edad = 12
 ```
 :::
-:::
 
-:::{admonition} Desarrollo de juegos
-Python es usado para la creación de videojuegos que se pueden ejecutar en **sistema operativo de computadoras o consolas**. Por ejemplo:
+:::{admonition} DECIMAL (float)
+También llamadas variables de tipo flotante o simplemente float.
 
-- **Pygame** se usa para el desarrollo de juegos 2D. Ofrece módulos para manejar gráficos, sonidos y eventos lo que facilita la creación de juegos de manera sencilla.
-- Con **PANDA 3D** se desarrollan juegos en 3D. Funciona con Python y C++. Es ideal para crear entornos tridimensionales complejos e interactivos.
+Una variable de tipo float ES UN NUMERO QUE TIENE PUNTO DECIMAL, por lo tanto en sus operaciones puede generar decimales.
 
-:::{grid} 2
-```{grid-item-card} PyGAME
-:link: https://www.pygame.org/
-:img-bottom: ./recursos/G1024/image09.png
-:img-alt: Enlace PyGAME
+Una variable que se declare de tipo float, solo podrá almacenar datos de tipo decimal.
+
+Las variables de tipo float pueden ser positivas o negativas.
+
+Ejemplos de variables float son:
+
+```python
+A = -1.25
+B = -1.0
+temperatura = -0.5
+velocidad = 0.0
+obs = 0.5
+sueldo = 1.2555555559
+PI = 3.1416
 ```
-```{grid-item-card} PANDA 3D
-:link: https://www.panda3d.org/
-:img-bottom: ./recursos/G1024/image10.png
-:img-alt: Enlace a PANDA 3D
+
+:::{admonition} No confundir variables tipo **float** con **int**
+:class: warning
+Se pueden dar variables así:
+```python
+A = 5
+B = 5.0
+```
+Pese a que A y B contienen el mismo número 5; A y B son variables diferentes porque A contiene un entero y B contiene un float.
+:::
+:::
+
+:::{admonition} CADENA (string)
+
+Cuando se tiene un conjunto de caracteres se dice técnicamente que se tiene una cadena, por lo tanto el nombre `“KENNEDY”` es una cadena o string.
+
+El contenido de una cadena se acostumbra encerrarlo entre comillas dobles.
+
+Ejemplos de variables de tipo string:
+
+```python
+saludo = "buenos días"
+nombre = "Camilo"
+apellido = "Fonseca"
+mensaje = "Bienvenido a la sala 115"
+entrada = "desea continuar con la operación? (si/no): "
+```
+
+:::{admonition} No confundir variables tipo **string** con **int** o **float**
+:class: warning
+Se pueden dar variables así:
+```python
+A = "12"
+B = 12
+```
+Pese a que A y B contienen el mismo número 12; A y B son variables diferentes porque A contiene un string y B contiene un entero.
+:::
+:::
+
+:::{admonition} BOOLEAN
+Este tipo de variables solo pueden almacenar dos valores: `True` o `False`.
+
+Ejemplos de variables tipo BOOLEANA:
+
+```python
+FACIL_APRENDER = True
+ES_INDEPENDIENTE = False
+ES_GRATUITO = False
+```
+
+```{admonition} Variables tipo boolean para tomar decisiones
+:class: tip
+Al ser para toma de decisiones, entonces las variables booleanas se usan para:
+
+- Condicionales
+- Bucles finitos o infinitos
 ```
 :::
-:::
 
-:::{admonition} Inteligencia artificial
-Debido a su simplicidad y gran cantidad de herramientas disponibles, Python se usa ampliamente en el desarrollo de aplicaciones de Inteligencia Artificial y Machine Learning. Por ejemplo:
-
-- Con la herramienta **TensorFlow** se pueden crear modelos de aprendizajes profundos. Los programadores pueden construir y entrenar redes neuronales complejas para aplicaciones como reconocimiento de voz o visión por computadora.
-
-    :::{card} TensorFlow
-    :shadow: lg
-    :img-bottom: ./recursos/G1024/image11.svg
-    :img-alt: Enlace a TensorFlow
-    :width: 50%
-    :link: https://www.tensorflow.org/
-    :::
-:::
-
-:::{admonition} Ciencia de datos
-Python se usa ampliamente para la manipulación y análisis de grandes cantidades de datos. Por ejemplo:
-
-- Con **PANDAS** se trabajan estructuras, limpieza, transformación y análisis de datos. Es ideal para manejar grandes conjuntos de datos de forma eficiente.
-    ```{card} PANDAS
-    :link: https://pandas.pydata.org
-    :img-bottom: ./recursos/G1024/image12.png
-    :img-alt: Enlace a PANDAS
-    :width: 50%
-    ```
-- **NumPy** se usa para ejecutar cálculos numéricos. Soporta arreglos multidimensionales y funciones matemáticas de alto rendimiento. También se pueden trabajar sobre aplicaciones estadísticas que requieran analizar altos volúmenes de información.
-    ```{card} NumPy
-    :link: https://numpy.org/
-    :img-bottom: ./recursos/G1024/image13.svg
-    :img-alt: Enlace a NumPy
-    :width: 25%
-    ```
-- **Matplotlib** es usado para visualización de datos con gráficos estadísticos estáticos, animados o interactivos.
-    ```{card} Matplotlib
-    :link: https://matplotlib.org/
-    :img-bottom: ./recursos/G1024/image14.svg
-    :img-alt: Enlace a Matplotlib
-    :width: 50%
-    ```
+:::{admonition} Ejemplos tipo de variables
+```{table}
+Tipo de variables | Ejemplo
+-|-
+Enteros (int) | -2, -1, 0, 1, 2, 3, 4, 5
+Decimales (float) | -1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25
+Cadenas (strings) | “a”, “aa”, “aaa”, “Hello!”, “11 cats”
+Booleanos | True, False
+```
 :::
 
 ---
-### Consola Interactiva PYTHON
+### Reglas para nombrar variables
 
-La consola de PYTHON es una herramienta que permite ejecutar algoritmos de forma interactiva.
+Para nombrar correctamente una variable, se siguen las siguientes reglas:
 
-Esta consola puede ejecutarse en cualquier sistema operativo que tenga instalado PYTHON.
+- Solo puede ser una palabra sin espacios.
+- Solo pueden tener letras, números y barra al piso `_`.
+- Un nombre de variable NUNCA puede comenzar por un número.
 
-+ En WINDOWS se puede buscar el aplicativo: **CMD**
-+ En LINUX se busca el aplicativo: **TERMINAL**
-
-Una vez dentro del aplicativo (**CMD** o **TERMINAL**) se escribe el comando: **{guilabel}`python3`**
-
-```bash
-C:\> python3
-```
-
-Una vez ejecutado este comando, el usuario estará dentro de la consola interactiva de PYTHON así como muestra la siguiente imagen:
+A continuación se muestran ejemplos de nombramiento correcto e incorrecto de variables:
 
 :::{list-table}
-* - ```{figure} ./recursos/G1024/image15.png
-    :width: 700
-    Consola interactiva PYTHON
-    ```
+:header-rows: 1
+:widths: 30 70
+* - Nombres de variables correctos
+  - Nombres de variables incorrectos
+* - `current_balance`
+  - `current-balance` (No se permiten guiones)
+* - `currentBalance`
+  - `current balance` (No se permiten espacios)
+* - `account4`
+  - `4account` (No se permite iniciar con un número)
+* - `_42`
+  - `42` (No puede ser un número)
+* - `TOTAL_SUM`
+  - `TOTAL_$UM` (caracteres especiales como $ no se permiten)
+* - `hello`
+  - `'hello'` (caracteres especiales como `'` o `""` no se permiten)
 :::
 
-La consola interactiva de Python inicialmente muestra la siguiente información:
-- Versión de Python: `v3.13.1:06714517797`
-- Fecha de compilación: `Dec 3 2024, 14:00:22`
-- Herramienta de compilación de la consola PYTHON: `Clang 15.0.0`. 
+---
+### Instrucciones en PYTHON
 
-Los comandos a introducir en esta consola se deben escribir después del prompt el cual son las tres signos mayor que (`>>>`), los cuales se muestran al inicio.
+La PC ejecuta instrucciones.
+
+- Estas instrucciones son ejecutadas de forma serial. Es decir una a la vez.
+- Las instrucciones son dadas por el programador.
+
+En la **consola interactiva de PYTHON**, cada instrucción se ejecuta cuando se presiona la tecla {kbd}`ENTER`.
+
+:::{admonition} EJEMPLO: Uso de la función `print()`
+:class: tip
+
+La función `print()` muestra en pantalla valores de variables. Los valores a mostrar deben ir dentro del paréntesis de la función `print()`.  Por ejemplo:
+
+```python
+>>> print("buenas tardes")
+buenas tardes
+```
+
+En este ejemplo, se le ordena al PC que muestre en pantalla el mensaje `“buenas tardes”`.
+
+Después de escribir completamente la instrucción, al PULSAR `ENTER` se ejecuta dicha instrucción.
+:::
+
+Se pueden ejecutar varias instrucciones en forma serial. Por ejemplo:
+
+```python
+>>> print("instruccion01")
+instruccion01
+>>> print("instruccion02")
+instruccion02
+>>> print("instruccion03")
+instruccion03
+>>> print("instruccion04")
+instruccion04
+>>> print("instruccion05")
+instruccion05
+```
+
+### Operadores en PYTHON
+
+Los operadores son signos que nos permiten expresar relaciones entre variables y/o constantes, de las cuales normalmente se desprende un resultado. En algoritmos computacionales se utilizan los siguientes operadores:
+
+:::{table}
+OPERADOR|Descripción
+-|-
+`+` | Operador para expresar la suma
+`-` | Operador para expresar la resta 
+`*` | Operador para expresar la multiplicación
+`**`| Operador para exponente
+`/` | Operador para expresar la división
+`//`| Operador para expresar división entera
+`%` | Operador módulo (para determinar residuo de división)
+:::
+
+> No olvidar que cada **nuevo valor** que se le asigne a una variable ya establecida; el **valor anterior** sera **eliminado**.
+
+A continuación se muestra un **ejemplo de uso de operadores**:
+
+> Resolver el siguiente conjunto de operaciones en su cuaderno:
+>
+> $$ a = 10 \\ b = 15 \\ c = 20 $$
+> 
+> $$ a = a + b \\ b = b + 8  \\ c = c + a $$
+>
+> $$ a = a + 5 \\ b = b + 3 \\ c = c + 2 $$
+>
+> $$ a = a - b \\ b = a - b \\ c = a - b $$
+
+**Solución**:
+
+```python
+a = 10
+b = 15
+c = 20
+
+a = a + b
+a = 10 + 15
+a = 25 # ahora a vale 25, es decir a ya no vale 10
+
+b = b + 8
+b = 15 + 8
+b = 23 # ahora b vale 23, es decir b ya no vale 15
+
+c = c + a
+c = 20 + 25
+c = 45 # ahora c vale 45, es decir c ya no vale 20
+
+a = a + 5
+a = 25 + 5
+a = 30
+
+b = b + 3
+b = 23 + 3
+b = 26
+
+c = c + 2
+c = 45 + 2
+c = 47
+
+a = a - b
+a = 30 - 26
+a = 4
+
+b = a - b
+b = 4 - 26
+b = -22
+
+c = a - b
+c = 4 - (-22) # por ley de los signos, 4 se suma con el 22
+c = 26
+
+# RESPUESTA:
+a = 4
+b = -22
+c = 26
+```
 
 ---
-## A02: Taller (+0,8)
+### Linealización de operaciones
+
+Algo a tener en cuenta al momento de escribir una instrucción es que el computador solo entiende las operaciones en formato lineal. Esto quiere decir escritas en una sola línea. De tal manera que si se quiere escribir la ecuación:
+
+$$
+X = {a + b \over c + d}
+$$
+
+La anterior ecuación en una sola línea sería:
+
+$$
+X = (a + b) / (c + d)
+$$
+
+A continuación se muestra un **ejemplo de linealización** de una operación:
+
+> Linealizar la siguiente operación en su cuaderno:
+> :::{math}
+> :label:
+> X = \frac{a+\frac{b}{c}-d}{a+\dfrac{b}{c^{d}+\dfrac{d}{a-\frac{b}{c}*d}}}
+> :::
+
+**Solución**:
+
+:::{admonition} PASO 01
+```{math}
+:label:
+X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+\dfrac{b}{c^{d}+\dfrac{d}{{\large a-\colorbox{yellow}{(b/c)}*d}}}}
+```
+Primero se linealizan las divisiones $(b/c)$ tanto en el numerador como en el denominador.
+:::
+
+:::{admonition} PASO 02
+```{math}
+:label:
+X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+\dfrac{b}{c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}}
+```
+Se linealiza la expresión: $(d/(a-(b/c) * d))$.
+:::
+
+:::{admonition} PASO 03
+```{math}
+:label:
+X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+{\color{Red} ({b}/({c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}))}}
+```
+Se linealiza la expresión: $(b/(c^d+(d/(a-(b/c)*d))))$.
+:::
+
+:::{admonition} PASO 04
+```{math}
+:label:
+X = (a+\colorbox{yellow}{(b/c)}-d)/(a+{\color{Red} ({b}/({c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}))})
+```
+Ahora se linealiza tanto numerador como denominador.
+:::
+
+:::{admonition} PASO 05
+```{math}
+:label:
+X = (a+\colorbox{yellow}{(b/c)}-d)/(a+{\color{black} ({b}/(\colorbox{orange}{c**{d}}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}))})
+```
+Finalmente la exponenciación en código python se realiza con (c**d).
+:::
+
+---
+### Precedencia (jerarquía de operadores)
+
+Algunas veces se tienen operaciones muy largas. Esto dificulta su solución. En estos casos se aplica la precedencia. La cual consiste en unas reglas que determinan el orden en el que una operación muy larga debe ser resuelta. Un ejemplo de una operación muy larga sería:
+
+$$
+X = ( a + (b / c) – d ) / ( a + ( b / ( (c ** d) + (d / ( a – (b / c) * d ) ) ) ) )
+$$
+
+:::{admonition} Reglas de presedencia
+:class: tip
+Los operadores aplican expresiones aritméticas en una secuencia precisa. Esta secuencia es determinada por las siguientes reglas de precedencia:
+
+1. **PARÉNTESIS {guilabel}`()`**: Los operadores en las expresiones contenidas dentro de pares de paréntesis se evalúan primero. Se dice que los paréntesis tienen el “nivel más alto de precedencia”. En casos de paréntesis anidados o incrustados, como:
+
+$$
+( a * ( b + c ) )
+$$
+
+Los operadores en el par más interno de paréntesis se aplican primero.
+En este caso primero se opera **a** y **b**. El resultado se multiplica por **a.**
+
+2. **MULTIPLICACIÓN** {guilabel}`*` , **DIVISIÓN** {guilabel}`/` , **MÓDULO** {guilabel}`%`: Las operaciones de multiplicación, división y módulo se aplican a continuación. Si una expresión contiene varias de esas operaciones, los operadores se aplican de izquierda a derecha. Se dice que los operadores de multiplicación, división y módulo tienen el mismo nivel de precedencia.
+
+3. **SUMA** {guilabel}`+`, **RESTA** {guilabel}`-`: Las operaciones de suma y resta se aplican de último. Si una expresión contiene varias de esas operaciones, los operadores se aplican de izquierda a derecha. Los operadores de suma y resta tienen el mismo nivel de precedencia.
+:::
+
+Las **reglas de precedencia de operadores** definen el orden en el que PYTHON aplica los operadores. Cuando se dice que ciertos operadores se aplican de izquierda a derecha, esto hace referencia a su asociatividad. Por ejemplo, los operadores de suma (+) en la expresión:
+
+:::{list-table}
+:widths: 25 75
+* - $X = a + b + c$
+  - Esta operación se asocian de izquierda a derecha, por lo que a + b se calcula primero, y después se agrega c a esa suma para determinar el valor de X.
+:::
+
+:::{admonition} Tabla de precedencia
+```{table}
+OPERADOR | OPERACIONES | Orden de evaluación (Precedencia)
+-|-|-
+( )	| Paréntesis | Se evalúa primero. Si los paréntesis son anidados como en la expresión: $(a * ( b + c / d + e ) )$ la expresión en el par más interno se evalúa primero
+`*` `**` `/` `//` `%` | Multiplicación, Exponente División, División entera Módulo | Se evalúan en segundo lugar. Si hay varios operadores de este tipo, se evalúan de izquierda a derecha.
+`+` `-` | Suma, Resta | Se evalúan al último. Si hay varios operadores de este tipo, se evalúan de izquierda a derecha.
+```
+:::
+
+---
+## A02: Taller (5%)
 {bdg-info}`Estructuración`
 
-1. En su cuaderno responda las siguientes preguntas:
+1. Responda las siguientes preguntas en su cuaderno:
 
-    - ¿En que año fue creado PYTHON, quién lo desarrolló y por qué?
+    - ¿Qué es una variable?
+    - ¿Por qué por medio de las variables se accede a la memoria RAM del computador?
+    - ¿Cómo se pueden diferenciar las variables?
 
-2. Cree un **diagrama de flujo** que explique las **principales características** de PYTHON. **No es necesario escribir la descripción de la característica**. Tenga en cuenta lo siguiente:
+2. En su cuaderno, realice tres dibujos que representen el nombramiento y la asignación de valores de diferentes variables. (**OBSERVE EL EJEMPLO DEL DIBUJO DE LA CAJA**). *En cada dibujo, identifique el **nombre** de la variable y el **valor** de dicha variable*.
 
-    > **INICIO** → PYTHON es legible.
-    > 
-    > 
-    > Verificar si es fácil de aprender. Si “NO” es fácil de aprender entonces: “NO es versátil”. Si “SI” es fácil de aprender entonces tiene amplia compatibilidad con bibliotecas.
-    > 
-    > Al NO ser versátil entonces es dependiente de la plataforma.
-    > 
-    > Al ser dependiente de la plataforma, entonces será necesario volver a identificar si es fácil de aprender.
-    > 
-    > Al tener una amplia compatibilidad con bibliotecas, entonces es necesario verificar si es un lenguaje interpretado. Si “SI” es un lenguaje interpretado entonces es un lenguaje de tipado dinámico. Si “NO” es un lenguaje interpretado entonces será necesario verificar nuevamente Si es un lenguaje fácil de aprender.
-    > 
-    > Al ser un lenguaje de tipado dinámico entonces es necesario verificar que es de código abierto y gratuito. Si “SI” es de código abierto y gratuito, entonces mostrar un mensaje que diga: “EMPEZAR A PROGRAMAR” → **FIN**. Si “NO” es de código abierto, entonces  mostrar un mensaje que diga: “ESTE LENGUAJE NO ES PYTHON” → **FIN**. 
-    >
+3. En media hoja de cuaderno, responda la siguiente pregunta:
 
-3. Responda si es **falso**, **verdadero** y **por qué**:
+    - ¿Por que el signo (=) tiene un significado en algoritmos computacionales y otro significado diferente en matemáticas?
 
-    **a.** PYTHON solo se puede ejecutar en Windows. ___
+4. Describa cuatro aspectos que se deben tener en cuenta al momento de **asignar valores a variables**.
 
-    **b.** La suscripción anual por el uso de PYTHON en proyectos privados cuesta $1,000,000 COP. ___
+5. Describa un ejemplo en el que una **variable pueda contener otra variable**.
 
-    **c.** El aplicativo web a desarrollar necesita cambiar cierta sintaxis del código fuente del lenguaje PYTHON. Lastima que no podamos cambiar nada o nos metemos en problemas legales. ___
+6. Describa los **cuatros tipos de variables** que existen e indique un ejemplo por cada una.
 
-    **d.** Con PYTHON podemos trabajar en automatización, creación de videojuegos e inteligencia artificial. ___
+7. Dibuje la siguiente tabla e indique que **tipo de variable** es y explique por qué.
 
-    **e.** Aprender PYTHON fue rápido. No sin antes aprender de algoritmia. Eso facilitó las cosas. ___
+:::{table}
+Ejemplo | Tipo de variable | ¿Por qué?
+-|-|-
+`A = True` | |		
+`b = 12.33` | |		
+`c = “12”` | |	
+`d = 12.0000099` | |
+`e = A` | |
+`f = “Este es el contenido”` | |
+`g = “3.141516”` | |
+`h = 19999999999991` | |
+`i = False` | |
+`j = h = d = b` | |
+:::
 
-4. En su cuaderno, responda las siguientes preguntas:
+8. Dibuje la siguiente tabla e identifique cuales son la **variables nombradas de forma correcta** y cuales son las **variables nombradas de forma incorrecta**.
 
-    - ¿Qué es el índice TIOBE? y ¿Qué es TIOBE?
-    - ¿Cada cuanto se actualiza el índice TIOBE?
-    - ¿Cuáles son las fuentes del índice TIOBE?
-
-5. Con la gráfica: **Evolución del uso de PYTHON desde el año 2002**, desarrolle la siguiente tabla en su cuaderno (identifique a diciembre del año):
-
-    :::{table}
-    Año|Rating
-    -|-
-    2026|
-    2024|23,84%
-    2022|
-    2020|
-    2018|
-    2016|
-    2014|
-    2012|
-    2010|
-    2008|
-    2006|
-    2004|
-    2002|
-    :::
-
-6. Con la tabla: **Ranking de los lenguajes de programación más usados en Diciembre de 2024 y 2025**, cree un gráfica así:
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1024/image16.png
-        :width: 240
-        EJEMPLO
-        ```
-    :::
-
-    - Los lenguajes de programación con sus fechas van en el eje X (dos fechas por lenguaje Diciembre de 2024 y Diciembre 2025).
-    - El Rating (%) va en el eje Y.
-    - Cruce con diagrama de barras.
-
-7. Cree un **mapa conceptual** de herramientas usadas PYTHON. El mapa conceptual debe tener 3 niveles:
-    - 1 NIVEL: Título Aplicaciones de PYTHON
-    - 2 NIVEL: 5 aplicaciones concretas
-    - 3 NIVEL: Herramientas por cada aplicación concreta.
-
-8. En su cuaderno, COMPLETE la siguiente sopa de letras con 16 términos relacionados con el lenguaje de programación **PYTHON**. En la medida que encuentre un término, realice su descripción.
-
-    :::{list-table} 
-    * - ```{figure} ./recursos/G1024/image17.png
-        :width: 550
-        Términos PYTHON
-        ```
-    :::
+:::{table}
+Variables | correcta o incorrecta	| ¿Por qué?
+-|-|-
+`balanceActual` | |		
+`balance_actual` | |		
+`balance-futuro` | |
+`“saludo` | |
+`SALUDO` | |
+`SUMA_TOTAL` | |
+`temperatura_` | |	
+`32` | |
+`_a` | |	
+`4chan` | |		
+`-pool` | |	
+:::
 
 ---
-## A03: Consola interactiva Python (+0,5)
+## A03: Presentación (5%)
 {bdg-warning}`Actividad práctica`
 
-> En esta actividad, el estudiante aprende a usar la **consola interactiva** de PYTHON.
+> En la **consola interactiva de PYTHON**, realizar una presentación con sus datos.
 
-1. En su sistema operativo abra una terminal de sistema.
+1. Abra una **terminal de sistema** e ingrese a la **consola interactiva** de PYTHON.
 
-    - Si es Windows use **CMD** (Command Prompt)
-    - SI es LINUX use la **CLI** (Command Line Interface) de su distribución.
+2. CREAR diez variables con los siguientes nombres de variables y sus datos:
 
-2. MAXIMIZAR la ventana de la terminal del sistema.
-
-3. En la terminal del sistema, EJECUTE el comando `python3`.
-
-    :::{admonition} ¿Cómo ejecutar comandos?
-    :class: hint
-    Dentro de la terminal, usted puede ejecutar comandos.
-
-    Para EJECUTAR un comando; es necesario escribir dicho comando y luego presionar la tecla **ENTER**.
-
-    Por ejemplo, AL EJECUTAR el comando `python3` saldrá lo siguiente:
-
-    ```text
-    usuario@AC115-01:~$ python3
-    Python 3.13.0 (main, Oct 8 2024, 00:00:00) 
-    ```
-    :::
-
-4. AHORA usted puede ejecutar comandos en la consola interactiva de PYTHON.
-
-5. IDENTIFIQUE el **prompt**.
-
-    :::{admonition} ¿Qué es el prompt? (**>>>**)
-    :class: hint
-    - El prompt son tres caracteres de mayor que (>>>).
-    - Los comandos a ejecutar (en la consola de PYTHON) se escriben después del prompt.
-    - Se escribe el comando y luego se PULSA la tecla **ENTER**.
-    :::
-
-6. Con la información mostrada en la consola, en su cuaderno complete la siguiente tabla:
-
-    :::{table}
-    Consola interactiva de PYTHON | Descripción
-    -|-
-    Versión de PYTHON |
-    Fecha de compilación |	
-    Herramienta de compilación |
-    :::
-
-7. En la consola interactiva de Python, a continuación escriba los siguientes comandos para obtener más información:
-
-    - EJECUTE el comando: `copyright`. Con la información generada, en su cuaderno responda la siguiente pregunta:
-        - ¿Cuáles son las cuatro organizaciones relacionadas con derechos reservados en el uso de PYTHON?
-
-    - EJECUTE el comando: `credits`. Traduzca al español la información generada y escríbala en su cuaderno.
-
-    - EJECUTE el comando: `license()`. Se genera una texto largo en la consola.
-
-        :::{admonition} Navegar en textos largos en consola
-        :class: tip
-        - Cuando se generan textos largos en la consola, para avanzar PULSE la tecla {kbd}`ENTER`.
-        - Si se quiere salir del texto largo, PULSE la tecla {kbd}`Q` y luego PULSE la tecla {kbd}`ENTER`.
-        :::
-
-8. NAVEGUE por todo el texto generado y en su cuaderno escriba solo los títulos (son 7 títulos). Por ejemplo:
-
-    - **A. HISTORY OF THE SOFTWARE**
-
-9. Traduzca la información de solo el primer título **A. HISTORY OF THE SOFTWARE** (no escribir la traducción en su cuaderno!!!) y responda las siguientes preguntas en su cuaderno:
-
-    - ¿En que año fue creado PYTHON?
-    - ¿Cuál es el nombre del creador de PYTHON?
-    - ¿En que lugar fue creado PYTHON?
-    - ¿Qué lenguaje de programación fue antecesor de PYTHON?
-    - ¿Qué eventos acontecieron en las siguientes fechas?:
-        - 1995
-        - Mayo del 2000
-        - Octubre del 2000
-        - 2001
-    - ¿Qué significan las siguientes siglas?:
-        - CWI
-        - CNRI
-        - PSF
-
-10. Complete la siguiente tabla relacionada con las versiones de PYTHON:
-
-    :::{table}
-    AÑO	| Versión | Versión derivada | Propietario | Compatibilidad con GPL
-    -|-|-|-|-
-    1991-1995 | 0.9.0 | N/A | CWI | SI
-    1995-1999 | 1.3 | 1.2 | CNRI | SI
-    2000| | | | 
-
-    :::
-
-11. CIERRE la consola interactiva de PYTHON y la terminal de sistema.
-
----
-## A04: Ayuda en la consola interactiva (+0,5)
-{bdg-warning}`Actividad práctica`
-
-1. ABRA una **terminal de sistema** e ingrese a la **consola interactiva de PYTHON**.
-
-2. EJECUTE el comando `help()`. Aparecerá en pantalla lo siguiente:
-
-    ```text
-    >>> Welcome to Python 3.13's help utility! If this is your first time using
-    Python, you should definitely check out the tutorial at
-    https://docs.python.org/3.13/tutorial/.
-
-    Enter the name of any module, keyword, or topic to get help on writing
-    Python programs and using Python modules.  To get a list of available
-    modules, keywords, symbols, or topics, enter "modules", "keywords",
-    "symbols", or "topics".
-
-    Each module also comes with a one-line summary of what it does; to list
-    the modules whose name or summary contain a given string such as "spam",
-    enter "modules spam".
+    - nombre (**tipo STRING**)
+    - apellido (**tipo STRING**)
+    - edad (**tipo ENTERO**)
+    - día de nacimiento (**TIPO ENTERO**)
+    - mes de nacimiento (**TIPO ENTERO**)
+    - año de nacimiento (**TIPO ENTERO**)
+    - grado (**TIPO ENTERO**)
+    - curso (**TIPO STRING**)
+    - deporte (**TIPO STRING**)
+    - hobby (**TIPO STRING**)
     
-    To quit this help utility and return to the interpreter,
-    enter "q", "quit" or "exit".
-
-    help>
-    ```
-
-    :::{admonition} Tenga en cuenta
+    :::{admonition} EJEMPLO
     :class: tip
-    Tenga en cuenta que usted AHORA está en la ayuda de la consola interactiva de PYTHON. Por tanto el prompt ahora es:
-    `help>`
+    ```python
+    >>> nombre = "Camilo"
+    >>> apellido = "Fonseca"
+    >>> edad = 35
+    >>> dia_nacimiento = 4
+    >>> mes_nacimiento = 12
+    >>> año_nacimiento = 1989
+    >>> grado = 11
+    >>> curso = "A"
+    >>> deporte = "natacion"
+    >>> hobby = "videojuegos"
+    ```
     :::
 
-3. EJECUTE el comando: `topics`. Cuente el número de temas que aparece en la tabla y escriba dicho número en su cuaderno. (Tenga en cuenta que algunos elementos de dicha tabla, están vacíos).
+3. En consola muestre cada uno de los contenidos de la variables anteriores con la función **print()**.
 
-4. En los elementos de la tabla TOPICS, identifique: **BOOLEAN**, **FLOAT**, **INTEGER, NUMBERS** y **STRINGS**. (Guiarse por la primera letra ya que los elementos están organizados en orden alfabético).
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> print(nombre)
+    >>> Camilo
+    >>> print(apellido)
+    >>> Fonseca
+    >>> print(edad)
+    >>> 35
+    >>> print(dia_nacimiento)
+    >>> 4
+    >>> print(mes_nacimiento)
+    >>> 12
+    >>> print(año_nacimiento)
+    >>> 1989
+    >>> print(grado)
+    >>> 11
+    >>> print(curso)
+    >>> A
+    >>> print(deporte)
+    >>> natacion
+    >>> print(hobby)
+    >>> videojuegos
+    ```
+    :::
 
-5. EJECUTE el comando: `NUMBERS`. Traduzca el contenido que aparece y escríbalo en su cuaderno. 
+5. CREE una variable de nombre **mensaje00** y de tipo STRING para saludar.
 
-6. EJECUTE el comando: `INTEGER`. IDENTIFIQUE el tercer párrafo (*There is no limit…*), traducirlo y escribirlo en su cuaderno. IDENTIFIQUE también los diez ejemplos en el sexto párrafo (*Some examples of…*) y escribir dichos ejemplos en el cuaderno. (Para salir, PULSAR la tecla **Q**).
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> mensaje00 = "Buenas tardes"
+    ```
+    :::
 
-7. EJECUTE el comando: `FLOAT`. IDENTIFIQUE los siete ejemplos del cuarto párrafo (*Some examples of…*) y escribirlos en su cuaderno.
+6. CREE una variable de nombre **mensaje01** y de tipo STRING para presentarse con su nombre y apellido.
 
-8. EJECUTE el comando: `STRINGS`. IDENTIFIQUE el cuarto párrafo (*In plain English…*), traducirlo y escribirlo en su cuaderno.
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> mensaje01 = f"Mi nombre es: {nombre} {apellido}"
+    ```
+    :::
 
-9. EJECUTE el comando: `BOOLEAN`. IDENTIFIQUE el segundo párrafo (*In the context…*), traducirlo y escribirlo en su cuaderno.
+    :::{admonition} ¿Cómo mostrar el valor de una variable en otra variable?
+    - Es necesario agregar la letra **f**, antes de las primeras comillas dobles en el valor de la variable de tipo **STRING**.
+    - Las variables a mostrar van dentro de llaves: `{}`
+    Por ejemplo:
+    ```python
+    >>> color = "azul"
+    >>> mensaje = f"el cielo es de color {color}"
+    >>> print(mensaje)
+    >>> el cielo es de color azul
+    ```
+    :::
 
-10. EJECUTE el comando: `keywords`. En su cuaderno ESCRIBA los elementos que aparecen en la tabla.
+7. CREE una variable de nombre **mensaje02** y de tipo STRING para mostrar su edad.
 
-11. EJECUTE el comando: `symbols`. En su cuaderno ESCRIBA los elementos que aparecen en la tabla.
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> mensaje02 = f"Tengo {edad} años de edad"
+    ```
+    :::
 
-12. CIERRE la consola interactiva de PYTHON y la terminal de sistema.
+8. CREE una variable de nombre **mensaje03** y de tipo STRING para mostrar su fecha de nacimiento.
+
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> mensaje03 = f"Nací el día {dia_nacimiento} del mes {mes_nacimiento} del año {año_nacimiento}"
+    ```
+    :::
+
+9. CREE una variable de nombre **mensaje04** y de tipo STRING para mostrar el grado que cursa.
+
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> mensaje04 = f"Estoy en el grado {grado}{curso}"
+    ```
+    :::
+
+10. CREE una variable de nombre **mensaje05** y de tipo STRING para mostrar el deporte que practica.
+
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> mensaje05 = f"Practico el deporte: {deporte}"
+    ```
+    :::
+
+11. CREE una variable de nombre **mensaje06** y de tipo STRING para mostrar su hobby.
+
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> mensaje06 = f"En mi tiempo libre practico: {hobby}"
+    ```
+    :::
+
+12. Finalmente muestre cada uno de los valores de las variables de los mensajes que acabó de crear. Para mostrarlos en pantalla use la función print().
+
+    :::{admonition} EJEMPLO
+    :class: tip
+    ```python
+    >>> print(mensaje01)
+    >>> Mi nombre es: Camilo Fonseca
+    >>> print(mensaje02)
+    >>> Tengo 35 años de edad
+    >>> print(mensaje03)
+    >>> Naci el día 4 del mes 12 del año 1989
+    >>> print(mensaje04)
+    >>> Estoy en el grado 11A
+    >>> print(mensaje05)
+    >>> Practico el deporte: natación
+    >>> print(mensaje06)
+    >>> En mi tiempo libre practico: videojuegos
+    ```
+    :::
 
 ---
-## A05: Codificación (+3,0)
+## A04: Orientaciones al extranjero (+10%)
+{bdg-warning}`Actividad práctica`
+
+> Con las **orientaciones** que previamente diseñó para al extranjero, usar la **consola interactiva de PYTHON** para mostrar dichas orientaciones.
+
+- Cree una serie de variables que contengan direcciones [**ejemplo: Cra 3A # 7-01 (IE John F. Kennedy)**]. El nombre de cada variable debe ser **direccion01**, **direccion02** y así por cada dirección.
+- Cree una serie de variables que contengan cada una de las orientaciones. El nombre de cada variable debe ser **orientacion01**, **orientacion02** y así por cada orientación.
+- Las variables de **dirección** deben ser nombradas en una variable de **orientación**.
+- Al final muestre cada una de las orientaciones con la función **print()**
+
+:::{admonition} EJEMPLO
+:class: tip
+```python
+>>> direccion01 = "Calle 28, Carrera 5 (Hospital José Cayetano Vasquez)"
+>>> direccion02 = "Calle 28"
+>>> orientacion01 = f"salga del hospital por la {direccion01}"
+>>> orientacion02 = f"camine 2 cuadras hacia el norte por {direccion02}"
+>>> print(orientacion01)
+>>> print(orientacion02)
+```
+:::
+
+---
+## A05: Operaciones en Python (10%)
+{bdg-warning}`Actividad práctica`
+
+> Resuelva los siguientes ejercicios en su cuaderno (**EVIDENCIE EL PROCEDIMIENTO**) (**NO USAR CALCULADORA**).
+
+1. Opere e identifique los valores finales para las variables a, b y c:
+
+> :::{math} 
+> a &= 3
+> \\ b &= 2
+> \\ c &= 1
+> \\
+> \\ a &= a + 1
+> \\ b &= b + 2
+> \\ c &= c + 3
+> :::
+
+2. Opere e identifique los valores finales para las variables a, b y c:
+
+> :::{math}
+> a &= 10
+> \\ b &= 20
+> \\ c &= 5
+> \\
+> \\ a &= a + 3
+> \\ b &= b + 4 - a
+> \\ c &= a + b + c
+> \\
+> \\ a &= a + c
+> \\ b &= 4 - b
+> \\ c &= c + 3 - b + 2
+> :::
+
+3. Opere e identifique los valores finales para las variables a, b, c y d:
+
+> :::{math}
+> a &= 5
+> \\ b &= 18
+> \\ c &= 15
+> \\ d &= 25
+> \\
+> \\ a &= a + 10
+> \\ b &= b + 5 - c
+> \\ c &= c + 4 + b
+> \\ d &= d + b + a
+> \\
+> \\ a &= a + 1
+> \\ b &= b + c
+> \\ c &= b + c
+> \\ d &= b + b
+> :::
+
+4. Opere e identifique los valores finales para las variables a y b:
+
+> :::{math}
+> a &= 9
+> \\ b &= 6
+> \\
+> \\ a &= a + 4
+> \\ b &= b + 2
+> \\
+> \\ a &= a + 10
+> \\ b &= b - 25
+> \\
+> \\ a &= a - 20
+> \\ b &= b + 5
+> \\
+> \\ a &= a + 4
+> \\ b &= b + 2
+> \\
+> \\ a &= a + 10
+> \\ b &= b - 10
+> :::
+
+5. Opere e identifique los valores finales para las variables a, b, c y d:
+
+> :::{math}
+> a &= 18
+> \\ b &= 18
+> \\ c &= 18
+> \\ d &= 18
+> \\
+> \\ a &= a + b
+> \\ b &= a - b
+> \\ c &= a + b
+> \\ d &= a - b
+> \\
+> \\ a &= a - b
+> \\ b &= a + b
+> \\ c &= a - b
+> \\ d &= a + b
+> :::
+
+6. Opere e identifique los valores finales para las variables a y b:
+
+> :::{math}
+> a &= 10
+> \\ b &= 5
+> \\
+> \\ a &= a - 5
+> \\ b &= b + 6
+> \\
+> \\ a &= a + 18
+> \\ b &= b - 23
+> \\
+> \\ a &= a - 21
+> \\ b &= b - 5
+> \\
+> \\ a &= a - 4
+> \\ b &= b - 2
+> \\
+> \\ a &= a + 10
+> \\ b &= b + 10
+> :::
+
+
+7. Opere e identifique los valores finales para las variables a, b, c y d:
+
+> :::{math}
+> a &= 8
+> \\ b &= 7
+> \\ c &= 5
+> \\ d &= 8
+> \\
+> \\ a &= a + b - c + d
+> \\ b &= a + b - c + d
+> \\ c &= a + b - c + d
+> \\ d &= a + b - c + d
+> \\
+> \\ a &= a - b + c - d
+> \\ b &= a - b + c - d
+> \\ c &= a - b + c - d
+> \\ d &= a - b + c - d
+> ::: 
+
+8. Opere e identifique los valores finales para las variables a, b y c:
+
+> :::{math}
+> a &= 10
+> \\ b &= 5
+> \\ c &= 10
+> \\
+> \\ a &= a + b - 5
+> \\ b &= a + b - 5
+> \\ c &= a + b - 5
+> \\
+> \\ a &= a + 5 * b / 2
+> \\ b &= a + 5 * b / 2
+> \\ c &= a + 5 * b / 2
+> :::
+    
+
+9. Opere e identifique los valores finales para las variables a, b y c:
+
+> :::{math}    
+> a &= 1
+> \\ b &= 2
+> \\ c &= 3
+> \\
+> \\ a &= a + 2
+> \\ b &= a + 2 + b
+> \\ c &= a + 2 + c
+> \\
+> \\ a &= a / 2
+> \\ b &= b / 2
+> \\ c &= c / 2
+> :::
+
+10. Transcriba cada uno de los **ejercicios anteriores** en la **consola interactiva de python** y revise que sus **resultados en el cuaderno** *coincidan* con los **resultados en pantalla**. 
+
+    - **EN CASO DE NO COINCIDIR**, verificar si el problema está en sus cálculos o en las variables establecidas en la **consola interactiva**.
+
+    - Para mostrar los **resultados finales** de las variables en **pantalla**, usar la función `print()`.
+
+---
+## A06: Linealización de Operaciones (10%)
+{bdg-warning}`Actividad práctica`
+
+1. En su cuaderno responda: 
+    - ¿Cuales son las reglas de precedencia?
+
+2. En su cuaderno dibuje una tabla y en ella escriba el orden de la precedencia y su descripción para los operadores: `()`, `*`, `**`, `/`, `//`, `%`, `+`, `-`.
+
+3. Linealizar las siguientes operaciones en su cuaderno (**EVIDENCIAR PROCEDIMIENTO**):
+
+    **3.1**
+    > $$ X = { a + \frac{b}{c} \over {a \over b} + c } $$
+    ---
+    **3.2**
+    > $$ X = { a + b + { a \over b } \over c }  $$
+    ---
+    **3.3**
+    > $$ X = {\dfrac{a}{a + b} \over \dfrac{a}{a - b}}  $$
+    ---
+    **3.4**
+    > $$ X = {  a + { b \over a + b + { b \over c }  } \over a + { b \over c + a } } $$
+    ---
+    **3.5**
+    > $$ X = { a + b + c \over a + { b \over c } } $$
+    ---
+    **3.6**
+    > $$ X = { a + b + { c \over d * a } \over a + b * {c \over d} } $$
+    ---
+    **3.7**
+    > $$ X = { a + { b \over c } + d \over a } $$
+    ---
+    **3.8**
+    > $$ X = { { a \over b } + { b \over c } \over { a \over b } - { b \over c } } $$
+    ---
+    **3.9**
+    > $$ X = a + { a + { a + b \over c + d } \over a + { a \over b }  } $$
+    ---
+    **3.10**
+    > $$ X = a + b + { c \over d } + { { a \over b - c } \over { a \over b + c } } $$
+
+---
+## A07: Modelo % de notas (50%)
 {bdg-danger}`Transferencia`
 
 ```{csv-table}
 :delim: ;
-**TIEMPO** ; 5 minutos
-**EJERCICIOS** ; 3
-**OBJETIVO** ; Comprobar conocimientos adquiridos.
-**ACTIVIDAD** ; Ejecute los comandos relacionados con la consola interactiva de PYTHON.
+**TIEMPO** ; 99 minutos
+**OBJETIVO** ; Aplicar conocimientos adquiridos.
+**INSTRUCCIONES** ; Modelar con **variables y operaciones** la **calificación final** de cada asignatura del **periodo actual**. Posteriormente implementar y ejecutar el modelo en la **consola interactiva de PYTHON**.
 ```
 
-:::{admonition} Posibles ejercicios
+:::{admonition} MODELO DE NOTAS
 
-- Abra una terminal de sistema e ingrese a la consola de PYTHON.
+1. En su **cuaderno** realice el **modelo de notas** del periodo actual para cada asignatura (si el estudiante ve 10 materias entonces serían 10 modelos). Cada modelo se compone de:
 
-- IDENTIFIQUE el prompt de la consola de PYTHON.
+    - Una **variable por cada nota** (si en una materia se sacan 5 notas, entonces serán 5 variables).
 
-- INDIQUE la versión y la fecha de compilación de la consola de PYTHON.
+    - El nombre de las variables debe ser acorde al **contexto de la nota** y debe ser de **tipo decimal** (por ejemplo `notaQuizMatematicas = 4.5`).
 
-- ACCEDA a los derechos de autor(copyright) de la consola de PYTHON.
+    - Una **ecuación con operaciones** donde se incluyan todas las **variables de las notas**. El valor de $ X $ será el valor de la nota final. Por ejemplo:
 
-- ACCEDA a los créditos(credits) de la consola de PYTHON.
+        $$ X = \left( \left( \frac{notaGuia01+notaGuia02}{2} \right) * (0.50) \right) +  (notaINS*(0.40)) + (notaPerfil * (0.10)) $$
+            
+    - La ecuación debe ser linealizada.
 
-- ACCEDA al documento de la licencia de la consola de PYTHON y desplace la documentación hasta el final.
+    - > TENER EN CUENTA QUE CADA ASIGNATURA TIENE SUS PROPIOS PORCENTAJES Y NOTAS. Por tanto **cada modelo es diferente**.
 
-- En la documentación de la licencia de la consola de PYTHON, IDENTIFIQUE la tabla relacionada con las versiones de PYTHON.
+2. En la **consola interactiva de python**, aplique y ejecute el modelo diseñado en su cuaderno. Tenga en cuenta lo siguiente:
 
-- En la documentación de la licencia de la consola de PYTHON, IDENTIFIQUE las fechas históricas.
-
-- En la documentación de la licencia de la consola de PYTHON, IDENTIFIQUE el significado de las siglas: CWI, CNRI o PSF.
-
-- ACCEDA a la ayuda de la consola de PYTHON.
-
-- En la ayuda de la consola de PYTHON, ACCEDA a las diferentes temáticas(topics).
-
-- En la ayuda de la consola de PYTHON, ACCEDA a la temática relacionada con cualquiera de los tipos de variables en PYTHON.
-
-- En la ayuda de la consola de PYTHON, ACCEDA a los diferentes tipos de palabras reservadas(keywords).
-
-- En la ayuda de la consola de PYTHON, ACCEDA a los diferentes tipos de símbolos.
+    - Una consola interactiva por cada modelo.
+    - Se deben crear variables para identificar el periodo actual, la materia y el nombre del estudiante.
+    - Al final, el programa en PYTHON debe permitir mostrar los valores de las variables con la función `print()`.
 :::
+
+
+
+[^1]: Sweigart, A. (2019). Automate the boring stuff with python, 2nd edition: Practical programming for total beginners. No Starch Press.

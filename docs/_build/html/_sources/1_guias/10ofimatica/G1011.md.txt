@@ -1,4 +1,4 @@
-# Guía 1011: Ofimática y Software Libre (P1)
+# Guía 1011: OFIMÁTICA y Software Libre (P1)
 
 :::{list-table}
 :widths: 35 65
