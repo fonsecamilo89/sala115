@@ -1,4 +1,4 @@
-# Guía 1013: LibreOffice Writer (P2)
+# Guía 1013: Formato en LibreOffice Writer (P3)
 
 :::{list-table}
 :widths: 35 65
@@ -11,7 +11,7 @@
         - **DOCENTE**: Julian Camilo Fonseca Romero
         - **ASIGNATURA**: Ofimática
         - **GRADO**: DÉCIMO
-        - **PERIODO:** 02
+        - **PERIODO:** 03
         - **TIEMPO**: 10 semanas (2 horas / semana)
         - **TIEMPO DE TRABAJO**: 20/20 horas
     ```
@@ -23,8 +23,8 @@
 {bdg-info}`Estructuración`
 {bdg-warning}`Actividad práctica`
 {bdg-danger}`Transferencia`
-- **Temática**: Uso básico de LibreOffice Writer.
-- **Objetivo de aprendizaje**: Usar de forma básica el software LibreOffice Writer.
+- **Temática**: Uso de formato de carácter, párrafo y estilo en LibreOffice Writer.
+- **Objetivo de aprendizaje**: Aplicar adecuadamente los formatos de carácter, párrafo y estilo en el software LibreOffice Writer.
 ```
 
 ```{tab-item} Orientaciones curriculares
@@ -41,625 +41,919 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (3)
+```{tab-item} Recursos (9)
 - [Descarga de **LibreOffice**](https://www.libreoffice.org/download/).
-- G1013A07-mitos_desordenados.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A07-mitos_desordenados.odt)
-- G1013A08-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A08-proyecto_escritorio_libre.odt)
+- G1013A04-practica_fuentes.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A04-practica_fuentes.odt)
+- G1013A05-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A05-mitos.odt)
+- G1013A06-enfermedades.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A06-enfermedades.odt)
+- G1013A07-nueces.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A07-nueces.odt)
+- G1013A08-certificado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A08-certificado.odt)
+- G1013A09-temario.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A09-temario.odt)
+- G1013A10-curriculum.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A10-curriculum.odt)
+- G1013A11-estilo_personalizado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A11-estilo_personalizado.odt)
+
 ```
 :::
 
 ## Mensaje del autor
 
 :::{pull-quote}
-"El propósito de la presente guía es que el estudiante descubra que un procesador de textos es mucho más que una herramienta para escribir; es un aliado fundamental para organizar sus ideas, estructurar informes y elevar la calidad visual de sus proyectos académicos y personales. El objetivo de esta guía es que el estudiante desarrolle las competencias técnicas necesarias para manejar herramientas de edición de texto con fluidez. No solo se aprende a 'hacer que el texto se vea bien', sino a dominar la lógica detrás de la documentación profesional, una habilidad indispensable en el mundo laboral actual. El desarrollo de cada actividad fortalece la autonomía al hacer uso de un computador".
+"Esta guía didáctica ha sido diseñada para facilitar el aprendizaje práctico y efectivo del formato de documentos en LibreOffice Writer. El objetivo es que, a través de actividades claras y orientadas, los estudiantes desarrollen competencias en el manejo de herramientas digitales, promoviendo la autonomía y la creatividad en la elaboración de textos".
 
 -- Camilo Fonseca
 :::
 
 ---
-## A00: Introducción (+0,1)
+## A00: Introducción (5%)
 {bdg-light}`Exploración`
 1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
 
-2. Lea el mensaje del autor y responda la siguiente pregunta en su cuaderno:
-
-    - ¿De qué forma el aprender a usar una herramienta de edición de texto como LibreOffice Writer, permite desarrollar la autonomía en el estudiante?
+2. Lea el mensaje del autor.
 
 ---
-## A01: LibreOffice Writer (+0,1)
+## A01: LibreOffice Writer (5%)
 {bdg-info}`Estructuración`
 
 1. Lea los siguientes conceptos:
 
 ---
-### ¿Qué es LibreOffice Writer?
+### Formato de texto
 
-:::{list-table}
+```{list-table}
 * - ```{figure} ./recursos/G1013/image01.png
-    :width: 120
-    LibreOffice Writer
+    :width: 700
+    Barra de herramientas formato
     ```
-:::
+```
 
-**LibreOffice Writer** es un procesador de textos, compatible con todas las versiones de Microsoft Word y además nos provee de nuevas funcionalidades. Writer le permitirá crear documentos con características como:
+La forma más productiva, eficiente y elegante para dar formato al texto del documento es mediante los estilos, entendidos como conjuntos de formatos.
 
-- Un correcto formateado de caracteres y párrafos.
-- Un uso eficiente de los estilos.
-- Auto-texto que le permite reutilizar contenidos con toda comodidad.
-- Numeraciones y viñetas.
-- Inserción y manejo de imágenes.
-- Trabajo con documentos largos esquematizados, con creación de índices.
+Pero para poder aplicar, modificar o crear estilos es necesario conocer los diferentes formatos que podemos aplicar al tipo de letra, párrafos o listas de nuestro documento.
 
-A continuación se muestra un ejemplo de un documento realizado en LibreOffice Writer:
+Por este motivo, es recomendable familiarizarnos con los diferentes formatos que podemos utilizar con el procesador de textos LibreOffice Writer y las diferentes maneras de aplicarlos.
 
-:::{list-table}
+
+---
+### Trabajando con estilos
+
+```{list-table}
 * - ```{figure} ./recursos/G1013/image02.png
-    :width: 600
-    Hoja de documento LibreOffice Writer
-    ```
-:::
-
-LibreOffice también puede usarse de forma profesional. Para ello es necesario conocer varias herramientas que permiten hacer que los documentos sean más productivos. Estas herramientas son:
-
-- Uso de tablas para crear formularios con valores que se auto-calculan.
-- Creación de secciones en columnas en el documento.
-- Creación de diagramas de datos a partir de datos contenidos en tablas.
-- Trabajo con cuadros de texto y marcos.
-- Establecer referencias, vínculos y enlaces en los documentos.
-- Creación de cartas en serie y etiquetas personalizadas para múltiples destinatarios extraídos de una base de datos.
-- Asignación de contraseñas para asegurar la integridad de los documentos.
-- Personalización de las barra de herramientas, menús y atajos de teclado para mayor productividad.
-
-:::{list-table}
-* - ```{figure} ./recursos/G1013/image03.png
-    :width: 600
-    Herramientas LibreOffice Writer
-    ```
-:::
-
----
-### LibreOffice Writer Vs Microsoft Word
-
-:::{list-table}
-* - ```{figure} ./recursos/G1013/image04.png
     :width: 200
-    LibreOffice Writer Vs Microsoft Word
-    ```
-:::
-
-LibreOffice Writer y Microsoft Word son dos suites de oficina ampliamente utilizadas que ofrecen muchas funcionalidades similares para la creación y edición de documentos. Sin embargo, hay algunas características distintivas de LibreOffice Writer que pueden diferenciarlo de Microsoft Word.
-
-A continuación se muestran algunas funcionalidades de LibreOffice Writer que no están disponibles en Microsoft Word:
-
-- **Licencia de código abierto:** LibreOffice es un software de código abierto bajo la licencia LGPL, lo que significa que es gratuito para descargar, usar, modificar y distribuir libremente. Microsoft Word, en cambio, es parte de Microsoft Office, que es un software comercial con licencia propietaria.
-- **Soporte nativo para formatos abiertos:** LibreOffice Writer tiene un soporte nativo robusto para formatos abiertos como ODT (OpenDocument Text), mientras que Microsoft Word generalmente utiliza formatos propietarios como DOCX. Aunque Word puede abrir y guardar archivos ODT, no es su formato nativo.
-- **Mayor flexibilidad en la interfaz:** LibreOffice Writer ofrece una interfaz altamente personalizable que puede ser ajustada para adaptarse mejor a las preferencias del usuario. Esto puede incluir la capacidad de personalizar barras de herramientas, atajos de teclado y más, de una manera más flexible que en Microsoft Word.
-- **Compatibilidad multi-plataforma:** LibreOffice está disponible para una amplia gama de sistemas operativos, incluidos Windows, macOS y varias distribuciones de Linux. Microsoft Word, aunque está disponible para Windows y macOS, no tiene una versión nativa para Linux.
-- **Extensiones y complementos libres:** LibreOffice tiene una comunidad activa que desarrolla extensiones y complementos que pueden ampliar sus funcionalidades básicas. Estos pueden ser descargados e instalados fácilmente para añadir nuevas características a LibreOffice Writer.
-- **No requiere suscripción:** LibreOffice Writer y toda la suite LibreOffice no requieren una suscripción para su uso. Esto puede ser una ventaja para aquellos que prefieren no comprometerse con un modelo de suscripción.
-
----
-### Características de LibreOffice Writer
-
-:::{admonition} Paginación e impresión de documentos
-
-Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan sólo necesitamos disponer de un documento bien estructurado y organizado. Para ello tendremos en cuenta otras configuraciones como el tamaño y formato del papel donde se imprimirá, los márgenes del documento, la orientación, los encabezados y pies que se deben repetir en todas las páginas o la numeración de las páginas.
-:::
-
-:::{admonition} Imágenes y objetos de dibujo
-
-Según las necesidades que se tengan, será preciso insertar imágenes en los documentos para ilustrar algún informe o proyecto.
-
-También podemos tener necesidad de dibujar formas geométricas para diagramar algún proceso, o por simple placer creativo. Resolver estas tareas requerirá el conocimiento de las diferentes propiedades que se pueden establecer para obtener los mejores resultados.
-:::
-
-:::{admonition} Herramientas de revisión y autocorrección
-
-Ocasionalmente se tienen dudas sobre el uso ortográfico correcto en la redacción de nuestros escritos. O quizás estamos escribiendo en un idioma con el cual no estamos demasiado familiarizados. En esos momentos, el uso de correctores ortográficos es de gran ayuda.
-
-También pueden resultar muy útiles otro tipo de ayudas de escritura como los diccionarios de sinónimos, de corrección gramatical, de separación silábica, así como opciones de formateado y corrección automática.
-
-En ocasiones puede que un documento maneje varios idiomas. En estos casos lo mejor es establecer estilos con el idioma extra y aplicarlos en el documento según se necesite.
-:::
-
-:::{admonition} Trabajo con documentos largos
-
-Cuando se elaboran largos informes o memorias, nuestros documentos deben dotarse de una estructura que haga cómodo su seguimiento. Ya sabemos que se puede y se “debe” utilizar estilos de Título para ello.
-
-Pero además, Writer nos proporciona un conjunto de herramientas que nos facilitarán esta tarea. Gracias a estas herramientas podremos alterar con mucha facilidad el esquema de nuestros documentos, los títulos podrán ser numerados y crearemos sumarios y tablas de toda clase de contenido.
-:::
-
-:::{admonition} Navegador de elementos
-
-El navegador contiene una lista donde aparecen los elementos que conforman un documento. Estos elementos son:
-
-```{table}
-ELEMENTOS | DESCRIPCIÓN
--|-
-**Títulos** | Los diferentes títulos del documento, agrupados y sangrados según su nivel, dicho de otra manera, el esquema del documento.
-**Tablas** | Las tablas son estructuras de texto organizadas en filas y columnas.
-**Marcos de texto**	| Cuadros con texto en su interior que pueden ser tratados como un objeto gráfico.
-**Imágenes** | Imágenes insertadas en el documento.
-**Objetos OLE** | Elementos como hojas de cálculo, fórmulas, y, en general, objetos de cualquier programa que admita la tecnología OLE (Object Linking and Embedding - Objetos vinculados e incrustados)
-**Marcadores** | Puntos del texto con un nombre que se crean para ser referenciados desde otro lugar del documento.
-**Secciones** | Divisiones estructurales del documento que permiten aplicar determinados atributos a partes del documento, como la organización en columnas periodísticas o protección, entre otros.
-**Hiperenlaces** | Vínculos a sitios web, otros documentos, títulos o marcadores.
-**Referencias** | Textos del documento que apuntan a algún Marcador.
-**Índices** | Tablas de contenido que pueden ser de tipos muy variados: sumarios, alfabéticos o de ilustraciones entre otros.
-**Comentarios** | Anotaciones creadas para revisiones del documento o establecer recordatorios.
-**Objetivos** | Elementos de dibujo insertados en el documento.
+    Jerarquía de estilos
+    ````
 ```
-:::
 
-:::{admonition} Uso de tablas
+Con **LibreOffice Writer** podemos aplicar formatos directamente al texto del documento. Pero si trabajamos con documentos largos y estructurados como memorias, proyectos o informes, la aplicación directa de formatos es muy improductiva.
 
-LibreOffice Writer dispone de una herramienta para mostrar información organizada en los  documentos: las tablas. Su uso sustituye de manera ventajosa al uso de los tabuladores. Pero las tablas van mucho más allá, puesto que además de texto, pueden incluir valores numéricos con los que efectuar cálculos con toda comodidad.
-:::
+La solución está en trabajar con estilos. Los estilos son conjuntos de formatos agrupados bajo un nombre y gracias a ellos, podemos dotar a nuestros documentos de la estructura adecuada de títulos y subtítulos, crear índices automáticamente o numerar capítulos. Modificando un estilo podemos cambiar en cuatro clics la apariencia de un documento de decenas o cientos de páginas.
+
+```{admonition} RECOMENDACIONES USO DE ESTILOS
+:class: tip
+
+Para el uso de estilos se recomienda lo siguiente:
+
+- Los colores de texto y fondo deben estar suficientemente contrastados.
+- El tamaño mínimo recomendable para la tipografía debe ser de 12 puntos. Nunca usar
+tipografías de tamaño inferior a 10 puntos.
+- Uso de tipografías *sans serif* (sin remate) habituales. Arial o Verdana son muy buenas elecciones.
+- Evitar el uso de variantes *thin*, *light* o *narrow* de las tipografías (variantes más estrechas de los tipos de letra).
+- Precaución con el uso de las negritas, cursivas o subrayados.
+- Evitar el uso de efectos de contorno o intermitencias.
+- Evitar el uso de características incompatibles con otros formatos de documento (sup_rayados, por ejemplo)
+- El interlineado simple no facilita la lectura; casi siempre será más apropiado un interlineado
+proporcional del 120% como mínimo.
+- Establecer un espaciado anterior y posterior al párrafo.
+- Evitar el uso de características incompatibles con otros formatos de documento (rellenos
+degradados o de imagen, por ejemplo)
+```
+
+Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan sólo se necesita disponer de un documento bien estructurado y organizado. Para ello se tiene en cuenta otras configuraciones como el tamaño y formato del papel donde se imprimirá, los márgenes del documento, la orientación, los encabezados y pies que se deben repetir en todas las páginas o la numeración de las páginas.
 
 ---
-## A02: Taller (+0,8)
+## A02: Taller (5%)
+{bdg-info}`Estructuración`
+
+1. Responda las siguientes preguntas en su cuaderno:
+
+    - ¿Qué es dar formato a un documento?
+    - ¿Cuál es la forma más eficiente y productiva de dar formato a un texto?
+    - ¿Qué son los estilos?
+
+2. Con 10 términos de las **recomendaciones en el uso de estilos**, en una hoja de cuaderno cree una *sopa de letras*.
+
+---
+## A03: Formato de carácter 1.0 {kbd}`101` (5%)
 {bdg-warning}`Actividad práctica`
 
-1. En su cuaderno responda las siguientes preguntas:
-    - ¿Para que sirve LibreOffice Writer?
-    - ¿Qué características tiene el software LibreOffice Writer?
-    - ¿Cuáles son las 6 ventajas de usar **LibreOffice Writer** frente **Microsoft Word**?
-    - ¿Qué posibles motivos tendría LibreOffice para no ofrecer un servicio de edición de documentos en la nube?
+1. EJECUTE el software LibreOffice Writer.
 
-2. Observe las siguientes imágenes y en **una hoja de cuaderno** realice una descripción de las cosas que se pueden hacer en LibreOffice Writer:
+2. En la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 1.0**
 
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image02.png
-        :width: 360
-        ``` 
-      - ```{figure} ./recursos/G1013/image03.png
-        :width: 360
-        ```
-    :::
-    
+3. GUARDE el documento en su **carpeta de evidencias** del periodo actual con el nombre: **G1013A03-formato_caracter_1.odt**
 
-3.  En una hoja de cuaderno, redacte un escrito que responda a las siguientes preguntas:  
+4. AGREGUE el siguiente fragmento de texto al documento:
 
-    - ¿Por qué Microsoft Office para PC solo está disponible (de forma legal) para ser usado exclusivamente en Windows y MACOS? (media hoja de cuaderno).
-    - ¿Qué posibles motivos tendría Microsoft para que Microsoft Word no sea de código abierto? (media hoja de cuaderno).
+    > "La ofimática es el conjunto de aplicaciones y herramientas informáticas diseñadas para facilitar y mejorar las tareas relacionadas con la creación, edición, almacenamiento y distribución de información en el entorno de una oficina o empresa".
 
----
-## A03: Información de identificación {kbd}`011` (+0,1)
-{bdg-warning}`Actividad práctica`
-
-En esta actividad, el estudiante aprende a crear la **información de identificación**.
-
-:::{admonition} ¿Qué es la **información de identificación**?
-Todo documento que se cree en esta guía, debe tener la **información de identificación** en la cabecera del documento con la siguiente información y en el siguiente orden:
-
-```{centered} TÍTULO DEL DOCUMENTO
-```
-```{centered} Nombres y apellidos del estudiante
-```
-```{centered} Curso - Jornada
-```
-```{centered} HORA - FECHA
-```
-:::
-
-Para esto siga los siguientes pasos:
-
-1. Ejecute el software LibreOffice Writer.
-
-2. Realice doble clic en la *cabecera del documento* hasta que salga una opción que diga: **Cabecera (Estilo de página predeterminado)**.
+5. En el documento, SELECCIONE el texto recién copiado y en el Menú superior PULSE: {guilabel}`Formato` > {guilabel}`Carácter…` para abrir la ventana {guilabel}`Carácter`.
 
     :::{list-table}
-    * - ```{figure} ./recursos/G1013/image05.png
-        :width: 300
-        ````
-    :::
-
-3. En la cabecera del documento, agregue la **información de identificación** con el título: **IDENTIFICACIÓN**. Debería quedar así:
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image06.png
-        :width: 400
-        ````
-    :::
-
-4. Realice una captura de pantalla del documento y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1013A03-Identificacion.png**
-
-5. Cierre el software LibreOffice Writer.
-
-6. En su cuaderno:
-
-    :::{admonition} En su cuaderno responda la siguiente pregunta:
-    :class: note
-    - ¿Por qué es importante identificar los documentos que creamos?
-    :::
-
----
-## A04: Exploración de la interfaz {kbd}`114` (+0,2)
-{bdg-warning}`Actividad práctica`
-
-1. Ejecute el software LibreOffice Writer.
-
-2. En la cabecera del documento, agregue la **información de identificación** con el título: **EXPLORACIÓN DE LA INTERFAZ**. Debería quedar así:
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image07.png
-        :width: 400
-        ````
-    :::
-
-3. Identifique el icono de guardar:
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image08.png
-        :width: 89
+    * - ```{figure} ./recursos/G1013/image03.png
+        :width: 260
+        **Menú** formato de carácter
         ```
     :::
 
-4. Si el **icono de guardar** tiene un punto rojo, significa que el documento no ha sido guardado. PULSE el **icono de guardar** y se abrirá una ventana para guardar el documento.
+6. En la ventana {guilabel}`Carácter` configure las siguientes opciones:
 
-5. En la ventana de guardado, LOCALICE su carpeta de evidencias del periodo actual y guarde el documento con el nombre: **G1013A04-documento.odt**
-
-6. En la interfaz, IDENTIFIQUE el **menú superior**.
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image09.png
-        :width: 650
-        Menú superior
+    :::{list-table} 
+    * - ```{figure} ./recursos/G1013/image04.png
+        :width: 550
+        **Menú** Ventana formato de carácter
         ```
     :::
+
+    - En la pestaña {guilabel}`Tipo de letra` configurar:
+        - **Tipo de letra:** Liberation Serif
+        - **Estilo:** Negrita Itálica
+        - **Tamaño:** 12 pt
+    - En la pestaña {guilabel}`Efectos tipográficos` configurar:
+        - **Color de letra:** Verde claro 1
+        - **Suprayado:** Punteado, Color: Azul
+        - **Tachado:** Con /
+        - **Subrayado:** Trazo, Color: Magenta
+        - **Mayusculación:** Mayúsculas iniciales
+        - **Relieve:** Sin
+        - Marcar opción de **Contorno**
+        - Marcar opción de **Sombra**
+        - Desmarcar opción de **Oculto**
+    - En la pestaña {guilabel}`Bordes` configurar:
+        - En la sección **Disposición de líneas** configurar:
+            - **Definido por el usuario:** *Seleccionar bordes superior y derecho así:*
+                :::{image} ./recursos/G1013/image05.png
+                :width: 250
+                :align: center
+                :::
+        - En la sección **Línea** configurar:
+            - **Estilo:** *Traza-punto-punto*
+            - **Color:** Amarillo
+            - **Grosor:** Muy grueso (4,5 pt)
+                :::{image} ./recursos/G1013/image06.png
+                :width: 250
+                :align: center
+                :::
+        - En la sección **Estilo de sombra** configurar:
+            - **Posición:** Proyectar sombra a la parte inferior derecha
+            - **Color:** Lima
+    - Pulsar el botón {guilabel}`Aceptar`
 
 7. En su cuaderno:
 
     :::{admonition} En su cuaderno...
     :class: note
-    - Dibuje el **menú superior**.
+    Responda las siguientes preguntas:
+    - ¿Que pasó con el texto que había pegado inicialmente?
+    - Al momento de crear informes, memorias, cartas o proyectos ¿Qué se necesita para que el contenido tenga un buen formato?
     :::
-
-8. En la interfaz, IDENTIFIQUE la **barra de herramientas estándar**:
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image10.png
-        :width: 700
-        Barra de herramientas estándar
-        ```
-    :::
-
-9. SITUAR el mouse en cada uno de los iconos de la **barra de herramientas estándar**. Al hacerlo el nombre de la herramienta aparecerá resaltado.
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image11.png
-        :width: 100
-        ```
-    :::
-
-10. En su cuaderno:
-
-    :::{admonition} En su cuaderno...
-    :class: note
-    - Dibuje la **barra de herramientas estándar** y agregue el nombre de cada uno de sus iconos.
-    :::
-
-11. En la interfaz, IDENTIFIQUE la barra de herramientas formato:
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image12.png
-        :width: 700
-        Barra de herramientas formato
-        ```
-    :::
-
-12. SITUAR el mouse en cada uno de los iconos de la **barra de herramientas formato**. Al hacerlo el nombre de la herramienta aparecerá resaltado.
-
-13. En su cuaderno:
-
-    :::{admonition} En su cuaderno...
-    :class: note
-    - Dibuje la **barra de herramientas formato** y agregue el nombre de cada uno de sus iconos.
-    :::
-
-14. En el **menú superior**, PULSE: {guilabel}`Ver` > {guilabel}`Barras de herramientas`. Se despliega una ventana con varias barras de herramientas desactivadas. ACTIVE las siguientes herramientas:
-
-    - Buscar
-    - Controles de formulario
-    - Dibujo
-    - Tabla
-
-15. REALICE una captura de pantalla de la interfaz de LibreOffice Writer y guarde la imagen en la carpeta de evidencias del periodo actual con el nombre: **G1013A04-interfaz.png**
-
-16. En el **menú superior**, PULSE: {guilabel}`Ver` > {guilabel}`Barras de herramientas` y **DESACTIVE todas las herramientas.** SOLO DEJAR ACTIVAS las siguientes herramientas:
-
-    - Estándar
-    - Formato
-
-17. En la interfaz, IDENTIFIQUE la **barra de herramientas lateral**:
-
-    :::{list-table} 
-    * - ```{figure} ./recursos/G1013/image13.png
-        :width: 45
-        Barra de herramientas lateral
-        ```
-    :::
-
-18. PULSE cada uno de los iconos de la **barra de herramientas lateral**.
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image14.png
-        :width: 400
-        Propiedades barra de herramientas lateral
-        ```
-    :::
-
-19. En su cuaderno:
-
-    :::{admonition} En su cuaderno...
-    :class: note
-    Dibuje y escriba el (título y los subtítulos) de cada una de las secciones de cada icono, de la **barra de herramientas lateral**.
-    :::
-
-20. Guarde los cambios y cierre el software LibreOffice Writer.
+    
+8. Guarde los cambios y cierre el software **LibreOffice Writer**.
 
 ---
-## A05: Creación y edición de documentos {kbd}`111` (+0,2)
+## A04: Formato de carácter 2.0 {kbd}`102` (5%)
 {bdg-warning}`Actividad práctica`
 
-1. Ejecute el software LibreOffice Writer.
+1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-2. En la cabecera del documento, agregue la **información de identificación** con el título: **CREACIÓN DE DOCUMENTOS**
+    - G1013A04-practica_fuentes.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A04-practica_fuentes.odt)
 
-3. GUARDE el documento en su **carpeta de evidencias** del periodo actual con el nombre: **G1013A05-creacion_documento.odt**
+2. Abra el archivo: **G1013A04-practica_fuentes.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 2.0**
 
-4. En la **barra de herramientas estándar**, PULSE el botón {guilabel}`Nuevo`.
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image15.png
-        :width: 50
-        ```
+    :::{admonition} ¿Qué contiene el documento?
+    :class: hint
+    El documento tiene varios párrafos que especifican la configuración de formato de carácter que debe tener cada uno.
     :::
 
-5. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: **Sin titulo 2**
+3. SELECCIONE cada párrafo y aplique la **configuración indicada** PULSANDO en el menú superior: {guilabel}`Formato` > {guilabel}`carácter…`
 
-6. VUELVA al documento **G1013A05-creacion_documento.odt** y en el menú superior PULSE: {guilabel}`Archivo` > {guilabel}`Nuevo` > {guilabel}`Documento` de texto. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: **Sin titulo 3**.
+    :::{admonition} Advertencia
+    :class: warning
+    - NO USE la **barra de herramientas de formato**!!!
+    - Puede que **algunas opciones no coincidan**...
+    ```{admonition} En su cuaderno...
+    :class: note
+    En caso de que **algunas opciones no coincidan** (por ejemplo los colores), elegir la opción más cercana y en su cuaderno escribir las opciones que no coincidieron y cómo las reemplazó.
+    ```
+    :::
 
-7. VUELVA al documento **G1013A05-creacion_documento.odt** y PULSE la combinación de teclas: {kbd}`CTRL` + {kbd}`U`. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: **Sin titulo 4**.
-
-8. Con los archivos de LibreOffice Writer abiertos hasta el momento, ORGANICE cuatro ventanas (en su pantalla) de tal forma que se vean todas al mismo tiempo así:
+4. Después de aplicar todos los formatos a los párrafos, el documento debería tener el siguiente aspecto:
 
     :::{list-table} 
-    * - ```{figure} ./recursos/G1013/image16.png
-        :width: 700
-        Ventanas de LibreOffice Writer
-        ```
-    :::
-
-9. REALICE una **captura de pantalla** de su pantalla y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1013A05-creacion_documento.png**
-
-10. En su cuaderno:
-
-    :::{admonition} En su cuaderno...
-    :class: note
-    - Describa las cuatro formas de crear documentos en **LibreOffice Writer**.
-    :::
-
-11. Guarde los cambios y cierre el software LibreOffice Writer.
-
----
-## A06: Guardado de documentos {kbd}`301` (+0,2)
-{bdg-warning}`Actividad práctica`
-
-1. Ejecute el software LibreOffice Writer.
-
-2. En la cabecera del documento, agregue la **información de identificación** con el título: **GUARDADO DE DOCUMENTOS**
-
-3. GUARDE el documento en su **carpeta de evidencias** del periodo actual con el nombre: **G1013A06-guardado_documento_1.odt**
-
-4. Copie y pegue el siguiente fragmento de texto a el documento:
-
-    > "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
-
-5. BORRE 30 palabras (las que usted quiera) del texto del fragmento anterior y en el **menú superior** PULSE: {guilabel}`Archivo` > {guilabel}`Guardar una copia…`
-
-6. En la ventana de guardado, LOCALICE su carpeta de evidencias y guarde el documento con el nombre: **G1013A06-guardado_documento_2.odt**
-
-7. Vuelva a abrir el primer documento: **G1013A06-guardado_documento_1.odt** y AGREGUE más texto al fragmento (el texto que usted quiera). Luego en el **menú superior** PULSE: {guilabel}`Archivo` > {guilabel}`Guardar como…`
-
-8. En la ventana de guardado, IDENTIFIQUE las opciones de **tipo de documento** y seleccione: **Documento de word 2010-365 (.docx)** y guarde el documento con el nombre de: **G1013A06-guardado_documento_3.docx**
-
-    :::{list-table}
-    * - ```{figure} ./recursos/G1013/image17.png
+    * - ```{figure} ./recursos/G1013/image07.png
         :width: 500
         ```
     :::
 
-    :::{admonition} ADVERTENCIA
-    :class: warning
-    Si sale una ventana con una advertencia sobre **Confirmar el formato del archivo**, PULSE el botón: 
-    
-    {guilabel}`Usar formato Documento de Word 2010-365`
-    :::
-
-9. En su cuaderno:
+5. En su cuaderno:
 
     :::{admonition} En su cuaderno...
     :class: note
-    - Escriba las diferencias entre guardar un documento con la opción **Guardar una copia…** y la opción **Guardar como…** en LibreOffice Writer.
+    Responda la siguiente pregunta:
+    - ¿Cuál es la ventaja de aplicar **formato de carácter** por medio del **menú superior** frente a aplicar **formato de carácter** por medio de la **barra de herramientas formato**?
     :::
 
-10. Guarde los cambios y cierre el software LibreOffice Writer.
+6. Guarde los cambios y luego cierre el software **LibreOffice Writer**.
 
 ---
-## A07: Cortar, copiar y pegar {kbd}`101` (+0,1)
+## A05: Formato de carácter 3.0 {kbd}`101` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-    - G1013A07-mitos_desordenados.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A07-mitos_desordenados.odt)
+    - G1013A05-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A05-mitos.odt)
 
-2. Abra el archivo: **G1013A07-mitos_desordenados.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **CORTAR, COPIAR y PEGAR**
+2. Abra el archivo: **G1013A05-mitos.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 3.0**
 
-    :::{admonition} ¿Qué contiene el documento?
-    :class: hint
-    Los párrafos del documento están desordenados.
+    :::{admonition} ¿Que contiene el documento?
+    :class: hint 
+    El documento contienen las descripciones de Dioses de la mitología griega. A los títulos: ADONIS, AFRODITA y AGON se les debe aplicar una configuración de **formato de carácter**.
+    :::
+
+3. Seleccione el título **ADONIS** y PULSE en el **Menú superior** > {guilabel}`Formato` > {guilabel}`Carácter…`
+
+    - En la pestaña {guilabel}`Resalte` configurar:
+        - **Color:** Verde claro 3
     
-    Cada párrafo tienen una numeración para que sepa el orden en el que deben aparecer.
+    - En la pestaña {guilabel}`Bordes` configurar:
+        - En la sección **Disposición de líneas** configurar:
+            - **Preconfigs:** Los cuatro bordes
+        - En la sección **Línea** configurar:
+            - **Estilo:** Sólido
+            - **Color:** Azul
+            - **Grosor:** Grueso 2.25 pt
+        - En la sección **Separación** configurar:
+            - 0.50cm por cada lado (izquierda, derecha, superior e inferior)
+        - En la sección **Estilo de sombra** configurar:
+            - **Posición:** Abajo y a la derecha
+            - **Color:** Azul claro 3
+
+4. Aplique la misma configuración de **formato de carácter** a los títulos **AFRODITA** y **AGÓN**.
+
+5. En cada párrafo, RESALTE la primera palabra con color amarillo.
+
+    :::{Advertencia}
+    :class: warning
+    Use el **formato de carácter**. No use la **barra de herramientas formato**.
     :::
 
-3. Por medio de cortar, copiar y pegar: MUEVA los párrafos de manera que queden ordenados.
+6. Después de aplicar **todos los formatos** al texto, el documento debería tener el siguiente aspecto:
 
-    :::{admonition} Atajos de teclado para cortar, copiar y pegar
-    :class: tip
-    El párrafo que desee (cortar, copiar o pegar) debe estar previamente seleccionado.
-
-    Para cortar, copiar y pegar se usan las siguientes combinaciones de teclado:
-
-    ```{table}
-    Teclas | Acción
-    -|-
-    {kbd}`CTRL` + {kbd}`X` | Cortar
-    {kbd}`CTRL` + {kbd}`C` | Copiar
-    {kbd}`CTRL` + {kbd}`V` | Pegar
-    ```
-    :::
-
-4. En su cuaderno:
-
-    :::{admonition} En su cuaderno...
-    :class: note
-    - Escriba los títulos ordenados del documento: **G1013A07-mitos_desordenados.odt**
-    :::
-
-5. Guarde los cambios y cierre el software LibreOffice Writer.
-
----
-## A08: Buscar y reemplazar {kbd}`124` (+0,1)
-{bdg-warning}`Actividad práctica`
-
-1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
-
-    - G1013A08-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A08-proyecto_escritorio_libre.odt)
-
-2. ABRA el archivo: **G1013A08-proyecto_escritorio_libre.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **BUSCAR Y REEMPLAZAR**
-
-3. Se debe realizar un búsqueda de la palabra aplicaciones en el texto del documento. Siga los siguientes pasos:
-
-    - PULSE las teclas {kbd}`CTRL` + {kbd}`B` para abrir la **barra de herramientas de Buscar** en la parte inferior de la interfaz.
-    - MARQUE la opción **Distinguir mayúsculas y minúsculas**.
-    - En el campo de búsqueda ESCRIBA la palabra: **aplicaciones**.
-    - PULSE la opción que dice: **Buscar todo**
-
-    :::{list-table}
-    + - ```{figure} ./recursos/G1013/image18.png
-        :width: 670
-        Barra de herramientas Buscar
+    :::{list-table} 
+    * - ```{figure} ./recursos/G1013/image08.png
+        :width: 500
         ```
     :::
-
-    - IDENTIFIQUE un mensaje que aparecerá en la parte derecha de la **barra de herramientas de Buscar** el cual indica el número de veces que se encontró la expresión buscada.
-    - En su cuaderno:
-        :::{admonition} En su cuaderno...
-        :class: note
-        - Escriba el número de veces que **LibreOffice Writer** encontró la palabra **aplicaciones.**
-        :::
-
-4. Realice una captura de pantalla que muestre **el número de veces que se encontró la expresión buscada** y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1013A08-proyecto_escritorio_libre-01.png**
-
-5. Ahora se debe **reemplazar** todas las apariciones de la palabra **aplicaciones**. Siga los siguientes pasos:
-
-    - PULSE las teclas {kbd}`CTRL` + {kbd}`ALT` + {kbd}`B` para abrir la ventana {guilabel}`Buscar y reemplazar`.
-    - En la ventana de {guilabel}`Buscar y reemplazar` MARQUE las opciones:
-        - **Distinguir mayúsculas y minúsculas**
-        - **Solo palabras completas**
-    - En el campo **Buscar,** ESCRIBA la palabra: **aplicaciones**
-    - PULSE el botón: **Buscar todo**.
-
-    :::{list-table}
-    + - ```{figure} ./recursos/G1013/image19.png
-        :width: 670
-        Barra de herramientas Buscar y Reemplazar
-        ```
-    :::
-
-    - En su cuaderno: 
-        :::{admonition} En su cuaderno...
-        :class: note
-        - Escriba el número de veces que **LibreOffice Writer** encontró la palabra **aplicaciones.** (Debe coincidir con el número de veces mostrado anteriormente).
-        :::
-    - En el campo **Reemplazar**, ESCRIBA la palabra: **programas**
-    - PULSE el botón: {guilabel}`Reemplazar todo`
-    - Realice una **captura de pantalla** que muestre **el número de veces que se reemplazó la expresión buscada** y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1013A08-proyecto_escritorio_libre-02.png**
-    - CIERRE la ventana de {guilabel}`Buscar y reemplazar`
-
-6. Con la **barra de herramientas de Buscar**, ahora realice la búsqueda de la palabra: **programas**
 
 7. En su cuaderno:
 
     :::{admonition} En su cuaderno...
     :class: note
-    - Escriba el número de veces que **LibreOffice Writer** encontró la palabra **programas.** (el número de veces debe ser mayor que 2 pero menor que 20).
+    Responda las siguientes preguntas:
+
+    - ¿Que desventajas ha encontrado hasta el momento usando la herramienta de **formato de carácter (Menú superior > Formato > Carácter…)**?
+    - ¿Que pasaría si en vez de 3, hubiesen sido 300 títulos a los que era necesario configurar formato de carácter?
     :::
+
+8. Guarde los cambios y cierre el software LibreOffice Writer.
+
+---
+## A06: Clonando formato {kbd}`101` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
+
+    - G1013A06-enfermedades.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A06-enfermedades.odt)
+
+2. Abra el archivo: **G1013A06-enfermedades.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **CLONANDO FORMATO**
+
+    :::{admonition} ¿Qué contiene el documento?
+    :class: hint
+    En este documento se encuentra la descripción de unas enfermedades.
+    
+    Es necesario dar formato a los títulos de las enfermedades. 
+    
+    Se debe aplicar un formato de carácter en el título Gota. Luego este formato será clonado en los demás títulos (Artrosis y Aftas).
+    ::: 
+
+3. SELECCIONE el título **Gota** y aplique las siguientes configuraciones de **formato de carácter:**
+
+    - En la pestaña {guilabel}`Tipo de letra` configurar:
+        - **Familia:** Verdana
+        - **Tamaño:** 28 pt
+        - **Estilo:** Negrita
+
+    - En la pestaña {guilabel}`Efectos tipográficos` configurar:
+        - En la sección **Efectos** configurar:
+            - MARCAR la opción de **contorno**.
+
+    - En la pestaña {guilabel}`Resalte` configurar:
+        - **Color:** verde claro 4
+
+    - En la pestaña {guilabel}`Bordes` configurar:
+        - En la sección **Disposición de líneas** configurar:
+            - **Preconfigs:** los cuatro bordes
+        - En la sección **Separación** configurar:
+            - 0,20 cm por cada lado (izquierda, derecha, superior e inferior)
+
+    - PULSAR el botón **Aceptar.**
+
+4. El **formato de carácter** del título Gota debería quedar así:
+
+    :::{list-table}
+    * - ``` {figure} ./recursos/G1013/image09.png
+        :width: 200
+        ```
+    :::
+
+5. Al párrafo de la descripción de la enfermedad **Gota**, APLICAR: **tipo de letra:** Tahoma y el **tamaño de letra:** 14pt (En este caso puede usar el formato de la **barra de herramientas formato**)
+
+6. SELECCIONE el título **Gota** y en la **barra de herramientas estándar**, PULSE el botón **Clonar formato** dos veces para dejar la herramienta activa.
+
+    :::{list-table} 
+    * - ```{figure} ./recursos/G1013/image10.png
+        :width: 30
+        ```
+    :::
+
+    :::{admonition} ¿Qué esta pasando en el mouse?
+    :class: hint
+    El **mouse** ahora tendrá un **ícono** de un **bote de pintura derramándose**, esto quiere decir que cualquier palabra que seleccione, recibirá el formato previamente seleccionado.
+    
+    Cuando termine de clonar formato, presione la tecla {kbd}`ESC`.
+    :::
+
+7. COPIE el formato a los títulos de las enfermedades: **Artrosis** y **Aftas**. Cuando termine presione la tecla {kbd}`ESC`.
 
 8. En su cuaderno:
 
     :::{admonition} En su cuaderno...
     :class: note
-    - Escriba las diferencias encontradas al usar la **barra de herramientas de Buscar** y la ventana {guilabel}`Buscar y reemplazar`.
+    Responda la siguiente pregunta:
+    - ¿Cómo la herramienta **clonar formato** puede ayudar a superar las desventajas al usar la herramienta: **formato de carácter?** 
     :::
 
-9. Guarde los cambios y cierre el software LibreOffice Writer.
+9. Guarde los cambios y cierre el software **LibreOffice Writer**.
 
 ---
-## A09: Corrector ortográfico {kbd}`102` (+0,1)
+## A07: Formato de párrafo {kbd}`103` (5%)
+{bdg-warning}`Actividad práctica`
 
-1. EJECUTE el software **LibreOffice Writer**.
+1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-2. En la cabecera del documento, agregue la **información de identificación** con el título: **CORRECTOR ORTOGRÁFICO**.
+    - G1013A07-nueces.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A07-nueces.odt)
 
-3. GUARDE el documento en su **carpeta de evidencias** con el nombre: **G1013A09-corrector_ortografico.odt**
+2. Abra el archivo: **G1013A07-nueces.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE PÁRRAFO**
 
-4. Copie y pegue el siguiente texto en el documento:
+    :::{admonition} ¿Qué contiene el documento?
+    :class: hint
+    En este documento encontrará la descripción de algunas vitaminas presentes en las nueces. Por medio de la herramienta formato de párrafo el documento tendrá una mejor apariencia para el lector.
+    :::
 
-    > En el año 2023, una extaña situacion ocurrio en la ciudad. 5 gatos desaparecieron sin dejar rastro. La policia investigo durante 3 semanas, pero no encontro ninguna pista. Luego, 2 tesigos afirmaron haber visto algo inusual cerca del parque. Uno de ellos dijo que vio una nave espacial, mientras que el otro juro que eran 7 duendes. El misterio se profundizo cuando se descubrieron 10 huellas giganes en el cesped. Los cientificos analisrron las huellas durante 4 dias y determinaron que eran de un animal desconocido. La prenso publico 12 articulos sobre el tema, generando gran expectacion. Al final, despues de 6 meses, el misterio se resolvio de manera inesperada: los gatos havian sido secuestrados por un grupo de niñoz traviesos que querian jugar con ellos. La polisia encontro a los gatos en una caza abandonada, sanos y salbos. La historia fue un gran exito, pero nadie pudo exxplicar las 15 huellas ni los avistamientos.
+3. En la **barra de herramientas estándar**, PULSE el botón **Alternar marcas de formato**.
 
-5. PULSAR el botón: **Barra de herramientas estándar** > {guilabel}`Revisar ortografía`
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image11.png
+        :width: 50
+        ```
+    :::
+
+4. Una vez activó las marcas de formato, en su cuaderno describa que acabó de pasar en el documento.
+
+    :::{admonition} ¿Qué significan las marcas de formato?
+    :class: hint
+    - Una **marca** (¶) significa un párrafo.
+    - Un **punto** (.) significa un espacio.
+    - Una **flecha** (→) significa una tabulación. 
+    :::
+
+5. En su cuaderno:
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Cuántas marcas, puntos y flechas salieron en el documento?
+    :::
+
+6. Situar el cursor al final de la segunda marca (segundo párrafo) y en el **menú superior**, PULSE {guilabel}`Formato` > {guilabel}`Párrafo…` para abrir la ventana **Párrafo**
+
+7. En la ventana **Párrafo** configure las siguientes opciones:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image12.png
+        :width: 650
+        ```
+    :::
+
+    - En la pestaña {guilabel}`Sangrías y espaciado` configurar:
+    
+        - En la sección **Espaciado** configurar:
+            - Bajo el párrafo: 0,30 cm
+        - En la sección **Interlineado** configurar:
+            - **Proporcional** de **120%**
+
+    - PULSE el botón **Aceptar**
+
+8. En su cuaderno:
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa que acabó de pasar en el documento.
+    :::
+
+9. SELECCIONE desde el principio del segundo párrafo hasta el final y aplique la siguiente configuración de **formato de párrafo**:
+
+    - En la pestaña {guilabel}`Sangrías y espaciado` configurar:
+    
+        - En la sección **Espaciado** configurar:
+            - Bajo el párrafo: 0,30 cm
+        - En la sección **Interlineado** configurar:
+            - **Proporcional** de **120%**
+
+    - PULSE el botón **Aceptar**
+
+10. SELECCIONE el título “**Las nueces contienen”** y aplique la siguiente configuración de **formato de párrafo**:
+
+    - En la pestaña {guilabel}`Alineación` configurar:
+        - En la sección **Opciones** seleccionar **Centro.**
+
+    - En la pestaña {guilabel}`Área` configurar:
+        - **Color:** Amarillo
+
+    - PULSE el botón **Aceptar**.
+
+11. SELECCIONE el título “**Las nueces contienen”** y aplique la siguiente configuración de **formato de carácter**:
+
+    - En la pestaña {guilabel}`Tipo de letra` configurar:
+
+        - **Familia:** Liberation Sans
+        - **Tamaño:** 16 pt
+        - **Estilo:** Negrita
+    
+    - En la pestaña {guilabel}`Efectos tipográficos` configurar:
+        
+        - En la sección **Color de letra** configurar:
+            - **Color de letra:** Púrpura
+
+        - En la sección **Decoración de texto** configurar:
+            - **Subrayado:** Sencillo
+            - **Color:** Púrpura
+
+        - En la sección **Efectos** configurar:
+            - Marcar la opción Sombra.
+
+    - PULSE el botón **Aceptar**.
+
+12. SELECCIONE desde el principio del segundo párrafo hasta el final y aplique la siguiente configuración de **formato de carácter**:
+
+    - En la pestaña {guilabel}`Efectos tipográficos` configurar:
+        
+        - En la sección **Color de letra** configurar:
+            - **Color de letra:** Gris oscuro 2
+
+    - PULSAR el botón **Aceptar**.
+
+13. SELECCIONE desde el principio del segundo párrafo al penúltimo párrafo (no seleccione el último párrafo) y en el **menú superior** PULSE {guilabel}`Formato` > {guilabel}`Numeración y bolos` para abrir la ventana de **Numeración y bolos** y configure las siguientes opciones:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image13.png
+        :width: 650
+        ```
+    :::
+
+    - En la {guilabel}`pestaña No ordenada` configurar:
+        - SELECCIONAR cualquier modelo.
+
+    - PULSE el botón **Aceptar**.
+
+14. En el documento SELECCIONE el último párrafo y aplique la siguiente configuración de **Formato de párrafo**:
+
+    - En la pestaña de {guilabel}`Sangría y espaciado` configure:
+
+        - En la sección **Sangría** configure:
+            - Antes del texto: 4cm
+            - Después del texto: 4cm
+
+        - En la sección **Espaciado** configure:
+            - Sobre el párrafo: 2cm
+
+    - En la pestaña {guilabel}`Alineación` configure:
+
+        - En la sección **Opciones** configure **Centro**.
+
+    - En la pestaña {guilabel}`Bordes` configure:
+
+        - En las sección **Disposición de líneas** configure:
+            - **Preconfigs:** Los cuatro bordes
+        - En la sección **Separación** configure:
+            - 0,20 cm en todos los lados
+
+    - En la pestaña {guilabel}`Área` configurar:
+        - **Color:** Gris claro 4.
+
+    - PULSE el botón **Aceptar**.
+
+15. Después de aplicar todas las configuraciones, el documento debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image14.png
+        :width: 600
+        ```
+    :::
+
+16. En su cuaderno:
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+
+    - ¿Cuantas veces y en que pasos se usaron el **formato de carácter**, **formato de párrafo** y **la numeración y bolos**?
+    :::
+
+17. Guarde los cambios y cierre el software LibreOffice Writer.
+
+---
+## A08: Sangría Francesa {kbd}`101` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
+
+    - G1013A08-certificado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A08-certificado.odt)
+
+2. Abra el archivo: **G1013A08-certificado.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **SANGRÍA FRANCESA**
+
+    :::{admonition} ¿Qué contiene el documento?
+    :class: hint
+    El documento muestra información relacionada con un certificado laboral.
+    
+    Se debe configurar el documento para que el certificado tenga una mejor presentación.
+    :::
+
+3. La palabra “Certifica” debe estar en **negrita** (usar la **barra de herramientas formato**).
+
+4. SELECCIONE todo el documento y aplique la siguiente configuración de **formato de párrafo:**
+
+    - En la pestaña {guilabel}`Sangrías y espaciado`:
+
+        - En la sección **Espaciado** configurar:
+            - Bajo el párrafo: 0,40 cm
+
+    - PULSE el botón **Aceptar**.
+
+5. Al tercer párrafo APLIQUE el siguiente **formato de párrafo**:
+
+    - En la pestaña {guilabel}`Sangría y espaciado` configurar:
+
+        - En la sección **Sangría** configurar:
+            - **Antes del texto:** 3,00 cm
+            - **Primer renglón:** -3,00 cm (Esto es la sangría francesa)
+
+    - PULSE el botón **Aceptar**.
+
+6. Después de aplicar todas las configuraciones, el documento debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image15.png
+        :width: 720
+        ```
+    :::
+
+7. En su cuaderno:
+    
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Qué es una **sangría francesa** y explique en que otros tipos de documentos podría usarse?
+    :::
+
+8. GUARDE los cambios y cierre el software LibreOffice Writer.
+
+---
+## A09: Esquema numerado {kbd}`102` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
+ 
+    - G1013A09-temario.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A09-temario.odt)
+
+2. Abra el archivo: **G1013A09-temario.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **ESQUEMA NUMERADO**
+
+    :::{admonition} ¿Qué contiene el documento?
+    :class: hint
+    El documento muestra un contenido el cual no esta numerado. Es necesario aplicar esquemas numerados.
+    :::
+
+3. En la **barra de herramientas estándar**, PULSE: {guilabel}`Alternar marcas de formato`.
+
+4. SELECCIONE todo el documento y aplique la siguiente configuración de **formato de párrafo**:
+
+    - En la pestaña de {guilabel}`Sangrías y espaciado` configure:
+
+        - En la sección de **Espaciado** configure:
+            - Bajo el párrafo: 0.30 cm
+
+    - PULSE el botón **Aceptar**.
+
+5. SELECCIONE todo el documento y en el **menú superior,** PULSE {guilabel}`Formato` > {guilabel}`Numeración y bolos`.
+
+    - En la pestaña de {guilabel}`Esquema` seleccione el siguiente:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image16.png
+        :width: 180
+        ```
+    :::
+
+    - Pulsar el botón **Aceptar**.
+
+6. Situar el cursor al comienzo del párrafo **2. Generalidades** y PULSE la tecla {kbd}`TAB`.
+
+7. En su cuaderno:
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Que pasó en el documento cuanto presionó la tecla {kbd}`TAB`?
+    :::
+
+7. El título **Generalidades** aplique **Tipo de letra:** negrita
+
+8. Aplicar {kbd}`TAB` y **negrita** a los siguientes títulos:
+
+    - Control de comunicaciones de la red.
+    - Polling
+    - Paso de testigo
+    - Normas estándares para redes locales
+
+9. Aplicar 2 veces {kbd}`TAB` y **negrita** a los siguientes títulos:
+    - Concepto de red local
+    - Ventajas de redes locales
+    - Gestores de una red local
+    - Introducción
+    - Protocolos
+    - Protocolos de contienda
+    - Contienda simple
+    - Factores de evaluación del protocolo de paso de testigo
+
+10. Aplicar 3 veces {kbd}`TAB` a los títulos que no estén en **negrita**.
+
+11. Después de aplicar todas las configuraciones, el documento debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image17.png
+        :width: 400
+        ```
+    :::
+
+12. En su cuaderno:
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Cuales son los títulos de primer, segundo, tercer y cuarto nivel?
+    :::
+
+13. GUARDE los cambios y cierre el software LibreOffice Writer.
+
+---
+## A10: Currículum de estilos {kbd}`101` (5%)
+
+1. Descargue el siguiente archivo y guárdelo en su carpeta de evidencias:
+
+    - G1013A10-curriculum.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A10-curriculum.odt)
+
+2. Abra el archivo: **G1013A10-curriculum.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE ESTILOS**
+
+    :::{admonition} ¿Qué contiene el documento?
+    :class: hint
+    El documento muestra la hoja de vida de una persona. Sin embargo no es entendible.
+    
+    Es necesario aplicar estilos para mejorar la apariencia del documento y así sea más entendible.
+    :::
+
+3. Seleccione los títulos: **Formación Reglada, Formación No Reglada y Experiencia Laboral**.
+    
+    :::{admonition} ¿Cómo seleccionar varios títulos al mismo tiempo?
+    :class: hint
+    Para seleccionar varios títulos al mismo tiempo, mantenga PULSADA la tecla {kbd}`CTRL` y selecciona los títulos uno por uno.
+    :::
+
+    :::{list-table} 
+    * - ```{figure} ./recursos/G1013/image18.png
+        :width: 620
+        ```
+    :::
+
+4. En la **barra de herramientas lateral**, PULSE el ícono Estilos.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image19.png
+        :width: 89
+        ```
+    :::
+
+5. En la *herramienta de estilos* encontrará 6 herramientas para aplicar formato de estilo al documento. PULSE el **icono de Estilo de párrafos**.
 
     :::{list-table}
     * - ```{figure} ./recursos/G1013/image20.png
-        :width: 50
-        Corrector ortográfico
+        :width: 180
         ```
     :::
 
-6. En la ventana: {guilabel}`Ortografía: Español (Colombia)`, corregir con las sugerencias que da el asistente de ortografía de LibreOffice Writer.
+6. Observe la *Jerarquía de estilos de párrafo* y localice el estilo de nombre: **Título**.
 
-    - En su cuaderno:
-        :::{admonition} En su cuaderno...
-        :class: note
-        - Escriba los errores ortográficos que **fueron detectados** por el asistente ortográfico de LibreOffice Writer.
-        :::
+    :::{admonition} ¿Qué es el estilo de título?
+    :class: tip
+    El estilo **Título**, a su vez tiene mas **sub-estilos**. Si no aparecen, PULSAR clic sobre la flecha apuntando hacia abajo a la izquierda del nombre del estilo.
+    :::
 
     :::{list-table}
     * - ```{figure} ./recursos/G1013/image21.png
-        :width: 600
-        Ventana corrector ortográfico
+        :width: 300
         ```
     :::
 
-7. Una vez finalice con el asistente de ortografía, lea el texto y solucione manualmente los errores que quedan.
+7. ANTES DE CONTINUAR, ASEGÚRESE que los títulos del documento previamente seleccionados siguen estando seleccionados!!!
+
+8. Pulsar **doble clic** sobre el sub-estilo **Título 1.** (*Usted acaba de aplicar un estilo en el documento*). ***Responda las siguientes preguntas en su cuaderno:***
+
+    - ¿Qué acabo de pasar en el documento cuando aplicó el estilo?
+    - ¿Qué es mejor: aplicar **formato de párrafo** o aplicar **formato de estilo** y por qué?
+
+9. Seleccione todos los párrafos del documento (NO SELECCIONE los títulos) y en la **Jerarquía de estilos de párrafo**, APLIQUE el estilo: **Cuerpo de texto**.
+
+10. En la herramienta: **Jerarquía de estilos de párrafo**, SELECCIONE nuevamente el estilo **Cuerpo de texto** y PULSE el botón derecho del mouse para abrir un **menú contextual**. En el **menú contextual** de **Cuerpo de texto**, seleccione la opción: **Editar estilo…**
+
+    :::{admonition} ¿Qué es el menú contextual?
+    :class: hint
+    Un **menú contextual** es una lista de opciones que aparece cuando PULSA clic derecho (o un gesto similar) en un elemento en la pantalla de una computadora o dispositivo.
+    
+    Esto permite realizar acciones específicas relacionadas con ese elemento, como copiar, pegar, eliminar, o acceder a propiedades.
+    :::
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image22.png
+        :width: 250
+        ```
+    :::
+
+11. En la ventana {guilabel}`Estilo de párrafo: Cuerpo de texto`, configurar las siguientes opciones:
+
+    :::{list-table} 
+    * - ```{figure} ./recursos/G1013/image23.png
+        :width: 630
+        ``` 
+    :::
+
+    - En la pestaña {guilabel}`Tipo de letra` configurar:
+        - **Familia:** Times New Roman
+        - **Tamaño:** 14pt
+
+    - En la pestaña {guilabel}`Esquema y lista` configurar:
+        - **Nivel de esquema:** Nivel 1
+        - **Estilo de esquema:** Bolo -
+    
+    - PULSAR el botón **Aceptar**.
+
+12. En la **Jerarquía de estilos de párrafo**, IDENTIFIQUE el estilo: **Título 1** y en su menú contextual PULSE **Editar estilo…**
+
+13. En la ventana: **Estilo de párrafo: Título 1** configure lo siguiente:
+
+    - En la pestaña {guilabel}`Tipo de letra` configurar:
+        - **Familia:** Arial
+        - **Estilo:** Negrita itálica
+
+    - En la pestaña {guilabel}`Efectos tipográficos` configurar:
+        - **Color de letra:** Azul
+    
+    - En la pestaña {guilabel}`Bordes` configurar:
+        - En la sección **Disposición de líneas:**
+            - Definido por el usuario: Agregar línea inferior
+            :::{image} ./recursos/G1013/image24.png
+            :width: 180
+            :align: center
+            :::
+        - En la sección **Línea**:
+
+            - **Color:** Azul
+            - **Grosor:** Grueso (2,25pt)
+        
+        - En la sección **Estilo de sombra**:
+
+            - **Posición:** Proyectar sombra a la parte superior izquierda
+    
+    - PULSE el botón **Aceptar**.
+
+14. En su cuaderno:
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Cuál es la diferencia entre editar el estilo de párrafo de **Cuerpo de texto** y editar el estilo de párrafo de **Título 1?**
+    :::
+
+15. Con las configuraciones aplicadas hasta el momento, el documento debería tener la siguiente apariencia:
+
+    :::{list-table} 
+    * - ```{figure} ./recursos/G1013/image25.png
+        :width: 500
+        ```
+    :::
+
+16. Guarde los cambios y cierre el software LibreOffice Writer.
+
+---
+## A11: Estilo personalizado {kbd}`101` (5%)
+
+1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
+
+    - G1013A11-estilo_personalizado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A11-estilo_personalizado.odt)
+
+2. Abra el archivo: **G1013A11-estilo_personalizado.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **ESTILO PERSONALIZADO**
+
+3. En la **Jerarquía de estilos de párrafo**, IDENTIFIQUE el estilo: **Estilo de párrafo predeterminado** y en su **menú contextual**, PULSE la opción: **Nuevo...**
+
+4. En la ventana: **Estilo de párrafo: Sin Título1**, configure las siguiente opciones:
+
+    - En la pestaña {guilabel}`Generales` configurar:
+        - En la sección **Estilo:**
+            - **Nombre:** Mi estilo
+
+    - En la pestaña {guilabel}`Sangrías y espaciado` configurar:
+        - En la sección **Sangría**:
+            - **Antes de texto:** 5,00cm
+            - **Después del texto:** 5,00cm
+        - En la sección **Espaciado:**
+            - **Sobre el párrafo:** 1,00cm
+            - **Bajo el párrafo:** 1,00cm
+        - En la sección **Interlineado**:
+            - 1,5 renglones
+
+    - En la pestaña {guilabel}`Alineación` configurar:
+        - En la sección **Opciones**:
+            - Centro
+
+    - En la pestaña {guilabel}`Tipo de letra` configurar:
+        - **Familia:** Arial
+        - **Estilo:** Itálica
+        - **Tamaño:** 11pt
+
+    - En la pestaña {guilabel}`Bordes` configurar:
+        - En la sección **Disposición de líneas**:
+            - Preconfigs: Los cuatro bordes
+        - En la sección **Separación:**
+            - 0,20cm en Izquierda, Derecha, Superior e Inferior.
+
+    - En la pestaña {guilabel}`Área` configurar:
+        - PULSAR el botón **Degradado.**
+            - En la sección **Degradado** seleccionar: Luz solar
+            :::{image} ./recursos/G1013/image26.png
+            :width: 200
+            :align: center
+            :::
+            - En la sección **Opciones**:
+                - Tipo: Axial
+    - PULSE el botón **Aceptar**.
+
+5. Al final del texto, AGREGUE el siguiente párrafo:
+
+    > "De necesitar referencias, solicítelas directamente al candidato. Gracias".
+
+6. SELECCIONE el texto que acabó de agregar y APLIQUE el estilo: **mi estilo.**
+
+7. Con las configuración aplicada hasta el momento, el texto debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1013/image27.png
+        :width: 300
+        ```
+    :::
 
 8. En su cuaderno:
 
     :::{admonition} En su cuaderno...
     :class: note
-    - Escriba los errores ortográficos que **NO fueron detectados** por el asistente ortográfico de LibreOffice Writer.
+    Responda la siguiente pregunta:
+
+    - ¿Para que casos es útil configurar un estilo personalizado en **LibreOffice Writer**?
     :::
 
-9. Guarde los cambios y cierre el software LibreOffice Writer.
+9. GUARDE los cambios y cierre el software **LibreOffice Writer**.
 
 ---
-## A10: Presentación de evidencias (+3,0)
+## A12: Presentación de evidencias (40%)
 {bdg-danger}`Transferencia`
 
 :::{admonition} ¿Cómo se evalúa?
-1. Los estudiantes deben presentar lo siguiente:
+1. Los estudiantes presentan lo siguiente:
 
     - Carpeta de evidencias con todos los archivos editados en la presente guía. (Los archivos deben estar abiertos).
     - Cuaderno con las actividades desarrolladas.
