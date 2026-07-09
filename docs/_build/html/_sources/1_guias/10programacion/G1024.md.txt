@@ -726,7 +726,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
     :::
 
 ---
-## A04: Orientaciones al extranjero (+10%)
+## A04: Orientaciones al extranjero (10%)
 {bdg-warning}`Actividad práctica`
 
 > Con las **orientaciones** que previamente diseñó para al extranjero, usar la **consola interactiva de PYTHON** para mostrar dichas orientaciones.

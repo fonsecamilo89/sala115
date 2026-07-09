@@ -31,9 +31,9 @@
 
 ::: {admonition} SECUENCIA DIDÁCTICA (MODELO ACTIVO)
 1. {bdg-light}`Exploración`
-2. {bdg-info}`Estructuración`.
-3. {bdg-warning}`Actividad práctica`.
-4. {bdg-danger}`Transferencia`.
+2. {bdg-info}`Estructuración`
+3. {bdg-warning}`Actividad práctica`
+4. {bdg-danger}`Transferencia`
 :::
 
 :::{toctree}
@@ -55,6 +55,8 @@
 1_guias/10informatica/G1000.md
 1_guias/10ofimatica/G1010.md
 1_guias/10programacion/G1020.md
+1_guias/11ofimatica/G1110.md
+1_guias/11programacion/G1120.md
 :::
 
 :::{toctree}

@@ -1,0 +1,1555 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../../genindex.html"><link rel="search" title="Búsqueda" href="../../search.html"><link rel="next" title="Programación 11" href="../11programacion/G1120.html"><link rel="prev" title="Ofimática 11" href="G1110.html">
+        <link rel="prefetch" href="../../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../../_static/logo_dark.png" as="image">
+
+    <!-- Generated with Sphinx 7.4.7 and Furo 2025.12.19 -->
+        <title>Guía 1111: LibreOffice Calc (P1) - aula 115</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e02aa765" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--small);
+  --toc-font-size: var(--font-size--small--2);
+  --admonition-font-size: 0.858rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/descargas.html">Descargas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guías</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../8logica/G820.html">Lógica computacional 8</a><input aria-label="Toggle navigation of Lógica computacional 8" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G829.html">Guía 829: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10informatica/G1000.html">Informática 10</a><input aria-label="Toggle navigation of Informática 10" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1001.html">Guía 1001: Historia de la Informática (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1002.html">Guía 1002: Tema de proyecto (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1003.html">Guía 1003: Ideas de proyecto (P3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1004.html">Guía 1004: Anteproyecto de grado (P4)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1009.html">Guía 1009: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10ofimatica/G1010.html">Ofimática 10</a><input aria-label="Toggle navigation of Ofimática 10" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1011.html">Guía 1011: OFIMÁTICA y Software Libre (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1012.html">Guía 1012: LibreOffice Writer (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1013.html">Guía 1013: Formato en LibreOffice Writer (P3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1019.html">Guía 1019: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10programacion/G1020.html">Programación 10</a><input aria-label="Toggle navigation of Programación 10" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1021.html">Guía 1021: PROGRAMACIÓN (P1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1022.html">Guía 1022: Algoritmos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1023.html">Guía 1023: PYTHON (P3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1024.html">Guía 1024: Variables en Python (P4)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1029.html">Guía 1029: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="G1110.html">Ofimática 11</a><input aria-label="Toggle navigation of Ofimática 11" checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Guía 1111: LibreOffice Calc (P1)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../11programacion/G1120.html">Programación 11</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../../_sources/1_guias/11ofimatica/G1111.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1111-libreoffice-calc-p1">
+<h1>Guía 1111: LibreOffice Calc (P1)<a class="headerlink" href="#guia-1111-libreoffice-calc-p1" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="escudo" src="../../_images/escudo.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
+<ul class="simple">
+<li><p><strong>DOCENTE</strong>: Julian Camilo Fonseca Romero</p></li>
+<li><p><strong>ASIGNATURA</strong>: Ofimática</p></li>
+<li><p><strong>GRADO</strong>: ONCE</p></li>
+<li><p><strong>PERIODO:</strong> 01</p></li>
+<li><p><strong>TIEMPO</strong>: 10 semanas (2 horas / semana)</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 20/20 horas</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ul class="simple">
+<li><p><strong>Temática</strong>: LibreOffice Calc.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Usar de forma básica el software LibreOffice Calc.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Orientaciones curriculares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Componente</strong>: Uso y apropiación de la T&amp;I.</p></li>
+<li><p><strong>Competencia</strong>: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Criterios de evaluación</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Actividades desarrolladas en su totalidad.</p></li>
+<li><p>Participación en clase.</p></li>
+<li><p>Explicación clara de conceptos.</p></li>
+<li><p>Argumentación de ideas.</p></li>
+<li><p>Cumplimiento de las reglas del aula.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Recursos (7)</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>G1111A07-calificaciones.xls <a class="reference download internal" download="" href="../../_downloads/50cf0b77b1c276a6cb4ee5b05246c4a4/G1111A07-calificaciones.xls"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1111A08-antiguedad-saldos.ods <a class="reference download internal" download="" href="../../_downloads/b4e66f8ec6dbc27bdbf81cefb1533c1f/G1111A08-antiguedad-saldos.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1111A08-calculo-precios.ods <a class="reference download internal" download="" href="../../_downloads/2c309bace8d436716441e22c54978ce9/G1111A08-calculo-precios.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1111A09-animales-raza.ods <a class="reference download internal" download="" href="../../_downloads/16d6859d54201de500799225689f7843/G1111A09-animales-raza.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1111A10-frutas.ods <a class="reference download internal" download="" href="../../_downloads/5a190c6b867cf1c1cfdfdf516759b921/G1111A10-frutas.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1111A10-ventas-ferreteria.ods <a class="reference download internal" download="" href="../../_downloads/ff1791d3dbaeeef15aafe86e1ba501db/G1111A10-ventas-ferreteria.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p><a class="reference external" href="https://www.libreoffice.org/download/" rel="noreferer noopener" target="_blank">Descarga de <strong>LibreOffice</strong></a>.</p></li>
+</ul>
+</div>
+</div>
+<section id="mensaje-del-autor">
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
+<blockquote class="pull-quote">
+<div><p>“En esta guía, los estudiantes adquieren aprendizajes en el uso de <strong>LibreOffice Calc</strong>, una herramienta de hoja de cálculo de código abierto. A través de una serie de actividades prácticas, los alumnos aprenderán a organizar, analizar y visualizar datos mediante herramientas de formato. Además, se busca que comprendan las diferencias clave entre LibreOffice Calc y Microsoft Excel, fomentando la capacidad de elegir la herramienta adecuada según las necesidades de compatibilidad, costos y complejidad de las tareas, garantizando así una autonomía técnica en la gestión de documentos ofimáticos”.</p>
+<p class="attribution">—Camilo Fonseca</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a00-introduccion-5">
+<h2>A00: Introducción (5%)<a class="headerlink" href="#a00-introduccion-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
+<ol class="arabic simple">
+<li><p>Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>Lea el mensaje del autor.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a01-libreoffice-calc-5">
+<h2>A01: LibreOffice Calc (5%)<a class="headerlink" href="#a01-libreoffice-calc-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos.</p></li>
+</ol>
+<hr class="docutils" />
+<section id="que-es-libreoffice-calc">
+<h3>¿Qué es LibreOffice Calc?<a class="headerlink" href="#que-es-libreoffice-calc" title="Link to this heading">¶</a></h3>
+<p><strong>LibreOffice Calc</strong> es una aplicación de hoja de cálculo gratuita y de código abierto que forma parte de la suite ofimática LibreOffice. Es una herramienta para organizar, analizar y almacenar datos en formato de tabla. Calc se utiliza para las siguientes tareas:</p>
+<ul class="simple">
+<li><p>Creación y edición de presupuestos, facturas y otros documentos financieros.</p></li>
+<li><p>Seguimiento de inventario y ventas.</p></li>
+<li><p>Gestión de cronogramas y tareas de proyectos.</p></li>
+<li><p>Realizar análisis estadístico.</p></li>
+<li><p>Creación de gráficos y tablas para visualizar datos.</p></li>
+</ul>
+<p>Calc es compatible con el formato OpenDocument (ODF), un estándar abierto para documentos de oficina. También permite abrir y guardar hojas de cálculo en formato Microsoft Excel, lo que lo convierte en una excelente opción para quienes necesitan compartir archivos con otros usuarios de Excel.</p>
+<p><strong>LibreOffice Calc</strong> se puede ejecutar en varios sistemas operativos como Windows, GNU/Linux y MACOS. Esto facilita la portabilidad entre diferentes sistemas de los documentos generados.</p>
+<p>A continuación se muestra un ejemplo de una hoja de cálculo creada en <strong>LibreOffice Calc</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/image0111.png"><img alt="../../_images/image0111.png" src="../../_images/image0111.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">LibreOffice Calc</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="caracteristicas-de-libreoffice-calc">
+<h3>Características de LibreOffice Calc<a class="headerlink" href="#caracteristicas-de-libreoffice-calc" title="Link to this heading">¶</a></h3>
+<p>Un uso profesional de la hoja de cálculo requiere el manejo de herramientas para análisis de datos y generación de gráficas.</p>
+<p>LibreOffice Calc permite configurar lo siguiente:</p>
+<ul class="simple">
+<li><p>Definir y modificar estilos de celda para aplicar formatos con elegancia y productividad.</p></li>
+<li><p>Uso de formulación teniendo en cuenta los nombres de intervalos de celdas.</p></li>
+<li><p>Uso del asistente de funciones, y una exploración sobre sus diferentes tipos para sumar y contar, manipular textos o fechas, encontrar valores dentro de tablas de datos y aplicar la lógica para mostrar resultados alternativos en las celdas.</p></li>
+<li><p>Anidar funciones que se pueden usar de forma combinada dentro de una misma fórmula.</p></li>
+<li><p>Establecer formatos condicionales para resaltar conjuntos de celdas que cumplan determinados criterios, así como mejorar la presentación de ciertos valores con el uso automatizado de iconos, barras de datos y escalas de color.</p></li>
+<li><p>Planificación de proyecciones de datos mediante las herramientas de solución y búsqueda del valor destino.</p></li>
+<li><p>Trabajar con tablas dinámicas para analizar y resumir grandes cantidades de datos.</p></li>
+<li><p>Proteger documentos de diferentes formas.</p></li>
+<li><p>Personalizar la interfaz, configurando y modificando menús, barras de herramientas y atajos de teclado.</p></li>
+</ul>
+<p>La siguiente imagen muestra un resumen gráfico de las características de LibreOffice Calc.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/image028.png"><img alt="../../_images/image028.png" src="../../_images/image028.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Herramientas LibreOffice Calc</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-opendocument-odf admonition">
+<p class="admonition-title">OpenDocument (ODF)</p>
+<p><strong>ODF</strong>, también referido como <strong>OpenDocument</strong>, es un formato de archivo abierto y estándar para el almacenamiento de documentos ofimáticos tales como hojas de cálculo, textos, gráficos y presentaciones.</p>
+<p>Las especificaciones iniciales fueron elaboradas por la compañía <strong>Sun Microsystems</strong>, y posteriormente fueron desarrolladas y complementadas por el comité técnico para Open Office XML de la organización <strong>OASIS</strong>. <strong>OpenDocument</strong> fue publicado como estándar <strong>OASIS</strong> el 1 de mayo de 2005.</p>
+<p>Las extensiones al nombre de archivo identificativas de los archivos <strong>OpenDocument</strong> incluye:</p>
+<ul class="simple">
+<li><p><strong>odt</strong> para documentos de texto.</p></li>
+<li><p><strong>ods</strong> para hojas de cálculo.</p></li>
+<li><p><strong>odp</strong> para presentaciones.</p></li>
+<li><p><strong>odg</strong> para gráficos.</p></li>
+<li><p><strong>odb</strong> para bases de datos.</p></li>
+</ul>
+</div>
+<div class="admonition-abrir-documentos-en-libreoffice-calc admonition">
+<p class="admonition-title">Abrir documentos en LibreOffice Calc</p>
+<p>Para abrir un documento de <strong>Calc</strong> se cuenta con las siguientes opciones:</p>
+<ul class="simple">
+<li><p>Desde el menú *<strong>Archivo &gt; Abrir</strong>.</p></li>
+<li><p>Utilizando la combinación de teclas <kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">O</kbd> (también funciona <kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">A</kbd>)</p></li>
+<li><p>Desde el botón <strong>Abrir</strong> de la barra de herramientas <strong>Estándar</strong>.</p></li>
+</ul>
+<p>Una vez hecho esto se genera un cuadro de diálogo. Debe moverse por la estructura de directorios hasta encontrar el archivo deseado. Dicho archivo se selecciona y PULSAR el botón <strong>Abrir</strong>.</p>
+<p>Se pueden abrir documentos existentes desde una gran variedad de formatos. Los formatos son:</p>
+<ul class="simple">
+<li><p>Hoja de Cálculo ODF (*ods) formato nativo para OpenOffice Calc.</p></li>
+<li><p>Plantilla de Hoja de cálculo ODF (*.ots)</p></li>
+<li><p>XML de Microsoft Excel 2007-2013 (*.xlsx)</p></li>
+<li><p>Microsoft Excel 97-2003 (*.xls, *.xlc, *.xlm, *.xlw, *.xlk, *.et)</p></li>
+<li><p>Plantilla de Microsoft Excel 97-2003 (*.xlt, *.ett)</p></li>
+<li><p>Texto CSV (*.csv)</p></li>
+</ul>
+</div>
+</section>
+<hr class="docutils" />
+<section id="diferencia-entre-libreoffice-calc-y-microsoft-excel">
+<h3>Diferencia entre LibreOffice Calc y Microsoft Excel<a class="headerlink" href="#diferencia-entre-libreoffice-calc-y-microsoft-excel" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/image038.png"><img alt="../../_images/image038.png" src="../../_images/image038.png" style="width: 150px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">LibreOffice Calc</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Excel</strong> es un programa de hojas de cálculo desarrollado por Microsoft. Es uno de los más populares del mundo y lo utilizan millones de personas para diversas tareas, entre ellas:</p>
+<ul class="simple">
+<li><p>Creación y edición de presupuestos, facturas y otros documentos financieros</p></li>
+<li><p>Seguimiento de inventario y ventas</p></li>
+<li><p>Gestión de cronogramas y tareas de proyectos</p></li>
+<li><p>Realizar análisis estadístico</p></li>
+<li><p>Creación de gráficos y tablas para visualizar datos</p></li>
+</ul>
+<p><strong>Excel</strong> es conocido por su facilidad de uso. Ofrece una amplia gama de funciones y herramientas para trabajar con datos, lo que lo convierte en una herramienta versátil para usuarios de todos los niveles.</p>
+<p>A continuación se muestra una <strong>tabla comparativa</strong> de características entre LibreOffice Calc y Microsoft Excel:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Característica</p></th>
+<th class="head"><p>LibreOffice Calc</p></th>
+<th class="head"><p>Microsoft Excel</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Precio</strong></p></td>
+<td><p>Software libre y de código abierto</p></td>
+<td><p>Producto comercial</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Sistemas operativos</strong></p></td>
+<td><p>Windows, macOS, Linux</p></td>
+<td><p>Windows, macOS, iOS, Android</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Formatos de archivo</strong></p></td>
+<td><p>ODF, Excel, CSV, TXT y muchos más</p></td>
+<td><p>Excel, CSV, TXT y muchos más</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Características</strong></p></td>
+<td><p>Conjunto completo de funciones de hoja de cálculo, que incluye funciones, fórmulas, gráficos y herramientas de análisis de datos.</p></td>
+<td><p>Conjunto completo de funciones de hoja de cálculo, que incluye funciones, fórmulas, gráficos, herramientas de análisis de datos y funciones más avanzadas como minería de datos y macros integradas.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Compatibilidad</strong></p></td>
+<td><p>Compatible con una amplia gama de formatos de archivo, incluidos los formatos ODF y Excel</p></td>
+<td><p>El programa de hoja de cálculo más utilizado en el mundo empresarial, por lo que puede resultar más fácil compartir archivos de Excel con otros.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Experiencia de uso</strong></p></td>
+<td><p>LibreOffice Calc es una buena opción para principiantes, ya que es fácil de usar y tiene una interfaz intuitiva. También es una buena opción para quienes necesitan un potente programa de hojas de cálculo sin tener que pagar por un producto comercial. Sin embargo, Calc podría no ser adecuado para quienes necesiten usar funciones más avanzadas o compartir archivos con usuarios que solo usan Excel.</p></td>
+<td><p>Excel es una buena opción para quienes necesitan un potente programa de hojas de cálculo con una amplia gama de funciones. También es una buena opción para quienes necesitan compartir archivos con otros usuarios de Excel. Sin embargo, Excel es un producto comercial y puede resultar demasiado caro para algunos usuarios.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-en-que-casos-usar-libreoffice-calc-o-microsoft-excel admonition">
+<p class="admonition-title">¿En que casos usar LibreOffice Calc o Microsoft Excel?</p>
+<p>Si bien Excel es ampliamente utilizado, su costo puede ser un obstáculo, lo que convierte a LibreOffice Calc en una alternativa gratuita muy atractiva. La comparación abarca las características, el precio y la experiencia de usuario, destacando las ventajas y desventajas de cada una. En definitiva, la elección depende de las necesidades individuales, por lo que es importante considerar factores como el presupuesto, las necesidades de colaboración y la complejidad de las tareas al seleccionar la herramienta de hoja de cálculo adecuada.</p>
+<ul class="simple">
+<li><p>LibreOffice Calc es una buena opción para principiantes, ya que es fácil de usar y tiene una interfaz amigable.</p></li>
+<li><p>LibreOffice Calc es una buena opción para los usuarios que necesitan un potente programa de hoja de cálculo sin tener que pagar por un producto comercial.</p></li>
+<li><p>Excel es una buena opción para los usuarios que necesitan utilizar funciones más avanzadas o necesitan compartir archivos con personas que usan Excel exclusivamente.</p></li>
+</ul>
+</div>
+<div class="admonition-problemas-al-abrir-en-excel-un-archivo-creado-en-libreoffice-calc admonition">
+<p class="admonition-title">Problemas al abrir en EXCEL un archivo creado en LibreOffice CALC</p>
+<p>El formato <strong>ODF</strong> está soportado por <strong>Microsoft Office</strong>, desde el <strong>Service Pack 2</strong> de su <strong>versión 2007</strong>. Por este motivo, un documento en <strong>ODF</strong> puede ser modificado en <strong>Excel 2007</strong> o <strong>Excel 2010</strong>, pero se genera el siguiente problema:</p>
+<p>Resulta que por una laguna de la especificación <strong>ODF</strong> en relación a la manera de almacenar las fórmulas, cuando <strong>Excel</strong> abre un libro <strong>ODF</strong> elaborado con <strong>LibreOffice Calc,</strong> <strong>¡SE PIERDEN LAS FÓRMULAS Y SE TRANSFORMAN EN VALORES!.</strong></p>
+<p>Cuando se tenga un archivo en LibreOffice Calc, existen <strong>problemas de compatibilidad</strong> al abrirlo en Excel.</p>
+<p>Las características que se perderán al guardar el formato en Excel son:</p>
+<ul class="simple">
+<li><p>Borde de página.</p></li>
+<li><p>Borde de cabecera (o encabezado).</p></li>
+<li><p>Borde de pie de página.</p></li>
+<li><p>Fondo de página.</p></li>
+<li><p>Fondo de cabecera (o encabezado).</p></li>
+<li><p>Fondo de pie de página.</p></li>
+</ul>
+<p>Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una imagen insertada en la cabecera o pie de página, esta imagen no se recuperará. LibreOffice Calc no reconoce esta imagen.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="interfaz-de-libreoffice-calc">
+<h3>Interfaz de LibreOffice Calc<a class="headerlink" href="#interfaz-de-libreoffice-calc" title="Link to this heading">¶</a></h3>
+<p><strong>LibreOffice Calc</strong> tiene la siguiente interfaz:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../../_images/image047.png"><img alt="../../_images/image047.png" src="../../_images/image047.png" style="width: 640px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">LibreOffice Calc</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a02-taller-10">
+<h2>A02: Taller (10%)<a class="headerlink" href="#a02-taller-10" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Responda las siguientes preguntas en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿Para que sirve LibreOffice Calc?</p></li>
+<li><p>¿Qué tareas se pueden realizar en LibreOffice Calc?</p></li>
+<li><p>¿Qué formatos son compatibles con LibreOffice Calc y que significa que sea un estándar abierto?</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno, describa las características de <strong>LibreOffice Calc</strong>.</p></li>
+<li><p>Respecto a las diferencias entre <strong>LibreOffice Calc</strong> y <strong>Microsoft Excel</strong>, en su cuaderno responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Qué es es Microsoft Excel?</p></li>
+<li><p>¿Qué tareas se pueden hacer con Microsoft Excel?</p></li>
+<li><p>¿Qué diferencias pueden haber entre las tareas que se pueden hacer en Microsoft Excel y LibreOffice Calc?</p></li>
+<li><p>¿Cuál es la principal diferencia en cuanto al “Precio” entre LibreOffice Calc y Microsoft Excel?</p></li>
+<li><p>En términos de “Sistemas operativos”, ¿Qué diferencia clave existe entre ambos programas?</p></li>
+<li><p>¿Qué es el estándar <strong>OpenDocument</strong> y cuáles son sus extensiones?</p></li>
+<li><p>¿Qué formatos permite abrir LibreOffice Calc?</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno, describa la razón por la cual <strong>no es recomendable</strong> abrir en Microsoft Excel un documento previamente creado en LibreOffice Calc.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a03-analisis-de-casos-5">
+<h2>A03: Análisis de casos (5%)<a class="headerlink" href="#a03-analisis-de-casos-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Lea el siguiente caso de un estudiante y en un párrafo de 5 líneas describa como puede dar solución al mismo:</p>
+<blockquote>
+<div><p>“Un estudiante de décimo grado se enfrenta a un desafío común: ha creado un proyecto importante en Microsoft Excel en casa, pero al intentar abrirlo en el colegio, se da cuenta de que no pueden acceder al archivo debido a la <strong>falta de una licencia de Microsoft Excel</strong> en los equipos de la institución. Esta situación resalta un problema de compatibilidad y accesibilidad que puede interrumpir el trabajo y el aprendizaje del estudiante”.</p>
+</div></blockquote>
+</li>
+<li><p><strong>LibreOffice Calc</strong> se puede ejecutar en varios sistemas operativos como Windows, GNU/Linux y macOS. En los siguientes casos identifique que sistema operativo está instalado y explique por qué.</p>
+<blockquote>
+<div><p><strong>CASO 01</strong>: Un estudiante de grado décimo posee una computadora personal en su hogar. Para un proyecto escolar de ofimática, necesita una hoja de cálculo potente para organizar datos, realizar análisis estadísticos y crear gráficos. Sin embargo, su familia no cuenta con una licencia de Microsoft Excel y el presupuesto es limitado. La opción de instalar LibreOffice Calc en su equipo es ideal, ya que es una aplicación de hoja de cálculo gratuita y de código abierto compatible con este sistema operativo. Además, le permitirá abrir y guardar archivos en formato Microsoft Excel, facilitando la compatibilidad con otros compañeros o la institución si fuera necesario.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 02</strong>: Una organización sin fines de lucro decide migrar todos sus sistemas a una plataforma de código abierto para reducir costos y fomentar la independencia tecnológica. Necesitan una herramienta para llevar el seguimiento de inventario y ventas, así como para gestionar los cronogramas de sus proyectos. Optar por LibreOffice Calc es la solución perfecta, ya que es una aplicación, gratuita y de código abierto, que cumple con todas sus necesidades de hoja de cálculo sin incurrir en costos de licencia.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 03</strong>: Un diseñador gráfico freelance necesita una herramienta de hoja de cálculo para gestionar sus facturas, presupuestos y llevar un control de sus ingresos y gastos. Aunque ocasionalmente recibe archivos de clientes en formato Excel, no desea invertir en una licencia de Microsoft Office, ya que su uso de hojas de cálculo es secundario a su trabajo de diseño. Para este profesional, instalar LibreOffice Calc es la elección lógica, dado que es gratuito y puede manejar los formatos de archivo de Excel sin problemas. Esto le permite mantener sus costos bajos y tener una herramienta funcional para sus tareas administrativas.</p>
+</div></blockquote>
+</li>
+<li><p>Considerando las ventajas y desventajas tanto de <strong>LibreOffice Calc</strong> como de <strong>Microsoft Excel</strong> (precio, compatibilidad, funciones avanzadas, etc.), para los siguientes perfiles, en su cuaderno explique por qué le recomendaría usar <strong>LibreOffice Calc</strong> o <strong>Microsoft Excel</strong>:</p>
+<ul class="simple">
+<li><p>Un estudiante.</p></li>
+<li><p>Un empleado.</p></li>
+<li><p>Un Padre de familia.</p></li>
+<li><p>Un Pastor de una iglesia.</p></li>
+<li><p>Un Deportista.</p></li>
+<li><p>Un Docente.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-interfaz-de-libreoffice-calc-001-5">
+<h2>A04: Interfaz de LibreOffice Calc <kbd class="kbd docutils literal notranslate">001</kbd> (5%)<a class="headerlink" href="#a04-interfaz-de-libreoffice-calc-001-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Ejecute el software LibreOffice Calc.</p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ol class="arabic simple">
+<li><p>Dibuje la interfaz de <strong>LibreOffice Calc</strong> y señale:</p>
+<ul class="simple">
+<li><p>Barra de herramientas (estándar y de formato)</p></li>
+<li><p>Barra de herramientas lateral</p></li>
+<li><p>Barra de fórmulas</p></li>
+<li><p>Cuadro de nombres</p></li>
+<li><p>Área de trabajo</p></li>
+<li><p>Barra de estado</p></li>
+</ul>
+</li>
+</ol>
+</div>
+</li>
+<li><p>En la interfaz de LibreOffice Calc identifique:</p>
+<ul class="simple">
+<li><p>La <strong>barra de herramientas estándar</strong> y en el dibujo de su cuaderno, agregue los <strong>nombres de los iconos</strong>.</p></li>
+<li><p>La <strong>barra de herramientas formato</strong> y en el dibujo de su cuaderno, agregue los <strong>nombres de los iconos</strong>.</p></li>
+<li><p>La <strong>barra de fórmulas</strong> y en el dibujo de su cuaderno, agregue los <strong>nombres de los iconos</strong>.</p></li>
+<li><p>La <strong>barra de herramientas lateral</strong> y en el dibujo de su cuaderno, agregue los <strong>nombres de las 5 herramientas presentes en esta barra</strong>.</p></li>
+<li><p>La <strong>barra de estado</strong> y en el dibujo de su cuaderno, agregue la <strong>descripción de cada uno de los componentes de esta barra</strong>. (PULSAR DOBLE CLICK EN EL COMPONENTE)</p></li>
+</ul>
+</li>
+<li><p>Cierre el software LibreOffice Calc.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a05-seleccion-de-celdas-y-rangos-018-5">
+<h2>A05: Selección de celdas y rangos <kbd class="kbd docutils literal notranslate">018</kbd> (5%)<a class="headerlink" href="#a05-seleccion-de-celdas-y-rangos-018-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Ejecute el software LibreOffice Calc.</p></li>
+<li><p>Identifique el <strong>área de trabajo</strong> y seleccione cualquier celda.</p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué es una celda?</p>
+<p>Una celda es la intersección entre una fila y una columna.</p>
+<ul class="simple">
+<li><p>Las filas son numeradas con el número 1 en adelante.</p></li>
+<li><p>Las columnas son denominadas con la letra A en adelante.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../../_images/image057.png"><img alt="../../_images/image057.png" src="../../_images/image057.png" style="width: 270px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">LibreOffice Calc</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+<li><p>Una vez seleccionada la celda, observe el <strong>Cuadro de nombres</strong>. En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Qué sucede con el <strong>cuadro de nombres</strong> cuando selecciona una celda?</p></li>
+<li><p>¿Qué celda muestra en el <strong>cuadro de nombres</strong>?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Seleccione varias celdas de forma vertical, luego de forma horizontal y por último seleccione varias celdas que incluyan filas y columnas. En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Por cada selección, en su cuaderno escriba lo que pasa el Cuadro de nombres.</p>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">¿Cómo seleccionar varias celdas al mismo tiempo?</p>
+<p>Existen dos formas de seleccionar celdas. Estas son:</p>
+<ul class="simple">
+<li><p>Para seleccionar varias celdas al mismo tiempo, mantenga pulsada la tecla <kbd class="kbd docutils literal notranslate">CTRL</kbd> al mismo tiempo que selecciona cada una de las celdas.</p></li>
+<li><p>Si desea seleccionar varias celdas seleccionando solo dos celdas, mantenga pulsada la tecla <kbd class="kbd docutils literal notranslate">SHIFT</kbd> y seleccione una celda inicial y luego una celda final.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Identifique el <strong>área de trabajo</strong> y seleccione los siguientes <strong>rangos de celdas</strong>.</p>
+<ul class="simple">
+<li><p>B5:B8, C2:C16, D5:D8 (<strong>¿Qué figura se forma?</strong>)</p></li>
+<li><p>B2:B13, C11:C13, D2:D13 (<strong>¿Qué figura se forma?</strong>)</p></li>
+<li><p>B2:B13, C2:C4, C12:C17, C19, D2:D19, E2:E4, E12:E17, E19, F2:F13 (<strong>¿Qué figura se forma?</strong>)</p></li>
+<li><p>A13:A14, B12:B14, C11:C14, D10:D14, E9:E14, F8:F14, G7:G14 (<strong>¿Qué figura se forma?</strong>)</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Con los rangos seleccionados, dibuje las figuras que se forman.</p>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué es un rango de celdas?</p>
+<p>Cuando selecciona varias celdas al mismo tiempo, entonces se obtiene un rango de celdas. Por ejemplo, si se seleccionan al mismo tiempo las siguientes celdas: A1, A2, A3, B1, B2, B3, C1, C2 y C3; en el <strong>Cuadro de nombres</strong> mostrará este rango de celdas en forma resumida: A1:C3</p>
+<p>A1:C3 quiere decir que se seleccionaron las celdas desde A1 hasta C3.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/image067.png"><img alt="../../_images/image067.png" src="../../_images/image067.png" style="width: 360px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">LibreOffice Calc</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+<li><p>Siga las siguientes instrucciones:</p>
+<ul class="simple">
+<li><p>MANTENGA PRESIONADA LA TECLA <kbd class="kbd docutils literal notranslate">CTRL</kbd>, y luego PULSE clic sobre los número impares (desde el número 1 hasta el número 21) de las filas en la hoja de cálculo.</p></li>
+<li><p>SIN SOLTAR LA TECLA <kbd class="kbd docutils literal notranslate">CTRL</kbd>, ahora PULSE clic sobre las letras de las columnas B, D, F, H y J. De esta manera se pueden seleccionar filas y columnas completas.</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>¿Qué figura se forma en la hoja de cálculo con la selección de <strong>filas</strong> y <strong>columnas</strong> que acaba de hacer?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Realice una captura de pantalla con la figura formada y guarde la imagen en la carpeta de evidencias del periodo actual con el nombre: <strong>G1111A05-seleccionCeldas.png</strong></p></li>
+<li><p>Sin escribir datos en ninguna celda pulse: <kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <kbd class="kbd docutils literal notranslate">↓</kbd> y, seguidamente: <kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <kbd class="kbd docutils literal notranslate">→</kbd>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba la celda a la que llegó (este límite puede variar según la versión del programa utilizada).</p></li>
+<li><p>Dibuje el siguiente diagrama e identifique las celdas límites esquineras de LibreOffice Calc. El nombre de estas celdas escribirlas en las esquinas superiores del diagrama.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../../_images/image077.png"><img alt="../../_images/image077.png" src="../../_images/image077.png" style="width: 270px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Límites área de trabajo</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+<li><p>En una hoja de cálculo, hacer clic sobre el <strong>cuadro de nombres</strong> y escriba <strong>J300</strong> y PULSE la tecla <kbd class="kbd docutils literal notranslate">ENTER</kbd>. Compruebe que se ha desplazado hasta la celda <strong>J300</strong>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Escriba 5 nombres de celdas y pruebe esta técnica con cada celda escrita.</p>
+</div>
+</li>
+<li><p>En el <strong>cuadro de nombres</strong> escriba la referencia <strong>B2:D10</strong> y luego presione la tecla <kbd class="kbd docutils literal notranslate">ENTER</kbd></p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>¿Que ha ocurrido cuando escribió la referencia <strong>B2:D10</strong>?</p>
+</div>
+</li>
+<li><p>Investigue en Internet los límites de celda en Microsoft Excel.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Compare los límites de celda de <strong>Microsoft Excel</strong> con <strong>LibreOffice Calc</strong> y describa que tanto se diferencian.</p>
+</div>
+</li>
+<li><p>Cierre el software LibreOffice Calc.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a06-edicion-basica-003-5">
+<h2>A06: Edición básica <kbd class="kbd docutils literal notranslate">003</kbd> (5%)<a class="headerlink" href="#a06-edicion-basica-003-5" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Ejecute el software LibreOffice Calc.</p></li>
+<li><p>Situar el cursor en la celda <strong>A1</strong>. Hacer clic en el área de edición de la <strong>barra de fórmulas</strong>. Escriba un texto cualquiera y en la <strong>barra de fórmulas</strong> pulsar el botón <strong>Aplicar</strong> [✓].</p></li>
+<li><p>Situar el cursor en la celda <strong>A2</strong>. Hacer doble clic en la celda. Escribir un texto cualquiera y pulse la tecla <kbd class="kbd docutils literal notranslate">ENTER</kbd>. Compruebe como automáticamente se desplaza la celda activa a <strong>A3</strong>.</p></li>
+<li><p>Desarrolle nuevamente el punto anterior, pero en vez de hacer doble clic en la celda, pulsar la tecla <kbd class="kbd docutils literal notranslate">F2</kbd>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Prefiere usted editar el texto en una celda usando <kbd class="kbd docutils literal notranslate">F2</kbd>? o ¿ejecutando doble clic sobre la celda? ¿Por qué?.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Situar el cursor en la celda <strong>A1</strong> (que contendrá el texto introducido en el paso 2), comience a escribir un texto cualquiera pero en vez de introducirlo, en la barra de fórmulas pulsar el botón Cancelar [❌].</p></li>
+<li><p>Desarrolle nuevamente el punto anterior, pero en vez de pulsar el botón Cancelar [❌], PULSE la tecla <kbd class="kbd docutils literal notranslate">ESC</kbd>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Prefiere usted cancelar la edición del texto en una celda usando <kbd class="kbd docutils literal notranslate">ESC</kbd>? o ¿pulsando el botón Cancelar [❌]? ¿Por qué?.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Situar el cursor en la celda <strong>B1</strong>, pulsar el botón <span class="guilabel">Fórmula</span> (el botón tiene forma de <code class="docutils literal notranslate"><span class="pre">=</span></code> a la izquierda de la barra de fórmulas) y en el área de edición (a continuación del símbolo igual <code class="docutils literal notranslate"><span class="pre">=</span></code>) escribir: <span class="math notranslate nohighlight">\(100/3\)</span> y pulsar el botón <span class="guilabel">Aplicar</span>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Con sus palabras, describa lo que acabó de pasar en el documento al desarrollar el <strong>punto 7</strong>.</p>
+</div>
+</li>
+<li><p>Cierre el software LibreOffice Calc.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a07-gestion-de-documentos-512-5">
+<h2>A07: Gestión de documentos <kbd class="kbd docutils literal notranslate">512</kbd> (5%)<a class="headerlink" href="#a07-gestion-de-documentos-512-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>EJECUTE el software LibreOffice Calc.</p></li>
+<li><p>En el documento, pulse el botón <span class="guilabel">Nuevo</span> de la <strong>barra de herramientas Estándar</strong>.</p></li>
+<li><p>En el nuevo documento creado, seleccione <em><strong>Archivo &gt; Nuevo &gt; Hoja de Cálculo</strong></em></p></li>
+<li><p>En el último documento creado, pulse la combinación de teclas: <kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">U</kbd></p></li>
+<li><p>Verifique que tenga cuatro libros nuevos abiertos: <strong>Sin título 1</strong>, <strong>Sin título 2</strong>, <strong>Sin título 3</strong> y <strong>Sin título 4</strong>. Los libros organizarlos en forma de cuadrilla en el escritorio (cuadrilla de 4 archivos).</p></li>
+<li><p>Realice una captura de pantalla y guarde la imagen en la carpeta de evidencias del periodo actual. El nombre de la imagen es: <strong>G1111A07-creacionArchivos.png</strong> (En la imagen se deben ver los cuatro documentos creados abiertos y la fecha).</p></li>
+<li><p>En el documento <strong>Sin título 1</strong>, INTRODUZCA cualquier contenido en algunas celdas.</p></li>
+<li><p>IDENTIFIQUE el icono de guardar en la <strong>barra de herramientas estándar</strong>. PULSE el icono de guardar.</p></li>
+<li><p>GUARDE el documento con el nombre: <strong>G1111A07-primerasPracticas.ods</strong> en la carpeta de evidencias del periodo actual.</p></li>
+<li><p>MODIFIQUE el contenido del documento.</p></li>
+<li><p>Vuelva a GUARDAR el documento pero esta vez en el menú superior PULSAR <strong>Archivo</strong> &gt; <strong>Guardar como…</strong> y cambie de nombre a: <strong>G1111A07-masPracticas.ods</strong> (Guardar el documento en la carpeta de evidencias del periodo actual).</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Realizar una descripción relacionada con las formas de crear y guardar documentos.</p>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Calc.</p></li>
+<li><p>Descargue el siguiente archivo y guárdelo en la carpeta de evidencias del periodo actual.</p>
+<ul class="simple">
+<li><p>G1111A07-calificaciones.xls <a class="reference download internal" download="" href="../../_downloads/50cf0b77b1c276a6cb4ee5b05246c4a4/G1111A07-calificaciones.xls"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>ABRA el archivo <strong>G1111-calificaciones.xls</strong> con el software <strong>LibreOffice Calc</strong>.</p></li>
+<li><p>GUARDE el archivo como <strong>Hoja de cálculo ODF</strong> manteniendo el nombre original (sólo cambiará la extensión). (Usar <strong>Guardar como…</strong>)</p></li>
+<li><p>GUARDE nuevamente el archivo esta vez en formato <strong>Texto CSV.</strong> (Acepte las opciones por defecto y mantenga el nombre original).</p></li>
+<li><p>VERIFIQUE que ahora tiene 3 archivos en su carpeta de evidencias así:</p>
+<ul class="simple">
+<li><p><strong>G1111A07-calificaciones.xls</strong></p></li>
+<li><p><strong>G1111A07-calificaciones.ods</strong></p></li>
+<li><p><strong>G1111A07-calificaciones.csv</strong></p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Describa las diferencias en el contenido que tengan los 3 archivos.</p>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Calc.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a08-cortar-copiar-y-pegar-202-5">
+<h2>A08: Cortar, copiar y pegar <kbd class="kbd docutils literal notranslate">202</kbd> (5%)<a class="headerlink" href="#a08-cortar-copiar-y-pegar-202-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Descargue los siguientes archivos y guárdelos en la carpeta de evidencias del periodo actual:</p>
+<ul class="simple">
+<li><p>G1111A08-antiguedad-saldos.ods <a class="reference download internal" download="" href="../../_downloads/b4e66f8ec6dbc27bdbf81cefb1533c1f/G1111A08-antiguedad-saldos.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1111A08-calculo-precios.ods <a class="reference download internal" download="" href="../../_downloads/2c309bace8d436716441e22c54978ce9/G1111A08-calculo-precios.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Lea la siguiente información:</p>
+<div class="tip admonition">
+<p class="admonition-title">Copiar, cortar y pegar en LibreOffice Calc</p>
+<p>Para copiar o cortar un rango de celdas, primero seleccionar dicho rango y luego copiar o cortar (según el caso) dicho rango, luego seleccionar la celda destino y después pegar el rango previamente seleccionado.</p>
+<p>A continuación se muestran los atajos de teclado universales para estas acciones:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>ATAJO</p></th>
+<th class="head"><p>ACCIÓN</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">C</kbd></p></td>
+<td><p>Copiar</p></td>
+</tr>
+<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">X</kbd></p></td>
+<td><p>Cortar</p></td>
+</tr>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">V</kbd></p></td>
+<td><p>Pegar</p></td>
+</tr>
+<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">SHIFT</kbd> + <kbd class="kbd docutils literal notranslate">V</kbd></p></td>
+<td><p>Pegado especial</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+<li><p>ABRA el archivo <strong>G1111A08-calculo-precios.ods</strong></p></li>
+<li><p>Seleccione el rango (<strong>B6:G17</strong>). Luego CORTE y PEGUE dicho rango a la celda <strong>A1</strong>.</p></li>
+<li><p>Seleccione el rango (<strong>A1:F12</strong>) de la hoja <strong>Producto 1</strong> y pegar dicho rango en las celdas <strong>A1</strong> de las hojas <strong>Producto 2</strong> y <strong>Producto 3</strong>.</p></li>
+<li><p>Las tres hojas <strong>Producto 1</strong>, <strong>Producto 2</strong> y <strong>Producto 3</strong> deberían tener el siguiente aspecto:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../../_images/image086.png"><img alt="../../_images/image086.png" src="../../_images/image086.png" style="width: 640px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Hoja LibreOffice Calc</span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>GUARDE los cambios y CIERRE el documento <strong>G1111A08-calculo-precios.ods</strong></p></li>
+<li><p>ABRA el archivo <strong>G1111A08-antiguedad-saldos.ods</strong></p></li>
+<li><p>En la <strong>barra inferior</strong> donde están las hojas, PULSAR el botón <strong>+</strong>, para crear un hoja nueva en el archivo (<strong>Hoja2</strong>).</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../../_images/image096.png"><img alt="../../_images/image096.png" src="../../_images/image096.png" style="width: 270px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Hojas LibreOffice Calc</span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la <strong>Hoja1</strong> seleccione el rango (<strong>A1:E17</strong>), luego COPIE y PEGUE el contenido en la celda <strong>A1</strong> de la <strong>Hoja2</strong>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>Al momento de pegar el contenido en la <strong>Hoja2</strong>, ¿Se copio de forma correcta?, ¿Se detallan el nombre de los clientes de forma clara?</p></li>
+</ul>
+</div>
+</li>
+<li><p>En la <strong>Hoja2</strong>, situar el cursor en medio de las columnas A y B hasta que se forme el ícono de <strong>dos flechas opuestas horizontales</strong>, luego PULSAR DOBLE CLIC. Al hacer esto, la columna A ahora es de mayor tamaño de tal forma que el nombre de los clientes puede verse claramente.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="../../_images/image106.png"><img alt="../../_images/image106.png" src="../../_images/image106.png" style="width: 270px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Tamaño automático de celdas</span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la <strong>Hoja2</strong>, copiar el rango (<strong>A1:E17</strong>).</p></li>
+<li><p>Crear una nueva hoja de nombre: <strong>Hoja3</strong></p></li>
+<li><p>En la <strong>Hoja3</strong>, en la celda A1 realizar un PEGADO ESPECIAL con el atajo de teclado:</p>
+<p><kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">SHIFT</kbd> + <kbd class="kbd docutils literal notranslate">V</kbd>.</p>
+<p>Se abrirá la siguiente ventana:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id11">
+<a class="reference internal image-reference" href="../../_images/image114.png"><img alt="../../_images/image114.png" src="../../_images/image114.png" style="width: 520px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ventana pegado especial</span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la ventana <strong>Pegado especial</strong>, en la sección de <strong>Pegar</strong>, DESACTIVAR la opciones de:</p>
+<ul class="simple">
+<li><p>Números</p></li>
+<li><p>Fecha y hora</p></li>
+</ul>
+</li>
+<li><p>Luego PULSAR el botón <span class="guilabel">Aceptar</span>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Qué es un <strong>pegado especial</strong> y que diferencia hay con un <strong>pegado normal</strong>?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Calc.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a09-formatos-20-08-2020-0-0-102-5">
+<h2>A09: formatos ($, #, 20/08/2020, 0.0) <kbd class="kbd docutils literal notranslate">102</kbd> (5%)<a class="headerlink" href="#a09-formatos-20-08-2020-0-0-102-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Descargue el siguiente archivo y GUÁRDELO en la carpeta de evidencias del periodo actual:</p>
+<ul class="simple">
+<li><p>G1111A09-animales-raza.ods <a class="reference download internal" download="" href="../../_downloads/16d6859d54201de500799225689f7843/G1111A09-animales-raza.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo G1111A09-animales-raza.ods y seleccione toda la fila 1 (PULSAR clic izquierdo sobre el número 1 de la fila), luego genere el menú contextual sobre la fila 1 (PULSAR clic derecho sobre el número 1 de la fila). Luego del menú contextual, SELECCIONAR la opción <strong>Formato de celdas</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id12">
+<a class="reference internal image-reference" href="../../_images/image125.png"><img alt="../../_images/image125.png" src="../../_images/image125.png" style="width: 240px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Menú contextual <strong>formato de celdas</strong></span><a class="headerlink" href="#id12" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Al hacer esto, se abre la ventana: <strong>Formato de celdas</strong></p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id13">
+<a class="reference internal image-reference" href="../../_images/image134.png"><img alt="../../_images/image134.png" src="../../_images/image134.png" style="width: 520px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ventana <strong>formato de celdas</strong></span><a class="headerlink" href="#id13" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Configure de la siguiente manera:</p>
+<ul class="simple">
+<li><p>En la pestaña <strong>Tipo de letra:</strong></p>
+<ul>
+<li><p>Familia: Verdana</p></li>
+<li><p>Tipofaz: Negrita</p></li>
+<li><p>Tamaño: 20 pt</p></li>
+</ul>
+</li>
+<li><p>En la pestaña <strong>Efectos tipográficos</strong>:</p>
+<ul>
+<li><p>Color de letra: Púrpura claro 2</p></li>
+<li><p>Efectos: Sombra</p></li>
+</ul>
+</li>
+<li><p>PULSAR <strong>Aceptar</strong></p></li>
+</ul>
+</li>
+<li><p>SELECCIONE la fila 2 y en <strong>Formato de celdas</strong> configurar:</p>
+<ul class="simple">
+<li><p>Tipo de letra en Negrita cursiva.</p></li>
+</ul>
+</li>
+<li><p>SELECCIONE la fila 4 y en <strong>Formato de celdas</strong> configurar:</p>
+<ul class="simple">
+<li><p>Tipo de letra en <strong>Negrita</strong>, tamaño <strong>11pt</strong>.</p></li>
+<li><p>Efectos tipográficos con color de letra <strong>Purpura oscuro 1</strong>.</p></li>
+<li><p>Alineación configurar con <em>Alineación de texto horizontal</em> establecer en <strong>Centro</strong> y <em>Alineación de texto vertical</em> establecer en <strong>Medio</strong>.</p></li>
+</ul>
+</li>
+<li><p>SELECCIONE los rangos de celdas: <strong>A5:A19</strong>, <strong>E5:E19</strong>, <strong>H5:H19</strong> y en <strong>Formato de celdas</strong> configurar:</p>
+<ul class="simple">
+<li><p>Alineación Horizontal en <strong>Centro</strong>.</p></li>
+</ul>
+</li>
+<li><p>SELECCIONE el rango de celdas <strong>A1:I1</strong> y en la barra de herramientas formato PULSAR el botón <strong>Combinar y centra o separa celdas conforme al estado actual</strong>.</p></li>
+<li><p>Al igual que el <strong>paso 10</strong>, SELECCIONE el rango de celdas: <strong>A2:I2,</strong> luego <strong>combinar y centrar</strong>.</p></li>
+<li><p>SELECCIONE el rango de celdas <strong>A1:I1</strong> y en la barra de herramientas formato PULSAR el botón <strong>Color de fondo</strong> y luego seleccionar: <strong>Amarillo</strong></p></li>
+<li><p>Al igual que el paso 12, SELECCIONE el rango de celdas: <strong>A2:I2</strong>, luego aplique un color de fondo: <strong>Azul</strong></p></li>
+<li><p>SELECCIONE el rango de celdas <strong>A4:I19</strong> y en la barra de herramientas formato PULSAR el botón <strong>Bordes</strong> y seleccionar <strong>Borde exterior</strong>. Luego PULSAR el botón <strong>Estilos de bordes</strong> y seleccionar <strong>Discontinuo</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id14">
+<a class="reference internal image-reference" href="../../_images/image143.png"><img alt="../../_images/image143.png" src="../../_images/image143.png" style="width: 180px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ventana <strong>formato de celdas</strong></span><a class="headerlink" href="#id14" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>GUARDE los cambios. El archivo de momento debería tener la siguiente apariencia:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id15">
+<a class="reference internal image-reference" href="../../_images/image154.png"><img alt="../../_images/image154.png" src="../../_images/image154.png" style="width: 640px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Formato</strong></span><a class="headerlink" href="#id15" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>SELECCIONE el rango de celdas: <strong>A5:A19</strong> y en la <strong>barra de herramientas formato</strong>, PULSAR el botón <span class="guilabel">Formatear como número</span>, luego PULSAR dos veces el botón <span class="guilabel">Eliminar decimal</span>.</p></li>
+<li><p>SELECCIONE el rango de celdas: <strong>I5:I19</strong> y en la <strong>barra de herramientas formato</strong>, PULSAR el botón de opciones del botón <span class="guilabel">Formatear como moneda</span>, luego seleccionar la opción <strong>COP $ Español (Colombia)</strong>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Cuántos decimales por defecto tienen los números al dar <strong>formato como moneda</strong>?</p></li>
+</ul>
+</div>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id16">
+<a class="reference internal image-reference" href="../../_images/image164.png"><img alt="../../_images/image164.png" src="../../_images/image164.png" style="width: 360px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Formato</strong></span><a class="headerlink" href="#id16" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>SELECCIONE el rango de celdas: <strong>H5:H19</strong> y PULSAR clic derecho de mouse para generar un menú contextual, luego seleccione la opción <strong>Formato de celdas…</strong></p></li>
+<li><p>En la pestaña de Números configurar:</p>
+<ul class="simple">
+<li><p>Categoría: Fecha</p></li>
+<li><p>Formato: 1 de diciembre de 1999</p></li>
+<li><p>PULSAR el botón <span class="guilabel">Aceptar</span></p></li>
+</ul>
+<p>Lo más probable es que el contenido de las fechas muestre caracteres <strong>###</strong>.</p>
+</li>
+<li><p>Para que se muestren las fechas, PULSAR doble clic en la línea que separa la columna H con la columna I. Esto hará que las fechas aparezcan nuevamente.</p>
+<ul>
+<li><p>Nuevamente PULSAR clic, pero esta vez en la separación de la columna A y la fila 1. Esto hará que toda la hoja de cálculo sea seleccionada.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id17">
+<a class="reference internal image-reference" href="../../_images/image174.png"><img alt="../../_images/image174.png" src="../../_images/image174.png" style="width: 200px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Formato</strong></span><a class="headerlink" href="#id17" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>PULSAR doble clic en la línea que separa la columna A con la columna B.</p></li>
+<li><p>PULSAR doble clic en la línea que separa la fila 1 con la fila 2.</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Que pasó con el tamaño de las filas y las columnas de la hoja de cálculo?</p></li>
+<li><p>¿Qué posibles problemas se tendrían si no se tiene un tamaño adecuado de las filas y columnas?</p></li>
+<li><p>¿Qué posibles problemas se tendrían si la información de fechas, números y moneda no están correctamente formateadas?</p></li>
+</ul>
+</div>
+</li>
+<li><p>La apariencia final del <strong>documento</strong> debería ser la siguiente:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id18">
+<a class="reference internal image-reference" href="../../_images/image183.png"><img alt="../../_images/image183.png" src="../../_images/image183.png" style="width: 680px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Formato</strong></span><a class="headerlink" href="#id18" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Calc.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a10-buscar-reemplazar-ocultar-y-rellenar-307-5">
+<h2>A10: Buscar, reemplazar, ocultar y rellenar <kbd class="kbd docutils literal notranslate">307</kbd> (5%)<a class="headerlink" href="#a10-buscar-reemplazar-ocultar-y-rellenar-307-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE los siguientes archivos y GUÁRDELOs en la carpeta de evidencias del periodo actual:</p>
+<ul class="simple">
+<li><p>G1111A10-frutas.ods <a class="reference download internal" download="" href="../../_downloads/5a190c6b867cf1c1cfdfdf516759b921/G1111A10-frutas.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1111A10-ventas-ferreteria.ods <a class="reference download internal" download="" href="../../_downloads/ff1791d3dbaeeef15aafe86e1ba501db/G1111A10-ventas-ferreteria.ods"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>ABRA el archivo <strong>G1111A10-frutas.ods</strong> y PULSE las teclas: <kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">B</kbd> para abrir el menú de búsqueda en la parte inferior de la interfaz.</p></li>
+<li><p>En la barra de búsqueda, escribir el nombre: “kiwi” y PULSAR la opción de Buscar todo. Se abrirá una ventana con los resultados de búsqueda.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Escriba el número de resultados así como también, el nombre de cada una de las tres columnas de dicha ventana.</p>
+</div>
+</li>
+<li><p>Cierre la ventana de <strong>resultados de búsqueda</strong> y en el menú de <strong>búsqueda</strong>, PULSAR el botón <strong>Buscar y reemplazar</strong>. Se abrirá la ventana <strong>Buscar y reemplazar</strong>. En la opción de <strong>Buscar</strong> escribir <strong>Fernandez</strong> y en la opción de <strong>Reemplazar</strong> escribir <strong>Fernández</strong>. PULSAR el botón <span class="guilabel">Reemplazar todo</span>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id19">
+<a class="reference internal image-reference" href="../../_images/image192.png"><img alt="../../_images/image192.png" src="../../_images/image192.png" style="width: 680px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Buscar y reemplazar</strong></span><a class="headerlink" href="#id19" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Escribir el número de resultados encontrados y reemplazados.</p>
+</div>
+</li>
+<li><p>Cierre la ventana de <strong>Buscar y reemplazar</strong>. Realice nuevamente el procedimiento pero esta vez buscar la palabra <strong>Catalunya</strong> y reemplazar por la palabra <strong>Este</strong>. También realice la búsqueda de la palabra <strong>Andalucía</strong> y reemplazar por la palabra <strong>Sur</strong>.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Escribir el número de resultados encontrados y reemplazados.</p>
+</div>
+</li>
+<li><p>Guarde los cambios y abra el documento: <strong>G1111A10-ventas-ferreteria.ods</strong>.</p></li>
+<li><p>Seleccione el rango de filas 5 a 7 (Mantenga PULSADA la tecla <kbd class="kbd docutils literal notranslate">CTRL</kbd>). Encima de algún número de las filas seleccionadas (5 a 7), PULSAR clic derecho para generar el <strong>menú contextual</strong> y seleccionar la opción: <strong>Ocultar filas</strong></p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id20">
+<a class="reference internal image-reference" href="../../_images/image203.png"><img alt="../../_images/image203.png" src="../../_images/image203.png" style="width: 270px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Menú contextual: Ocultar filas</strong></span><a class="headerlink" href="#id20" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Oculte las filas 9 a 11, 13 a 15 y 17 a 19.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Describa la forma final de la tabla y la forma en la que se modificó el contenido.</p>
+</div>
+</li>
+<li><p>Guarde los cambios y cree un nuevo documento de nombre: <strong>G1111A10-control-gastos-semanales.ods</strong></p></li>
+<li><p>Agregue el siguiente contenido al documento tal cual como aparece en la siguiente imagen:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id21">
+<a class="reference internal image-reference" href="../../_images/image213.png"><img alt="../../_images/image213.png" src="../../_images/image213.png" style="width: 270px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Relleno de celdas</strong></span><a class="headerlink" href="#id21" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la celda <strong>B8</strong> escriba: <strong>Lunes</strong></p></li>
+<li><p>Con la celda <strong>B8</strong> seleccionada, atrastre el cuadrado pequeño en la parte inferior derecha de la celda, hasta la celda H8 para rellenar.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id22">
+<a class="reference internal image-reference" href="../../_images/image222.png"><img alt="../../_images/image222.png" src="../../_images/image222.png" style="width: 640px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Relleno de celdas</strong></span><a class="headerlink" href="#id22" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Qué acabo de pasar en las celdas C8, D8, E8, F8, G8 y H8?</p></li>
+</ul>
+</div>
+</li>
+<li><p>En la celda B9, escriba el número: <strong>1</strong>. Luego atrastre el cuadrado pequeño hasta la celda H9.</p></li>
+<li><p>En la celda H10, escriba: <strong>60km</strong>. Luego atrastre el cuadrado pequeño hasta la celda B10.</p></li>
+<li><p>En la celda B11, escriba el mes: <strong>enero.</strong> Luego atrastre el cuadrado pequeño hasta la celda H11.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>En el desarrollo de los puntos 13, 14 y 15 describa que pasó en el documento.</p>
+</div>
+</li>
+<li><p>En la celda <strong>H12</strong>, escriba el número: 1000. Luego SELECCIONE el rango de celdas <strong>H12:B12</strong>. Después, SELECCIONAR en la barra de menú superior: <strong>Hoja</strong> &gt; <strong>Rellenas celdas</strong> &gt; <strong>Rellenar series</strong>. Se abrirá la ventana Rellenar serie. Configurar así:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id23">
+<a class="reference internal image-reference" href="../../_images/image231.png"><img alt="../../_images/image231.png" src="../../_images/image231.png" style="width: 380px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Ventana rellenar serie</strong></span><a class="headerlink" href="#id23" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>PULSAR el botón <span class="guilabel">Aceptar</span>.</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>En su cuaderno responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Cómo se relleno la serie?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Teniendo en cuenta el desarrollo de las diferentes TAREAS de la presente ACTIVIDAD, configure el documento de tal forma que se vea así:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id24">
+<a class="reference internal image-reference" href="../../_images/image241.png"><img alt="../../_images/image241.png" src="../../_images/image241.png" style="width: 480px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Formato final</strong></span><a class="headerlink" href="#id24" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>GUARDE los cambios y CIERRE el software LibreOffice Calc.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a11-presentacion-de-evidencias-40">
+<h2>A11: Presentación de evidencias (40%)<a class="headerlink" href="#a11-presentacion-de-evidencias-40" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<div class="admonition-como-se-evalua admonition">
+<p class="admonition-title">¿Cómo se evalúa?</p>
+<ol class="arabic simple">
+<li><p>Los estudiantes presentan lo siguiente:</p>
+<ul class="simple">
+<li><p>Carpeta de evidencias con todos los archivos editados en la presente guía. (Los archivos deben estar abiertos).</p></li>
+<li><p>Cuaderno con las actividades desarrolladas.</p></li>
+</ul>
+</li>
+<li><p>El docente realiza unas preguntas para verificación de conocimientos.</p></li>
+<li><p>El estudiante debe demostrar de forma práctica sus conocimientos en el uso de <strong>LibreOffice Calc</strong>.</p></li>
+</ol>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../11programacion/G1120.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Programación 11</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1110.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Ofimática 11</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1111: LibreOffice Calc (P1)</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a00-introduccion-5">A00: Introducción (5%)</a></li>
+<li><a class="reference internal" href="#a01-libreoffice-calc-5">A01: LibreOffice Calc (5%)</a><ul>
+<li><a class="reference internal" href="#que-es-libreoffice-calc">¿Qué es LibreOffice Calc?</a></li>
+<li><a class="reference internal" href="#caracteristicas-de-libreoffice-calc">Características de LibreOffice Calc</a></li>
+<li><a class="reference internal" href="#diferencia-entre-libreoffice-calc-y-microsoft-excel">Diferencia entre LibreOffice Calc y Microsoft Excel</a></li>
+<li><a class="reference internal" href="#interfaz-de-libreoffice-calc">Interfaz de LibreOffice Calc</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a02-taller-10">A02: Taller (10%)</a></li>
+<li><a class="reference internal" href="#a03-analisis-de-casos-5">A03: Análisis de casos (5%)</a></li>
+<li><a class="reference internal" href="#a04-interfaz-de-libreoffice-calc-001-5">A04: Interfaz de LibreOffice Calc <kbd class="kbd docutils literal notranslate">001</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a05-seleccion-de-celdas-y-rangos-018-5">A05: Selección de celdas y rangos <kbd class="kbd docutils literal notranslate">018</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a06-edicion-basica-003-5">A06: Edición básica <kbd class="kbd docutils literal notranslate">003</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a07-gestion-de-documentos-512-5">A07: Gestión de documentos <kbd class="kbd docutils literal notranslate">512</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a08-cortar-copiar-y-pegar-202-5">A08: Cortar, copiar y pegar <kbd class="kbd docutils literal notranslate">202</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a09-formatos-20-08-2020-0-0-102-5">A09: formatos ($, #, 20/08/2020, 0.0) <kbd class="kbd docutils literal notranslate">102</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a10-buscar-reemplazar-ocultar-y-rellenar-307-5">A10: Buscar, reemplazar, ocultar y rellenar <kbd class="kbd docutils literal notranslate">307</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a11-presentacion-de-evidencias-40">A11: Presentación de evidencias (40%)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../../_static/translations.js?v=d190bf04"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>
