@@ -440,3 +440,295 @@ En su cuaderno desarrolle los siguientes puntos:
     :::
 
 8. GUARDE los cambios y cierre el software LibreOffice Writer.
+
+---
+## A05: Encabezados y pies de página {kbd}`101` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. Descargue el siguiente archivo y guárdelo en su carpeta de evidencias:
+
+   - G1014A05-mitos_a5_fondo.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A05-mitos_a5_fondo.odt)
+
+2. Abra el archivo **G1014A05-mitos_a5_fondo.odt** y pulse el área superior de la página para generar el siguiente menú:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image07.png
+        :width: 360
+        Encabezado de página
+        ```
+    :::
+
+3. PULSE el botón **+**
+
+4. En la cabecera, escriba el siguiente texto en negrilla: **Diccionario mitológico**
+
+5. PULSE nuevamente el botón de color azul para generar un **menú contextual** y luego SELECCIONE la opción: **Bordes y fondo…**
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image08.png
+        :width: 360
+        Menú contextual
+        ```
+    :::
+
+6. En la ventana **Bordes y fondo** configurar lo siguiente:
+
+    - En la pestaña {guilabel}`Bordes` configurar:
+
+        - En la sección **Disposición de líneas**:
+          - Definido por el usuario: borde inferior
+
+        - En la sección **Línea**:
+          - Color: Azul
+          - Grosor: Fino (0,75 pt)
+
+    - PULSE el botón {guilabel}`Aceptar`
+
+7. El **encabezado de página** debería quedar así:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image09.png
+        :width: 360
+        Encabezado de página
+        ```
+    :::
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - ¿Aparte de títulos, que más se podría colocar en la cabecera de una página?
+    - ¿Por qué el contenido de la cabecera de un documento, debe ser igual en todas las páginas?
+    :::
+
+8. GUARDE los cambios.
+
+9. En el **menú superior**, presione el botón: {guilabel}`Archivo` > {guilabel}`Propiedades`
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image10.png
+        :width: 640
+        Datos de identidad del documento
+        ```
+    :::
+
+10. En el menú de **Datos de identidad** configurar:
+
+    - En la sección de **Dirección**:
+      - En el campo de **Nombres/apellidos/iniciales**: colocar sus nombres.
+
+    - Pulse el botón {guilabel}`Aceptar`
+
+11. Pulse en el área inferior de la página para generar el siguiente menú:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image11.png
+        :width: 360
+        Pie de página
+        ```
+    :::
+
+12. PULSE el botón **+**
+
+13. PULSE el botón de color azul: **Pie de página (Estilo de página predeterminado)** y luego PULSE **Bordes y fondo…**
+
+14. En la ventana **Bordes y fondo** configurar las siguientes opciones:
+
+    - En la pestaña {guilabel}`Bordes` configurar:
+      - En la sección **Disposición de líneas**:
+        - Definido por el usuario: **borde superior**
+
+      - En la sección **Línea**:
+        - Color: **Azul**
+        - Grosor: **Fino (0,75 pt)**
+    
+    - PULSE el botón {guilabel}`Aceptar`
+
+15. Situar el cursor en la parte izquierda del pie de página.
+
+16. En el **menú superior**, PULSE el botón: {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Más campos`
+
+17. Se abrirá la ventana **Campos**:
+
+    - En la pestaña {guilabel}`Documento` configurar:
+      - Tipo: **Autor**
+      - Seleccionar: **Nombre**
+
+    - PULSE el botón {guilabel}`Insertar`
+
+18. Cree otra línea en el píe de página (PRESIONE LA TECLA {kbd}`ENTER`).
+
+19. En la **barra de herramientas formato**, pulse el botón {guilabel}`Alinear a la derecha`
+
+20. ESCRIBA la palabra: **Página**
+
+21. En el **menú superior**, PULSE el botón: {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Número de página`
+
+22. Posteriormente escriba el carácter: **-**
+
+23. En el **menú superior**, PULSE el botón: {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Recuento de páginas`. Debería quedar así: 
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image12.png
+        :width: 360
+        Pie de página
+        ```
+    :::
+
+24. En el **menú superior** pulse: {guilabel}`Archivo` > {guilabel}`Previsualizar impresión`.
+
+25. No olvide PULSAR el botón: {guilabel}`Previsualización de dos páginas`
+
+26. Hasta el momento, el documento debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image13.png
+        :width: 600
+        Cabecera y Pie de página
+        ```
+    :::
+
+27. Guarde los cambios y cierre el software LibreOffice Writer.
+
+---
+## A06: Generación de PDFs {kbd}`211` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. Descargue el siguiente archivo y guárdelo en la carpeta de evidencias:
+
+   - G1014A06-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A06-mitos.odt)
+
+2. Abra el archivo: **G1014A06-mitos.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **Generación de PDFs**.
+
+3. APLIQUE un estilo de **Título 1** a los siguientes títulos: **ADONIS**, **AFRODITA** y **AGON**.
+
+4. EDITAR el estilo Título 1 de la siguiente forma:
+
+   - En la pestaña {guilabel}`Flujo de texto` configurar:
+     - En la sección Saltos:
+       - MARCAR la opción: **Insertar**
+       - Tipo: **página**
+
+   - PULSE el botón {guilabel}`Aceptar` 
+
+5. Es necesario asignar un título en las propiedades de documento. En el **menú superior** PULSE el botón: {guilabel}`Archivo` > {guilabel}`Propiedades`.
+
+   - En la pestaña {guilabel}`Descripción` configurar:
+     - Título: **Fichas de mitología griega**
+     - Comentarios: **Esta es una actividad académica**
+   
+   - PULSE el botón {guilabel}`Aceptar`
+
+6. INSERTE una **encabezado** en el documento con el nombre: **Dioses mitológicos**
+
+7. En la **jerarquía de estilos**, EDITAR el estilo **Cabecera** de la siguiente forma:
+
+   - En la pestaña {guilabel}`Alineación` configurar:
+      - En la sección **Opciones**:
+        - Marcar la opción: **Centro**
+
+   - En la pestaña {guilabel}`Bordes` configurar:
+     - En la sección **Disposición de líneas**:
+       - Definida por el usuario: **Borde inferior**
+
+   - En la pestaña {guilabel}`Tipo de Letra` configurar:
+     - Tipofaz: **Negrita**
+
+   - PULSE el botón {guilabel}`Aceptar`
+
+8. Situar el cursor en la **cabecera del documento**.
+
+9. En el **menú superior**, pulse el botón {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Título`
+
+10. En la **jerarquía de estilos**, EDITAR el estilo **Pie de página** de la siguiente forma:
+
+    - En la pestaña {guilabel}`Bordes` configurar:
+      - En la sección **Disposición de líneas**:
+        - Definida por el usuario: **Borde superior**
+    
+    - En la pestaña {guilabel}`Tipo de Letra` configurar:
+      - Tipofaz: **Negrita**
+
+    - PULSAR el botón {guilabel}`Aceptar`
+
+11. SITUAR el cursor en el pie del documento.
+
+12. En el **menú superior**, PULSE el botón {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Fecha (Fija)`
+
+13. Añada la palabra: **Pág**
+
+14. En el **menú superior**, PULSE el botón {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Número de página`
+
+15. Con **tabulaciones**, deje la palabra **pág** al lado derecho del **pie de página**.
+
+16. Con las configuraciones realizadas hasta el momento, el **pie de página** debería quedar así:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image14.png
+        :width: 600
+        Pie de página
+        ```
+    :::
+
+17. GUARDE los cambios.
+
+18. En el **menú superior** PULSE: {guilabel}`Archivo` > {guilabel}`Previsualizar impresión`
+
+19. PULSE el botón: {guilabel}`Previsualizar varias páginas` y en la tabla seleccione **3 x 1 páginas**.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image15.png
+        :width: 270
+        Previsualización
+        ```
+    :::
+
+20. Realice una **captura de pantalla** al documento y guardar en la *carpeta de evidencias* con el nombre: **G1014A06-mitos.png**
+
+21. PULSE el botón: {guilabel}`Cerrar previsualización`
+
+22. Ahora va a exportar el documento a PDF. PULSE el botón: {guilabel}`Archivo` > {guilabel}`Exportar a` > {guilabel}`Exportar a PDF…`
+
+23. En la ventana: **Opciones de PDF** configurar las siguientes opciones:
+
+    - En la pestaña {guilabel}`General` configurar:
+      - En la sección **General**:
+        - Marcar la opción: PDF con etiquetas (añadir estructura el documento)
+      - En la sección **Intervalo**:
+        - Marcar la opción: Ver PDF tras exportarlo
+      - En la sección **Estructura**:
+        - Marcar la opción: Exportar esquemas
+      - En la sección **Marca de agua**:
+        - Marcar la opción Firmar con marca de agua. En el campo escribir: **CONFIDENCIAL**
+
+    - En la pestaña {guilabel}`Interfaz de usuario` configurar:
+      - En la sección **Opciones de la ventana**:
+        - Marcar la opción: Mostrar título del documento.
+
+    - En la pestaña {guilabel}`Seguridad configurar`:
+      - En la sección **Cifrado y permisos** del archivo:
+        - PULSE el botón: {guilabel}`Establecer contraseñas`
+            :::{list-table}
+            * - ```{figure} ./recursos/G1014/image16.png
+                :width: 270
+                Password
+                ```
+            :::
+        - Establecer una contraseña de cuatro dígitos solo para abrir el PDF.
+        - PULSE el botón {guilabel}`Aceptar`
+      - En la sección **Contenido**:
+        - Verificar que esté marcada la opción: **Permitir acceso al texto a las herramientas de accesibilidad** (No importa que este inhabilitado)
+
+    - En la pestaña {guilabel}`Vista inicial` configurar:
+      - En la sección **Paneles**:
+        - Marcar la opción: **Miniaturas y página**
+
+    - PULSE el botón {guilabel}`Exportar` y guarde el PDF en la **carpeta de evidencias**.
+
+24. COMPRUEBE que el PDF exportado **requiere una contraseña**.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa en que casos un documento requiere una contraseña para poder ser visto o editado. Especifique 3 ejemplos.
+    :::
+
+25. GUARDE los cambios y cierre el software LibreOffice Writer.
