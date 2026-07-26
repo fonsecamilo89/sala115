@@ -1,4 +1,4 @@
-# Guía 821: Concepto Lógica computacional (P1)
+# Guía 821: Concepto Lógica computacional
 
 :::{list-table}
 :widths: 35 65
@@ -57,21 +57,7 @@
 :::
 
 ---
-## A00: Introducción (5%)
-{bdg-light}`Exploración`
-
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-2. Lea el **mensaje del autor** y en su cuaderno responda:
-    - ¿Qué tienen en común un smartphone, un smartTV y un computador?
-
----
-## A01: Concepto de lógica computacional (5%)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos:
-
----
-### ¿Qué es el HARDWARE?
+## HARDWARE
 
 [^1] El **HARDWARE**, es el conjunto de componentes de un **sistema informático** (por ejemplo un computador) los cuales se pueden ver o tocar.
 
@@ -85,7 +71,7 @@ A continuación se muestran algunos ejemplos:
 - **Memoria:** memoria RAM, memoria CACHE
 - **Almacenamiento:** Discos duros, memorias USB
 
-#### CPU (Unidad de procesamiento central)
+### CPU (Unidad de procesamiento central)
 
 ```{list-table}
 * - ```{figure} ./recursos/G821/image01.png
@@ -111,7 +97,7 @@ La CPU está compuesta principalmente por:
 La velocidad de la CPU se mide en Hertz (Hz) y determina qué tan rápido puede procesar las instrucciones. A mayor velocidad, mejor rendimiento del sistema.
 
 
-#### MEMORIA RAM
+### Memoria RAM
 
 ```{list-table}
 * - ```{figure} ./recursos/G821/image02.png
@@ -133,7 +119,7 @@ Las características de la memoria RAM son:
 - Es diferente al almacenamiento permanente (disco duro) porque la memoria RAM es temporal.
 
 ---
-### ¿Qué es el SOFTWARE?
+## SOFTWARE
 
 ```{list-table}
 * - ```{figure} ./recursos/G821/image03.png
@@ -152,7 +138,7 @@ El software solo puede verse su funcionamiento en la pantalla. El software es la
 Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar con dispositivos electrónicos a través de elementos visuales en la pantalla, como iconos, botones y menús. Esto facilita la realización de acciones sin necesidad de conocimientos de programación, haciendo la experiencia más intuitiva y accesible.
 
 ---
-### ¿Qué es una SISTEMA COMPUTACIONAL?
+## Sistema computacional
 
 [^2] Un **sistema computacional** es el conjunto de hardware que interactúa con un software para almacenar, procesar y mostrar información.
 
@@ -164,7 +150,7 @@ Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar c
 ```
 
 ---
-### ¿Qué es la INFORMÁTICA?
+## INFORMÁTICA
 
 [^2] **La informática** es la ciencia o disciplina que estudia el diseño, construcción e implementación de **sistemas computacionales** para garantizar la **integridad** y **disponibilidad** de la información.
 
@@ -174,7 +160,7 @@ Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar c
     > *“Toda información debe estar disponible y llegar oportunamente”.*
 
 ---
-### ¿Qué es RAZONAR?
+## Razonar
 
 [^3] **Razonar** es la *actividad mental* mediante la cual se relacionan ideas o premisas para inferir una conclusión de manera coherente o justificada.
 
@@ -185,7 +171,7 @@ Por ejemplo:
 > - **Conclusión:** Sócrates es mortal
 
 ---
-### ¿Qué es la LÓGICA?
+## Lógica
 
 [^3] La **lógica** es la *disciplina* que permite analizar y verificar la validez de los razonamientos, determinando si una conclusión se deriva correctamente de unas premisas.
 
@@ -200,12 +186,20 @@ Para el siguiente razonamiento, verifique si es correcto o no:
 > **ANÁLISIS:** Si Sócrates es un ser humano, entonces Sócrates es mortal porque todos los humanos son mortales. El razonamiento es correcto.
 
 ---
-### ¿Qué es lógica computacional?
+## **Lógica computacional**
 
 [^3] La **lógica computacional** es el área de la **informática** que aplica los principios de la **lógica** para representar y automatizar el **razonamiento**, con el objetivo de resolver problemas de forma estructurada y eficiente.
 
 ---
-## A02: Taller (10%)
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+2. Lea el **mensaje del autor** y en su cuaderno responda:
+    - ¿Qué tienen en común un smartphone, un smartTV y un computador?
+
+---
+## A01: Taller (15%)
 {bdg-info}`Estructuración`
 
 
@@ -283,7 +277,7 @@ Para el siguiente razonamiento, verifique si es correcto o no:
     - “*Optimizar **algoritmos** permite solucionar problemas más rápido pero con los mismos recursos*”. __
 
 ---
-## A03: Análisis (20%)
+## A02: Análisis (20%)
 {bdg-warning}`Actividad práctica`
 
 1. Con los temas vistos hasta ahora, en **UNA PÁGINA DE CUADERNO**, con sus palabras (no usar IA) responda la siguiente pregunta:
@@ -326,7 +320,7 @@ Para el siguiente razonamiento, verifique si es correcto o no:
     > - **Conclusión 03:** ?
 
 ---
-## A04: Examen escrito (60%)
+## A03: Examen escrito (60%)
 {bdg-danger}`Transferencia`
 
 :::{csv-table}

@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=e02aa765" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3250a108" />
     
     
 
@@ -211,8 +211,10 @@
 <p class="caption" role="heading"><span class="caption-text">Guías</span></p>
 <ul class="current">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../8logica/G820.html">Lógica computacional 8</a><input aria-label="Toggle navigation of Lógica computacional 8" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../8logica/G821.html">Guía 821: Concepto Lógica computacional (P1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../8logica/G822.html">Guía 822: Jerarquía de datos (P2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G821.html">Guía 821: Concepto Lógica computacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G822.html">Guía 822: Jerarquía de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G823.html">Guía 823: Variables y operaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G824.html">Guía 824: Álgebra de Boole</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../8logica/G829.html">Guía 829: Plan de refuerzo</a></li>
 </ul>
 </li>
@@ -411,7 +413,7 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 <table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td><figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/image0110.png"><img alt="../../_images/image0110.png" src="../../_images/image0110.png" style="width: 250px;" />
+<a class="reference internal image-reference" href="../../_images/image0111.png"><img alt="../../_images/image0111.png" src="../../_images/image0111.png" style="width: 250px;" />
 </a>
 </figure>
 </td>
@@ -781,19 +783,19 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 <section id="linealizacion-de-operaciones">
 <h3>Linealización de operaciones<a class="headerlink" href="#linealizacion-de-operaciones" title="Link to this heading">¶</a></h3>
 <p>Algo a tener en cuenta al momento de escribir una instrucción es que el computador solo entiende las operaciones en formato lineal. Esto quiere decir escritas en una sola línea. De tal manera que si se quiere escribir la ecuación:</p>
-<div class="math-wrapper docutils container">
+<blockquote>
+<div><div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[
-X = {a + b \over c + d}
-\]</div>
+\[ X = {a + b \over c + d} \]</div>
 </div>
+</div></blockquote>
 <p>La anterior ecuación en una sola línea sería:</p>
-<div class="math-wrapper docutils container">
+<blockquote>
+<div><div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[
-X = (a + b) / (c + d)
-\]</div>
+\[ X = (a + b) / (c + d) \]</div>
 </div>
+</div></blockquote>
 <p>A continuación se muestra un <strong>ejemplo de linealización</strong> de una operación:</p>
 <blockquote>
 <div><p>Linealizar la siguiente operación en su cuaderno:</p>
@@ -805,67 +807,77 @@ X = (a + b) / (c + d)
 <p><strong>Solución</strong>:</p>
 <div class="admonition-paso-01 admonition">
 <p class="admonition-title">PASO 01</p>
-<div class="math-wrapper docutils container" id="equation-1-guias-10programacion-g1024-1">
+<blockquote>
+<div><div class="math-wrapper math docutils container" id="equation-1-guias-10programacion-g1024-1">
 <div class="math notranslate nohighlight" id="equation-1-guias-10programacion-g1024-1">
 <span class="eqno">(2)<a class="headerlink" href="#equation-1-guias-10programacion-g1024-1" title="Link to this equation">¶</a></span>\[X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+\dfrac{b}{c^{d}+\dfrac{d}{{\large a-\colorbox{yellow}{(b/c)}*d}}}}\]</div>
 </div>
+</div></blockquote>
 <p>Primero se linealizan las divisiones <span class="math notranslate nohighlight">\((b/c)\)</span> tanto en el numerador como en el denominador.</p>
 </div>
 <div class="admonition-paso-02 admonition">
 <p class="admonition-title">PASO 02</p>
-<div class="math-wrapper docutils container" id="equation-1-guias-10programacion-g1024-2">
+<blockquote>
+<div><div class="math-wrapper math docutils container" id="equation-1-guias-10programacion-g1024-2">
 <div class="math notranslate nohighlight" id="equation-1-guias-10programacion-g1024-2">
 <span class="eqno">(3)<a class="headerlink" href="#equation-1-guias-10programacion-g1024-2" title="Link to this equation">¶</a></span>\[X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+\dfrac{b}{c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}}\]</div>
 </div>
+</div></blockquote>
 <p>Se linealiza la expresión: <span class="math notranslate nohighlight">\((d/(a-(b/c) * d))\)</span>.</p>
 </div>
 <div class="admonition-paso-03 admonition">
 <p class="admonition-title">PASO 03</p>
-<div class="math-wrapper docutils container" id="equation-1-guias-10programacion-g1024-3">
+<blockquote>
+<div><div class="math-wrapper math docutils container" id="equation-1-guias-10programacion-g1024-3">
 <div class="math notranslate nohighlight" id="equation-1-guias-10programacion-g1024-3">
 <span class="eqno">(4)<a class="headerlink" href="#equation-1-guias-10programacion-g1024-3" title="Link to this equation">¶</a></span>\[X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+{\color{Red} ({b}/({c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}))}}\]</div>
 </div>
+</div></blockquote>
 <p>Se linealiza la expresión: <span class="math notranslate nohighlight">\((b/(c^d+(d/(a-(b/c)*d))))\)</span>.</p>
 </div>
 <div class="admonition-paso-04 admonition">
 <p class="admonition-title">PASO 04</p>
-<div class="math-wrapper docutils container" id="equation-1-guias-10programacion-g1024-4">
+<blockquote>
+<div><div class="math-wrapper math docutils container" id="equation-1-guias-10programacion-g1024-4">
 <div class="math notranslate nohighlight" id="equation-1-guias-10programacion-g1024-4">
 <span class="eqno">(5)<a class="headerlink" href="#equation-1-guias-10programacion-g1024-4" title="Link to this equation">¶</a></span>\[X = (a+\colorbox{yellow}{(b/c)}-d)/(a+{\color{Red} ({b}/({c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}))})\]</div>
 </div>
+</div></blockquote>
 <p>Ahora se linealiza tanto numerador como denominador.</p>
 </div>
 <div class="admonition-paso-05 admonition">
 <p class="admonition-title">PASO 05</p>
-<div class="math-wrapper docutils container" id="equation-1-guias-10programacion-g1024-5">
+<blockquote>
+<div><div class="math-wrapper math docutils container" id="equation-1-guias-10programacion-g1024-5">
 <div class="math notranslate nohighlight" id="equation-1-guias-10programacion-g1024-5">
 <span class="eqno">(6)<a class="headerlink" href="#equation-1-guias-10programacion-g1024-5" title="Link to this equation">¶</a></span>\[X = (a+\colorbox{yellow}{(b/c)}-d)/(a+{\color{black} ({b}/(\colorbox{orange}{c**{d}}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}))})\]</div>
 </div>
-<p>Finalmente la exponenciación en código python se realiza con (c**d).</p>
+</div></blockquote>
+<p>Finalmente la exponenciación en código python se realiza con <span class="math notranslate nohighlight">\((c**d)\)</span>.</p>
 </div>
 </section>
 <hr class="docutils" />
 <section id="precedencia-jerarquia-de-operadores">
 <h3>Precedencia (jerarquía de operadores)<a class="headerlink" href="#precedencia-jerarquia-de-operadores" title="Link to this heading">¶</a></h3>
 <p>Algunas veces se tienen operaciones muy largas. Esto dificulta su solución. En estos casos se aplica la precedencia. La cual consiste en unas reglas que determinan el orden en el que una operación muy larga debe ser resuelta. Un ejemplo de una operación muy larga sería:</p>
-<div class="math-wrapper docutils container">
+<blockquote>
+<div><div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[
-X = ( a + (b / c) – d ) / ( a + ( b / ( (c ** d) + (d / ( a – (b / c) * d ) ) ) ) )
-\]</div>
+\[ X = ( a + (b / c) – d ) / ( a + ( b / ( (c ** d) + (d / ( a – (b / c) * d ) ) ) ) ) \]</div>
 </div>
+</div></blockquote>
 <div class="tip admonition">
 <p class="admonition-title">Reglas de presedencia</p>
 <p>Los operadores aplican expresiones aritméticas en una secuencia precisa. Esta secuencia es determinada por las siguientes reglas de precedencia:</p>
 <ol class="arabic simple">
 <li><p><strong>PARÉNTESIS <span class="guilabel">()</span></strong>: Los operadores en las expresiones contenidas dentro de pares de paréntesis se evalúan primero. Se dice que los paréntesis tienen el “nivel más alto de precedencia”. En casos de paréntesis anidados o incrustados, como:</p></li>
 </ol>
-<div class="math-wrapper docutils container">
+<blockquote>
+<div><div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[
-( a * ( b + c ) )
-\]</div>
+\[ ( a * ( b + c ) ) \]</div>
 </div>
+</div></blockquote>
 <p>Los operadores en el par más interno de paréntesis se aplican primero.
 En este caso primero se opera <strong>a</strong> y <strong>b</strong>. El resultado se multiplica por <strong>a.</strong></p>
 <ol class="arabic simple" start="2">
@@ -881,7 +893,10 @@ En este caso primero se opera <strong>a</strong> y <strong>b</strong>. El result
 <col style="width: 75.0%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(X = a + b + c\)</span></p></td>
+<tr class="row-odd"><td><blockquote>
+<div><p><span class="math notranslate nohighlight">\(X = a + b + c\)</span></p>
+</div></blockquote>
+</td>
 <td><p>Esta operación se asocian de izquierda a derecha, por lo que a + b se calcula primero, y después se agrega c a esa suma para determinar el valor de X.</p></td>
 </tr>
 </tbody>
@@ -1243,7 +1258,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a, b y c:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 3
 \\ b &amp;= 2
@@ -1258,7 +1273,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a, b y c:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 10
 \\ b &amp;= 20
@@ -1277,7 +1292,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a, b, c y d:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 5
 \\ b &amp;= 18
@@ -1299,7 +1314,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a y b:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 9
 \\ b &amp;= 6
@@ -1324,7 +1339,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a, b, c y d:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 18
 \\ b &amp;= 18
@@ -1346,7 +1361,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a y b:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 10
 \\ b &amp;= 5
@@ -1371,7 +1386,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a, b, c y d:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 8
 \\ b &amp;= 7
@@ -1393,7 +1408,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a, b y c:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 10
 \\ b &amp;= 5
@@ -1412,7 +1427,7 @@ Por ejemplo:</p></li>
 <li><p>Opere e identifique los valores finales para las variables a, b y c:</p></li>
 </ol>
 <blockquote>
-<div><div class="math-wrapper docutils container">
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 1
 \\ b &amp;= 2
@@ -1557,10 +1572,12 @@ Por ejemplo:</p></li>
 <li><p>Una <strong>variable por cada nota</strong> (si en una materia se sacan 5 notas, entonces serán 5 variables).</p></li>
 <li><p>El nombre de las variables debe ser acorde al <strong>contexto de la nota</strong> y debe ser de <strong>tipo decimal</strong> (por ejemplo <code class="docutils literal notranslate"><span class="pre">notaQuizMatematicas</span> <span class="pre">=</span> <span class="pre">4.5</span></code>).</p></li>
 <li><p>Una <strong>ecuación con operaciones</strong> donde se incluyan todas las <strong>variables de las notas</strong>. El valor de <span class="math notranslate nohighlight">\( X \)</span> será el valor de la nota final. Por ejemplo:</p>
-<div class="math-wrapper docutils container">
+<blockquote>
+<div><div class="math-wrapper math docutils container">
 <div class="math notranslate nohighlight">
-\[ X = \left( \left( \frac{notaGuia01+notaGuia02}{2} \right) * (0.50) \right) +  (notaINS*(0.40)) + (notaPerfil * (0.10)) \]</div>
+\[X = \left( \left( \frac{notaGuia01+notaGuia02}{2} \right) * (0.50) \right) +  (notaINS*(0.40)) + (notaPerfil * (0.10))\]</div>
 </div>
+</div></blockquote>
 </li>
 <li><p>La ecuación debe ser linealizada.</p></li>
 <li><blockquote>

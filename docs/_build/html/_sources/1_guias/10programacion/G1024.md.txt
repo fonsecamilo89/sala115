@@ -403,15 +403,11 @@ c = 26
 
 Algo a tener en cuenta al momento de escribir una instrucción es que el computador solo entiende las operaciones en formato lineal. Esto quiere decir escritas en una sola línea. De tal manera que si se quiere escribir la ecuación:
 
-$$
-X = {a + b \over c + d}
-$$
+> $$ X = {a + b \over c + d} $$
 
 La anterior ecuación en una sola línea sería:
 
-$$
-X = (a + b) / (c + d)
-$$
+> $$ X = (a + b) / (c + d) $$
 
 A continuación se muestra un **ejemplo de linealización** de una operación:
 
@@ -424,43 +420,51 @@ A continuación se muestra un **ejemplo de linealización** de una operación:
 **Solución**:
 
 :::{admonition} PASO 01
-```{math}
-:label:
-X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+\dfrac{b}{c^{d}+\dfrac{d}{{\large a-\colorbox{yellow}{(b/c)}*d}}}}
-```
+> ```{math}
+> :class: math
+> :label:
+> X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+\dfrac{b}{c^{d}+\dfrac{d}{{\large a-\colorbox{yellow}{(b/c)}*d}}}}
+> ```
 Primero se linealizan las divisiones $(b/c)$ tanto en el numerador como en el denominador.
 :::
 
 :::{admonition} PASO 02
-```{math}
-:label:
-X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+\dfrac{b}{c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}}
-```
+>```{math}
+>:class: math
+>:label:
+>X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+\dfrac{b}{c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}}
+>```
+
 Se linealiza la expresión: $(d/(a-(b/c) * d))$.
 :::
 
 :::{admonition} PASO 03
-```{math}
-:label:
-X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+{\color{Red} ({b}/({c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}))}}
-```
+> ```{math}
+> :class: math
+> :label:
+> X = \frac{a+\colorbox{yellow}{(b/c)}-d}{a+{\color{Red} ({b}/({c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}))}}
+> ```
+
 Se linealiza la expresión: $(b/(c^d+(d/(a-(b/c)*d))))$.
 :::
 
 :::{admonition} PASO 04
-```{math}
-:label:
-X = (a+\colorbox{yellow}{(b/c)}-d)/(a+{\color{Red} ({b}/({c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}))})
-```
+> ```{math}
+> :class: math
+> :label:
+> X = (a+\colorbox{yellow}{(b/c)}-d)/(a+{\color{Red} ({b}/({c^{d}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}}))})
+> ```
+
 Ahora se linealiza tanto numerador como denominador.
 :::
 
 :::{admonition} PASO 05
-```{math}
-:label:
-X = (a+\colorbox{yellow}{(b/c)}-d)/(a+{\color{black} ({b}/(\colorbox{orange}{c**{d}}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}))})
-```
-Finalmente la exponenciación en código python se realiza con (c**d).
+> ```{math}
+> :class: math
+> :label:
+> X = (a+\colorbox{yellow}{(b/c)}-d)/(a+{\color{black} ({b}/(\colorbox{orange}{c**{d}}+{\color{Green} (d/(a-\colorbox{yellow}{(b/c)}*d))}))})
+> ```
+Finalmente la exponenciación en código python se realiza con $(c**d)$.
 :::
 
 ---
@@ -468,9 +472,7 @@ Finalmente la exponenciación en código python se realiza con (c**d).
 
 Algunas veces se tienen operaciones muy largas. Esto dificulta su solución. En estos casos se aplica la precedencia. La cual consiste en unas reglas que determinan el orden en el que una operación muy larga debe ser resuelta. Un ejemplo de una operación muy larga sería:
 
-$$
-X = ( a + (b / c) – d ) / ( a + ( b / ( (c ** d) + (d / ( a – (b / c) * d ) ) ) ) )
-$$
+> $$ X = ( a + (b / c) – d ) / ( a + ( b / ( (c ** d) + (d / ( a – (b / c) * d ) ) ) ) ) $$
 
 :::{admonition} Reglas de presedencia
 :class: tip
@@ -478,9 +480,7 @@ Los operadores aplican expresiones aritméticas en una secuencia precisa. Esta s
 
 1. **PARÉNTESIS {guilabel}`()`**: Los operadores en las expresiones contenidas dentro de pares de paréntesis se evalúan primero. Se dice que los paréntesis tienen el “nivel más alto de precedencia”. En casos de paréntesis anidados o incrustados, como:
 
-$$
-( a * ( b + c ) )
-$$
+> $$ ( a * ( b + c ) ) $$
 
 Los operadores en el par más interno de paréntesis se aplican primero.
 En este caso primero se opera **a** y **b**. El resultado se multiplica por **a.**
@@ -494,7 +494,7 @@ Las **reglas de precedencia de operadores** definen el orden en el que PYTHON ap
 
 :::{list-table}
 :widths: 25 75
-* - $X = a + b + c$
+* - > $X = a + b + c$
   - Esta operación se asocian de izquierda a derecha, por lo que a + b se calcula primero, y después se agrega c a esa suma para determinar el valor de X.
 :::
 
@@ -756,7 +756,8 @@ Variables | correcta o incorrecta	| ¿Por qué?
 
 1. Opere e identifique los valores finales para las variables a, b y c:
 
-> :::{math} 
+> :::{math}
+> :class: math
 > a &= 3
 > \\ b &= 2
 > \\ c &= 1
@@ -769,6 +770,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 2. Opere e identifique los valores finales para las variables a, b y c:
 
 > :::{math}
+> :class: math
 > a &= 10
 > \\ b &= 20
 > \\ c &= 5
@@ -785,6 +787,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 3. Opere e identifique los valores finales para las variables a, b, c y d:
 
 > :::{math}
+> :class: math
 > a &= 5
 > \\ b &= 18
 > \\ c &= 15
@@ -804,6 +807,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 4. Opere e identifique los valores finales para las variables a y b:
 
 > :::{math}
+> :class: math
 > a &= 9
 > \\ b &= 6
 > \\
@@ -826,6 +830,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 5. Opere e identifique los valores finales para las variables a, b, c y d:
 
 > :::{math}
+> :class: math
 > a &= 18
 > \\ b &= 18
 > \\ c &= 18
@@ -845,6 +850,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 6. Opere e identifique los valores finales para las variables a y b:
 
 > :::{math}
+> :class: math
 > a &= 10
 > \\ b &= 5
 > \\
@@ -868,6 +874,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 7. Opere e identifique los valores finales para las variables a, b, c y d:
 
 > :::{math}
+> :class: math
 > a &= 8
 > \\ b &= 7
 > \\ c &= 5
@@ -887,6 +894,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 8. Opere e identifique los valores finales para las variables a, b y c:
 
 > :::{math}
+> :class: math
 > a &= 10
 > \\ b &= 5
 > \\ c &= 10
@@ -903,7 +911,8 @@ Variables | correcta o incorrecta	| ¿Por qué?
 
 9. Opere e identifique los valores finales para las variables a, b y c:
 
-> :::{math}    
+> :::{math}
+> :class: math
 > a &= 1
 > \\ b &= 2
 > \\ c &= 3
@@ -985,7 +994,10 @@ Variables | correcta o incorrecta	| ¿Por qué?
 
     - Una **ecuación con operaciones** donde se incluyan todas las **variables de las notas**. El valor de $ X $ será el valor de la nota final. Por ejemplo:
 
-        $$ X = \left( \left( \frac{notaGuia01+notaGuia02}{2} \right) * (0.50) \right) +  (notaINS*(0.40)) + (notaPerfil * (0.10)) $$
+        > :::{math}
+        > :class: math
+        > X = \left( \left( \frac{notaGuia01+notaGuia02}{2} \right) * (0.50) \right) +  (notaINS*(0.40)) + (notaPerfil * (0.10))
+        > :::
             
     - La ecuación debe ser linealizada.
 
