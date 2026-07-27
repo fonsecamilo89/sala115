@@ -391,11 +391,11 @@
 
 7. Seleccione el documento **formularioTema.odt** que acabó de editar.
    
-8. Con el documento en Google Gemini, realizar la siguiente pregunta a la IA: 
+8. Con el documento en **Google Gemini**, realizar la siguiente pregunta a la IA: 
 
-    - Acorde al contenido del documento, ¿Que tema me recomienda para mi proyecto de grado?
+   - > Acorde al contenido del archivo, ¿Cuál de los siguientes temas (OFIMÁTICA, PROGRAMACIÓN, REDES o MANTENIMIENTO) me recomienda para mi proyecto de grado?
 
-9. Abra nuevamente el documento **formularioTEMA.odt** y en la sección: **RESPUESTA IA**, copiar y pegar la respuesta de la IA de GEMINI.
+9.  Abra nuevamente el documento **formularioTEMA.odt** y en la sección: **RESPUESTA IA**, copiar y pegar la respuesta de la IA de GEMINI.
     
 10. Guarde los cambios y cierre el documento. 
 
