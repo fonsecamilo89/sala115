@@ -43,8 +43,8 @@
 
 ```{tab-item} Recursos (3)
 - [Descarga de **LibreOffice**](https://www.libreoffice.org/download/).
-- G1012A07-mitos_desordenados.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A07-mitos_desordenados.odt)
-- G1012A08-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A08-proyecto_escritorio_libre.odt)
+- G1012A06-mitos_desordenados.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A06-mitos_desordenados.odt)
+- G1012A07-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A07-proyecto_escritorio_libre.odt)
 ```
 :::
 
@@ -57,22 +57,7 @@
 :::
 
 ---
-## A00: Introducción (5%)
-{bdg-light}`Exploración`
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-
-2. Lea el mensaje del autor y responda la siguiente pregunta en su cuaderno:
-
-    - ¿De qué forma el aprender a usar una herramienta de edición de texto como LibreOffice Writer, permite desarrollar la autonomía en el estudiante?
-
----
-## A01: LibreOffice Writer (5%)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos:
-
----
-### ¿Qué es LibreOffice Writer?
+## LibreOffice Writer
 
 :::{list-table}
 * - ```{figure} ./recursos/G1012/image01.png
@@ -117,7 +102,6 @@ LibreOffice también puede usarse de forma profesional. Para ello es necesario c
     ```
 :::
 
----
 ### LibreOffice Writer Vs Microsoft Word
 
 :::{list-table}
@@ -138,9 +122,17 @@ A continuación se muestran algunas funcionalidades de LibreOffice Writer que no
 - **Extensiones y complementos libres:** LibreOffice tiene una comunidad activa que desarrolla extensiones y complementos que pueden ampliar sus funcionalidades básicas. Estos pueden ser descargados e instalados fácilmente para añadir nuevas características a LibreOffice Writer.
 - **No requiere suscripción:** LibreOffice Writer y toda la suite LibreOffice no requieren una suscripción para su uso. Esto puede ser una ventaja para aquellos que prefieren no comprometerse con un modelo de suscripción.
 
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor y responda la siguiente pregunta en su cuaderno:
+
+    - ¿De qué forma el aprender a usar una herramienta de edición de texto como LibreOffice Writer, permite desarrollar la autonomía en el estudiante?
 
 ---
-## A02: Taller (5%)
+## A01: Taller (5%)
 {bdg-info}`Estructuración`
 
 1. En su cuaderno responda las siguientes preguntas:
@@ -166,7 +158,7 @@ A continuación se muestran algunas funcionalidades de LibreOffice Writer que no
     - ¿Qué posibles motivos tendría Microsoft para que Microsoft Word no sea de código abierto? (media hoja de cuaderno).
 
 ---
-## A03: Información de identificación {kbd}`011` (5%)
+## A02: Información de identificación {kbd}`011` (5%)
 {bdg-warning}`Actividad práctica`
 
 En esta actividad, el estudiante aprende a crear la **información de identificación**.
@@ -216,7 +208,7 @@ Para esto siga los siguientes pasos:
     :::
 
 ---
-## A04: Exploración de la interfaz {kbd}`114` (5%)
+## A03: Exploración de la interfaz {kbd}`114` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. Ejecute el software LibreOffice Writer.
@@ -239,7 +231,7 @@ Para esto siga los siguientes pasos:
 
 4. Si el **icono de guardar** tiene un punto rojo, significa que el documento no ha sido guardado. PULSE el **icono de guardar** y se abrirá una ventana para guardar el documento.
 
-5. En la ventana de guardado, LOCALICE su carpeta de evidencias del periodo actual y guarde el documento con el nombre: **G1012A04-documento.odt**
+5. En la ventana de guardado, LOCALICE su carpeta de evidencias del periodo actual y guarde el documento con el nombre: **G1012A03-documento.odt**
 
 6. En la interfaz, IDENTIFIQUE el **menú superior**.
 
@@ -306,7 +298,7 @@ Para esto siga los siguientes pasos:
     - Dibujo
     - Tabla
 
-15. REALICE una captura de pantalla de la interfaz de LibreOffice Writer y guarde la imagen en la carpeta de evidencias del periodo actual con el nombre: **G1012A04-interfaz.png**
+15. REALICE una captura de pantalla de la interfaz de LibreOffice Writer y guarde la imagen en la carpeta de evidencias del periodo actual con el nombre: **G1012A03-interfaz.png**
 
 16. En el **menú superior**, PULSE: {guilabel}`Ver` > {guilabel}`Barras de herramientas` y **DESACTIVE todas las herramientas.** SOLO DEJAR ACTIVAS las siguientes herramientas:
 
@@ -341,14 +333,14 @@ Para esto siga los siguientes pasos:
 20. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A05: Creación y edición de documentos {kbd}`111` (5%)
+## A04: Creación y edición de documentos {kbd}`111` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. Ejecute el software LibreOffice Writer.
 
 2. En la cabecera del documento, agregue la **información de identificación** con el título: **CREACIÓN DE DOCUMENTOS**
 
-3. GUARDE el documento en su **carpeta de evidencias** del periodo actual con el nombre: **G1012A05-creacion_documento.odt**
+3. GUARDE el documento en su **carpeta de evidencias** del periodo actual con el nombre: **G1012A04-creacion_documento.odt**
 
 4. En la **barra de herramientas estándar**, PULSE el botón {guilabel}`Nuevo`.
 
@@ -360,9 +352,9 @@ Para esto siga los siguientes pasos:
 
 5. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: **Sin titulo 2**
 
-6. VUELVA al documento **G1012A05-creacion_documento.odt** y en el menú superior PULSE: {guilabel}`Archivo` > {guilabel}`Nuevo` > {guilabel}`Documento` de texto. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: **Sin titulo 3**.
+6. VUELVA al documento **G1012A04-creacion_documento.odt** y en el menú superior PULSE: {guilabel}`Archivo` > {guilabel}`Nuevo` > {guilabel}`Documento` de texto. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: **Sin titulo 3**.
 
-7. VUELVA al documento **G1012A05-creacion_documento.odt** y PULSE la combinación de teclas: {kbd}`CTRL` + {kbd}`U`. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: **Sin titulo 4**.
+7. VUELVA al documento **G1012A04-creacion_documento.odt** y PULSE la combinación de teclas: {kbd}`CTRL` + {kbd}`U`. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: **Sin titulo 4**.
 
 8. Con los archivos de LibreOffice Writer abiertos hasta el momento, ORGANICE cuatro ventanas (en su pantalla) de tal forma que se vean todas al mismo tiempo así:
 
@@ -373,7 +365,7 @@ Para esto siga los siguientes pasos:
         ```
     :::
 
-9. REALICE una **captura de pantalla** de su pantalla y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1012A05-creacion_documento.png**
+9. REALICE una **captura de pantalla** de su pantalla y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1012A04-creacion_documento.png**
 
 10. En su cuaderno:
 
@@ -385,14 +377,14 @@ Para esto siga los siguientes pasos:
 11. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A06: Guardado de documentos {kbd}`301` (5%)
+## A05: Guardado de documentos {kbd}`301` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. Ejecute el software LibreOffice Writer.
 
 2. En la cabecera del documento, agregue la **información de identificación** con el título: **GUARDADO DE DOCUMENTOS**
 
-3. GUARDE el documento en su **carpeta de evidencias** del periodo actual con el nombre: **G1012A06-guardado_documento_1.odt**
+3. GUARDE el documento en su **carpeta de evidencias** del periodo actual con el nombre: **G1012A05-guardado_documento_1.odt**
 
 4. Copie y pegue el siguiente fragmento de texto a el documento:
 
@@ -400,11 +392,11 @@ Para esto siga los siguientes pasos:
 
 5. BORRE 30 palabras (las que usted quiera) del texto del fragmento anterior y en el **menú superior** PULSE: {guilabel}`Archivo` > {guilabel}`Guardar una copia…`
 
-6. En la ventana de guardado, LOCALICE su carpeta de evidencias y guarde el documento con el nombre: **G1012A06-guardado_documento_2.odt**
+6. En la ventana de guardado, LOCALICE su carpeta de evidencias y guarde el documento con el nombre: **G1012A05-guardado_documento_2.odt**
 
-7. Vuelva a abrir el primer documento: **G1012A06-guardado_documento_1.odt** y AGREGUE más texto al fragmento (el texto que usted quiera). Luego en el **menú superior** PULSE: {guilabel}`Archivo` > {guilabel}`Guardar como…`
+7. Vuelva a abrir el primer documento: **G1012A05-guardado_documento_1.odt** y AGREGUE más texto al fragmento (el texto que usted quiera). Luego en el **menú superior** PULSE: {guilabel}`Archivo` > {guilabel}`Guardar como…`
 
-8. En la ventana de guardado, IDENTIFIQUE las opciones de **tipo de documento** y seleccione: **Documento de word 2010-365 (.docx)** y guarde el documento con el nombre de: **G1012A06-guardado_documento_3.docx**
+8. En la ventana de guardado, IDENTIFIQUE las opciones de **tipo de documento** y seleccione: **Documento de word 2010-365 (.docx)** y guarde el documento con el nombre de: **G1012A05-guardado_documento_3.docx**
 
     :::{list-table}
     * - ```{figure} ./recursos/G1012/image17.png
@@ -429,14 +421,14 @@ Para esto siga los siguientes pasos:
 10. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A07: Cortar, copiar y pegar {kbd}`101` (5%)
+## A06: Cortar, copiar y pegar {kbd}`101` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-    - G1012A07-mitos_desordenados.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A07-mitos_desordenados.odt)
+    - G1012A06-mitos_desordenados.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A06-mitos_desordenados.odt)
 
-2. Abra el archivo: **G1012A07-mitos_desordenados.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **CORTAR, COPIAR y PEGAR**
+2. Abra el archivo: **G1012A06-mitos_desordenados.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **CORTAR, COPIAR y PEGAR**
 
     :::{admonition} ¿Qué contiene el documento?
     :class: hint
@@ -466,20 +458,20 @@ Para esto siga los siguientes pasos:
 
     :::{admonition} En su cuaderno...
     :class: note
-    - Escriba los títulos ordenados del documento: **G1012A07-mitos_desordenados.odt**
+    - Escriba los títulos ordenados del documento: **G1012A06-mitos_desordenados.odt**
     :::
 
 5. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A08: Buscar y reemplazar {kbd}`124` (5%)
+## A07: Buscar y reemplazar {kbd}`124` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-    - G1012A08-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A08-proyecto_escritorio_libre.odt)
+    - G1012A07-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A07-proyecto_escritorio_libre.odt)
 
-2. ABRA el archivo: **G1012A08-proyecto_escritorio_libre.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **BUSCAR Y REEMPLAZAR**
+2. ABRA el archivo: **G1012A07-proyecto_escritorio_libre.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **BUSCAR Y REEMPLAZAR**
 
 3. Se debe realizar un búsqueda de la palabra aplicaciones en el texto del documento. Siga los siguientes pasos:
 
@@ -502,7 +494,7 @@ Para esto siga los siguientes pasos:
         - Escriba el número de veces que **LibreOffice Writer** encontró la palabra **aplicaciones.**
         :::
 
-4. Realice una captura de pantalla que muestre **el número de veces que se encontró la expresión buscada** y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1012A08-proyecto_escritorio_libre-01.png**
+4. Realice una captura de pantalla que muestre **el número de veces que se encontró la expresión buscada** y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1012A07-proyecto_escritorio_libre-01.png**
 
 5. Ahora se debe **reemplazar** todas las apariciones de la palabra **aplicaciones**. Siga los siguientes pasos:
 
@@ -527,7 +519,7 @@ Para esto siga los siguientes pasos:
         :::
     - En el campo **Reemplazar**, ESCRIBA la palabra: **programas**
     - PULSE el botón: {guilabel}`Reemplazar todo`
-    - Realice una **captura de pantalla** que muestre **el número de veces que se reemplazó la expresión buscada** y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1012A08-proyecto_escritorio_libre-02.png**
+    - Realice una **captura de pantalla** que muestre **el número de veces que se reemplazó la expresión buscada** y guarde la imagen en la **carpeta de evidencias** del periodo actual con el nombre: **G1012A07-proyecto_escritorio_libre-02.png**
     - CIERRE la ventana de {guilabel}`Buscar y reemplazar`
 
 6. Con la **barra de herramientas de Buscar**, ahora realice la búsqueda de la palabra: **programas**
@@ -549,13 +541,13 @@ Para esto siga los siguientes pasos:
 9. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A09: Corrector ortográfico {kbd}`102` (5%)
+## A08: Corrector ortográfico {kbd}`102` (5%)
 
 1. EJECUTE el software **LibreOffice Writer**.
 
 2. En la cabecera del documento, agregue la **información de identificación** con el título: **CORRECTOR ORTOGRÁFICO**.
 
-3. GUARDE el documento en su **carpeta de evidencias** con el nombre: **G1012A09-corrector_ortografico.odt**
+3. GUARDE el documento en su **carpeta de evidencias** con el nombre: **G1012A08-corrector_ortografico.odt**
 
 4. Copie y pegue el siguiente texto en el documento:
 
@@ -597,7 +589,7 @@ Para esto siga los siguientes pasos:
 9. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A10: Presentación de evidencias (50%)
+## A09: Presentación de evidencias (50%)
 {bdg-danger}`Transferencia`
 
 :::{admonition} ¿Cómo se evalúa?

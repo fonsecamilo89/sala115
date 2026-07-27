@@ -1,4 +1,4 @@
-# Guía 1024: Variables en Python (P4)
+# Guía 1024: Variables en Python
 
 :::{list-table}
 :widths: 35 65
@@ -56,23 +56,7 @@
 :::
 
 ---
-## A00: Introducción (5%)
-{bdg-light}`Exploración`
-
-1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-
-2. LEA el **mensaje del autor** y responda la siguiente pregunta en su cuaderno:
-
-    - ¿Cómo los datos y las operaciones se relacionan con la programación?
-
----
-## A01: Variables y operaciones (5%)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos:
-
----
-### ¿Qué son las variables?
+## VARIABLES 
 
 [^1] Las **variables** almacenan información. Es por eso que a través de las variables es que se accede a la memoria RAM del computador. Tener en cuenta lo siguiente:
 
@@ -107,8 +91,7 @@ spam = "hola"
 spam = True
 ```
 
----
-#### ¿Cómo se almacenan los datos en las variables?
+### ¿Cómo se almacenan los datos en las variables?
 Los datos se llevan a las variables a través del signo (=).
 
 > En el caso de los ***algoritmos computacionales y programas***, el signo (=) tiene una connotación diferente a la que se le da en matemáticas. El signo igual (=) significa que el computador va a realizar lo que está a la derecha del igual y lo va a almacenar en la variable que se encuentre a la izquierda del igual.
@@ -137,7 +120,6 @@ Por ejemplo:
   - Le indica al computador que en la variable **C** guarde el resultado de sumar el contenido de la variable **A** con el contenido de la variable **B**. Como la variable **A** tenía el contenido 8 y la variable **B** también tenía el contenido 8 entonces el computador sumara 8+8 y ese 16 de resultado lo almacenará en la variable **C**.
 :::
 
----
 ### Tipos de variables
 
 Las variables son de 4 tipos:
@@ -249,7 +231,6 @@ Booleanos | True, False
 ```
 :::
 
----
 ### Reglas para nombrar variables
 
 Para nombrar correctamente una variable, se siguen las siguientes reglas:
@@ -280,7 +261,7 @@ A continuación se muestran ejemplos de nombramiento correcto e incorrecto de va
 :::
 
 ---
-### Instrucciones en PYTHON
+## Instrucciones en PYTHON
 
 La PC ejecuta instrucciones.
 
@@ -319,7 +300,8 @@ instruccion04
 instruccion05
 ```
 
-### Operadores en PYTHON
+---
+## Operadores en PYTHON
 
 Los operadores son signos que nos permiten expresar relaciones entre variables y/o constantes, de las cuales normalmente se desprende un resultado. En algoritmos computacionales se utilizan los siguientes operadores:
 
@@ -398,7 +380,6 @@ b = -22
 c = 26
 ```
 
----
 ### Linealización de operaciones
 
 Algo a tener en cuenta al momento de escribir una instrucción es que el computador solo entiende las operaciones en formato lineal. Esto quiere decir escritas en una sola línea. De tal manera que si se quiere escribir la ecuación:
@@ -467,7 +448,6 @@ Ahora se linealiza tanto numerador como denominador.
 Finalmente la exponenciación en código python se realiza con $(c**d)$.
 :::
 
----
 ### Precedencia (jerarquía de operadores)
 
 Algunas veces se tienen operaciones muy largas. Esto dificulta su solución. En estos casos se aplica la precedencia. La cual consiste en unas reglas que determinan el orden en el que una operación muy larga debe ser resuelta. Un ejemplo de una operación muy larga sería:
@@ -509,7 +489,17 @@ OPERADOR | OPERACIONES | Orden de evaluación (Precedencia)
 :::
 
 ---
-## A02: Taller (5%)
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. LEA el **mensaje del autor** y responda la siguiente pregunta en su cuaderno:
+
+    - ¿Cómo los datos y las operaciones se relacionan con la programación?
+
+---
+## A01: Taller (5%)
 {bdg-info}`Estructuración`
 
 1. Responda las siguientes preguntas en su cuaderno:
@@ -566,7 +556,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 :::
 
 ---
-## A03: Presentación (5%)
+## A02: Presentación (10%)
 {bdg-warning}`Actividad práctica`
 
 > En la **consola interactiva de PYTHON**, realizar una presentación con sus datos.
@@ -726,7 +716,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
     :::
 
 ---
-## A04: Orientaciones al extranjero (10%)
+## A03: Orientaciones al extranjero (10%)
 {bdg-warning}`Actividad práctica`
 
 > Con las **orientaciones** que previamente diseñó para al extranjero, usar la **consola interactiva de PYTHON** para mostrar dichas orientaciones.
@@ -749,7 +739,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
 :::
 
 ---
-## A05: Operaciones en Python (10%)
+## A04: Operaciones en Python (10%)
 {bdg-warning}`Actividad práctica`
 
 > Resuelva los siguientes ejercicios en su cuaderno (**EVIDENCIE EL PROCEDIMIENTO**) (**NO USAR CALCULADORA**).
@@ -933,7 +923,7 @@ Variables | correcta o incorrecta	| ¿Por qué?
     - Para mostrar los **resultados finales** de las variables en **pantalla**, usar la función `print()`.
 
 ---
-## A06: Linealización de Operaciones (10%)
+## A05: Linealización de Operaciones (10%)
 {bdg-warning}`Actividad práctica`
 
 1. En su cuaderno responda: 
@@ -941,7 +931,14 @@ Variables | correcta o incorrecta	| ¿Por qué?
 
 2. En su cuaderno dibuje una tabla y en ella escriba el orden de la precedencia y su descripción para los operadores: `()`, `*`, `**`, `/`, `//`, `%`, `+`, `-`.
 
-3. Linealizar las siguientes operaciones en su cuaderno (**EVIDENCIAR PROCEDIMIENTO**):
+3. Para cada uno de los **siguientes ejercicios**, en su cuaderno obtener el **valor final** de $X$ para los siguientes **valores de variables**:
+
+    :::{math}
+    a &= 1
+    \\ b &= 2
+    \\ c &= 3
+    \\ d &= 4
+    :::
 
     **3.1**
     > $$ X = { a + \frac{b}{c} \over {a \over b} + c } $$
@@ -973,8 +970,12 @@ Variables | correcta o incorrecta	| ¿Por qué?
     **3.10**
     > $$ X = a + b + { c \over d } + { { a \over b - c } \over { a \over b + c } } $$
 
+4. Para cada uno de los **anteriores ejercicios**, en su cuaderno obtener la **operación linealizada** (*EVIDENCIAR PROCEDIMIENTO*).
+   
+5. Ingrese a la **consola interactiva de PYTHON**, transcriba las ***operaciones linealizadas*** de su cuaderno y compruebe que los **valores finales** de $X$ coinciden con los **valores finales de $X$ de su cuaderno**.
+
 ---
-## A07: Modelo % de notas (50%)
+## A06: Modelo % de notas (50%)
 {bdg-danger}`Transferencia`
 
 ```{csv-table}

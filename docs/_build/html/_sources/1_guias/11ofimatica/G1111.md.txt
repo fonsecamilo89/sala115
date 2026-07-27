@@ -1,4 +1,4 @@
-# Guía 1111: LibreOffice Calc (P1)
+# Guía 1111: LibreOffice Calc
 
 :::{list-table}
 :widths: 35 65
@@ -42,12 +42,12 @@
 ```
 
 ```{tab-item} Recursos (7)
-- G1111A07-calificaciones.xls [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A07-calificaciones.xls)
-- G1111A08-antiguedad-saldos.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A08-antiguedad-saldos.ods)
-- G1111A08-calculo-precios.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A08-calculo-precios.ods)
-- G1111A09-animales-raza.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A09-animales-raza.ods)
-- G1111A10-frutas.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A10-frutas.ods)
-- G1111A10-ventas-ferreteria.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A10-ventas-ferreteria.ods)
+- G1111A06-calificaciones.xls [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A06-calificaciones.xls)
+- G1111A07-antiguedad-saldos.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A07-antiguedad-saldos.ods)
+- G1111A07-calculo-precios.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A07-calculo-precios.ods)
+- G1111A08-animales-raza.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A08-animales-raza.ods)
+- G1111A09-frutas.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A09-frutas.ods)
+- G1111A09-ventas-ferreteria.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A09-ventas-ferreteria.ods)
 - [Descarga de **LibreOffice**](https://www.libreoffice.org/download/).
 ```
 :::
@@ -61,21 +61,7 @@
 :::
 
 ---
-## A00: Introducción (5%)
-{bdg-light}`Exploración`
-
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-
-2. Lea el mensaje del autor.
-
----
-## A01: LibreOffice Calc (5%)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos.
-
----
-### ¿Qué es LibreOffice Calc?
+## LibreOffice Calc
 
 **LibreOffice Calc** es una aplicación de hoja de cálculo gratuita y de código abierto que forma parte de la suite ofimática LibreOffice. Es una herramienta para organizar, analizar y almacenar datos en formato de tabla. Calc se utiliza para las siguientes tareas:
 
@@ -98,7 +84,6 @@ A continuación se muestra un ejemplo de una hoja de cálculo creada en **LibreO
     ```
 :::
 
----
 ### Características de LibreOffice Calc
 
 Un uso profesional de la hoja de cálculo requiere el manejo de herramientas para análisis de datos y generación de gráficas.
@@ -157,8 +142,19 @@ Se pueden abrir documentos existentes desde una gran variedad de formatos. Los f
 - Texto CSV (*.csv)
 :::
 
+### Interfaz de LibreOffice Calc
+
+**LibreOffice Calc** tiene la siguiente interfaz:
+
+:::{list-table}
+* - ```{figure} ./recursos/G1111/image04.png
+    :width: 640
+    LibreOffice Calc
+    ```
+:::
+
 ---
-### Diferencia entre LibreOffice Calc y Microsoft Excel
+## Diferencia entre LibreOffice Calc y Microsoft Excel
 
 :::{list-table}
 * - ```{figure} ./recursos/G1111/image03.png
@@ -218,19 +214,16 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 :::
 
 ---
-### Interfaz de LibreOffice Calc
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
 
-**LibreOffice Calc** tiene la siguiente interfaz:
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
 
-:::{list-table}
-* - ```{figure} ./recursos/G1111/image04.png
-    :width: 640
-    LibreOffice Calc
-    ```
-:::
+2. Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:
+   - Aparte de tareas de oficina, ¿Qué otra utilidad tendría el uso de un software de hojas de cálculo? 
 
 ---
-## A02: Taller (10%)
+## A01: Taller (5%)
 {bdg-info}`Estructuración`
 
 1. Responda las siguientes preguntas en su cuaderno:
@@ -254,7 +247,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 4. En su cuaderno, describa la razón por la cual **no es recomendable** abrir en Microsoft Excel un documento previamente creado en LibreOffice Calc.
 
 ---
-## A03: Análisis de casos (5%)
+## A02: Análisis de casos (5%)
 {bdg-warning}`Actividad práctica`
 
 1. Lea el siguiente caso de un estudiante y en un párrafo de 5 líneas describa como puede dar solución al mismo:
@@ -279,12 +272,10 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
    - Un Docente.
 
 ---
-## A04: Interfaz de LibreOffice Calc {kbd}`001` (5%)
+## A03: Interfaz de LibreOffice Calc {kbd}`001` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. Ejecute el software LibreOffice Calc.
-   
-2. En su cuaderno:
    
    :::{admonition} En su cuaderno...
    :class: note
@@ -297,7 +288,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
        - Barra de estado
    :::
 
-3. En la interfaz de LibreOffice Calc identifique:
+2. En la interfaz de LibreOffice Calc identifique:
    
    - La **barra de herramientas estándar** y en el dibujo de su cuaderno, agregue los **nombres de los iconos**.
   
@@ -309,10 +300,10 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
  
    - La **barra de estado** y en el dibujo de su cuaderno, agregue la **descripción de cada uno de los componentes de esta barra**. (PULSAR DOBLE CLICK EN EL COMPONENTE)
 
-4. Cierre el software LibreOffice Calc.
+3. Cierre el software LibreOffice Calc.
 
 ---
-## A05: Selección de celdas y rangos {kbd}`018` (5%)
+## A04: Selección de celdas y rangos {kbd}`018` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. Ejecute el software LibreOffice Calc.
@@ -398,7 +389,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
    - ¿Qué figura se forma en la hoja de cálculo con la selección de **filas** y **columnas** que acaba de hacer?
    :::
 
-7. Realice una captura de pantalla con la figura formada y guarde la imagen en la carpeta de evidencias del periodo actual con el nombre: **G1111A05-seleccionCeldas.png**
+7. Realice una captura de pantalla con la figura formada y guarde la imagen en la carpeta de evidencias del periodo actual con el nombre: **G1111A04-seleccionCeldas.png**
 
 8. Sin escribir datos en ninguna celda pulse: {kbd}`Ctrl` + {kbd}`↓` y, seguidamente: {kbd}`Ctrl` + {kbd}`→`.
     
@@ -439,7 +430,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 12. Cierre el software LibreOffice Calc.
 
 ---
-## A06: Edición básica {kbd}`003` (5%)
+## A05: Edición básica {kbd}`003` (5%)
 
 1. Ejecute el software LibreOffice Calc.
 
@@ -475,7 +466,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 8. Cierre el software LibreOffice Calc.
 
 ---
-## A07: Gestión de documentos {kbd}`512` (5%)
+## A06: Gestión de documentos {kbd}`512` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. EJECUTE el software LibreOffice Calc.
@@ -488,17 +479,17 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 
 5. Verifique que tenga cuatro libros nuevos abiertos: **Sin título 1**, **Sin título 2**, **Sin título 3** y **Sin título 4**. Los libros organizarlos en forma de cuadrilla en el escritorio (cuadrilla de 4 archivos).
 
-6. Realice una captura de pantalla y guarde la imagen en la carpeta de evidencias del periodo actual. El nombre de la imagen es: **G1111A07-creacionArchivos.png** (En la imagen se deben ver los cuatro documentos creados abiertos y la fecha).
+6. Realice una captura de pantalla y guarde la imagen en la carpeta de evidencias del periodo actual. El nombre de la imagen es: **G1111A06-creacionArchivos.png** (En la imagen se deben ver los cuatro documentos creados abiertos y la fecha).
 
 7. En el documento **Sin título 1**, INTRODUZCA cualquier contenido en algunas celdas.
 
 8. IDENTIFIQUE el icono de guardar en la **barra de herramientas estándar**. PULSE el icono de guardar.
 
-9. GUARDE el documento con el nombre: **G1111A07-primerasPracticas.ods** en la carpeta de evidencias del periodo actual.
+9. GUARDE el documento con el nombre: **G1111A06-primerasPracticas.ods** en la carpeta de evidencias del periodo actual.
     
 10. MODIFIQUE el contenido del documento.
 
-11. Vuelva a GUARDAR el documento pero esta vez en el menú superior PULSAR **Archivo** > **Guardar como…** y cambie de nombre a: **G1111A07-masPracticas.ods** (Guardar el documento en la carpeta de evidencias del periodo actual).
+11. Vuelva a GUARDAR el documento pero esta vez en el menú superior PULSAR **Archivo** > **Guardar como…** y cambie de nombre a: **G1111A06-masPracticas.ods** (Guardar el documento en la carpeta de evidencias del periodo actual).
     
     :::{admonition} En su cuaderno...
     :class: note
@@ -509,9 +500,9 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 
 13. Descargue el siguiente archivo y guárdelo en la carpeta de evidencias del periodo actual.
 
-    - G1111A07-calificaciones.xls [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A07-calificaciones.xls)
+    - G1111A06-calificaciones.xls [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A06-calificaciones.xls)
 
-14. ABRA el archivo **G1111-calificaciones.xls** con el software **LibreOffice Calc**.
+14. ABRA el archivo **G1111A06-calificaciones.xls** con el software **LibreOffice Calc**.
 
 15. GUARDE el archivo como **Hoja de cálculo ODF** manteniendo el nombre original (sólo cambiará la extensión). (Usar **Guardar como…**)
 
@@ -519,9 +510,9 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 
 17. VERIFIQUE que ahora tiene 3 archivos en su carpeta de evidencias así:
 
-    - **G1111A07-calificaciones.xls**
-    - **G1111A07-calificaciones.ods**
-    - **G1111A07-calificaciones.csv**
+    - **G1111A06-calificaciones.xls**
+    - **G1111A06-calificaciones.ods**
+    - **G1111A06-calificaciones.csv**
 
     :::{admonition} En su cuaderno...
     :class: note
@@ -531,13 +522,13 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 18. Guarde los cambios y cierre el software LibreOffice Calc.
 
 ---
-## A08: Cortar, copiar y pegar {kbd}`202` (5%)
+## A07: Cortar, copiar y pegar {kbd}`202` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. Descargue los siguientes archivos y guárdelos en la carpeta de evidencias del periodo actual:
 
-    - G1111A08-antiguedad-saldos.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A08-antiguedad-saldos.ods)
-    - G1111A08-calculo-precios.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A08-calculo-precios.ods)
+    - G1111A07-antiguedad-saldos.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A07-antiguedad-saldos.ods)
+    - G1111A07-calculo-precios.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A07-calculo-precios.ods)
 
 2. Lea la siguiente información:
 
@@ -558,7 +549,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
     ```
     :::
 
-3. ABRA el archivo **G1111A08-calculo-precios.ods**
+3. ABRA el archivo **G1111A07-calculo-precios.ods**
 
 4. Seleccione el rango (**B6:G17**). Luego CORTE y PEGUE dicho rango a la celda **A1**.
 
@@ -573,9 +564,9 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
         ```
     ```    
 
-7. GUARDE los cambios y CIERRE el documento **G1111A08-calculo-precios.ods**
+7. GUARDE los cambios y CIERRE el documento **G1111A07-calculo-precios.ods**
 
-8. ABRA el archivo **G1111A08-antiguedad-saldos.ods**
+8. ABRA el archivo **G1111A07-antiguedad-saldos.ods**
    
 9. En la **barra inferior** donde están las hojas, PULSAR el botón **+**, para crear un hoja nueva en el archivo (**Hoja2**).
 
@@ -637,14 +628,14 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 17.  Guarde los cambios y cierre el software LibreOffice Calc.
 
 ---
-## A09: formatos ($, #, 20/08/2020, 0.0) {kbd}`102` (5%)
+## A08: formatos ($, #, 20/08/2020, 0.0) {kbd}`102` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. Descargue el siguiente archivo y GUÁRDELO en la carpeta de evidencias del periodo actual:
 
-    - G1111A09-animales-raza.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A09-animales-raza.ods)
+    - G1111A08-animales-raza.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A08-animales-raza.ods)
 
-2. Abra el archivo G1111A09-animales-raza.ods y seleccione toda la fila 1 (PULSAR clic izquierdo sobre el número 1 de la fila), luego genere el menú contextual sobre la fila 1 (PULSAR clic derecho sobre el número 1 de la fila). Luego del menú contextual, SELECCIONAR la opción **Formato de celdas**.
+2. Abra el archivo G1111A08-animales-raza.ods y seleccione toda la fila 1 (PULSAR clic izquierdo sobre el número 1 de la fila), luego genere el menú contextual sobre la fila 1 (PULSAR clic derecho sobre el número 1 de la fila). Luego del menú contextual, SELECCIONAR la opción **Formato de celdas**.
 
     ```{list-table}
     * - ```{figure} ./recursos/G1111/image12.png
@@ -773,15 +764,15 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 20. Guarde los cambios y cierre el software LibreOffice Calc.
 
 ---
-## A10: Buscar, reemplazar, ocultar y rellenar {kbd}`307` (5%)
+## A09: Buscar, reemplazar, ocultar y rellenar {kbd}`307` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. DESCARGUE los siguientes archivos y GUÁRDELOs en la carpeta de evidencias del periodo actual:
 
-   - G1111A10-frutas.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A10-frutas.ods)
-   - G1111A10-ventas-ferreteria.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A10-ventas-ferreteria.ods)
+   - G1111A09-frutas.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A09-frutas.ods)
+   - G1111A09-ventas-ferreteria.ods [{bdg-primary}`Descargar`](./recursos/G1111/archivos/G1111A09-ventas-ferreteria.ods)
 
-2. ABRA el archivo **G1111A10-frutas.ods** y PULSE las teclas: {kbd}`CTRL` + {kbd}`B` para abrir el menú de búsqueda en la parte inferior de la interfaz.
+2. ABRA el archivo **G1111A09-frutas.ods** y PULSE las teclas: {kbd}`CTRL` + {kbd}`B` para abrir el menú de búsqueda en la parte inferior de la interfaz.
 
 3. En la barra de búsqueda, escribir el nombre: “kiwi” y PULSAR la opción de Buscar todo. Se abrirá una ventana con los resultados de búsqueda.
 
@@ -812,7 +803,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
     Escribir el número de resultados encontrados y reemplazados.
     :::
 
-6. Guarde los cambios y abra el documento: **G1111A10-ventas-ferreteria.ods**.
+6. Guarde los cambios y abra el documento: **G1111A09-ventas-ferreteria.ods**.
 
 7. Seleccione el rango de filas 5 a 7 (Mantenga PULSADA la tecla {kbd}`CTRL`). Encima de algún número de las filas seleccionadas (5 a 7), PULSAR clic derecho para generar el **menú contextual** y seleccionar la opción: **Ocultar filas**
 
@@ -830,7 +821,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
     Describa la forma final de la tabla y la forma en la que se modificó el contenido.
     :::
 
-9. Guarde los cambios y cree un nuevo documento de nombre: **G1111A10-control-gastos-semanales.ods**
+9. Guarde los cambios y cree un nuevo documento de nombre: **G1111A09-control-gastos-semanales.ods**
 
 10. Agregue el siguiente contenido al documento tal cual como aparece en la siguiente imagen: 
 
@@ -859,11 +850,11 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
     - ¿Qué acabo de pasar en las celdas C8, D8, E8, F8, G8 y H8?
     :::
 
-13. En la celda B9, escriba el número: **1**. Luego atrastre el cuadrado pequeño hasta la celda H9.
+13. En la celda B9, escriba el número: **1**. Luego arrastre el cuadrado pequeño hasta la celda H9.
 
-14. En la celda H10, escriba: **60km**. Luego atrastre el cuadrado pequeño hasta la celda B10.
+14. En la celda H10, escriba: **60km**. Luego arrastre el cuadrado pequeño hasta la celda B10.
 
-15. En la celda B11, escriba el mes: **enero.** Luego atrastre el cuadrado pequeño hasta la celda H11.
+15. En la celda B11, escriba el mes: **enero.** Luego arrastre el cuadrado pequeño hasta la celda H11.
 
     :::{admonition} En su cuaderno...
     :class: note
@@ -899,7 +890,7 @@ Si se intenta abrir un archivo de Excel en LibreOffice Calc, el cual tenga una i
 18. GUARDE los cambios y CIERRE el software LibreOffice Calc.
 
 ---
-## A11: Presentación de evidencias (40%)
+## A10: Presentación de evidencias (50%)
 {bdg-danger}`Transferencia`
 
 :::{admonition} ¿Cómo se evalúa?

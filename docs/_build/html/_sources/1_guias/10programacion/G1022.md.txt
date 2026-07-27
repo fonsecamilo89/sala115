@@ -1,4 +1,4 @@
-# Guía 1022: Algoritmos (P2)
+# Guía 1022: Algoritmos
 
 :::{list-table}
 :widths: 35 65
@@ -55,30 +55,14 @@
 :::
 
 ---
-## A00: Introducción (5%)
-{bdg-light}`Exploración`
-
-1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-
-2. LEA el **mensaje del autor** y en su cuaderno con sus palabras responda:
-    - ¿Qué es abstracción?
-    - ¿Qué es modelar una solución?
-
----
-## A01: Algoritmos (5%)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos:
-
----
-### ¿Qué es un algoritmo?
+## ALGORITMO
 
 [^2] Un algoritmo es un conjunto de **instrucciones** que le dicen a un ser humano COMO REALIZAR una tarea específica, dichas instrucciones pueden estar escritas en código o lenguaje natural.
 
 Un algoritmo puede ser expresado con palabras o números.
 
 ---
-### Tipos de algoritmos
+## Tipos de algoritmos
 
 Un algoritmo es cualquier actividad o evento con inicio y final, que tenga una serie de pasos lógicos para lograr su ejecución. Y estos suelen ser representados mediante diagramas de flujo. 
 
@@ -87,27 +71,26 @@ Existen dos tipos de algoritmos:
 - Algoritmos cualitativos (informales)
 - Algoritmos cuantitativos (formales)
 
-#### Algoritmos cualitativos (informales)
+### Algoritmos cualitativos (informales)
 
 No requieren de cálculos numéricos para su ejecución. En su lugar, se deben ejecutar secuencias lógicas. Por ejemplo: las instrucciones para ensamblar un artefacto.
 
-#### Algoritmos cuantitativos (formales)
+### Algoritmos cuantitativos (formales)
 
 Requieren de cálculos numéricos (por ejemplo la solución de una ecuación). Si el cálculo numérico puede ser procesado por una persona, entonces es un **algoritmo cuantitativo no computacional**.
 
 Si los cálculos numéricos son muy complejos entonces requieren poder computacional. A esta clase de algoritmos se les dice que son **algoritmos cuantitativos computacionales**. 
 
-- **Algoritmo cuantitativo no computacional:** Estos algoritmos requieren de operaciones numéricas simples, que un ser humano puede resolver sin necesidad de usar un sistema computacional. Por ejemplo una receta de cocina, un cálculo numérico sencillo o las instrucciones para llegar a un lugar.
-- **Algoritmo cuantitativo computacional:** Estos algoritmos requieren de operaciones numéricas complejas que deben resolverse con dispositivos de cálculo, como una computadora o calculadora. Ecuaciones de mucha complejidad o códigos que solo pueden ser interpretados por una máquina, son ejemplos de este tipo de algoritmo.
+  - **Algoritmo cuantitativo no computacional:** Estos algoritmos requieren de operaciones numéricas simples, que un ser humano puede resolver sin necesidad de usar un sistema computacional. Por ejemplo una receta de cocina, un cálculo numérico sencillo o las instrucciones para llegar a un lugar.
+  - **Algoritmo cuantitativo computacional:** Estos algoritmos requieren de operaciones numéricas complejas que deben resolverse con dispositivos de cálculo, como una computadora o calculadora. Ecuaciones de mucha complejidad o códigos que solo pueden ser interpretados por una máquina, son ejemplos de este tipo de algoritmo.
 
 ---
-### ¿Qué es un diagrama de flujo?
+## Diagrama de flujo
 
 [^1] Un diagrama de flujo es un **esquema gráfico** donde se muestra el paso a paso para cumplir un objetivo.
 
 Los diagramas de flujo usados en informática, son útiles porque ayudan a los programadores a organizar y visualizar el código haciendo más fácil encontrar y corregir errores.
 
----
 ### Símbolos de diagramas de flujo
 
 A continuación se explican los símbolos que componen los diagramas de flujo del estándar (ANSI/ISO):
@@ -223,7 +206,7 @@ Conjunto de tablas donde se retiene la información. En espera que se cumplan ot
 :::
 
 ---
-### Metodología para desarrollar un algoritmo
+## Metodología para desarrollar un algoritmo
 
 Cuando se desarrolla un algoritmo, cualquier usuario podría ejecutarlo siempre y cuando cumpla unos requisitos iniciales.
 
@@ -265,7 +248,7 @@ Se debe identificar el algoritmo. La identificación debe tener:
 :::
 
 ---
-### EJEMPLO: Algoritmo para ir al colegio
+## EJEMPLO: Algoritmo para ir al colegio
 
 Desarrolle el siguiente ejercicio:
 
@@ -282,7 +265,7 @@ En su cuaderno desarrolle un **algoritmo que permita a un estudiante ir al coleg
 
 A continuación se muestra la solución del desarrollo del algoritmo.
 
-#### FASE 01: Análisis de requisitos
+### FASE 01: Análisis de requisitos
 
 :::{admonition} (Objetivo y condiciones)
 :class: tip 
@@ -306,16 +289,18 @@ A continuación se muestra la solución del desarrollo del algoritmo.
 
 :::
 
-#### FASE 02: Diseño del algoritmo
+### FASE 02: Diseño del algoritmo
 
-
-:::{list-table}
+:::{admonition} Diagrama de flujo
+:class: tip
+```{list-table}
 * - ```{figure} ./recursos/G1022/image09.png
     :width: 400
     ```
+```
 :::
 
-#### FASE 03: Construcción del algoritmo
+### FASE 03: Construcción del algoritmo
 
 :::{admonition} (Código fuente)
 :class: tip
@@ -349,11 +334,20 @@ A continuación se muestra la solución del desarrollo del algoritmo.
  
  FIN
 ```
-
 :::
 
 ---
-## A02: Taller (10%)
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. LEA el **mensaje del autor** y en su cuaderno con sus palabras responda:
+    - ¿Qué es abstracción?
+    - ¿Qué es modelar una solución?
+
+---
+## A01: Taller (10%)
 {bdg-info}`Estructuración`
 
 1. Escriba las siguientes frases en su cuaderno e indique si es **falso** o **verdadero** e indique el por qué.
@@ -410,7 +404,7 @@ A continuación se muestra la solución del desarrollo del algoritmo.
 
 
 ---
-## A03: Orientaciones al extranjero (20%)
+## A02: Orientaciones al extranjero (25%)
 {bdg-warning}`Actividad práctica`
 
 1. Lea el siguiente caso:
@@ -474,7 +468,7 @@ A continuación se muestra la solución del desarrollo del algoritmo.
     - Usar una **página de cuaderno** por cada diagrama.
 
 ---
-## A04: Algoritmos (60%)
+## A03: Algoritmos (60%)
 {bdg-danger}`Transferencia`
 
 1. En su cuaderno desarrolle cada uno de los siguientes ejercicios, siguiendo la metodología para desarrollar un algoritmo.

@@ -366,7 +366,9 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
 {bdg-light}`Exploración`
 
 1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-2. Lea el **mensaje del autor**.
+2. Lea el **mensaje del autor** y en su cuaderno responda:
+
+   - Para usted, ¿Qué es algo variable?
 
 ---
 ## A01: Taller (5%)

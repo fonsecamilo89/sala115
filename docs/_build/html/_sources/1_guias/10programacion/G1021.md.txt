@@ -1,4 +1,4 @@
-# Guía 1021: PROGRAMACIÓN (P1)
+# Guía 1021: PROGRAMACIÓN
 
 :::{list-table}
 :widths: 35 65
@@ -55,37 +55,19 @@
 :::
 
 ---
-## A00: Introducción (5%)
-{bdg-light}`Exploración`
+## ¿Qué es la programación?
 
-1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-
-2. Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:
-
-    - ¿En qué se relacionan el mundo digital y el software?
-
----
-## A01: PROGRAMACIÓN (5%)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos relacionados con programación:
-
----
-### ¿Qué es la programación?
-
-La programación se refiere específicamente a la escritura de código para crear funcionalidades dentro del software. Es una parte esencial del desarrollo, pero no abarca todo el proceso.
+La **programación** se refiere específicamente a la **escritura de código** para crear funcionalidades dentro del software. Es una parte esencial del desarrollo, pero no abarca todo el proceso.
 
 En la programación, las actividades a desarrollar están orientadas a la creación de código fuente. Es decir, una serie de instrucciones que se le da al PC para realizar alguna acción. También se realiza depuración y optimización de código lo cual permite que solucionen muchos errores. Es muy importante que el programador entienda la responsabilidad de salvaguardar el código fuente construido, por tanto debe sacar tiempo para tareas de **copias de seguridad** y **control de versiones**.
 
 :::{list-table}
 * - ```{figure} ./recursos/G1021/image01.png
     :width: 360
-
     Código fuente
     ```
 :::
 
----
 ### ¿Qué son los datos?
 
 Los datos son valores en bruto, hechos o símbolos que por sí solos no tienen significado. Por ejemplo:
@@ -94,7 +76,6 @@ Los datos son valores en bruto, hechos o símbolos que por sí solos no tienen s
 - Caracteres sin contexto.
 - Valores sin procesar.
 
----
 ### ¿Qué es la información?
 
 La información es el resultado de procesar, organizar e interpretar los datos de manera que tengan sentido y sean útiles. La información:
@@ -114,7 +95,6 @@ Datos|Información
 
 La transformación de datos en información es una parte fundamental del procesamiento computacional, ya que permite convertir valores sin sentido en conocimiento útil y aplicable.
 
----
 ### Valores cuantitativos y cualitativos
 
 [^1] Los valores cualitativos y cuantitativos son dos tipos diferentes de información:
@@ -131,7 +111,6 @@ La transformación de datos en información es una parte fundamental del procesa
 
 La principal diferencia es que los valores cualitativos describen atributos o cualidades, mientras que los cuantitativos expresan cantidades medibles.
 
----
 ### Jerarquía de datos
 
 [^2] La jerarquía de datos es la organización lógica de los datos en niveles sucesivos de complejidad, desde la unidad más pequeña hasta la más completa. En informática, se utiliza para entender cómo se estructura la información dentro de un sistema o base de datos.
@@ -152,7 +131,7 @@ Los datos en la computadora se clasifican de MENOR a MAYOR en el siguiente ranki
     > "La **base de datos** donde están relacionadas las tablas de los estudiantes junto con las tablas de las notas".
 
 ---
-### Hardware
+## Hardware
 
 [^2] El hardware es el conjunto de componentes de un sistema informático o computacional que se puede ver o tocar. Por ejemplo:
 
@@ -162,7 +141,7 @@ Los datos en la computadora se clasifican de MENOR a MAYOR en el siguiente ranki
 - **Memoria:** memoria RAM, memoria CACHE.
 - **Almacenamiento:** Discos duros, memorias USB.
 
-#### La memoria RAM (acceso rápido a los datos)
+### La memoria RAM (acceso rápido a los datos)
 
 La **memoria RAM** (*Random Access Memory o Memoria de Acceso Aleatorio*) es un componente fundamental del hardware que:
 
@@ -176,7 +155,7 @@ Características importantes de la RAM:
 - Su velocidad afecta directamente el rendimiento del sistema.
 - Es diferente al almacenamiento permanente (disco duro) porque es temporal.
 
-#### La CPU (procesa los datos)
+### La CPU (procesa los datos)
 
 La **CPU (Unidad Central de Procesamiento)** es el "cerebro" del computador. Es el componente principal que se encarga de:
 
@@ -193,7 +172,7 @@ La **CPU** está compuesta principalmente por:
 La velocidad de la **CPU** se mide en Hertz (Hz) y determina qué tan rápido puede procesar las instrucciones. A mayor velocidad, mejor rendimiento del sistema.
 
 ---
-### ¿Qué es el software?
+## Software
 
 **El software** es el conjunto de programas, bases de datos y diferentes tipos de archivos que controlan el hardware a través de instrucciones. El software debe tener requisitos y funcionalidades. Es la parte intangible de un sistema informático, en contraste con el hardware, que es la parte física. El software se puede clasificar en dos tipos:
 
@@ -205,7 +184,7 @@ La velocidad de la **CPU** se mide en Hertz (Hz) y determina qué tan rápido pu
 
 - **Software embebido:** Se utiliza para controlar máquinas y dispositivos que normalmente no se consideran ordenadores: redes de telecomunicaciones, automóviles, robots industriales, etc. Estos dispositivos, y su software pueden conectarse como parte del Internet de las cosas (IoT).
 
-#### Software Vs Programa
+### Software Vs Programa
 
 Un programa es un **conjunto de instrucciones** que le dicen a una **computadora** COMO HACER una tarea específica. Las instrucciones están escritas en código y son diseñadas por programadores con conocimiento en un lenguaje de programación.
 
@@ -214,7 +193,7 @@ A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden s
 > “Aunque se usa el término **software** como sinónimo, la realidad es que un **programa** es solo una parte del **software**”.
 
 ---
-#### ¿Qué es el desarrollo de software?
+## Desarrollo de software
 
 El **desarrollo de software** es un proceso que abarca la programación, pero también incluye planificación, diseño, pruebas y mantenimiento. Es un enfoque más holístico que busca crear software funcional y útil.
 
@@ -228,8 +207,7 @@ En el **desarrollo de software** se realizan tareas como el análisis de requisi
     ```
 :::
 
----
-#### Programadores Vs Desarrolladores
+### Programadores Vs Desarrolladores
 
 El desarrollo de software lo llevan a cabo principalmente programadores y desarrolladores de software. Estos roles interactúan y se superponen, y la dinámica entre ellos varía mucho entre los departamentos de desarrollo y las comunidades.
 
@@ -247,9 +225,7 @@ Construir un software es como construir una misma casa varias veces. El lograr q
 - Un **programador** codifica programas que hacen parte del software.
 :::
 
-
----
-#### Proceso de desarrollo de software
+### Proceso de desarrollo de software
 
 Los pasos del proceso de desarrollo de software se pueden agrupar en las fases del ciclo de vida, pero la importancia del ciclo de vida es que se recicla para permitir una mejora continua. Por ejemplo, los problemas de los usuarios que surgen en la fase de mantenimiento y soporte pueden convertirse en requisitos al inicio del siguiente ciclo.
 
@@ -282,8 +258,7 @@ Los pasos del proceso de desarrollo de software se pueden agrupar en las fases d
     
     Para mantener la calidad y la entrega a lo largo del ciclo de vida de la aplicación, se deben tener fechas de seguimiento y soporte. Los usuarios nuevos deben ser capacitados. El software en lo posible debe ser escalable es decir, en la medida que requiera nuevas funcionalidades, estas se deben ir implementando para que el software no quede desactualizado en la medida que pase el tiempo.
 
----
-#### Tecnologías usadas en el desarrollo de software
+### Tecnologías usadas en el desarrollo de software
 
 Hoy en día son bastantes las tecnologías que  como herramientas que nos ayudan a construir software. Estas se pueden clasificar de la siguiente forma:
 
@@ -341,9 +316,7 @@ Un IDE son las siglas para (**entorno de desarrollo de software)**. Es una aplic
 
 :::
 
----
-#### Desarrollo web
-
+:::{admonition} Desarrollo web
 Se conoce como desarrollo web al proceso de crear y mantener un sitio web que sea funcional en internet, a través de diferentes lenguajes de programación, según el modelo y la parte de la página que corresponda. Cada sitio tiene una URL única que lo distingue de los demás en la red informática mundial.
 
 Un sitio web puede clasificarse de diferentes formas. Para cuestiones de desarrollo web principalmente se divide en dos partes:
@@ -358,9 +331,9 @@ Los desarrolladores web se enfocan en la codificación y programación del sitio
 - MEAN: MongoDB, Express.js, Angular, Node.js
 - .NET stack: .NET, C#, SQL Server y Visual Studio
 - DJANGO: Python
+:::
 
----
-#### Lenguajes de programación
+:::{admonition} Lenguajes de programación
 
 Un **lenguaje de programación** es un conjunto de instrucciones que le damos a una computadora para que realice tareas específicas. Es como un idioma que usamos para comunicarnos con las máquinas. Estas instrucciones se escriben siguiendo reglas gramaticales y de sintaxis definidas, y el objetivo es crear programas que resuelvan problemas o hagan cosas útiles.
 
@@ -378,8 +351,9 @@ A continuación se muestran los 6 lenguajes de programación más usados en el d
 
 - **[Python](https://www.python.org)**: Es uno de los lenguajes de desarrollo web más innovadores que hay hasta el momento, debido a su característica multiparadigma, que es capaz de adaptarse a varios estilos de programación y crear aplicaciones de cualquier tipo. Es de código abierto y su escritura es muy parecida al lenguaje humano. Forma parte del Back-end de un sitio.
 
----
-#### Software de aplicación
+:::
+
+:::{admonition} Software de aplicación
 
 Dentro del software de aplicación se encuentran varios ejemplos relacionados con áreas específicas como diseño, ofimática, gráfico, financiero, musical, etc.
 
@@ -392,9 +366,21 @@ Dentro del software de aplicación se encuentran varios ejemplos relacionados co
 - **[Audacity](https://www.audacityteam.org)**: Audacity es el software gratuito más popular del mundo para grabar y editar audio. Así que, si esta produciendo música, un podcast o simplemente experimentando con audio, Audacity es para usted.
 
 - **[Godot](https://godotengine.org/)**: Es un motor de juego de código abierto, gratuito y multiplataforma. Proporciona un entorno completo para desarrollar videojuegos 2D y 3D, con un editor visual intuitivo y una gran comunidad de apoyo.
+:::
+
 
 ---
-## A02: Taller (10%)
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:
+
+    - ¿En qué se relacionan el mundo digital y el software?
+
+---
+## A01: Taller (10%)
 {bdg-info}`Estructuración`
 
 1. Responda las siguientes preguntas en su cuaderno:
@@ -542,7 +528,7 @@ Ejemplo:
     - Inkscape
   
 ---
-## A03: Análisis de casos (20%)
+## A02: Análisis de casos (25%)
 {bdg-warning}`Actividad práctica`
 
 1. Para los siguientes casos, en su cuaderno elegir el lenguaje de programación más apropiado. Especificar el por qué.

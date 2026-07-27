@@ -55,20 +55,7 @@
 :::
 
 ---
-## A00: Introducción (5%)
-{bdg-light}`Exploración`
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-
-2. Lea el mensaje del autor luego identifique y describa en su cuaderno **5 ejemplos de software** gratuitos que utilice, reflexionando sobre cómo estos facilitan sus actividades cotidianas.
-
----
-## A01: Ofimática y software libre (5%)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos relacionados con software libre.
-
----
-### ¿Qué es la ofimática?
+## OFIMÁTICA
 
 :::{admonition} Concepto de ofimática
 
@@ -88,7 +75,7 @@ La ofimática es fundamental en el entorno laboral moderno, ya que permite aumen
 :::
 
 ---
-### ¿Qué es el software?
+## ¿Qué es el software?
 
 [^1] “El software es un conjunto de programas, instrucciones y reglas informáticas que permiten ejecutar distintas tareas en una computadora. Se trata de las aplicaciones y sistemas que hacen posible que los usuarios puedan trabajar con un **ordenador** o **dispositivo electrónico**”.
 
@@ -108,7 +95,7 @@ La ofimática es fundamental en el entorno laboral moderno, ya que permite aumen
 :::
 
 ---
-### Software libre
+## Software libre
 
 [^2] El **software libre** es un tipo de software que respeta la libertad de los usuarios y la comunidad. Los usuarios tienen la libertad de ejecutar, copiar, distribuir, estudiar, modificar y mejorar el software.
 
@@ -136,8 +123,7 @@ El software libre se caracteriza por:
 Estas **libertades** son esenciales, no opcionales. Un **software** es **libre** si otorga a los usuarios todas estas libertades de manera adecuada.
 :::
 
----
-#### Ejemplos de software libre
+### Ejemplos de software libre
 
 A continuación se muestran algunos ejemplos del software libre:
 
@@ -299,7 +285,7 @@ LibreOffice es completamente gratuito, compatible con los formatos de **Microsof
 :::
 
 ---
-### Software propietario
+## Software propietario
 
 [^2] El software propietario, es aquel que no permite a los usuarios acceder, modificar o distribuir su código fuente. Los usuarios tienen restricciones legales y técnicas que les impiden ejercer las libertades que caracterizan al software libre.
 
@@ -315,8 +301,7 @@ El software propietario se caracteriza por:
 - Generalmente requiere el pago de licencias para su uso.
 - Las actualizaciones y mejoras dependen exclusivamente del propietario.
 
----
-#### Ejemplos de software propietario
+### Ejemplos de software propietario
 
 A continuación se muestran algunos ejemplos del software propietario:
 
@@ -438,7 +423,7 @@ Es ampliamente utilizado en campos como la arquitectura, ingeniería, diseño in
 :::
 
 ---
-### Software pirata
+## Software pirata
 
 > *“El software pirata se refiere a copias ilegales de **programas informáticos** que se distribuyen o utilizan sin la debida autorización de sus propietarios legales. Esta práctica viola los derechos de autor y la propiedad intelectual”.*
 
@@ -463,7 +448,7 @@ El uso de **software pirata** es ilegal y puede tener consecuencias graves, incl
 :::
 
 ---
-### Suite Ofimática LibreOffice
+## Suite Ofimática LibreOffice
 
 :::{list-table}
 * - ```{figure} ./recursos/G1011/image13.png
@@ -485,8 +470,7 @@ La suite de **LibreOffice** esta compuesta por las siguientes herramientas:
 
 LibreOffice es una suite ofimática multi-plataforma, lo que quiere decir que se puede ejecutar en diferentes plataformas y sistemas operativos. Por consiguiente usted puede disfrutar del mismo programa en **Windows**, **GNU/Linux** o **MacOS**, facilitando la portabilidad entre diferentes sistemas de los documentos generados.
 
----
-#### Entidades que usan LibreOffice
+### Entidades que usan LibreOffice
 
 [^17] Millones de personas utilizan LibreOffice todos los días en sus hogares, negocios, organizaciones benéficas y sectores gubernamentales. De entre estos grupos de usuarios pueden destacarse:
 
@@ -502,8 +486,7 @@ País | Descripción
 **COLOMBIA** | ???
 :::
 
----
-#### Herramientas de LibreOffice
+### Herramientas de LibreOffice
 
 [^16] A continuación se explican las diferentes herramientas de LibreOffice:
 
@@ -575,8 +558,7 @@ Las presentaciones de diapositivas se pueden mejorar utilizando texto de efectos
 Math es un editor de fórmulas o ecuaciones. Puede usarlo para crear ecuaciones complejas que incluyen símbolos o caracteres que no están disponibles en conjuntos de fuentes estándar. Si bien se usa más comúnmente para crear fórmulas en otros documentos, como archivos Writer e Impress, Math también puede funcionar como una herramienta independiente. Puede guardar fórmulas en el formato estándar de **Lenguaje de Marcado Matemático (MathML)** para incluirlas en páginas web u otros documentos creados con otros programas.
 :::
 
----
-#### Ventajas de LibreOffice
+### Ventajas de LibreOffice
 
 [^16] A continuación se presentan las ventajas que tiene el uso de LibreOffice frente a otras suites ofimáticas:
 
@@ -603,7 +585,14 @@ Math es un editor de fórmulas o ecuaciones. Puede usarlo para crear ecuaciones 
 - **Usted tiene voz:** Las mejoras, las correcciones de software y las fechas de lanzamiento están impulsadas por la comunidad. Puede unirse a la comunidad e influir sobre el curso de LibreOffice.
 
 ---
-## A02: Taller (10%)
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor luego identifique y describa en su cuaderno **5 ejemplos de software** gratuitos que utilice, reflexionando sobre cómo estos facilitan sus actividades cotidianas.
+
+---
+## A01: Taller (10%)
 {bdg-info}`Estructuración`
 
 1. En su cuaderno responda:
@@ -732,7 +721,7 @@ Math es un editor de fórmulas o ecuaciones. Puede usarlo para crear ecuaciones 
     :::
 
 ---
-## A03: Análisis de casos (20%)
+## A02: Análisis de casos (20%)
 {bdg-warning}`Actividad práctica`
 
 1. En su cuaderno analice los siguientes casos e indique a que **área de trabajo de la ofimática** corresponde y explique por qué.
@@ -835,7 +824,7 @@ Math es un editor de fórmulas o ecuaciones. Puede usarlo para crear ecuaciones 
     > **CASO 06**: Un equipo de contabilidad necesita evaluar la viabilidad de un proyecto financiero. Deben procesar grandes volúmenes de datos usando funciones estadísticas y aplicar el "Gestor de escenarios" para analizar diferentes variables de tipo: ("qué pasaría si"). ¿Por qué esta herramienta debe ser superior a una simple hoja de cálculo básica?
 
 ---
-## A04: Carta al propietario (60%)
+## A03: Carta al propietario (60%)
 {bdg-danger}`Transferencia`
 
 ```{csv-table}

@@ -43,14 +43,14 @@
 
 ```{tab-item} Recursos (9)
 - [Descarga de **LibreOffice**](https://www.libreoffice.org/download/).
-- G1013A04-practica_fuentes.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A04-practica_fuentes.odt)
-- G1013A05-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A05-mitos.odt)
-- G1013A06-enfermedades.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A06-enfermedades.odt)
-- G1013A07-nueces.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A07-nueces.odt)
-- G1013A08-certificado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A08-certificado.odt)
-- G1013A09-temario.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A09-temario.odt)
-- G1013A10-curriculum.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A10-curriculum.odt)
-- G1013A11-estilo_personalizado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A11-estilo_personalizado.odt)
+- G1013A02-practica_fuentes.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A02-practica_fuentes.odt)
+- G1013A02-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A02-mitos.odt)
+- G1013A03-enfermedades.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A03-enfermedades.odt)
+- G1013A04-nueces.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A04-nueces.odt)
+- G1013A05-certificado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A05-certificado.odt)
+- G1013A06-temario.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A06-temario.odt)
+- G1013A07-curriculum.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A07-curriculum.odt)
+- G1013A08-estilo_personalizado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A08-estilo_personalizado.odt)
 
 ```
 :::
@@ -64,22 +64,7 @@
 :::
 
 ---
-## A00: Introducción (5%)
-{bdg-light}`Exploración`
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
-
-2. Lea el mensaje del autor y responda la siguiente pregunta en su cuaderno:
-
-    - ¿De qué forma el uso de herramientas digitales promueve la creatividad?
-
----
-## A01: LibreOffice Writer (5%)
-{bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos:
-
----
-### Formato de texto
+## Formato de texto
 
 ```{list-table}
 * - ```{figure} ./recursos/G1013/image01.png
@@ -96,7 +81,7 @@ Por este motivo, es recomendable familiarizarnos con los diferentes formatos que
 
 
 ---
-### Trabajando con estilos
+## Trabajando con estilos
 
 ```{list-table}
 * - ```{figure} ./recursos/G1013/image02.png
@@ -132,7 +117,16 @@ degradados o de imagen, por ejemplo)
 Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan sólo se necesita disponer de un documento bien estructurado y organizado. Para ello se tiene en cuenta otras configuraciones como el tamaño y formato del papel donde se imprimirá, los márgenes del documento, la orientación, los encabezados y pies que se deben repetir en todas las páginas o la numeración de las páginas.
 
 ---
-## A02: Taller (5%)
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor y responda la siguiente pregunta en su cuaderno:
+
+    - ¿De qué forma el uso de herramientas digitales promueve la creatividad?
+
+---
+## A01: Taller (5%)
 {bdg-info}`Estructuración`
 
 1. Responda las siguientes preguntas en su cuaderno:
@@ -144,14 +138,17 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
 2. Con 10 términos de las **recomendaciones en el uso de estilos**, en una hoja de cuaderno cree una *sopa de letras*.
 
 ---
-## A03: Formato de carácter 1.0 {kbd}`101` (5%)
+## A02: Formato de carácter {kbd}`304` (5%)
 {bdg-warning}`Actividad práctica`
 
-1. EJECUTE el software LibreOffice Writer.
+1. DESCARGUE los siguientes archivos y guárdelos en su carpeta de evidencias:
 
-2. En la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 1.0**
+    - G1013A02-practica_fuentes.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A02-practica_fuentes.odt)
+    - G1013A02-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A02-mitos.odt)
 
-3. GUARDE el documento en su **carpeta de evidencias** del periodo actual con el nombre: **G1013A03-formato_caracter_1.odt**
+2. EJECUTE el software LibreOffice Writer y cree un **nuevo documento** con el nombre: **G1013A02-formato_caracter_1.odt**
+
+3. En la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 1.0**
 
 4. AGREGUE el siguiente fragmento de texto al documento:
 
@@ -209,8 +206,6 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
             - **Color:** Lima
     - Pulsar el botón {guilabel}`Aceptar`
 
-7. En su cuaderno:
-
     :::{admonition} En su cuaderno...
     :class: note
     Responda las siguientes preguntas:
@@ -218,24 +213,16 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
     - Al momento de crear informes, memorias, cartas o proyectos ¿Qué se necesita para que el contenido tenga un buen formato?
     :::
     
-8. Guarde los cambios y cierre el software **LibreOffice Writer**.
+7.  Guarde los cambios y cierre el software **LibreOffice Writer**.
 
----
-## A04: Formato de carácter 2.0 {kbd}`102` (5%)
-{bdg-warning}`Actividad práctica`
-
-1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
-
-    - G1013A04-practica_fuentes.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A04-practica_fuentes.odt)
-
-2. Abra el archivo: **G1013A04-practica_fuentes.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 2.0**
+8.  Abra el archivo: **G1013A02-practica_fuentes.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 2.0**
 
     :::{admonition} ¿Qué contiene el documento?
     :class: hint
     El documento tiene varios párrafos que especifican la configuración de formato de carácter que debe tener cada uno.
     :::
 
-3. SELECCIONE cada párrafo y aplique la **configuración indicada** PULSANDO en el menú superior: {guilabel}`Formato` > {guilabel}`carácter…`
+9.  SELECCIONE cada párrafo y aplique la **configuración indicada** PULSANDO en el menú superior: {guilabel}`Formato` > {guilabel}`carácter…`
 
     :::{admonition} Advertencia
     :class: warning
@@ -247,7 +234,7 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
     ```
     :::
 
-4. Después de aplicar todos los formatos a los párrafos, el documento debería tener el siguiente aspecto:
+10. Después de aplicar todos los formatos a los párrafos, el documento debería tener el siguiente aspecto:
 
     :::{list-table} 
     * - ```{figure} ./recursos/G1013/image07.png
@@ -255,32 +242,22 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
         ```
     :::
 
-5. En su cuaderno:
-
     :::{admonition} En su cuaderno...
     :class: note
     Responda la siguiente pregunta:
     - ¿Cuál es la ventaja de aplicar **formato de carácter** por medio del **menú superior** frente a aplicar **formato de carácter** por medio de la **barra de herramientas formato**?
     :::
 
-6. Guarde los cambios y luego cierre el software **LibreOffice Writer**.
+11. Guarde los cambios y luego cierre el software **LibreOffice Writer**.
 
----
-## A05: Formato de carácter 3.0 {kbd}`101` (5%)
-{bdg-warning}`Actividad práctica`
-
-1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
-
-    - G1013A05-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A05-mitos.odt)
-
-2. Abra el archivo: **G1013A05-mitos.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 3.0**
+12. Abra el archivo: **G1013A02-mitos.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE CARÁCTER 3.0**
 
     :::{admonition} ¿Que contiene el documento?
     :class: hint 
     El documento contienen las descripciones de Dioses de la mitología griega. A los títulos: ADONIS, AFRODITA y AGON se les debe aplicar una configuración de **formato de carácter**.
     :::
 
-3. Seleccione el título **ADONIS** y PULSE en el **Menú superior** > {guilabel}`Formato` > {guilabel}`Carácter…`
+13. Seleccione el título **ADONIS** y PULSE en el **Menú superior** > {guilabel}`Formato` > {guilabel}`Carácter…`
 
     - En la pestaña {guilabel}`Resalte` configurar:
         - **Color:** Verde claro 3
@@ -298,24 +275,22 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
             - **Posición:** Abajo y a la derecha
             - **Color:** Azul claro 3
 
-4. Aplique la misma configuración de **formato de carácter** a los títulos **AFRODITA** y **AGÓN**.
+14. Aplique la misma configuración de **formato de carácter** a los títulos **AFRODITA** y **AGÓN**.
 
-5. En cada párrafo, RESALTE la primera palabra con color amarillo.
+15. En cada párrafo, RESALTE la primera palabra con color amarillo.
 
     :::{Advertencia}
     :class: warning
     Use el **formato de carácter**. No use la **barra de herramientas formato**.
     :::
 
-6. Después de aplicar **todos los formatos** al texto, el documento debería tener el siguiente aspecto:
+16. Después de aplicar **todos los formatos** al texto, el documento debería tener el siguiente aspecto:
 
     :::{list-table} 
     * - ```{figure} ./recursos/G1013/image08.png
         :width: 500
         ```
     :::
-
-7. En su cuaderno:
 
     :::{admonition} En su cuaderno...
     :class: note
@@ -325,17 +300,17 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
     - ¿Que pasaría si en vez de 3, hubiesen sido 300 títulos a los que era necesario configurar formato de carácter?
     :::
 
-8. Guarde los cambios y cierre el software LibreOffice Writer.
+17. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A06: Clonando formato {kbd}`101` (5%)
+## A03: Clonando formato {kbd}`101` (5%)
 {bdg-warning}`Actividad práctica`
 
-1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
+1. Descargue el siguiente archivo en su carpeta de evidencias:
 
-    - G1013A06-enfermedades.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A06-enfermedades.odt)
+   - G1013A03-enfermedades.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A03-enfermedades.odt)
 
-2. Abra el archivo: **G1013A06-enfermedades.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **CLONANDO FORMATO**
+2. Abra el archivo: **G1013A03-enfermedades.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **CLONANDO FORMATO**
 
     :::{admonition} ¿Qué contiene el documento?
     :class: hint
@@ -395,25 +370,23 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
 
 7. COPIE el formato a los títulos de las enfermedades: **Artrosis** y **Aftas**. Cuando termine presione la tecla {kbd}`ESC`.
 
-8. En su cuaderno:
-
     :::{admonition} En su cuaderno...
     :class: note
     Responda la siguiente pregunta:
     - ¿Cómo la herramienta **clonar formato** puede ayudar a superar las desventajas al usar la herramienta: **formato de carácter?** 
     :::
 
-9. Guarde los cambios y cierre el software **LibreOffice Writer**.
+8. Guarde los cambios y cierre el software **LibreOffice Writer**.
 
 ---
-## A07: Formato de párrafo {kbd}`103` (5%)
+## A04: Formato de párrafo {kbd}`103` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-    - G1013A07-nueces.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A07-nueces.odt)
+    - G1013A04-nueces.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A04-nueces.odt)
 
-2. Abra el archivo: **G1013A07-nueces.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE PÁRRAFO**
+2. Abra el archivo: **G1013A04-nueces.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE PÁRRAFO**
 
     :::{admonition} ¿Qué contiene el documento?
     :class: hint
@@ -583,14 +556,14 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
 17. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A08: Sangría Francesa {kbd}`101` (5%)
+## A05: Sangría Francesa {kbd}`101` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-    - G1013A08-certificado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A08-certificado.odt)
+    - G1013A05-certificado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A05-certificado.odt)
 
-2. Abra el archivo: **G1013A08-certificado.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **SANGRÍA FRANCESA**
+2. Abra el archivo: **G1013A05-certificado.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **SANGRÍA FRANCESA**
 
     :::{admonition} ¿Qué contiene el documento?
     :class: hint
@@ -639,14 +612,14 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
 8. GUARDE los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A09: Esquema numerado {kbd}`102` (5%)
+## A06: Esquema numerado {kbd}`102` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
  
-    - G1013A09-temario.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A09-temario.odt)
+    - G1013A06-temario.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A06-temario.odt)
 
-2. Abra el archivo: **G1013A09-temario.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **ESQUEMA NUMERADO**
+2. Abra el archivo: **G1013A06-temario.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **ESQUEMA NUMERADO**
 
     :::{admonition} ¿Qué contiene el documento?
     :class: hint
@@ -726,13 +699,13 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
 13. GUARDE los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A10: Currículum de estilos {kbd}`101` (5%)
+## A07: Formato de estilos {kbd}`101` (5%)
 
 1. Descargue el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-    - G1013A10-curriculum.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A10-curriculum.odt)
+    - G1013A07-curriculum.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A07-curriculum.odt)
 
-2. Abra el archivo: **G1013A10-curriculum.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE ESTILOS**
+2. Abra el archivo: **G1013A07-curriculum.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **FORMATO DE ESTILOS**
 
     :::{admonition} ¿Qué contiene el documento?
     :class: hint
@@ -873,13 +846,13 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
 16. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A11: Estilo personalizado {kbd}`101` (5%)
+## A08: Estilo personalizado {kbd}`101` (10%)
 
 1. DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:
 
-    - G1013A11-estilo_personalizado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A11-estilo_personalizado.odt)
+    - G1013A08-estilo_personalizado.odt [{bdg-primary}`Descargar`](./recursos/G1013/archivos/G1013A08-estilo_personalizado.odt)
 
-2. Abra el archivo: **G1013A11-estilo_personalizado.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **ESTILO PERSONALIZADO**
+2. Abra el archivo: **G1013A08-estilo_personalizado.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **ESTILO PERSONALIZADO**
 
 3. En la **Jerarquía de estilos de párrafo**, IDENTIFIQUE el estilo: **Estilo de párrafo predeterminado** y en su **menú contextual**, PULSE la opción: **Nuevo...**
 
@@ -951,7 +924,7 @@ Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan só
 9. GUARDE los cambios y cierre el software **LibreOffice Writer**.
 
 ---
-## A12: Presentación de evidencias (40%)
+## A09: Presentación de evidencias (50%)
 {bdg-danger}`Transferencia`
 
 :::{admonition} ¿Cómo se evalúa?
