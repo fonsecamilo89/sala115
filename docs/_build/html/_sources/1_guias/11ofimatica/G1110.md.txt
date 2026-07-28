@@ -1,7 +1,0 @@
-# Ofimática 11
-
-:::{toctree}
-:maxdepth: 2
-
-G1111.md
-:::
