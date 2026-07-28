@@ -1,0 +1,136 @@
+# Guía 1112: Formato en LibreOffice Calc
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Tecnología e Informática
+        - **GRADO**: ONCE
+        - **PERIODO**: 02
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: .
+- **Objetivo de aprendizaje**: .
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: .
+- **Competencia**: . 
+- **Evidencia de aprendizaje**: .
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (0)
+- Esta guía no contiene recursos.
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"".
+
+-- Camilo Fonseca
+:::
+
+---
+## Revisión y auto-corrección
+
+El objetivo principal de estas herramientas en **LibreOffice Calc** es garantizar la calidad y precisión del texto dentro de las hojas de cálculo. La funcionalidad de **"Corrección automática"** actúa como un asistente que **detecta errores tipográficos** o de formato comunes de manera inmediata, permitiendo que el usuario mantenga un flujo de trabajo constante sin tener que **detenerse a corregir manualmente errores menores**. Esto no solo mejora la eficiencia, sino que asegura que los documentos tengan un **acabado profesional**.
+
+---
+## Paginación e impresión
+
+El concepto central de la paginación e impresión radica en la **configuración previa a la impresión**, que permite controlar **cómo se verán los datos en el papel**. Esto implica:
+
+  - **Estilos de página:** Permite definir la estructura general del documento.
+  - **Encabezados y pies de página:** Elementos esenciales para incluir información contextual, como títulos de informes, numeración de páginas o fechas.
+  - **Bordes y fondos:** Herramientas que ayudan a organizar visualmente los datos para que sean más legibles y estéticamente agradables al imprimirse.
+
+---
+## Imágenes, objetos y dibujos
+
+Para enriquecer la **información numérica**, LibreOffice Calc facilita la integración de elementos visuales. La teoría detrás de esto permite al usuario:
+
+  - **Inserción versátil**: Es posible añadir imágenes tanto desde archivos externos (locales) como desde la galería integrada del programa, lo que permite ilustrar los datos con logos o gráficos relevantes.
+  - **Formato y manipulación**: Una vez insertados, estos elementos (imágenes y objetos de dibujo) pueden ser editados en tamaño, posición y estilo, lo cual es crítico para convertir una simple tabla de datos en un informe visualmente impactante y fácil de interpretar para terceros.
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+---
+## A01: Taller (5%)
+{bdg-info}`Estructuración`
+
+1. En su cuaderno responda las siguientes preguntas:
+
+    - ¿Cómo *contribuyen* las herramientas de **revisión** y **auto-corrección** a mejorar la calidad y eficiencia en la elaboración de **hojas de cálculo** en LibreOffice Calc?
+    - ¿Qué *aspectos se deben considerar* al configurar la **paginación** e **impresión** para asegurar que un documento de **Calc** se presente de manera profesional y clara?
+    - ¿De qué manera la **inserción** y **manipulación** de imágenes, objetos y dibujos pueden *transformar la presentación de datos numéricos* en un informe?
+    - ¿Cuáles son las **ventajas** de utilizar **encabezados** y **pies** de página en un documento impreso desde LibreOffice Calc?
+    - ¿Cómo se **podría aplicar las herramientas de formato** para imágenes y objetos en un proyecto específico para mejorar la comprensión visual de los datos?
+
+---
+## A02: Revisión y auto-corrección {kbd}`000` (10%)
+{bdg-warning}`Actividad práctica`
+
+1. DESCARGUE el siguiente archivo y GUÁRDELO en la carpeta de evidencias del periodo actual:
+
+    - ok
+
+---
+## A03: Paginación e impresión {kbd}`000` (10%)
+{bdg-warning}`Actividad práctica`
+
+1. ok
+
+---
+## A04: Formato de imágenes {kbd}`000` (10%)
+{bdg-warning}`Actividad práctica`
+
+1. ok
+
+---
+## A05: Objetos gráficos {kbd}`000` (10%)
+{bdg-warning}`Actividad práctica`
+
+1. ok
+
+---
+## A06: Presentación de evidencias (50%)
+{bdg-danger}`Transferencia`
+
+:::{admonition} ¿Cómo se evalúa?
+1. Los estudiantes presentan lo siguiente:
+
+    - Carpeta de evidencias con todos los archivos editados en la presente guía. (Los archivos deben estar abiertos).
+    - Cuaderno con las actividades desarrolladas.
+
+2. El docente realiza unas preguntas para verificación de conocimientos.
+
+3. El estudiante debe demostrar de forma práctica sus conocimientos en el uso de **LibreOffice Calc**.
+:::

@@ -1,0 +1,1215 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../../genindex.html"><link rel="search" title="Búsqueda" href="../../search.html"><link rel="next" title="Guía 1013: Formato en LibreOffice Writer" href="G1013.html"><link rel="prev" title="Guía 1011: OFIMÁTICA y Software Libre" href="G1011.html">
+        <link rel="prefetch" href="../../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../../_static/logo_dark.png" as="image">
+
+    <!-- Generated with Sphinx 7.4.7 and Furo 2025.12.19 -->
+        <title>Guía 1012: LibreOffice Writer - aula 115</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3250a108" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--small);
+  --toc-font-size: var(--font-size--small--2);
+  --admonition-font-size: 0.858rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/descargas.html">Descargas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guías</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../8logica/G820.html">Lógica computacional 8</a><input aria-label="Toggle navigation of Lógica computacional 8" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G821.html">Guía 821: Concepto Lógica computacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G822.html">Guía 822: Jerarquía de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G823.html">Guía 823: Variables y operaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G824.html">Guía 824: Álgebra de Boole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G829.html">Guía 829: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10informatica/G1000.html">Informática 10</a><input aria-label="Toggle navigation of Informática 10" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1001.html">Guía 1001: Historia de la Informática</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1002.html">Guía 1002: Tema de proyecto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1003.html">Guía 1003: Ideas de proyecto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1004.html">Guía 1004: Anteproyecto de grado</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1009.html">Guía 1009: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="G1010.html">Ofimática 10</a><input aria-label="Toggle navigation of Ofimática 10" checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="G1011.html">Guía 1011: OFIMÁTICA y Software Libre</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Guía 1012: LibreOffice Writer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1013.html">Guía 1013: Formato en LibreOffice Writer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1014.html">Guía 1014: Contenidos en LibreOffice Writer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1019.html">Guía 1019: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10programacion/G1020.html">Programación 10</a><input aria-label="Toggle navigation of Programación 10" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1021.html">Guía 1021: PROGRAMACIÓN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1022.html">Guía 1022: Algoritmos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1023.html">Guía 1023: PYTHON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1024.html">Guía 1024: Variables en Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1029.html">Guía 1029: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../11ofimatica/G1110.html">Ofimática 11</a><input aria-label="Toggle navigation of Ofimática 11" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../11ofimatica/G1111.html">Guía 1111: LibreOffice Calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../11ofimatica/G1112.html">Guía 1112: Formato en LibreOffice Calc</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../11programacion/G1120.html">Programación 11</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../../_sources/1_guias/10ofimatica/G1012.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1012-libreoffice-writer">
+<h1>Guía 1012: LibreOffice Writer<a class="headerlink" href="#guia-1012-libreoffice-writer" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="escudo" src="../../_images/escudo.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
+<ul class="simple">
+<li><p><strong>DOCENTE</strong>: Julian Camilo Fonseca Romero</p></li>
+<li><p><strong>ASIGNATURA</strong>: Ofimática</p></li>
+<li><p><strong>GRADO</strong>: DÉCIMO</p></li>
+<li><p><strong>PERIODO:</strong> 02</p></li>
+<li><p><strong>TIEMPO</strong>: 10 semanas (2 horas / semana)</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 20/20 horas</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ul class="simple">
+<li><p><strong>Temática</strong>: Uso básico de LibreOffice Writer.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Usar de forma básica el software LibreOffice Writer.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Orientaciones curriculares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Componente</strong>: Uso y apropiación de la Tecnología y la Informática.</p></li>
+<li><p><strong>Competencia</strong>: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Criterios de evaluación</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Actividades desarrolladas en su totalidad.</p></li>
+<li><p>Participación en clase.</p></li>
+<li><p>Explicación clara de conceptos.</p></li>
+<li><p>Argumentación de ideas.</p></li>
+<li><p>Cumplimiento de las reglas del aula.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Recursos (3)</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.libreoffice.org/download/" rel="noreferer noopener" target="_blank">Descarga de <strong>LibreOffice</strong></a>.</p></li>
+<li><p>G1012A06-mitos_desordenados.odt <a class="reference download internal" download="" href="../../_downloads/9b529f213d695f589a368d167fcab38a/G1012A06-mitos_desordenados.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p>G1012A07-proyecto_escritorio_libre.odt <a class="reference download internal" download="" href="../../_downloads/16432e21e78b777048e4b7ffe781fc0e/G1012A07-proyecto_escritorio_libre.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</div>
+</div>
+<section id="mensaje-del-autor">
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
+<blockquote class="pull-quote">
+<div><p>“El propósito de la presente guía es que el estudiante descubra que un procesador de textos es mucho más que una herramienta para escribir; es un aliado fundamental para organizar sus ideas, estructurar informes y elevar la calidad visual de sus proyectos académicos y personales. El objetivo de esta guía es que el estudiante desarrolle las competencias técnicas necesarias para manejar herramientas de edición de texto con fluidez. No solo se aprende a ‘hacer que el texto se vea bien’, sino a dominar la lógica detrás de la documentación profesional, una habilidad indispensable en el mundo laboral actual. El desarrollo de cada actividad fortalece la autonomía al hacer uso de un computador”.</p>
+<p class="attribution">—Camilo Fonseca</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="libreoffice-writer">
+<h2>LibreOffice Writer<a class="headerlink" href="#libreoffice-writer" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/image015.png"><img alt="../../_images/image015.png" src="../../_images/image015.png" style="width: 120px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">LibreOffice Writer</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>LibreOffice Writer</strong> es un procesador de textos, compatible con todas las versiones de Microsoft Word y además nos provee de nuevas funcionalidades. Writer le permitirá crear documentos con características como:</p>
+<ul class="simple">
+<li><p>Un correcto formateado de caracteres y párrafos.</p></li>
+<li><p>Un uso eficiente de los estilos.</p></li>
+<li><p>Auto-texto que le permite reutilizar contenidos con toda comodidad.</p></li>
+<li><p>Numeraciones y viñetas.</p></li>
+<li><p>Inserción y manejo de imágenes.</p></li>
+<li><p>Trabajo con documentos largos esquematizados, con creación de índices.</p></li>
+</ul>
+<p>A continuación se muestra un ejemplo de un documento realizado en LibreOffice Writer:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/image023.png"><img alt="../../_images/image023.png" src="../../_images/image023.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Hoja de documento LibreOffice Writer</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>LibreOffice también puede usarse de forma profesional. Para ello es necesario conocer varias herramientas que permiten hacer que los documentos sean más productivos. Estas herramientas son:</p>
+<ul class="simple">
+<li><p>Uso de tablas para crear formularios con valores que se auto-calculan.</p></li>
+<li><p>Creación de secciones en columnas en el documento.</p></li>
+<li><p>Creación de diagramas de datos a partir de datos contenidos en tablas.</p></li>
+<li><p>Trabajo con cuadros de texto y marcos.</p></li>
+<li><p>Establecer referencias, vínculos y enlaces en los documentos.</p></li>
+<li><p>Creación de cartas en serie y etiquetas personalizadas para múltiples destinatarios extraídos de una base de datos.</p></li>
+<li><p>Asignación de contraseñas para asegurar la integridad de los documentos.</p></li>
+<li><p>Personalización de las barra de herramientas, menús y atajos de teclado para mayor productividad.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/image033.png"><img alt="../../_images/image033.png" src="../../_images/image033.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Herramientas LibreOffice Writer</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="libreoffice-writer-vs-microsoft-word">
+<h3>LibreOffice Writer Vs Microsoft Word<a class="headerlink" href="#libreoffice-writer-vs-microsoft-word" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../../_images/image043.png"><img alt="../../_images/image043.png" src="../../_images/image043.png" style="width: 200px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">LibreOffice Writer Vs Microsoft Word</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>LibreOffice Writer y Microsoft Word son dos suites de oficina ampliamente utilizadas que ofrecen muchas funcionalidades similares para la creación y edición de documentos. Sin embargo, hay algunas características distintivas de LibreOffice Writer que pueden diferenciarlo de Microsoft Word.</p>
+<p>A continuación se muestran algunas funcionalidades de LibreOffice Writer que no están disponibles en Microsoft Word:</p>
+<ul class="simple">
+<li><p><strong>Licencia de código abierto:</strong> LibreOffice es un software de código abierto bajo la licencia LGPL, lo que significa que es gratuito para descargar, usar, modificar y distribuir libremente. Microsoft Word, en cambio, es parte de Microsoft Office, que es un software comercial con licencia propietaria.</p></li>
+<li><p><strong>Soporte nativo para formatos abiertos:</strong> LibreOffice Writer tiene un soporte nativo robusto para formatos abiertos como ODT (OpenDocument Text), mientras que Microsoft Word generalmente utiliza formatos propietarios como DOCX. Aunque Word puede abrir y guardar archivos ODT, no es su formato nativo.</p></li>
+<li><p><strong>Mayor flexibilidad en la interfaz:</strong> LibreOffice Writer ofrece una interfaz altamente personalizable que puede ser ajustada para adaptarse mejor a las preferencias del usuario. Esto puede incluir la capacidad de personalizar barras de herramientas, atajos de teclado y más, de una manera más flexible que en Microsoft Word.</p></li>
+<li><p><strong>Compatibilidad multi-plataforma:</strong> LibreOffice está disponible para una amplia gama de sistemas operativos, incluidos Windows, macOS y varias distribuciones de Linux. Microsoft Word, aunque está disponible para Windows y macOS, no tiene una versión nativa para Linux.</p></li>
+<li><p><strong>Extensiones y complementos libres:</strong> LibreOffice tiene una comunidad activa que desarrolla extensiones y complementos que pueden ampliar sus funcionalidades básicas. Estos pueden ser descargados e instalados fácilmente para añadir nuevas características a LibreOffice Writer.</p></li>
+<li><p><strong>No requiere suscripción:</strong> LibreOffice Writer y toda la suite LibreOffice no requieren una suscripción para su uso. Esto puede ser una ventaja para aquellos que prefieren no comprometerse con un modelo de suscripción.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a00-introduccion-5">
+<h2>A00: Introducción (5%)<a class="headerlink" href="#a00-introduccion-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
+<ol class="arabic simple">
+<li><p>Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>Lea el mensaje del autor y responda la siguiente pregunta en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿De qué forma el aprender a usar una herramienta de edición de texto como LibreOffice Writer, permite desarrollar la autonomía en el estudiante?</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a01-taller-5">
+<h2>A01: Taller (5%)<a class="headerlink" href="#a01-taller-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic">
+<li><p>En su cuaderno responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Para que sirve LibreOffice Writer?</p></li>
+<li><p>¿Qué características tiene el software LibreOffice Writer?</p></li>
+<li><p>¿Cuáles son las 6 ventajas de usar <strong>LibreOffice Writer</strong> frente <strong>Microsoft Word</strong>?</p></li>
+<li><p>¿Qué posibles motivos tendría LibreOffice para no ofrecer un servicio de edición de documentos en la nube?</p></li>
+</ul>
+</li>
+<li><p>Observe las siguientes imágenes y en <strong>una hoja de cuaderno</strong> realice una descripción de las cosas que se pueden hacer en LibreOffice Writer:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image023.png"><img alt="../../_images/image023.png" src="../../_images/image023.png" style="width: 360px;" />
+</a>
+</figure>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image033.png"><img alt="../../_images/image033.png" src="../../_images/image033.png" style="width: 360px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En una hoja de cuaderno, redacte un escrito que responda a las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Por qué Microsoft Office para PC solo está disponible (de forma legal) para ser usado exclusivamente en Windows y MACOS? (media hoja de cuaderno).</p></li>
+<li><p>¿Qué posibles motivos tendría Microsoft para que Microsoft Word no sea de código abierto? (media hoja de cuaderno).</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a02-informacion-de-identificacion-011-5">
+<h2>A02: Información de identificación <kbd class="kbd docutils literal notranslate">011</kbd> (5%)<a class="headerlink" href="#a02-informacion-de-identificacion-011-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<p>En esta actividad, el estudiante aprende a crear la <strong>información de identificación</strong>.</p>
+<div class="admonition-que-es-la-informacion-de-identificacion admonition">
+<p class="admonition-title">¿Qué es la <strong>información de identificación</strong>?</p>
+<p>Todo documento que se cree en esta guía, debe tener la <strong>información de identificación</strong> en la cabecera del documento con la siguiente información y en el siguiente orden:</p>
+<p class="centered">
+<strong>TÍTULO DEL DOCUMENTO</strong></p><p class="centered">
+<strong>Nombres y apellidos del estudiante</strong></p><p class="centered">
+<strong>Curso - Jornada</strong></p><p class="centered">
+<strong>HORA - FECHA</strong></p></div>
+<p>Para esto siga los siguientes pasos:</p>
+<ol class="arabic">
+<li><p>Ejecute el software LibreOffice Writer.</p></li>
+<li><p>Realice doble clic en la <em>cabecera del documento</em> hasta que salga una opción que diga: <strong>Cabecera (Estilo de página predeterminado)</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image052.png"><img alt="../../_images/image052.png" src="../../_images/image052.png" style="width: 300px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>IDENTIFICACIÓN</strong>. Debería quedar así:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image062.png"><img alt="../../_images/image062.png" src="../../_images/image062.png" style="width: 400px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Realice una captura de pantalla del documento y guarde la imagen en la <strong>carpeta de evidencias</strong> del periodo actual con el nombre: <strong>G1012A03-identificación.png</strong></p></li>
+<li><p>Cierre el software LibreOffice Writer.</p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Por qué es importante identificar los documentos que creamos?</p></li>
+</ul>
+</div>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a03-exploracion-de-la-interfaz-114-5">
+<h2>A03: Exploración de la interfaz <kbd class="kbd docutils literal notranslate">114</kbd> (5%)<a class="headerlink" href="#a03-exploracion-de-la-interfaz-114-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Ejecute el software LibreOffice Writer.</p></li>
+<li><p>En la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>EXPLORACIÓN DE LA INTERFAZ</strong>. Debería quedar así:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image072.png"><img alt="../../_images/image072.png" src="../../_images/image072.png" style="width: 400px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Identifique el icono de guardar:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image082.png"><img alt="../../_images/image082.png" src="../../_images/image082.png" style="width: 89px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Si el <strong>icono de guardar</strong> tiene un punto rojo, significa que el documento no ha sido guardado. PULSE el <strong>icono de guardar</strong> y se abrirá una ventana para guardar el documento.</p></li>
+<li><p>En la ventana de guardado, LOCALICE su carpeta de evidencias del periodo actual y guarde el documento con el nombre: <strong>G1012A03-documento.odt</strong></p></li>
+<li><p>En la interfaz, IDENTIFIQUE el <strong>menú superior</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../../_images/image092.png"><img alt="../../_images/image092.png" src="../../_images/image092.png" style="width: 650px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Menú superior</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Dibuje el <strong>menú superior</strong>.</p></li>
+</ul>
+</div>
+</li>
+<li><p>En la interfaz, IDENTIFIQUE la <strong>barra de herramientas estándar</strong>:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/image102.png"><img alt="../../_images/image102.png" src="../../_images/image102.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Barra de herramientas estándar</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>SITUAR el mouse en cada uno de los iconos de la <strong>barra de herramientas estándar</strong>. Al hacerlo el nombre de la herramienta aparecerá resaltado.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image111.png"><img alt="../../_images/image111.png" src="../../_images/image111.png" style="width: 100px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Dibuje la <strong>barra de herramientas estándar</strong> y agregue el nombre de cada uno de sus iconos.</p></li>
+</ul>
+</div>
+</li>
+<li><p>En la interfaz, IDENTIFIQUE la barra de herramientas formato:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../../_images/image121.png"><img alt="../../_images/image121.png" src="../../_images/image121.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Barra de herramientas formato</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>SITUAR el mouse en cada uno de los iconos de la <strong>barra de herramientas formato</strong>. Al hacerlo el nombre de la herramienta aparecerá resaltado.</p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Dibuje la <strong>barra de herramientas formato</strong> y agregue el nombre de cada uno de sus iconos.</p></li>
+</ul>
+</div>
+</li>
+<li><p>En el <strong>menú superior</strong>, PULSE: <span class="guilabel">Ver</span> &gt; <span class="guilabel">Barras de herramientas</span>. Se despliega una ventana con varias barras de herramientas desactivadas. ACTIVE las siguientes herramientas:</p>
+<ul class="simple">
+<li><p>Buscar</p></li>
+<li><p>Controles de formulario</p></li>
+<li><p>Dibujo</p></li>
+<li><p>Tabla</p></li>
+</ul>
+</li>
+<li><p>REALICE una captura de pantalla de la interfaz de LibreOffice Writer y guarde la imagen en la carpeta de evidencias del periodo actual con el nombre: <strong>G1012A03-interfaz.png</strong></p></li>
+<li><p>En el <strong>menú superior</strong>, PULSE: <span class="guilabel">Ver</span> &gt; <span class="guilabel">Barras de herramientas</span> y <strong>DESACTIVE todas las herramientas.</strong> SOLO DEJAR ACTIVAS las siguientes herramientas:</p>
+<ul class="simple">
+<li><p>Estándar</p></li>
+<li><p>Formato</p></li>
+</ul>
+</li>
+<li><p>En la interfaz, IDENTIFIQUE la <strong>barra de herramientas lateral</strong>:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../../_images/image131.png"><img alt="../../_images/image131.png" src="../../_images/image131.png" style="width: 45px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Barra de herramientas lateral</span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>PULSE cada uno de los iconos de la <strong>barra de herramientas lateral</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../../_images/image141.png"><img alt="../../_images/image141.png" src="../../_images/image141.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Propiedades barra de herramientas lateral</span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Dibuje y escriba el (título y los subtítulos) de cada una de las secciones de cada icono, de la <strong>barra de herramientas lateral</strong>.</p>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-creacion-y-edicion-de-documentos-111-5">
+<h2>A04: Creación y edición de documentos <kbd class="kbd docutils literal notranslate">111</kbd> (5%)<a class="headerlink" href="#a04-creacion-y-edicion-de-documentos-111-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Ejecute el software LibreOffice Writer.</p></li>
+<li><p>En la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>CREACIÓN DE DOCUMENTOS</strong></p></li>
+<li><p>GUARDE el documento en su <strong>carpeta de evidencias</strong> del periodo actual con el nombre: <strong>G1012A04-creacion_documento.odt</strong></p></li>
+<li><p>En la <strong>barra de herramientas estándar</strong>, PULSE el botón <span class="guilabel">Nuevo</span>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image151.png"><img alt="../../_images/image151.png" src="../../_images/image151.png" style="width: 50px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Se abrirá un nuevo documento de LibreOffice Writer con el nombre: <strong>Sin titulo 2</strong></p></li>
+<li><p>VUELVA al documento <strong>G1012A04-creacion_documento.odt</strong> y en el menú superior PULSE: <span class="guilabel">Archivo</span> &gt; <span class="guilabel">Nuevo</span> &gt; <span class="guilabel">Documento</span> de texto. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: <strong>Sin titulo 3</strong>.</p></li>
+<li><p>VUELVA al documento <strong>G1012A04-creacion_documento.odt</strong> y PULSE la combinación de teclas: <kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">U</kbd>. Se abrirá un nuevo documento de LibreOffice Writer con el nombre: <strong>Sin titulo 4</strong>.</p></li>
+<li><p>Con los archivos de LibreOffice Writer abiertos hasta el momento, ORGANICE cuatro ventanas (en su pantalla) de tal forma que se vean todas al mismo tiempo así:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="../../_images/image161.png"><img alt="../../_images/image161.png" src="../../_images/image161.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ventanas de LibreOffice Writer</span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>REALICE una <strong>captura de pantalla</strong> de su pantalla y guarde la imagen en la <strong>carpeta de evidencias</strong> del periodo actual con el nombre: <strong>G1012A04-creacion_documento.png</strong></p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Describa las cuatro formas de crear documentos en <strong>LibreOffice Writer</strong>.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a05-guardado-de-documentos-301-5">
+<h2>A05: Guardado de documentos <kbd class="kbd docutils literal notranslate">301</kbd> (5%)<a class="headerlink" href="#a05-guardado-de-documentos-301-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Ejecute el software LibreOffice Writer.</p></li>
+<li><p>En la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>GUARDADO DE DOCUMENTOS</strong></p></li>
+<li><p>GUARDE el documento en su <strong>carpeta de evidencias</strong> del periodo actual con el nombre: <strong>G1012A05-guardado_documento_1.odt</strong></p></li>
+<li><p>Copie y pegue el siguiente fragmento de texto a el documento:</p>
+<blockquote>
+<div><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum”</p>
+</div></blockquote>
+</li>
+<li><p>BORRE 30 palabras (las que usted quiera) del texto del fragmento anterior y en el <strong>menú superior</strong> PULSE: <span class="guilabel">Archivo</span> &gt; <span class="guilabel">Guardar una copia…</span></p></li>
+<li><p>En la ventana de guardado, LOCALICE su carpeta de evidencias y guarde el documento con el nombre: <strong>G1012A05-guardado_documento_2.odt</strong></p></li>
+<li><p>Vuelva a abrir el primer documento: <strong>G1012A05-guardado_documento_1.odt</strong> y AGREGUE más texto al fragmento (el texto que usted quiera). Luego en el <strong>menú superior</strong> PULSE: <span class="guilabel">Archivo</span> &gt; <span class="guilabel">Guardar como…</span></p></li>
+<li><p>En la ventana de guardado, IDENTIFIQUE las opciones de <strong>tipo de documento</strong> y seleccione: <strong>Documento de word 2010-365 (.docx)</strong> y guarde el documento con el nombre de: <strong>G1012A05-guardado_documento_3.docx</strong></p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image171.png"><img alt="../../_images/image171.png" src="../../_images/image171.png" style="width: 500px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">ADVERTENCIA</p>
+<p>Si sale una ventana con una advertencia sobre <strong>Confirmar el formato del archivo</strong>, PULSE el botón:</p>
+<p><span class="guilabel">Usar formato Documento de Word 2010-365</span></p>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba las diferencias entre guardar un documento con la opción <strong>Guardar una copia…</strong> y la opción <strong>Guardar como…</strong> en LibreOffice Writer.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a06-cortar-copiar-y-pegar-101-5">
+<h2>A06: Cortar, copiar y pegar <kbd class="kbd docutils literal notranslate">101</kbd> (5%)<a class="headerlink" href="#a06-cortar-copiar-y-pegar-101-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1012A06-mitos_desordenados.odt <a class="reference download internal" download="" href="../../_downloads/9b529f213d695f589a368d167fcab38a/G1012A06-mitos_desordenados.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el archivo: <strong>G1012A06-mitos_desordenados.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>CORTAR, COPIAR y PEGAR</strong></p>
+<div class="hint admonition">
+<p class="admonition-title">¿Qué contiene el documento?</p>
+<p>Los párrafos del documento están desordenados.</p>
+<p>Cada párrafo tienen una numeración para que sepa el orden en el que deben aparecer.</p>
+</div>
+</li>
+<li><p>Por medio de cortar, copiar y pegar: MUEVA los párrafos de manera que queden ordenados.</p>
+<div class="tip admonition">
+<p class="admonition-title">Atajos de teclado para cortar, copiar y pegar</p>
+<p>El párrafo que desee (cortar, copiar o pegar) debe estar previamente seleccionado.</p>
+<p>Para cortar, copiar y pegar se usan las siguientes combinaciones de teclado:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Teclas</p></th>
+<th class="head"><p>Acción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">X</kbd></p></td>
+<td><p>Cortar</p></td>
+</tr>
+<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">C</kbd></p></td>
+<td><p>Copiar</p></td>
+</tr>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">V</kbd></p></td>
+<td><p>Pegar</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba los títulos ordenados del documento: <strong>G1012A06-mitos_desordenados.odt</strong></p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a07-buscar-y-reemplazar-124-5">
+<h2>A07: Buscar y reemplazar <kbd class="kbd docutils literal notranslate">124</kbd> (5%)<a class="headerlink" href="#a07-buscar-y-reemplazar-124-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>DESCARGUE el siguiente archivo y guárdelo en su carpeta de evidencias:</p>
+<ul class="simple">
+<li><p>G1012A07-proyecto_escritorio_libre.odt <a class="reference download internal" download="" href="../../_downloads/16432e21e78b777048e4b7ffe781fc0e/G1012A07-proyecto_escritorio_libre.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>ABRA el archivo: <strong>G1012A07-proyecto_escritorio_libre.odt</strong> y en la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>BUSCAR Y REEMPLAZAR</strong></p></li>
+<li><p>Se debe realizar un búsqueda de la palabra aplicaciones en el texto del documento. Siga los siguientes pasos:</p>
+<ul class="simple">
+<li><p>PULSE las teclas <kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">B</kbd> para abrir la <strong>barra de herramientas de Buscar</strong> en la parte inferior de la interfaz.</p></li>
+<li><p>MARQUE la opción <strong>Distinguir mayúsculas y minúsculas</strong>.</p></li>
+<li><p>En el campo de búsqueda ESCRIBA la palabra: <strong>aplicaciones</strong>.</p></li>
+<li><p>PULSE la opción que dice: <strong>Buscar todo</strong></p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id11">
+<a class="reference internal image-reference" href="../../_images/image181.png"><img alt="../../_images/image181.png" src="../../_images/image181.png" style="width: 670px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Barra de herramientas Buscar</span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>IDENTIFIQUE un mensaje que aparecerá en la parte derecha de la <strong>barra de herramientas de Buscar</strong> el cual indica el número de veces que se encontró la expresión buscada.</p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba el número de veces que <strong>LibreOffice Writer</strong> encontró la palabra <strong>aplicaciones.</strong></p></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Realice una captura de pantalla que muestre <strong>el número de veces que se encontró la expresión buscada</strong> y guarde la imagen en la <strong>carpeta de evidencias</strong> del periodo actual con el nombre: <strong>G1012A07-proyecto_escritorio_libre-01.png</strong></p></li>
+<li><p>Ahora se debe <strong>reemplazar</strong> todas las apariciones de la palabra <strong>aplicaciones</strong>. Siga los siguientes pasos:</p>
+<ul class="simple">
+<li><p>PULSE las teclas <kbd class="kbd docutils literal notranslate">CTRL</kbd> + <kbd class="kbd docutils literal notranslate">ALT</kbd> + <kbd class="kbd docutils literal notranslate">B</kbd> para abrir la ventana <span class="guilabel">Buscar y reemplazar</span>.</p></li>
+<li><p>En la ventana de <span class="guilabel">Buscar y reemplazar</span> MARQUE las opciones:</p>
+<ul>
+<li><p><strong>Distinguir mayúsculas y minúsculas</strong></p></li>
+<li><p><strong>Solo palabras completas</strong></p></li>
+</ul>
+</li>
+<li><p>En el campo <strong>Buscar,</strong> ESCRIBA la palabra: <strong>aplicaciones</strong></p></li>
+<li><p>PULSE el botón: <strong>Buscar todo</strong>.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id12">
+<a class="reference internal image-reference" href="../../_images/image19.png"><img alt="../../_images/image19.png" src="../../_images/image19.png" style="width: 670px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Barra de herramientas Buscar y Reemplazar</span><a class="headerlink" href="#id12" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba el número de veces que <strong>LibreOffice Writer</strong> encontró la palabra <strong>aplicaciones.</strong> (Debe coincidir con el número de veces mostrado anteriormente).</p></li>
+</ul>
+</div>
+</li>
+<li><p>En el campo <strong>Reemplazar</strong>, ESCRIBA la palabra: <strong>programas</strong></p></li>
+<li><p>PULSE el botón: <span class="guilabel">Reemplazar todo</span></p></li>
+<li><p>Realice una <strong>captura de pantalla</strong> que muestre <strong>el número de veces que se reemplazó la expresión buscada</strong> y guarde la imagen en la <strong>carpeta de evidencias</strong> del periodo actual con el nombre: <strong>G1012A07-proyecto_escritorio_libre-02.png</strong></p></li>
+<li><p>CIERRE la ventana de <span class="guilabel">Buscar y reemplazar</span></p></li>
+</ul>
+</li>
+<li><p>Con la <strong>barra de herramientas de Buscar</strong>, ahora realice la búsqueda de la palabra: <strong>programas</strong></p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba el número de veces que <strong>LibreOffice Writer</strong> encontró la palabra <strong>programas.</strong> (el número de veces debe ser mayor que 2 pero menor que 20).</p></li>
+</ul>
+</div>
+</li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba las diferencias encontradas al usar la <strong>barra de herramientas de Buscar</strong> y la ventana <span class="guilabel">Buscar y reemplazar</span>.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a08-corrector-ortografico-102-5">
+<h2>A08: Corrector ortográfico <kbd class="kbd docutils literal notranslate">102</kbd> (5%)<a class="headerlink" href="#a08-corrector-ortografico-102-5" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>EJECUTE el software <strong>LibreOffice Writer</strong>.</p></li>
+<li><p>En la cabecera del documento, agregue la <strong>información de identificación</strong> con el título: <strong>CORRECTOR ORTOGRÁFICO</strong>.</p></li>
+<li><p>GUARDE el documento en su <strong>carpeta de evidencias</strong> con el nombre: <strong>G1012A08-corrector_ortografico.odt</strong></p></li>
+<li><p>Copie y pegue el siguiente texto en el documento:</p>
+<blockquote>
+<div><p>En el año 2023, una extaña situacion ocurrio en la ciudad. 5 gatos desaparecieron sin dejar rastro. La policia investigo durante 3 semanas, pero no encontro ninguna pista. Luego, 2 tesigos afirmaron haber visto algo inusual cerca del parque. Uno de ellos dijo que vio una nave espacial, mientras que el otro juro que eran 7 duendes. El misterio se profundizo cuando se descubrieron 10 huellas giganes en el cesped. Los cientificos analisrron las huellas durante 4 dias y determinaron que eran de un animal desconocido. La prenso publico 12 articulos sobre el tema, generando gran expectacion. Al final, despues de 6 meses, el misterio se resolvio de manera inesperada: los gatos havian sido secuestrados por un grupo de niñoz traviesos que querian jugar con ellos. La polisia encontro a los gatos en una caza abandonada, sanos y salbos. La historia fue un gran exito, pero nadie pudo exxplicar las 15 huellas ni los avistamientos.</p>
+</div></blockquote>
+</li>
+<li><p>PULSAR el botón: <strong>Barra de herramientas estándar</strong> &gt; <span class="guilabel">Revisar ortografía</span></p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id13">
+<a class="reference internal image-reference" href="../../_images/image201.png"><img alt="../../_images/image201.png" src="../../_images/image201.png" style="width: 50px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Corrector ortográfico</span><a class="headerlink" href="#id13" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En la ventana: <span class="guilabel">Ortografía: Español (Colombia)</span>, corregir con las sugerencias que da el asistente de ortografía de LibreOffice Writer.</p>
+<ul>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba los errores ortográficos que <strong>fueron detectados</strong> por el asistente ortográfico de LibreOffice Writer.</p></li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id14">
+<a class="reference internal image-reference" href="../../_images/image211.png"><img alt="../../_images/image211.png" src="../../_images/image211.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ventana corrector ortográfico</span><a class="headerlink" href="#id14" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Una vez finalice con el asistente de ortografía, lea el texto y solucione manualmente los errores que quedan.</p></li>
+<li><p>En su cuaderno:</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<ul class="simple">
+<li><p>Escriba los errores ortográficos que <strong>NO fueron detectados</strong> por el asistente ortográfico de LibreOffice Writer.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Guarde los cambios y cierre el software LibreOffice Writer.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a09-presentacion-de-evidencias-50">
+<h2>A09: Presentación de evidencias (50%)<a class="headerlink" href="#a09-presentacion-de-evidencias-50" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<div class="admonition-como-se-evalua admonition">
+<p class="admonition-title">¿Cómo se evalúa?</p>
+<ol class="arabic simple">
+<li><p>Los estudiantes presentan lo siguiente:</p>
+<ul class="simple">
+<li><p>Carpeta de evidencias con todos los archivos editados en la presente guía. (Los archivos deben estar abiertos).</p></li>
+<li><p>Cuaderno con las actividades desarrolladas.</p></li>
+</ul>
+</li>
+<li><p>El docente realiza unas preguntas para verificación de conocimientos.</p></li>
+<li><p>El estudiante debe demostrar de forma práctica sus conocimientos en el uso de <strong>LibreOffice Writer</strong>.</p></li>
+</ol>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G1013.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 1013: Formato en LibreOffice Writer</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1011.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1011: OFIMÁTICA y Software Libre</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1012: LibreOffice Writer</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#libreoffice-writer">LibreOffice Writer</a><ul>
+<li><a class="reference internal" href="#libreoffice-writer-vs-microsoft-word">LibreOffice Writer Vs Microsoft Word</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a00-introduccion-5">A00: Introducción (5%)</a></li>
+<li><a class="reference internal" href="#a01-taller-5">A01: Taller (5%)</a></li>
+<li><a class="reference internal" href="#a02-informacion-de-identificacion-011-5">A02: Información de identificación <kbd class="kbd docutils literal notranslate">011</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a03-exploracion-de-la-interfaz-114-5">A03: Exploración de la interfaz <kbd class="kbd docutils literal notranslate">114</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a04-creacion-y-edicion-de-documentos-111-5">A04: Creación y edición de documentos <kbd class="kbd docutils literal notranslate">111</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a05-guardado-de-documentos-301-5">A05: Guardado de documentos <kbd class="kbd docutils literal notranslate">301</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a06-cortar-copiar-y-pegar-101-5">A06: Cortar, copiar y pegar <kbd class="kbd docutils literal notranslate">101</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a07-buscar-y-reemplazar-124-5">A07: Buscar y reemplazar <kbd class="kbd docutils literal notranslate">124</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a08-corrector-ortografico-102-5">A08: Corrector ortográfico <kbd class="kbd docutils literal notranslate">102</kbd> (5%)</a></li>
+<li><a class="reference internal" href="#a09-presentacion-de-evidencias-50">A09: Presentación de evidencias (50%)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../../_static/translations.js?v=d190bf04"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

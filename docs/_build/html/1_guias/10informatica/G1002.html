@@ -1,0 +1,871 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../../genindex.html"><link rel="search" title="Búsqueda" href="../../search.html"><link rel="next" title="Guía 1003: Ideas de proyecto" href="G1003.html"><link rel="prev" title="Guía 1001: Historia de la Informática" href="G1001.html">
+        <link rel="prefetch" href="../../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../../_static/logo_dark.png" as="image">
+
+    <!-- Generated with Sphinx 7.4.7 and Furo 2025.12.19 -->
+        <title>Guía 1002: Tema de proyecto - aula 115</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3250a108" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--small);
+  --toc-font-size: var(--font-size--small--2);
+  --admonition-font-size: 0.858rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">aula 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/reglas.html">Reglas del aula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/descargas.html">Descargas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guías</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../8logica/G820.html">Lógica computacional 8</a><input aria-label="Toggle navigation of Lógica computacional 8" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G821.html">Guía 821: Concepto Lógica computacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G822.html">Guía 822: Jerarquía de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G823.html">Guía 823: Variables y operaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G824.html">Guía 824: Álgebra de Boole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G829.html">Guía 829: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="G1000.html">Informática 10</a><input aria-label="Toggle navigation of Informática 10" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="G1001.html">Guía 1001: Historia de la Informática</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Guía 1002: Tema de proyecto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1003.html">Guía 1003: Ideas de proyecto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1004.html">Guía 1004: Anteproyecto de grado</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1009.html">Guía 1009: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10ofimatica/G1010.html">Ofimática 10</a><input aria-label="Toggle navigation of Ofimática 10" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1011.html">Guía 1011: OFIMÁTICA y Software Libre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1012.html">Guía 1012: LibreOffice Writer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1013.html">Guía 1013: Formato en LibreOffice Writer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1014.html">Guía 1014: Contenidos en LibreOffice Writer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1019.html">Guía 1019: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10programacion/G1020.html">Programación 10</a><input aria-label="Toggle navigation of Programación 10" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1021.html">Guía 1021: PROGRAMACIÓN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1022.html">Guía 1022: Algoritmos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1023.html">Guía 1023: PYTHON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1024.html">Guía 1024: Variables en Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1029.html">Guía 1029: Plan de refuerzo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../11ofimatica/G1110.html">Ofimática 11</a><input aria-label="Toggle navigation of Ofimática 11" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../11ofimatica/G1111.html">Guía 1111: LibreOffice Calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../11ofimatica/G1112.html">Guía 1112: Formato en LibreOffice Calc</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../11programacion/G1120.html">Programación 11</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../../_sources/1_guias/10informatica/G1002.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1002-tema-de-proyecto">
+<h1>Guía 1002: Tema de proyecto<a class="headerlink" href="#guia-1002-tema-de-proyecto" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="escudo" src="../../_images/escudo.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
+<ul class="simple">
+<li><p><strong>DOCENTE</strong>: Julian Camilo Fonseca Romero</p></li>
+<li><p><strong>ASIGNATURA</strong>: Tecnología e Informática</p></li>
+<li><p><strong>GRADO</strong>: DÉCIMO</p></li>
+<li><p><strong>PERIODO</strong>: 02</p></li>
+<li><p><strong>TIEMPO</strong>: 10 semanas (2 horas / semana)</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 20/20 horas</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ul class="simple">
+<li><p><strong>Temática</strong>: Reflexión sobre la Ofimática y Programación.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Identificar el nivel de interés del estudiante sobre las temáticas de Ofimática, Programación, Redes y Mantenimiento.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Orientaciones curriculares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Componente</strong>: Uso y apropiación de la Tecnología y la Informática.</p></li>
+<li><p><strong>Competencia</strong>: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Criterios de evaluación</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Actividades desarrolladas en su totalidad.</p></li>
+<li><p>Participación en clase.</p></li>
+<li><p>Explicación clara de conceptos.</p></li>
+<li><p>Argumentación de ideas.</p></li>
+<li><p>Cumplimiento de las reglas del aula.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Recursos (5)</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><a class="reference external" href="https://app.notion.com/p/Ofim-tica-3862daca769880d3bd7ffb1dd6c939da" rel="noreferer noopener" target="_blank">RESUMEN OFIMÁTICA</a></p></li>
+<li><p><a class="reference external" href="https://app.notion.com/p/Programaci-n-3862daca76988006839fd9c89859f427" rel="noreferer noopener" target="_blank">RESUMEN PROGRAMACIÓN</a></p></li>
+<li><p><a class="reference external" href="https://app.notion.com/p/Redes-de-datos-3862daca7698802abf3ee391218d5fec" rel="noreferer noopener" target="_blank">RESUMEN REDES</a></p></li>
+<li><p><a class="reference external" href="https://app.notion.com/p/Mantenimiento-3862daca769880abb1a5d6f64421aea6" rel="noreferer noopener" target="_blank">RESUMEN MANTENIMIENTO</a></p></li>
+<li><p>Formulario elección TEMA <a class="reference download internal" download="" href="../../_downloads/66260681b1b8dd0ded3e76c8c59220e3/formularioTema.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</div>
+</div>
+<section id="mensaje-del-autor">
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
+<blockquote class="pull-quote">
+<div><p>“Esta guía ayuda al estudiante a identificar o descubrir su interés por alguna de las temáticas de Ofimática, Programación, Redes y Mantenimiento. Esto es importante para evitar que el estudiante tenga dificultades en el desarrollo de su <strong>proyecto de grado</strong>”.</p>
+<p class="attribution">—Camilo Fonseca</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="a00-introduccion-5">
+<h2>A00: Introducción (5%)<a class="headerlink" href="#a00-introduccion-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
+<ol class="arabic">
+<li><p>Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>En su cuaderno, describa con sus palabras el significado de la siguiente frase:</p>
+<blockquote>
+<div><p>“En el desarrollo del proyecto de grado, el estudiante entre más intranquilo esté en grado décimo, más tranquilo estará en grado once”.</p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a01-analisis-y-reflexion-ofimatica-5">
+<h2>A01: Análisis y reflexión (OFIMÁTICA) (5%)<a class="headerlink" href="#a01-analisis-y-reflexion-ofimatica-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic">
+<li><p>LEA el siguiente resumen:</p>
+<div class="admonition-resumen-ofimatica admonition">
+<p class="admonition-title">RESUMEN OFIMÁTICA</p>
+<iframe src="../../_static/html_Ofimatica/index.html" width="100%" height="400px" frameborder="1"></iframe></div>
+</li>
+<li><p>En una hoja de cuaderno, cree un <em>mapa conceptual</em> con los títulos del <strong>RESUMEN OFIMÁTICA</strong>.</p></li>
+<li><p>Acorde al contenido del resumen de OFIMÁTICA, en su cuaderno responda las siguientes preguntas:</p>
+<div class="admonition-preguntas-de-reflexion admonition">
+<p class="admonition-title">Preguntas de reflexión</p>
+<ol class="arabic simple">
+<li><p>¿Qué aspecto de la ofimática le parece más interesante o útil para su vida académica o personal?</p></li>
+<li><p>¿Le gustaría aprender más sobre alguna herramienta específica de ofimática, como Google Workspace o Microsoft 365? ¿Cuál y por qué?</p></li>
+<li><p>¿Cree que el manejo de herramientas ofimáticas puede facilitar su trabajo diario o sus estudios? ¿Qué le motiva o desmotiva de esta temática?</p></li>
+<li><p>¿Le interesa conocer y usar programas cuyo código fuente está disponible para que cualquiera pueda estudiarlo y modificarlo? (¿por qué?)</p></li>
+<li><p>¿Ha utilizado alguna vez software libre como LibreOffice, GIMP o Linux? ¿Qué le pareció la experiencia?</p></li>
+<li><p>Cree que es importante que el software sea accesible y modificable por todos, sin restricciones de licencia propietaria? (¿por qué?)</p></li>
+<li><p>¿Le gustaría aprender a contribuir con proyectos de software libre, como mejorar programas o crear nuevas herramientas? (¿por qué?)</p></li>
+<li><p>¿Qué opina sobre la idea de compartir y colaborar en el desarrollo de software en lugar de usar programas cerrados y comerciales?</p></li>
+<li><p>¿Le atrae la posibilidad de personalizar el software que usa para adaptarlo a sus necesidades específicas? (¿por qué?)</p></li>
+<li><p>¿Considera que el software libre puede ser una alternativa viable y segura frente al software propietario? (¿por qué?)</p></li>
+</ol>
+</div>
+</li>
+<li><p>En una <strong>hoja al final</strong> de su cuaderno, desarrolle un <strong>texto reflexivo</strong> utilizando sus respuestas como guía para estructurar su escrito. El título de su texto reflexivo es: TEMA OFIMÁTICA.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a02-analisis-y-reflexion-programacion-5">
+<h2>A02: Análisis y reflexión (PROGRAMACIÓN) (5%)<a class="headerlink" href="#a02-analisis-y-reflexion-programacion-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic">
+<li><p>LEA el siguiente resumen:</p>
+<div class="admonition-resumen-programacion admonition">
+<p class="admonition-title">RESUMEN PROGRAMACIÓN</p>
+<iframe src="../../_static/html_Programacion/index.html" width="100%" height="400px" frameborder="1"></iframe></div>
+</li>
+<li><p>En una hoja de cuaderno, cree un <em>mapa conceptual</em> con los títulos del <strong>RESUMEN PROGRAMACIÓN</strong>.</p></li>
+<li><p>Acorde al contenido del resumen de PROGRAMACIÓN, en su cuaderno responda las siguientes preguntas:</p>
+<div class="admonition-preguntas-de-reflexion admonition">
+<p class="admonition-title">Preguntas de reflexión</p>
+<ol class="arabic simple">
+<li><p>¿Se siente motivado al pensar que, mediante la creación de código, se pueden dar instrucciones exactas a una computadora     para que resuelva un problema complejo por usted? (¿por qué?)</p></li>
+<li><p>Al conocer la diferencia entre programador y desarrollador, ¿le atrae más la parte técnica de “escribir código” para     construir funcionalidades específicas, o le interesa más la visión global de “planificar y gestionar” todo el ciclo de vida de un software? (¿por qué?)</p></li>
+<li><p>Sobre el software y la innovación: Al entender que existen diferentes tipos de software (sistema, aplicación, embebido,  programación), ¿hay alguna categoría en particular que le genere curiosidad sobre cómo se construyen o cómo funcionan por dentro? (¿por qué?)</p></li>
+<li><p>De las tecnologías mencionadas (bases de datos, servidores web, entornos como Node.js o Frameworks), ¿hay alguna que le  entusiasme aprender a usar para crear tu propio proyecto? (¿por qué?)</p></li>
+<li><p>¿Qué parte del desarrollo web le parece más interesante: el Front-end (crear la parte visual con la que interactúan los  usuarios) o el Back-end (trabajar con la lógica, servidores y bases de datos que hacen que todo funcione)? (¿por qué?)</p></li>
+<li><p>De los lenguajes mencionados (HTML, CSS, JavaScript, PHP, Java, Python), ¿alguno te llama especialmente la atención para empezar a crear sus primeros programas o sitios web? (¿por qué?)</p></li>
+<li><p>Considerando que el desarrollo de software implica análisis, diseño, pruebas y mantenimiento, ¿le atrae la idea de   enfrentar el reto de identificar errores y optimizar código para mejorar continuamente una aplicación? (¿por qué?)</p></li>
+<li><p>Después de analizar cómo los datos simples se transforman en información útil para la toma de decisiones, ¿considera que comprender la jerarquía de datos cambia tu perspectiva sobre cómo la tecnología influye en tu vida cotidiana?. ¿Tendría interés en profundizar cómo se organiza la información en sistemas complejos?</p></li>
+<li><p>Después de conocer que los diagramas de flujo nos permiten visualizar procesos paso a paso para resolver problemas de   manera organizada, ¿se siente cómodo(a) utilizando esta herramienta gráfica para planear sus propias soluciones, o prefiere otro método para organizar sus ideas? (¿por qué?)</p></li>
+<li><p>Considerando que los algoritmos nos permiten descomponer cualquier situación de la vida diaria en una secuencia de pasos claros para resolverla, ¿qué tan interesante le resulta el desafío de diseñar instrucciones precisas para que otros (o una computadora) puedan completar una tarea siguiendo su lógica, o prefiere otro tipo de desafíos intelectuales? (¿por qué?)</p></li>
+</ol>
+</div>
+</li>
+<li><p>En una <strong>hoja al final</strong> de su cuaderno, desarrolle un <strong>texto reflexivo</strong> utilizando sus respuestas como guía para estructurar su escrito. El título de su texto reflexivo es: TEMA PROGRAMACIÓN.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a03-analisis-y-reflexion-redes-5">
+<h2>A03: Análisis y reflexión (REDES) (5%)<a class="headerlink" href="#a03-analisis-y-reflexion-redes-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic">
+<li><p>LEA el siguiente resumen:</p>
+<div class="admonition-resumen-redes admonition">
+<p class="admonition-title">RESUMEN REDES</p>
+<iframe src="../../_static/html_Redes/index.html" width="100%" height="400px" frameborder="1"></iframe></div>
+</li>
+<li><p>En una hoja de cuaderno, cree un <em>mapa conceptual</em> con los títulos del <strong>RESUMEN REDES</strong>.</p></li>
+<li><p>En su cuaderno, responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Qué es una red de datos?</p></li>
+<li><p>¿En que se diferencian el INTERNET de una Intranet?</p></li>
+<li><p>¿En que se diferencian los dispositivos de <strong>tipo cliente</strong> y los dispositivos de <strong>tipo servidor</strong>?</p></li>
+<li><p>¿Por que existen los dispositivos todo en uno?</p></li>
+<li><p>¿Que son los servicios de red?</p></li>
+</ul>
+</li>
+<li><p>Escriba las siguientes frases en su cuaderno y responda si es <span class="guilabel">falso</span> o <span class="guilabel">verdadero</span> y diga el por qué:</p>
+<ul class="simple">
+<li><p>INTERNET permite conectar personas al rededor el mundo así como acceder a diferentes servicios en la nube. ___</p></li>
+<li><p>En un INTRANET se deben tener accesos restringidos. No todo el mundo puede ingresar. ___</p></li>
+<li><p>INTERNET interconecta varias INTRANETS de forma controlada. ___</p></li>
+<li><p>A la página web de la institución educativa John F. Kennedy solo se puede acceder desde la INTRANET. ___</p></li>
+<li><p>La INTRANET del portal del aula 115 se puede acceder desde cualquier lugar del mundo. ___</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno haga un <strong>dibujo</strong> junto con una <strong>corta descripción</strong> de los siguientes dispositivos:</p>
+<ul class="simple">
+<li><p>Servidores.</p></li>
+<li><p>Equipos cliente.</p></li>
+<li><p>Switch.</p></li>
+<li><p>Access Point.</p></li>
+<li><p>Router.</p></li>
+<li><p>Modem.</p></li>
+</ul>
+</li>
+<li><p>El siguiente es un plano de la ubicación de diferentes <em>dispositivos</em>* del aula 115 de la <strong>Institución Educativa John F. Kennedy</strong>. En una hoja de cuaderno, identifique en el plano los siguientes dispositivos:</p>
+<ul class="simple">
+<li><p>11 portátiles (numerarlos)</p></li>
+<li><p>11 PCs de escritorio (numerarlos)</p></li>
+<li><p>1 impresora</p></li>
+<li><p>1 smart-TV</p></li>
+<li><p>1 servidor</p></li>
+<li><p>1 switch</p></li>
+<li><p>1 modem</p></li>
+</ul>
+<blockquote>
+<div><p><strong>ATENCIÓN:</strong> El plano puede estar desactualizado. En ese caso ajustar el plano al estado actual del aula.</p>
+</div></blockquote>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/image013.png"><img alt="../../_images/image013.png" src="../../_images/image013.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Plano de red aula 115</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Con el <strong>plano anterior</strong> <em>terminado</em>, conecte los dispositivos de la siguiente forma:</p>
+<ul class="simple">
+<li><p>Dibuje con líneas continuas, las conexiones de los dispositivos que están conectados con <strong>cable de red</strong> a la INTRANET.</p></li>
+<li><p>Dibuje con líneas interlineadas, las conexiones de los dispositivos que están conectados de <strong>forma inalámbrica</strong> a la INTRANET.</p></li>
+</ul>
+</li>
+<li><p>Copie la siguiente <strong>sopa de letras</strong> en su cuaderno e IDENTIFIQUE <strong>10 ejemplos</strong> de servicios de red:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/image021.png"><img alt="../../_images/image021.png" src="../../_images/image021.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Servicios de red</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Ejemplo:</p>
+<blockquote>
+<div><p><strong>FIREWALL:</strong> Supervisa y controla un tráfico de red en base a unas reglas de seguridad.</p>
+</div></blockquote>
+</li>
+<li><p>Complete la siguiente tabla en su cuaderno:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Aspecto</p></th>
+<th class="head"><p>Seguridad de la Información</p></th>
+<th class="head"><p>Seguridad Informática</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Enfoque</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Amenazas</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Elementos</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno escriba y analice los siguientes casos e indique cual de los 3 principios de la seguridad de la información se ajusta a dicho caso. Justifique su respuesta.</p>
+<blockquote>
+<div><p><strong>CASO 01:</strong> Por medio de un ataque cibernético el día de ayer a la empresa X le robaron toda la información personal de sus empleados. Ahora sus datos como su localización, teléfono y lugar de nacimiento están expuestos en internet. Esto dio a que suplantaran muchas identidades.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 02:</strong> Debido a un software malicioso en los servidores principales del banco X los servicios de cajero automático no van a estar disponibles por 2 días. Esto hará que muchas personas pierdan su confianza en la nueva planta administrativa del banco elegida recientemente.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 03:</strong> Un error humano de un técnico practicante modificó la información en las bases de datos de la nómina de este mes. Esto genera incumplimiento en el pago de salarios de los trabajadores de la empresa. Los funcionarios tendrán que esperar una semana más para que reciban su sueldo.</p>
+</div></blockquote>
+</li>
+<li><p>Suponga que usted es un juez de delitos informáticos. Copie y analice los siguientes casos en su cuaderno, e imponga las penas necesarias según la <strong>ley 1273 del 2009</strong>:</p>
+<blockquote>
+<div><p><strong>CASO 01:</strong> El acusado se declara culpable de haber clonado el sitio web y así engañar a varias amas de casa vendiéndoles productos falsos de aseo.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 02:</strong> La víctima testificó con evidencia probatoria que sus comunicaciones fueron interceptadas por su ex-esposa mientras conducía la noche anterior.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 03:</strong> El ingeniero accedió sin permiso al sistema empresarial. Esto fue 24 horas después de haber sido despedido. Por tanto todos sus accesos ya habían sido retirados. Sin embargo previamente había dejado una backdoor.</p>
+</div></blockquote>
+</li>
+<li><p>Acorde al contenido del resumen de REDES, en su cuaderno responda las siguientes preguntas:</p>
+<div class="admonition-preguntas-de-reflexion admonition">
+<p class="admonition-title">Preguntas de reflexión</p>
+<ol class="arabic simple">
+<li><p>¿Le genera curiosidad saber cómo viaja la información desde un dispositivo hasta un servidor en otro continente? ¿Por qué?</p></li>
+<li><p>Cuando el internet falla en casa, ¿Se siente motivado por intentar diagnosticar si es un problema del módem, del cableado o de la señal inalámbrica? ¿Por qué?</p></li>
+<li><p>¿Le llama la atención la idea de configurar dispositivos para que otras personas puedan comunicarse de forma segura dentro de una organización (Intranet)? ¿Por qué?</p></li>
+<li><p>¿Prefiere entender cómo funciona un “Switch” o un “Router” por dentro en lugar de simplemente usarlos como cajas negras que dan internet? ¿Por qué?</p></li>
+<li><p>¿Le parece interesante el concepto de “Hacking Ético” como una forma de ayudar a las empresas a protegerse, en lugar de ser solo un hacker malicioso? ¿Por qué?</p></li>
+<li><p>¿Siente curiosidad por aprender a detectar vulnerabilidades en páginas web (como inyecciones SQL o XSS) para poder corregirlas? ¿Por qué?</p></li>
+<li><p>¿Le interesaría aprender a administrar servidores de forma remota, trabajando mediante líneas de comandos y protocolos seguros como SSH? ¿Por qué?</p></li>
+<li><p>¿Le motiva aprender sobre leyes y normas (como la Ley 1273 de 2009 en Colombia) para entender qué es legal y qué no en el entorno digital? ¿Por qué?</p></li>
+<li><p>¿Le gustaría trabajar en el diseño de planes de seguridad para proteger activos críticos, asegurando que la información sea confidencial, íntegra y disponible? ¿Por qué?</p></li>
+<li><p>¿Le gustaría la idea de estar constantemente actualizado sobre nuevas amenazas informáticas para implementar medidas de defensa como Firewalls o cifrados avanzados? ¿Por qué?</p></li>
+</ol>
+</div>
+</li>
+<li><p>En una <strong>hoja al final</strong> de su cuaderno, desarrolle un <strong>texto reflexivo</strong> utilizando sus respuestas como guía para estructurar su escrito. El título de su texto reflexivo es: TEMA REDES.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-analisis-y-reflexion-mantenimiento-5">
+<h2>A04: Análisis y reflexión (MANTENIMIENTO) (5%)<a class="headerlink" href="#a04-analisis-y-reflexion-mantenimiento-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic">
+<li><p>LEA el siguiente resumen:</p>
+<div class="admonition-resumen-mantenimiento admonition">
+<p class="admonition-title">RESUMEN MANTENIMIENTO</p>
+<iframe src="../../_static/html_Mantenimiento/index.html" width="100%" height="400px" frameborder="1"></iframe></div>
+</li>
+<li><p>En una hoja de cuaderno, cree un <em>mapa conceptual</em> con los títulos del <strong>RESUMEN MANTENIMIENTO</strong>.</p></li>
+<li><p>Dibuje la siguiente <strong>pirámide en su cuaderno</strong>. Dividirla en 5 secciones y en cada sección escriba (según su criterio) 1 razón por la cual es importante realizar mantenimientos regularmente. Colocar una razón por cada sección. La base de la pirámide es la razón menos importante.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/image031.png"><img alt="../../_images/image031.png" src="../../_images/image031.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Nivel de importancia</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En su cuaderno escriba los siguientes casos, luego especifique que tipo de mantenimiento haría por cada caso y explique por qué:</p>
+<blockquote>
+<div><p><strong>CASO 01:</strong> <em>“El lote de equipos de cómputo que recién llegaron a la empresa es de la misma tecnología del lote de equipos anteriores. Serán asignados a las oficinas de secretaría y tesorería. La última vez en que fallaron los equipos, los funcionarios trabajaron con su celular. Ese día al final entregamos el pedido al cliente a tiempo”</em>.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 02:</strong> <em>“La máquina de <strong>torno</strong> llegó hace dos días y nada que se ha puesto en <strong>producción</strong>. Estamos perdiendo <strong>$6,000,000</strong> al día. Este rublo es considerado <strong>crítico</strong>. Se espera que la máquina esté en producción a más tardar en tres días y garantizar que funcione 24/7”</em>.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>CASO 03:</strong> <em>“Este año tampoco llegaron computadoras nuevas al colegio. Así que tenemos que volver a usar los equipos obsoletos de hace 8 años. Necesitamos la ayuda de los estudiantes para que cuiden estos equipos. Asimismo, para extender la vida útil de los equipos, será necesario instalar el sistema operativo <strong>LINUX</strong>”</em>.</p>
+</div></blockquote>
+</li>
+<li><p>Responda las siguientes preguntas en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿Cómo funciona la electricidad?</p></li>
+<li><p>¿De que forma se transmite la electricidad?</p></li>
+</ul>
+</li>
+<li><p>Describa y dibuje en su cuaderno 5 dispositivos electrónicos, luego por cada uno responda:</p>
+<ul class="simple">
+<li><p>¿Que tocaría hacer si no existiera dicho dispositivo electrónico?</p></li>
+</ul>
+</li>
+<li><p>Consulte en INTERNET qué es una <strong>PANEL SOLAR</strong>, también consulte los <strong>precios de compra e instalación de paneles solares</strong> en el municipio. Luego escriba la información consultada en el cuaderno. (También escribir los enlaces a la página web donde encontró la información).</p></li>
+<li><p>Complete la siguiente tabla en su cuaderno:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Característica</p></th>
+<th class="head"><p>Electricidad</p></th>
+<th class="head"><p>Electrónica</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Definición</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Aplicaciones</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Componentes</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>En INTERNET, consulte 5 ejemplos de proyectos que se pueden hacer usando <strong>ARDUINO</strong> y describirlos en su cuaderno (incluya dibujos).</p></li>
+<li><p>En INTERNET, consulte 5 ejemplos de proyectos que se pueden hacer usando una <strong>raspberry Pi</strong> y describirlos en su cuaderno (incluya dibujos).</p></li>
+<li><p>Acorde al contenido del resumen de MANTENIMIENTO, en su cuaderno responda las siguientes preguntas:</p>
+<div class="admonition-preguntas-de-reflexion admonition">
+<p class="admonition-title">Preguntas de reflexión</p>
+<ol class="arabic simple">
+<li><p>En el mantenimiento, ¿se ve más como alguien que planifica todo para que nada falle (preventivo) o como la persona que llega a salvar el día cuando algo ya se rompió (correctivo)? (¿Por qué?)</p></li>
+<li><p>¿Le parece valioso aprender a revisar un equipo periódicamente para predecir cuándo va a fallar antes de que ocurra un desastre? (¿Por qué?)</p></li>
+<li><p>¿Le entusiasma más la idea de trabajar con grandes energías, motores y voltajes altos (electricidad), o prefiere el mundo detallado de procesar información con voltajes pequeños (electrónica)? (¿Por qué?)</p></li>
+<li><p>¿Le parece interesante que toda la tecnología actual funcione mediante la combinación de ceros y unos para que sea precisa y confiable? (¿Por qué?)</p></li>
+<li><p>Al ver un dispositivo electrónico o eléctrico por dentro, ¿siente curiosidad de entender qué función cumplen componentes como las resistencias, los transistores o los diodos? (¿Por qué?)</p></li>
+<li><p>¿Le agrada la idea del hardware libre, donde usted puede ver los planos de un invento para aprender de él o incluso mejorarlo? (¿Por qué?)</p></li>
+<li><p>¿Le motiva aprender a escribir instrucciones para que un cerebro electrónico (micro-controlador) interactúe con el mundo físico y no se quede solo dentro de una pantalla? (¿Por qué?)</p></li>
+<li><p>¿Le genera curiosidad saber por qué un micro-procesador es tan veloz pero un micro-controlador es más práctico para realizar tareas por sí solo? (¿Por qué?)</p></li>
+<li><p>¿Aceptaría el reto de configurar su propio ordenador del tamaño de una tarjeta de crédito e instalar sistemas operativos como Linux? (¿Por qué?)</p></li>
+<li><p>¿Le llama la atención aprender sobre el hardware libre (ARDUINO o Raspberry PI) (¿Por qué?)</p></li>
+</ol>
+</div>
+</li>
+<li><p>En una <strong>hoja al final</strong> de su cuaderno, desarrolle un <strong>texto reflexivo</strong> utilizando sus respuestas como guía para estructurar su escrito. El título de su texto reflexivo es: TEMA MANTENIMIENTO.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a05-eleccion-del-tema-25">
+<h2>A05: Elección del tema (25%)<a class="headerlink" href="#a05-eleccion-del-tema-25" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Descargue el siguiente documento:</p>
+<ul class="simple">
+<li><p>Formulario elección TEMA <a class="reference download internal" download="" href="../../_downloads/66260681b1b8dd0ded3e76c8c59220e3/formularioTema.odt"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+</ul>
+</li>
+<li><p>Abra el documento descargado y escribir la fecha, el grado y sus nombres.</p></li>
+<li><p>En cada una de las <strong>secciones</strong> de <strong>reflexión del documento</strong>, transcribir los textos escritos al <strong>final de su cuaderno</strong> (al momento de transcribir, corregir cualquier error de ortografía o mala redacción).</p></li>
+<li><p>Guarde los cambios y cierre el documento.</p></li>
+<li><p>INICIE SESIÓN con su cuenta institucional y acceda la IA GEMINI de Google:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gemini.google.com/app" rel="noreferer noopener" target="_blank">GOOGLE GEMINI</a></p></li>
+</ul>
+</li>
+<li><p>En el menú de Google Gemini, pulse el botón (+) y dar clic en la opción de <strong>subir archivos</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../../_images/image041.png"><img alt="../../_images/image041.png" src="../../_images/image041.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Google Gemini</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Seleccione el documento <strong>formularioTema.odt</strong> que acabó de editar.</p></li>
+<li><p>Con el documento en <strong>Google Gemini</strong>, realizar la siguiente pregunta a la IA:</p>
+<ul>
+<li><blockquote>
+<div><p>Acorde al contenido del archivo, ¿Cuál de los siguientes temas (OFIMÁTICA, PROGRAMACIÓN, REDES o MANTENIMIENTO) me recomienda para mi proyecto de grado?</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Abra nuevamente el documento <strong>formularioTEMA.odt</strong> y en la sección: <strong>RESPUESTA IA</strong>, copiar y pegar la respuesta de la IA de GEMINI.</p></li>
+<li><p>Guarde los cambios y cierre el documento.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a06-envio-de-correo-50">
+<h2>A06: Envío de correo (50%)<a class="headerlink" href="#a06-envio-de-correo-50" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ol class="arabic">
+<li><p>Ingrese al <strong>correo electrónico</strong> de su <em>cuenta institucional</em> y envíe un correo electrónico al siguiente remitente:</p>
+<blockquote>
+<div><p><strong>Correo:</strong> proyectos.grado&#64;jfkennedy.edu.co</p>
+<p><strong>Asunto:</strong> ELECCIÓN TEMA PROYECTO DE GRADO</p>
+</div></blockquote>
+</li>
+<li><p>Adjunte el archivo <strong>formularioTEMA.odt</strong></p></li>
+<li><p>El contenido del correo debe tener una <strong>descripción</strong> del tema de investigación elegido (OFIMÁTICA, PROGRAMACIÓN, REDES, MANTENIMIENTO) y el por qué.</p></li>
+<li><p>Enviar el correo electrónico.</p></li>
+</ol>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="G1003.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guía 1003: Ideas de proyecto</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1001.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1001: Historia de la Informática</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1002: Tema de proyecto</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#a00-introduccion-5">A00: Introducción (5%)</a></li>
+<li><a class="reference internal" href="#a01-analisis-y-reflexion-ofimatica-5">A01: Análisis y reflexión (OFIMÁTICA) (5%)</a></li>
+<li><a class="reference internal" href="#a02-analisis-y-reflexion-programacion-5">A02: Análisis y reflexión (PROGRAMACIÓN) (5%)</a></li>
+<li><a class="reference internal" href="#a03-analisis-y-reflexion-redes-5">A03: Análisis y reflexión (REDES) (5%)</a></li>
+<li><a class="reference internal" href="#a04-analisis-y-reflexion-mantenimiento-5">A04: Análisis y reflexión (MANTENIMIENTO) (5%)</a></li>
+<li><a class="reference internal" href="#a05-eleccion-del-tema-25">A05: Elección del tema (25%)</a></li>
+<li><a class="reference internal" href="#a06-envio-de-correo-50">A06: Envío de correo (50%)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../../_static/translations.js?v=d190bf04"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

@@ -1,0 +1,767 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Programación</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure,
+aside,
+details {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="3862daca-7698-8006-839f-d9c89859f427" class="page sans"><header><h1 class="page-title" dir="auto">Programación</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><h1 id="3862daca-7698-80f0-9cc0-f78c67cb8e08" style="display:inline-block" dir="auto">¿Qué es la programación?</h1><p id="3862daca-7698-8055-819d-c6253379d3c2" class="" dir="auto">La programación se refiere específicamente a la escritura de código para crear funcionalidades dentro del software. Es una parte esencial del desarrollo, pero no abarca todo el proceso.</p><p id="3862daca-7698-8037-9b46-edb971b2ddd2" class="" dir="auto">En la programación, las actividades a desarrollar están orientadas a la creación de código fuente. Es decir, una serie de instrucciones que se le da al PC para realizar alguna acción. También se realiza depuración y optimización de código lo cual permite que solucionen muchos errores. Es muy importante que el programador entienda la responsabilidad de salvaguardar el código fuente construido, por tanto debe sacar tiempo para tareas de <strong>copias de seguridad</strong> y <strong>control de versiones</strong>.</p><figure id="3862daca-7698-80c6-86fd-c06abfc499a4" class="image" data-notion-image="Programaci%C3%B3n/image.png" dir="ltr"><a href="Programaci%C3%B3n/image.png"><img style="width:432px" src="Programaci%C3%B3n/image.png"/></a><figcaption>Código fuente</figcaption></figure><h1 id="3862daca-7698-806a-a850-c76b7cb36b13" style="display:inline-block" dir="auto">¿Qué es el software?</h1><p id="3862daca-7698-8022-a64c-e646a640a143" class="" dir="auto"><strong>El software</strong> es el conjunto de programas, bases de datos y diferentes tipos de archivos que controlan el hardware a través de instrucciones. El software debe tener requisitos y funcionalidades. Es la parte intangible de un sistema informático, en contraste con el hardware, que es la parte física.</p><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="3862daca-7698-80d8-8d33-fb600e70af62" dir="ltr"><div style="width:100%"><h2 id="3862daca-7698-80e3-b071-f0b3e95eae61" style="display:inline-block" dir="auto">Tipos de software</h2><ul id="3862daca-7698-80a3-bb9c-d3b90a9ba357" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Software de sistema:</strong> Proporciona funciones básicas, como sistemas operativos, gestión de discos, servicios, gestión de hardware y otras necesidades operativas.</li></ul><ul id="3862daca-7698-8053-83a6-efa78719e359" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Software de aplicación:</strong> Ayuda a los usuarios a realizar tareas. Por ejemplo, conjuntos de productividad ofimática, software de gestión de datos, reproductores multimedia y programas de seguridad. Las aplicaciones también se refieren a aplicaciones web y móviles como las que se utilizan para comprar en <strong>Amazon</strong>, socializar con <strong>Facebook</strong> o publicar fotos en <strong>Instagram</strong>.</li></ul><ul id="3862daca-7698-8031-92f2-c52145fa4a5f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Software de programación:</strong> Proporciona herramientas a los programadores, como editores de texto, compiladores, enlazadores, depuradores y otras herramientas para crear código.</li></ul><ul id="3862daca-7698-80eb-b182-d23daea97dce" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Software embebido:</strong> Se utiliza para controlar máquinas y dispositivos que normalmente no se consideran ordenadores: redes de telecomunicaciones, automóviles, robots industriales, etc. Estos dispositivos, y su software pueden conectarse como parte del Internet de las cosas (IoT).</li></ul></div></aside><h1 id="3862daca-7698-8035-8b1a-cbe00451f5d8" style="display:inline-block" dir="auto">¿Qué es el desarrollo de software?</h1><p id="3862daca-7698-8063-a12c-dd9f5542b033" class="" dir="auto">El <strong>desarrollo de software</strong> es un proceso que abarca la programación, pero también incluye planificación, diseño, pruebas y mantenimiento. Es un enfoque más holístico que busca crear software funcional y útil.</p><p id="3862daca-7698-804c-88c0-dfd3cc300ffd" class="" dir="auto">En el <strong>desarrollo de software</strong> se realizan tareas como el análisis de requisitos que busca identificar que funciones debe tener dicho software. También se hacen tareas de diseño donde se trabaja con bocetos iniciales para tener una idea general de como estará compuesto y de que forma funcionará el software. Otra tarea muy común es la programación la cual consiste en crear código fuente para la construcción del programa. Finalmente se realizan pruebas, implementación, mantenimiento y documentación.</p><figure id="3862daca-7698-8082-8c50-fdb8e6ccc024" class="image" data-notion-image="Programaci%C3%B3n/image%201.png" dir="ltr"><a href="Programaci%C3%B3n/image%201.png"><img style="width:480px" src="Programaci%C3%B3n/image%201.png"/></a><figcaption>Equipo de desarrollo de software</figcaption></figure><h1 id="3862daca-7698-80ee-b254-f803ae706718" style="display:inline-block" dir="auto">Programadores Vs Desarrolladores</h1><p id="3862daca-7698-8061-9d73-fbdb1dbf7f58" class="" dir="auto">El desarrollo de software lo llevan a cabo principalmente programadores y desarrolladores de software. Estos roles interactúan y se superponen, y la dinámica entre ellos varía mucho entre los departamentos de desarrollo y las comunidades.</p><ul id="3862daca-7698-809f-ba38-e348f0b4eb8a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Programadores:</strong> Escriben código fuente para programar ordenadores que realicen tareas específicas, como fusionar bases de datos, procesar pedidos en línea, enrutar comunicaciones, realizar búsquedas o mostrar textos y gráficos. Los programadores suelen interpretar las instrucciones de los desarrolladores e ingenieros de software y utilizan lenguajes de programación como C++ o Java para llevarlas a cabo.</li></ul><ul id="3862daca-7698-8048-9969-ec882d11ab83" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Desarrollador de software:</strong> Estan estrechamente involucrados en áreas específicas del proyecto, incluida la escritura de código. Al mismo tiempo, dirigen todo el ciclo de vida del desarrollo de software, lo que implica colaborar con los equipos funcionales para transformar los requisitos en características, gestionar los equipos y procesos de desarrollo, y realizar pruebas y mantenimiento del software.</li></ul><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="3862daca-7698-809d-a562-ef5ccbda4549" dir="ltr"><div style="width:100%"><h2 id="3862daca-7698-80c5-a574-e2d1e6599bd8" style="display:inline-block" dir="auto"><strong>¿Cuál es la diferencia entre un programador y un desarrollador?</strong></h2><p id="3862daca-7698-80dc-bcbd-d38ac1c87773" class="" dir="auto">Construir un software es como construir una misma casa varias veces. El lograr que cada persona aporte significativamente en su campo de acción ya sea como desarrollador o como programador, hará que la casa se construya de forma óptima.</p><ul id="3862daca-7698-80f9-b6be-ed8031a2f4ba" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Un <strong>desarrollador</strong> diseña, construye y mantiene software mediante un proceso compuesto por etapas o fases(análisis de requisitos, diseño, construcción, pruebas, implementación y mantenimiento).</li></ul><ul id="3862daca-7698-803f-951b-c94fad71c6c6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Un <strong>programador</strong> codifica programas que hacen parte del software.</li></ul></div></aside><h1 id="3862daca-7698-80d9-b685-ead5fc412071" style="display:inline-block" dir="auto">Proceso de desarrollo de software</h1><p id="3862daca-7698-8040-a844-eebccfc5e27b" class="" dir="auto">Los pasos del proceso de desarrollo de software se pueden agrupar en las fases del ciclo de vida, pero la importancia del ciclo de vida es que se recicla para permitir una mejora continua. Por ejemplo, los problemas de los usuarios que surgen en la fase de mantenimiento y soporte pueden convertirse en requisitos al inicio del siguiente ciclo.</p><ul id="3862daca-7698-80c4-b1c8-da6a8850197b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>FASE 01 (Análisis de requisitos)</strong><p id="3862daca-7698-80e0-8436-ef4926124697" class="" dir="auto">En esta fase se comprende y documenta lo que necesitan los usuarios y otras partes interesadas. Se analiza la estructura tecnológica donde funcionará el software.</p></li></ul><ul id="3862daca-7698-8090-b11d-d0013a1859ad" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>FASE 02 (Diseño)</strong><p id="3862daca-7698-8042-aaf8-db5f1d453024" class="" dir="auto">Se diseña en torno a soluciones a los problemas presentados por los requisitos, lo que a menudo implica modelos de procesos y guiones gráficos. Se crean los modelos con una herramienta de modelado que utilice un lenguaje de modelado como UML para llevar a cabo la validación temprana, la creación de prototipos y la simulación del diseño.</p></li></ul><ul id="3862daca-7698-807b-8c40-ee3e287145db" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>FASE 03 (Construcción)</strong><p id="3862daca-7698-800c-9990-cf5aae36cc0e" class="" dir="auto">En la construcción se usa un lenguaje de programación adecuado al aplicativo que se quiere construir. Implica la revisión por pares y en equipo para eliminar problemas de forma temprana y producir software de calidad más rápido.</p></li></ul><ul id="3862daca-7698-80d6-aee5-fdb53da56af2" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>FASE 04 (Pruebas)</strong><p id="3862daca-7698-804e-9e9e-fd9f57fc75bd" class="" dir="auto">Se realizan dos tipos de pruebas:</p><ul id="3862daca-7698-8024-8e5d-ea3dadac6b87" class="bulleted-list" dir="auto"><li style="list-style-type:circle">Pruebas con escenarios planificados de antemano como parte del diseño y la codificación del software. Por ejemplo identificación de errores de código, de lógica de negocio o de seguridad.</li></ul><ul id="3862daca-7698-8094-9a05-eb05a88e950e" class="bulleted-list" dir="auto"><li style="list-style-type:circle">Pruebas de rendimiento para simular niveles de carga de uso en la aplicación. Por ejemplo Identificar en que momento el aplicativo puede presentar fallos cuando varios usuarios lo usen al mismo tiempo.</li></ul></li></ul><ul id="3862daca-7698-8085-aa82-e2f94d52ab4d" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>FASE 05 (Implementación)</strong><p id="3862daca-7698-8000-87ed-d40b3ff338ed" class="" dir="auto">El software se instala o pone en producción para capacitar a los usuarios y lograr que se familiaricen con las funciones que este contenga. Se resuelven dudas de los usuarios. Si hay una versión anterior del software, la información alojada en el software anterior debe ser migrada el software nuevo desde aplicaciones o fuentes de datos existentes, si es necesario.</p></li></ul><ul id="3862daca-7698-809c-ae9d-eeca692e5834" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>FASE 06 (Mantenimiento y soporte)</strong><p id="3862daca-7698-8029-921f-e931a3e9ed7e" class="" dir="auto">Para mantener la calidad y la entrega a lo largo del ciclo de vida de la aplicación, se deben tener fechas de seguimiento y soporte. Los usuarios nuevos deben ser capacitados. El software en lo posible debe ser escalable es decir, en la medida que requiera nuevas funcionalidades, estas se deben ir implementando para que el software no quede desactualizado en la medida que pase el tiempo.</p></li></ul><h1 id="3862daca-7698-8019-9dab-ff70728f6724" style="display:inline-block" dir="auto">Tecnología usadas en el desarrollo de software</h1><p id="3862daca-7698-8081-ba1e-e348dfbf17ab" class="" dir="auto">Hoy en día son bastantes las tecnologías que como herramientas que nos ayudan a construir software. Estas se pueden clasificar de la siguiente forma:</p><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="3862daca-7698-8027-8d56-c01851f5777b" dir="ltr"><div style="width:100%"><h2 id="3862daca-7698-80b4-925c-ece5f9965621" style="display:inline-block" dir="auto">Sistemas Operativos</h2><p id="3862daca-7698-80cc-a6fb-f8abe9040f37" class="" dir="auto">Un sistema operativo (OS) es un software esencial que actúa como intermediario entre el usuario y el hardware de la computadora. Su función principal es gestionar los recursos del sistema y proporcionar una interfaz para que los usuarios y las aplicaciones interactúen con el hardware. Por ejemplo:</p><ul id="3862daca-7698-8096-8f70-cb06aacdb9b8" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>LINUX:</strong> Sistema operativo libre.</li></ul><ul id="3862daca-7698-8051-ab7d-f31023ade857" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Windows:</strong> Sistema operativo privativo.</li></ul><ul id="3862daca-7698-8048-9052-dbdd3722ad24" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>MACOS:</strong> Sistema operativo privativo para equipos de computo de APPLE.</li></ul></div></aside><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="3862daca-7698-80a1-9285-fe8b9f860dbc" dir="ltr"><div style="width:100%"><h2 id="3862daca-7698-8049-a019-e482d0d4a0f2" style="display:inline-block" dir="auto">Bases de datos</h2><p id="3862daca-7698-8092-ac71-cf307e8ff9f1" class="" dir="auto">Una base de datos (DB) es un sistema organizado que permite almacenar, gestionar y recuperar información de manera eficiente. Una base de datos es como un archivo digital muy bien estructurado donde se guarda información que se puede buscar y manipular fácilmente. Por ejemplo:</p><ul id="3862daca-7698-805f-a326-d1a14b9c74b5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>MongoDB:</strong> Almacena los datos en documentos.</li></ul><ul id="3862daca-7698-80c4-aa06-ec73dbd6e2d2" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>MySQL:</strong> Utiliza tablas para almacenar datos. La empresa propietaria es ORACLE.</li></ul><ul id="3862daca-7698-800b-a6a2-f5d89492a39d" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>SQL_Server:</strong> Utiliza tablas para almacenar datos. La empresa propietaria es MICROSOFT.</li></ul></div></aside><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="3862daca-7698-800d-9e5a-ed18f997a321" dir="ltr"><div style="width:100%"><h2 id="3862daca-7698-806d-8c78-f433bc219e0f" style="display:inline-block" dir="auto">Servidor Web</h2><p id="3862daca-7698-80a3-b7b3-edd39184566f" class="" dir="auto">Un servidor web permite alojar páginas web y ejecutar aplicaciones web. Ejemplo:</p><ul id="3862daca-7698-8092-abd0-c88f87c15687" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>APACHE:</strong> Es un servidor web tradicional que se basa en un modelo de procesamiento de solicitudes por separado. Cada solicitud genera un hilo diferente.</li></ul><ul id="3862daca-7698-807d-b6e1-c5592421705b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>NGINX: </strong>es un servidor web de código abierto que destaca por ser extremadamente <strong>rápido, ligero y capaz de manejar miles de conexiones simultáneas</strong> al mismo tiempo.</li></ul></div></aside><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="3862daca-7698-80b4-a4fd-e5ad65b7548b" dir="ltr"><div style="width:100%"><h2 id="3862daca-7698-80e9-a8d1-e29b98772f58" style="display:inline-block" dir="auto">Entornos de ejecución</h2><p id="3862daca-7698-806b-af09-fd9641b7cbc7" class="" dir="auto">Un entorno de ejecución es un software que contiene todo lo necesario para que otro software se ejecute correctamente. Esto incluye desde un intermediario con el sistema operativo hasta librerías y demás recursos necesarios como la documentación. Por ejemplo:</p><ul id="3862daca-7698-80fa-be60-d40fe983d107" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>NODE:</strong> También conocido como NODEJS, es un <strong>entorno de ejecución</strong> que permite ejecutar código JavaScript en el lado del servidor. A diferencia de JavaScript tradicional, que se ejecuta en el navegador, Node.js permite que los desarrolladores utilicen JavaScript para crear aplicaciones del lado del servidor, lo que lo hace muy versátil y poderoso.</li></ul></div></aside><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="3862daca-7698-8058-bc80-fe3111168ba9" dir="ltr"><div style="width:100%"><h2 id="3862daca-7698-801f-b010-e3a10b17259c" style="display:inline-block" dir="auto">Framework</h2><p id="3862daca-7698-801d-8d3b-f87a79245c02" class="" dir="auto">Un framework es un conjunto de librerías, documentación que ayudan a desarrollar o ejecutar un software en específico. Por ejemplo:</p><ul id="3862daca-7698-8085-8cf8-dcb3fa21e005" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>.NET:</strong> Creado por Microsoft, permite crear aplicaciones de software más fácil y eficiente.</li></ul><ul id="3862daca-7698-80da-ba59-d8dac087e087" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>EXPRESS:</strong> Es un <strong>framework de aplicación web</strong> para Node.js que facilita la creación de aplicaciones que se ejecutan en el servidor web.</li></ul><ul id="3862daca-7698-80fd-851b-dfdb4f896041" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>ANGULAR:</strong> Es un <strong>framework de aplicación web</strong> para Node.js que facilita la creación de aplicaciones que se ejecutan en el navegador web.</li></ul></div></aside><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="3862daca-7698-802b-9568-c4a77ea1495d" dir="ltr"><div style="width:100%"><h2 id="3862daca-7698-806f-b072-e24817e516ee" style="display:inline-block" dir="auto">IDE</h2><p id="3862daca-7698-80f5-9031-faad56c7e001" class="" dir="auto">Un IDE son las siglas para (<strong>entorno de desarrollo de software)</strong>. Es una aplicación que proporciona un conjunto completo de herramientas para facilitar el desarrollo de software. Un IDE combina diferentes herramientas y funciones en un solo lugar para ayudar a los programadores a escribir, depurar y mantener su código de manera más eficiente. Por ejemplo:</p><ul id="3862daca-7698-80c2-9fd2-e18570bb122a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>VISUAL STUDIO CODE:</strong> IDE de Microsoft para programar con cualquier lenguaje de programación.</li></ul><ul id="3862daca-7698-8055-b780-ed0adb03ceca" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>THONNY:</strong> IDE para programar con el lenguaje de programación PYTHON.</li></ul></div></aside><h1 id="3862daca-7698-80d2-b916-dcacf0084670" style="display:inline-block" dir="auto">Desarrollo web</h1><p id="3862daca-7698-8095-9375-e4f15541e1bd" class="" dir="auto">Se conoce como desarrollo web al proceso de crear y mantener un sitio web que sea funcional en internet, a través de diferentes lenguajes de programación, según el modelo y la parte de la página que corresponda. Cada sitio tiene una URL única que lo distingue de los demás en la red informática mundial.</p><p id="3862daca-7698-8082-b9af-dc0e7336faf1" class="" dir="auto">Un sitio web puede clasificarse de diferentes formas. Para cuestiones de desarrollo web principalmente se divide en dos partes:</p><ul id="3862daca-7698-805a-a69c-e48ef2a1244a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Front-end:</strong> Es la parte que interactúa con el usuario, tanto en imagen como en función. Por ello está íntimamente relacionada con la experiencia del usuario (UX) y la interfaz de usuario (IU).</li></ul><ul id="3862daca-7698-80d3-8648-e8013629c3dc" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Back-end:</strong> Se refiere a la parte que está en contacto directo con el servidor; es donde se aplica el código de programación para crear la estructura. Permanece en un segundo plano a cargo de la accesibilidad, actualización, bases de datos y cambios del sitio.</li></ul><p id="3862daca-7698-809c-a763-cd3c5e94cb2e" class="" dir="auto">Los desarrolladores web se enfocan en la codificación y programación del sitio web utilizando lenguajes como HTML, CSS, JavaScript y otros. Su objetivo es que el sitio responda correctamente a las interacciones que realice el usuario en él y concretar un stack tecnológico adecuado. Algunos ejemplos de STACK son:</p><ul id="3862daca-7698-80f9-9fb0-f0007c0d2378" class="bulleted-list" dir="auto"><li style="list-style-type:disc">LAMP: Linux, Apache, MySQL, PHP/Python/Perl</li></ul><ul id="3862daca-7698-8027-ad1a-c7d5b5b306a5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">MEAN: MongoDB, Express.js, Angular, Node.js</li></ul><ul id="3862daca-7698-8002-80a0-e90b62b8b432" class="bulleted-list" dir="auto"><li style="list-style-type:disc">.NET stack: .NET, C#, SQL Server y Visual Studio</li></ul><ul id="3862daca-7698-80a4-9af1-e37dbf532f1e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">DJANGO: Python</li></ul><h1 id="3862daca-7698-8012-a74d-faf443f88503" style="display:inline-block" dir="auto">Lenguajes de programación</h1><p id="3862daca-7698-8055-b999-fd3fd247a290" class="" dir="auto">Un <strong>lenguaje de programación</strong> es un conjunto de instrucciones que le damos a una computadora para que realice tareas específicas. Es como un idioma que usamos para comunicarnos con las máquinas. Estas instrucciones se escriben siguiendo reglas gramaticales y de sintaxis definidas, y el objetivo es crear programas que resuelvan problemas o hagan cosas útiles.</p><p id="3862daca-7698-8058-a7ac-c01a00a28451" class="" dir="auto">A continuación se muestran los 6 lenguajes de programación más usados en el desarrollo web. HTML, CSS y JavaScript suelen pertenecer al Front-end mientras que PHP, JAVA y Python suelen pertenecer al Back-end.</p><ul id="3862daca-7698-805e-98de-c73a5f99ed4b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></strong>: Es uno de los lenguajes de marcado más importantes que se usa en el Front-end de un sitio. Su escritura ayuda a dar estructura y organización al contenido de una página web, a través de una acomodación tipo árbol. Se configura por medio de etiquetas o hipertextos que permiten que los sitios web se encuentren en los motores de búsqueda.</li></ul><ul id="3862daca-7698-809a-b9ef-cc4d895e74d5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></strong>: El nombre extendido de CSS es Cascading Style Sheets, en español significa hojas de estilo en cascada. Este es un lenguaje que trabaja en perfecta armonía con el HTML en el Front-end. Para los programadores web es una herramienta muy útil para especificar el aspecto y la posición de los elementos en el sitio.</li></ul><ul id="3862daca-7698-8075-82ff-c49caec3d71c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">Javascript</a></strong>: Uno de los lenguajes más apreciados es JavaScript, ya que con él es muy fácil crear sitios interactivos y dinámicos (como animaciones, formularios, juegos, galerías, botones, etc.), los cuales son muy demandados hoy en día. Su código también se refleja en el Front-end. Se basa en objetos que se pueden acomodar y reutilizar de forma sencilla.</li></ul><ul id="3862daca-7698-80af-90f6-c4b74e792f2f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://www.php.net/">PHP</a></strong>: En el lado del Back-end se tiene el lenguaje PHP, uno de los pioneros de la transición de sitios fijos a sitios interactivos. Es uno de los lenguajes más utilizados por ser de código abierto, con casi 30 años de trayectoria; también es considerado uno de los más extensos que hay. Puede ser incrustado en el HTML sin ningún problema.</li></ul><ul id="3862daca-7698-8042-8ddc-e7d96077301f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://www.java.com/es">Java</a></strong>: Una de las grandes ventajas es que se escribe una sola vez y se puede ejecutar en distintos dispositivos y sistemas operativos, gracias a su máquina virtual (JVM). Corresponde al Back-end de una aplicación web. Tiene un código eficiente, memoria automática y detección de errores oportuna.</li></ul><ul id="3862daca-7698-8082-b0e9-c2ec4acf0ec9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://www.python.org/">Python</a></strong>: Es uno de los lenguajes de desarrollo web más innovadores que hay hasta el momento, debido a su característica multi-paradigma, que es capaz de adaptarse a varios estilos de programación y crear aplicaciones de cualquier tipo. Es de código abierto y su escritura es muy parecida al lenguaje humano. Forma parte del Back-end de un sitio.</li></ul><h1 id="3862daca-7698-80cd-9548-fcd907e2e408" style="display:inline-block" dir="auto">Software de aplicación</h1><p id="3862daca-7698-8079-abc1-c2d1102c3123" class="" dir="auto">Dentro del software de aplicación se encuentran varios ejemplos relacionados con áreas específicas como diseño, ofimática, gráfico, financiero, musical, etc.</p><ul id="3862daca-7698-8054-b962-d11ddf18e194" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://inkscape.org/">Inkscape</a></strong>: Es un editor de gráficos vectoriales de código abierto, gratuito y disponible para múltiples sistemas operativos. Permite crear y editar imágenes vectoriales de alta calidad, ideal para ilustraciones, logotipos, diagramas y más.</li></ul><ul id="3862daca-7698-80bd-b44f-fad7833e9075" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://www.gimp.org/">Gimp</a></strong>: Es un editor de imágenes de código abierto, gratuito y multiplataforma. Ofrece una amplia gama de herramientas para manipular, retocar y crear imágenes rasterizadas, similar a Photoshop pero sin costo.</li></ul><ul id="3862daca-7698-8081-a0f7-c07ab945a05a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://www.blender.org/">Blender</a></strong>: Es un software de modelado 3D, animación y renderizado gratuito y de código abierto. Es una herramienta potente y versátil utilizada para crear gráficos 3D, animaciones, juegos y más.</li></ul><ul id="3862daca-7698-8080-8d4c-f4808dd3167f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://www.audacityteam.org/">Audacity</a></strong>: Es el software gratuito más popular del mundo para grabar y editar audio. Así que, si esta produciendo música, un podcast o simplemente experimentando con audio, Audacity es para usted.</li></ul><ul id="3862daca-7698-8078-bc8a-f6a249852ae9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong><a href="https://godotengine.org/">Godot</a></strong>: Es un motor de juego de código abierto, gratuito y multiplataforma. Proporciona un entorno completo para desarrollar videojuegos 2D y 3D, con un editor visual intuitivo y una gran comunidad de apoyo.</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

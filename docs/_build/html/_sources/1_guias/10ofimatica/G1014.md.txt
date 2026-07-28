@@ -1,0 +1,1193 @@
+# Guía 1014: Contenidos en LibreOffice Writer
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Ofimática
+        - **GRADO**: DÉCIMO
+        - **PERIODO:** 04
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Uso de imágenes, configuración de páginas y tablas de contenido en LibreOffice Writer.
+- **Objetivo de aprendizaje**: Agregar y configurar adecuadamente imágenes, páginas y tablas de contenido en el software LibreOffice Writer.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Uso y apropiación de la Tecnología y la Informática.
+- **Competencia**: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.
+- **Evidencia de aprendizaje**: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (13)
+- [Descarga de **LibreOffice**](https://www.libreoffice.org/download/).
+- G1014A02-mitos-imagen.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A02-mitos-imagen.odt)
+- adonis.jpg [{bdg-primary}`Descargar`](./recursos/G1014/archivos/adonis.jpg)
+- afrodita.png [{bdg-primary}`Descargar`](./recursos/G1014/archivos/afrodita.png)
+- G1014A03-organizacion_oficina.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A03-organizacion_oficina.odt)
+- G1014A03-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A03-mitos.odt)
+- G1014A04-mitos_a5.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A04-mitos_a5.odt)
+- diosa_venus.jpg [{bdg-primary}`Descargar`](./recursos/G1014/archivos/diosa_venus.jpg)
+- G1014A05-mitos_a5_fondo.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A05-mitos_a5_fondo.odt)
+- G1014A06-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A06-mitos.odt)
+- G1014A07-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A07-mitos.odt)
+- G1014A07-hermes.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A07-hermes.odt)
+- G1014A08-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A08-proyecto_escritorio_libre.odt)
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"El dominio de LibreOffice Writer es fundamental para transformar simples documentos de texto en informes profesionales y bien estructurados. Esta guía los estudiantes aprenden a integrar imágenes con precisión, configurar páginas para diversos formatos, generar tablas de contenido automáticas y exportar sus trabajos a PDF con seguridad. Cada herramienta que aprenda aquí no solo facilita su labor académica, sino que fortalece su capacidad para organizar y presentar información con claridad y estilo".
+
+-- Camilo Fonseca
+:::
+
+---
+## Contenidos en LibreOffice Writer
+
+A continuación se muestran las diferentes formas que se pueden trabajar los contenidos en LibreOffice Writer.
+
+:::{admonition} Paginación e impresión de documentos
+
+Cuando se desea distribuir documentos de forma impresa o en formato PDF, tan sólo necesitamos disponer de un documento bien estructurado y organizado. Para ello tendremos en cuenta otras configuraciones como el tamaño y formato del papel donde se imprimirá, los márgenes del documento, la orientación, los encabezados y pies que se deben repetir en todas las páginas o la numeración de las páginas.
+:::
+
+:::{admonition} Imágenes y objetos de dibujo
+
+Según las necesidades que se tengan, será preciso insertar imágenes en los documentos para ilustrar algún informe o proyecto.
+
+También podemos tener necesidad de dibujar formas geométricas para diagramar algún proceso, o por simple placer creativo. Resolver estas tareas requerirá el conocimiento de las diferentes propiedades que se pueden establecer para obtener los mejores resultados.
+:::
+
+:::{admonition} Herramientas de revisión y auto-corrección
+
+Ocasionalmente se tienen dudas sobre el uso ortográfico correcto en la redacción de nuestros escritos. O quizás estamos escribiendo en un idioma con el cual no estamos demasiado familiarizados. En esos momentos, el uso de correctores ortográficos es de gran ayuda.
+
+También pueden resultar muy útiles otro tipo de ayudas de escritura como los diccionarios de sinónimos, de corrección gramatical, de separación silábica, así como opciones de formateado y corrección automática.
+
+En ocasiones puede que un documento maneje varios idiomas. En estos casos lo mejor es establecer estilos con el idioma extra y aplicarlos en el documento según se necesite.
+:::
+
+:::{admonition} Trabajo con documentos largos
+
+Cuando se elaboran largos informes o memorias, nuestros documentos deben dotarse de una estructura que haga cómodo su seguimiento. Ya sabemos que se puede y se “debe” utilizar estilos de Título para ello.
+
+Pero además, Writer nos proporciona un conjunto de herramientas que nos facilitarán esta tarea. Gracias a estas herramientas podremos alterar con mucha facilidad el esquema de nuestros documentos, los títulos podrán ser numerados y crearemos sumarios y tablas de toda clase de contenido.
+:::
+
+:::{admonition} Navegador de elementos
+
+El navegador contiene una lista donde aparecen los elementos que conforman un documento. Estos elementos son:
+
+```{table}
+ELEMENTOS | DESCRIPCIÓN
+-|-
+**Títulos** | Los diferentes títulos del documento, agrupados y sangrados según su nivel, dicho de otra manera, el esquema del documento.
+**Tablas** | Las tablas son estructuras de texto organizadas en filas y columnas.
+**Marcos de texto**	| Cuadros con texto en su interior que pueden ser tratados como un objeto gráfico.
+**Imágenes** | Imágenes insertadas en el documento.
+**Objetos OLE** | Elementos como hojas de cálculo, fórmulas, y, en general, objetos de cualquier programa que admita la tecnología OLE (Object Linking and Embedding - Objetos vinculados e incrustados)
+**Marcadores** | Puntos del texto con un nombre que se crean para ser referenciados desde otro lugar del documento.
+**Secciones** | Divisiones estructurales del documento que permiten aplicar determinados atributos a partes del documento, como la organización en columnas periodísticas o protección, entre otros.
+**Hiperenlaces** | Vínculos a sitios web, otros documentos, títulos o marcadores.
+**Referencias** | Textos del documento que apuntan a algún Marcador.
+**Índices** | Tablas de contenido que pueden ser de tipos muy variados: sumarios, alfabéticos o de ilustraciones entre otros.
+**Comentarios** | Anotaciones creadas para revisiones del documento o establecer recordatorios.
+**Objetivos** | Elementos de dibujo insertados en el documento.
+```
+:::
+
+:::{admonition} Uso de tablas
+
+**LibreOffice Writer** dispone de una herramienta para mostrar información organizada en los  documentos: las tablas. Su uso sustituye de manera ventajosa al uso de los tabuladores. Pero las tablas van mucho más allá, puesto que además de texto, pueden incluir valores numéricos con los que efectuar cálculos con toda comodidad.
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:
+
+   - ¿Que debe contener un documento para considerar que ha sido estructurado de forma correcta? 
+
+---
+## A01: Taller (5%)
+{bdg-info}`Estructuración`
+
+En su cuaderno desarrolle los siguientes puntos:
+
+1. Describa cada una de las formas en las que se pueden trabajar diferentes tipos de contenido en LibreOffice Writer.
+
+2. Realice un tabla que muestre los diferentes tipos de elementos que se pueden encontrar en un documento de LibreOffice Writer.
+
+---
+## A02: Trabajando con imágenes {kbd}`103` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. Descargue los siguientes archivos y guárdelos en su carpeta de evidencias del periodo actual:
+
+   - G1014A02-mitos-imagen.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A02-mitos-imagen.odt)
+   - adonis.jpg [{bdg-primary}`Descargar`](./recursos/G1014/archivos/adonis.jpg)
+   - afrodita.png [{bdg-primary}`Descargar`](./recursos/G1014/archivos/afrodita.png)
+
+2. Abra el archivo: **G1014A02-mitos-imagen.odt**
+
+    :::{admonition} ¿Que contiene el archivo?
+    :class: hint
+    Es un documento de 3 hojas donde cada hoja muestra la descripción de un Dios griego.
+    :::
+
+3. Ubique el **cursor** en la **página 01** después de la descripción de **ADONIS**.
+
+4. En el menú superior pulse el botón: {guilabel}`Insertar` > {guilabel}`Imagen`, luego localice la imagen **adonis.jpg** y pulse el botón {guilabel}`Abrir`.
+
+5. Seleccione la imagen que acabo de insertar en el documento, luego revise la barra de herramientas formato.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Cuando selecciona la imagen, que pasa con la **barra de herramientas formato**?
+    :::
+
+6.  Seleccione la imagen y genere un **menú contextual**, luego pulse la opción **Propiedades…**
+
+7. En la **ventana de Imagen**, configurar las siguientes opciones:
+
+    - En la pestaña **Posición y tamaño** configurar:
+
+        - En la sección de Ancla:
+          - Marcar la opción: A la página
+
+        - En la sección Posición:
+
+          - Horizontal: Centro - para: Página completa
+          - Vertical: Centro - para: Página completa
+  
+    - Pulsar el botón {guilabel}`Aceptar`
+
+8. Seleccione la imagen y pulse el botón **barra de herramientas lateral** > **Propiedades**, luego configurar lo siguiente:
+
+    - Imagen
+      - Modo de color: Escala de grises
+        :::{list-table}
+        * - ```{figure} ./recursos/G1014/image01.png
+            :width: 400
+            Propiedades imagen
+            ```
+        :::
+
+9. Seleccione la imagen y pulse **menú superior** > **Formato** > **Imagen** > **Color**. Luego configure el color rojo a un 40%. (Presionar la tecla {kbd}`ENTER`)
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image02.png
+        :width: 170
+        Colores RGB de la imagen
+        ```
+    :::
+
+10. Nuevamente seleccione la imagen y pulse el botón **barra de herramientas lateral** > **Propiedades** y en Modo de color configure: **Predeterminado** luego **escala de grises** y por último: **blanco y negro**.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Que pasa con la imagen cada que cambia el **modo de color** de la imagen?
+    :::
+
+11. Hasta el momento, el documento debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image03.png
+        :width: 400
+        Adonis
+        ```
+    :::
+
+12. Guarde los cambios.
+
+13. Ubique el cursor en la **página 02** después de la descripción de AFRODITA.
+
+14. En la **barra de herramientas estándar**, pulse el botón {guilabel}`Insertar Imagen`.
+
+15. Localice la imagen **afrodita.png** y pulse el botón Abrir.
+
+16. Seleccione la imagen y genere un **menú contextual**, luego pulse la opción **Propiedades…**
+
+17. En la **ventana de Imagen**, configurar las siguientes opciones:
+
+    - En la pestaña {guilabel}`Posición y tamaño` configurar:
+
+        - En la sección Tamaño:
+
+            - Anchura: **5,00cm**
+
+            - Altura: **7,00cm**
+
+        - En la sección Ancla:
+
+            - Marcar la opción: **Al párrafo**
+
+        - En la sección Posición:
+
+          - Horizontal: Derecha - para: Toda el área del párrafo
+
+          - Vertical: Superior - para: Toda el área del párrafo
+
+    - En la pestaña {guilabel}`Ajustar` configurar:
+
+        - En la sección Configuración:
+
+          - Seleccionar: **Continuo**
+
+    - En la pestaña {guilabel}`Giro` configurar:
+
+        - En la sección Reflejar:
+
+            - Marcar la opción: **Horizontalmente**
+
+        - En la sección Ángulo de giro:
+
+          - Ángulo: **15,00°**
+
+    - PULSAR el botón {guilabel}`Aceptar`
+
+18. Seleccione la imagen y pulse: **barra de herramientas lateral** > **Propiedades**, luego configurar lo siguiente:
+
+    - Imagen
+
+        - Transparencia: 60%
+
+    - Pulse la tecla {kbd}`ENTER`
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Cuales son las dos formas de insertar una imagen en LibreOffice Writer?
+    :::
+
+19. Hasta el momento, el documento debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image04.png
+        :width: 400
+        Afrodita
+        ```
+    :::
+
+20. Guarde los cambios.
+
+21. En Internet, descargue una imagen del **Dios Agón**.
+
+22. Inserte la imagen descargada en la **página 3** del documento.
+
+23. Con lo aprendido hasta el momento, modifique la imagen en **LibreOffice Writer** de tal forma que genere una buena impresión. Mínimo aplique las siguientes configuraciones:
+
+    - Configuración de posición y tamaño (sección de ancla, sección posición horizontal y vertical).
+    - Modo de color (obtener un color con tonalidad verde).
+    - Giro con reflejo horizontal y ángulo.
+    - Configuración de transparencia.
+    - Bordes.
+    - Color de fondo.
+
+24. Guarde los cambios y cierre el software LibreOffice Writer.
+
+---
+## A03: Márgenes, previsualización y disposición {kbd}`221` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. Descargue los siguientes archivos y guárdelos en su carpeta de evidencias:
+
+   - G1014A03-organizacion_oficina.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A03-organizacion_oficina.odt)
+   - G1014A03-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A03-mitos.odt)
+
+2. Abra el archivo: **G1014A03-organizacion_oficina.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **Estilo de página**
+
+3. En el **menú superior**, pulse: {guilabel}`Formato` > {guilabel}`Estilo de página`
+
+4. En la ventana **Estilo de página: Estilo de página predeterminado**, configurar las siguientes opciones:
+
+    - En la pestaña {guilabel}`página` configurar:
+
+      - En la sección **Formato de papel**:
+
+        - Formato: **legal**
+        - Orientación: **Horizontal**
+
+      - En la sección **Márgenes**:
+
+        - Izquierda: **4cm**
+        - Derecha: **4cm**
+        - Arriba: **1,50cm**
+        - Abajo: **1,50cm**
+
+    - PULSE el el botón {guilabel}`Aceptar`
+
+5. En el **menú superior** pulse: {guilabel}`Archivo` > {guilabel}`Previsualizar impresión`
+
+6. Realice una captura de pantalla a la interfaz y guárdela en la carpeta de evidencias con el nombre: **G1014A03-captura.png**
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿Qué es y para que sirve la **previsualización de una impresión**?
+    :::
+
+7. Guarde los cambios y cierre el documento: **G1014A03-organizacion_oficina.odt**
+
+8. Abra el documento: **G1014A03-mitos.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **Previsualización a dos páginas**
+
+9. En el **menú superior** pulse: {guilabel}`Formato` > {guilabel}`Estilo de página`
+
+10. En la ventana **Estilo de página: Estilo de página predeterminado**, configurar las siguientes opciones:
+
+    - En **pestaña página** y configurar:
+
+      - En la sección Formato de papel:
+        - Formato: **A5**
+      
+      - En la sección Configuración de la disposición:
+        - Disposición de las páginas: **Reflejado**
+
+      - En la sección de Márgenes:
+        - Exterior: **3cm**
+        - Interior: **6cm**
+
+      - Pulse el botón {guilabel}`Aceptar`
+
+11. En el **menú superior** pulse: {guilabel}`Archivo` > {guilabel}`Previsualizar impresión`.
+
+12. Pulse el ícono **previsualización de dos páginas**.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image05.png
+        :width: 200
+        2 páginas
+        ```
+    :::
+
+13. Realice una captura de pantalla a la interfaz y guárdela en la carpeta de evidencias con el nombre: **G1014A03-captura2.png**
+
+14. Guarde los cambios y cierre el software LibreOffice Writer.
+
+---
+## A04: Fondos y bordes de página {kbd}`111` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. Descargue los siguientes archivos y guárdelos en su carpeta de evidencias:
+
+   - G1014A04-mitos_a5.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A04-mitos_a5.odt)
+   - diosa_venus.jpg [{bdg-primary}`Descargar`](./recursos/G1014/archivos/diosa_venus.jpg)
+
+2. Abra el archivo: **G1014A04-mitos_a5.odt** y en el **menú superior** pulse: {guilabel}`Formato` > {guilabel}`Estilo de página`
+
+3. En la ventana **Estilo de página: Estilo de página predeterminado**, configurar las siguientes opciones:
+
+   - En la pestaña {guilabel}`Área` configurar:
+     - En la pestaña **Imagen**:
+       - En la sección ***Imagen***:
+         - Pulse el botón: {guilabel}`Añadir/importar` (Seleccione la imagen **diosa-venus.jpg**). Aparecerá una ventana de confirmación. Pulsar el botón {guilabel}`Aceptar`.
+       - En la sección ***Opciones***:
+         - Estilo: **Extendido**
+
+   - En la pestaña {guilabel}`Página` configurar:
+     - En la sección **Configuración de disposición**:
+       - DESMARCAR: El fondo cubre los márgenes.
+
+   - En la pestaña {guilabel}`Bordes` configurar:
+     - En la sección **Línea**:
+       - Estilo: Interior
+       - Color: Rojo
+       - Grosor: Mediano (1,5 pt)
+
+     - En la sección **Separación**:
+       - Izquierda, Derecha, Superior, Inferior: **1,00 cm**
+
+     - En la sección **Estilo de sombra**:
+       - Posición: Proyectar sombra a la parte inferior derecha
+       - Color: Naranja
+
+   - PULSE el botón {guilabel}`Aceptar` 
+
+4. En la **jerarquía de estilos** de la **barra de herramientas lateral**, Editar el **Estilo de párrafo predeterminado** de la siguiente manera:
+
+   - En la pestaña de **Efectos tipográficos** configurar:
+      - En la opción de **Color de letra**, SELECCIONE color **blanco**.
+   
+   - PULSE el botón {guilabel}`Aceptar`
+
+5. En el menú superior pulse: {guilabel}`Archivo` > {guilabel}`Previsualizar impresión`
+
+   - Pulse el ícono **previsualización de dos páginas**.
+
+6. REALICE una captura de pantalla con el nombre: **G1014A04-mitos_a5.png** y guárdela en la carpeta de evidencias.
+
+7. Hasta el momento, el documento debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image06.png
+        :width: 600
+        Fondos y bordes de página
+        ```
+    :::
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Teniendo en cuenta el formato final del documento de la presente actividad, describa en que clase de textos podría ser aplicado y por qué. (revistas, cuentos, ensayos, guiones, proyectos de grado, etc.?)
+    :::
+
+8. GUARDE los cambios y cierre el software LibreOffice Writer.
+
+---
+## A05: Encabezados, pies de página y campos {kbd}`101` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. Descargue el siguiente archivo y guárdelo en su carpeta de evidencias:
+
+   - G1014A05-mitos_a5_fondo.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A05-mitos_a5_fondo.odt)
+
+2. Abra el archivo **G1014A05-mitos_a5_fondo.odt** y pulse el área superior de la página para generar el siguiente menú:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image07.png
+        :width: 360
+        Encabezado de página
+        ```
+    :::
+
+3. PULSE el botón **+**
+
+4. En la cabecera, escriba el siguiente texto en negrilla: **Diccionario mitológico**
+
+5. PULSE nuevamente el botón de color azul para generar un **menú contextual** y luego SELECCIONE la opción: **Bordes y fondo…**
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image08.png
+        :width: 360
+        Menú contextual
+        ```
+    :::
+
+6. En la ventana **Bordes y fondo** configurar lo siguiente:
+
+    - En la pestaña {guilabel}`Bordes` configurar:
+
+        - En la sección **Disposición de líneas**:
+          - Definido por el usuario: borde inferior
+
+        - En la sección **Línea**:
+          - Color: Azul
+          - Grosor: Fino (0,75 pt)
+
+    - PULSE el botón {guilabel}`Aceptar`
+
+7. El **encabezado de página** debería quedar así:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image09.png
+        :width: 360
+        Encabezado de página
+        ```
+    :::
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - ¿Aparte de títulos, que más se podría colocar en la cabecera de una página?
+    - ¿Por qué el contenido de la cabecera de un documento, debe ser igual en todas las páginas?
+    :::
+
+8. GUARDE los cambios.
+
+9. En el **menú superior**, presione el botón: {guilabel}`Archivo` > {guilabel}`Propiedades`
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image10.png
+        :width: 640
+        Datos de identidad del documento
+        ```
+    :::
+
+10. En el menú de **Datos de identidad** configurar:
+
+    - En la sección de **Dirección**:
+      - En el campo de **Nombres/apellidos/iniciales**: colocar sus nombres.
+
+    - Pulse el botón {guilabel}`Aceptar`
+
+11. Pulse en el área inferior de la página para generar el siguiente menú:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image11.png
+        :width: 360
+        Pie de página
+        ```
+    :::
+
+12. PULSE el botón **+**
+
+13. PULSE el botón de color azul: **Pie de página (Estilo de página predeterminado)** y luego PULSE **Bordes y fondo…**
+
+14. En la ventana **Bordes y fondo** configurar las siguientes opciones:
+
+    - En la pestaña {guilabel}`Bordes` configurar:
+      - En la sección **Disposición de líneas**:
+        - Definido por el usuario: **borde superior**
+
+      - En la sección **Línea**:
+        - Color: **Azul**
+        - Grosor: **Fino (0,75 pt)**
+    
+    - PULSE el botón {guilabel}`Aceptar`
+
+15. Situar el cursor en la parte izquierda del pie de página.
+
+16. En el **menú superior**, PULSE el botón: {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Más campos`
+
+17. Se abrirá la ventana **Campos**:
+
+    - En la pestaña {guilabel}`Documento` configurar:
+      - Tipo: **Autor**
+      - Seleccionar: **Nombre**
+
+    - PULSE el botón {guilabel}`Insertar`
+
+18. Cree otra línea en el píe de página (PRESIONE LA TECLA {kbd}`ENTER`).
+
+19. En la **barra de herramientas formato**, pulse el botón {guilabel}`Alinear a la derecha`
+
+20. ESCRIBA la palabra: **Página**
+
+21. En el **menú superior**, PULSE el botón: {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Número de página`
+
+22. Posteriormente escriba el carácter: **-**
+
+23. En el **menú superior**, PULSE el botón: {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Recuento de páginas`. Debería quedar así: 
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image12.png
+        :width: 360
+        Pie de página
+        ```
+    :::
+
+24. En el **menú superior** pulse: {guilabel}`Archivo` > {guilabel}`Previsualizar impresión`.
+
+25. No olvide PULSAR el botón: {guilabel}`Previsualización de dos páginas`
+
+26. Hasta el momento, el documento debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image13.png
+        :width: 600
+        Cabecera y Pie de página
+        ```
+    :::
+
+27. Guarde los cambios y cierre el software LibreOffice Writer.
+
+---
+## A06: Generación de PDFs {kbd}`211` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. Descargue el siguiente archivo y guárdelo en la carpeta de evidencias:
+
+   - G1014A06-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A06-mitos.odt)
+
+2. Abra el archivo: **G1014A06-mitos.odt** y en la cabecera del documento, agregue la **información de identificación** con el título: **Generación de PDFs**.
+
+3. APLIQUE un estilo de **Título 1** a los siguientes títulos: **ADONIS**, **AFRODITA** y **AGON**.
+
+4. EDITAR el estilo Título 1 de la siguiente forma:
+
+   - En la pestaña {guilabel}`Flujo de texto` configurar:
+     - En la sección Saltos:
+       - MARCAR la opción: **Insertar**
+       - Tipo: **página**
+
+   - PULSE el botón {guilabel}`Aceptar` 
+
+5. Es necesario asignar un título en las propiedades de documento. En el **menú superior** PULSE el botón: {guilabel}`Archivo` > {guilabel}`Propiedades`.
+
+   - En la pestaña {guilabel}`Descripción` configurar:
+     - Título: **Fichas de mitología griega**
+     - Comentarios: **Esta es una actividad académica**
+   
+   - PULSE el botón {guilabel}`Aceptar`
+
+6. INSERTE una **encabezado** en el documento con el nombre: **Dioses mitológicos**
+
+7. En la **jerarquía de estilos**, EDITAR el estilo **Cabecera** de la siguiente forma:
+
+   - En la pestaña {guilabel}`Alineación` configurar:
+      - En la sección **Opciones**:
+        - Marcar la opción: **Centro**
+
+   - En la pestaña {guilabel}`Bordes` configurar:
+     - En la sección **Disposición de líneas**:
+       - Definida por el usuario: **Borde inferior**
+
+   - En la pestaña {guilabel}`Tipo de Letra` configurar:
+     - Tipofaz: **Negrita**
+
+   - PULSE el botón {guilabel}`Aceptar`
+
+8. Situar el cursor en la **cabecera del documento**.
+
+9. En el **menú superior**, pulse el botón {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Título`
+
+10. En la **jerarquía de estilos**, EDITAR el estilo **Pie de página** de la siguiente forma:
+
+    - En la pestaña {guilabel}`Bordes` configurar:
+      - En la sección **Disposición de líneas**:
+        - Definida por el usuario: **Borde superior**
+    
+    - En la pestaña {guilabel}`Tipo de Letra` configurar:
+      - Tipofaz: **Negrita**
+
+    - PULSAR el botón {guilabel}`Aceptar`
+
+11. SITUAR el cursor en el pie del documento.
+
+12. En el **menú superior**, PULSE el botón {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Fecha (Fija)`
+
+13. Añada la palabra: **Pág**
+
+14. En el **menú superior**, PULSE el botón {guilabel}`Insertar` > {guilabel}`Campo` > {guilabel}`Número de página`
+
+15. Con **tabulaciones**, deje la palabra **pág** al lado derecho del **pie de página**.
+
+16. Con las configuraciones realizadas hasta el momento, el **pie de página** debería quedar así:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image14.png
+        :width: 600
+        Pie de página
+        ```
+    :::
+
+17. GUARDE los cambios.
+
+18. En el **menú superior** PULSE: {guilabel}`Archivo` > {guilabel}`Previsualizar impresión`
+
+19. PULSE el botón: {guilabel}`Previsualizar varias páginas` y en la tabla seleccione **3 x 1 páginas**.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image15.png
+        :width: 270
+        Previsualización
+        ```
+    :::
+
+20. Realice una **captura de pantalla** al documento y guardar en la *carpeta de evidencias* con el nombre: **G1014A06-mitos.png**
+
+21. PULSE el botón: {guilabel}`Cerrar previsualización`
+
+22. Ahora va a exportar el documento a PDF. PULSE el botón: {guilabel}`Archivo` > {guilabel}`Exportar a` > {guilabel}`Exportar a PDF…`
+
+23. En la ventana: **Opciones de PDF** configurar las siguientes opciones:
+
+    - En la pestaña {guilabel}`General` configurar:
+      - En la sección **General**:
+        - Marcar la opción: PDF con etiquetas (añadir estructura el documento)
+      - En la sección **Intervalo**:
+        - Marcar la opción: Ver PDF tras exportarlo
+      - En la sección **Estructura**:
+        - Marcar la opción: Exportar esquemas
+      - En la sección **Marca de agua**:
+        - Marcar la opción Firmar con marca de agua. En el campo escribir: **CONFIDENCIAL**
+
+    - En la pestaña {guilabel}`Interfaz de usuario` configurar:
+      - En la sección **Opciones de la ventana**:
+        - Marcar la opción: Mostrar título del documento.
+
+    - En la pestaña {guilabel}`Seguridad configurar`:
+      - En la sección **Cifrado y permisos** del archivo:
+        - PULSE el botón: {guilabel}`Establecer contraseñas`
+            :::{list-table}
+            * - ```{figure} ./recursos/G1014/image16.png
+                :width: 270
+                Password
+                ```
+            :::
+        - Establecer una contraseña de cuatro dígitos solo para abrir el PDF.
+        - PULSE el botón {guilabel}`Aceptar`
+      - En la sección **Contenido**:
+        - Verificar que esté marcada la opción: **Permitir acceso al texto a las herramientas de accesibilidad** (No importa que este inhabilitado)
+
+    - En la pestaña {guilabel}`Vista inicial` configurar:
+      - En la sección **Paneles**:
+        - Marcar la opción: **Miniaturas y página**
+
+    - PULSE el botón {guilabel}`Exportar` y guarde el PDF en la **carpeta de evidencias**.
+
+24. COMPRUEBE que el PDF exportado **requiere una contraseña**.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa en que casos un documento requiere una contraseña para poder ser visto o editado. Especifique 3 ejemplos.
+    :::
+
+25. GUARDE los cambios y cierre el software LibreOffice Writer.
+
+---
+## A07: Tabla de contenido 1.0 {kbd}`103` (5%)
+{bdg-warning}`Actividad práctica`
+
+
+:::{admonition} ¿Qué vamos a aprender?
+En esta actividad, aprenderá a insertar y modificar una **tabla de contenido**. Al final de la actividad tendrá una tabla de contenido como la siguiente:
+
+```{list-table}
+* - ```{figure} ./recursos/G1014/image17.png
+    :width: 520
+    ```
+```
+:::
+
+1. Descargue los siguientes archivos y guárdelos en la carpeta de evidencias:
+
+   - G1014A07-mitos.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A07-mitos.odt)
+   - G1014A07-hermes.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A07-hermes.odt)
+
+2. Abra el archivo: **G1014A07-mitos.odt** y agregue un **encabezado de página** con la siguiente **información de identificación**:
+
+    > TABLA DE CONTENIDO 1.0 - Nombre Apellido - Curso - Jornada - Fecha(campo fijo) - Hora(campo fijo)
+
+    Debería quedar así:
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image18.png
+        :width: 654
+        ```
+    :::
+
+3. Seleccione los nombres: Adonis, Afrodita y Agón, y en la **barra de herramientas lateral**, en el **menú de estilos** de párrafo, APLIQUE el estilo: **Título 1**
+
+4. UBIQUE el cursor al principio de la página.
+
+5. En la **barra de herramientas estándar**, PULSE el ícono: **Insertar salto de página**
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image19.png
+        :width: 89
+        ```
+    :::
+
+6. UBIQUE nuevamente el cursor al principio de la página.
+
+7. En el **menú superior**, PULSE el botón {guilabel}`Insertar` > {guilabel}`sumario e índice` > {guilabel}`Sumario, índice o bibliografía`
+
+8. En la ventana con el título: **Sumario, índice o bibliografía**, configurar lo siguiente:
+
+   - En la pestaña {guilabel}`Tipo` configurar:
+     - En la sección de **Tipo y título**:
+       - Título: **Índice de fichas mitológicas**
+
+   - PULSAR {guilabel}`Aceptar`
+
+9. Se crea inicialmente una tabla de contenido básica.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguiente pregunta:
+    - ¿En que casos es útil agregar una tabla de contenido y por qué?
+    :::
+
+10. En la **barra de herramientas lateral**, en el **menú de estilos**, EDITE el estilo **Título de sumario** así:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image20.png
+        :width: 333
+        ```
+    :::
+
+    - En la pestaña {guilabel}`Alineación` configurar:
+      - En la sección de **Opciones**: Centro
+
+    - PULSE el botón {guilabel}`Aceptar`
+
+11. La **tabla de contenido** debería tener la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image21.png
+        :width: 555
+        ```
+    :::
+
+    :::{admonition} ¿Qué significa el fondo gris de la tabla de contenido?
+    :class: hint
+    El fondo gris de la tabla de contenido significa que es una sección especial del documento. En realidad no hay ningún color en el fondo. Esto se puede demostrar cuando se accede a la opción de **previsualización del documento**.
+    :::
+
+12. En la **barra de herramientas lateral**, en el menú de estilos de párrafo, EDITE el estilo Sumario 1 así:
+
+    - En la pestaña {guilabel}`Sangrías y espaciado` configurar:
+      - En la sección **Espaciado**:
+        - Bajo el párrafo: **0.50cm**
+    - PULSAR el botón {guilabel}`Aceptar`
+
+13. UBIQUE el cursor al final del documento.
+
+14. INSERTE dos párrafos vacíos PRESIONANDO la tecla {kbd}`ENTER` dos veces.
+
+15. En la **barra de herramientas estándar** PULSE el botón: {guilabel}`Alternar marcas de formato` para evidenciar que realmente se agregaron dos párrafos.
+
+16. En el **menú superior**, PULSE el botón: {guilabel}`Insertar` > {guilabel}`Texto desde archivo…`  
+
+17. En el explorador ubique y seleccione el archivo que descargo anteriormente: **G1014A07-hermes.odt** y luego PULSE el botón ABRIR.
+    
+    :::{admonition} ¿Qué pasa con el archivo **G1014A07-hermes.odt**?
+    :class: hint
+    Insertar un **texto desde archivo**, hace que se adicione un párrafo al final del texto con el contenido del archivo. En este caso hablan del dios Olímpico HERMES.
+    :::
+
+18. SELECCIONE el nombre **HERNES** y APLIQUE un estilo de **Título 1**.
+
+19. UBIQUE nuevamente la tabla de contenido y en el **menú contextual** de la tabla de contenido PULSAR la opción **Actualizar Índice**.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image22.png
+        :width: 555
+        ```
+    :::
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa que pasa con el documento cada vez que se actualiza el índice.
+    :::
+
+20. En la **barra de herramientas lateral**, en el **menú de estilos de párrafo**, EDITE el estilo de **Título 1** así:
+
+    - En la pestaña {guilabel}`flujo de texto` configurar:
+
+      - En la sección Saltos:
+        - Marcar Insertar.
+
+    - PULSE el botón {guilabel}`Aceptar`
+
+21. AÑADA un **pie de página** que muestre a la derecha el texto **Página X de Y** (siendo **X** el número de la página actual e **Y** el total de páginas del documento).
+
+22. ACTUALIZAR el **índice** nuevamente.
+
+23. En la **tabla de contenido** generar un menú contextual y pulsar Editar índice.
+
+24. En la ventana de **Edición de índice**, configurar lo siguiente: 
+
+    - En la pestaña {guilabel}`Fondo` configurar:
+      - En la **sección color**:
+        - paleta: standard
+        - color: Lima
+
+    - En la pestaña {guilabel}`Columnas` configurar:
+      - En la **sección Configuración**:
+        - Columnas: **2**
+
+      - En la **sección Anchura y espaciado**:
+        - DESACTIVAR: **Anchura automática**
+        - Espaciado: **0.80cm**
+
+      - En la **sección Línea de separación**:
+        - Estilo: **Sólido**
+        - Anchura: **1,50 pt**
+        - Color: **Rojo**
+
+      - En la pestaña {guilabel}`Entradas` configurar:
+        - En la sección de Estructura y formato:
+          - En Estructura aparecerá la siguiente configuración:
+            :::{list-table}
+            * - ```{figure} ./recursos/G1014/image23.png
+                :width: 512
+                ```
+            :::
+          - PULSAR la letra **T**.
+          - En la opción de **Carácter de relleno** seleccionar: **_**
+          - PULSAR la **casilla en blanco** que va después de la letra **T** y antes del carácter **#**.
+          - En dicha casilla escribir: **Pág.**
+
+      - Pulsar el botón {guilabel}`Aceptar`
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa los cambios en la tabla de contenido.
+    :::
+
+25. Ahora se debe configurar un **esquema de numeración** en los títulos de los capítulos.
+
+    :::{admonition} ¿Qué es un **esquema de numeración**?
+    :class: hint
+    Un **esquema de numeración** es un ***sistema organizado*** para enumerar **títulos**, **subtítulos**, o **pasos** en un documento o presentación. *Sirve para estructurar la información de manera clara y jerárquica, facilitando la lectura y comprensión*.
+    :::
+
+26. En el **menú superior** PULSE: {guilabel}`Herramientas` > {guilabel}`Numeración de títulos…`
+
+27. En la ventana **Numeración** de títulos configurar:
+
+    - En la pestaña {guilabel}`Numeración` configurar:
+      - En la sección de **Numeración**:
+        - Número: 1, 2, 3…
+
+      - En la sección **Separador**:
+        - Después: **)** 
+
+    - FIJARSE que en la sección de **Previsualización** este mostrando: **1) Título 1**
+        :::{list-table}
+        * - ```{figure} ./recursos/G1014/image24.png
+            :width: 180
+            ```
+        :::
+    - FIJARSE que en la sección de **Nivel** este seleccionado el número **1**.
+    - Pulse el botón {guilabel}`Aceptar`
+
+28. ACTUALICE la tabla de contenido.
+
+29. GUARDE los cambios y cierre el software LibreOffice Writer.
+
+## A08: Tabla de contenido 2.0 {kbd}`112` (10%)
+{bdg-warning}`Actividad práctica`
+
+:::{admonition} Qué vamos a aprender?
+En esta actividad se usará la herramienta de numeración de títulos. También se editan los estilos de párrafo y de páginas. Por último se crea una tabla de contenido. Al final tendrá un documento como el siguiente:
+
+```{list-table}
+* - ```{figure} ./recursos/G1014/image25.png
+    :width: 654
+    ```
+```
+:::
+
+1. DESCARGUE el siguiente archivo y guárdelo en la carpeta de evidencias:
+
+   - G1014A08-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1014/archivos/G1014A08-proyecto_escritorio_libre.odt)
+
+2. ABRA el archivo: **G1014A08-proyecto_escritorio_libre.odt** y AGREGUE un encabezado de página con el siguiente contenido:
+
+    > TABLA DE CONTENIDO 2.0 - Nombre Apellido - Curso - Jornada - Fecha(fijo) - Hora(fijo)
+
+3. En el **menú superior** PULSE {guilabel}`Herramientas` > {guilabel}`Numeración de títulos…`
+
+4. En la ventana {guilabel}`Numeración de títulos` configurar:
+
+   - En la pestaña {guilabel}`Numeración` configurar:
+     - En la sección **Nivel** seleccionar 1.
+
+     - En la sección **Numeración**:
+       - Número: 1, 2, 3…
+
+     - En la sección **Separador**:
+       - Después: (colocar un punto seguido de un espacio)
+
+     - En la sección **Nivel** seleccionar 2.
+
+     - En la sección **Numeración**:
+       - Número: a, b, c…
+       - Mostrar sub-niveles: 2
+
+     - En la sección Separador:
+       - Después: (colocar una paréntesis seguido de un espacio)
+
+   - PULSE el botón {guilabel}`Aceptar`
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - Al configurar la **Numeración de títulos**, ¿Qué pasó con cada uno de los títulos en el documento?
+    - ¿Qué ventaja tiene la **numeración de títulos** por medio del uso de la herramienta: **Numeración de títulos**, en comparación con haber usado la herramienta **Listas ordenadas**?
+    :::
+
+5. Guarde los cambios en el documento hasta el momento.
+
+6. Es necesario adicionar una PORTADA al documento. Para esto, POSICIONE el **cursor** al *principio del documento* (antes de la palabra **1. Objetivo**)
+
+7. En la **barra de herramientas estándar**, PULSE el botón {guilabel}`Insertar salto de página`
+
+8. En la **barra de herramientas lateral**, en el menú de **estilos de página**, PULSE doble click sobre el estilo **Primera página** para aplicar el estilo de primera página.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image26.png
+        :width: 270
+        Estilo de página
+        ```
+    :::
+
+9. En la jerarquía de estilos de página (NO CONFUNDIR CON LA JERARQUÍA DE ESTILOS DE PÁRRAFO) editar el estilo **Primera página** con la siguiente configuración:
+
+   - En la pestaña {guilabel}`Página` configurar:
+     - En la sección **Márgenes**:
+       - Izquierda, derecha, arriba, abajo: 3,00cm
+
+     - En la sección **Configuración de disposición**:
+       - Desmarcar la opción: El fondo cubre los márgenes.
+
+   - En la pestaña {guilabel}`Área` configurar:
+     - En la sección de **Color**:
+       - Color: Amarillo
+
+   - En la pestaña {guilabel}`Bordes` configurar:
+     - En la sección **Disposición de líneas**:
+       - Preconfigs: Los cuatro bordes.
+
+     - En la sección **Línea**:
+       - Color: Naranja
+
+     - En la sección **Separación**:
+       - Izquierda, derecha, arriba, abajo: 2,00cm
+
+     - En la sección **Estilo de sombra**:
+       - Posición: Proyectar sombra a la parte inferior derecha
+
+   - PULSE el botón {guilabel}`Aceptar`
+
+10. En la página de PORTADA “con fondo amarillo” escribir el siguiente párrafo:
+
+    > Proyecto de Creación de un Escritorio Libre para Clientes Corporativos
+
+11. Para el párrafo recién escrito, en la **barra de herramientas lateral**, en el menú de estilos de párrafo, APLICAR el estilo de nombre: **Adjust**
+
+12. EDITAR el estilo **Adjust** de la siguiente manera:
+
+    - En la pestaña {guilabel}`Efectos tipográficos` configurar:
+      - En la sección **Color** de letra:
+        - Color de letra: Rojo
+        - Transparencia: 10%
+      - En la sección **Efectos**:
+        - Mayusculación: Versalitas
+        - Marcar la opción de sombra
+
+    - En la pestaña {guilabel}`Alineación` configurar:
+      - En la sección **Opciones**, marcar la opción de Derecha
+
+    - PULSE el botón {guilabel}`Aceptar`
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa las características de la portada recién creada.
+    :::
+
+
+13. GUARDE los cambios en el documento.
+
+14. Es necesario agregar una TABLA DE CONTENIDO al documento. Situar el cursor al principio del documento antes de la palabra **1. Objetivo**
+
+    :::{admonition} ¿Por qué es importante una **tabla de contenido**?
+    :class: hint
+    Una **tabla de contenido** es importante por las siguientes razones:
+    - Facilita la navegación: Permite a los lectores encontrar rápidamente la información que buscan, ahorrando tiempo y esfuerzo.
+    - Organiza la información: Muestra la estructura lógica del contenido, lo que ayuda a comprender la relación entre las diferentes secciones.
+    - Mejora la legibilidad: Hace que el documento sea más accesible y atractivo visualmente.
+    - Aumenta la profesionalidad: Demuestra que el autor se preocupa por la claridad y la organización
+    :::
+
+15. En el **menú superior** PULSE {guilabel}`Insertar` > {guilabel}`Sumario e Indice` > {guilabel}`Sumario, índice o bibliografía…`
+
+16. En la ventana de **Sumario, índice o bibliografía**, configurar lo siguiente:
+
+    - En la pestaña {guilabel}`Tipo` configurar:
+      - En la sección Tipo y Título:
+        - Título: CONTENIDO
+
+    - En la pestaña {guilabel}`Columnas` configurar:
+      - En la sección **Configuración**:
+        - Columnas: **2**
+
+      - En la sección **Anchura y espaciado**:
+        - Espaciado: **0,80 cm**
+
+      - En la sección **Línea de separación**:
+        - Estilo: **Sólido (línea continua)**
+        - Anchura: **1,50 pt**
+        - Color: **Rojo**
+
+    - PULSE el botón {guilabel}`Aceptar` 
+
+17. En la **barra de herramientas lateral**, en el **menú de estilos de párrafo**, identificar el estilo {guilabel}`Estilo de párrafo predeterminado` > {guilabel}`Indice` > {guilabel}`Sumario 1` y modificar para que la letra sea **negrita**.
+
+18. En la **barra de herramientas lateral**, en el **menú de estilos de párrafo**, identificar el estilo {guilabel}`Sumario 2` y modificar para que la letra sea *itálica*.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1014/image27.png
+        :width: 270
+        Estilos de párrafo
+        ```
+    :::
+
+19.  En la **barra de herramientas estándar**, PULSE el botón {guilabel}`Alternar previzualiación de impresión`
+
+20. PREVISUALIZAR a dos hojas. (Realice una captura de pantalla de la interfaz y guárdela en la carpeta de evidencias con el nombre: **G1014A08-proyecto_escritorio_libre.png**)
+
+21. Guarde los cambios hasta el momento.
+
+22. Es necesario agregar una hoja horizontal al documento. 
+
+    :::{admonition} ¿Por qué es importante saber insertar una hoja horizontal en un documento?
+    :class: hint
+    A veces es necesario agregar una hoja horizontal a un documento por varias razones:
+
+    - **Para acomodar contenido ancho:** Si hay una tabla, imagen o diagrama que es demasiado ancho para caber en una página vertical, una hoja horizontal proporciona el espacio necesario.
+
+    - **Mejorar la legibilidad:** En algunos casos, presentar información en formato horizontal puede hacer que sea más fácil de leer y comprender, especialmente para datos complejos.
+
+    - **Diseño y presentación:** El diseño horizontal puede ser una elección estética o estratégica para destacar ciertas secciones del documento o para crear un diseño más dinámico.
+
+    - **Impresión:** En algunos casos, la orientación horizontal puede ser necesaria para imprimir correctamente un documento, especialmente si contiene elementos que no se ajustan a la orientación vertical.
+    :::
+
+23. En la **barra de herramientas lateral**, en el menú de **estilos de página**, edite el estilo **HORIZONTAL** de la siguiente manera:
+
+    - En la pestaña {guilabel}`Generales` configurar:
+      - En la sección estilo:
+        - Estilo siguiente: Seleccionar estilo de página predeterminado.
+
+    - PULSE el botón {guilabel}`Aceptar`
+
+24. POSICIONE el cursor en el título: **4. Sistema Operativo**
+
+25. En el **menú superior**, PULSAR {guilabel}`Insertar` > {guilabel}`Más saltos` > {guilabel}`Salto Manual…`
+
+    - En la sección **Tipo** configurar:
+      - Marcar salto de página.
+      - Estilo de página: Seleccionar Horizontal.
+
+    - PULSE el botón {guilabel}`Aceptar`
+
+26. PREVISUALICE el documento a varias páginas (**matriz 3x3**).
+
+27. GUARDE los cambios y cierre el software LibreOffice Writer.
+
+---
+## A09: Presentación de evidencias (50%)
+{bdg-danger}`Transferencia`
+
+:::{admonition} ¿Cómo se evalúa?
+1. Los estudiantes presentan lo siguiente:
+
+    - Carpeta de evidencias con todos los archivos editados en la presente guía. (Los archivos deben estar abiertos).
+    - Cuaderno con las actividades desarrolladas.
+
+2. El docente realiza unas preguntas para verificación de conocimientos.
+
+3. El estudiante debe demostrar de forma práctica sus conocimientos en el uso de **LibreOffice Writer**.
+:::

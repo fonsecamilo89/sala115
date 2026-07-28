@@ -1,0 +1,610 @@
+# Guía 1021: PROGRAMACIÓN
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Programación
+        - **GRADO**: ONCE
+        - **PERIODO**: 01
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Introducción a la programación.
+- **Objetivo de aprendizaje**: Dar a conocer los conceptos introductorios a la programación.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con Tecnología e Informática.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Represento ideas sobre diseños, innovaciones tecnológicas o informáticas mediante el uso de registros, textos, diagramas, figuras... empleando para ello herramientas informáticas.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (0)
+- La presente guía no contiene recursos.
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"En esta guía didáctica, se exploraran los fundamentos esenciales en el desarrollo de software. El objetivo es obtener conocimientos básicos, para entender el cómo funciona el mundo digital y que a su vez impulsen la motivación hacia el aprendizaje de la programación".
+
+-- Camilo Fonseca
+:::
+
+---
+## ¿Qué es la programación?
+
+La **programación** se refiere específicamente a la **escritura de código** para crear funcionalidades dentro del software. Es una parte esencial del desarrollo, pero no abarca todo el proceso.
+
+En la programación, las actividades a desarrollar están orientadas a la creación de código fuente. Es decir, una serie de instrucciones que se le da al PC para realizar alguna acción. También se realiza depuración y optimización de código lo cual permite que solucionen muchos errores. Es muy importante que el programador entienda la responsabilidad de salvaguardar el código fuente construido, por tanto debe sacar tiempo para tareas de **copias de seguridad** y **control de versiones**.
+
+:::{list-table}
+* - ```{figure} ./recursos/G1021/image01.png
+    :width: 360
+    Código fuente
+    ```
+:::
+
+### ¿Qué son los datos?
+
+Los datos son valores en bruto, hechos o símbolos que por sí solos no tienen significado. Por ejemplo:
+
+- Números sueltos.
+- Caracteres sin contexto.
+- Valores sin procesar.
+
+### ¿Qué es la información?
+
+La información es el resultado de procesar, organizar e interpretar los datos de manera que tengan sentido y sean útiles. La información:
+
+- Tiene significado y contexto.
+- Es comprensible para el usuario.
+- Ayuda en la toma de decisiones.
+
+Por ejemplo:
+
+:::{table}
+Datos|Información
+-|-
+37,5|La temperatura del paciente es 37.5°C, lo cual indica fiebre
+4,5|La nota final del estudiante es 4.5
+:::
+
+La transformación de datos en información es una parte fundamental del procesamiento computacional, ya que permite convertir valores sin sentido en conocimiento útil y aplicable.
+
+### Valores cuantitativos y cualitativos
+
+[^1] Los valores cualitativos y cuantitativos son dos tipos diferentes de información:
+
+- **Valores cualitativos:** Describen cualidades o características que no se pueden medir numéricamente. Por ejemplo:
+    - Color de ojos
+    - Estado de ánimo
+    - Nivel de satisfacción (excelente, bueno, regular)
+- **Valores cuantitativos:** Son aquellos que se pueden medir y expresar en números. Por ejemplo:
+    - Edad: 12 años
+    - Peso: 99 Kg
+    - Temperatura: 40°C
+    - Calificaciones numéricas: 3,0
+
+La principal diferencia es que los valores cualitativos describen atributos o cualidades, mientras que los cuantitativos expresan cantidades medibles.
+
+### Jerarquía de datos
+
+[^2] La jerarquía de datos es la organización lógica de los datos en niveles sucesivos de complejidad, desde la unidad más pequeña hasta la más completa. En informática, se utiliza para entender cómo se estructura la información dentro de un sistema o base de datos.
+
+Los datos en la computadora se clasifican de MENOR a MAYOR en el siguiente ranking:
+
+1. **bit:** unidad lógica puede ser `1` o `0`.
+2. **BYTE:** Son 8 bits. Ejemplo: `10010010`
+3. **Caracteres:** Representaciones de Bytes. Ejemplo: **`A`**: `10001001`, **`B`:** `10001001`
+4. **Dato:** Se componen de representaciones de Caracteres. Ejemplo: `'CAMILO'`, `'ROJO'`, `'FRIO'`, `23` , `0.0999`, {guilabel}`True`,
+5. **Campo:** Nombre que se le coloca a un dato para identificarlo. Ejemplo: `nombre`, `color`, `clima`, `edad`, `temperatura`, `estado`
+6. **Registro:** Conjunto de campos que conforman un solo objeto. Ejemplo: El observador de un estudiante, la hoja técnica de una moto. 
+7. **Tablas:** Conjunto de registros que tienen la misma estructura y que pertenecen a una organización. Ejemplo: 
+
+    > "La **tabla** de los *estudiantes* de un colegio".
+
+8. **Bases de datos:** Conjunto de tablas relacionadas técnicamente y organizadas. Ejemplo:
+    > "La **base de datos** donde están relacionadas las tablas de los estudiantes junto con las tablas de las notas".
+
+---
+## Hardware
+
+[^2] El hardware es el conjunto de componentes de un sistema informático o computacional que se puede ver o tocar. Por ejemplo:
+
+- **Dispositivos de entrada:** Teclados, mouse, micrófonos.
+- **Dispositivos de salida:** Monitores, impresoras, bafles.
+- **Procesamiento:** CPU.
+- **Memoria:** memoria RAM, memoria CACHE.
+- **Almacenamiento:** Discos duros, memorias USB.
+
+### La memoria RAM (acceso rápido a los datos)
+
+La **memoria RAM** (*Random Access Memory o Memoria de Acceso Aleatorio*) es un componente fundamental del hardware que:
+
+- Almacena temporalmente los datos y programas que el computador está usando activamente.
+- Permite acceder rápidamente a la información mientras el equipo está encendido.
+- Se borra cuando se apaga el computador (memoria volátil).
+
+Características importantes de la RAM:
+
+- A mayor cantidad de RAM, más programas pueden ejecutarse simultáneamente.
+- Su velocidad afecta directamente el rendimiento del sistema.
+- Es diferente al almacenamiento permanente (disco duro) porque es temporal.
+
+### La CPU (procesa los datos)
+
+La **CPU (Unidad Central de Procesamiento)** es el "cerebro" del computador. Es el componente principal que se encarga de:
+
+- Procesar todas las instrucciones y cálculos del sistema
+- Coordinar el funcionamiento de los demás componentes
+- Ejecutar los programas y aplicaciones
+
+La **CPU** está compuesta principalmente por:
+
+- **Unidad de Control:** Coordina y dirige todas las operaciones
+- **Unidad Aritmético-Lógica (ALU):** Realiza cálculos matemáticos y operaciones lógicas
+- **Registros:** Pequeñas unidades de memoria de alta velocidad
+
+La velocidad de la **CPU** se mide en Hertz (Hz) y determina qué tan rápido puede procesar las instrucciones. A mayor velocidad, mejor rendimiento del sistema.
+
+---
+## Software
+
+**El software** es el conjunto de programas, bases de datos y diferentes tipos de archivos que controlan el hardware a través de instrucciones. El software debe tener requisitos y funcionalidades. Es la parte intangible de un sistema informático, en contraste con el hardware, que es la parte física. El software se puede clasificar en dos tipos:
+
+- **Software de sistema:** Proporciona funciones básicas, como sistemas operativos, gestión de discos, servicios, gestión de hardware y otras necesidades operativas.
+
+- **Software de aplicación:** Ayuda a los usuarios a realizar tareas. Por ejemplo, conjuntos de productividad ofimática, software de gestión de datos, reproductores multimedia y programas de seguridad. Las aplicaciones también se refieren a aplicaciones web y móviles como las que se utilizan para comprar en **Amazon**, socializar con **Facebook** o publicar fotos en **Instagram**.
+
+- **Software de programación:** Proporciona herramientas a los programadores, como editores de texto, compiladores, enlazadores, depuradores y otras herramientas para crear código.
+
+- **Software embebido:** Se utiliza para controlar máquinas y dispositivos que normalmente no se consideran ordenadores: redes de telecomunicaciones, automóviles, robots industriales, etc. Estos dispositivos, y su software pueden conectarse como parte del Internet de las cosas (IoT).
+
+### Software Vs Programa
+
+Un programa es un **conjunto de instrucciones** que le dicen a una **computadora** COMO HACER una tarea específica. Las instrucciones están escritas en código y son diseñadas por programadores con conocimiento en un lenguaje de programación.
+
+A diferencia de un **algoritmo**, las instrucciones de un programa **NO pueden ser escritas en lenguaje natural**.
+
+> “Aunque se usa el término **software** como sinónimo, la realidad es que un **programa** es solo una parte del **software**”.
+
+---
+## Desarrollo de software
+
+El **desarrollo de software** es un proceso que abarca la programación, pero también incluye planificación, diseño, pruebas y mantenimiento. Es un enfoque más holístico que busca crear software funcional y útil.
+
+En el **desarrollo de software** se realizan tareas como el análisis de requisitos que busca identificar que funciones debe tener dicho software. También se hacen tareas de diseño donde se trabaja con bocetos iniciales para tener una idea general de como estará compuesto y de que forma funcionará el software. Otra tarea muy común es la programación la cual consiste en crear código fuente para la construcción del programa. Finalmente se realizan pruebas, implementación, mantenimiento y documentación.
+
+:::{list-table}
+* - ```{figure} ./recursos/G1021/image02.png
+    :width: 360
+    
+    Equipo de desarrollo de software
+    ```
+:::
+
+### Programadores Vs Desarrolladores
+
+El desarrollo de software lo llevan a cabo principalmente programadores y desarrolladores de software. Estos roles interactúan y se superponen, y la dinámica entre ellos varía mucho entre los departamentos de desarrollo y las comunidades.
+
+- **Programadores:** Escriben código fuente para programar ordenadores que realicen tareas específicas, como fusionar bases de datos, procesar pedidos en línea, enrutar comunicaciones, realizar búsquedas o mostrar textos y gráficos. Los programadores suelen interpretar las instrucciones de los desarrolladores e ingenieros de software y utilizan lenguajes de programación como C++ o Java para llevarlas a cabo.
+
+- **Desarrollador de software:** Estan estrechamente involucrados en áreas específicas del proyecto, incluida la escritura de código. Al mismo tiempo, dirigen todo el ciclo de vida del desarrollo de software, lo que implica colaborar con los equipos funcionales para transformar los requisitos en características, gestionar los equipos y procesos de desarrollo, y realizar pruebas y mantenimiento del software.
+
+:::{admonition} ¿Cuál es la diferencia entre un programador y un desarrollador?
+:class: hint
+
+Construir un software es como construir una misma casa varias veces. El lograr que cada persona aporte significativamente en su campo de acción ya sea como desarrollador o como programador, hará que la casa se construya de forma óptima.
+
+- Un **desarrollador** diseña, construye y mantiene software mediante un proceso compuesto por etapas o fases(análisis de requisitos, diseño, construcción, pruebas, implementación y mantenimiento).
+
+- Un **programador** codifica programas que hacen parte del software.
+:::
+
+### Proceso de desarrollo de software
+
+Los pasos del proceso de desarrollo de software se pueden agrupar en las fases del ciclo de vida, pero la importancia del ciclo de vida es que se recicla para permitir una mejora continua. Por ejemplo, los problemas de los usuarios que surgen en la fase de mantenimiento y soporte pueden convertirse en requisitos al inicio del siguiente ciclo.
+
+- **FASE 01 (Análisis de requisitos)**
+    
+    En esta fase se comprende y documenta lo que necesitan los usuarios y otras partes interesadas. Se analiza la estructura tecnológica donde funcionará el software.
+    
+- **FASE 02 (Diseño)**
+    
+    Se diseña en torno a soluciones a los problemas presentados por los requisitos, lo que a menudo implica modelos de procesos y guiones gráficos.
+    Se crean los modelos con una herramienta de modelado que utilice un lenguaje de modelado como UML para llevar a cabo la validación temprana, la creación de prototipos y la simulación del diseño.
+
+- **FASE 03 (Construcción)**
+
+    En la construcción se usa un lenguaje de programación adecuado al aplicativo que se quiere construir. Implica la revisión por pares y en equipo para eliminar problemas de forma temprana y producir software de calidad más rápido.
+
+    
+- **FASE 04 (Pruebas)**
+    
+    Se realizan dos tipos de pruebas:
+    
+    - Pruebas con escenarios planificados de antemano como parte del diseño y la codificación del software. Por ejemplo identificación de errores de código, de lógica de negocio o de seguridad.
+    - Pruebas de rendimiento para simular niveles de carga de uso en la aplicación. Por ejemplo Identificar en que momento el aplicativo puede presentar fallos cuando varios usuarios lo usen al mismo tiempo.
+
+- **FASE 05 (Implementación)**
+    
+    El software se instala o pone en producción para capacitar a los usuarios y lograr que se familiaricen con las funciones que este contenga. Se resuelven dudas de los usuarios. Si hay una versión anterior del software, la información alojada en el software anterior debe ser migrada el software nuevo desde aplicaciones o fuentes de datos existentes, si es necesario.
+
+- **FASE 06 (Mantenimiento y soporte)**
+    
+    Para mantener la calidad y la entrega a lo largo del ciclo de vida de la aplicación, se deben tener fechas de seguimiento y soporte. Los usuarios nuevos deben ser capacitados. El software en lo posible debe ser escalable es decir, en la medida que requiera nuevas funcionalidades, estas se deben ir implementando para que el software no quede desactualizado en la medida que pase el tiempo.
+
+### Tecnologías usadas en el desarrollo de software
+
+Hoy en día son bastantes las tecnologías que  como herramientas que nos ayudan a construir software. Estas se pueden clasificar de la siguiente forma:
+
+:::{admonition} Sistemas operativos
+
+Un sistema operativo (OS) es un software esencial que actúa como intermediario entre el usuario y el hardware de la computadora. Su función principal es gestionar los recursos del sistema y proporcionar una interfaz para que los usuarios y las aplicaciones interactúen con el hardware. Por ejemplo:
+
+- **LINUX:** Sistema operativo libre.
+- **Windows:** Sistema operativo privativo.
+- **MACOS:** Sistema operativo privativo para equipos de computo de APPLE.
+:::
+
+:::{admonition} Bases de datos
+
+Una base de datos (DB) es un sistema organizado que permite almacenar, gestionar y recuperar información de manera eficiente. Una base de datos es como un archivo digital muy bien estructurado donde se guarda información que se puede buscar y manipular fácilmente. Por ejemplo:
+
+- **MongoDB:** Almacena los datos en documentos.
+- **MySQL:** Utiliza tablas para almacenar datos. La empresa propietaria es ORACLE.
+- **SQL_Server:** Utiliza tablas para almacenar datos. La empresa propietaria es MICROSOFT.
+:::
+
+
+:::{admonition} Servidor web
+
+Un servidor web permite alojar páginas web y ejecutar aplicaciones web. Ejemplo:
+
+- **APACHE:** Es un servidor web tradicional que se basa en un modelo de procesamiento de solicitudes por separado. Cada solicitud genera un hilo diferente.
+
+:::
+
+:::{admonition} Entornos de ejecución
+
+Un entorno de ejecución es un software que contiene todo lo necesario para que otro software se ejecute correctamente. Esto incluye desde un intermediario con el sistema operativo hasta librerías y demás recursos necesarios como la documentación. Por ejemplo:
+
+- **NODE:** También conocido como NODEJS, es un **entorno de ejecución** que permite ejecutar código JavaScript en el lado del servidor. A diferencia de JavaScript tradicional, que se ejecuta en el navegador, Node.js permite que los desarrolladores utilicen JavaScript para crear aplicaciones del lado del servidor, lo que lo hace muy versátil y poderoso.
+
+:::
+
+:::{admonition} Framework
+
+Un framework es un conjunto de librerías, documentación que ayudan a desarrollar o ejecutar un software en específico. Por ejemplo:
+
+- **.NET:** Creado por Microsoft, permite crear aplicaciones de software más fácil y eficiente.
+- **EXPRESS:** Es un **framework de aplicación web** para Node.js que facilita la creación de aplicaciones que se ejecutan en el servidor web.
+- **ANGULAR:** Es un **framework de aplicación web** para Node.js que facilita la creación de aplicaciones que se ejecutan en el navegador web.
+
+:::
+
+:::{admonition} IDE
+
+Un IDE son las siglas para (**entorno de desarrollo de software)**. Es una aplicación que proporciona un conjunto completo de herramientas para facilitar el desarrollo de software. Un IDE combina diferentes herramientas y funciones en un solo lugar para ayudar a los programadores a escribir, depurar y mantener su código de manera más eficiente. Por ejemplo:
+
+- **VISUAL STUDIO CODE:** IDE de Microsoft para programar con cualquier lenguaje de programación.
+- **THONNY:** IDE para programar con el lenguaje de programación PYTHON.
+
+:::
+
+:::{admonition} Desarrollo web
+Se conoce como desarrollo web al proceso de crear y mantener un sitio web que sea funcional en internet, a través de diferentes lenguajes de programación, según el modelo y la parte de la página que corresponda. Cada sitio tiene una URL única que lo distingue de los demás en la red informática mundial.
+
+Un sitio web puede clasificarse de diferentes formas. Para cuestiones de desarrollo web principalmente se divide en dos partes:
+
+- **Front-end:** Es la parte que interactúa con el usuario, tanto en imagen como en función. Por ello está íntimamente relacionada con la experiencia del usuario (UX) y la interfaz de usuario (IU).
+
+- **Back-end:** Se refiere a la parte que está en contacto directo con el servidor; es donde se aplica el código de programación para crear la estructura. Permanece en un segundo plano a cargo de la accesibilidad, actualización, bases de datos y cambios del sitio.
+
+Los desarrolladores web se enfocan en la codificación y programación del sitio web utilizando lenguajes como HTML, CSS, JavaScript y otros. Su objetivo es que el sitio responda correctamente a las interacciones que realice el usuario en él y concretar un stack tecnológico adecuado. Algunos ejemplos de STACK son:
+
+- LAMP: Linux, Apache, MySQL, PHP/Python/Perl
+- MEAN: MongoDB, Express.js, Angular, Node.js
+- .NET stack: .NET, C#, SQL Server y Visual Studio
+- DJANGO: Python
+:::
+
+:::{admonition} Lenguajes de programación
+
+Un **lenguaje de programación** es un conjunto de instrucciones que le damos a una computadora para que realice tareas específicas. Es como un idioma que usamos para comunicarnos con las máquinas. Estas instrucciones se escriben siguiendo reglas gramaticales y de sintaxis definidas, y el objetivo es crear programas que resuelvan problemas o hagan cosas útiles.
+
+A continuación se muestran los 6 lenguajes de programación más usados en el desarrollo web. HTML, CSS y JavaScript suelen pertenecer al Front-end mientras que PHP, JAVA y Python suelen pertenecer al Back-end.
+
+- **[HTML](https://developer.mozilla.org/es/docs/Web/HTML)**: Es uno de los lenguajes de marcado más importantes que se usa en el Front-end de un sitio. Su escritura ayuda a dar estructura y organización al contenido de una página web, a través de una acomodación tipo árbol. Se configura por medio de etiquetas o hipertextos que permiten que los sitios web se encuentren en los motores de búsqueda.
+
+- **[CSS](https://developer.mozilla.org/es/docs/Web/CSS)**: El nombre extendido de CSS es Cascading Style Sheets, en español significa hojas de estilo en cascada. Este es un lenguaje que trabaja en perfecta armonía con el HTML en el Front-end. Para los programadores web es una herramienta muy útil para especificar el aspecto y la posición de los elementos en el sitio.
+
+- **[Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)**: Uno de los lenguajes más apreciados es JavaScript, ya que con él es muy fácil crear sitios interactivos y dinámicos (como animaciones, formularios, juegos, galerías, botones, etc.), los cuales son muy demandados hoy en día. Su código también se refleja en el Front-end. Se basa en objetos que se pueden acomodar y reutilizar de forma sencilla.
+
+- **[PHP](https://www.php.net)**: En el lado del Back-end se tiene el lenguaje PHP, uno de los pioneros de la transición de sitios fijos a sitios interactivos. Es uno de los lenguajes más utilizados por ser de código abierto, con casi 30 años de trayectoria; también es considerado uno de los más extensos que hay. Puede ser incrustado en el HTML sin ningún problema.
+
+- **[Java](https://www.java.com/es)**: Una de las grandes ventajas es que se escribe una sola vez y se puede ejecutar en distintos dispositivos y sistemas operativos, gracias a su máquina virtual (JVM). Corresponde al Back-end de una aplicación web. Tiene un código eficiente, memoria automática y detección de errores oportuna.
+
+- **[Python](https://www.python.org)**: Es uno de los lenguajes de desarrollo web más innovadores que hay hasta el momento, debido a su característica multiparadigma, que es capaz de adaptarse a varios estilos de programación y crear aplicaciones de cualquier tipo. Es de código abierto y su escritura es muy parecida al lenguaje humano. Forma parte del Back-end de un sitio.
+
+:::
+
+:::{admonition} Software de aplicación
+
+Dentro del software de aplicación se encuentran varios ejemplos relacionados con áreas específicas como diseño, ofimática, gráfico, financiero, musical, etc.
+
+- **[Inkscape](https://inkscape.org/)**: Es un editor de gráficos vectoriales de código abierto, gratuito y disponible para múltiples sistemas operativos. Permite crear y editar imágenes vectoriales de alta calidad, ideal para ilustraciones, logotipos, diagramas y más.
+
+- **[Gimp](https://www.gimp.org/)**: Es un editor de imágenes de código abierto, gratuito y multiplataforma. Ofrece una amplia gama de herramientas para manipular, retocar y crear imágenes rasterizadas, similar a Photoshop pero sin costo.
+
+- **[Blender](https://www.blender.org/)**: Es un software de modelado 3D, animación y renderizado gratuito y de código abierto. Es una herramienta potente y versátil utilizada para crear gráficos 3D, animaciones, juegos y más.
+
+- **[Audacity](https://www.audacityteam.org)**: Audacity es el software gratuito más popular del mundo para grabar y editar audio. Así que, si esta produciendo música, un podcast o simplemente experimentando con audio, Audacity es para usted.
+
+- **[Godot](https://godotengine.org/)**: Es un motor de juego de código abierto, gratuito y multiplataforma. Proporciona un entorno completo para desarrollar videojuegos 2D y 3D, con un editor visual intuitivo y una gran comunidad de apoyo.
+:::
+
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:
+
+    - ¿En qué se relacionan el mundo digital y el software?
+
+---
+## A01: Taller (10%)
+{bdg-info}`Estructuración`
+
+1. Responda las siguientes preguntas en su cuaderno:
+
+    - ¿Que tiene que ver la **programación** con el **desarrollo de software**?
+    - ¿Qué es **código fuente**?
+    - ¿Qué son los datos?
+    - ¿Qué es información?
+    - ¿Cuál es la diferencia entre un valor cualitativo y un valor cuantitativo?
+    - ¿Qué es una jerarquía de datos?
+
+1.  En su cuaderno describa cada uno de los componentes de la jerarquía de datos y de un ejemplo de cada uno.
+
+2. Responda las siguientes preguntas en su cuaderno:
+    - ¿Qué es tener sentido?
+    - ¿Por qué es importante tener "sentido" para diferenciar entre datos e información?
+
+3. Dibuje una tabla en su cuaderno y en la primera columna escriba 10 ejemplos de datos. En la segunda columna convierta estos datos en información. En la tercera columna indique si la información es un valor cualitativo o cuantitativo.
+
+    :::{list-table} Ejemplo
+    * - ```{list-table}
+        :header-rows: 1
+        * - Datos
+          - Información
+          - Valor
+        * - Rojo
+          - "Semáforo en estado rojo, carros no pueden pasar"
+          - cualitativo
+        * - 16
+          - "La edad del estudiante es 16 años, por tanto es menor de edad"
+          - cuantitativo
+        ```
+    :::
+
+4. Dibuje los siguientes círculos, ingrese ejemplos de datos según su jerarquía (ver la sección de **jerarquía de datos**).
+
+  :::{list-table}
+  * - ```{figure} ./recursos/G1021/image05.png
+      :width: 400
+      **Diagrama:** Jerarquía de datos
+      ```
+  :::
+
+6. En su cuaderno responda:
+    - ¿Qué es hardware?
+    - ¿Cómo se puede clasificar el hardware de un sistema computacional?
+
+7. En su cuaderno mencione 5 ejemplos de hardware y luego clasificarlos.
+
+8. En su cuaderno responda:
+    - ¿Qué es la memoria RAM?
+    - ¿Cuales son las características de la memoria RAM?
+
+9. En INTERNET consulte 3 fabricantes de memorias RAM y realizar una descripción en su cuaderno. Tenga en cuenta lo siguiente:
+    - Mencionar la nacionalidad del fabricante.
+    - Mencionar los clientes del fabricante.
+
+10. En su cuaderno responda:
+    - ¿Qué es la CPU?
+    - ¿Qué son los Hertz(Hz)?
+    - La CPU tiene 3 componentes. En su cuaderno complete el siguiente gráfico:
+
+      :::{list-table}
+      * - ```{figure} ./recursos/G1021/image06.png
+          :width: 400
+          **Diagrama:** Componentes CPU
+          ```
+      :::
+
+11. Teniendo en cuenta la siguiente imagen, responda en su cuaderno la siguiente pregunta:
+    - ¿En que se diferencian los dispositivos de entrada con los dispositivos de salida?
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1021/image07.png
+        :width: 360
+        **Diagrama:** CPU
+        ```
+    :::
+
+12. Respecto a la memoria **RAM**, en las siguientes frases diga si es falso o verdadero y explique el por qué:
+
+    - La memoria **RAM** almacena infinitamente los datos y programas ___
+    - Para acceder velozmente a la información en el equipo usamos la memoria **RAM** ___
+    - La memoria **RAM** no es volátil ___
+    - La velocidad de trabajo de un computador, depende exclusivamente de la velocidad de la memoria **RAM** ___
+
+13. En media hoja de cuaderno, explique por que la CPU y la memoria RAM son dispositivos indispensables para dar instrucciones.
+
+14. Indique los diferentes **tipos de software** y escriba 5 ejemplos por cada tipo.
+
+15. Realice una descripción en su cuaderno sobre el **desarrollo de software**.
+
+16. Copie la siguiente tabla en su cuaderno y escriba las tareas o actividades que realiza un programador y un desarrollador de software:
+
+:::{table}
+| | Desarrollador de software | Programador |
+| --- | --- | --- |
+|1.  | | |
+|2.  | | |
+|3.  | | |
+|4.  | | |
+|5.  | | |
+|6.  | | |
+:::
+
+17. COPIE la siguiente tabla en su cuaderno y escriba el nombre de las fases y las actividades que se realizan en cada fase durante el proceso de **desarrollo de software**:
+
+:::{table}
+| | Nombre | Actividades |
+| --- | --- | --- |
+|FASE 1.  | | |
+|FASE 2.  | | |
+|FASE 3.  | | |
+|FASE 4.  | | |
+|FASE 5.  | | |
+|FASE 6.  | | |
+:::
+
+18. COPIE la siguiente **sopa de letras** en su cuaderno y encuentre 14 términos de tecnologías que se usan para desarrollar software. Posteriormente escriba su significado.
+
+:::{list-table}
+* - ```{figure} ./recursos/G1021/image03.png
+    :width: 550
+    ```
+:::
+
+Ejemplo:
+
+> **SQL_SERVER:** Sistema de gestión de base de datos relacional de Microsoft.
+
+19. En su cuaderno dibuje la siguiente *nube de términos* de los **STACK tecnológicos del desarrollo web**, una el STACK con sus componentes por medio de líneas.
+
+:::{list-table}
+* - ```{figure} ./recursos/G1021/image04.png
+    :width: 500
+    ```
+:::
+
+20. Para los siguientes **softwares de aplicación**, en su cuaderno realice una descripción de cada uno y dibuje su logotipo (buscar en INTERNET). Al mismo tiempo responda la siguiente pregunta: *¿el logotipo tiene que ver con el software?*
+
+    - Godot
+    - Audacity
+    - Blender
+    - Gimp
+    - Inkscape
+  
+---
+## A02: Análisis de casos (25%)
+{bdg-warning}`Actividad práctica`
+
+1. Para los siguientes casos, en su cuaderno elegir el lenguaje de programación más apropiado. Especificar el por qué.
+
+    > **CASO 01**: Un programador está trabajando en el Back-end de una plataforma educativa muy grande. Necesita un lenguaje pionero, de código abierto, con casi tres décadas de trayectoria y que sea sumamente extenso para gestionar los datos. Además, requiere que este código se pueda incrustar directamente dentro del código HTML sin generar conflictos.
+    > - ¿Qué lenguaje del Back-end cumple con tener esta larga trayectoria y la capacidad de incrustarse en HTML?
+
+    > **CASO 02**: Diego ha creado un sitio web para su club de videojuegos. La información ya está en la pantalla, pero se ve muy simple: el fondo es completamente blanco, los textos están desalineados y las imágenes se ven desordenadas. Él quiere cambiar el aspecto del sitio, definir los colores de los fondos, elegir los tipos de letra y especificar la posición exacta de cada elemento en la pantalla para que se vea genial.
+    > - ¿Qué lenguaje trabaja en armonía con la estructura existente y es la herramienta perfecta para cambiar el aspecto visual y la posición de los elementos?
+
+    > **CASO 03**: Valentina está diseñando una página web y quiere que deje de ser un sitio fijo y aburrido. Su objetivo es que, cuando los usuarios hagan clic en un botón, aparezca una animación, las galerías de fotos se muevan solas y los formularios validen los datos del usuario de forma inmediata con ventanas interactivas. Busque un lenguaje del lado del Front-end que se base en objetos reutilizables.
+    > - ¿Qué lenguaje es el más apreciado para crear este tipo de sitios interactivos, dinámicos y muy demandados hoy en día?
+
+    > **CASO 04**: El equipo de robótica del instituto quiere crear una aplicación web innovadora en el Back-end. Como el equipo está aprendiendo, buscan un lenguaje de código abierto cuya escritura sea muy parecida al lenguaje humano (fácil de leer y escribir). Además, como el proyecto cambiará constantemente, necesitan que sea "multi-paradigma", es decir, que se adapte a varios estilos de programación.
+    > - ¿Cuál es este innovador lenguaje multi-paradigma que facilita el desarrollo gracias a su similitud con el lenguaje humano?
+
+    > **CASO 05**: Sofia quiere crear una página web para la cafetería del colegio. Ella ya tiene todo el texto, los precios de los productos y las imágenes que quiere mostrar, pero necesita organizar esta información de forma ordenada (por ejemplo, los títulos arriba, el menú en el centro y los datos de contacto al final) para que los motores de búsqueda como Google puedan encontrar la página fácilmente.
+    > - ¿Qué lenguaje debe utilizar Sofia para dar esta estructura tipo árbol y organizar el contenido de su sitio web mediante etiquetas?
+
+    > **CASO 06**: Carlos está desarrollando el sistema de inscripciones del colegio (una aplicación web en el Back-end). El director le ha pedido que el sistema funcione de manera eficiente tanto en las computadoras de la sala de informática como en servidores con otros sistemas operativos. Carlos necesita un lenguaje que se escriba una sola vez y corra en cualquier lado gracias a una máquina virtual, además de que detecte errores a tiempo y maneje la memoria automáticamente.
+    > - ¿Qué lenguaje del Back-end es famoso por usar una máquina virtual para ejecutarse en distintos dispositivos?
+
+---
+## A03: Examen escrito (60%)
+{bdg-danger}`Transferencia`
+
+```{csv-table}
+:delim: ;
+**TIEMPO** ; 29 minutos
+**PREGUNTAS** ; 10
+**OBJETIVO** ; Comprobar conocimientos adquiridos.
+**INSTRUCCIONES** ; Cuadernos y celulares guardados. Solo se permite hoja, lápiz y borrador.
+```
+
+:::{admonition} Posibles preguntas
+
+1. ¿Qué es la **programación** y cuál es el objetivo principal de escribir código fuente?
+
+2. Además de escribir código, ¿qué otras dos tareas importantes debe realizar un **programador** para mantener la calidad del software?
+
+3. ¿Cómo se define el **software** en contraste con el **hardware** de un sistema informático?
+
+4. Explique la diferencia entre el "**software de sistema**" y el "**software de aplicación**", dando un ejemplo de cada uno.
+
+5. ¿Qué es el "**software embebido**" y en qué tipo de dispositivos suele encontrarse?
+
+6. ¿Qué se entiende por "**desarrollo de software**" y por qué se considera un proceso más holístico que la simple programación? (holístico es un enfoque donde todos los componentes se ven integrados y hacen parte de un mismo ente).
+
+7. ¿Cuáles son las diferencias fundamentales entre el rol de un **programador** y el de un **desarrollador de software**?
+
+8. Describa brevemente la "**FASE 01: Análisis de requisitos**" y por qué es fundamental para el éxito del proyecto.
+
+9. En la **fase de diseño**, ¿qué herramientas se suelen utilizar para la validación temprana y creación de prototipos?
+
+10. ¿Por qué es importante realizar pruebas de rendimiento durante el proceso de **desarrollo de software**?
+
+11. ¿En qué consiste la "**FASE 05: Implementación**" y qué ocurre si ya existe una versión previa del software?
+
+12. Explique por qué el **mantenimiento** y **soporte** son cruciales para evitar que el software quede desactualizado.
+
+13. ¿Qué es un **sistema operativo** y cómo actúa como intermediario entre el usuario y el hardware?
+
+14. Explique la función de una **base de datos** y mencione dos ejemplos de sistemas que utilizan **tablas** para almacenar información.
+
+15. ¿Qué diferencia principal existe entre un entorno de ejecución (como **Node.js**) y un **framework de aplicación web**?
+
+16. ¿Qué es un **IDE** (Entorno de Desarrollo Integrado) y qué ventajas ofrece para el trabajo de un programador?
+
+17. Explique la diferencia entre las responsabilidades del "**Front-end**" y el "**Back-end**" en el desarrollo web.
+
+18. ¿Por qué se dice que el lenguaje **HTML** ayuda a dar una "**acomodación tipo árbol**" al contenido de un sitio web?
+
+19. ¿Cuáles son las características distintivas que hacen que el lenguaje **Python** sea considerado innovador para el **desarrollo web**?
+
+20. ¿Qué aporta el lenguaje **JavaScript** a un sitio web en comparación con el uso exclusivo de **HTML** y **CSS**?
+:::
+
+[^1]: Trejos Buriticá, O. I. (2017). Lógica de programación. Ediciones de la U.
+[^2]: Deitel, P. J., & Deitel, H. (2014). C++: cómo programar (A. V. Romero Elizondo, Trans.). Pearson Educación.

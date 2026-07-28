@@ -1,0 +1,11 @@
+# Lógica computacional 8
+
+:::{toctree}
+:maxdepth: 2
+
+G821.md
+G822.md
+G823.md
+G824.md
+G829.md
+:::
