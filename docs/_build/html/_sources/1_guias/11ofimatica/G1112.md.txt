@@ -95,18 +95,237 @@ Para enriquecer la **información numérica**, LibreOffice Calc facilita la inte
     - ¿Cómo se **podría aplicar las herramientas de formato** para imágenes y objetos en un proyecto específico para mejorar la comprensión visual de los datos?
 
 ---
-## A02: Revisión y auto-corrección {kbd}`000` (10%)
+## A02: Revisión y auto-corrección {kbd}`101` (5%)
 {bdg-warning}`Actividad práctica`
 
 1. DESCARGUE el siguiente archivo y GUÁRDELO en la carpeta de evidencias del periodo actual:
 
-    - ok
+   - G1112A02-herramientas-revision.ods [{bdg-primary}`Descargar`](./recursos/G1112/archivos/G1112A02-herramientas-revision.ods)
+
+2. ABRA el archivo **G1112A02-herramientas-revision.ods** y en la hoja: **Corrección ortográfica automática**, seleccione cada una de las palabras con mala ortografía y PULSAR el **botón derecho del mouse** para generar el **menú contextual**. De dicho menú, seleccionar la palabra con la **ortografía correcta**.
+
+3. En la hoja: **Corrección ortográfica**, vuelva a corregir las palabras con mala ortografía pero esta vez, usando la herramienta **Ortografía** ubicada en la **barra de herramientas estándar**.
+   
+    :::{list-table}
+    * - ```{figure} ./recursos/G1112/image01.png
+        :width: 543
+        Ventana corrección ortográfica
+        ``` 
+    :::
+    
+    - En la opción **Idioma de texto**, verificar que el idioma seleccionado sea: **Español (Colombia)** 
+    
+    - Seleccionar las palabra correcta en la sección de **Sugerencias** y PULSAR el botón {guilabel}`Corregir`
+
+4.  En la hoja: **División silábica**, SELECCIONAR la celda: **B3** y en su **menú contextual** SELECCIONAR la opción: **Formato de celdas**. Luego en la pestaña {guilabel}`Alineación` configurar lo siguiente:
+
+    - Propiedades
+      - MARCAR LA OPCIÓN: **Silabación activa**
+    
+    - PULSAR el botón {guilabel}`Aceptar`
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa que acabo de pasar con el texto de la celda **B3**.
+    :::
+
+5.  En la celda: **F3**, realice el mismo procedimiento para activar la silabación activa.
+
+6. En la hoja: **Sinónimos**, IDENTIFIQUE la celda: **B2**. ILUMINE la palabra **Catástrofes** y genere un **menú contextual** sobre la misma. De dicho menú contextual, SELECCIONAR la opción: **sinónimos** y de la lista ESCOGER: **Desastre**.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1112/image02.png
+        :width: 189
+        Ventana corrección ortográfica
+        ``` 
+    :::
+
+7. En la hoja: **Corrección automática**, DESARROLLAR la *instrucción* del rango de celdas: **B2:C3** la cual dice:
+
+    > En la celda situada a la derecha escriba lo que ve en la de la izquierda y PULSAR la tecla {kbd}`ENTER`
+
+    :::{admonition} Advertencia
+    :class: warning
+    SI DECIDE SIMPLEMENTE COPIAR y PEGAR, no funcionará correctamente.
+    :::
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    DESCRIBA que pasa **con cada una de las celdas** a medida que escribe el texto y **TRANSCRIBA dicho texto**.
+    :::
+
+8. GUARDE los cambios y CIERRE el software LibreOffice Calc.
 
 ---
-## A03: Paginación e impresión {kbd}`000` (10%)
+## A03: Paginación e impresión {kbd}`303` (10%)
 {bdg-warning}`Actividad práctica`
 
-1. ok
+1. Descargue los siguientes archivos y guárdelos en su carpeta de evidencias:
+
+   - G1112A03-animales-raza-1.ods [{bdg-primary}`Descargar`](./recursos/G1112/archivos/G1112A03-animales-raza-1.ods)
+   - G1112A03-animales-raza-2.ods [{bdg-primary}`Descargar`](./recursos/G1112/archivos/G1112A03-animales-raza-2.ods)
+   - G1112A03-animales-raza-3.ods [{bdg-primary}`Descargar`](./recursos/G1112/archivos/G1112A03-animales-raza-3.ods)
+   - logo-equino.png [{bdg-primary}`Descargar`](./recursos/G1112/archivos/logo-equino.png)
+
+2. ABRA el archivo: **G1112A03-animales-raza-1.ods**
+   
+    :::{admonition} En su cuaderno...
+    :class: note
+    Observer el contenido del archivo **G1112A03-animales-raza-1.ods** y en su cuaderno describa de que trata.
+    :::
+
+3. En la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Alternar previsualización de impresión`
+
+4. Es necesario modificar el **estilo por defecto**. El estilo por defecto tiene el nombre: **Predeterminado**. En la **barra de estado**, PULSE CLIC en el nombre **Predeterminado**.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1112/image03.png
+        :width: 456
+        Estilo predeterminado
+        ```
+    :::
+
+5. Se abrirá la ventana: **Estilo de página: Predeterminado**. Configure las siguientes opciones:
+
+    - Pestaña {guilabel}`Página`:
+      - Formato de papel:
+        - Orientación: **Horizontal**
+      - Márgenes:
+        - Izquierda: **2,00 cm**
+        - Derecha: **2,00 cm**
+        - Arriba: **3,00 cm**
+        - Abajo: **3,00 cm**
+      - Configuración de disposición:
+        - Alineación de la tabla: **Vertical**
+    - Pulsar el botón {guilabel}`Aceptar`
+
+6. VERIFIQUE que la hoja de cálculo tenga la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1112/image04.png
+        :width: 654
+        Hoja horizontal
+        ```
+    :::
+
+7. GUARDE los cambios y CIERRE el software LibreOffice Calc.
+
+8. ABRA el archivo **G1112A03-animales-raza-2.ods**
+
+9. En la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Alternar previsualización de impresión`
+
+10. Es necesario configurar una cabecera, para esto abra la ventana: **Estilo de página: Predeterminado** y configure las siguientes opciones:
+
+    - En la pestaña {guilabel}`cabecera`:
+      - Cabecera:
+        - Altura: **3,20 cm**
+        - PULSAR el botón {guilabel}`Más…` para abrir la venta: **Bordes y fondo**
+          - Bordes
+            - Disposición de líneas
+              - Definido por el usuario: **Borde inferior**
+            - Línea:
+              - Estilo: **Sólido**
+              - Color: **Gris oscuro 2**
+              - Grosor: **Muy fino (0,5 pt)**
+          - Fondo
+            - Imagen
+              - Imagen
+                - Añadir/importar: (seleccionar la imagen **logo-equino.png**)
+              - Opciones
+                - Estilo: **Posición y tamaño personalizados**
+                - Posición: **Arriba a la izquierda**
+          - Pulsar {kbd}`Aceptar`
+        - PULSAR el botón {guilabel}`Editar…` para abrir la ventana: Cabeceras (Estilo de página: Predeterminado)
+          - Cabecera (primera)
+            - Área derecha: Escribir el texto: **Listado de animales** Y SELECCIONARLO!!!
+            - Cabecera personalizada: PULSAR el botón: {guilabel}`Atributos de texto` para abrir la ventana: Atributos de texto
+              - Tipo de letra
+                - Estilo: **Negrita**
+                - Tamaño: **20 pt**
+              - Efectos tipográficos
+                - Color de letra
+                  - Color de letra: **Rojo**
+              - Pulsar el botón {guilabel}`Aceptar`
+      - En la pestaña {guilabel}`Pie de página`:
+        - Pie:
+          - PULSAR el botón {guilabel}`Más…` para abrir la venta: **Bordes y fondo**
+            - Bordes
+              - Disposición de líneas
+                - Definido por el usuario: **Borde superior**
+              - Línea
+                - Estilo: **Sólido**
+                - Color: **Gris oscuro 2**
+                - Grosor: **Muy fino (0,5 pt)**
+              - Separación:
+                - Izquierda, Derecha, Superior, Inferior: **0,30 cm**
+              - Pulsar el botón {guilabel}`Aceptar`
+          - PULSAR el botón {guilabel}`Editar…` para abrir la ventana: Pie (Estilo de página: Predeterminado)
+            - Área izquierda: **Colocar el cursor en el área izquierda.**
+            - Pie de página personalizado: Seleccionar el ícono de título y luego seleccionar: **Ruta/Nombre del archivo**
+                :::{list-table}
+                * - ```{figure} ./recursos/G1112/image05.png
+                    :width: 210
+                    ```
+                ::: 
+            - Área central: **Eliminar el número de página**
+            - Área derecha: **Colocar el cursor en el área derecha**
+            - Pie de página personalizado: PULSAR el icono de **Fecha** y luego PULSAR el icono de **Hora**
+                :::{list-table}
+                * - ```{figure} ./recursos/G1112/image06.png
+                    :width: 156
+                    ```
+                :::
+            - PULSAR el botón {guilabel}`ACEPTAR`
+          - PULSAR el botón {guilabel}`ACEPTAR`
+        - PULSAR el botón {guilabel}`ACEPTAR`
+
+11. VERIFIQUE que la hoja de cálculo tenga la siguiente apariencia:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1112/image07.png
+        :width: 543
+        Aspecto final
+        ```
+    :::
+
+12. Guarde los cambios y cierre el software LibreOffice Calc.
+
+13. ABRA el archivo **G1112A03-animales-raza-3.ods**
+
+14. En la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Alternar previsualización de impresión`.
+
+15. Es necesario configurar los **bordes** y **fondo**, para esto abra la **ventana: Estilo de página: Predeterminado** y configure las siguientes opciones:
+
+    - En la pestaña {guilabel}`Bordes`
+      - Disposición de líneas
+        - Preconfigs: **Bordes superior e inferior solo**
+      - Línea
+        - Estilo: **Sólido**
+        - Color: **Gris oscuro 1**
+      - Separación
+        - Izquierda, derecha, superior, inferior: **0,20 cm**
+    - En la pestaña {guilabel}`Fondo`
+      - Color
+        - Colores: **Gris claro 4**
+    - Pulsar el botón {guilabel}`Aceptar`
+
+16. En la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Alternar previsualización de impresión` para volver a la vista normal de trabajo.
+
+17. En la barra del **menú superior**, PULSAR {guilabel}`ver` > {guilabel}`salto de página`
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa que acaba de pasar con la hoja del archivo.
+    :::
+
+18. SELECCIONE el rango de celdas: **A23:I23** y arrastre hasta la fila **46**. De nuevo PULSAR el botón de {guilabel}`Alternar previsualización de impresión`
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa que acaba de pasar con el número de hojas.
+    :::
+
+19. GUARDE los cambios y CIERRE el software LibreOffice Calc.
 
 ---
 ## A04: Formato de imágenes {kbd}`000` (10%)
@@ -115,7 +334,7 @@ Para enriquecer la **información numérica**, LibreOffice Calc facilita la inte
 1. ok
 
 ---
-## A05: Objetos gráficos {kbd}`000` (10%)
+## A05: Objetos gráficos {kbd}`000` (15%)
 {bdg-warning}`Actividad práctica`
 
 1. ok
