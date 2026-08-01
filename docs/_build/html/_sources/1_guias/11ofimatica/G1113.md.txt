@@ -1,0 +1,313 @@
+# Guía 1113: Formulación 
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Tecnología e Informática
+        - **GRADO**: ONCE
+        - **PERIODO**: 03
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: .
+- **Objetivo de aprendizaje**: .
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Uso y apropiación de la T&I.
+- **Competencia**: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos.
+- **Evidencia de aprendizaje**: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+- [Descarga de **LibreOffice**](https://www.libreoffice.org/download/)
+
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"".
+
+-- Camilo Fonseca
+:::
+
+---
+## ¿Qué son las fórmulas?
+
+Las **fórmulas** son el **principal recurso** en una **hoja de cálculo**.
+
+Una fórmula es una expresión que relaciona mediante operadores uno o más valores, que pueden ser valores constantes, celdas, rangos de celdas, o funciones, y devuelve un resultado que aparecerá directamente en la celda que la contiene. 
+
+Una fórmula está compuesta por un signo **=** seguido de la **expresión** que indica la operación a realizar.
+
+Por ejemplo:
+
+$$=A5+B5/C2$$
+
+---
+## Tipos de formulas en LibreOffice Calc
+
+Las fórmulas en **LibreOffice Calc** se pueden clasificar en tres tipos:
+
+1. **Fórmulas simples**: Realizan operaciones simples con valores constantes. **Por ejemplo:**
+
+$$=(10*15)/2$$ 
+
+2. **Fórmulas con referencias**: Realizan operaciones simples con referencias a otras celdas y opcionalmente con valores constantes. La referencia se indica introduciendo el nombre de la celda. Por ejemplo:
+
+$$=(A1+B19)*89$$
+
+3. **Fórmulas con funciones**: Realizan operaciones simples con referencias a otras celdas, opcionalmente con valores constantes y con otro tipo de expresiones llamadas funciones. Por ejemplo:
+
+$$=SUMA(A1:A35)/LOG(H10;25)$$
+
+---
+## Operadores aritméticos y precedencia
+
+Un **operador** es un símbolo matemático el cual indica que una operación debe llevarse a cabo sobre un número de operandos.
+
+Los operandos pueden ser:
+
+- Números
+- Celdas
+- Funciones
+
+Los operadores aritméticos son:
+
+- Suma: **+**
+- Resta: **-**
+- Multiplicación: *
+- División: **/**
+- Porcentaje: **%**
+- Potencia: **^**
+
+La **prioridad de los operadores** (también conocida como **precedencia**), son unas reglas que determinan en una operación, que operadores se resuelven primero. El orden de operación es el siguiente:
+
+- Primero se opera el contenido dentro de los paréntesis.
+- Luego se opera el contenido de las multiplicaciones y divisiones.
+- Finalmente se opera el contenido de las sumas y restas.
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor.
+
+---
+## A01: Taller (5%)
+{bdg-info}`Estructuración`
+
+1. Responda las siguientes preguntas en su cuaderno:
+
+   - ¿Qué es una fórmula y por qué es importante su uso en un software de hoja de cálculo como LibreOffice Calc?
+   - ¿Cuáles son los tres tipos de fórmulas y en que se diferencian cada una?
+   - Cree tres ejemplos por cada tipo de fórmula. En los ejemplos de fórmulas tipo función, utilice: **ABS( )**, **BUSCAR( )** y **PROMEDIO( )**.
+   - ¿Qué es un **operador**?
+   - ¿Cuáles son los tres tipos de operandos?
+   - ¿Qué operadores aritméticos maneja **LibreOffice Calc** y cuáles son sus símbolos?
+   - ¿A que se le conoce como **precedencia** y que reglas contiene?
+
+---
+## A02: Ordenación y filtrado {kbd}`238` (5%)
+{bdg-warning}`Actividad práctica`
+
+1. DESCARGUE los siguientes archivos y GUÁRDELOS en la carpeta de evidencias del periodo actual:
+
+   - G1113A02-ventas-alimentacion-completo.ods [{bdg-primary}`Descargar`](./recursos/G1113/archivos/G1113A02-ventas-alimentacion-completo.ods)
+    - G1113A02-ventas-alimentacion-completo-2.ods [{bdg-primary}`Descargar`](./recursos/G1113/archivos/G1113A02-ventas-alimentacion-completo-2.ods)
+
+2. ABRA el archivo **G1113A02-ventas-alimentacion-completo.ods** y UBIQUE el cursor en la celda **A2 (Fecha)** y en la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Orden descendente`.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - ¿Qué pasó con las fechas?
+    - La información de las otras celdas ¿también cambió de lugar?
+    :::
+
+3. UBIQUE el cursor en la celda **B2 (Producto)** y en la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Orden descendente`. 
+
+4. UBIQUE el cursor en la celda **E2 (Ventas)** y en la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Orden ascendente` y luego el botón {guilabel}`Orden descendente`.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Escriba los valores menor y mayor en ventas.
+    :::
+
+5. UBIQUE el cursor en la celda **C2 (Vendedor)** y en la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Ordenar`
+
+    - En la ventana: **Ordenar**, configurar lo siguiente:
+
+      - **Pestaña Criterios de ordenamiento**
+        - **Clave de ordenamiento 1**
+          - Columna: Vendedor - Ascendente
+        - **Clave de ordenamiento 2**
+          - Columna: Fecha - Ascendente
+
+    - PULSAR el botón {guilabel}`Aceptar`
+
+6. Siguiendo los pasos del punto anterior (**Usar el botón Ordenar**), configure las siguientes opciones de ordenamiento:  
+
+    - Ordenar por Vendedor ascendente y Región ascendente. (captura de pantalla: **A113A02-captura01.png**)
+    - Ordenar por Vendedor ascendente, Producto ascendente y Ventas descendente. (captura de pantalla: **A113A02-captura02.png**)
+    - Ordenar por Producto ascendente y Ventas descendente. (captura de pantalla: **A113A02-captura03.png**)
+
+7. Guarde los cambios y cierre el software LibreOffice Calc.
+
+8. ABRA el archivo **G1113A02-ventas-alimentacion-completo-2.ods** y UBIQUE el cursor en la celda **A1 (Fecha)**. Luego en la **barra de herramientas estándar**, PULSAR el botón: {guilabel}`Filtro automático`
+
+9. PULSAR el cuadro con punta de flecha hacia abajo **(▾)** para abrir el menú de **configuración de filtro de celda** y marcar la opción de **Frutas**. Luego PULSAR el botón {guilabel}`Aceptar`
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1113/image01.png
+        :width: 222
+        ``` 
+    :::
+
+10. Con el filtro anterior activado, volver a configurar otro filtro pero el Vendedor debe ser **Fernandez**. La tabla debería quedar así:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1113/image02.png
+        :width: 444
+        ``` 
+    :::
+
+11. LIMPIE los **filtros anteriores** y con el menú de filtro de celda de **Producto**, SELECCIONAR Filtro por {guilabel}`condición` > {guilabel}`Filtro estándar`
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1113/image03.png
+        :width: 333
+        ``` 
+    :::
+
+12. En la ventana **Filtro estándar** configurar lo siguiente:
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1113/image04.png
+        :width: 444
+        ``` 
+    :::
+
+    :::{admonition} Advertencia
+    :class: warning
+    En la sección **Opciones**, siempre marcar la opción: **Expresiones regulares**
+    :::
+
+    > Cuando se desea aplicar un **filtro complejo,** SE APLICA un **filtro estándar**. En este caso, SE APLICA un **filtro estándar** para filtrar por el **producto: Cerdo** y al mismo tiempo se cumpla que: **los valores de venta para el producto cerdo, sean mayores a** $$10,000$. El resultado es el siguiente:
+    > :::{list-table}
+    > * - ```{figure} ./recursos/G1113/image05.png
+    >     :width: 444
+    >     ``` 
+    > :::
+
+13. REALICE las siguientes configuraciones de filtros estándar:
+
+    - Ventas de **Cerdo** superiores a **$11.000**. El resultado debe quedar así:
+        :::{list-table}
+        * - ```{figure} ./recursos/G1113/image05.png
+            :width: 444
+            ``` 
+        :::
+
+        :::{admonition} En su cuaderno...
+        :class: note
+        Transcriba los criterios de filtrado de cada filtro estándar (configuración de la ventana de filtro estándar).
+        :::
+    -  Ventas de **Hortalizas** del año **2007**, ordenadas por **Ventas descendente**. El resultado debe quedar así:
+        :::{list-table}
+        * - ```{figure} ./recursos/G1113/image06.png
+            :width: 444
+            ```
+        :::
+
+        :::{admonition} En su cuaderno...
+        :class: note
+        Transcriba los criterios de filtrado de cada filtro estándar (configuración de la ventana de filtro estándar).
+        :::
+    -  Ventas del año **2009** superiores a **$10.000** ordenadas por **Vendedor**. El resultado debe quedar así:
+        :::{list-table}
+        * - ```{figure} ./recursos/G1113/image07.png
+            :width: 444
+            ```
+        :::
+
+        :::{admonition} En su cuaderno...
+        :class: note
+        Transcriba los criterios de filtrado de cada filtro estándar (configuración de la ventana de filtro estándar).
+        :::
+    -  Ventas de **productos** que terminan en "**as**" del año **2005**. El resultado debe quedar así:
+        :::{list-table}
+        * - ```{figure} ./recursos/G1113/image08.png
+            :width: 444
+            ``` 
+        :::
+
+        :::{admonition} En su cuaderno...
+        :class: note
+        Transcriba los criterios de filtrado de cada filtro estándar (configuración de la ventana de filtro estándar).
+        :::
+    -  Ventas de **Frutas**, *Verduras y Hortalizas* de **López** durante el año **2008**, ordenadas por Ventas descendente. El resultado debe quedar así:
+        :::{list-table}
+        * - ```{figure} ./recursos/G1113/image09.png
+            :width: 444
+            ``` 
+        :::
+
+        :::{admonition} En su cuaderno...
+        :class: note
+        Transcriba los criterios de filtrado de cada filtro estándar (configuración de la ventana de filtro estándar).
+        :::
+    -  Ventas de **Pollo**, **Cerdo**, **Cordero** y **Vacuno** de **Fernández**, superiores a **$10.000**. El resultado debe quedar así:
+        :::{list-table}
+        * - ```{figure} ./recursos/G1113/image10.png
+            :width: 444
+            ``` 
+        :::
+
+        :::{admonition} En su cuaderno...
+        :class: note
+        Transcriba los criterios de filtrado de cada filtro estándar (configuración de la ventana de filtro estándar).
+        :::
+
+14. GUARDE los cambios y CIERRE el software LibreOffice Calc.
+
+---
+## A0Xs: Presentación de evidencias (50%)
+{bdg-danger}`Transferencia`
+
+:::{admonition} ¿Cómo se evalúa?
+1. Los estudiantes presentan lo siguiente:
+
+    - Carpeta de evidencias con todos los archivos editados en la presente guía. (Los archivos deben estar abiertos).
+    - Cuaderno con las actividades desarrolladas.
+
+2. El docente realiza unas preguntas para verificación de conocimientos.
+
+3. El estudiante debe demostrar de forma práctica sus conocimientos en el uso de **LibreOffice Calc**.
+:::
