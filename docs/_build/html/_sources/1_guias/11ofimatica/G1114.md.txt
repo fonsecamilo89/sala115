@@ -1,4 +1,4 @@
-# Guía 1114: Formulación avanzada
+# Guía 1114: Diagramas
 
 :::{list-table}
 :widths: 35 65
