@@ -9,7 +9,7 @@
     :align: left
     * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
         - **DOCENTE**: Julian Camilo Fonseca Romero
-        - **ASIGNATURA**: Tecnología e Informática
+        - **ASIGNATURA**: Ofimática
         - **GRADO**: ONCE
         - **PERIODO**: 02
         - **TIEMPO**: 10 semanas (2 horas / semana)
@@ -223,6 +223,8 @@ Para enriquecer la **información numérica**, LibreOffice Calc facilita la inte
 
 7. GUARDE los cambios y CIERRE el software LibreOffice Calc.
 
+$$---$$
+
 8. ABRA el archivo **G1112A03-animales-raza-2.ods**
 
 9. En la **barra de herramientas estándar**, PULSAR el botón {guilabel}`Alternar previsualización de impresión`
@@ -302,6 +304,8 @@ Para enriquecer la **información numérica**, LibreOffice Calc facilita la inte
     :::
 
 12. Guarde los cambios y cierre el software LibreOffice Calc.
+
+$$---$$
 
 13. ABRA el archivo **G1112A03-animales-raza-3.ods**
 
@@ -388,6 +392,8 @@ Para enriquecer la **información numérica**, LibreOffice Calc facilita la inte
     :::
 
 9. GUARDE los cambios y CIERRE el software LibreOffice Calc.
+
+$$---$$
 
 10. Abra el archivo **G1112A04-imagenes-2.ods** y en la hoja de **adonis**, SELECCIONE la imagen que está en el rango de celdas: **B2:D16**. OBSERVE que la **barra de herramientas de formato**, los iconos cambiaron.
 
@@ -517,6 +523,8 @@ Para enriquecer la **información numérica**, LibreOffice Calc facilita la inte
     :::
 
 9.  GUARDE los cambios y CIERRE el software LibreOffice Calc.
+
+$$---$$
 
 10. ABRA el archivo **A06T04-graficos.ods** y VERIFIQUE que está en la hoja **graficos**.
 
