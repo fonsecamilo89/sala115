@@ -342,17 +342,19 @@ Objetivo</label><div class="sd-tab-content docutils">
 <span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
 <span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <ul class="simple">
-<li><p><strong>Temática</strong>: Variables y operaciones.</p></li>
-<li><p><strong>Objetivo de aprendizaje</strong>: ok.</p></li>
+<li><p><strong>Temática</strong>: Álgebra de Boole, circuitos lógicos y compuertas digitales.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Comprender y aplicar los principios del álgebra de Boole para representar, analizar y simplificar circuitos digitales mediante el uso de compuertas lógicas y tablas de la verdad.</p></li>
+<li><p><strong>DESEMPEÑO</strong>: Demuestra una comprensión sólida de los principios fundamentales del álgebra de Boole, aplicando eficazmente las compuertas lógicas, las tablas de la verdad y los sistemas de numeración binaria para la representación, análisis y simplificación de circuitos digitales, evidenciando destreza tanto en el planteamiento teórico como en la simulación práctica de soluciones computacionales.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Orientaciones curriculares</label><div class="sd-tab-content docutils">
 <ul class="simple">
-<li><p><strong>Componente</strong>: .</p></li>
-<li><p><strong>Competencia</strong>: .</p></li>
-<li><p><strong>Evidencia de aprendizaje</strong>: .</p></li>
+<li><p><strong>Componente</strong>: Naturaleza y evolución de la T&amp;I..</p></li>
+<li><p><strong>Competencia</strong>: Relaciono saberes, conocimientos tecnológicos e informáticos con los conocimientos de otras disciplinas.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Comprendo los principios y conocimientos tecnológicos e informáticos que hacen posible
+el funcionamiento de productos tecnológicos actuales.</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
@@ -368,18 +370,944 @@ Criterios de evaluación</label><div class="sd-tab-content docutils">
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
-Recursos (0)</label><div class="sd-tab-content docutils">
+Recursos (2)</label><div class="sd-tab-content docutils">
 <ul class="simple">
-<li><p>Esta guía no contiene recursos.</p></li>
+<li><p><strong>Plan de refuerzo 04.pdf</strong> <a class="reference download internal" download="" href="../../_downloads/69caf0392cecbf3ce86133b9876b84e1/planRefuerzo04.pdf"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p><a class="reference external" href="https://logic.ly/demo/" rel="noreferer noopener" target="_blank">Simulador de compuertas lógicas</a></p></li>
 </ul>
 </div>
 </div>
 <section id="mensaje-del-autor">
 <h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
 <blockquote class="pull-quote">
-<div><p>“ok”.</p>
+<div><p>“En esta guía se aplica el álgebra de Boole para representar, analizar y simplificar circuitos mediante compuertas y tablas de verdad; las actividades están diseñadas para evaluar esa comprensión desde lo teórico hasta la simulación práctica.</p>
 <p class="attribution">—Camilo Fonseca</p>
 </div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="numeros-binarios">
+<h2>Números binarios<a class="headerlink" href="#numeros-binarios" title="Link to this heading">¶</a></h2>
+<p>Los números binarios son un sistema de numeración cuyos valores solo pueden ser: <code class="docutils literal notranslate"><span class="pre">1</span></code> o <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<blockquote>
+<div><p>El <strong>sistema numérico binario</strong> es diferente al <strong>sistema numérico decimal</strong>.</p>
+</div></blockquote>
+<div class="tip admonition">
+<p class="admonition-title">Lenguaje de los dispositivos digitales</p>
+<p>Los dispositivos digitales como el celular, tablet o PC solo entienden en sistema <strong>numérico binario</strong>.</p>
+<p>Las dispositivos digitales <strong>no entienden</strong> directamente <strong>lenguaje humano</strong> ni tampoco entienden directamente el <strong>sistema numérico decimal</strong>.</p>
+</div>
+<p>Para entender mejor los <strong>números binarios</strong>, se presenta la siguiente tabla la cual muestra los <strong>números decimales</strong> con su <strong>representación binaria</strong>:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Decimal</p></th>
+<th class="head"><p>8 bits</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0000 0000</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0000 0001</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>0000 0010</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>0000 0011</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>0000 0100</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>0000 0101</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>0000 0110</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>0000 0111</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>0000 1000</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>0000 1001</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>0000 1010</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>0000 1011</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>0000 1100</p></td>
+</tr>
+<tr class="row-odd"><td><p>13</p></td>
+<td><p>0000 1101</p></td>
+</tr>
+<tr class="row-even"><td><p>14</p></td>
+<td><p>0000 1110</p></td>
+</tr>
+<tr class="row-odd"><td><p>15</p></td>
+<td><p>0000 1111</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Estados <span class="guilabel">FALSE</span> <strong>TRUE</strong></p>
+<p>Los <strong>números binarios</strong> también se usan para representar los estados <strong>FALSO</strong> o <strong>VERDADERO</strong> donde:</p>
+<p><strong>0</strong>: FALSO
+<strong>1</strong>: VERDADERO</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="george-de-boole">
+<h2>George de Boole<a class="headerlink" href="#george-de-boole" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image0119.png"><img alt="../../_images/image0119.png" src="../../_images/image0119.png" style="width: 222px;" />
+</a>
+</figure>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[1815-1864\]</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<div><p><strong>NACIMIENTO</strong>: Lincoln (Lincolnshire), Inglaterra, 2 de noviembre de 1815</p>
+<p><strong>MUERTE</strong>: Ballintemple (Condado de Cork), Irlanda, 8 de diciembre de 1864</p>
+</div></blockquote>
+<p>Fue un matemático y lógico británico. Como inventor del álgebra de Boole, marcó los fundamentos de la aritmética computacional moderna. Boole es considerado como uno de los fundadores del campo de las ciencias de la computación.</p>
+<p>En 1854 publicó: An Investigation of the Laws of Thought on Which are Founded the Mathematical Theories of Logic and Probabilities, donde desarrolló un sistema de reglas que le permitían expresar, manipular y simplificar problemas lógicos y filosóficos cuyos argumentos admiten dos estados (verdadero o falso) por procedimientos matemáticos.</p>
+<p>Se podría decir que es el padre de los operadores lógicos simbólicos y que gracias a su álgebra hoy en día es posible operar simbólicamente para realizar operaciones lógicas.</p>
+</section>
+<hr class="docutils" />
+<section id="algebra-de-boole">
+<h2>Álgebra de Boole<a class="headerlink" href="#algebra-de-boole" title="Link to this heading">¶</a></h2>
+<p>El álgebra de Boole en sistemas digitales, se basa en la lógica proposicional y se utiliza para representar un circuito lógico en forma de ecuaciones. En otras palabras, se trata de una herramienta que sirve para resolver y simplificar cualquier problema que se encuentre en los sistemas digitales.</p>
+<p>A diferencia del álgebra tradicional, que se basa en números y operaciones aritméticas, el álgebra de Boole utiliza las llamadas variables Booleanas (0 y 1) y operadores lógicos (AND, OR, NOT) para representar y manipular los datos.</p>
+<div class="tip admonition">
+<p class="admonition-title">Álgebra de Boole en programación</p>
+<p>El álgebra de Boole es esencial en programación, especialmente en el desarrollo de algoritmos y estructuras de control condicional. Permite:</p>
+<ul class="simple">
+<li><p>Evaluar condiciones.</p></li>
+<li><p>Tomar decisiones.</p></li>
+<li><p>Controlar el flujo de ejecución de un programa.</p></li>
+</ul>
+</div>
+<section id="ventajas-del-algebra-de-boole">
+<h3>Ventajas del álgebra de Boole<a class="headerlink" href="#ventajas-del-algebra-de-boole" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Las leyes del álgebra de Boole permiten simplificar expresiones Booleanas complejas, lo que facilita su comprensión y análisis.</p></li>
+<li><p>Mediante la aplicación de técnicas de simplificación, es posible optimizar el diseño de circuitos digitales, reduciendo el número de compuertas lógicas y mejorando su eficiencia.</p></li>
+<li><p>El álgebra de Boole proporciona un marco matemático riguroso para el estudio de la lógica y el razonamiento lógico, lo que ha sido fundamental para el desarrollo de la computación moderna.</p></li>
+</ul>
+</section>
+<section id="aplicaciones-del-algebra-de-boole">
+<h3>Aplicaciones del álgebra de Boole<a class="headerlink" href="#aplicaciones-del-algebra-de-boole" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Diseño de circuitos digitales</strong>: procesadores, memorias y dispositivos lógicos programables.</p></li>
+<li><p><strong>Programación y algoritmos</strong>: el álgebra de Boole permite el control del flujo de ejecución en los programas.</p></li>
+<li><p><strong>Sistemas de control y automatización</strong>: se utiliza en el modelo y diseño de sistemas de control, como en la industria manufacturera.</p></li>
+<li><p><strong>Criptografía</strong>: los principios del álgebra de Boole se aplican en algoritmos criptográficos, proporcionando la base matemática para la seguridad de la información y el cifrado de datos.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="circuito-logico">
+<h2>Circuito lógico<a class="headerlink" href="#circuito-logico" title="Link to this heading">¶</a></h2>
+<p>Un circuito lógico es el que está compuesto por:</p>
+<ul class="simple">
+<li><p>Unas entradas con valores binarios.</p></li>
+<li><p>Una función lógica que opera los valores binarios de las entradas.</p></li>
+<li><p>Una salida con un valor binario el cual depende de la función lógica.</p></li>
+</ul>
+<p>Las <strong>funciones lógicas</strong> modelan el comportamiento que tendrá el circuito lógico. En ocasiones es necesario simplificar la función lógica para obtener el mismo circuito lógico pero con menos componentes (OPTIMIZAR).</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/image0216.png"><img alt="../../_images/image0216.png" src="../../_images/image0216.png" style="width: 333px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Circuito lógico</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Importancia de <strong>simplificar circuitos</strong></p>
+<p>Al momento de simplificar circuitos, se tienen las siguientes ventajas:</p>
+<ul class="simple">
+<li><p>Se tendrán menos componentes.</p></li>
+<li><p>Se utilizará un menor espacio.</p></li>
+<li><p>Se invertirá una menor cantidad monetaria.</p></li>
+</ul>
+<p>La simplificación de circuitos lógicos se realiza por medio de la simplificación de las <strong>funciones lógicas</strong>.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="compuertas-logicas">
+<h2>Compuertas lógicas<a class="headerlink" href="#compuertas-logicas" title="Link to this heading">¶</a></h2>
+<p>Las <strong>Compuertas Lógicas</strong> son circuitos electrónicos conformados internamente por transistores que generan señales de voltaje como una salida de forma booleana. Las señales de salida se obtienen por operaciones lógicas binarias (suma, multiplicación). También (niegan, afirman, incluyen o excluyen).</p>
+<blockquote>
+<div><p>“Las compuertas lógicas se pueden aplicar en otras áreas como mecánica, hidráulica o neumática”.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Existen diferentes tipos de compuertas y algunas de estas son más complejas.</p></li>
+<li><p>Estas compuertas complejas puedan ser simuladas como compuertas más sencillas.</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Tabla de la verdad</p>
+<p>Toda <strong>compuerta lógica</strong> tiene <strong>tabla de la verdad</strong> que explican los comportamientos en sus salidas. Estas salidas dependen del valor booleano que tenga cada una de sus entradas.</p>
+</div>
+<section id="compuerta-and">
+<h3>Compuerta AND<a class="headerlink" href="#compuerta-and" title="Link to this heading">¶</a></h3>
+<p>Esta compuerta es representada por una multiplicación. Indica que es necesario que en todas sus entradas se tenga un estado binario <strong>1</strong> para que la salida otorgue un <strong>1</strong> binario. En caso contrario de que falte alguna de sus entradas con este estado o no tenga si quiera una accionada, la salida no podrá cambiar de estado y permanecerá en <strong>0</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fórmula</p></th>
+<th class="head"><p>Gráfica</p></th>
+<th class="head"><p>Tabla de la verdad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(F=A*B\)</span></p></td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image0316.png"><img alt="../../_images/image0316.png" src="../../_images/image0316.png" style="width: 111px;" />
+</a>
+</figure>
+</td>
+<td><div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="compuerta-or">
+<h3>Compuerta OR<a class="headerlink" href="#compuerta-or" title="Link to this heading">¶</a></h3>
+<p>Esta compuerta es representada como una suma. Indica que con cualquiera de sus entradas que este en estado binario <strong>1</strong>, su salida pasara a un estado <strong>1</strong> también. No es necesario que todas sus entradas estén accionadas para conseguir un estado <strong>1</strong> a la salida. Para lograr un estado <strong>0</strong> a la salida, todas sus entradas deben estar en el mismo valor de <strong>0</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fórmula</p></th>
+<th class="head"><p>Gráfica</p></th>
+<th class="head"><p>Tabla de la verdad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(F=A+B\)</span></p></td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image0413.png"><img alt="../../_images/image0413.png" src="../../_images/image0413.png" style="width: 111px;" />
+</a>
+</figure>
+</td>
+<td><div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="compuerta-not">
+<h3>Compuerta NOT<a class="headerlink" href="#compuerta-not" title="Link to this heading">¶</a></h3>
+<p>En este caso esta compuerta solo tiene una entrada y una salida y esta actúa como un inversor. Para esta situación en la entrada se colocara un <strong>1</strong> y en la salida otorgara un <strong>0</strong> y en el caso contrario esta recibirá un <strong>0</strong> y mostrará un <strong>1</strong>. Por lo cual todo lo que llegue a su entrada, será inverso en su salida.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fórmula</p></th>
+<th class="head"><p>Gráfica</p></th>
+<th class="head"><p>Tabla de la verdad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(F=\bar{A}\)</span></p></td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image0513.png"><img alt="../../_images/image0513.png" src="../../_images/image0513.png" style="width: 111px;" />
+</a>
+</figure>
+</td>
+<td><div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="compuerta-nand">
+<h3>Compuerta NAND<a class="headerlink" href="#compuerta-nand" title="Link to this heading">¶</a></h3>
+<p>También denominada como <strong>AND negada</strong>, esta compuerta trabaja al contrario de una AND ya que al no tener entradas en <strong>1</strong> o solamente alguna de ellas, esta concede un <strong>1</strong> en su salida, pero si esta tiene todas sus entradas en <strong>1</strong> la salida se presenta con un <strong>0</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fórmula</p></th>
+<th class="head"><p>Gráfica</p></th>
+<th class="head"><p>Tabla de la verdad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(F=\overline{A*B}\)</span></p></td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image0612.png"><img alt="../../_images/image0612.png" src="../../_images/image0612.png" style="width: 111px;" />
+</a>
+</figure>
+</td>
+<td><div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="compuerta-nor">
+<h3>Compuerta NOR<a class="headerlink" href="#compuerta-nor" title="Link to this heading">¶</a></h3>
+<p>La compuerta OR también tiene su versión inversa. Esta compuerta cuando tiene sus entradas en estado <strong>0</strong> su salida estará en <strong>1</strong>, pero si alguna de sus entradas pasa a un estado <strong>1</strong> sin importar en qué posición, su salida será un estado <strong>0</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fórmula</p></th>
+<th class="head"><p>Gráfica</p></th>
+<th class="head"><p>Tabla de la verdad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(F=\overline{A+B}\)</span></p></td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image0712.png"><img alt="../../_images/image0712.png" src="../../_images/image0712.png" style="width: 111px;" />
+</a>
+</figure>
+</td>
+<td><div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="compuerta-xor">
+<h3>Compuerta XOR<a class="headerlink" href="#compuerta-xor" title="Link to this heading">¶</a></h3>
+<p>También llamada <strong>OR exclusiva</strong>, esta actúa como una suma binaria de un dígito cada uno y el resultado de la suma seria la salida. Otra manera de verlo es que: con valores de entrada igual, el estado de salida es <strong>0</strong> y con valores de entrada diferente, la salida será <strong>1</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fórmula</p></th>
+<th class="head"><p>Gráfica</p></th>
+<th class="head"><p>Tabla de la verdad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(F=A*\bar{B}+\bar{A}*B\)</span></p></td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image0811.png"><img alt="../../_images/image0811.png" src="../../_images/image0811.png" style="width: 111px;" />
+</a>
+</figure>
+</td>
+<td><div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="compuerta-xnor">
+<h3>Compuerta XNOR<a class="headerlink" href="#compuerta-xnor" title="Link to this heading">¶</a></h3>
+<p>Esta compuerta es todo lo contrario a la compuerta XOR, ya que cuando las entradas sean iguales se presentara una salida en estado <strong>1</strong> y si son diferentes la salida será un estado <strong>0</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fórmula</p></th>
+<th class="head"><p>Gráfica</p></th>
+<th class="head"><p>Tabla de la verdad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(F=\overline{A*\bar{B}+\bar{A}*B}\)</span></p></td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image0911.png"><img alt="../../_images/image0911.png" src="../../_images/image0911.png" style="width: 111px;" />
+</a>
+</figure>
+</td>
+<td><div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="ejemplo-01-ecuacion-booleana">
+<h2>Ejemplo 01: Ecuación booleana<a class="headerlink" href="#ejemplo-01-ecuacion-booleana" title="Link to this heading">¶</a></h2>
+<p>Para la siguiente <strong>ecuación booleana</strong>, exprese su <strong>circuito lógico</strong> e identifique su <strong>tabla de la verdad</strong>.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(A*B)}+C\]</div>
+</div>
+<p>Para <span class="math notranslate nohighlight">\(\overline{(A*B)}\)</span> se tiene la siguiente compuerta lógica:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/image1011.png"><img alt="../../_images/image1011.png" src="../../_images/image1011.png" style="width: 160px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Compuerta NAND</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A lo anterior se le suma <span class="math notranslate nohighlight">\(C\)</span> con la compuerta OR y finalmente se obtiene:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/image119.png"><img alt="../../_images/image119.png" src="../../_images/image119.png" style="width: 370px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Circuito lógico 01</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Ahora se procede a desarrollar la tabla de la verdad. Para esto identificar el valor de F para las entradas A, B y C.</p>
+<p>Para <span class="math notranslate nohighlight">\(A=0\)</span>, <span class="math notranslate nohighlight">\(B=0\)</span> y <span class="math notranslate nohighlight">\(C=0\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(A*B)}+C\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0*0)}+0\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0)}+0\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=1+0\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=1\]</div>
+</div>
+<p>Para <span class="math notranslate nohighlight">\(A=0\)</span>, <span class="math notranslate nohighlight">\(B=0\)</span> y <span class="math notranslate nohighlight">\(C=1\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(A*B)}+C\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0*0)}+1\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0)}+1\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=1+1\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=1\]</div>
+</div>
+<p>De esta forma se puede ir llenando la siguiente tabla de la verdad:</p>
+<div class="table-wrapper colwidths-auto docutils container" id="id4">
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Tabla de la verdad circuito lógico 01</span><a class="headerlink" href="#id4" title="Link to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>C</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="ejemplo-02-circuito-logico">
+<h2>Ejemplo 02: Circuito lógico<a class="headerlink" href="#ejemplo-02-circuito-logico" title="Link to this heading">¶</a></h2>
+<p>Para el siguiente <strong>circuito lógico</strong>, exprese su <strong>fórmula</strong> e identifique su <strong>tabla de la verdad</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../../_images/image1210.png"><img alt="../../_images/image1210.png" src="../../_images/image1210.png" style="width: 350px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Circuito lógico 02</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>Se tiene una primera compuerta de tipo <strong>AND</strong> con las entradas A y B.</p></li>
+<li><p>Se tiene una segunda compuerta de tipo <strong>OR</strong> con las entradas C y D.</p></li>
+<li><p>Las salidas de la primera y segunda compuerta se operan con una compuerta <strong>NOR</strong>.</p></li>
+</ul>
+<p>Esto se modela de la siguiente manera:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/image139.png"><img alt="../../_images/image139.png" src="../../_images/image139.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Circuito lógico 02</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>De estar forma, la formula algebraica que modela el circuito es:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(A*B)+(C+D)}\]</div>
+</div>
+<p>Con la formula, ahora es posible obtener la tabla de la verdad. Identificar el valor de F para todas las entradas A, B, C y D.</p>
+<p>Para <span class="math notranslate nohighlight">\(A=0\)</span>, <span class="math notranslate nohighlight">\(B=0\)</span>, <span class="math notranslate nohighlight">\(C=0\)</span> y <span class="math notranslate nohighlight">\(D=0\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(A*B)+(C+D)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0*0)+(0+0)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0)+(0)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=1\]</div>
+</div>
+<p>Para <span class="math notranslate nohighlight">\(A=0\)</span>, <span class="math notranslate nohighlight">\(B=0\)</span>, <span class="math notranslate nohighlight">\(C=0\)</span> y <span class="math notranslate nohighlight">\(D=1\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(A*B)+(C+D)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0*0)+(0+1)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0)+(1)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(1)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=0\]</div>
+</div>
+<p>Para <span class="math notranslate nohighlight">\(A=0\)</span>, <span class="math notranslate nohighlight">\(B=0\)</span>, <span class="math notranslate nohighlight">\(C=1\)</span> y <span class="math notranslate nohighlight">\(D=0\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(A*B)+(C+D)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0*0)+(1+0)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0)+(1)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(1)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=0\]</div>
+</div>
+<p>Para <span class="math notranslate nohighlight">\(A=0\)</span>, <span class="math notranslate nohighlight">\(B=0\)</span>, <span class="math notranslate nohighlight">\(C=1\)</span> y <span class="math notranslate nohighlight">\(D=1\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(A*B)+(C+D)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0*0)+(1+1)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(0)+(1)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=\overline{(1)}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[F=0\]</div>
+</div>
+<p>De esta forma se puede ir llenando la siguiente tabla de la verdad:</p>
+<div class="table-wrapper colwidths-auto docutils container" id="id7">
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Tabla de la verdad circuito lógico 02</span><a class="headerlink" href="#id7" title="Link to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>C</p></th>
+<th class="head"><p>D</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <hr class="docutils" />
 <section id="a00-introduccion-5">
@@ -387,61 +1315,220 @@ Recursos (0)</label><div class="sd-tab-content docutils">
 <p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
 <ol class="arabic simple">
 <li><p>Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
-<li><p>Lea el <strong>mensaje del autor</strong>.</p></li>
+<li><p>Lea el <strong>mensaje del autor</strong> y en su cuaderno responda la siguiente pregunta:</p>
+<ul class="simple">
+<li><p>¿Qué entiende por simulación?</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="a01-informacion-y-jerarquia-de-datos-5">
-<h2>A01: Información y Jerarquía de datos (5%)<a class="headerlink" href="#a01-informacion-y-jerarquia-de-datos-5" title="Link to this heading">¶</a></h2>
+<section id="a01-taller-10">
+<h2>A01: Taller (10%)<a class="headerlink" href="#a01-taller-10" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
-<ol class="arabic simple">
-<li><p>ok.</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="a02-taller-10">
-<h2>A02: Taller (10%)<a class="headerlink" href="#a02-taller-10" title="Link to this heading">¶</a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
-<ol class="arabic simple">
-<li><p>ok.</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="a03-trabajo-con-tablas-20">
-<h2>A03: TRABAJO CON TABLAS (20%)<a class="headerlink" href="#a03-trabajo-con-tablas-20" title="Link to this heading">¶</a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
-<ol class="arabic simple">
-<li><p>ok.</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="a04-examen-escrito-60">
-<h2>A04: Examen escrito (60%)<a class="headerlink" href="#a04-examen-escrito-60" title="Link to this heading">¶</a></h2>
-<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
-<div class="table-wrapper docutils container">
+<ol class="arabic">
+<li><p>En su cuaderno responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Por qué los dispositivos digitales no entienden directamente el lenguaje humano ni tampoco entienden directamente el sistema numérico decimal?</p></li>
+<li><p>¿Qué valores tiene el sistema numérico binario?</p></li>
+<li><p>¿Qué otros significados tienen el 0 y el 1 en el sistema numérico binario?</p></li>
+<li><p>¿Qué es un circuito lógico y de que se compone?</p></li>
+<li><p>En un circuito lógico, ¿de que dependen los valores binarios de sus salidas?</p></li>
+<li><p>¿Qué es una función lógica?</p></li>
+<li><p>En un circuito lógico, ¿De que depende que tenga más o menos componentes?</p></li>
+<li><p>¿Por que el matemático George Boole, es considerado fundador de las ciencias de la computación?</p></li>
+<li><p>¿Cuál fue la obra de George Boole que establecía las reglas para expresar y simplificar problemas lógicos cuyos argumentos establecían los estados de falso o verdadero?</p></li>
+<li><p>En qué se basa el álgebra de Boole?</p></li>
+<li><p>¿Qué puede representar el álgebra de Boole?</p></li>
+<li><p>¿En qué se diferencia el álgebra de Boole con el álgebra tradicional?</p></li>
+<li><p>¿Cuál es la diferencia entre una decisión y una condición? (escriba 3 ejemplos de decisiones y 3 ejemplos de condiciones)</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno, escriba los números desde el 0 al 32 en Representación Digital Binaria de 8 bits (Revise la <strong>Tabla de conversión Decimal - Binario</strong>).</p></li>
+<li><p>En su cuaderno, realice el dibujo de un <strong>circuito lógico simple</strong>.</p></li>
+<li><p>Consulte en Internet que otras personas aportaron a las teorías de las ciencias de la computación y realice un resumen en su cuaderno.</p></li>
+<li><p>Escriba en su cuaderno <strong>dos ventajas</strong> que se obtienen al momento de simplificar expresiones mediante el álgebra de Boole.</p></li>
+<li><p>Traduzca del ingles al español las siguientes palabras y en su cuaderno escriba un ejemplo de frase por cada una:</p>
+<ul class="simple">
+<li><p>AND</p></li>
+<li><p>OR</p></li>
+<li><p>NOT</p></li>
+</ul>
+</li>
+<li><p>Resolver el siguiente crucigrama de las aplicaciones del álgebra de Boole:</p>
+<div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Horizontales</p></th>
+<th class="head"><p>Verticales</p></th>
+</tr>
+</thead>
 <tbody>
-<tr class="row-odd"><td><p><strong>TIEMPO</strong></p></td>
-<td><p>29 minutos</p></td>
+<tr class="row-even"><td><p>*2. Modelo y diseño de sistemas de control</p></td>
+<td><p>*1. Control de flujo en la ejecución de programas</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>PREGUNTAS</strong></p></td>
-<td><p>10</p></td>
+<tr class="row-odd"><td><p>*7. AND, OR, NOT</p></td>
+<td><p>*3. Algoritmos criptográficos para cifrado</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>OBJETIVO</strong></p></td>
-<td><p>Comprobar conocimientos adquiridos.</p></td>
+<tr class="row-even"><td><p>*8. Mismo circuito, menos componentes</p></td>
+<td><p>*4. Sistemas Unos y Ceros</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>INSTRUCCIONES</strong></p></td>
-<td><p>Cuadernos y celulares guardados. Solo se permite hoja, lápiz y borrador.</p></td>
+<tr class="row-odd"><td><p>*9. Cualquier cantidad, valor o hecho</p></td>
+<td><p>*5. Conjunto de datos organizados, analizados y procesados</p></td>
+</tr>
+<tr class="row-even"><td><p>*10. Procesadores, memorias</p></td>
+<td><p>*6. Verdadero y Falso</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="admonition-posibles-preguntas admonition">
-<p class="admonition-title">Posibles preguntas</p>
-<ol class="arabic simple">
-<li><p>ok</p></li>
-</ol>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image148.png"><img alt="../../_images/image148.png" src="../../_images/image148.png" style="width: 555px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
+</li>
+<li><p>En su cuaderno responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿En las compuertas lógicas como se generan las señales de voltaje de salida?</p></li>
+<li><p>¿En que otros campos se puede aplicar la teoría de compuertas lógicas?</p></li>
+<li><p>¿Qué se obtiene cuando se modela el comportamiento de las entradas y salidas lógicas Booleanas?</p></li>
+</ul>
+</li>
+<li><p>Copie la siguiente tabla en su cuaderno y luego relacione con una línea cada definición con su compuerta lógica:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image159.png"><img alt="../../_images/image159.png" src="../../_images/image159.png" style="width: 555px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a02-ecuaciones-booleanas-15">
+<h2>A02: Ecuaciones booleanas (15%)<a class="headerlink" href="#a02-ecuaciones-booleanas-15" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<p>Para las siguientes ecuaciones booleanas, obtenga su circuitos lógicos e identifique su tabla de la verdad:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(F=(A+B)+(\overline{C+D})\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F = \overline{(A*\overline{B}+\overline{A}*B)+\overline{C}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F = \overline{(A*\overline{B}+\overline{A}*B)*(C*\overline{D}+\overline{C}*D)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F = \overline{((A*C)*(\overline{\overline{B}*C}))+((\overline{A*C})*(\overline{B}*C))}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F = ((A+B)*(\overline{\overline{C}})+(\overline{A+B})*(\overline{C}))+(\overline{C*D})\)</span></p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a03-circuitos-logicos-20">
+<h2>A03: Circuitos lógicos (20%)<a class="headerlink" href="#a03-circuitos-logicos-20" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<p>Para los siguientes circuitos lógicos, obtenga su ecuación booleana e identifique su tabla de la verdad:</p>
+<ol class="arabic">
+<li><p>Circuito lógico 01:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image169.png"><img alt="../../_images/image169.png" src="../../_images/image169.png" style="width: 400px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Circuito lógico 02 (tenga en cuenta la compuerta NOT):</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image178.png"><img alt="../../_images/image178.png" src="../../_images/image178.png" style="width: 400px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Circuito lógico 03 (tenga en cuenta la compuerta XORG):</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image187.png"><img alt="../../_images/image187.png" src="../../_images/image187.png" style="width: 400px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Circuito lógico 04:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image196.png"><img alt="../../_images/image196.png" src="../../_images/image196.png" style="width: 500px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Circuito lógico 05 (este ejercicio desarróllelo de forma horizontal en su cuaderno):</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/image206.png"><img alt="../../_images/image206.png" src="../../_images/image206.png" style="width: 500px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-simulacion-de-circuitos-logic-ly-50">
+<h2>A04: Simulación de circuitos Logic.ly (50%)<a class="headerlink" href="#a04-simulacion-de-circuitos-logic-ly-50" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ol class="arabic">
+<li><p>Usando el aplicativo web: logic.ly, modele los cinco circuitos lógicos de la <strong>Actividad 03</strong>. Para acceder al aplicativo, PULSAR clic en la siguiente imagen:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference external image-reference" href="https://logic.ly/demo/"><img alt="../../_images/image216.png" src="../../_images/image216.png" style="width: 300px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
 </section>
 </section>
 
@@ -502,11 +1589,31 @@ Recursos (0)</label><div class="sd-tab-content docutils">
             <ul>
 <li><a class="reference internal" href="#">Guía 824: Álgebra de Boole</a><ul>
 <li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#numeros-binarios">Números binarios</a></li>
+<li><a class="reference internal" href="#george-de-boole">George de Boole</a></li>
+<li><a class="reference internal" href="#algebra-de-boole">Álgebra de Boole</a><ul>
+<li><a class="reference internal" href="#ventajas-del-algebra-de-boole">Ventajas del álgebra de Boole</a></li>
+<li><a class="reference internal" href="#aplicaciones-del-algebra-de-boole">Aplicaciones del álgebra de Boole</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#circuito-logico">Circuito lógico</a></li>
+<li><a class="reference internal" href="#compuertas-logicas">Compuertas lógicas</a><ul>
+<li><a class="reference internal" href="#compuerta-and">Compuerta AND</a></li>
+<li><a class="reference internal" href="#compuerta-or">Compuerta OR</a></li>
+<li><a class="reference internal" href="#compuerta-not">Compuerta NOT</a></li>
+<li><a class="reference internal" href="#compuerta-nand">Compuerta NAND</a></li>
+<li><a class="reference internal" href="#compuerta-nor">Compuerta NOR</a></li>
+<li><a class="reference internal" href="#compuerta-xor">Compuerta XOR</a></li>
+<li><a class="reference internal" href="#compuerta-xnor">Compuerta XNOR</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ejemplo-01-ecuacion-booleana">Ejemplo 01: Ecuación booleana</a></li>
+<li><a class="reference internal" href="#ejemplo-02-circuito-logico">Ejemplo 02: Circuito lógico</a></li>
 <li><a class="reference internal" href="#a00-introduccion-5">A00: Introducción (5%)</a></li>
-<li><a class="reference internal" href="#a01-informacion-y-jerarquia-de-datos-5">A01: Información y Jerarquía de datos (5%)</a></li>
-<li><a class="reference internal" href="#a02-taller-10">A02: Taller (10%)</a></li>
-<li><a class="reference internal" href="#a03-trabajo-con-tablas-20">A03: TRABAJO CON TABLAS (20%)</a></li>
-<li><a class="reference internal" href="#a04-examen-escrito-60">A04: Examen escrito (60%)</a></li>
+<li><a class="reference internal" href="#a01-taller-10">A01: Taller (10%)</a></li>
+<li><a class="reference internal" href="#a02-ecuaciones-booleanas-15">A02: Ecuaciones booleanas (15%)</a></li>
+<li><a class="reference internal" href="#a03-circuitos-logicos-20">A03: Circuitos lógicos (20%)</a></li>
+<li><a class="reference internal" href="#a04-simulacion-de-circuitos-logic-ly-50">A04: Simulación de circuitos Logic.ly (50%)</a></li>
 </ul>
 </li>
 </ul>
@@ -524,5 +1631,7 @@ Recursos (0)</label><div class="sd-tab-content docutils">
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="../../_static/translations.js?v=d190bf04"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>
 </html>
