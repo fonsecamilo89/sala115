@@ -25,6 +25,7 @@
 {bdg-danger}`Transferencia`
 - **Temática**: Concepto de lógica computacional.
 - **Objetivo de aprendizaje**: Repasar los conceptos de hardware, software, sistemas computacionales y el razonamiento lógico para comprender el concepto de lógica computacional.
+- **DESEMPEÑO**: Demuestra sólida comprensión de conceptos clave (hardware: CPU y RAM, software y sistemas computacionales) y aplica razonamiento lógico en las actividades. Participa activamente y entrega trabajos completos.
 ```
 
 ```{tab-item} Orientaciones curriculares
@@ -41,9 +42,9 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (0)
+```{tab-item} Recursos (1)
 
-- Esta guía no contiene recursos.
+- **Plan de refuerzo 01.pdf** [{bdg-primary}`Descargar`](./recursos/G821/archivos/planRefuerzo01.pdf)
 
 ```
 :::

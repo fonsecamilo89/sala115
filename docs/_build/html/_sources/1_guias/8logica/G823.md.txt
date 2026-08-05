@@ -26,6 +26,7 @@
 {bdg-danger}`Transferencia`
 - **Temática**: Variables y operaciones.
 - **Objetivo de aprendizaje**: Comprender el concepto de variables como contenedores de memoria, identificando sus diferentes tipos (numéricos, cadena y booleanos) y aplicando sus fundamentos matemáticos mediante operaciones básicas, codificación y decodificación, para resolver problemas prácticos dentro del contexto de la lógica computacional.
+- **DESEMPEÑO**: Comprende y aplica el concepto de variables como contenedores de memoria, identificando correctamente sus tipos (numéricos, cadena y booleanos). Demuestra habilidad en la resolución de operaciones matemáticas básicas, así como en los procesos de codificación y decodificación mediante la tabla ASCII, integrando estos conocimientos para resolver problemas lógicos dentro del contexto computacional.
 ```
 
 ```{tab-item} Orientaciones curriculares
@@ -43,9 +44,9 @@ el funcionamiento de productos tecnológicos actuales.
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (0)
+```{tab-item} Recursos (1)
 
-- Esta guía no contiene recursos.
+- **Plan de refuerzo 03.pdf** [{bdg-primary}`Descargar`](./recursos/G823/archivos/planRefuerzo03.pdf)
 
 ```
 :::
