@@ -25,6 +25,7 @@
 {bdg-danger}`Transferencia`
 - **Temática**: Reflexión sobre la Ofimática y Programación.
 - **Objetivo de aprendizaje**: Identificar el nivel de interés del estudiante sobre las temáticas de Ofimática, Programación, Redes y Mantenimiento.
+- **DESEMPEÑO**: Identifica y reflexiona sobre su interés en las áreas de ofimática, programación, redes y mantenimiento, comprendiendo conceptos fundamentales del software, desarrollo, seguridad en redes y sistemas tecnológicos para la elección de su proyecto de grado.
 ```
 
 ```{tab-item} Orientaciones curriculares
@@ -41,12 +42,13 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (5)
+```{tab-item} Recursos (6)
+- **Plan de refuerzo 02.pdf** [{bdg-primary}`Descargar`](./recursos/G1002/archivos/planRefuerzo02.pdf)
+- Formulario elección TEMA [{bdg-primary}`Descargar`](../../0_intro/recursos/descargas/formularioTema.odt)
 - [RESUMEN OFIMÁTICA](https://app.notion.com/p/Ofim-tica-3862daca769880d3bd7ffb1dd6c939da)
 - [RESUMEN PROGRAMACIÓN](https://app.notion.com/p/Programaci-n-3862daca76988006839fd9c89859f427)
 - [RESUMEN REDES](https://app.notion.com/p/Redes-de-datos-3862daca7698802abf3ee391218d5fec)
 - [RESUMEN MANTENIMIENTO](https://app.notion.com/p/Mantenimiento-3862daca769880abb1a5d6f64421aea6)
-- Formulario elección TEMA [{bdg-primary}`Descargar`](../../0_intro/recursos/descargas/formularioTema.odt)
 ```
 :::
 
