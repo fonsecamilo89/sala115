@@ -41,8 +41,8 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (0)
-- Esta guía no contiene recursos
+```{tab-item} Recursos (1)
+- **Plan de refuerzo 03.pdf** [{bdg-primary}`Descargar`](./recursos/G1003/archivos/planRefuerzo03.pdf)
 ```
 :::
 
@@ -61,25 +61,72 @@
 1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía..
 
 ---
-## A01: Tema (%)
-{bdg-info}`Estructuración`
-
-1. OK.
-
----
-## A02: Taller (%)
+## A01: Taller (%)
 {bdg-info}`Estructuración`
 
 1. OK
    
 ---
-## A03: Análisis (%)
+## A02: Consultas avanzadas en Google (%)
 {bdg-warning}`Actividad práctica`
 
-1. OK
+1. 
 
 ---
-## A04: Examen escrito (%)
+## A03: Análisis ideas de proyecto (%)
+{bdg-warning}`Actividad práctica`
+
+1. Despliegue el **TEMA DE PROYECTO** elegido y por cada **idea de proyecto**, desarrolle las siguientes tareas: 
+    
+    * Por medio una **búsqueda avanzada**, consulte información de la **idea de proyecto**.
+    * En una **hoja de cuaderno**, realice una **descripción** de la **idea de proyecto** consultada.
+    * Asigne un puntaje a la **idea de proyecto** consultada así:
+      :::{admonition} PUNTAJES
+      * ★★★★★: *"La **idea de proyecto** me parece muy interesante, me entusiasma y me motiva, deseo conocer más detalles y me siento comprometido(a) a realizarla"*. 
+      * ★★★★: *"La **idea de proyecto** me parece interesante y estoy **dispuesto(a) a profundizar en ello**, aunque sinceramente **me entusiasma poco**"*.
+      * ★★★: *"Me llama la atención la **idea de proyecto** pero **no me motiva a investigarla a fondo**. Solo deseo conocer superficialmente"*.
+      * ★★: *"No me llama la atención esta **idea de proyecto**"*.
+      * ★: *"Nunca haría esta **idea de proyecto**"*.
+      :::
+
+    * :::{dropdown} TEMA: OFIMÁTICA (10)
+      1. **Comparativa de distribuciones de sistemas operativos basados en LINUX**: Seleccionar distribuciones LINUX más conocidas y usadas y por medio de su instalación y configuración en máquinas virtuales o reales, lograr una comparativa identificados ventajas, desventajas y casos de uso.
+      2. **Implementación de sistema operativo tipo BSD**: Realizar investigación sobre estos sistemas e identificar las diferencias entre sistemas operativos conocidos. Algunos sistemas basados en BSD son: OpenBSD y FreeBSD.
+      3. **Implementación de aplicativo CMS con fines institucionales**: Usando un CMS ya sea Wordpress, Joomla o DRUPAL implementar un sitio web que permita dar utilidad a una gestión institucional.
+      4. **Uso de INKSCAPE como herramienta de apoyo gráfico en procesos académicos y administrativos institucionales**: Inkscape es un software de código abierto que permite trabajar con gráficos vectoriales. Es muy usado por diseñadores y artistas web. Dominar esta herramienta permitiría realizar múltiples trabajos tanto académicos como administrativos que beneficien a toda la comunidad.
+      5. **Uso de GIMP como herramienta en procesos académicos y administrativos institucionales**: GIMP es un software de código abierto que permite trabajar con imágenes de bits. Es muy usado por diseñadores y artistas web. Dominar esta herramienta permite realizar múltiples trabajos tanto académicos como administrativos que beneficien a toda la comunidad.
+      6.  **Uso de AUDIOFLOSS para composición, remasterización de proyectos musicales institucionales**: Aprendiendo a usar el software Audiofloss, permitirá que varios proyectos musicales en la institución tenga una herramienta de apoyo para composición o remasterización.
+      7.  **Uso de BLENDER como herramienta académica**: Modelado tridimensional para diferentes proyectos académicos institucionales.
+      8. **Uso de MOTOR de VIDEOJUEGOS**: Uso de algún motor (GODOT, UNITY, UNREAL, etc.) en el desarrollo de experiencias digitales interactivas.
+      9.  **Implementación de aplicativo ITOP para control de recursos tecnológicos de la institución**: Por medio de ITOP puede llevarse el control de hoja de vida de los diferentes recursos tecnológicos (PCs, portátiles, servidores, personal activo) de una institución.
+      10. **Investigación en aplicativo OCS INVENTORY para inventario automatizado de computadoras de la institución educativa**: Por medio de la instalación de agentes en los equipos institucionales, se captura la información técnica de los equipos y dicha información es enviada a las bases de datos de un servidor el cual por medio de una interfaz gráfica, muestra el estado actual de los equipos.
+      :::
+    * :::{dropdown} TEMA: PROGRAMACIÓN ()
+      1. **Desarrollo web**: Uso de algún [^2]framework (DJANGO, FLASK, NODEJS, etc.) para construcción de aplicativo web básico.
+      2. **Desarrollo de escritorio**: Uso de algún framework para construcción de aplicativo de PC.
+      3. **Desarrollo móvil**: Uso de algún framework para construcción de aplicativo móvil para smartphone o tablet (Android o IOS).
+      4. **Desarrollo de videojuegos**: Uso de algún framework (Pygame, Monogame, etc.) para el desarrollo de un videojuego.
+      5. **Desarrollo de IA**: Uso de algún framework (TensorFlow) para el desarrollo de algún modelo basado en IA.
+      6. **Ciencia de datos**: Uso de algún framework (PANDAS, matplotlib, etc.) para el desarrollo de algún modelo que sistematice grandes cantidades de información.
+      7. **Desarrollo de sistema integrado de gestión de la institución**: [^1]Aplicativo que muestre la estructura organizacional así como la recepción de formatos de un institución.
+      8. **Desarrollo de sistema de voto electrónico a medida**: Aplicativo que permita acompañar en el proceso electoral para que las personas puedan ejercer su derecho al voto al mismo tiempo que automatiza el conteo y garantiza transparencia.
+      9. **Desarrollo de sistema de notas**: Aplicativo básico que permite el registro de calificaciones académicas.
+      10. **Desarrollo de sistema GUÍA 34**: Aplicativo web para seguimiento y control de autoevaluación institucional.
+      :::
+    * :::{dropdown} TEMA: REDES ()
+      OK
+      :::
+    * :::{dropdown} TEMA: MANTENIMIENTO ()
+      OK
+      :::
+
+
+---
+## A04: Envío de correo (%)
 {bdg-danger}`Transferencia`
 
 1. OK
+
+[^1]: Una **aplicativo** puede ser de PC, web, móvil, o inclusive en un Smart-TV.
+[^2]: Un framework (o marco de trabajo) es una estructura base con herramientas, reglas y código ya escrito. Sirve como plantilla para crear software. En lugar de empezar desde cero, te ayuda a programar más rápido. Vive. (2022, September 22). Framework: qué es, para qué sirve y algunos ejemplos. UNIR. https://unirfp.unir.net/revista/ingenieria-y-tecnologia/framework/
+

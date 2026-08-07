@@ -393,9 +393,9 @@
 
 7. Seleccione el documento **formularioTema.odt** que acabó de editar.
    
-8. Con el documento en **Google Gemini**, realizar la siguiente pregunta a la IA: 
+8. Con el documento en [GOOGLE GEMINI](https://gemini.google.com/app), realizar la siguiente pregunta a la IA: 
 
-   - > Acorde al contenido del archivo, ¿Cuál de los siguientes temas (OFIMÁTICA, PROGRAMACIÓN, REDES o MANTENIMIENTO) me recomienda para mi proyecto de grado?
+   - > Acorde al contenido del archivo, ¿Cuál de los siguientes temas (**OFIMÁTICA**, **PROGRAMACIÓN**, **REDES** o **MANTENIMIENTO**) me recomienda para mi proyecto de grado?
 
 9.  Abra nuevamente el documento **formularioTEMA.odt** y en la sección: **RESPUESTA IA**, copiar y pegar la respuesta de la IA de GEMINI.
     
@@ -409,10 +409,17 @@
    
     > **Correo:** proyectos.grado@jfkennedy.edu.co
     >
-    > **Asunto:** ELECCIÓN TEMA PROYECTO DE GRADO
+    > **Asunto:** TEMA ELEGIDO: {nombre del tema}
 
 2. Adjunte el archivo **formularioTEMA.odt**
 
-3. El contenido del correo debe tener una **descripción** del tema de investigación elegido (OFIMÁTICA, PROGRAMACIÓN, REDES, MANTENIMIENTO) y el por qué.
+3. En el **contenido del correo** responda las siguiente preguntas:
+
+    > - ¿Por qué le llama la atención el **tema elegido**?
+    > - El **tema elegido**, ¿lo observó en alguna película, serie, novela, videojuego, en la calle, etc.?
+    > - El **tema elegido**, ¿está relacionado con lo que desea ser en su vida? (**Si está relacionado**, ¿Cómo el **tema elegido** podría ayudarle?)
+    > - ¿Tiene algún familiar, amigo o conocido que le pueda ayudar con el **tema elegido**?
+    > - ¿De qué forma el **tema elegido** podría favorecer a usted o a su familia?
+    > - ¿Tiene alguna experiencia previa (estudios, trabajos, juegos, negocios, etc.) relacionada con el tema **elegido**?
    
-4. Enviar el correo electrónico.
+4. Enviar el **correo electrónico**.
