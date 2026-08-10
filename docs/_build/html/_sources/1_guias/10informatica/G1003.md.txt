@@ -23,14 +23,15 @@
 {bdg-info}`Estructuración`
 {bdg-warning}`Actividad práctica`
 {bdg-danger}`Transferencia`
-- **Temática**: .
-- **Objetivo de aprendizaje**: .
+- **Temática**: Búsquedas avanzadas en Google y análisis de ideas de proyecto.
+- **Objetivo de aprendizaje**: Utilizar herramientas de búsqueda avanzada para investigar, evaluar y seleccionar una idea de proyecto tecnológico.
+- **DESEMPEÑO**: Demuestra habilidad para utilizar técnicas de búsqueda avanzada en internet, investigando y seleccionando de manera crítica ideas de proyecto tecnológico pertinentes para su nivel académico.
 ```
 
 ```{tab-item} Orientaciones curriculares
-- **Componente**: .
-- **Competencia**: . 
-- **Evidencia de aprendizaje**: .
+- **Componente**: Uso y apropiación de la Tecnología y la Informática.
+- **Competencia**: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos. 
+- **Evidencia de aprendizaje**: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.
 ```
 
 ```{tab-item} Criterios de evaluación
@@ -49,7 +50,7 @@
 ## Mensaje del autor
 
 :::{pull-quote}
-"".
+"La presente guía tiene como objetivo principal que los estudiantes utilicen herramientas de búsqueda avanzada para investigar, evaluar y seleccionar una idea de proyecto tecnológico. La evidencia de aprendizaje se centra en la capacidad para aplicar estas técnicas de búsqueda y análisis crítico, garantizando un proceso de selección fundamentado y efectivo. Esta guía está diseñada para apoyar el desarrollo de competencias investigativas y de pensamiento crítico, fundamentales en la formación académica y personal".
 
 -- Camilo Fonseca
 :::
@@ -102,16 +103,18 @@ Operador ; Función ; Ejemplo práctico
 `intitle:` ; Restringe los resultados a páginas cuyo título contenga el término.; `intitle:"guía de usuario"`
 :::
 
-Dominar la búsqueda avanzada transforma la relación con el motor de búsqueda para convertirse en un entorno de investigación preciso, eficiente y adaptado a requerimientos técnicos o profesionales complejos.
+> Dominar la búsqueda avanzada transforma la relación con el motor de búsqueda para convertirse en un entorno de investigación preciso, eficiente y adaptado a requerimientos técnicos o profesionales complejos.
 
 ---
-## A00: Introducción (%)
+## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía..
+1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+2. Lea el **mensaje del autor** y en su cuaderno responda:
+    - ¿Qué utilidad tiene el realizar correctamente búsquedas avanzadas al momento de investigar?
 
 ---
-## A01: Taller (%)
+## A01: Taller (5%)
 {bdg-info}`Estructuración`
 
 1. En su cuaderno responda las siguientes preguntas:
@@ -120,17 +123,17 @@ Dominar la búsqueda avanzada transforma la relación con el motor de búsqueda 
    - ¿Cuáles son las ventajas de usar búsquedas avanzadas?
    - ¿Cuáles son las dos formas de ejecutar búsquedas avanzadas?
 
-2. Describa los operadores al momento de realizar una búsqueda avanzada.  
+2. Describa los operadores usados al momento de realizar una búsqueda avanzada.  
 
 ---
-## A02: Consultas avanzadas en Google (%)
+## A02: Consultas avanzadas en Google (15%)
 {bdg-warning}`Actividad práctica`
 
-1. Entrar a la página principal del buscador a: https://www.google.com.
+1. Entrar a la página: [https://www.google.com](https://www.google.com)
 
 2. Desde el navegador web del ordenador (o del móvil), PULSAR la opción de **Preferencias** > **Búsqueda avanzada** que aparece en la parte inferior de la pantalla.
 
-3. Esto llevará a la página de **búsquedas avanzadas**. En esta página tendrá que rellenar los campos que necesite para realizar una búsqueda avanzada.
+3. Esto llevará a la página de [Búsquedas avanzadas](https://www.google.com/advanced_search). En esta página tendrá que rellenar los campos que necesite para realizar una búsqueda avanzada.
 
   :::{list-table}
   * - ```{figure} ./recursos/G1003/image02.png
@@ -156,33 +159,19 @@ Dominar la búsqueda avanzada transforma la relación con el motor de búsqueda 
 
 6. Los resultados de búsqueda se transforman a:
 
-  ```bash
-  Ingenieria de software "desarrollo" -java filetype:pdf
-  ```
+    ```bash
+    Ingenieria de software "desarrollo" -java filetype:pdf
+    ```
 
 7. En su cuaderno describa los 5 primeros resultados de la búsqueda.  
 
 ---
-## A03: Análisis ideas de proyecto (%)
+## A03: Análisis ideas de proyecto (25%)
 {bdg-warning}`Actividad práctica`
 
 1. Despliegue el **TEMA DE PROYECTO** elegido y por cada **idea de proyecto**, desarrolle las siguientes tareas: 
     
-    * Por medio una **búsqueda avanzada**, consulte información de la **idea de proyecto**.
-      :::{admonition} PREGUNTAS PARA REALIZAR UN BÚSQUEDA CORRECTA DE CADA IDEA
-      :class: tip
-      > **ESTAS PREGUNTAS SE RESPONDEN MENTALMENTE. No es necesario escribirlas en el cuaderno**. Responder estas preguntas ayudan al estudiante a realizar una búsqueda avanzada de forma eficiente. ("Piense antes de actuar").
-      - **¿Que idea buscará?** Lea la idea de proyecto antes de escribirla en 
-      - ¿Qué palabras relacionadas con el tema?
-      - ¿Qué palabras exactas relacionadas con el tema?
-      - ¿Qué palabras EXCLUYE? (a veces algunas palabras nos alejan de resultados certeros)
-      - ¿Quiere buscar en una página en específico? (ESTO ES OPCIONAL)
-      ---
-      - ¿En que formato quiere tener los resultados?, ¿en páginas web?, ¿pdf?, ¿Word o excel? otro?
-      - ¿Los resultados deben ser actualizados o pueden tener más tiempo? Resultados de hace una semana?, resultados de hace meses?, resultados de hace años?
-      - ¿En qué idioma quiere que aparezcan los resultados?
-      - ¿A qué país de origen deben pertenecer las páginas o los resultados?
-      :::
+    * Por medio de **búsquedas avanzadas**, consulte información de la **idea de proyecto**.
     * En una **hoja de cuaderno**, realice un **resumen** de la **idea de proyecto** consultada.
     * Asigne un puntaje a la **idea de proyecto** consultada así:
       :::{admonition} PUNTAJES
@@ -244,7 +233,7 @@ Dominar la búsqueda avanzada transforma la relación con el motor de búsqueda 
 
 
 ---
-## A04: Envío de correo (%)
+## A04: Envío de correo (50%)
 {bdg-danger}`Transferencia`
 
 1. Escanear las *hojas de su cuaderno* con el contenido de la **actividad A03: Análisis ideas de proyecto** y crear un archivo PDF con el nombre **ideasAnalizadas.pdf**
@@ -253,14 +242,14 @@ Dominar la búsqueda avanzada transforma la relación con el motor de búsqueda 
    
     > **Correo:** proyectos.grado@jfkennedy.edu.co
     >
-    > **Asunto:** IDEA DE PROYECTO: {nombre de la idea de proyecto}
+    > **Asunto:** IDEA DE PROYECTO: {nombre de la idea de proyecto seleccionada}
 
-3. En el contenido del correo describir por qué eligió la idea de proyecto.
+3. En el **contenido del correo** describir ***por qué eligió la idea de proyecto***.
 
 4. Adjunte el archivo **ideasAnalizadas.pdf**
 
 5. Enviar el **correo electrónico**.  
 
 [^1]: Una **aplicativo** puede ser de PC, web, móvil, o inclusive en un Smart-TV.
-[^2]: Un framework (o marco de trabajo) es una estructura base con herramientas, reglas y código ya escrito. Sirve como plantilla para crear software. En lugar de empezar desde cero, te ayuda a programar más rápido. Vive. (2022, September 22). Framework: qué es, para qué sirve y algunos ejemplos. UNIR. https://unirfp.unir.net/revista/ingenieria-y-tecnologia/framework/
+[^2]: Un framework (o marco de trabajo) es una estructura base con herramientas, reglas y código ya escrito. Sirve como plantilla para crear software. En lugar de empezar desde cero, le ayuda a programar más rápido. *Vive. (2022, September 22). Framework: qué es, para qué sirve y algunos ejemplos. UNIR. https://unirfp.unir.net/revista/ingenieria-y-tecnologia/framework/*
 
