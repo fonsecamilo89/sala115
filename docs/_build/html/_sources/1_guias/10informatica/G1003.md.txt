@@ -131,12 +131,19 @@ Operador ; Función ; Ejemplo práctico
 
 1. Entrar a la página: [https://www.google.com](https://www.google.com)
 
-2. Desde el navegador web del ordenador (o del móvil), PULSAR la opción de **Preferencias** > **Búsqueda avanzada** que aparece en la parte inferior de la pantalla.
+2. Desde el navegador web del PC (o del móvil), en la parte *inferior derecha* de la pantalla, PULSAR la opción de **Configuración** > **Búsqueda avanzada**.
+
+  :::{list-table}
+  * - ```{figure} ./recursos/G1003/image02.png
+      :width: 333
+      Menú
+      ```
+  :::
 
 3. Esto llevará a la página de [Búsquedas avanzadas](https://www.google.com/advanced_search). En esta página tendrá que rellenar los campos que necesite para realizar una búsqueda avanzada.
 
   :::{list-table}
-  * - ```{figure} ./recursos/G1003/image02.png
+  * - ```{figure} ./recursos/G1003/image03.png
       :width: 333
       Búsquedas avanzadas
       ```
@@ -173,6 +180,7 @@ Operador ; Función ; Ejemplo práctico
     
     * Por medio de **búsquedas avanzadas**, consulte información de la **idea de proyecto**.
     * En una **hoja de cuaderno**, realice un **resumen** de la **idea de proyecto** consultada.
+    * Los documentos como **PDFs** que encuentre, alojarlos en la **carpeta de evidencias** del periodo actual.
     * Asigne un puntaje a la **idea de proyecto** consultada así:
       :::{admonition} PUNTAJES
       * ★★★★★: *"La **idea de proyecto** me parece muy interesante, me entusiasma y me motiva, deseo conocer más detalles y me siento comprometido(a) a realizarla"*. 

@@ -65,6 +65,7 @@ A continuación se muestran las **reglas del aula** que los estudiantes se compr
     - Manipular, portar o **dejar visible el celular** sin previa autorización del docente (jugar, redes sociales, etc.)
     - Tomar fotos, selfis o videos sin autorización del docente.
     - Manipular aires acondicionados, ventiladores, televisor, tablero.
+    - Estar debajo de los aires (*El contacto directo con el aire acondicionado puede afectar la salud del estudiante*)
     - Acceder al gabinete, armario y escritorio del docente.
     - Desarmar o dar golpes a los equipos.
     - Instalar software en los equipos sin previa autorización del profesor.
