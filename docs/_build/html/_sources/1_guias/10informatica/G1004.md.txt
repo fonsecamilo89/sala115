@@ -55,31 +55,290 @@
 :::
 
 ---
-## A00: Introducción (%)
+## ¿Qué es el proyecto de grado?
+
+El proyecto de grado es un **trabajo de investigación** que el estudiante realiza para aplicar sus aprendizajes y conocimientos adquiridos en la Institución Educativa John F. Kennedy (IEJFK).
+
+> “La **planeación del proyecto** se realiza en grado DÉCIMO y la **ejecución del proyecto** se realiza en grado ONCE”.
+
+:::{admonition} **REQUISITO DE GRADO**
+
+Cómo requisito de grado, el estudiante debe **desarrollar un proyecto** que identifique alguna **problemática en la institución** y darle una **solución de tipo tecnológico**.
+
+- Las problemáticas pueden ser de tipo académico o administrativo.
+- Las soluciones tecnológicas tienen que ver con alguno de los siguientes temas:
+  - MANTENIMIENTO y ELECTRÓNICA
+  - REDES y CIBERSEGURIDAD
+  - DESARROLLO y PROGRAMACIÓN
+  - OFIMÁTICA y SOFTWARE LIBRE
+:::
+
+
+:::{admonition} **Fases** del proyecto de grado
+El proyecto de grado se desarrolla en 8 fases.
+
+- **FASE 01**: Selección del **tema del proyecto** (GRADO DÉCIMO)
+- **FASE 02**: Selección de la **idea del proyecto** (GRADO DÉCIMO)
+- **FASE 03**: Entrega del **documento del anteproyecto** (GRADO DÉCIMO)
+- **FASE 04**: Búsqueda de **ASESOR de proyecto** (GRADO DÉCIMO)
+- **FASE 05**: Asignación de **código de proyecto** (GRADO DÉCIMO)
+- **FASE 06**: **Ejecución del proyecto** (GRADO ONCE)
+- **FASE 07**: Entrega del **documento del proyecto** y **presentación de diapositivas** (GRADO ONCE)
+- **FASE 08**: Sustentación ante **jurados externos** (GRADO ONCE)
+:::
+
+:::{admonition} **Entregables** del proyecto
+El proyecto de grado tiene los siguientes **4 entregables**:
+
+- Documento del ante-proyecto.
+- Resultado del proyecto (producto, hardware, software, experiencia, servicio, etc.)
+- Presentación con diapositivas para la sustentación.
+- Documento final del proyecto.
+:::
+
+:::{admonition} ¿Cuál es la **diferencia** entre los documentos del ante-proyecto y el proyecto de grado?
+La diferencia es que el **documento del ante-proyecto** se realiza **ANTES de ejecutar el proyecto** (GRADO DÉCIMO). Por el contrario el **documento del proyecto** se realiza **DESPUÉS de ejecutar el proyecto** (GRADO ONCE).
+:::
+
+:::{admonition} Elementos del ante-proyecto vs proyecto
+```{csv-table}
+:delim: ;
+:header-rows: 1
+ANTE-PROYECTO ; PROYECTO
+Portada ; Portada
+ ; Resumen
+ ; Abstract
+Índice ; Índice
+Índice de tablas ; Índice de tablas
+Índice de figuras ; Índice de figuras
+ ; Introducción
+Planteamiento de problema ; Planteamiento de problema
+Justificación ; Justificación
+Objetivos </br> - Objetivo General </br> - Objetivos específicos ; Objetivos </br> - Objetivo General </br> - Objetivos específicos
+Pregunta problematizadora ; Pregunta problematizadora
+Marco teórico </br> - Marco conceptual </br> - Marco de antecedentes </br> - Marco legal ; Marco teórico </br> - Marco conceptual </br> - Marco de antecedentes </br> - Marco legal
+Aspectos metodológicos </br> - Fases de proyecto </br> - Cronograma de actividades </br> - Técnicas e Instrumentos </br> - Población ; Aspectos metodológicos </br> - Fases de proyecto </br> - Cronograma de actividades </br> - Técnicas e Instrumentos </br> - Población
+ ; Análisis de resultados
+ ; Conclusiones
+Referencias ; Referencias
+```
+:::
+
+---
+## Sustentación del proyecto de grado
+
+En el cuarto periodo de grado undécimo; estudiantes, profesores y jurados externos se reúnen en el **auditorio de la IEJFK** para participar en la actividad de **sustentación** de proyectos de grado. Para la sustentación de proyectos de grado se invitan a tres jurados externos:
+
+- Jurado de área lengua castellana (NORMAS APA, REDACCIÓN, ORATORIA etc.)
+- Jurado de área idioma extranjero (SPEAKING ENGLISH)
+- Jurado externo especialista (TECNOLOGÍA, INFORMÁTICA Y SISTEMAS)
+
+Cada **grupo de trabajo**, tiene **10 minutos** para sustentar su proyecto. Posteriormente en **5 minutos**, los jurados realizan unas preguntas a los estudiantes y califican los proyectos.
+
+> Los proyectos y sus calificaciones, serán publicados en el **repositorio de proyectos de grado** del portal web de la IEJFK
+
+:::{admonition} **Porcentajes** de calificación
+```{list-table} JURADO **ESPECIALIDAD**
+:header-rows: 1
+* - Dominio del tema
+  - Argumentación
+  - Coherencia
+  - Innovación
+  - Producto funcional
+* - 30%
+  - 20%
+  - 20%
+  - 10%
+  - 20%
+```
+
+```{list-table} JURADO **LENGUA CASTELLANA**
+:header-rows: 1
+
+* - NORMAS APA
+  - Argumentación
+  - Expresión oral
+  - Diapositivas
+  - Presentación personal
+* - 30%
+  - 20%
+  - 30%
+  - 10%
+  - 10%
+```
+
+```{list-table} JURADO **INGLES**
+:header-rows: 1
+
+* - Speaking
+  - Writing
+  - Personal presentation
+* - 50%
+  - 25%
+  - 25%
+```
+
+```{list-table} **JURADOS TOTAL**
+:header-rows: 1
+
+* - Especialidad
+  - Lengua Castellana
+  - Inglés
+* - 50%
+  - 30%
+  - 20%
+```
+
+```{admonition} ADVERTENCIA
+:class: warning
+Los **porcentajes de calificación** varían según el año.
+```
+:::
+
+---
+## Repositorio de proyectos de grado
+El **repositorio de proyectos de grado** contiene los **documentos de los proyectos** que los estudiantes han sustentado desde el año 2024. Esto ayuda a futuros estudiantes a entender como presentar y documentar estos proyectos.
+
+Los **proyectos en el repositorio**, pueden ser elegidos por los estudiantes para continuar su desarrollo (teniendo presente que no es replicar exactamente el mismo proyecto. Se debe buscar modificarlo, adaptarlo, mejorarlo o completarlo).
+
+El repositorio de proyectos de grado de la IEJFK se encuentra publicado en el portal web: [REPOSITORIO](https://www.jfkennedy.edu.co/estudiantes/proyectos-de-grado)
+
+:::{admonition} Clasificación de proyectos de grado
+:class: tip
+Cada proyecto de grado tiene una clasificación hasta de cinco estrellas (⭐️) así:
+
+> **⭐️⭐️⭐️⭐️⭐️ Excelente**: El proyecto es excepcional, innovador y presenta una contribución significativa al campo de estudio.
+
+> **⭐️⭐️⭐️⭐️ Bueno**: El proyecto es sólido, bien desarrollado y presenta pocos aspectos que podrían mejorarse.
+
+> **⭐️⭐️⭐️ Aceptable**: El proyecto cumple con los requisitos mínimos, pero presenta algunas áreas que podrían mejorarse.
+
+> **⭐️⭐️ Insatisfactorio**: El proyecto presenta varias deficiencias, que requieren mejoras sustanciales.
+
+> **⭐️ Deficiente**: El proyecto presenta fallas significativas en varios criterios. Necesita revisiones extensas.
+:::
+
+---
+## Normas APA
+
+Las normas APA **(American Psychological Association)** es un estándar propuesto por la APA, para publicar **textos académicos** cuyo origen es de **1929**. Al día de hoy (2026) están en la 7ma versión.
+
+Un documento que cumpla las **normas APA** debe tener las siguientes características de formato:
+
+- **Márgenes**: El tamaño de las márgenes en las Normas APA son de 2,54 cm (1 pulgada) para el margen superior, inferior, derecho e izquierdo.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1004/image01.png
+        :width: 333
+        Márgenes
+        ```
+    :::
+
+- **Numeración**: Las hojas deben estar enumeradas en la esquina superior derecha. En la portada y contraportada debe iniciar la numeración (1 y 2 respectivamente); cada página debe el número correspondiente.
+
+- **Tamaño papel**: Tamaño carta 21.59 cm x 27.94 cm. El papel utilizado no debe tener ningún tipo de calcomanía, cinta adhesiva, pegamento o grapa (nada de publicidad).
+
+- **Sangría**: 5 espacios en la primera línea de cada párrafo
+
+- **Tipo de letra**: Seleccionar Arial o Times News Roman (todo el documento debe tener un solo tipo de letra).
+
+- **Tamaño de letra**: 12 puntos.
+
+- **Espaciado**: Interlineado 2.0, sin espacio entre párrafos.
+
+- **Alineado**: Izquierda, sin justificar.
+
+:::{admonition} Aspecto de la portada
+Una portada consta de una hoja con tres párrafos distribuidos así:
+
+- **1er párrafo**: Título del documento (En Negrilla).
+- **2do párrafo**: Datos del autor.
+- **3er párrafo**: Nota del autor.
+
+    ```{list-table}
+    * - ```{figure} ./recursos/G1004/image02.png
+        :width: 555
+        PORTADA
+        ```
+    ```
+:::
+
+:::{admonition} DISTRIBUCIÓN DE ELEMENTOS DEL DOCUMENTO
+La distribución de elementos en el documento debe estar organizada de tal forma que facilite su lectura y entendimiento. Por tanto, los elementos deben estar organizados así:
+
+- La **portada** tiene su *propia hoja*.
+- El **índice** tiene su *propia hoja*.
+- El **índice de tablas** e **índice de figuras** pueden *compartir hojas*.
+- El **planteamiento del problema**, la **justificación**, los **objetivos generales**, **objetivos específicos** y la **pregunta problematizadora** pueden *compartir hojas*.
+- El **marco teórico** compuesto por el **marco conceptual**, **marco de antecedentes** y **marco legal** pueden *compartir hojas*.
+- Los **aspectos metodológicos** compuesto por las **fases de proyecto**, **cronograma de actividades**, **técnicas o instrumentos** y **población** pueden *compartir hojas*.
+- Las **referencias** tienen su *propia hoja*.
+:::
+
+---
+## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
 1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
 
 ---
-## A01: Tema (%)
+## A01: Taller (10%)
 {bdg-info}`Estructuración`
 
-1. OK.
+1. Responda las siguientes preguntas en su cuaderno:
+    - ¿De que forma el estudiante demuestra sus conocimientos y aprendizajes en tecnología e informática?
+    - ¿Cuál es la diferencia entre la **planeación** y la **ejecución** de un proyecto?
+    - En una Institución Educativa, ¿Cuál es la diferencia entre un **asunto académico** y un un **asunto administrativo**?
+
+2. Analice la siguiente frase y diga si es {guilabel}`FALSO` o **VERDADERO** y explique el por qué:
+    - “Un estudiante puede **graduarse en ceremonia** una vez exponga su **proyecto de grado**”.
+
+3. En su **cuaderno** escriba cada una de las fases y entregables en el desarrollo de un **proyecto de grado**.
+
+4. En su cuaderno transcriba **los elementos** que componen el **documento de un anteproyecto** y los elementos que componen el **documento de un proyecto**. Luego responda las siguientes preguntas:
+    - ¿Qué **elementos extra** tiene el **documento de un proyecto**?
+    - ¿Por qué no hay necesidad de colocar un **resumen**, **introducción** y **conclusiones** en los elementos de un **ante-proyecto**?
+    - Qué diferencia hay entre un **análisis cualitativo** y un **análisis cuantitativo** en una investigación?
+    - En actividades de **análisis de resultados**, ¿**Por qué es necesario hacer mediciones**?
+
+5. Responda las siguientes preguntas en su cuaderno:
+   - ¿Quienes **participan** en la **sustentación del proyecto de grado** y cuál es su rol?
+   - ¿De que se encargan cada uno de los **jurados invitados a la sustentación**?
+   - ¿Para que sirve tener un **repositorio de proyectos de grado**?
+   - ¿En que consiste la **clasificación de proyectos de grado**? 
+   - Si un estudiante elige continuar con el **desarrollo de un proyecto de grado anterior**, ¿Qué debe tener en cuenta para que sea válido?
+
+6. Responda las siguientes preguntas en su cuaderno:
+   - ¿Qué son las normas APA? y cuáles son sus características de formato?
+   - ¿Qué elementos debe tener un documento para considerar que cumple con las normas APA?
+   - Según las normas APA ¿Qué elementos pueden estar distribuidos en varias hojas y que elementos deben tener asignada su propia hoja?
+
+7. En su cuaderno dibuje un **ejemplo** de como debe quedar una **portada** de un **documento** que cumple con las **normas APA**.
+
+8. En su cuaderno complete la siguiente tabla: 
+
+    :::{csv-table}
+    :delim: ;
+    :header-rows: 1
+    Características ; Descripción
+    Márgenes ;
+    Tamaño real ;
+    Sangría ;
+    Tipo de letra ;
+    Tamaño de letra ;
+    Numeración ;
+    Espaciado ;
+    Alineado ; 
+    :::
 
 ---
-## A02: Taller (%)
-{bdg-info}`Estructuración`
-
-1. OK.
-
----
-## A03: Análisis (%)
+## A02: Desarrollo del ante-proyecto (35%)
 {bdg-warning}`Actividad práctica`
 
 1. OK
 
 ---
-## A04: Examen escrito (%)
+## A03: Repositorio de proyectos (50%)
 {bdg-danger}`Transferencia`
 
 1. OK.
