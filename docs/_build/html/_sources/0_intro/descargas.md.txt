@@ -10,8 +10,6 @@ Identifique el recurso y PULSE el botón **Descargar**.
 
 - MANUAL DE CONVIVENCIA [{bdg-primary}`Descargar`](./recursos/descargas/manual_convivencia.pdf) [{bdg-secondary}`Descargar`](https://drive.google.com/file/d/101ObkDOMInftIxeh4Q_yyKYM9gwauDN7/view?usp=drive_link)
 
-- LIBRO DIGITAL: aula 115 (PDF) [{bdg-primary}`Descargar`](./recursos/descargas/aula115.pdf)
-
 ---
 ## Proyecto de grado
 

@@ -23,14 +23,15 @@
 {bdg-info}`Estructuración`
 {bdg-warning}`Actividad práctica`
 {bdg-danger}`Transferencia`
-- **Temática**: .
-- **Objetivo de aprendizaje**: .
+- **Temática**: Formulación y estructuración técnica de proyectos de investigación aplicada en el ámbito escolar.
+- **Objetivo de aprendizaje**: Desarrollar las competencias necesarias para plantear un anteproyecto tecnológico, aplicando las normas APA y estructurando correctamente sus componentes metodológicos, con el fin de resolver problemáticas identificadas en el entorno institucional.
+- **DESEMPEÑO:** Identifica y redacta los componentes básicos del anteproyecto de grado, cumpliendo con los estándares de la norma APA y la estructura metodológica requerida para el desarrollo de proyectos en la institución.
 ```
 
 ```{tab-item} Orientaciones curriculares
-- **Componente**: .
-- **Competencia**: . 
-- **Evidencia de aprendizaje**: .
+- **Componente**: Naturaleza y evolución de la T&I.
+- **Competencia**: Construyo conocimientos y saberes de base tecnológica e informática para la toma de decisiones en el desarrollo de productos tecnológicos. 
+- **Evidencia de aprendizaje**: Ideo a partir de saberes de base tecnológica e informática metodologías de diseño y planeación para la concepción de propuestas contextualizadas en T&I.
 ```
 
 ```{tab-item} Criterios de evaluación
@@ -41,15 +42,15 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (0)
-- Esta guía no contiene recursos.
+```{tab-item} Recursos (1)
+- **Plan de refuerzo 04.pdf** [{bdg-primary}`Descargar`](./recursos/G1004/archivos/planRefuerzo04.pdf)
 ```
 :::
 
 ## Mensaje del autor
 
 :::{pull-quote}
-"".
+"El desarrollo de un proyecto de grado representa una oportunidad fundamental para aplicar los conocimientos técnicos y metodológicos adquiridos durante su formación. Esta guía tiene como propósito orientar al estudiante en formular una propuesta estructurada, rigurosa y capaz de generar soluciones tangibles para las necesidades identificadas en nuestra institución. Se les invita a abordar cada etapa con compromiso y responsabilidad, aplicando los estándares académicos aquí expuestos para transformar sus ideas en proyectos de valor".
 
 -- Camilo Fonseca
 :::
@@ -276,7 +277,7 @@ La distribución de elementos en el documento debe estar organizada de tal forma
 :::
 
 ---
-## A00: Introducción (5%)
+## A00: Introducción (3%)
 {bdg-light}`Exploración`
 
 1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
@@ -332,7 +333,7 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     :::
 
 ---
-## A02: Documento del ante-proyecto (5%)
+## A02: Documento del ante-proyecto (3%)
 {bdg-warning}`Actividad práctica`
 
 1. Descargue los siguientes archivos en su carpeta de evidencias:
@@ -357,7 +358,7 @@ La distribución de elementos en el documento debe estar organizada de tal forma
 4. Cierre el software LibreOffice Writer.
 
 ---
-## A03: **Título del proyecto** *(las 4 preguntas de indagación)* (99%)
+## A03: **Título del proyecto** *(las 4 preguntas de indagación)* (3%)
 {bdg-warning}`Actividad práctica`
 
 1. Realice un resumen de la siguiente información en su cuaderno:
@@ -402,23 +403,35 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     > “**Adecuación tecnológica** usando **software libre** en la **Aula de Informática 115** de la IEJFK, para el **desarrollo eficiente de actividades académicas**”.
     :::
 
-2. Acorde a su idea de proyecto, en su cuaderno responda las 4 preguntas de indagación:
-   - ¿**Qué** se quiere investigar? (Identificación del trabajo a realizar)
-   - ¿**Cómo** se realizará el proyecto? (Identificación de la Tecnología a usar)
-   - ¿**Dónde** se realizará el proyecto? (Lugar dentro de la Institución Educativa)
-   - ¿**Para qué** se realizará el proyecto? (Identificar el aporte, beneficio, importancia o solución de la ejecución de su proyecto)
+2. En su cuaderno:
 
-3. Con las respuestas a las **4 preguntas de indagación**, en su cuaderno construya el **título de su proyecto de grado**.
+    :::{admonition} En su cuaderno...
+    :class: note
+    Acorde a su idea de proyecto, responda las 4 preguntas de indagación:
+    - ¿**Qué** se quiere investigar? (Identificación del trabajo a realizar)
+    - ¿**Cómo** se realizará el proyecto? (Identificación de la Tecnología a usar)
+    - ¿**Dónde** se realizará el proyecto? (Lugar dentro de la Institución Educativa)
+    - ¿**Para qué** se realizará el proyecto? (Identificar el aporte, beneficio, importancia o solución de la ejecución de su proyecto
+    :::
+
+3. En su cuaderno:
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Con las respuestas a las **4 preguntas de indagación**, construya el **título de su proyecto de grado**.
+    :::
+
+4. Abra el archivo **ANTEPROYECTO.odt**
 
     :::{admonition} En el archivo **ANTEPROYECTO.odt**
     - Escriba el **título de proyecto de grado**.
     - Escriba sus **nombres**, **apellidos**, **grado**, **profesor** y la **fecha**.
     :::
 
-4. Guarde los cambios y cierre el software LibreOffice Writer.
+5. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A04: Planteamiento del problema (5%)
+## A04: Planteamiento del problema (3%)
 {bdg-warning}`Actividad práctica`
 
 1. Realice un resumen de la siguiente información en su cuaderno:
@@ -428,6 +441,8 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     Un **planteamiento del problema**, es una descripción concisa y clara de un problema o desafío que necesita ser abordado. Sirve como un camino a seguir para la **resolución de problemas** y la **toma de decisiones**, ayudando a individuos y equipos a definir el **alcance de su trabajo** y centrarse en los **aspectos más críticos del proyecto**.
 
     > El **planteamiento del problema** se construye con la respuesta a la pregunta: ¿**Para qué se realizará el proyecto**?
+
+    ---
 
     ### EJEMPLO
 
@@ -445,20 +460,27 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     ```
     :::
 
-2. Acorde **a su respuesta** a la pregunta: **¿Para qué se realizará el proyecto?**, escriba el **planteamiento del problema** de su proyecto en su cuaderno. Tenga en cuenta lo siguiente:
+2. En su cuaderno: 
+    
+    :::{admonition} En su cuaderno...
+    :class: note
+    Acorde **a su respuesta** a la pregunta: **¿Para qué se realizará el proyecto?**, escriba el **planteamiento del problema** de su proyecto. Tenga en cuenta lo siguiente:
+    
+    - Mínimo una hoja.
+    - Sin espacio entre líneas.
+    - Tamaño de letra mediana.
+    :::
 
-   - Mínimo una hoja.
-   - Sin espacio entre líneas.
-   - Tamaño de letra mediana.
+3. Abra el archivo **ANTEPROYECTO.odt**
 
     :::{admonition} En el archivo **ANTEPROYECTO.odt**
     - Escriba el **Planteamiento del problema**.
     :::
 
-3. Guarde los cambios y cierre el software LibreOffice Writer.
+4. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A05: Justificación (5%)
+## A05: Justificación (3%)
 {bdg-warning}`Actividad práctica`
 
 1. Realice un resumen de la siguiente información en su cuaderno:
@@ -468,6 +490,8 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     La **justificación** en un proyecto es la sección donde se exponen las razones que motivan y dan valor al estudio. Se explica la importancia del tema, su relevancia teórica y práctica, y se argumenta por qué el tema es relevante, qué beneficios aportará, y a quiénes beneficiará.
 
     La justificación también se construye con la respuesta a la pregunta: ¿**Para qué se realizará el proyecto**?.
+
+    ---
 
     ### EJEMPLO
     Teniendo en cuenta que la respuesta a la pregunta: ¿**Para qué se realizará el proyecto**?, es la siguiente:
@@ -482,20 +506,26 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     ```
     :::
 
-2. Acorde a su respuesta a la pregunta: ¿**Para qué se realizará el proyecto**?, escriba la **justificación** de su proyecto en su cuaderno. Tenga en cuenta lo siguiente:
+2. En su cuaderno:
+    
+    :::{admonition} En su cuaderno...
+    :class: note
+    Acorde a su respuesta a la pregunta: ¿**Para qué se realizará el proyecto**?, escriba la **justificación** de su proyecto. Tenga en cuenta lo siguiente:
+    - Mínimo 3/4 de hoja.
+    - Sin espacio entre líneas.
+    - Tamaño de letra mediana.
+    :::
 
-   - Mínimo 3/4 de hoja.
-   - Sin espacio entre líneas.
-   - Tamaño de letra mediana.
+3. Abra el archivo **ANTEPROYECTO.odt**
 
     :::{admonition} En el archivo **ANTEPROYECTO.odt**
     - Escriba la **Justificación**.
     :::
 
-3. Guarde los cambios y cierre el software LibreOffice Writer.
+4. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A06: Objetivos (5%)
+## A06: Objetivos (3%)
 {bdg-warning}`Actividad práctica`
 
 1. Realice un resumen de la siguiente información en su cuaderno:
@@ -521,8 +551,11 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     * - Mejorar <br/> Reducir <br/> Innovar <br/> Simplificar <br/> Actualizar <br/> Minimizar <br/> Maximizar 
       - Diseñar <br/> Construir <br/> Crear <br/> Expandir <br/> Planificar <br/> Implementar <br/> Optimizar <br/> Conseguir <br/> Elaborar <br/> Desarrollar
     ```
+    
+    ---
 
     ### EJEMPLO
+    
     A partir del título del proyecto de grado:
 
     >“Adecuación tecnológica usando software libre en el Aula de Informática 115 de la IEJFK para el desarrollo eficiente de actividades académicas”.
@@ -542,20 +575,27 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     > - "**Implementar** un portal web básico para que los estudiantes accedan a guías y demás recursos digitales y así minimizar el uso de papel aportando al cuidado del medio ambiente".
     :::
 
-2. Acorde al **Título de su proyecto**, en su cuaderno escriba el **objetivo general** y los **objetivos específicos** de su proyecto en su cuaderno. Tenga en cuenta lo siguiente:
+2. En su cuaderno:
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Acorde al **Título de su proyecto**, escriba el **objetivo general** y los **objetivos específicos** de su proyecto. Tenga en cuenta lo siguiente:
 
     - Mínimo una hoja.
     - Sin espacio entre líneas.
     - Tamaño de letra mediana.
+    :::
+
+3. Abra el archivo **ANTEPROYECTO.odt**
 
     :::{admonition} En el archivo **ANTEPROYECTO.odt**
     - Escriba el **Objetivo general** y los **Objetivos específicos**.
     :::
 
-3. Guarde los cambios y cierre el software LibreOffice Writer.
+4. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A07: Pregunta problematizadora (5%)
+## A07: Pregunta problematizadora (3%)
 {bdg-warning}`Actividad práctica`
 
 1. Realice un resumen de la siguiente información en su cuaderno:
@@ -563,6 +603,8 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     :::{admonition} CONSTRUCCIÓN DE LA PREGUNTA PROBLEMATIZADORA
     :class: tip
     La **pregunta problematizadora** permite establecer claramente el problema a resolver, mantenerlo enfocado y con un propósito. Es la base sobre la cual se construye todo el proyecto. Por lo tanto, es importante aprender a redactarla adecuadamente.
+
+    ---
 
     ### EJEMPLO
 
@@ -575,20 +617,239 @@ La distribución de elementos en el documento debe estar organizada de tal forma
     > “¿Usando herramientas de software libre en el aula 115, es posible adecuar un espacio tecnológico que permita a estudiantes y profesores aprender de forma eficiente y autónoma?”
     :::
 
-2. Acorde al Título de su proyecto, en su cuaderno escriba la pregunta problematizadora de su proyecto. Tenga en cuenta lo siguiente:
+2. En su cuaderno:
+    
+    :::{admonition} En su cuaderno...
+    :class: note
+    Acorde al **Título de su proyecto**, escriba la pregunta problematizadora de su proyecto. Tenga en cuenta lo siguiente:
 
     - Mínimo 1/4 de hoja.
     - Sin espacio entre líneas.
     - Tamaño de letra mediana.
+    :::
 
+3. Abra el archivo **ANTEPROYECTO.odt**
+   
     :::{admonition} En el archivo **ANTEPROYECTO.odt**
     - Escriba la **pregunta problematizadora**.
     :::
 
-3. Guarde los cambios y cierre el software LibreOffice Writer.
+4. Guarde los cambios y cierre el software LibreOffice Writer.
 
 ---
-## A10: Repositorio de proyectos (50%)
+## A08: Marco teórico (3%)
+{bdg-warning}`Actividad práctica`
+
+1. Realice un resumen de la siguiente información en su cuaderno:
+
+    :::{admonition} CONSTRUCCIÓN DEL MARCO TEÓRICO
+    :class: tip
+    Un marco teórico esta compuesto por:
+
+    **Marco conceptual**: Es la representación explicativa de los conceptos clave y las relaciones entre ellos que se utilizan en una investigación.
+
+    **Marco de antecedentes**: Representa y analiza las investigaciones previas relacionadas con el tema que se está estudiando.
+
+    **Marco legal**: Proporciona un contexto jurídico que regula diversas actividades y relaciones en la sociedad, asegurando que se respeten los derechos y deberes de los ciudadanos. Todo ello relacionado con el proyecto de investigación.
+    :::
+
+2. Por medio de **búsquedas simples**, consulte mínimo **5 temáticas** relacionadas con el **título de su proyecto de grado**. 
+
+3. Abra el archivo **ANTEPROYECTO.odt**
+
+    :::{admonition} En el archivo **ANTEPROYECTO.odt**
+    - En la sección de **MARCO CONCEPTUAL**, realice una descripción corta de cada **temática** consultada y relacionada con su idea de proyecto.
+    - No olvide citar fuentes.
+    :::
+
+4. Por medio de **búsquedas avanzadas**, descargue diferentes archivos en PDF de investigaciones previas relacionadas con el **título de su proyecto de grado**. Los archivos PDF encontrados, guardarlos en su **carpeta de evidencias**.
+
+5. Abra el archivo **ANTEPROYECTO.odt**
+    :::{admonition} En el archivo **ANTEPROYECTO.odt**
+    - En la sección de **MARCO DE ANTECEDENTES**, realice una descripción corta de cada **investigación previa** relacionada con su idea de proyecto.
+    - No olvide citar fuentes.
+    :::
+
+6. Acceda al siguiente enlace: [GESTOR NORMATIVO](https://www1.funcionpublica.gov.co/web/eva/gestor-normativo).
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1004/image03.png
+        :width: 444
+        ```
+    :::
+
+    En este portal, busque y descargue en su carpeta de evidencias, cualquier **normatividad**, **ley** o **decreto** relacionado con el título de su proyecto de grado.
+
+    :::{admonition} EJEMPLO
+    :class: tip
+    ### Ley 1581 de 2012
+    Por la cual se dictan disposiciones generales para la protección de datos personales.
+
+    ### Ley 1562 de 2012
+    Por el cual se modifica el sistema de riesgos laborales y se dictan otras disposiciones en materia de salud ocupacional.
+    :::
+
+7. Abra el archivo **ANTEPROYECTO.odt**
+    :::{admonition} En el archivo **ANTEPROYECTO.odt**
+    - En la sección de **MARCO LEGAL**, realice una descripción corta de cada **norma**, **ley** o **decreto** relacionado con su idea de proyecto.
+    - No olvide citar fuentes.
+    :::
+
+8. Guarde los cambios y cierre el software LibreOffice Writer.
+
+---
+## A09: Aspectos metodológicos (3%)
+{bdg-warning}`Actividad práctica`
+
+1. Realice un resumen de la siguiente información en su cuaderno:
+
+    :::{admonition} CONSTRUCCIÓN DE LOS ASPECTOS METODOLÓGICOS
+    :class: tip
+
+    Los **aspectos metodológicos** se refiere al "**cómo**" se llevará a cabo la investigación. Incluyen la descripción detallada de los métodos, técnicas y herramientas que se utilizarán para recopilar, analizar e interpretar los datos.
+    
+    En resumen, los aspectos metodológicos es la "hoja de ruta" que guía el estudio, asegurando que la investigación sea rigurosa, válida y confiable. Los aspectos metodológicos se componen de las siguientes secciones:
+
+    - **FASES DEL PROYECTO**: Describe cada una de las fases que tendrá el proyecto para ser ejecutadas de forma serial o en algunos casos, de forma paralela. Cada fase debe especificar su tiempo de ejecución. Cada fase debe tener una descripción que especifique en detalle las tareas a realizar. Las tareas deben estar relacionadas con los objetivos específicos. Las dos últimas fases deben tratar el análisis de resultados y la creación del documento del proyecto.
+
+    - **CRONOGRAMA DE ACTIVIDADES**: Con las fases del proyecto, se crea el cronograma de actividades. Es una tabla que especifica las fechas en las que el proyecto de grado será desarrollado.
+
+    - **TÉCNICAS e INSTRUMENTOS**: En este elemento se describe el inventario o elementos necesarios para desarrollar el proyecto. Cada elemento debe tener una descripción con sus características y el cómo se usaría en cada fase del proyecto.
+
+    - **POBLACIÓN**: En esta sección se hace una descripción del personal humano que de alguna forma participa en la ejecución del proyecto.
+
+    ---
+
+    ### EJEMPLO
+
+    Para la adecuación tecnológica del aula 115, se tienen los siguientes aspectos metodológicos:
+
+    ```{admonition} Fases de proyecto
+    :class: tip
+    - **FASE 01**: Organización de espacios en el aula 115. (DURACIÓN: **1 mes**)
+    - **FASE 02**: Selección del sistema operativo LINUX. (DURACIÓN: **3 meses**)
+    - **FASE 03**: Configuración de red de área local. (DURACIÓN: **1 mes**)
+    - **FASE 04**: Pruebas en sistema de monitoreo y acceso remoto. (DURACIÓN: **2 meses**)
+    - **FASE 05**: Implementación del portal web. (DURACIÓN: **1 mes**)
+    - **FASE 06**: Análisis de resultados. (DURACIÓN: **1 mes**)
+    - **FASE 07**: Creación del documento de proyecto de grado. (DURACIÓN: **1 mes**)
+    ```
+    
+    ```{csv-table} **Cronograma de actividades**
+    :delim: ;
+    :header-rows: 1
+    :stub-columns: 1
+    FASE ; Ene ; Feb ; Mar ; Abr ; May ; Jun ; Jul ; Ago ; Sep ; Oct ; Nov ; Dic
+    Fase 01 ;  ; X ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 
+    Fase 02 ;  ;  ; X ; X ; X ;  ;  ;  ;  ;  ;  ;
+    Fase 03 ;  ;  ;  ;  ;  ; X ;  ;  ;  ;  ;  ;
+    Fase 04 ;  ;  ;  ;  ;  ;  ; X ; X ;  ;  ;  ;
+    Fase 05 ;  ;  ;  ;  ;  ;  ;  ;  ; X ;  ;  ;
+    Fase 06 ;  ;  ;  ;  ;  ;  ;  ;  ;  ; X ;  ;
+    Fase 07 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; X ;
+    ```
+
+    ```{admonition} Técnicas e instrumentos
+    :class: tip
+    - 10 portátiles marca HP.
+    - 6 portátiles y 4 equipos de escritorio marca LENOVO.
+    - 1 switch de 24 puertos TCP/IP.
+    - 1 SMART TV marca CAIXUN.
+    - 10 mesas dobles.
+    - 2 mesas simples.
+    - 1 escritorio.
+    - 33 sillas.
+    - Software VEYON, XAMPP y OS LINUX FEDORA.
+    ```
+    
+    ```{admonition} Población
+    :class: tip
+    Este proyecto se desarrolla en la **Institución Educativa John F. Kennedy** ubicada en el municipio de **Puerto Boyacá (Boyacá)** en el **barrio centro** con dirección **carrera 3A N° 7-01**. Los estudiantes en su mayoría provienen de barrios como Pueblo Nuevo, Chambacú, el Palmar, Brisas de magdalena, el Progreso y el Barrio 10 de enero. Dentro del grupo poblacional se encuentran estudiantes indígenas, afrodescendientes, y estudiantes con necesidades educativas especiales
+    ```
+    :::
+
+2. Abra el archivo **ANTEPROYECTO.odt**
+
+    :::{admonition} En el archivo **ANTEPROYECTO.odt**
+    Escriba los **aspectos metodológicos** de su proyecto. Tenga en cuenta lo siguiente:
+    - Con los **objetivos específicos**, cree las **fases de su proyecto**. Cada *fase* tiene una *descripción* y un *tiempo límite* para desarrollarse.
+    - Con las **fases de su proyecto**, cree el **cronograma de actividades**. Tenga en cuenta que el *rango de las fechas* debe coincidir con los *tiempos establecidos*.
+    - Con las **fases de su proyecto**, cree las **técnicas e instrumentos**. Tenga en cuenta que cada elemento del inventario, debe tener una descripción.
+    - Finalmente describa la **población de su proyecto**. Se debe especificar de que forma dicha población participa en el desarrollo de su proyecto.
+    :::
+
+3. Guarde los cambios y cierre el software LibreOffice Calc.
+
+---
+## A10: Referencias (3%)
+{bdg-warning}`Actividad práctica`
+
+1. Realice un resumen de la siguiente información en su cuaderno:
+
+    :::{admonition} CONSTRUCCIÓN DE LAS REFERENCIAS
+    :class: tip
+    Las **referencias** en un proyecto de grado son una **lista detallada** de todas las fuentes (libros, artículos, páginas web, etc.) que el autor ha consultado y utilizado para sustentar su investigación. Funcionan como un reconocimiento a las ideas y trabajos de otros, y permiten a los lectores verificar y profundizar en la información presentada.
+    
+    Las referencias son importantes para:
+
+    - Evitar el plagio.
+    - Dar credibilidad al trabajo.
+    - Facilitar la investigación de otros interesados en el tema.
+
+    En resumen, las referencias son la “bibliografía” que respalda y contextualiza el proyecto de grado.
+
+    ---
+
+    ### EJEMPLO (tutorial insertar referencias)
+
+    Para la construcción de las referencias del proyecto, inicialmente se deben tener algún enlace de consulta. Por ejemplo se tiene el siguiente enlace: [https://economipedia.com/definiciones/mantenimiento.html](https://economipedia.com/definiciones/mantenimiento.html)
+    
+    1. Para referenciar este enlace (cumpliendo las normas APA), se hace uso de la siguiente herramienta en línea: [BIBGURU](https://app.bibguru.com/)
+    
+    ```{list-table}
+    * - ```{figure} ./recursos/G1004/image04.png
+        :width: 555
+        BIBGURU
+        ```
+    ```
+    2. Es necesario seleccionar el estilo en la opción: **APA - 7th edition**. Posteriormente se debe copiar y pegar el enlace en el cuadro donde dice: **`Paste URL of the website you want to cite`**
+
+    3. Posteriormente aparecerá una ventana donde muestra la referencia y dar clic en {guilabel}`+ Add`
+    
+    4. Entonces se creará la siguiente referencia:
+    
+    > Westreicher, G. (2020, December 14). Mantenimiento: qué es y por qué es importante para la empresa. Economipedia. https://economipedia.com/definiciones/mantenimiento.html 
+
+    :::
+
+2. Abra el archivo **ANTEPROYECTO.odt**
+
+    :::{admonition} En el archivo **ANTEPROYECTO.odt**
+    - Identifique las fuentes consultadas cuando desarrolló el **marco teórico**.
+    - Use el aplicativo [BIBGURU](https://app.bibguru.com/) para construir sus referencias.
+    - Escriba las referencias de su proyecto. 
+    :::
+
+3. Guarde los cambios y cierre el software LibreOffice Writer. 
+
+---
+## A11: Repositorio de proyectos (60%)
 {bdg-danger}`Transferencia`
 
-1. OK.
+1. Al documento: **ANTEPROYECTO.odt** exportar a PDF y agregar una **marca de agua** con el nombre: **ANTEPROYECTO**. El nombre del documento PDF generado es: **ANTEPROYECTO.pdf**. (Para mayor información consulte la actividad [A06: Generación de PDFs](../10ofimatica/G1014.md))
+
+2. Imprimir el archivo **ANTEPROYECTO.pdf**
+
+3. Buscar un [^1] **asesor** de **proyecto de grado** en la institución y solicitar la **firma del mismo**. (Los docentes o cualquier otro funcionario no están obligados a firmar. La solicitud por parte del estudiante debe ser de forma respetuosa cumpliendo las normas del *manual de convivencia*).
+
+4. Entregar el ***documento impreso y firmado*** para correcciones.
+
+5. Un **código de proyecto** (P20XXYY) es asignado al estudiante para la identificación del **proyecto de grado**.
+
+6. El estudiante recibe un **acceso** a una **carpeta compartida en la nube** para que suba:
+    - El **documento escaneado** con las correcciones.
+    - El archivo **ANTEPROYECTO.odt**
+
+7. El **estudiante** y su **proyecto** son registrados en el [repositorio de proyectos](https://www.jfkennedy.edu.co/estudiantes/proyectos-de-grado/) de la institución educativa.
+
+[^1]: Un asesor es una persona que brinda orientación y asesoramiento a los estudiantes que trabajan en su trabajo de grado. *Yourspanish. (2023, junio 1). Asesores de tesis. Your Spanish Institute. https://www.yourspanishinstitute.com/asesor-de-tesis/*

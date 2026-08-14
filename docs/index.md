@@ -56,7 +56,6 @@
 1_guias/10ofimatica/G1010.md
 1_guias/10programacion/G1020.md
 1_guias/11ofimatica/G1110.md
-1_guias/11programacion/G1120.md
 :::
 
 :::{toctree}
