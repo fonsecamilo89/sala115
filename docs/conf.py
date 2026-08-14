@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'aula115'
+project = 'sala115'
 copyright = '2026, Camilo Fonseca'
 author = 'Camilo Fonseca'
 
@@ -39,7 +39,7 @@ language = 'es'
 latex_engine = "lualatex"
 latex_logo = "./_static/logo_light.png"
 latex_documents = [
-    ('index', 'aula115.tex', 'Libro didáctico para el estudiante', 'Julian Camilo Fonseca Romero', 'manual'),
+    ('index', 'sala115.tex', 'Libro didáctico para el estudiante', 'Julian Camilo Fonseca Romero', 'manual'),
 ]
 text_add_secnumbers = False
 latex_use_latex_multicolumn = True
@@ -51,7 +51,7 @@ latex_table_style = ['borderless', 'colorrows']
 # html_theme = 'sphinx_rtd_theme'
 html_theme = 'furo'
 html_static_path = ['_static']
-html_title = "aula 115"
+html_title = "sala 115"
 # html_logo = './_static/logo_light.png'
 html_css_files = [
     "css/custom.css",
