@@ -25,6 +25,7 @@
 {bdg-danger}`Transferencia`
 - **Temática**: Ofimática y software libre.
 - **Objetivo de aprendizaje**: Conocer el concepto de ofimática y entender que la productividad también se logra con el uso de software libre.
+- **DESEMPEÑO**: Comprende qué es la ofimática y reconoce las libertades esenciales del software libre, demostrando el uso básico de las herramientas de LibreOffice para la creación de documentos de texto, hojas de cálculo y presentaciones.
 ```
 
 ```{tab-item} Orientaciones curriculares
@@ -41,8 +42,8 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (0)
-- La presente guía no contiene recursos.
+```{tab-item} Recursos (1)
+- **Plan de refuerzo 01.pdf** [{bdg-primary}`Descargar`](./recursos/G1011/archivos/planRefuerzo01.pdf)
 ```
 :::
 

@@ -25,6 +25,7 @@
 {bdg-danger}`Transferencia`
 - **Temática**: Uso básico de LibreOffice Writer.
 - **Objetivo de aprendizaje**: Usar de forma básica el software LibreOffice Writer.
+- **DESEMPEÑO**: Reconoce y aplica las funciones básicas de LibreOffice Writer para la creación y edición de textos, incluyendo el manejo de herramientas de guardado, copiar/pegar, búsqueda y corrección ortográfica, logrando estructurar documentos académicos de forma legible.
 ```
 
 ```{tab-item} Orientaciones curriculares
@@ -41,7 +42,8 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (3)
+```{tab-item} Recursos (4)
+- **Plan de refuerzo 02.pdf** [{bdg-primary}`Descargar`](./recursos/G1012/archivos/planRefuerzo02.pdf)
 - [Descarga de **LibreOffice**](https://www.libreoffice.org/download/).
 - G1012A06-mitos_desordenados.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A06-mitos_desordenados.odt)
 - G1012A07-proyecto_escritorio_libre.odt [{bdg-primary}`Descargar`](./recursos/G1012/archivos/G1012A07-proyecto_escritorio_libre.odt)
