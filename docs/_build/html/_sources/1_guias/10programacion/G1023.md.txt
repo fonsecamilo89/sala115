@@ -25,6 +25,7 @@
 {bdg-danger}`Transferencia`
 - **Temática**: Fundamentos del lenguaje de programación Python, historia, características y uso práctico en la consola interactiva.
 - **Objetivo de aprendizaje**: Comprender la importancia de Python y aprender a utilizar la consola interactiva para consultar documentación y explorar el lenguaje de forma autónoma.
+- **DESEMPEÑO**: Comprende y aplica los fundamentos de Python: identifica su historia y características, utiliza correctamente la consola interactiva para ejecutar comandos y consultar documentación (help, topics, copyright, credits, license), y resuelve ejercicios prácticos demostrando autonomía y precisión en la interpretación de la información técnica.
 ```
 
 ```{tab-item} Orientaciones curriculares
@@ -41,7 +42,8 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (1)
+```{tab-item} Recursos (2)
+- **Plan de refuerzo 03.pdf** [{bdg-primary}`Descargar`](./recursos/G1023/archivos/planRefuerzo03.pdf)
 - [PYTHON ONLINE](https://www.online-python.com). Ejercutar la consola interactiva PYTHON en el navegador.
 ```
 :::

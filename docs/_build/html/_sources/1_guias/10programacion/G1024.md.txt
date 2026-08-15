@@ -25,6 +25,7 @@
 {bdg-danger}`Transferencia`
 - **Temática**: Variables y operaciones en PYTHON.
 - **Objetivo de aprendizaje**: Comprender, modelar y aplicar el concepto de variables y operadores aritméticos en el lenguaje de programación Python.
+- **DESEMPEÑO**: Aplica eficazmente el concepto de variables y operadores matemáticos en Python para resolver ejercicios prácticos, demostrando claridad en la asignación de tipos de datos y ejecutando correctamente instrucciones en la consola interactiva.
 ```
 
 ```{tab-item} Orientaciones curriculares
@@ -41,7 +42,8 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (2)
+```{tab-item} Recursos (3)
+- **Plan de refuerzo 04.pdf** [{bdg-primary}`Descargar`](./recursos/G1024/archivos/planRefuerzo04.pdf)
 - [PYTHON ONLINE](https://www.online-python.com). Ejercutar la consola interactiva PYTHON en el navegador.
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com). Libro digital en inglés.
 ```
