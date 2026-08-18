@@ -178,19 +178,7 @@ Operador ; Función ; Ejemplo práctico
 ## A03: Análisis ideas de proyecto (25%)
 {bdg-warning}`Actividad práctica`
 
-1. Despliegue el **TEMA DE PROYECTO** elegido y por cada **idea de proyecto**, desarrolle las siguientes tareas: 
-    
-    * Por medio de **búsquedas avanzadas**, consulte información de la **idea de proyecto**.
-    * En una **hoja de cuaderno**, realice un **resumen** de la **idea de proyecto** consultada.
-    * Los documentos como **PDFs** que encuentre, alojarlos en la **carpeta de evidencias** del periodo actual.
-    * Asigne un puntaje a la **idea de proyecto** consultada así:
-      :::{admonition} PUNTAJES
-      * ★★★★★: *"La **idea de proyecto** me parece muy interesante, me entusiasma y me motiva, deseo conocer más detalles y me siento comprometido(a) a realizarla"*. 
-      * ★★★★: *"La **idea de proyecto** me parece interesante y estoy **dispuesto(a) a profundizar en ello**, aunque sinceramente **me entusiasma poco**"*.
-      * ★★★: *"Me llama la atención la **idea de proyecto** pero **no me motiva a investigarla a fondo**. Solo deseo conocer superficialmente"*.
-      * ★★: *"No me llama la atención esta **idea de proyecto**"*.
-      * ★: *"Nunca haría esta **idea de proyecto**"*.
-      :::
+1. Despliegue el **TEMA DE PROYECTO** elegido y en su **cuaderno**, realice un **ranking** de las ideas de proyecto más interesantes para usted. 
 
     * :::{dropdown} TEMA: OFIMÁTICA (10)
       1. **Comparativa de distribuciones de sistemas operativos basados en LINUX**: Seleccionar distribuciones LINUX más conocidas y usadas y por medio de su instalación y configuración en máquinas virtuales o reales, lograr una comparativa identificados ventajas, desventajas y casos de uso.
@@ -205,12 +193,12 @@ Operador ; Función ; Ejemplo práctico
       10. **Investigación en aplicativo OCS INVENTORY para inventario automatizado de computadoras de la institución educativa**: Por medio de la instalación de agentes en los equipos institucionales, se captura la información técnica de los equipos y dicha información es enviada a las bases de datos de un servidor el cual por medio de una interfaz gráfica, muestra el estado actual de los equipos.
       :::
     * :::{dropdown} TEMA: PROGRAMACIÓN (10)
-      1. **Desarrollo web**: Uso de algún [^2]framework (DJANGO, FLASK, NODEJS, etc.) para construcción de aplicativo web básico.
-      2. **Desarrollo de escritorio**: Uso de algún framework para construcción de aplicativo de PC.
-      3. **Desarrollo móvil**: Uso de algún framework para construcción de aplicativo móvil para smartphone o tablet (Android o IOS).
-      4. **Desarrollo de videojuegos**: Uso de algún framework (Pygame, Monogame, etc.) para el desarrollo de un videojuego.
-      5. **Desarrollo de IA**: Uso de algún framework (TensorFlow) para el desarrollo de algún modelo basado en IA.
-      6. **Ciencia de datos**: Uso de algún framework (PANDAS, matplotlib, etc.) para el desarrollo de algún modelo que sistematice grandes cantidades de información.
+      1. **Desarrollo web**: Uso de algún [^2]**framework** para construcción de **aplicativo web básico**. 
+      2. **Desarrollo de escritorio**: Uso de algún **framework** para construcción de **aplicativo de PC**.
+      3. **Desarrollo móvil**: Uso de algún **framework** para construcción de **aplicativo móvil** para smartphone o tablet (Android o IOS).
+      4. **Desarrollo de videojuegos**: Uso de algún **framework** para el **desarrollo de un videojuego**.
+      5. **Desarrollo de IA**: Uso de algún **framework** para el desarrollo de algún **modelo basado en IA**.
+      6. **Ciencia de datos**: Uso de algún **framework** para el desarrollo de algún **modelo de BigData**.
       7. **Desarrollo de sistema integrado de gestión de la institución**: [^1]Aplicativo que muestre la estructura organizacional así como la recepción de formatos de un institución.
       8. **Desarrollo de sistema de voto electrónico a medida**: Aplicativo que permita acompañar en el proceso electoral para que las personas puedan ejercer su derecho al voto al mismo tiempo que automatiza el conteo y garantiza transparencia.
       9. **Desarrollo de sistema de notas**: Aplicativo básico que permite el registro de calificaciones académicas.
@@ -239,6 +227,27 @@ Operador ; Función ; Ejemplo práctico
       8. **Instalación de una VPN (Raspberry Pi)**: Configuración de Raspberry Pi como servidor de nube privada o VPN. Útil para guardar archivos y realizar Backups.
       9. **Sistema de video-vigilancia (Raspberry Pi)**: Configuración de Raspberry Pi con una webcam para obtener un sistema de video-vigilancia que detecte cualquier movimiento.
       10. **Configuración de placa micro:bit para proyectos electrónicos escolares**: Configuración de placa micro:bit para análisis de las ventajas y desventajas de uso en ambientes educativos.
+      :::
+  
+2. Por cada **idea de proyecto**, desarrolle las siguientes tareas:
+
+    * En **INTERNET**, consulte información de la **idea de proyecto** ([búsquedas simples](https://www.google.com), [búsquedas avanzadas](https://www.google.com/advanced_search), [YouTube](https://www.youtube.com)).
+
+      :::{admonition} TENGA EN CUENTA...
+      :class: warning
+      Los documentos como **PDFs** que encuentre cuando realice **búsquedas avanzadas**, alojarlos en la **carpeta de evidencias** del periodo actual.
+      :::
+
+    * En una **hoja de cuaderno**, realice un **resumen** o **esquema** o **bosquejo** o un **mapa mental** de la **idea de proyecto** consultada.
+
+    * En la **parte superior** de la **hoja**, asigne un puntaje a la **idea de proyecto** consultada así:
+
+      :::{admonition} PUNTAJES (de menor a mayor)
+      * ★: *"Nunca haría esta **idea de proyecto**"*.
+      * ★★: *"No me llama la atención esta **idea de proyecto**"*.
+      * ★★★: *"Me llama la atención la **idea de proyecto** pero **no me motiva a investigarla a fondo**. Solo deseo conocer superficialmente"*.
+      * ★★★★: *"La **idea de proyecto** me parece interesante y estoy **dispuesto(a) a profundizar en ello**, aunque sinceramente **me entusiasma poco**"*.
+      * ★★★★★: *"La **idea de proyecto** me parece muy interesante, me entusiasma y me motiva, deseo conocer más detalles y me siento comprometido(a) a realizarla"*. 
       :::
 
 
