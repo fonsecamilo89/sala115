@@ -172,7 +172,7 @@ Operador ; Función ; Ejemplo práctico
     Ingeniería de software "desarrollo" -java filetype:pdf
     ```
 
-7. En su cuaderno describa los **5 primeros resultados** de la búsqueda.
+7. Identifique los **5 primeros resultados de la búsqueda** y por cada uno, en su cuaderno realice un **resumen corto** (5 líneas).
 
 ---
 ## A03: Análisis ideas de proyecto (25%)
@@ -181,13 +181,13 @@ Operador ; Función ; Ejemplo práctico
 1. Despliegue el **TEMA DE PROYECTO** elegido y en su **cuaderno**, realice un **ranking** de las ideas de proyecto más interesantes para usted. 
 
     * :::{dropdown} TEMA: OFIMÁTICA (10)
-      1. **Comparativa de distribuciones de sistemas operativos basados en LINUX**: Seleccionar distribuciones LINUX más conocidas y usadas y por medio de su instalación y configuración en máquinas virtuales o reales, lograr una comparativa identificados ventajas, desventajas y casos de uso.
+      1. **Comparativa de distribuciones de sistemas operativos basados en LINUX**: Seleccionar distribuciones LINUX más conocidas y usadas y por medio de su instalación y configuración en máquinas virtuales o reales, lograr una comparativa identificando ventajas, desventajas y casos de uso.
       2. **Implementación de sistema operativo tipo BSD**: Realizar investigación sobre estos sistemas e identificar las diferencias entre sistemas operativos conocidos. Algunos sistemas basados en BSD son: OpenBSD y FreeBSD.
       3. **Implementación de aplicativo CMS con fines institucionales**: Usando un CMS ya sea Wordpress, Joomla o DRUPAL implementar un sitio web que permita dar utilidad a una gestión institucional.
-      4. **Uso de INKSCAPE como herramienta de apoyo gráfico en procesos académicos y administrativos institucionales**: Inkscape es un software de código abierto que permite trabajar con gráficos vectoriales. Es muy usado por diseñadores y artistas web. Dominar esta herramienta permitiría realizar múltiples trabajos tanto académicos como administrativos que beneficien a toda la comunidad.
-      5. **Uso de GIMP como herramienta en procesos académicos y administrativos institucionales**: GIMP es un software de código abierto que permite trabajar con imágenes de bits. Es muy usado por diseñadores y artistas web. Dominar esta herramienta permite realizar múltiples trabajos tanto académicos como administrativos que beneficien a toda la comunidad.
+      4. **Uso de INKSCAPE (gráficos en 2D) como herramienta de apoyo en procesos académicos y administrativos institucionales**: Inkscape es un software de código abierto que permite trabajar con gráficos vectoriales. Es muy usado por diseñadores y artistas web. Dominar esta herramienta permitiría realizar múltiples trabajos tanto académicos como administrativos que beneficien a toda la comunidad.
+      5. **Uso de GIMP (edición de fotografía digital) como herramienta de apoyo en procesos académicos y administrativos institucionales**: GIMP es un software de código abierto que permite trabajar con imágenes de bits. Es muy usado por diseñadores y artistas web. Dominar esta herramienta permite realizar múltiples trabajos tanto académicos como administrativos que beneficien a toda la comunidad.
       6.  **Uso de AUDIOFLOSS para composición, remasterización de proyectos musicales institucionales**: Aprendiendo a usar el software Audiofloss, permitirá que varios proyectos musicales en la institución tenga una herramienta de apoyo para composición o remasterización.
-      7.  **Uso de BLENDER como herramienta académica**: Modelado tridimensional para diferentes proyectos académicos institucionales.
+      7.  **Uso de BLENDER (gráficos en 3D) como herramienta académica**: Modelado tridimensional para diferentes proyectos académicos institucionales.
       8. **Uso de MOTOR de VIDEOJUEGOS**: Uso de algún motor (GODOT, UNITY, UNREAL, etc.) en el desarrollo de experiencias digitales interactivas.
       9.  **Implementación de aplicativo ITOP para control de recursos tecnológicos de la institución**: Por medio de ITOP puede llevarse el control de hoja de vida de los diferentes recursos tecnológicos (PCs, portátiles, servidores, personal activo) de una institución.
       10. **Investigación en aplicativo OCS INVENTORY para inventario automatizado de computadoras de la institución educativa**: Por medio de la instalación de agentes en los equipos institucionales, se captura la información técnica de los equipos y dicha información es enviada a las bases de datos de un servidor el cual por medio de una interfaz gráfica, muestra el estado actual de los equipos.
