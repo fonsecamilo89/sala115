@@ -23,15 +23,15 @@
 {bdg-info}`Estructuración`
 {bdg-warning}`Actividad práctica`
 {bdg-danger}`Transferencia`
-- **Temática**: .
-- **Objetivo de aprendizaje**: .
-- **DESEMPEÑO**: .
+- **Temática**: Introducción al Entorno de Desarrollo Integrado (IDE) Thonny: funciones, depuración y buenas prácticas de programación.
+- **Objetivo de aprendizaje**: Comprender y utilizar las herramientas del IDE Thonny para escribir, ejecutar y depurar código en Python, aplicando el uso de comentarios y variables para mejorar la calidad y claridad de los programas.
+- **DESEMPEÑO**: Demuestra habilidad para utilizar el entorno de desarrollo Thonny, aplicando correctamente conceptos básicos de programación en Python, como el uso de variables, comentarios y depuración de código, logrando desarrollar programas funcionales y claros.
 ```
 
 ```{tab-item} Orientaciones curriculares
-- **Componente**: .
-- **Competencia**: .
-- **Evidencia de aprendizaje**: .
+- **Componente**: Solución de problemas con T&I..
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.
 ```
 
 ```{tab-item} Criterios de evaluación
@@ -42,8 +42,9 @@
 - Cumplimiento de las reglas del aula.
 ```
 
-```{tab-item} Recursos (0)
-- ok
+```{tab-item} Recursos (2)
+- **Plan de refuerzo 01.pdf** [{bdg-primary}`Descargar`](./recursos/G1121/archivos/planRefuerzo01.pdf)
+- [Instalador THONNY](https://thonny.org) 
 ```
 
 :::
@@ -51,7 +52,7 @@
 ## Mensaje del autor
 
 :::{pull-quote}
-"".
+"La presente guía tiene como propósito facilitar la comprensión y el uso adecuado del entorno de desarrollo Thonny para la programación en Python. Se espera que, mediante la aplicación de los conceptos y herramientas presentados, los estudiantes desarrollen habilidades sólidas para escribir, depurar y organizar código de manera eficiente y clara, contribuyendo así a su formación integral en el ámbito de la programación".
 
 -- Camilo Fonseca
 :::
@@ -95,7 +96,7 @@ Depuración ; La depuración es el proceso de corregir todos los errores o falla
     ```
 :::
 
-> “Un IDE como Thonny permite ejecutar un conjunto de instrucciones línea por línea de forma automatizada sin necesidad de PULSAR {kbd}`ENTER` por cada instrucción como si tocaba en la consola interactiva de PYTHON”.
+> “Un IDE como Thonny, permite ejecutar un **conjunto de instrucciones línea por línea** de forma automatizada sin necesidad de estar PULSANDO {kbd}`ENTER` en cada instrucción”.
 
 ---
 ## Características de THONNY
@@ -178,7 +179,9 @@ Depuración ; La depuración es el proceso de corregir todos los errores o falla
 
 1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
 
-2. Lea el mensaje del autor.
+2. Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:
+
+    - ¿Por qué es necesario usar otro programa para codificar en PYTHON y no simplemente seguir usando la consola interactiva? 
 
 ---
 ## A01: Taller (10%)
@@ -209,10 +212,10 @@ Depuración ; La depuración es el proceso de corregir todos los errores o falla
    - ¿Qué es una API **(Application Programming Interface)**?
 
 ---
-## A02: Interfaz IDE Thonny (25%)
+## A02: Interfaz IDE Thonny (10%)
 {bdg-warning}`Actividad práctica`
 
-1. EJECUTE el software Thonny.
+1. EJECUTE el IDE Thonny.
 
 2. En el **área superior de la interfaz**, PULSE cada una de las opciones del menú superior (**File**, **Edit**, **View**, **Run**, **Tools**, **Help**). Por cada menú desplegado, en su cuaderno escriba su posible utilidad.
 
@@ -255,7 +258,7 @@ Depuración ; La depuración es el proceso de corregir todos los errores o falla
 8. Cierre el IDE **Thonny**.
 
 ---
-## A03: Primer código (25%)
+## A03: Primer código (10%)
 {bdg-warning}`Actividad práctica`
 
 1. Abra el IDE Thonny.
@@ -278,10 +281,10 @@ Depuración ; La depuración es el proceso de corregir todos los errores o falla
         ```
     :::
 
-5. En el archivo **G1121A03-presentacion.py** escriba 3 comentarios para realizar **identificación** de su **código fuente**. Los comentarios inician con el carácter **#**.
+5. En el archivo **G1121A03-presentacion.py** escriba 3 comentarios para realizar **identificación de su código fuente**. Los comentarios inician con el carácter **#**.
 
     ```python
-    # PROGRAMA: Presentación personal
+    # PROGRAMA: Presentación
     # AUTOR: Julian Fonseca
     # FECHA: 21 de agosto de 2026
     ```
@@ -349,7 +352,7 @@ Depuración ; La depuración es el proceso de corregir todos los errores o falla
 
 9.  En la **barra de herramientas estándar**, PULSE el botón **Run current script** {kbd}`F5` para ejecutar su código (línea por línea) automáticamente.
 
-10. Si todo esta bien, en la ventana **Shell** (consola interactiva de python) debería aparecer la siguiente salida (***con sus datos personales!!!***):
+10. Si todo esta bien, en la ventana **Shell** (consola interactiva de python) debería aparecer la siguiente salida (***con sus datos!!!***):
 
     :::{list-table}
     * - ```{figure} ./recursos/G1121/image13.png
@@ -362,4 +365,127 @@ Depuración ; La depuración es el proceso de corregir todos los errores o falla
     Una vez ejecutado el código, describa que sucede en las ventanas: **Shell**, **Variables** y **Assistant**.
     :::
 
-11. Guarde los cambios y cierre el IDE Thonny. 
+11. Guarde los cambios y cierre el IDE Thonny.
+
+## A04: Depurando código (15%)
+{bdg-warning}`Actividad práctica`
+
+1. Ejecute el IDE Thonny y acceda al archivo **G1121A03-presentacion.py**
+
+2. En la **barra de herramientas estándar**, PULSE el botón **Debug current script**.
+
+3. THONNY entrará en **modo depuración**.
+
+    :::{admonition} ¿Qué es el modo depuración?
+    :class: hint
+    El modo depuración permite a los programadores identificar y corregir errores (bugs) en su código de manera eficiente. Al usar un depurador, se tienen las siguientes ventajas:
+
+    - Ejecutar el código paso a paso: Observando el estado de las variables y el flujo de ejecución.
+    - Establecer puntos de interrupción ({guilabel}`breakpoints`): Detener la ejecución en líneas específicas para inspeccionar el código.
+    - Inspeccionar variables: Ver los valores de las variables en tiempo real.
+    - Evaluar expresiones: Calcular el valor de expresiones complejas.
+
+    Esto agiliza el proceso de encontrar y solucionar errores, lo que a su vez reduce el tiempo de desarrollo y mejora la calidad del software. En resumen, la depuración en un IDE es como tener una lupa y un microscopio para examinar tu código y asegurar que funcione correctamente.
+    ::: 
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - ¿Por qué es útil usar un depurador?
+    - ¿Qué ventajas se tienen al usar un depurador?
+    - ¿Qué pasaría con un programa si no existieran los depuradores?
+    :::
+
+4. OBSERVE en el archivo **G1121A03-presentacion.py** como se ilumina la primera línea de código. Esto quiere decir que dicha línea será ejecutada.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1121/image14.png
+        :width: 444
+        ```
+    :::
+
+5. En la **barra de herramientas estándar**, OBSERVE que se habilitaron los botones: **Step over** {kbd}`F6`, **Step into** {kbd}`F7`, **Step out**, **Resume** {kbd}`F8`.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1121/image15.png
+        :width: 222
+        ```
+    :::
+
+6. En la **barra de herramientas estándar**, PULSE el botón **Step over** {kbd}`F6` (varias veces hasta acabar el programa) para ver como el código se ejecuta línea por línea. OBSERVE como en la **ventana de Variables** se van creado las variables a medida que ejecuta todo el programa.
+
+7. En la **barra de herramientas estándar**, PULSE el botón **Step into** {kbd}`F7` (varias veces hasta acabar el programa) para ver como el código se ejecuta línea por línea. 
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - ¿Cuál es la diferencia entre DEPURAR un programa usando **Step over** {kbd}`F6` y DEPURAR un programa usando **Step into** {kbd}`F7`?
+    - ¿Cuál de las dos DEPURACIONES es más rápida y por qué?
+    - ¿Cuál de los dos DEPURACIONES es más detallada y por qué?
+    ::: 
+
+8. En su código fuente, en la parte izquierda encuentra unos números que enumeran **líneas de código**. Elija cualquier **número** de **línea de código** y haga clic sobre dicho número para generar un punto rojo {guilabel}`break point`.
+
+9. Vuelva a hacer clic sobre el **número** de la **línea de código** para eliminar el {guilabel}`break point`.
+
+10. En su código fuente, identifique las siguientes líneas de código y por cada una agregue un {guilabel}`break point`:
+
+    - 🔴 **Línea de código** donde **finaliza** la creación de las **variables de los datos** de la persona.
+    - 🔴 **Línea de código** donde **finaliza** la creación de las **variables de los mensajes**.
+    - 🔴 **Línea de código** donde **finaliza** la creación las funciones **`print()`**.
+
+11. PULSE el botón **Debug current script** y OBSERVE como esta vez, el programa se ejecuta hasta el PRIMER CÍRCULO ROJO {guilabel}`break point` del código. Esto es útil cuando se desea averiguar que pasa con el programa en **una línea de código específica**.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1121/image16.png
+        :width: 444
+        Esto nos evita depurar el código línea por línea!!!
+        ```
+    :::
+
+12. Ahora en la **barra de herramientas estándar**, presione el botón **resume** {kbd}`F8` para ejecutar todo el código por cada {guilabel}`break point`.
+
+    :::{list-table}
+    * - ```{figure} ./recursos/G1121/image17.png
+        :width: 55
+        Resume {kbd}`F8`
+        ```
+    :::
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - ¿En qué casos es útil depurar un código con {guilabel}`break points`?
+    - ¿Tiene sentido depurar un código llenando de {guilabel}`break points` todas las líneas de código?
+    :::
+
+13. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A05: Guión (50%)
+{bdg-danger}`Transferencia`
+
+1. Cree un archivo de nombre: **G1121A05guion.py** y guárdelo en la carpeta de evidencias del periodo actual.
+2. En el archivo **G1121A05guion.py** cree un **guión de una obra de teatro** donde 2 personas hablan sobre un tema cualquiera. Tenga en cuenta lo siguiente:
+
+    - Cree los **comentarios de identificación** del código.
+    - Cree **variables de datos** para dos personas diferentes.
+    - Cree **variables de mensajes**.
+    - Las **variables de mensajes** deben estar con **cadena formateada (f-string)** para mostrar el valor de las **variables de datos**.
+    - Use las funciones `print()` para *mostrar el valor* de las **variables de mensajes**.
+    - Para el guión se usa **identificación del personaje** seguido de **dos puntos (:)** y posteriormente el mensaje a mostrar.
+        ```python
+        # EJEMPLO
+        personaje02_nombre = "Felix"
+        personaje02_apellido = "Duarte"
+        mensaje01 = f"PERSONAJE_01: hola buenas tardes, ¿cuál es su nombre?"
+        mensaje02 = f"PERSONAJE_02: hola, me llamo {personaje02_nombre} {personaje02_apellido}"
+        print(mensaje01)
+        print(mensaje02)
+        ```
+    - La conversación **debe durar mínimo 2 minutos**. Pensar en un **tema extenso** como deportes, ofertas laborales, estudios, problemas, experiencias, etc.
+    - NO USAR CONTENIDO GROSERO, EXPLICITO o que incumpla cualquiera de las normas del manual de convivencia.    
+
+3. Una vez el código esté listo, agregar un {guilabel}`break point` al inicio de las funciones `print()`. Luego realizar una **depuración de código** línea por línea para ver en la **consola interactiva** como se van mostrando los mensajes.
+
+4. Sustentar el código al docente.   
