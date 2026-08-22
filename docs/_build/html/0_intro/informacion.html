@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=3250a108" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=1aaadd6a" />
     
     
 
@@ -245,6 +245,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../1_guias/11ofimatica/G1114.html">Guía 1114: Diagramas</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../1_guias/11programacion/G1120.html">Programación 11</a><input aria-label="Toggle navigation of Programación 11" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_guias/11programacion/G1121.html">Guía 1121: IDE</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
 <ul>
@@ -458,29 +462,29 @@
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
-<tr class="row-odd"><td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">cursoActual</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;CURSO: &quot;</span><span class="p">)</span>
+<tr class="row-odd"><td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">cursoActual</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"CURSO: "</span><span class="p">)</span>
 <span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="k">if</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">&quot;8A&quot;</span> <span class="ow">or</span> <span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">&quot;8B&quot;</span><span class="p">):</span>
-<span class="linenos"> 4</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">&quot;usuario&quot;</span>
+<span class="linenos"> 3</span><span class="k">if</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">"8A"</span> <span class="ow">or</span> <span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">"8B"</span><span class="p">):</span>
+<span class="linenos"> 4</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">"usuario"</span>
 <span class="linenos"> 5</span>
-<span class="linenos"> 6</span><span class="k">elif</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">&quot;10A&quot;</span><span class="p">):</span>
-<span class="linenos"> 7</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">&quot;10A&quot;</span>
-<span class="linenos"> 8</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dar contraseña de acceso a 10A&quot;</span><span class="p">)</span>
+<span class="linenos"> 6</span><span class="k">elif</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">"10A"</span><span class="p">):</span>
+<span class="linenos"> 7</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">"10A"</span>
+<span class="linenos"> 8</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"dar contraseña de acceso a 10A"</span><span class="p">)</span>
 <span class="linenos"> 9</span>
-<span class="linenos">10</span><span class="k">elif</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">&quot;10B&quot;</span><span class="p">):</span>
-<span class="linenos">11</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">&quot;10B&quot;</span>
-<span class="linenos">12</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dar contraseña de acceso a 10B&quot;</span><span class="p">)</span>
+<span class="linenos">10</span><span class="k">elif</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">"10B"</span><span class="p">):</span>
+<span class="linenos">11</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">"10B"</span>
+<span class="linenos">12</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"dar contraseña de acceso a 10B"</span><span class="p">)</span>
 <span class="linenos">13</span>
-<span class="linenos">14</span><span class="k">elif</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">&quot;11A&quot;</span><span class="p">):</span>
-<span class="linenos">15</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">&quot;11A&quot;</span>
-<span class="linenos">16</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dar contraseña de acceso a 11A&quot;</span><span class="p">)</span>
+<span class="linenos">14</span><span class="k">elif</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">"11A"</span><span class="p">):</span>
+<span class="linenos">15</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">"11A"</span>
+<span class="linenos">16</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"dar contraseña de acceso a 11A"</span><span class="p">)</span>
 <span class="linenos">17</span>
-<span class="linenos">18</span><span class="k">elif</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">&quot;11B&quot;</span><span class="p">):</span>
-<span class="linenos">19</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">&quot;11B&quot;</span>
-<span class="linenos">20</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dar contraseña de acceso a 11B&quot;</span><span class="p">)</span>
+<span class="linenos">18</span><span class="k">elif</span> <span class="p">(</span><span class="n">cursoActual</span> <span class="o">==</span> <span class="s2">"11B"</span><span class="p">):</span>
+<span class="linenos">19</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">"11B"</span>
+<span class="linenos">20</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"dar contraseña de acceso a 11B"</span><span class="p">)</span>
 <span class="linenos">21</span>
 <span class="linenos">22</span><span class="k">else</span><span class="p">:</span>
-<span class="linenos">23</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">&quot;NO INFO&quot;</span>
+<span class="linenos">23</span>    <span class="n">usuarioEstudiante</span> <span class="o">=</span> <span class="s2">"NO INFO"</span>
 </pre></div>
 </div>
 </td>

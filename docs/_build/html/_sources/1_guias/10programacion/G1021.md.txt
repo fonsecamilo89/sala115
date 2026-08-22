@@ -10,7 +10,7 @@
     * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
         - **DOCENTE**: Julian Camilo Fonseca Romero
         - **ASIGNATURA**: Programación
-        - **GRADO**: ONCE
+        - **GRADO**: DÉCIMO
         - **PERIODO**: 01
         - **TIEMPO**: 10 semanas (2 horas / semana)
         - **TIEMPO DE TRABAJO**: 20/20 horas
@@ -25,7 +25,7 @@
 {bdg-danger}`Transferencia`
 - **Temática**: Introducción a la programación.
 - **Objetivo de aprendizaje**: Dar a conocer los conceptos introductorios a la programación.
-- **DESEMPEÑO**: Comprende los fundamentos de la programación y el desarrollo de software, diferenciando entre datos e información, y reconociendo el papel del hardware y software en sistemas computacionales. Aplica estos conocimientos para identificar la estructura y lógica detrás de las tecnologías web, analizando casos prácticos y demostrando habilidades básicas para la resolución de problemas mediante el uso de herramientas tecnológicas."
+- **DESEMPEÑO**: Comprende los fundamentos de la programación y el desarrollo de software, diferenciando entre datos e información, y reconociendo el papel del hardware y software en sistemas computacionales. Aplica estos conocimientos para identificar la estructura y lógica detrás de las tecnologías web, analizando casos prácticos y demostrando habilidades básicas para la resolución de problemas mediante el uso de herramientas tecnológicas.
 ```
 
 ```{tab-item} Orientaciones curriculares
