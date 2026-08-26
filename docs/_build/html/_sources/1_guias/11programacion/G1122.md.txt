@@ -1,0 +1,332 @@
+# Guía 1122: Interacción
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Programación
+        - **GRADO**: ONCE
+        - **PERIODO**: 02
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Interacción y entrada de datos en Python: Uso de funciones de entrada y conversión de tipos.
+- **Objetivo de aprendizaje**: Implementar programas en Python capaces de capturar datos del usuario, manipular tipos de variables y procesar información básica para crear interacciones dinámicas en consola.
+- **DESEMPEÑO**: Demuestra habilidad para crear programas básicos en Python que interactúan con el usuario, utilizando funciones de entrada y salida, y aplicando correctamente la manipulación de tipos de datos para procesar información en la consola.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con T&I.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (2)
+- **Plan de refuerzo 02.pdf** [{bdg-primary}`Descargar`](./recursos/G1122/archivos/planRefuerzo02.pdf)
+- [Instalador THONNY](https://thonny.org)
+```
+
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"La presenta guía explica conceptos fundamentales de programación en Python relacionados con la interacción del usuario y el manejo adecuado de tipos de datos".
+
+-- Camilo Fonseca
+:::
+
+---
+## Función input()
+
+La función `input()` espera a que el usuario escriba algún texto en el teclado y PULSE la tecla {kbd}`ENTER`.
+
+El siguiente es un ejemplo de código en PYTHON en el que la consola espera a que el usuario teclee un nombre y luego lo muestra en pantalla.
+
+```python
+print("Digite su nombre: ")
+nombre = input() 
+
+print(f"Hola {nombre}")
+```
+
+Al ejecutar el código, la consola mostrará lo siguiente:
+
+```
+Digite su nombre: 
+julian
+Hola julian
+```
+
+---
+## Funciones int() y float()
+
+La función `int()` recibe una variable numérica tipo **STRING** y la CONVIERTE en tipo **ENTERO**. Por ejemplo:
+
+```python
+numero = "1"
+numeroEntero = int(numero01)
+print(numeroEntero)
+```
+
+Al ejecutar el código, la consola mostrará el siguiente resultado:
+
+```
+1
+```
+
+La función `float()` recibe una variable numérica tipo **STRING** y la CONVIERTE en tipo **FLOAT**. Por ejemplo:
+
+```python
+numero = "0.99"
+numeroFloat = float(numero)
+print(numeroFloat)
+```
+
+Al ejecutar el código, la consola mostrará el siguiente resultado:
+
+```
+0.99
+```
+
+---
+## Función len()
+
+La función `len()` recibe una variable de tipo string, y luego de salida genera el número de caracteres que tiene dicha variable. Por ejemplo:
+
+```python
+nombre = "julian"
+numeroCaracteres = len(nombre)
+print(f"el número de caracteres es: {numeroCaracteres}")
+```
+El resultado es:
+```python
+el número de caracteres es: 6
+```
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor y en su cuaderno responda:
+
+    - ¿Por qué la interacción con el usuario y el manejo adecuado de tipos de datos se consideran conceptos fundamentales de programación en Python?
+
+---
+## A01: Taller (5%)
+{bdg-info}`Estructuración`
+
+1. Responda las siguientes preguntas en su cuaderno:
+   - ¿Qué permite hacer la función `input()` en una consola?
+   - ¿Qué diferencia hay entre la función `input()` y la función `print()`?
+   - ¿Qué utilidad tienen las funciones `int()`, `float()` y `len()`?
+   - ¿Las operaciones entre variables tipo **STRING** y tipo **ENTERO** darán los mismos resultados?
+
+---
+## A02: Tipos de entrada (10%)
+{bdg-warning}`Actividad práctica`
+
+1. CREE dos archivos en PYTHON con los siguientes nombres y GUÁRDELOS en la carpeta de evidencias del periodo actual:
+    - G1122A02-input1.py
+    - G1122A02-input2.py
+
+2. En el archivo **G1122A02-input1.py** agregar los comentarios de identificación (PROGRAMA, AUTOR y FECHA) y ESCRIBIR el siguiente código:
+
+    ```python
+    print("Digite su nombre: ")
+    nombre = input()
+
+    print(f"Hola {nombre}")
+    ```
+
+3. En el archivo **G1122A02-input2.py** agregar los comentarios de identificación (PROGRAMA, AUTOR y FECHA) y ESCRIBIR el siguiente código:
+
+    ```python
+    nombre = input("Digite su nombre: ")
+
+    print(f"Hola {nombre}") 
+    ```
+
+4. Ejecute los archivos: **G1122A02-input1.py** y **G1122A02-input2.py** y observe los resultados en consola.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa la diferencia de los resultados de ejecución entre el primer y el segundo código.
+    :::
+
+5. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A03: Datos entrada del usuario (10%)
+{bdg-warning}`Actividad práctica`
+
+1. CREE una programa de nombre: **G1122A03-datosUsuario.py** que solicite unos datos personales al usuario y luego los muestre en pantalla. El programa debe tener las siguientes características:
+
+    - Comentarios iniciales de identificación.
+    - Solicitar los siguientes datos al usuario (input()).
+      - nombre
+      - apellido
+      - fecha de nacimiento (dia/mes/año)
+      - Institución Educativa
+      - Materia favorita
+      - Hobby
+      - Música favorita
+      - Deporte que practica
+      - Actividad como egresado
+
+2. Después de pedir los datos al usuario, el programa debe mostrar con mensajes cada uno de los datos que el usuario registró. Por ejemplo:
+
+    ```python
+    Hola, su nombre es: Julian Fonseca
+    Su edad en años es: 16
+    Institución educativa: John F Kennedy
+    ```
+
+3. Guarde los cambios y cierre el IDE Thonny. 
+
+---
+## A04: Funciones int() y float() (10%)
+{bdg-warning}`Actividad práctica`
+
+1. Cree un archivo de nombre: **G1122A04-sumaNumeros.py** y escriba el siguiente código (NO OLVIDE agregar los comentarios iniciales):
+
+    ```python
+    print("SUMA DE DOS NUMEROS (entero y string)")
+
+    numero1 = input("digite el primer numero: ")
+    numero2 = input("digite el segundo numero: ")
+
+    suma_tipo_string = numero1 + numero2
+
+    numero_entero1 = int(numero1) #Conversión de variable string a entero
+    numero_entero2 = int(numero2) #Conversión de variable string a entero
+
+    suma_tipo_entero = numero_entero1 + numero_entero2
+
+    print(f"LA SUMA TIPO STRING ES: {suma_Tipo_String}")
+    print(f"LA SUMA TIPO ENTERO ES: {suma_Tipo_Entero}")
+    ```
+
+2. EJECUTE el **código** y cuando le pida el primer numero, escribir: `1` luego PULSE la tecla {kbd}`ENTER`
+    - Posteriormente cuando le pida el segundo número, escribir nuevamente: `1` luego PULSE la tecla  {kbd}`ENTER`
+    :::{admonition} En su cuaderno...
+    :class: note
+    Analice los resultados y en su cuaderno responda las siguientes preguntas:
+    - ¿Por qué el primer resultado es: 11?
+    - ¿Por qué el segundo resultado es: 2?
+    :::
+
+3. EJECUTE el **código** y cuando le pida el primer numero, escribir: `0.1` luego PULSE la tecla {kbd}`ENTER`
+    - Posteriormente cuando le pida el segundo número, escribir : `0.9` luego PULSE la tecla {kbd}`ENTER`
+    :::{admonition} En su cuaderno...
+    :class: note
+    Analice los resultados, transcriba el error que aparece en la consola y tradúzcalo.
+    :::
+
+4. MODIFIQUE el archivo **G1122A04-sumaNumeros.py** con las siguientes características:
+
+    - COMENTAR (agregar `#` al inicio de la línea de código) las siguientes líneas:
+        ```python
+        numero_entero1 = int(numero1)
+        numero_entero2 = int(numero2)
+        suma_tipo_entero = numero_entero1 + numero_entero2
+        ```
+    - Agregar unas variables para la conversión de tipo **STRING** a tipo **FLOAT**. Para este caso la función es `float()`. La suma también es de tipo float. Por ejemplo:
+        ```python
+        numero_float1 = float(numero1)
+        numero_float2 = float(numero2)
+        suma_tipo_float = numero_float1 + numero_float2
+        ```
+    - > NO OLVIDE QUE AL MOMENTO DE EJECUTAR EL PROGRAMA E INGRESAR LOS NÚMEROS EN PANTALLA, ESTOS DEBEN SER NÚMEROS DECIMALES CON PUNTO DECIMAL (Por ejemplo: 1.2, 1.999, 0.0011199)
+    
+    - REALICE las sumas con los siguientes números aumentando sus cifras progresivamente:
+      - 1000
+      - 100000
+      - 10000000
+      - 1000000000
+      - 100000000000
+      - 10000000000000
+      - 1000000000000000
+      - 100000000000000000
+      - 10000000000000000000
+      - 1000000000000000000000
+
+      :::{admonition} En su cuaderno...
+      :class: note
+      Responda la siguiente pregunta:
+      - ¿Con cuantas cifras los resultados comienzan a salir en consola tipo: `2e+18`?
+      - ¿Qué es la notación científica?
+      :::
+
+5. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A05: Uso de la función len() (10%)
+{bdg-warning}`Actividad práctica`
+
+1. CREE un archivo de nombre **G1122A05-len.py**. En este archivo escriba el siguiente código (No olvide escribir los comentarios iniciales):
+
+    ```python
+    nombre = input("Digite su nombre: ")
+    numeroCaracteres = len(nombre)
+    print(f"el número de caracteres de su nombre es: {numeroCaracteres}")
+    ```
+
+2. EJECUTE el código e identifique el número de caracteres generados para los siguientes nombres:
+
+   - Frederick
+   - Frpieedrichert
+   - Alpfeksandrpññlord
+   - Stlwanislavpuliierddcv
+   - Msihajlovichñopasumizwetchi
+   - Bhgorisovnaioppqwertcuiixxzaesd
+
+   :::{admonition} En su cuaderno...
+   :class: note
+   Transcriba los nombres y el número de caracteres de cada uno.
+   ::: 
+
+3. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A06: Calculadora simple (50%)
+{bdg-danger}`Transferencia`
+
+1. CREE un programa de nombre: **G1122A06-calculadoraFloat.py** que solicite al usuario dos números. Luego con estos dos números hacer las operaciones de **sumar**, **restar**, **multiplicar**, **dividir** y **exponentes**. El programa debe tener las siguientes características:
+
+   - Comentarios iniciales de identificación.
+   - El programa debe pedir dos números al usuario. Estos números deben ser convertidos de tipo STRING a tipo FLOAT. Posteriormente estos números se deben:
+     - SUMAR (ejemplo: $22 + 8 = 30$)
+     - RESTAR (ejemplo: $22 - 8 = 14$)
+     - MULTIPLICAR (ejemplo: $22 * 8 = 176$)
+     - DIVIDIR (ejemplo: $22 / 8 = 2.75$)
+     - DIVISION ENTERA (ejemplo: $22 // 8 = 2$)
+     - DIVISION RESIDUO (ejemplo: $22 % 8 = 6$)
+     - EXPONENTE (ejemplo: $22 ** 8 = 54,875,873,536$)
+
+   - Los resultados deben aparecer en pantalla.
+
+2. Guarde los cambios y cierre el IDE Thonny.
