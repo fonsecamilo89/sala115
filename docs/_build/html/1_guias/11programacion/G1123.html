@@ -1,0 +1,995 @@
+<!doctype html>
+<html class="no-js" lang="es" data-content_root="../../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="../../genindex.html"><link rel="search" title="Búsqueda" href="../../search.html"><link rel="next" title="Bibliografía" href="../../2_referencias/bibliografia.html"><link rel="prev" title="Guía 1122: Interacción" href="G1122.html">
+        <link rel="prefetch" href="../../_static/logo_light.png" as="image">
+        <link rel="prefetch" href="../../_static/logo_dark.png" as="image">
+
+    <!-- Generated with Sphinx 7.4.7 and Furo 2025.12.19 -->
+        <title>Guía 1123: Control de flujo - sala 115</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=1aaadd6a" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  --color-guilabel-text: #FF0000;
+  --color-brand-primary: #265787;
+  --sidebar-caption-font-size: var(--font-size--small);
+  --toc-font-size: var(--font-size--small--2);
+  --admonition-font-size: 0.858rem;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">sala 115</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Búsqueda" name="q" aria-label="Búsqueda">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">INTRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/informacion.html">Información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/reglas.html">Reglas de la sala</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_intro/descargas.html">Descargas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guías</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../8logica/G820.html">Lógica computacional 8</a><input aria-label="Toggle navigation of Lógica computacional 8" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G821.html">Guía 821: Concepto Lógica computacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G822.html">Guía 822: Jerarquía de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G823.html">Guía 823: Variables y operaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8logica/G824.html">Guía 824: Álgebra de Boole</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10informatica/G1000.html">Informática 10</a><input aria-label="Toggle navigation of Informática 10" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1001.html">Guía 1001: Historia de la Informática</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1002.html">Guía 1002: Tema de proyecto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1003.html">Guía 1003: Ideas de proyecto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10informatica/G1004.html">Guía 1004: Anteproyecto de grado</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10ofimatica/G1010.html">Ofimática 10</a><input aria-label="Toggle navigation of Ofimática 10" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1011.html">Guía 1011: OFIMÁTICA y Software Libre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1012.html">Guía 1012: LibreOffice Writer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1013.html">Guía 1013: Formato en LibreOffice Writer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10ofimatica/G1014.html">Guía 1014: Contenidos en LibreOffice Writer</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../10programacion/G1020.html">Programación 10</a><input aria-label="Toggle navigation of Programación 10" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1021.html">Guía 1021: PROGRAMACIÓN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1022.html">Guía 1022: Algoritmos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1023.html">Guía 1023: PYTHON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10programacion/G1024.html">Guía 1024: Variables en Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../11ofimatica/G1110.html">Ofimática 11</a><input aria-label="Toggle navigation of Ofimática 11" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../11ofimatica/G1111.html">Guía 1111: LibreOffice Calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../11ofimatica/G1112.html">Guía 1112: Formato en LibreOffice Calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../11ofimatica/G1113.html">Guía 1113: Formulación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../11ofimatica/G1114.html">Guía 1114: Diagramas</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="G1120.html">Programación 11</a><input aria-label="Toggle navigation of Programación 11" checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="G1121.html">Guía 1121: IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="G1122.html">Guía 1122: Interacción</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Guía 1123: Control de flujo</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">REFERENCIAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/bibliografia.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../2_referencias/webgrafia.html">Webgrafía</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../../_sources/1_guias/11programacion/G1123.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section class="tex2jax_ignore mathjax_ignore" id="guia-1123-control-de-flujo">
+<h1>Guía 1123: Control de flujo<a class="headerlink" href="#guia-1123-control-de-flujo" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><img alt="escudo" src="../../_images/escudo.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div class="table-wrapper docutils container">
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>INSTITUCIÓN EDUCATIVA</strong>: John F. Kennedy</p>
+<ul class="simple">
+<li><p><strong>DOCENTE</strong>: Julian Camilo Fonseca Romero</p></li>
+<li><p><strong>ASIGNATURA</strong>: Programación</p></li>
+<li><p><strong>GRADO</strong>: ONCE</p></li>
+<li><p><strong>PERIODO</strong>: 03</p></li>
+<li><p><strong>TIEMPO</strong>: 10 semanas (2 horas / semana)</p></li>
+<li><p><strong>TIEMPO DE TRABAJO</strong>: 20/20 horas</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Objetivo</label><div class="sd-tab-content docutils">
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ul class="simple">
+<li><p><strong>Temática</strong>: Control de flujo y estructuras condicionales en Python.</p></li>
+<li><p><strong>Objetivo de aprendizaje</strong>: Comprender y aplicar operadores de comparación, operadores lógicos y estructuras de control (if, elif, else) para desarrollar programas capaces de tomar decisiones basadas en condiciones.</p></li>
+<li><p><strong>DESEMPEÑO</strong>: Demuestra comprensión y aplicación efectiva de estructuras de control de flujo en Python, utilizando operadores lógicos y condicionales para desarrollar programas que toman decisiones basadas en diferentes condiciones, mostrando capacidad para resolver problemas prácticos como cálculos y validaciones.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Orientaciones curriculares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Componente</strong>: Solución de problemas con T&amp;I.</p></li>
+<li><p><strong>Competencia</strong>: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.</p></li>
+<li><p><strong>Evidencia de aprendizaje</strong>: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Criterios de evaluación</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Actividades desarrolladas en su totalidad.</p></li>
+<li><p>Participación en clase.</p></li>
+<li><p>Explicación clara de conceptos.</p></li>
+<li><p>Argumentación de ideas.</p></li>
+<li><p>Cumplimiento de las reglas del aula.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Recursos (2)</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Plan de refuerzo 03.pdf</strong> <a class="reference download internal" download="" href="../../_downloads/f93d6c1b59d02fe16aadd50f68a7f5de/planRefuerzo03.pdf"><span class="xref download myst"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Descargar</span></span></a></p></li>
+<li><p><a class="reference external" href="https://thonny.org" rel="noreferer noopener" target="_blank">Instalador THONNY</a></p></li>
+</ul>
+</div>
+</div>
+<section id="mensaje-del-autor">
+<h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
+<blockquote class="pull-quote">
+<div><p>“El propósito de esta guía es proporcionar las herramientas fundamentales para que el estudiante supere la ejecución lineal de sus algoritmos y comience a desarrollar soluciones capaces de evaluar condiciones y tomar decisiones autónomas. A través del dominio de los operadores lógicos y las estructuras condicionales, se busca fortalecer el pensamiento computacional y la capacidad de resolución de problemas complejos”.</p>
+<p class="attribution">—Camilo Fonseca</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="control-de-flujo">
+<h2>Control de flujo<a class="headerlink" href="#control-de-flujo" title="Link to this heading">¶</a></h2>
+<p>Un programa no solo es la ejecución lineal de instrucciones paso a paso. Basado en como ciertas expresiones se evalúan, un programa puede decidir que instrucciones seguir, repetir o seleccionar alguna de varias.</p>
+<p>El siguiente gráfico muestra un <strong>control de flujo</strong> para determinar que se debe hacer, en caso de llover.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/image0123.png"><img alt="../../_images/image0123.png" src="../../_images/image0123.png" style="width: 333px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Diagrama de flujo</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A diferencia de los valores enteros, float (reales) y strings (cadena) los cuales pueden tener un número ilimitado de posibles valores, los valores booleanos solo tienen 2 posibles valores y estos son: <strong>True</strong> y <strong>False</strong>. Los valores booleanos también se almacenan en variables. Por ejemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">valorPositivo</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="linenos">2</span><span class="n">valorNegativo</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="operadores-de-comparacion">
+<h2>Operadores de comparación<a class="headerlink" href="#operadores-de-comparacion" title="Link to this heading">¶</a></h2>
+<p>Los operadores de comparación comparan dos valores y su evaluación resulta en un valor True o False. A continuación se muestran los operadores que se trabajan en Python:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operador</p></th>
+<th class="head"><p>Significado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">==</span></code></p></td>
+<td><p>Igual a</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
+<td><p>No igual a</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p></td>
+<td><p>Mayor que</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code></p></td>
+<td><p>Menor que</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code></p></td>
+<td><p>Mayor o igual que</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&lt;=</span></code></p></td>
+<td><p>Menor o igual que</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">==</span></code> (igual a) se evalúa como Verdadero cuando los valores en ambos lados son iguales.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">!=</span></code> (no igual a) se evalúa como Verdadero cuando los dos valores son diferentes.</p></li>
+<li><p>Los operadores <code class="docutils literal notranslate"><span class="pre">==</span></code> y <code class="docutils literal notranslate"><span class="pre">!=</span></code> pueden trabajar con valores de cualquier tipo de datos.</p></li>
+<li><p>Los operadores <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> y <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, funcionan correctamente sólo con valores enteros y de coma flotante.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>NO CONFUNDIR el operador (==) con el operador (=)</strong></p>
+<p>El operador == (igual a) tiene dos signos iguales, mientras que el operador = (asignación) tiene solo un signo igual.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="operadores-booleanos">
+<h2>Operadores booleanos<a class="headerlink" href="#operadores-booleanos" title="Link to this heading">¶</a></h2>
+<p>Los operadores booleanos se utilizan para comparar operaciones booleanas. Estos operadores son: and, or y not. Los operadores and y or siempre toman dos valores para evaluar. El operador not, solo toma un valor para evaluar.</p>
+<p>A continuación se muestran las tablas de la verdad para cada operador:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operador AND</p></th>
+<th class="head"><p>Resultado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True and True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True and False</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False and True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>False and False</p></td>
+<td><p>False</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operador OR</p></th>
+<th class="head"><p>Resultado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True or True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True or False</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-even"><td><p>False or True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>False or False</p></td>
+<td><p>False</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operador Not</p></th>
+<th class="head"><p>Resultado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Not True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>Not False</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Dado que los operadores de comparación evalúan valores booleanos, se puede utilizar en expresiones con operadores booleanos. Los operadores <strong>and</strong>, <strong>or</strong> y <strong>not</strong> se denominan operadores booleanos porque siempre operan con los valores booleanos <strong>True</strong> y <strong>False</strong>.</p>
+<p>El orden de operación con valores booleanos es el siguiente: Primero se evalúan los operadores matemáticos y de comparación, luego Python evalúa primero los operadores not, luego los operadores and y por último los operadores or.</p>
+</section>
+<hr class="docutils" />
+<section id="declaracion-if">
+<h2>Declaración if()<a class="headerlink" href="#declaracion-if" title="Link to this heading">¶</a></h2>
+<p>La declaración if() en PYTHON es una declaración condicional que permite ejecutar un bloque de código siempre y cuando una condición sea verdadera. Si la condición es falsa, entonces el bloque de código se omite.</p>
+<p>En Python, una declaración if() consta de lo siguiente:</p>
+<ul class="simple">
+<li><p>La palabra reservada if.</p></li>
+<li><p>Una condición (es decir, una expresión que se evalúa como Verdadero o Falso).</p></li>
+<li><p>Dos puntos (:)</p></li>
+<li><p>La siguiente línea de código debe empezar con un bloque con sangría.</p></li>
+</ul>
+<p>Ejemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Digite su nombre: "</span><span class="p">)</span>
+<span class="linenos">2</span><span class="k">if</span><span class="p">(</span><span class="n">nombre</span><span class="o">==</span><span class="s2">"camilo"</span><span class="p">):</span>
+<span class="linenos">3</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted se llama Camilo"</span><span class="p">)</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="nb">print</span><span class="p">(</span><span class="s2">"adios"</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="declaracion-else">
+<h2>Declaración else()<a class="headerlink" href="#declaracion-else" title="Link to this heading">¶</a></h2>
+<p>Una cláusula if puede ir seguida de una declaración else. La cláusula se ejecuta solo cuando la condición de la declaración if es Falsa. Una declaración else podría leerse como:</p>
+<blockquote>
+<div><p>“Si esta condición es verdadera, ejecute este código. SI NO, ejecute este otro código”.</p>
+</div></blockquote>
+<p>Una declaración else no tiene una condición, y en el código, una declaración else siempre consta de lo siguiente:</p>
+<ul class="simple">
+<li><p>La palabra reservada else.</p></li>
+<li><p>Dos puntos (:)</p></li>
+<li><p>Comenzando en la siguiente línea, un bloque de código con sangría.</p></li>
+</ul>
+<p>Ejemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"julian"</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="k">if</span><span class="p">(</span><span class="n">nombre</span> <span class="o">==</span> <span class="s2">"camilo"</span><span class="p">):</span>
+<span class="linenos">4</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"hola "</span> <span class="o">+</span> <span class="n">nombre</span><span class="p">)</span>
+<span class="linenos">5</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">6</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"usted no es camilo"</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="declaracion-elif">
+<h2>Declaración elif()<a class="headerlink" href="#declaracion-elif" title="Link to this heading">¶</a></h2>
+<p>La declaración <strong>elif()</strong> siempre sigue a una declaración <strong>if()</strong> u otra declaración <strong>elif()</strong>. Se proporciona otra condición que se verifica sólo si todas las condiciones anteriores eran falsas. En código, una declaración elif() siempre consta de lo siguiente:</p>
+<ul class="simple">
+<li><p>La palabra clave elif.</p></li>
+<li><p>Una condición (es decir, una expresión que se evalúa como Verdadero o Falso)</p></li>
+<li><p>Dos puntos (:)</p></li>
+<li><p>La siguiente línea comienza con un bloque de código con sangría.</p></li>
+</ul>
+<p>Ejemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">calificacion</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese la calificación (1-5): "</span><span class="p">)</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">calificacionFloat</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">calificacion</span><span class="p">)</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">if</span><span class="p">(</span><span class="n">calificacionFloat</span> <span class="o">&gt;</span> <span class="mf">0.0</span> <span class="ow">and</span> <span class="n">calificacionFloat</span> <span class="o">&lt;=</span> <span class="mf">2.9</span><span class="p">):</span>
+<span class="linenos"> 6</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"PERDIO"</span><span class="p">)</span>
+<span class="linenos"> 7</span><span class="k">elif</span><span class="p">(</span><span class="n">calificacionFloat</span><span class="o">==</span><span class="mi">3</span><span class="p">):</span>
+<span class="linenos"> 8</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"PASO RASPANDO"</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="k">elif</span><span class="p">(</span><span class="n">calificacionFloat</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">calificacionFloat</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">):</span>
+<span class="linenos">10</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"APROBO"</span><span class="p">)</span>
+<span class="linenos">11</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">12</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"FUERA DE RANGO"</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="a00-introduccion-5">
+<h2>A00: Introducción (5%)<a class="headerlink" href="#a00-introduccion-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
+<ol class="arabic simple">
+<li><p>TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>Lea el mensaje del autor y en su cuaderno responda:</p>
+<ul class="simple">
+<li><p>¿Qué ventajas tienen los programas que usan condicionales en su algoritmia?</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a01-taller-10">
+<h2>A01: Taller (10%)<a class="headerlink" href="#a01-taller-10" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Responda las siguientes preguntas en su cuaderno:</p>
+<ul class="simple">
+<li><p>¿Para que sirve tener un control de flujo en un programa?</p></li>
+<li><p>¿Por qué los valores booleanos se usan para tomar decisiones?</p></li>
+<li><p>¿En que se diferencian los valores booleanos de los valores enteros, flotantes y de cadena o strings?</p></li>
+<li><p>¿Cuáles son los operadores de comparación?</p></li>
+<li><p>¿Cuál es la diferencia entre los operadores matemáticos, operadores de comparación y los operadores booleanos?</p></li>
+<li><p>Al momento de realizar operaciones booleanas, ¿Cuál es el orden de operación de valores booleanos?</p></li>
+<li><p>¿Para que sirven las declaraciones if() en PYTHON?</p></li>
+<li><p>¿De qué se compone un declaración if()?</p></li>
+<li><p>¿Para que sirven la declaración else en PYTHON?</p></li>
+<li><p>¿De qué se compone una declaración else?</p></li>
+<li><p>¿Puede una declaración else funcionar sin una declaración if()?</p></li>
+<li><p>Para que sirve la declaración elif()?</p></li>
+<li><p>¿De qué se compone la declaración elif()?</p></li>
+<li><p>¿Existe un límite para la cantidad de declaraciones elif() en un código?</p></li>
+</ul>
+</li>
+<li><p>Complete las siguientes frases:</p>
+<ul class="simple">
+<li><p>Cuando los valores SON IGUALES, <code class="docutils literal notranslate"><span class="pre">==</span></code> se evalúa como Verdadero. Por tanto cuando los valores NO SON IGUALES, <code class="docutils literal notranslate"><span class="pre">==</span></code> se evalúa como: ___</p></li>
+<li><p>Cuando los valores SON IGUALES, <code class="docutils literal notranslate"><span class="pre">=!</span></code> se evalúa como Falso. Por tanto cuando los valores NO SON IGUALES, <code class="docutils literal notranslate"><span class="pre">=!</span></code> se evalúa como: ___</p></li>
+<li><p>Si se quieren evaluar valores de cualquier tipo de datos, se usan los operadores: ___ y ___</p></li>
+<li><p>Los operadores <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> y <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, solo funcionan correctamente con variables de tipo: ___</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno escriba las <strong>tablas de la verdad</strong> de cada <strong>operador booleano</strong>.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a02-consola-interactiva-5">
+<h2>A02: Consola interactiva (5%)<a class="headerlink" href="#a02-consola-interactiva-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>En una consola interactiva de PYTHON evaluar las siguientes operaciones.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Escriba el resultado de cada operación.</p>
+</div>
+<ul class="simple">
+<li><p>42 == 42</p></li>
+<li><p>42 == 99</p></li>
+<li><p>2 != 3</p></li>
+<li><p>2 != 2</p></li>
+<li><p>“hello” == “hello”</p></li>
+<li><p>“hello” == “Hello”</p></li>
+<li><p>“dog” != “cat”</p></li>
+<li><p>True == True</p></li>
+<li><p>True != False</p></li>
+<li><p>42 == 42.0</p></li>
+<li><p>42 &lt; 100</p></li>
+<li><p>42 &gt; 100</p></li>
+<li><p>42 &lt; 42</p></li>
+</ul>
+</li>
+<li><p>En una consola interactiva de PYTHON evaluar las siguientes operaciones booleanas.</p>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Escriba el resultado de cada operación.</p>
+</div>
+<ul class="simple">
+<li><p>(4 &lt; 5) and (5 &lt; 6)</p></li>
+<li><p>(4 &lt; 5) and ⁡(9 &lt; 6)</p></li>
+<li><p>(1 == 2)⁢ or (2 == 2)</p></li>
+<li><p>(2 + 2 == 4) and not ⁡(2 + 2 == 5 ) and ⁡(2 * 2 == 2 + 2)</p></li>
+<li><p>(2 + 99 &lt;= 4)⁢ or ⁡(2 + 2 == 5)⁢ or ⁡(2 / 7 == 9 − 1)</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a03-uso-de-if-5">
+<h2>A03: Uso de if() (5%)<a class="headerlink" href="#a03-uso-de-if-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Cree un archivo de nombre: <strong>G1123A03-nombresCortos.py</strong>, luego escriba y ejecute el siguiente código (no olvide escribir los comentarios iniciales):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Digite su nombre: "</span><span class="p">)</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">nombre_numeroCaracteres</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">if</span><span class="p">(</span><span class="n">nombre_numeroCaracteres</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">):</span>
+<span class="linenos"> 6</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"su nombre es corto"</span><span class="p">)</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">if</span><span class="p">(</span><span class="n">nombre_numeroCaracteres</span> <span class="o">==</span> <span class="mi">6</span><span class="p">):</span>
+<span class="linenos"> 9</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"su nombre tiene 6 caracteres"</span><span class="p">)</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="k">if</span><span class="p">(</span><span class="n">nombre_numeroCaracteres</span> <span class="o">&gt;</span> <span class="mi">6</span><span class="p">):</span>
+<span class="linenos">12</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"su nombre es largo"</span><span class="p">)</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="nb">print</span><span class="p">(</span><span class="s2">"adios"</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿De qué trata el código?</p></li>
+<li><p>¿Qué pasa en la consola si ingresa un nombre menor a 6 caracteres?</p></li>
+<li><p>¿Qué pasa en la consola si ingresa un nombre mayor a 6 caracteres?</p></li>
+</ul>
+</div>
+</li>
+<li><p>MODIFIQUE el código <strong>G1123A02-nombresCortos.py</strong> de tal forma que el número de caracteres no sea 6, sino el que usted considere.</p></li>
+<li><p>Guarde los cambios y cierre el IDE Thonny.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-adivinar-el-nombre-5">
+<h2>A04: Adivinar el nombre (5%)<a class="headerlink" href="#a04-adivinar-el-nombre-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>CREE una programa de nombre: <strong>G1123A04-adivinarNombre.py</strong> que adivine el nombre de una persona previamente establecido. El programa debe tener las siguientes características:</p>
+<ul class="simple">
+<li><p>Comentarios iniciales de identificación.</p></li>
+<li><p>Crear una variable de tipo String con el nombre del usuario a adivinar.</p></li>
+<li><p>El programa debe solicitar el nombre del usuario.</p></li>
+<li><p>Contar el número de veces que el usuario intenta adivinar el nombre.</p></li>
+<li><p>Si el usuario adivina el nombre, entonces mostrar un mensaje que diga: ADIVINO EL NOMBRE DESPUÉS DE {número de intentos}!!!</p></li>
+</ul>
+</li>
+<li><p>Guarde los cambios y cierre el IDE Thonny.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a05-mayor-de-edad-5">
+<h2>A05: Mayor de edad (5%)<a class="headerlink" href="#a05-mayor-de-edad-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Cree un archivo de nombre: <strong>G1123A05-mayorEdad.py</strong>, luego escriba y ejecute el siguiente código (no olvide escribir los comentarios iniciales):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">edadUsuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Digite su edad: "</span><span class="p">)</span>
+<span class="linenos">2</span><span class="n">edadUsuarioEntero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">edadUsuario</span><span class="p">)</span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="k">if</span><span class="p">(</span><span class="n">edadUsuarioEntero</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">edadUsuarioEntero</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">):</span>
+<span class="linenos">5</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted es menor de edad"</span><span class="p">)</span>
+<span class="linenos">6</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">7</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted NO ES menor de edad"</span><span class="p">)</span>
+<span class="linenos">8</span>
+<span class="linenos">9</span><span class="nb">print</span><span class="p">(</span><span class="s2">"ADIOS"</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿De qué trata el código?</p></li>
+<li><p>¿Qué pasa en la consola si ingresa una edad menor a 18 años?</p></li>
+<li><p>¿Qué pasa en la consola si ingresa una edad mayor a 18 años?</p></li>
+</ul>
+</div>
+</li>
+<li><p>Modifique el código de <strong>G1123A05-mayorEdad.py</strong> de tal forma que identifique si un adolescente es menor o mayor de 14 años.</p></li>
+<li><p>Guarde los cambios y cierre el IDE Thonny.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a06-aprobar-reprobar-5">
+<h2>A06: Aprobar - Reprobar (5%)<a class="headerlink" href="#a06-aprobar-reprobar-5" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>CREE una programa de nombre: <strong>G1123A06-apruebaReprueba.py</strong> el cual solicite al usuario una calificación entre 1 y 5. Luego el programa determine si con esa calificación, el estudiante aprueba o reprueba. El programa debe tener las siguientes características:</p>
+<ul class="simple">
+<li><p>Comentarios iniciales de identificación.</p></li>
+<li><p>Solicitar al usuario la calificación.</p></li>
+<li><p>Convertir el dato suministrado por el usuario de tipo string a tipo float (usar la función float())</p></li>
+<li><p>Con las sentencias <strong>if-else</strong>, determine si el estudiante aprueba o reprueba.</p></li>
+<li><p>Mostrar un mensaje que diga si el estudiante aprobó o reprobó.</p></li>
+</ul>
+</li>
+<li><p>GUARDE los cambios y cierre el IDE Thonny.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a07-rango-de-edades-10">
+<h2>A07: Rango de edades (10%)<a class="headerlink" href="#a07-rango-de-edades-10" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic">
+<li><p>Cree un archivo de nombre: <strong>G1123A07-rangoEdad.py</strong>, luego escriba y ejecute el siguiente código (no olvide escribir los comentarios iniciales):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">edad</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese su edad: "</span><span class="p">)</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">edadInt</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">edad</span><span class="p">)</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">if</span><span class="p">(</span><span class="n">edadInt</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">edadInt</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">):</span>
+<span class="linenos"> 6</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted está en la PRIMERA INFANCIA"</span><span class="p">)</span>
+<span class="linenos"> 7</span><span class="k">elif</span><span class="p">(</span><span class="n">edadInt</span> <span class="o">&gt;=</span> <span class="mi">6</span> <span class="ow">and</span> <span class="n">edadInt</span> <span class="o">&lt;=</span> <span class="mi">11</span><span class="p">):</span>
+<span class="linenos"> 8</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted está en la INFANCIA"</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="k">elif</span><span class="p">(</span><span class="n">edadInt</span> <span class="o">&gt;=</span> <span class="mi">12</span> <span class="ow">and</span> <span class="n">edadInt</span> <span class="o">&lt;=</span> <span class="mi">18</span><span class="p">):</span>
+<span class="linenos">10</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted está en la ADOLESCENCIA"</span><span class="p">)</span>
+<span class="linenos">11</span><span class="k">elif</span><span class="p">(</span><span class="n">edadInt</span> <span class="o">&gt;=</span> <span class="mi">19</span> <span class="ow">and</span> <span class="n">edadInt</span> <span class="o">&lt;=</span> <span class="mi">35</span><span class="p">):</span>
+<span class="linenos">12</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted está en la JUVENTUD"</span><span class="p">)</span>
+<span class="linenos">13</span><span class="k">elif</span><span class="p">(</span><span class="n">edadInt</span> <span class="o">&gt;=</span> <span class="mi">36</span> <span class="ow">and</span> <span class="n">edadInt</span> <span class="o">&lt;=</span> <span class="mi">60</span><span class="p">):</span>
+<span class="linenos">14</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted está en la ADULTEZ"</span><span class="p">)</span>
+<span class="linenos">15</span><span class="k">elif</span><span class="p">(</span><span class="n">edadInt</span> <span class="o">&gt;=</span> <span class="mi">61</span> <span class="ow">and</span> <span class="n">edadInt</span> <span class="o">&lt;=</span> <span class="mi">127</span><span class="p">):</span>
+<span class="linenos">16</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted está en la VEJEZ"</span><span class="p">)</span>
+<span class="linenos">17</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">18</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"FUERA DE RANGO"</span><span class="p">)</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="nb">print</span><span class="p">(</span><span class="s2">"adios"</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">En su cuaderno…</p>
+<p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿De qué trata el código?</p></li>
+<li><p>¿Qué pasa en la consola si ingresa las siguientes edades?:</p>
+<ul>
+<li><p>0</p></li>
+<li><p>1</p></li>
+<li><p>6</p></li>
+<li><p>17</p></li>
+<li><p>22</p></li>
+<li><p>45</p></li>
+<li><p>63</p></li>
+<li><p>-12</p></li>
+<li><p>120</p></li>
+<li><p>1000</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li><p>MODIFIQUE el código <strong>G1123A07-rangoEdad.py</strong> de tal forma que si el usuario ingresa un número negativo, entonces mostrar un mensaje que diga: “NO INGRESAR NÚMEROS NEGATIVOS”</p></li>
+<li><p>MODIFIQUE el código <strong>G1123A07-rangoEdad.py</strong> de tal forma que si el usuario tiene más de 100 años, mostrar el mensaje: “HA VIVIDO SUFICIENTE!!!”</p></li>
+<li><p>GUARDE los cambios y cierre el IDE Thonny.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a08-imc-50">
+<h2>A08: IMC (50%)<a class="headerlink" href="#a08-imc-50" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ol class="arabic">
+<li><p>CREE un programa de nombre: <strong>G1123A08-IMC.py</strong> que calcule el índice de masa corporal de una persona. El programa debe tener las siguientes características:</p>
+<ul>
+<li><p>Comentarios de identificación.</p></li>
+<li><p>Solicitar al usuario su peso en kilogramos y estatura en metros.</p></li>
+<li><p>Convertir los datos suministrados por el usuario de tipo string a tipo float (usar la función float())</p></li>
+<li><p>Calcule el IMC con la siguiente formula:</p>
+<ul>
+<li><div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[ IMC = {{peso(kg)} \over {altura (metros)^2}} \]</div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Muestre el IMC en pantalla.</p></li>
+<li><p>Con sentencias <strong>if-elif-else</strong>, muestre en pantalla los siguientes mensajes de clasificación según sea el valor de su IMC:</p>
+<ul>
+<li><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>IMC</p></th>
+<th class="head"><p>Clasificación</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Menor a 18.49</p></td>
+<td><p>PESO BAJO</p></td>
+</tr>
+<tr class="row-odd"><td><p>18.50 a 24.99</p></td>
+<td><p>PESO NORMAL</p></td>
+</tr>
+<tr class="row-even"><td><p>25 a 29.99</p></td>
+<td><p>SOBRE PESO</p></td>
+</tr>
+<tr class="row-odd"><td><p>30 a 34.99</p></td>
+<td><p>OBESIDAD LEVE</p></td>
+</tr>
+<tr class="row-even"><td><p>35 a 39.99</p></td>
+<td><p>OBESIDAD MEDIA</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mayor a 40</p></td>
+<td><p>OBESIDAD MÓRBIDA</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Calcule el IMC para una persona que pese 635kg y una altura de 2.72 metros. Este valor será el límite máximo del IMC para cualquier persona. El IMC mínimo será de 1.</p></li>
+<li><p>Si una persona tiene un IMC por fuera de los límites, entonces por defecto el programa mostrará un mensaje que diga: “ERROR en los datos. Revisar el peso y la estatura digitadas”.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../../2_referencias/bibliografia.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Bibliografía</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="G1122.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guía 1122: Interacción</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Camilo Fonseca
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Guía 1123: Control de flujo</a><ul>
+<li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
+<li><a class="reference internal" href="#control-de-flujo">Control de flujo</a></li>
+<li><a class="reference internal" href="#operadores-de-comparacion">Operadores de comparación</a></li>
+<li><a class="reference internal" href="#operadores-booleanos">Operadores booleanos</a></li>
+<li><a class="reference internal" href="#declaracion-if">Declaración if()</a></li>
+<li><a class="reference internal" href="#declaracion-else">Declaración else()</a></li>
+<li><a class="reference internal" href="#declaracion-elif">Declaración elif()</a></li>
+<li><a class="reference internal" href="#a00-introduccion-5">A00: Introducción (5%)</a></li>
+<li><a class="reference internal" href="#a01-taller-10">A01: Taller (10%)</a></li>
+<li><a class="reference internal" href="#a02-consola-interactiva-5">A02: Consola interactiva (5%)</a></li>
+<li><a class="reference internal" href="#a03-uso-de-if-5">A03: Uso de if() (5%)</a></li>
+<li><a class="reference internal" href="#a04-adivinar-el-nombre-5">A04: Adivinar el nombre (5%)</a></li>
+<li><a class="reference internal" href="#a05-mayor-de-edad-5">A05: Mayor de edad (5%)</a></li>
+<li><a class="reference internal" href="#a06-aprobar-reprobar-5">A06: Aprobar - Reprobar (5%)</a></li>
+<li><a class="reference internal" href="#a07-rango-de-edades-10">A07: Rango de edades (10%)</a></li>
+<li><a class="reference internal" href="#a08-imc-50">A08: IMC (50%)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../../_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../../_static/translations.js?v=d190bf04"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>
