@@ -1,0 +1,538 @@
+# Guía 1124: Bucles
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Programación
+        - **GRADO**: ONCE
+        - **PERIODO**: 04
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Estructuras de control iterativas: bucles while y for, sentencias de control (break, continue) y uso de módulos de la biblioteca estándar de Python.
+- **Objetivo de aprendizaje**: Comprender y aplicar las estructuras de control repetitivas y la importación de módulos en Python para automatizar procesos, gestionar flujos de ejecución y resolver problemas algorítmicos de forma eficiente.
+- **DESEMPEÑO**: Demuestra comprensión y aplicación efectiva de estructuras de control repetitivas en Python, utilizando bucles while y for, así como sentencias break y continue para resolver problemas de programación de manera eficiente.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con T&I.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (2)
+- **Plan de refuerzo 04.pdf** [{bdg-primary}`Descargar`](./recursos/G1124/archivos/planRefuerzo04.pdf)
+- [Instalador THONNY](https://thonny.org)
+```
+
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"La presente guía tiene el propósito de fortalecer las capacidades analíticas mediante el dominio de las estructuras iterativas y la automatización de procesos".
+
+-- Camilo Fonseca
+:::
+
+---
+## Bucle while()
+
+Un bloque de código se puede ejecutar repetidamente usando una sentencia while. El código de una cláusula while se ejecutará siempre que la condición de la sentencia while sea verdadera.
+
+Una sentencia while siempre consta de lo siguiente:
+
+  - La palabra clave while.
+  - Una condición (es decir, una expresión que evalúa como verdadera o falsa).
+  - Dos puntos (:)
+  - A partir de la siguiente línea, un bloque de código con sangría (denominado cláusula while).
+
+Ejemplo:
+
+```python
+cantidadManzanas = 0
+print(f"cantidad de Manzanas en canasta = {cantidadManzanas}")
+
+while(cantidadManzanas < 12):
+    print("depositando una Manzana a la canasta...")
+    cantidadManzanas = cantidadManzanas + 1
+    print(f"cantidad de Manzanas en canasta = {cantidadManzanas}")
+
+print(f"Ahora tiene en su canasta {cantidadManzanas} manzanas")
+
+```
+
+---
+## Declaraciones break y continue
+
+- **break** es un atajo para lograr que la ejecución del programa salga de un bucle while antes de tiempo. Si la ejecución llega a una sentencia break, sale inmediatamente de la cláusula del bucle while.
+
+- **continue** se utiliza dentro de bucles. Cuando la ejecución del programa llega a una sentencia continue, regresa inmediatamente al inicio del bucle y reevalúa su condición. (Esto también ocurre cuando la ejecución llega al final del bucle).
+
+Ejemplo:
+
+```python
+contador01 = 0
+contador02 = 0
+
+print("-------------------------")
+print("CONTADOR 01 con break")
+
+while(contador01 < 10):
+    contador01 = contador01 + 1
+    if(contador01 == 5):
+        break
+    print(contador01)
+
+print("-------------------------")
+print("CONTADOR 02 con continue")
+
+while(contador02 < 10):
+    contador02 = contador02 + 1
+    if(contador02 == 5):
+        continue
+    print(contador02)
+```
+
+---
+## Bucle for
+
+Para ejecutar un bloque de código solo un número determinado de veces, se usa un bucle **for** y la función **range()**. En código, una sentencia **for** es así:
+
+```python
+for i in range(5):
+```
+
+El bucle for se compone de lo siguiente:
+
+- La palabra clave for.
+- Un nombre de variable.
+- La palabra clave in.
+- Una llamada a la función range() con hasta tres enteros pasados.
+- Dos puntos (:)
+- A partir de la siguiente línea, un bloque de código con sangría (llamado cláusula for).
+
+La función **range()** puede tener uno, dos y tres parámetros así:
+
+:::{csv-table}
+:delim: ;
+:header-rows: 1
+
+Ejemplo ; Significado
+`for i in range(10):` ; Cuenta de uno en uno hasta diez.
+`for i in range(1,10):` ; Comienza en uno y cuenta de uno en uno hasta diez.
+`for i in range(1,10,2):` ; Comienza en uno y cuenta hasta diez pero de dos en dos.
+:::
+
+Ejemplo:
+
+```python
+for i in range (10):
+print(i)
+
+print("--------------------")
+
+for j in range (1,10+1):
+    print(j)
+
+print("--------------------")
+
+for k in range (0,10+1,2):
+    print(k)
+```
+
+---
+## Importando módulos
+
+Python incluye un conjunto de módulos llamado biblioteca estándar. Cada módulo es un programa Python que contiene un grupo relacionado de funciones que pueden integrarse en sus programas. Por ejemplo:
+
+  - El módulo **math** tiene funciones relacionadas con las matemáticas.
+  - El módulo **random** tiene funciones relacionadas con los números aleatorios, etc.
+
+Antes de poder usar las funciones de un módulo, se debe importar con una sentencia import. En código, una sentencia import consta de lo siguiente:
+
+  - La palabra clave import.
+  - El nombre del módulo.
+  - Opcionalmente, más nombres de módulos, siempre que estén separados por comas.
+
+Una vez que se importa un módulo, se pueden usar todas sus funciones.
+
+Ejemplo:
+
+```python
+import random
+
+numeroAleatorio = random.randint(1,100) # uso de random para generar un numero entre 1 y 100
+
+print(f"Numero aleatorio (1,100): {numeroAleatorio}")
+```
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+
+2. Lea el mensaje del autor y responda la siguiente pregunta:
+    - ¿Qué significa para usted la palabra iterativo y de que forma se relaciona con la automatización de procesos?
+---
+## A01: Taller (10%)
+{bdg-info}`Estructuración`
+
+1. Responda las siguientes preguntas en su cuaderno:
+
+    - ¿Para qué sirve la declaración while?
+    - ¿De qué se compone la declaración while?
+    - Una declaración while que se ejecute infinitamente, ¿Puede ser vista como un error en el código?
+    - ¿Para qué sirve la declaración break?
+    - ¿Para qué sirve la declaración continue?
+    - ¿En qué se diferencian las declaraciones break y continue?
+    - ¿Para que sirve el bucle for?
+    - ¿Qué diferencia hay entre el bucle for y el bucle while?
+    - ¿De qué se compone el bucle for?
+    - ¿Cuáles son las diferencias entre la función range () cuando tiene uno, dos y tres parámetros?
+    - ¿Para qué sirven los importar módulos en Python?
+    - ¿Qué es la biblioteca estándar de Python?
+    - ¿Cuál es y cómo se usa la sentencia para importar módulos en PYTHON?
+    - ¿De qué se compone una sentencia import?
+
+2. INVESTIGUE en INTERNET los módulos de la biblioteca estándar de PYTHON para las siguientes categorías y realice una descripción corta por cada módulo:
+
+    :::{admonition} AYUDA
+    :class: tip
+    Use el siguiente enlace:
+    [https://docs.python.org/es/3/library/index.html](https://docs.python.org/es/3/library/index.html)
+    :::
+
+    - Módulos numéricos y matemáticos (7 módulos)
+    - Módulos de programación funcional (3 módulos)
+    - Acceso a archivos y directorios (9 módulos)
+    - Persistencia de datos (6 módulos)
+    - Compresión de datos y archivado (6 módulos)
+    - Formatos de archivo (5 módulos)
+    - Servicios criptográficos (3 módulos)
+    - Servicios genéricos del sistema operativo (7 módulos)
+    - Librería de la interfaz de línea de comando (6 módulos)
+    - Ejecución concurrente (8 módulos)
+    - Comunicación en redes y entre procesos (7 módulos)
+    - Manejo de datos de internet (7 módulos)
+    - Servicios Multimedia (2 módulos)
+    - Internacionalización (2 módulos)
+    - Interfaces gráficas de usuario con TKINTER (3 módulos)
+    - Depuración y perfilado (6 módulos)
+    - Empaquetado y distribución de software (3 módulos)
+
+---
+## A02: Password (5%)
+{bdg-warning}`Actividad práctica`
+
+1. Cree un archivo de nombre: **G1124A02-password.py**, luego escriba y ejecute el siguiente código (no olvide escribir los comentarios iniciales):
+
+    ```python
+    passwordSistema = input("Cree una contraseña de Sistema: ")
+    contadorIntentos = 0
+    passwordUsuario = ""
+
+    while(passwordSistema != passwordUsuario):
+        passwordUsuario = input("Ingrese la contraseña de Sistema: ")
+        contadorIntentos = contadorIntentos + 1
+
+    print(f"Contraseña correcta despues de {contadorIntentos} intentos")
+
+    ```
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - ¿De que trata el código?
+    - ¿Que pasa en la consola si nunca se ingresa la contraseña de sistema?
+    - ¿Que pasa en la consola si al momento de crear la contraseña de sistema, no se escribe nada?
+    :::
+
+2. MODIFIQUE el código **G1124A02-password.py** de tal forma que cumpla las siguientes características:
+    - El usuario solo tiene 10 intentos para escribir la contraseña correcta.
+    - El usuario debe saber cuantos intentos le quedan para escribir la contraseña correcta.
+    - Cada vez que el usuario escriba una contraseña incorrecta, se resta un intento.
+    - Si los intentos del usuario llegaron a cero, entonces mostrar un mensaje que diga: "se acabaron los intentos".
+    - Finalmente, si la contraseña es correcta, mostrar un mensaje que diga: "**contraseña correcta después de {contar los intentos} intentos…**"
+    - Por otra parte si la contraseña es incorrecta, entonces mostrar un mensaje que diga: "**contraseña incorrecta**".
+  
+3. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A03: Triangulo (5%)
+{bdg-warning}`Actividad práctica`
+
+1. CREE un programa de nombre: **G1124A03-triangulo.py** el cual dibuje por medio de asteriscos (*) la siguiente figura:
+
+    ```python
+    *
+    **
+    ***
+    ****
+    *****
+    ******
+    *******
+    ```
+
+    - El programa debe tener la siguientes características:
+      - El programa le debe preguntar al usuario el número límite de asteriscos.
+      - El número límite de asteriscos debe ser la base del triangulo.
+      - Establecer una variable inicial que contenga solo un asterisco (*). El nombre de esta variable puede ser: numeroAsteriscosInicial
+      - Por medio de una declaración while, escribir una condición que cumpla lo siguiente:
+        - > Mientras el número de asteriscos inicial sea menor o igual que el numero de asteriscos límite, entonces imprimir en consola el numero de asteriscos
+      - Cada vez que que se ejecute la declaración while, sumarle una unidad al valor de la variable **numeroAsteriscosInicial**
+
+2. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A04: Password II (5%)
+{bdg-warning}`Actividad práctica`
+
+1. CREE un archivo de nombre: **G1124A04-usuarioPassword.py**, luego escriba y ejecute el siguiente código (no olvide escribir los comentarios iniciales):
+
+    ```python
+    usuarioRegistrado = input("Cree un nombre de usuario: ")
+    passwordRegistrada = input("Cree una password: ")
+
+    print("ENTRANDO AL SISTEMA >>>")
+
+    while(True):
+        usuario = input("Ingrese su usuario: ")
+        if(usuarioRegistrado != usuario):
+            print("usuario incorrecto")
+            continue
+        else:
+            print(f"Bienvenido {usuarioRegistrado}!!!")
+            password = input("Ingrese su password: ")
+            if(passwordRegistrada == password):
+                print("BIENVENIDO")
+                break
+            else:
+                print("password incorrecta")
+
+    print("adios")
+    ```
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda la siguientes preguntas:
+    - ¿De que trata el código?
+    - ¿Qué pasa si al momento de ingresar un nombre de usuario (previamente registrado) no se ingresa el nombre del usuario correcto?
+    - ¿Qué pasa si al momento de ingresar la password del usuario (previamente registrada) no se ingresa la password correcta?
+    - ¿De que otra forma se puede interrumpir el bucle while?
+    :::
+
+2. MODIFIQUE el código **G1124A04-usuarioPassword.py** de tal forma que cumpla las siguientes características:
+   - Agregue otra variable inicial de nombre: **codigoBinarioRegistrado**. En esta variable almacene un código binario de 4 bits.
+   - Cree otra condición que verifique que el código binario ingresado por el usuario coincide con el código binario registrado.
+   - Para darle la bienvenida al usuario, tienen que coincidir el nombre del usuario, la password y también el código binario.
+
+3. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A05: Password III (5%)
+{bdg-warning}`Actividad práctica`
+
+1. CREE un programa de nombre: **G1124A05-password_tres.py** que registre una contraseña inicial de sistema. Luego solicitarla nuevamente y si coincide, mostrar un mensaje que diga: BIENVENIDO. Igualmente mostrar el número de intentos antes de haber ingresado la contraseña correcta. El programa debe tener las siguientes características:
+
+    - Declarar inicialmente dos variables. Una para ingresar la contraseña de sistema y otra para establecer un contador en ceros.
+    - El ciclo while debe establecerse inicialmente en infinito.
+    - Cada vez que el usuario ingrese una contraseña incorrecta, entonces el contador debe sumar una unidad.
+    - Si la contraseña es correcta, romper el bucle while con una sentencia break. Mostrar el número de intentos antes escribir la contraseña correcta así como también un mensaje que diga: “BIENVENIDO”.
+    - Si la contraseña no es correcta, mostrar un mensaje que diga: contraseña incorrecta.
+
+2. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A06: Multiplicaciones (15%)
+{bdg-warning}`Actividad práctica`
+
+1. CREE un archivo de nombre: **G1124A06-tablasMultiplicar.py**, luego escriba y ejecute el siguiente código (no olvide escribir los comentarios iniciales):
+
+    ```python
+    print("tablas de multiplicar")
+
+    print("TABLA DEL 1")
+    tabla = 1
+    for i in range (1,11):
+        print(f"{tabla} * {i} = {tabla * i}")
+
+    print("-----------------")
+
+    print("TABLA DEL 2")
+    tabla = 2
+    for i in range (1,11):
+        print(f"{tabla} * {i} = {tabla * i}")
+    ```
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    - ¿De que trata el código?
+    - ¿Que pasa si en la función range(), se establece que los parámetros van de 1 a 10?
+    - ¿Por qué la variable tabla cambia de valor?
+    :::
+
+2. MODIFIQUE el archivo **G1124A06-tablasMultiplicar.py** de tal forma que muestre las tablas de multiplicar del 1 al 10.
+
+3. Guarde los cambios y cierre el IDE Thonny.
+
+---
+## A07: Evaluación (50%)
+{bdg-danger}`Transferencia`
+
+1. Desarrolle los siguientes ejercicios:
+
+    :::{dropdown} EJERCICIO 01: Juego: Adivine el número
+    1. CREE un archivo de nombre: **G1124A07-adivinarNumero.py** y escriba el siguiente código (no olvide escribir los comentarios iniciales):
+
+        ```python
+        import random
+
+        numeroSecreto = random.randint(1,20)
+
+        print("ADIVINE EN NUMERO ENTRE 1 y 20")
+
+        for intentos in range(1,7):
+            numeroUsuario = int(input("adivine el numero: "))
+
+            if(numeroUsuario < numeroSecreto):
+                print("el numero es mayor")
+            elif(numeroUsuario > numeroSecreto):
+                print("el numero es menor")
+            else:
+                break
+
+        if(numeroUsuario == numeroSecreto):
+            print(f"MUY BIEN, adivino el número después de {intentos} intentos")
+        else:
+            print(f"GAME OVER, el numero era: {numeroSecreto}")
+
+        print("ADIOS...")
+        ```
+    2. EJECUTE el código **G1124A07-adivinarNumero.py**
+        :::{admonition} En su cuaderno...
+        :class: note
+        Responda las siguientes preguntas:
+        - ¿De qué trata el código?
+        - ¿Qué pasa si NO se adivina el número?
+        - ¿Qué pasa si SI se adivina el número?
+        - ¿Qué pasa si en vez de números, se inserta un carácter?
+        :::
+    3. DEPURE el código: 
+        :::{admonition} En su cuaderno...
+        :class: note
+        Escriba cada línea de código junto con la explicación dicha línea. Por ejemplo:
+        ```python
+        import random # en esta línea de código se importa la librería random
+        ```
+        :::
+    4. CONVIERTA el código a DIAGRAMA DE FLUJO.
+    :::
+
+    :::{dropdown} EJERCICIO 02: Juego: Piedra, Papel o Tijera
+
+    1. CREE un archivo de nombre: **G1124A07-piedraPapelTijera.py** y escriba el siguiente código (no olvide escribir los comentarios iniciales):
+        ```python
+        import random, sys
+
+        print("PIEDRA, PAPEL o TIJERA")
+
+        juegosGanados = 0
+        juegosPerdidos = 0
+        empates = 0
+
+        while(True):
+            print(f"JUEGOS GANADOS: {juegosGanados} - JUEGOS PERDIDOS: {juegosPerdidos} - EMPATES: {empates}")
+
+            while(True):
+                eleccionJugador = input("Ingrese su movimiento: piedra, papel, tijera o (exit): ")
+                if(eleccionJugador == "exit"):
+                    print("ADIOS...")
+                    sys.exit()
+                if(eleccionJugador == "piedra" or eleccionJugador == "papel" or eleccionJugador == "tijera"):
+                    break
+                print("DATO INGRESADO INCORRECTO!!!")
+
+            if(eleccionJugador == 'piedra'):
+                print('PIEDRA versus...')
+            elif(eleccionJugador == 'papel'):
+                print('PAPER versus...')
+            elif (eleccionJugador == 'tijera'):
+                print('TIJERA versus...')
+
+            numeroAleatorio = random.randint(1,3)
+            if(numeroAleatorio == 1):
+                eleccionPC = "piedra"
+                print("PIEDRA")
+            elif(numeroAleatorio == 2):
+                eleccionPC = "papel"
+                print("PAPEL")
+            elif(numeroAleatorio == 3):
+                eleccionPC = "tijera"
+                print("TIJERA")
+
+            if (eleccionJugador == eleccionPC):
+                print('Es un empate!')
+                empates = empates + 1
+            elif (eleccionJugador == 'piedra' and eleccionPC == 'tijera'):
+                print('Usted GANA!!!')
+                juegosGanados = juegosGanados + 1
+            elif (eleccionJugador == 'papel' and eleccionPC == 'piedra'):
+                print('Usted GANA!!!')
+                juegosGanados = juegosGanados + 1
+            elif (eleccionJugador == 'tijera' and eleccionPC == 'papel'):
+                print('Usted GANA!!!')
+                juegosGanados = juegosGanados + 1
+            elif (eleccionJugador == 'piedra' and eleccionPC == 'papel'):
+                print('Usted PIERDE!!!')
+                juegosPerdidos = juegosPerdidos + 1
+            elif (eleccionJugador == 'papel' and eleccionPC == 'tijera'):
+                print('Usted PIERDE!!!')
+                juegosPerdidos = juegosPerdidos + 1
+            elif (eleccionJugador == 'tijera' and eleccionPC == 'piedra'):
+                print('Usted PIERDE!!!')
+                juegosPerdidos = juegosPerdidos + 1
+        ```
+    2. EJECUTE el código **G1124A07-piedraPapelTijera.py**
+        :::{admonition} En su cuaderno...
+        :class: note
+        Responda las siguientes preguntas:
+        - ¿De que trata el código?
+        - ¿Cuales son las únicas palabras que se pueden escribir en el programa?
+        - ¿Qué pasa si se escribe una palabra diferente a piedra, papel, tijera o exit?
+        - ¿Qué mide el programa?
+        :::
+    3. DEPURE el código:
+        :::{admonition} En su cuaderno...
+        :class: note
+        Escriba cada línea de código junto con la explicación dicha línea. Por ejemplo:
+        ```python
+        import random, sys # en esta línea de código se importan las librería random y sys
+        ```
+        :::
+    4. CONVIERTA el código a DIAGRAMA DE FLUJO.
+    :::
