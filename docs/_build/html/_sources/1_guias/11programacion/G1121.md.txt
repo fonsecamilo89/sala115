@@ -483,9 +483,9 @@ Depuración ; La depuración es el proceso de corregir todos los errores o falla
         print(mensaje01)
         print(mensaje02)
         ```
-    - La conversación **debe durar mínimo 2 minutos**. Pensar en un **tema extenso** como deportes, ofertas laborales, estudios, problemas, experiencias, etc.
-    - NO USAR CONTENIDO GROSERO, EXPLICITO o que incumpla cualquiera de las normas del manual de convivencia.    
+    - La conversación **debe durar exactamente 2 minutos**. Pensar en un **tema** como deportes, ofertas laborales, estudios, problemas, experiencias, etc.
+    - NO USAR CONTENIDO GROSERO, EXPLICITO o que incumpla cualquiera de las **normas del manual de convivencia**.
 
 3. Una vez el código esté listo, agregar un {guilabel}`break point` al inicio de las funciones `print()`. Luego realizar una **depuración de código** línea por línea para ver en la **consola interactiva** como se van mostrando los mensajes.
 
-4. Sustentar el código al docente.   
+4. Realizar la presentación y sustentar el código fuente al docente.

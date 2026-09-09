@@ -589,19 +589,19 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
 14. ¿Qué significa que una variable sea un "**contenedor identificable**"?
 15. ¿Qué sucede con el **valor de una variable** cuando se le *asigna* un **nuevo contenido** a través de una **operación**?
 16. ¿Qué rol juega el signo igual **(=)** en la **representación matemática** de una *variable*?
-17. Si tenemos las variables iniciales $a = 15$, $b = 30$ y $c = 5$, desarrolle las siguientes operaciones y halle el valor final de cada una:
-    :::{math}
-    a &= a + b
-    \\ b &= b - c
-    \\ c &= a + b + c
-    :::
-18. Si tenemos las variables iniciales $x = 100$, $y = 50$, realice las siguientes operaciones para hallar los nuevos valores:
-    :::{math}
-    x &= x + 10
-    \\ y &= y + x
-    \\ x &= x - 20
-    \\ y &= y - 5
-    :::
+17. > Si tenemos las variables iniciales $a = 15$, $b = 30$ y $c = 5$, desarrolle las siguientes operaciones y halle el valor final de cada una:
+    > :::{math}
+    > a &= a + b
+    > \\ b &= b - c
+    > \\ c &= a + b + c
+    > :::
+18. > Si tenemos las variables iniciales $x = 100$, $y = 50$, desarrolle las siguientes operaciones y halle el valor final de cada una:
+    > :::{math}
+    > x &= x + 10
+    > \\ y &= y + x
+    > \\ x &= x - 20
+    > \\ y &= y - 5
+    > :::
 19. Utilizando la tabla ASCII, codifique el siguiente mensaje: "*HOLA me llamo (su nombre) (su apellido)*"
 20. Utilizando la tabla ASCII, decodifique el siguiente mensaje: 101, 110, **32**, 101, 108, **32**, 97, 117, 108, 97, **32**, 49, 49, 53, **32**, 101, 115, 116, 117, 100, 105, 97, 109, 111, 115, **32**, 108, 111, 103, 105, 99, 97, **32**, 99, 111, 109, 112, 117, 116, 97, 99, 105, 111, 110, 97, 108
 :::

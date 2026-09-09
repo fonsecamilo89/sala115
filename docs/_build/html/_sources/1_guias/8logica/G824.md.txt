@@ -52,16 +52,18 @@ el funcionamiento de productos tecnológicos actuales.
 ```
 :::
 
-## Mensaje del autor
+## :: Mensaje del autor
 
 :::{pull-quote}
-“En esta guía se aplica el álgebra de Boole para representar, analizar y simplificar circuitos mediante compuertas y tablas de verdad; las actividades están diseñadas para evaluar esa comprensión desde lo teórico hasta la simulación práctica.
+"En esta guía se aplica el álgebra de Boole para representar, analizar y simplificar circuitos lógicos mediante compuertas y tablas de verdad.
+
+Las actividades están diseñadas para evaluar la comprensión desde lo teórico hasta la simulación práctica".
 
 -- Camilo Fonseca
 :::
 
 ---
-## Números binarios
+## :: Números binarios
 
 Los números binarios son un sistema de numeración cuyos valores solo pueden ser: `1` o `0`
 
@@ -103,17 +105,18 @@ Decimal ; 8 bits
 Los **números binarios** también se usan para representar los estados **FALSO** o **VERDADERO** donde:
 
 **0**: FALSO
+
 **1**: VERDADERO
 :::
 
 ---
-## George de Boole
+## :: George de Boole
 
 :::{list-table}
 * - ```{figure} ./recursos/G824/image01.png
     :width: 222
-    ```
-    $$1815-1864$$
+    1815 - 1864
+    ```    
 :::
 
 > **NACIMIENTO**: Lincoln (Lincolnshire), Inglaterra, 2 de noviembre de 1815
@@ -127,7 +130,7 @@ En 1854 publicó: An Investigation of the Laws of Thought on Which are Founded t
 Se podría decir que es el padre de los operadores lógicos simbólicos y que gracias a su álgebra hoy en día es posible operar simbólicamente para realizar operaciones lógicas.
 
 ---
-## Álgebra de Boole
+## :: Álgebra de Boole
 
 El álgebra de Boole en sistemas digitales, se basa en la lógica proposicional y se utiliza para representar un circuito lógico en forma de ecuaciones. En otras palabras, se trata de una herramienta que sirve para resolver y simplificar cualquier problema que se encuentre en los sistemas digitales.
 
@@ -156,7 +159,7 @@ El álgebra de Boole es esencial en programación, especialmente en el desarroll
 - **Criptografía**: los principios del álgebra de Boole se aplican en algoritmos criptográficos, proporcionando la base matemática para la seguridad de la información y el cifrado de datos.
 
 ---
-## Circuito lógico
+## :: Circuito lógico
 
 Un circuito lógico es el que está compuesto por:
 
@@ -184,7 +187,7 @@ La simplificación de circuitos lógicos se realiza por medio de la simplificaci
 :::
 
 ---
-## Compuertas lógicas
+## :: Compuertas lógicas
 
 Las **Compuertas Lógicas** son circuitos electrónicos conformados internamente por transistores que generan señales de voltaje como una salida de forma booleana. Las señales de salida se obtienen por operaciones lógicas binarias (suma, multiplicación). También (niegan, afirman, incluyen o excluyen).
 
@@ -207,7 +210,7 @@ Esta compuerta es representada por una multiplicación. Indica que es necesario 
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - $F=A*B$
+* - > $F=A*B$
   - :::{figure} ./recursos/G824/image03.png
     :width: 111
     :::
@@ -229,7 +232,7 @@ Esta compuerta es representada como una suma. Indica que con cualquiera de sus e
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - $F=A+B$
+* - > $F=A+B$
   - :::{figure} ./recursos/G824/image04.png
     :width: 111
     :::
@@ -252,7 +255,7 @@ En este caso esta compuerta solo tiene una entrada y una salida y esta actúa co
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - $F=\bar{A}$
+* - > $F=\bar{A}$
   - :::{figure} ./recursos/G824/image05.png
     :width: 111
     :::
@@ -274,7 +277,7 @@ También denominada como **AND negada**, esta compuerta trabaja al contrario de 
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - $F=\overline{A*B}$
+* - > $F=\overline{A*B}$
   - :::{figure} ./recursos/G824/image06.png
     :width: 111
     :::
@@ -297,7 +300,7 @@ La compuerta OR también tiene su versión inversa. Esta compuerta cuando tiene 
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - $F=\overline{A+B}$
+* - > $F=\overline{A+B}$
   - :::{figure} ./recursos/G824/image07.png
     :width: 111
     :::
@@ -320,7 +323,7 @@ También llamada **OR exclusiva**, esta actúa como una suma binaria de un dígi
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - $F=A*\bar{B}+\bar{A}*B$
+* - > $F=A*\bar{B}+\bar{A}*B$
   - :::{figure} ./recursos/G824/image08.png
     :width: 111
     :::
@@ -342,7 +345,7 @@ Esta compuerta es todo lo contrario a la compuerta XOR, ya que cuando las entrad
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - $F=\overline{A*\bar{B}+\bar{A}*B}$
+* - > $F=\overline{A*\bar{B}+\bar{A}*B}$
   - :::{figure} ./recursos/G824/image09.png
     :width: 111
     :::
@@ -357,13 +360,13 @@ Esta compuerta es todo lo contrario a la compuerta XOR, ya que cuando las entrad
 :::
 
 ---
-## Ejemplo 01: Ecuación booleana
+## :: Ejemplo 01: Ecuación booleana
 
 Para la siguiente **ecuación booleana**, exprese su **circuito lógico** e identifique su **tabla de la verdad**.
 
-$$F=\overline{(A*B)}+C$$
+> $$F=\overline{(A*B)}+C$$
 
-Para $\overline{(A*B)}$ se tiene la siguiente compuerta lógica:
+> Para $\overline{(A*B)}$ se tiene la siguiente compuerta lógica:
 
 :::{list-table}
 * - ```{figure} ./recursos/G824/image10.png
@@ -372,7 +375,7 @@ Para $\overline{(A*B)}$ se tiene la siguiente compuerta lógica:
     ```
 :::
 
-A lo anterior se le suma $C$ con la compuerta OR y finalmente se obtiene:
+> A lo anterior se le suma $C$ con la compuerta OR y finalmente se obtiene:
 
 :::{list-table}
 * - ```{figure} ./recursos/G824/image11.png
@@ -383,21 +386,21 @@ A lo anterior se le suma $C$ con la compuerta OR y finalmente se obtiene:
 
 Ahora se procede a desarrollar la tabla de la verdad. Para esto identificar el valor de F para las entradas A, B y C. 
 
-Para $A=0$, $B=0$ y $C=0$
-
-$$F=\overline{(A*B)}+C$$
-$$F=\overline{(0*0)}+0$$
-$$F=\overline{(0)}+0$$
-$$F=1+0$$
-$$F=1$$
-
-Para $A=0$, $B=0$ y $C=1$
-
-$$F=\overline{(A*B)}+C$$
-$$F=\overline{(0*0)}+1$$
-$$F=\overline{(0)}+1$$
-$$F=1+1$$
-$$F=1$$
+> Para $A=0$, $B=0$ y $C=0$
+> 
+> $$F=\overline{(A*B)}+C$$
+> $$F=\overline{(0*0)}+0$$
+> $$F=\overline{(0)}+0$$
+> $$F=1+0$$
+> $$F=1$$
+> 
+> Para $A=0$, $B=0$ y $C=1$
+> 
+> $$F=\overline{(A*B)}+C$$
+> $$F=\overline{(0*0)}+1$$
+> $$F=\overline{(0)}+1$$
+> $$F=1+1$$
+> $$F=1$$
 
 De esta forma se puede ir llenando la siguiente tabla de la verdad:
 
@@ -416,7 +419,7 @@ A|B|C|F
 :::
 
 ---
-## Ejemplo 02: Circuito lógico
+## :: Ejemplo 02: Circuito lógico
 
 Para el siguiente **circuito lógico**, exprese su **fórmula** e identifique su **tabla de la verdad**.
 
@@ -442,41 +445,41 @@ Esto se modela de la siguiente manera:
 
 De estar forma, la formula algebraica que modela el circuito es:
 
-$$F=\overline{(A*B)+(C+D)}$$
+> $$F=\overline{(A*B)+(C+D)}$$
 
 Con la formula, ahora es posible obtener la tabla de la verdad. Identificar el valor de F para todas las entradas A, B, C y D.
 
-Para $A=0$, $B=0$, $C=0$ y $D=0$
-
-$$F=\overline{(A*B)+(C+D)}$$
-$$F=\overline{(0*0)+(0+0)}$$
-$$F=\overline{(0)+(0)}$$
-$$F=\overline{(0)}$$
-$$F=1$$
-
-Para $A=0$, $B=0$, $C=0$ y $D=1$
-
-$$F=\overline{(A*B)+(C+D)}$$
-$$F=\overline{(0*0)+(0+1)}$$
-$$F=\overline{(0)+(1)}$$
-$$F=\overline{(1)}$$
-$$F=0$$
-
-Para $A=0$, $B=0$, $C=1$ y $D=0$
-
-$$F=\overline{(A*B)+(C+D)}$$
-$$F=\overline{(0*0)+(1+0)}$$
-$$F=\overline{(0)+(1)}$$
-$$F=\overline{(1)}$$
-$$F=0$$
-
-Para $A=0$, $B=0$, $C=1$ y $D=1$
-
-$$F=\overline{(A*B)+(C+D)}$$
-$$F=\overline{(0*0)+(1+1)}$$
-$$F=\overline{(0)+(1)}$$
-$$F=\overline{(1)}$$
-$$F=0$$
+> Para $A=0$, $B=0$, $C=0$ y $D=0$
+> 
+> $$F=\overline{(A*B)+(C+D)}$$
+> $$F=\overline{(0*0)+(0+0)}$$
+> $$F=\overline{(0)+(0)}$$
+> $$F=\overline{(0)}$$
+> $$F=1$$
+> 
+> Para $A=0$, $B=0$, $C=0$ y $D=1$
+> 
+> $$F=\overline{(A*B)+(C+D)}$$
+> $$F=\overline{(0*0)+(0+1)}$$
+> $$F=\overline{(0)+(1)}$$
+> $$F=\overline{(1)}$$
+> $$F=0$$
+> 
+> Para $A=0$, $B=0$, $C=1$ y $D=0$
+> 
+> $$F=\overline{(A*B)+(C+D)}$$
+> $$F=\overline{(0*0)+(1+0)}$$
+> $$F=\overline{(0)+(1)}$$
+> $$F=\overline{(1)}$$
+> $$F=0$$
+> 
+> Para $A=0$, $B=0$, $C=1$ y $D=1$
+> 
+> $$F=\overline{(A*B)+(C+D)}$$
+> $$F=\overline{(0*0)+(1+1)}$$
+> $$F=\overline{(0)+(1)}$$
+> $$F=\overline{(1)}$$
+> $$F=0$$
 
 De esta forma se puede ir llenando la siguiente tabla de la verdad:
 
@@ -506,7 +509,7 @@ A|B|C|D|F
 ## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
 2. Lea el **mensaje del autor** y en su cuaderno responda la siguiente pregunta:
     - ¿Qué entiende por simulación?
 
@@ -582,11 +585,11 @@ A|B|C|D|F
 
 Para las siguientes ecuaciones booleanas, obtenga su circuitos lógicos e identifique su tabla de la verdad:
 
-1. $F=(A+B)+(\overline{C+D})$
-2. $F = \overline{(A*\overline{B}+\overline{A}*B)+\overline{C}}$
-3. $F = \overline{(A*\overline{B}+\overline{A}*B)*(C*\overline{D}+\overline{C}*D)}$
-4. $F = \overline{((A*C)*(\overline{\overline{B}*C}))+((\overline{A*C})*(\overline{B}*C))}$
-5. $F = ((A+B)*(\overline{\overline{C}})+(\overline{A+B})*(\overline{C}))+(\overline{C*D})$ 
+1. > $F=(A+B)+(\overline{C+D})$
+2. > $F = \overline{(A*\overline{B}+\overline{A}*B)+\overline{C}}$
+3. > $F = \overline{(A*\overline{B}+\overline{A}*B)*(C*\overline{D}+\overline{C}*D)}$
+4. > $F = \overline{((A*C)*(\overline{\overline{B}*C}))+((\overline{A*C})*(\overline{B}*C))}$
+5. > $F = ((A+B)*(\overline{\overline{C}})+(\overline{A+B})*(\overline{C}))+(\overline{C*D})$ 
 
 ---
 ## A03: Circuitos lógicos (20%)

@@ -13,7 +13,9 @@ author = 'Camilo Fonseca'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser","sphinx_design"]
+extensions = ["myst_parser","sphinx_design", "sphinx.ext.mathjax"]
+
+mathjax_path = "mathjax322/es5/tex-mml-chtml.js" # Ruta personalizada para MathJax (renderizado de ecuaciones matemáticas offline)
 
 myst_enable_extensions = [
     "dollarmath", # ecuaciones matematicas con $
