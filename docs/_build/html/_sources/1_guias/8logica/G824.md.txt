@@ -52,7 +52,7 @@ el funcionamiento de productos tecnológicos actuales.
 ```
 :::
 
-## :: Mensaje del autor
+## Mensaje del autor
 
 :::{pull-quote}
 "En esta guía se aplica el álgebra de Boole para representar, analizar y simplificar circuitos lógicos mediante compuertas y tablas de verdad.
@@ -63,7 +63,7 @@ Las actividades están diseñadas para evaluar la comprensión desde lo teórico
 :::
 
 ---
-## :: Números binarios
+## Números binarios
 
 Los números binarios son un sistema de numeración cuyos valores solo pueden ser: `1` o `0`
 
@@ -110,7 +110,7 @@ Los **números binarios** también se usan para representar los estados **FALSO*
 :::
 
 ---
-## :: George de Boole
+## George Boole
 
 :::{list-table}
 * - ```{figure} ./recursos/G824/image01.png
@@ -130,7 +130,7 @@ En 1854 publicó: An Investigation of the Laws of Thought on Which are Founded t
 Se podría decir que es el padre de los operadores lógicos simbólicos y que gracias a su álgebra hoy en día es posible operar simbólicamente para realizar operaciones lógicas.
 
 ---
-## :: Álgebra de Boole
+## Álgebra de Boole
 
 El álgebra de Boole en sistemas digitales, se basa en la lógica proposicional y se utiliza para representar un circuito lógico en forma de ecuaciones. En otras palabras, se trata de una herramienta que sirve para resolver y simplificar cualquier problema que se encuentre en los sistemas digitales.
 
@@ -159,7 +159,7 @@ El álgebra de Boole es esencial en programación, especialmente en el desarroll
 - **Criptografía**: los principios del álgebra de Boole se aplican en algoritmos criptográficos, proporcionando la base matemática para la seguridad de la información y el cifrado de datos.
 
 ---
-## :: Circuito lógico
+## Circuito lógico
 
 Un circuito lógico es el que está compuesto por:
 
@@ -187,7 +187,7 @@ La simplificación de circuitos lógicos se realiza por medio de la simplificaci
 :::
 
 ---
-## :: Compuertas lógicas
+## Compuertas lógicas
 
 Las **Compuertas Lógicas** son circuitos electrónicos conformados internamente por transistores que generan señales de voltaje como una salida de forma booleana. Las señales de salida se obtienen por operaciones lógicas binarias (suma, multiplicación). También (niegan, afirman, incluyen o excluyen).
 
@@ -360,7 +360,7 @@ Esta compuerta es todo lo contrario a la compuerta XOR, ya que cuando las entrad
 :::
 
 ---
-## :: Ejemplo 01: Ecuación booleana
+## Ejemplo 01: Ecuación booleana
 
 Para la siguiente **ecuación booleana**, exprese su **circuito lógico** e identifique su **tabla de la verdad**.
 
@@ -419,7 +419,7 @@ A|B|C|F
 :::
 
 ---
-## :: Ejemplo 02: Circuito lógico
+## Ejemplo 02: Circuito lógico
 
 Para el siguiente **circuito lógico**, exprese su **fórmula** e identifique su **tabla de la verdad**.
 
