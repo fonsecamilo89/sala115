@@ -972,6 +972,7 @@ En esta actividad, aprenderá a insertar y modificar una **tabla de contenido**.
 
 29. GUARDE los cambios y cierre el software LibreOffice Writer.
 
+---
 ## A08: Tabla de contenido 2.0 {kbd}`112` (10%)
 {bdg-warning}`Actividad práctica`
 
@@ -1092,7 +1093,6 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
     :class: note
     Describa las características de la portada recién creada.
     :::
-
 
 13. GUARDE los cambios en el documento.
 

@@ -129,11 +129,11 @@ el número de caracteres es: 6
 ## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
-1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
 
-2. Lea el mensaje del autor y en su cuaderno responda:
+2. En su cuaderno, explique con sus palabras la siguiente frase:
 
-    - ¿Por qué la interacción con el usuario y el manejo adecuado de tipos de datos se consideran conceptos fundamentales de programación en Python?
+    > "La **interacción con el usuario** y el manejo adecuado de los **tipos de datos** se consideran fundamentales para la programación en Python".
 
 ---
 ## A01: Taller (5%)

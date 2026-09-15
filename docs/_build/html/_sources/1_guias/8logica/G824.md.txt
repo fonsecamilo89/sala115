@@ -63,53 +63,6 @@ Las actividades están diseñadas para evaluar la comprensión desde lo teórico
 :::
 
 ---
-## Números binarios
-
-Los números binarios son un sistema de numeración cuyos valores solo pueden ser: `1` o `0`
-
-> El **sistema numérico binario** es diferente al **sistema numérico decimal**.
-
-:::{admonition} Lenguaje de los dispositivos digitales
-:class: tip
-Los dispositivos digitales como el celular, tablet o PC solo entienden en sistema **numérico binario**.
-
-Las dispositivos digitales **no entienden** directamente **lenguaje humano** ni tampoco entienden directamente el **sistema numérico decimal**.
-:::
-
-Para entender mejor los **números binarios**, se presenta la siguiente tabla la cual muestra los **números decimales** con su **representación binaria**:
-
-:::{csv-table}
-:delim: ;
-:header-rows: 1
-Decimal ; 8 bits
-0 ; 0000 0000
-1 ; 0000 0001
-2 ; 0000 0010
-3 ; 0000 0011
-4 ; 0000 0100
-5 ; 0000 0101
-6 ; 0000 0110
-7 ; 0000 0111
-8 ; 0000 1000
-9 ; 0000 1001
-10; 0000 1010
-11; 0000 1011
-12; 0000 1100
-13; 0000 1101
-14; 0000 1110
-15; 0000 1111
-:::
-
-:::{admonition} Estados {guilabel}`FALSE` **TRUE**
-:class: tip
-Los **números binarios** también se usan para representar los estados **FALSO** o **VERDADERO** donde:
-
-**0**: FALSO
-
-**1**: VERDADERO
-:::
-
----
 ## George Boole
 
 :::{list-table}
@@ -157,6 +110,53 @@ El álgebra de Boole es esencial en programación, especialmente en el desarroll
 - **Programación y algoritmos**: el álgebra de Boole permite el control del flujo de ejecución en los programas.
 - **Sistemas de control y automatización**: se utiliza en el modelo y diseño de sistemas de control, como en la industria manufacturera.
 - **Criptografía**: los principios del álgebra de Boole se aplican en algoritmos criptográficos, proporcionando la base matemática para la seguridad de la información y el cifrado de datos.
+
+---
+## Números binarios
+
+Los números binarios son un sistema de numeración cuyos valores solo pueden ser: `1` o `0`
+
+> El **sistema numérico binario** es diferente al **sistema numérico decimal**.
+
+:::{admonition} Lenguaje de los dispositivos digitales
+:class: tip
+Los dispositivos digitales como el celular, tablet o PC solo entienden en sistema **numérico binario**.
+
+Las dispositivos digitales **no entienden** directamente **lenguaje humano** ni tampoco entienden directamente el **sistema numérico decimal**.
+:::
+
+Para entender mejor los **números binarios**, se presenta la siguiente tabla la cual muestra los **números decimales** con su **representación binaria**:
+
+:::{csv-table}
+:delim: ;
+:header-rows: 1
+Decimal ; 8 bits
+0 ; 0000 0000
+1 ; 0000 0001
+2 ; 0000 0010
+3 ; 0000 0011
+4 ; 0000 0100
+5 ; 0000 0101
+6 ; 0000 0110
+7 ; 0000 0111
+8 ; 0000 1000
+9 ; 0000 1001
+10; 0000 1010
+11; 0000 1011
+12; 0000 1100
+13; 0000 1101
+14; 0000 1110
+15; 0000 1111
+:::
+
+:::{admonition} Estados {guilabel}`FALSE` **TRUE**
+:class: tip
+Los **números binarios** también se usan para representar los estados **FALSO** o **VERDADERO** donde:
+
+**0**: FALSO
+
+**1**: VERDADERO
+:::
 
 ---
 ## Circuito lógico
@@ -514,7 +514,7 @@ A|B|C|D|F
     - ¿Qué entiende por simulación?
 
 ---
-## A01: Taller (10%)
+## A01: Taller (5%)
 {bdg-info}`Estructuración`
 
 1. En su cuaderno responda las siguientes preguntas:
@@ -522,10 +522,6 @@ A|B|C|D|F
     - ¿Por qué los dispositivos digitales no entienden directamente el lenguaje humano ni tampoco entienden directamente el sistema numérico decimal?
     - ¿Qué valores tiene el sistema numérico binario?
     - ¿Qué otros significados tienen el 0 y el 1 en el sistema numérico binario?
-    - ¿Qué es un circuito lógico y de que se compone?
-    - En un circuito lógico, ¿de que dependen los valores binarios de sus salidas?
-    - ¿Qué es una función lógica?
-    - En un circuito lógico, ¿De que depende que tenga más o menos componentes?
     - ¿Por que el matemático George Boole, es considerado fundador de las ciencias de la computación?
     - ¿Cuál fue la obra de George Boole que establecía las reglas para expresar y simplificar problemas lógicos cuyos argumentos establecían los estados de falso o verdadero?
     - En qué se basa el álgebra de Boole?
@@ -533,21 +529,27 @@ A|B|C|D|F
     - ¿En qué se diferencia el álgebra de Boole con el álgebra tradicional?
     - ¿Cuál es la diferencia entre una decisión y una condición? (escriba 3 ejemplos de decisiones y 3 ejemplos de condiciones)
 
-2. En su cuaderno, escriba los números desde el 0 al 32 en Representación Digital Binaria de 8 bits (Revise la **Tabla de conversión Decimal - Binario**).
+2. Escriba en su cuaderno **dos ventajas** que se obtienen al momento de simplificar expresiones mediante el álgebra de Boole.
 
-3. En su cuaderno, realice el dibujo de un **circuito lógico simple**.
+3. En su cuaderno, escriba los números desde el 0 al 32 en Representación Digital Binaria de 8 bits (Revise la **Tabla de conversión Decimal - Binario**).
 
-4. Consulte en Internet que otras personas aportaron a las teorías de las ciencias de la computación y realice un resumen en su cuaderno.
+---
+## A02: Circuito lógico (5%)
+{bdg-info}`Estructuración`
 
-5. Escriba en su cuaderno **dos ventajas** que se obtienen al momento de simplificar expresiones mediante el álgebra de Boole.
+1. En su cuaderno, realice el dibujo de un **circuito lógico simple** y responda las siguientes preguntas:
 
-6. Traduzca del ingles al español las siguientes palabras y en su cuaderno escriba un ejemplo de frase por cada una:
+   - ¿Qué es un circuito lógico y de que se compone?
+   - En un circuito lógico, ¿de que dependen los valores binarios de sus salidas?
+   - ¿Qué es una función lógica?
+   - En un circuito lógico, ¿De que depende que tenga más o menos componentes?
 
+2. Traduzca del ingles al español las siguientes palabras y en su cuaderno escriba una frase por cada una:
     - AND
     - OR
     - NOT
 
-7. Resolver el siguiente crucigrama de las aplicaciones del álgebra de Boole:
+3. Desarrollar el siguiente crucigrama:
 
     :::{table}
     Horizontales | Verticales
@@ -565,13 +567,13 @@ A|B|C|D|F
         ```
     :::
 
-8. En su cuaderno responda las siguientes preguntas:
+4. En su cuaderno responda las siguientes preguntas:
 
    - ¿En las compuertas lógicas como se generan las señales de voltaje de salida?
    - ¿En que otros campos se puede aplicar la teoría de compuertas lógicas?
    - ¿Qué se obtiene cuando se modela el comportamiento de las entradas y salidas lógicas Booleanas?
 
-9. Copie la siguiente tabla en su cuaderno y luego relacione con una línea cada definición con su compuerta lógica:
+5. Copie la siguiente tabla en su cuaderno y luego relacione con una línea cada definición con su compuerta lógica:
 
     :::{list-table}
     * - ```{figure} ./recursos/G824/image15.png
@@ -580,7 +582,7 @@ A|B|C|D|F
     :::
 
 ---
-## A02: Ecuaciones booleanas (15%)
+## A03: Ecuaciones booleanas (15%)
 {bdg-warning}`Actividad práctica`
 
 Para las siguientes ecuaciones booleanas, obtenga su circuitos lógicos e identifique su tabla de la verdad:
@@ -592,7 +594,7 @@ Para las siguientes ecuaciones booleanas, obtenga su circuitos lógicos e identi
 5. > $F = ((A+B)*(\overline{\overline{C}})+(\overline{A+B})*(\overline{C}))+(\overline{C*D})$ 
 
 ---
-## A03: Circuitos lógicos (20%)
+## A04: Circuitos lógicos (20%)
 {bdg-warning}`Actividad práctica`
 
 Para los siguientes circuitos lógicos, obtenga su ecuación booleana e identifique su tabla de la verdad:
@@ -639,7 +641,7 @@ Para los siguientes circuitos lógicos, obtenga su ecuación booleana e identifi
     :::
 
 ---
-## A04: Simulación de circuitos Logic.ly (50%)
+## A05: Simulación de circuitos Logic.ly (50%)
 {bdg-danger}`Transferencia`
 
 1. Usando el aplicativo web: logic.ly, modele los cinco circuitos lógicos de la **Actividad 03**. Para acceder al aplicativo, PULSAR clic en la siguiente imagen:

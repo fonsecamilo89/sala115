@@ -301,14 +301,11 @@ Los comandos a introducir en esta consola se deben escribir después del prompt 
 ## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
-1. TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+1. En su cuaderno, transcriba la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
 
-2. LEA el **mensaje del autor** y en su cuaderno responda las siguientes preguntas:
+2. En su cuaderno, responda la siguiente pregunta:
 
-    - ¿Qué entiende por consola interactiva?
     - ¿Qué es para usted la palabra interactivo?
-    - Por medio de un lenguaje de programación ¿Puedo comunicarme con una máquina? ¿Por qué?
-    - El proceso de comunicación, ¿Se limita a solo dar órdenes o instrucciones? ¿Por qué?
 
 ---
 ## A01: Taller (15%)
