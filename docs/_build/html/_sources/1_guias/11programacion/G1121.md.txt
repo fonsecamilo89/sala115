@@ -44,7 +44,8 @@
 
 ```{tab-item} Recursos (2)
 - **Plan de refuerzo 01.pdf** [{bdg-primary}`Descargar`](./recursos/G1121/archivos/planRefuerzo01.pdf)
-- [Instalador THONNY](https://thonny.org) 
+- [Instalador THONNY](https://thonny.org)
+- [PYTHON ONLINE](https://www.online-python.com). Ejecutar la consola interactiva PYTHON en el navegador.
 ```
 
 :::
