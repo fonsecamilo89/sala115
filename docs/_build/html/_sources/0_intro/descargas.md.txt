@@ -27,4 +27,4 @@ Identifique el recurso y PULSE el botón **Descargar**.
     -  
   :::
 
-- Nota aclaratoria Técnicas e Instrumentos [{bdg-primary}`Descargar`](./recursos/descargas/nota_aclaratoria.pdf) (Mg. Yeison J. García Mosso)
+- Nota aclaratoria Técnicas e Instrumentos [{bdg-primary}`Descargar`](./recursos/descargas/nota_aclaratoria.pdf) (Mg. Yeison J. García Mosso) (Octubre-2026)
