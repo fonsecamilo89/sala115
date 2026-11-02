@@ -601,10 +601,10 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 <h2>A00: Introducción (5%)<a class="headerlink" href="#a00-introduccion-5" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
 <ol class="arabic simple">
-<li><p>TRANSCRIBA en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.</p></li>
+<li><p>TRANSCRIBA en su cuaderno el contenido de la temática, el objetivo de aprendizaje y el desempeño de la presente guía.</p></li>
 <li><p>Lea el mensaje del autor y en su cuaderno responda:</p>
 <ul class="simple">
-<li><p>¿Qué ventajas tienen los programas que usan condicionales en su algoritmia?</p></li>
+<li><p>¿Qué significa superar la ejecución lineal en el desarrollo de algoritmos?</p></li>
 </ul>
 </li>
 </ol>
@@ -716,7 +716,7 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 </ul>
 </div>
 </li>
-<li><p>MODIFIQUE el código <strong>G1123A02-nombresCortos.py</strong> de tal forma que el número de caracteres no sea 6, sino el que usted considere.</p></li>
+<li><p>MODIFIQUE el código <strong>G1123A02-nombresCortos.py</strong> de tal forma que el número de caracteres no sea 6. El usuario debe ingresar el número de caracteres.</p></li>
 <li><p>Guarde los cambios y cierre el IDE Thonny.</p></li>
 </ol>
 </section>
@@ -730,8 +730,9 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 <li><p>Comentarios iniciales de identificación.</p></li>
 <li><p>Crear una variable de tipo String con el nombre del usuario a adivinar.</p></li>
 <li><p>El programa debe solicitar el nombre del usuario.</p></li>
+<li><p>El usuario tiene <strong>3 intentos</strong> para adivinar el nombre.</p></li>
 <li><p>Contar el número de veces que el usuario intenta adivinar el nombre.</p></li>
-<li><p>Si el usuario adivina el nombre, entonces mostrar un mensaje que diga: ADIVINO EL NOMBRE DESPUÉS DE {número de intentos}!!!</p></li>
+<li><p>Si el usuario adivina el nombre, entonces mostrar un mensaje que diga: ADIVINÓ EL NOMBRE DESPUÉS DE {número de intentos}!!!</p></li>
 </ul>
 </li>
 <li><p>Guarde los cambios y cierre el IDE Thonny.</p></li>
@@ -749,7 +750,7 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 <span class="linenos">4</span><span class="k">if</span><span class="p">(</span><span class="n">edadUsuarioEntero</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">edadUsuarioEntero</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">):</span>
 <span class="linenos">5</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted es menor de edad"</span><span class="p">)</span>
 <span class="linenos">6</span><span class="k">else</span><span class="p">:</span>
-<span class="linenos">7</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted NO ES menor de edad"</span><span class="p">)</span>
+<span class="linenos">7</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Usted es mayor de edad"</span><span class="p">)</span>
 <span class="linenos">8</span>
 <span class="linenos">9</span><span class="nb">print</span><span class="p">(</span><span class="s2">"ADIOS"</span><span class="p">)</span>
 </pre></div>
@@ -764,7 +765,11 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 </ul>
 </div>
 </li>
-<li><p>Modifique el código de <strong>G1123A05-mayorEdad.py</strong> de tal forma que identifique si un adolescente es menor o mayor de 14 años.</p></li>
+<li><p>Modifique el código de <strong>G1123A05-mayorEdad.py</strong> de tal forma que identifique si un bachiller puede ingresar o no a la policía.</p>
+<blockquote>
+<div><p>La edad de un bachiller para poder ingresar a la policía está entre los 17 y 26 años de edad.</p>
+</div></blockquote>
+</li>
 <li><p>Guarde los cambios y cierre el IDE Thonny.</p></li>
 </ol>
 </section>
@@ -772,14 +777,43 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 <section id="a06-aprobar-reprobar-5">
 <h2>A06: Aprobar - Reprobar (5%)<a class="headerlink" href="#a06-aprobar-reprobar-5" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
-<ol class="arabic simple">
-<li><p>CREE una programa de nombre: <strong>G1123A06-apruebaReprueba.py</strong> el cual solicite al usuario una calificación entre 1 y 5. Luego el programa determine si con esa calificación, el estudiante aprueba o reprueba. El programa debe tener las siguientes características:</p>
-<ul class="simple">
+<ol class="arabic">
+<li><p>CREE una programa de nombre: <strong>G1123A06-apruebaReprueba.py</strong> el cual solicite al usuario una calificación entre 1.0 y 5.0.
+Luego el programa determine si con esa calificación, el estudiante aprueba o reprueba. Dependiendo del resultado de la nota, el programa debe mostrar su desempeño. El programa debe tener las siguientes características:</p>
+<ul>
 <li><p>Comentarios iniciales de identificación.</p></li>
-<li><p>Solicitar al usuario la calificación.</p></li>
-<li><p>Convertir el dato suministrado por el usuario de tipo string a tipo float (usar la función float())</p></li>
+<li><p>Solicitar al usuario la calificación (un número decimal entre 1.0 y 5.0).</p></li>
+<li><p>Convertir el dato suministrado por el usuario de tipo string a tipo float (usar la función float()).</p></li>
 <li><p>Con las sentencias <strong>if-else</strong>, determine si el estudiante aprueba o reprueba.</p></li>
 <li><p>Mostrar un mensaje que diga si el estudiante aprobó o reprobó.</p></li>
+<li><p>Mostrar un mensaje del desempeño del estudiante.</p>
+<ul>
+<li><div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>NOTA</p></th>
+<th class="head"><p>Desempeño</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.0-2.9</p></td>
+<td><p>Desempeño bajo</p></td>
+</tr>
+<tr class="row-odd"><td><p>3.0-3.9</p></td>
+<td><p>Desempeño básico</p></td>
+</tr>
+<tr class="row-even"><td><p>4.0-4.5</p></td>
+<td><p>Desempeño alto</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.6-5.0</p></td>
+<td><p>Desempeño superior</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p>GUARDE los cambios y cierre el IDE Thonny.</p></li>
@@ -841,14 +875,15 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 </ol>
 </section>
 <hr class="docutils" />
-<section id="a08-imc-50">
-<h2>A08: IMC (50%)<a class="headerlink" href="#a08-imc-50" title="Link to this heading">¶</a></h2>
+<section id="a08-indice-de-masa-corporal-imc-25">
+<h2>A08: Índice de masa corporal (IMC) (25%)<a class="headerlink" href="#a08-indice-de-masa-corporal-imc-25" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
 <ol class="arabic">
 <li><p>CREE un programa de nombre: <strong>G1123A08-IMC.py</strong> que calcule el índice de masa corporal de una persona. El programa debe tener las siguientes características:</p>
 <ul>
 <li><p>Comentarios de identificación.</p></li>
-<li><p>Solicitar al usuario su peso en kilogramos y estatura en metros.</p></li>
+<li><p>Solicitar al usuario su peso en kilogramos y estatura en metros (ejemplo 1.75 es un metro con 75 cm).</p></li>
+<li><p>El peso debe estar en 1Kg y 700Kg. La estatura debe estar entre 0.24 y 2.80. Valores diferentes mostrar un mensaje de ERROR.</p></li>
 <li><p>Convertir los datos suministrados por el usuario de tipo string a tipo float (usar la función float())</p></li>
 <li><p>Calcule el IMC con la siguiente formula:</p>
 <ul>
@@ -894,8 +929,59 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 </li>
 </ul>
 </li>
-<li><p>Calcule el IMC para una persona que pese 635kg y una altura de 2.72 metros. Este valor será el límite máximo del IMC para cualquier persona. El IMC mínimo será de 1.</p></li>
-<li><p>Si una persona tiene un IMC por fuera de los límites, entonces por defecto el programa mostrará un mensaje que diga: “ERROR en los datos. Revisar el peso y la estatura digitadas”.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a09-indice-de-calor-ic-25">
+<h2>A09: Índice de Calor (IC) (25%)<a class="headerlink" href="#a09-indice-de-calor-ic-25" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<ol class="arabic">
+<li><p>CREE un programa de nombre: <strong>G1123A09-IC.py</strong> que calcule el índice de calor. El programa debe tener las siguientes características:</p>
+<ul>
+<li><p>Comentarios de identificación.</p></li>
+<li><p>Solicitar al usuario la temperatura actual en grados centígrados y el porcentaje de humedad del ambiente (valor entre <span class="math notranslate nohighlight">\(0.00\)</span> y <span class="math notranslate nohighlight">\(1.00\)</span>)(ejemplo: si es 64% entonces valor es 0.64).</p></li>
+<li><p>Temperatura debe estar en 1°C y 60°C. % de humedad debe estar entre <span class="math notranslate nohighlight">\(0.00\)</span> y <span class="math notranslate nohighlight">\(1.00\)</span>. Valores diferentes mostrar un mensaje de ERROR.</p></li>
+<li><p>Convertir los datos suministrados por el usuario de tipo string a tipo float (usar la función float())</p></li>
+<li><p>Calcule el IC con la siguiente formula:</p>
+<ul>
+<li><div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[ IC = temperatura(°C) + ({{5}\over{9}}) * (humedad(\%)-10)  \]</div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Mostrar el IC en pantalla.</p></li>
+<li><p>Con sentencias <strong>if-elif-else</strong>, muestre en pantalla los siguientes mensajes de riesgo según sea el valor del IC:</p>
+<ul>
+<li><div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>IC</p></th>
+<th class="head"><p>Riesgo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Menos de 27°</p></td>
+<td><p>No hay riesgo para la salud en actividades normales</p></td>
+</tr>
+<tr class="row-odd"><td><p>27° a 32°</p></td>
+<td><p>Fatiga posible con actividad física prolongada o exposición al sol</p></td>
+</tr>
+<tr class="row-even"><td><p>33° a 40°</p></td>
+<td><p>Posibles calambres por calor, agotamiento y riesgo de insolación</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mayor a 41°</p></td>
+<td><p>Insolación o golpe de calor muy probables si hay exposición continua</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
@@ -973,7 +1059,8 @@ Recursos (2)</label><div class="sd-tab-content docutils">
 <li><a class="reference internal" href="#a05-mayor-de-edad-5">A05: Mayor de edad (5%)</a></li>
 <li><a class="reference internal" href="#a06-aprobar-reprobar-5">A06: Aprobar - Reprobar (5%)</a></li>
 <li><a class="reference internal" href="#a07-rango-de-edades-10">A07: Rango de edades (10%)</a></li>
-<li><a class="reference internal" href="#a08-imc-50">A08: IMC (50%)</a></li>
+<li><a class="reference internal" href="#a08-indice-de-masa-corporal-imc-25">A08: Índice de masa corporal (IMC) (25%)</a></li>
+<li><a class="reference internal" href="#a09-indice-de-calor-ic-25">A09: Índice de Calor (IC) (25%)</a></li>
 </ul>
 </li>
 </ul>
