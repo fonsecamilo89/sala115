@@ -640,7 +640,8 @@ Variables | correcta o incorrecta	| ¿Por qué?
     ```
     :::
 
-    :::{admonition} ¿Cómo mostrar el valor de una variable en otra variable?
+    :::{admonition} AYUDA: ¿CÓMO MOSTRAR EL VALOR DE UNA VARIABLE EN OTRA VARIABLE?
+    :class: hint
     - Es necesario agregar la letra **f**, antes de las primeras comillas dobles en el valor de la variable de tipo **STRING**.
     - Las variables a mostrar van dentro de llaves: `{}`
     Por ejemplo:

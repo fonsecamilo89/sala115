@@ -57,58 +57,7 @@
 :::
 
 ---
-## PYTHON
-
-:::{card} PYTHON
-:link: https://www.python.org/
-:shadow: lg
-:img-top: ./recursos/G1023/image01.png
-:width: 25%
-Acceder a la web PYTHON
-:::
-
-**Python** es un *lenguaje de programación* interpretado de alto nivel creado por **Guido van Rossum** y publicado por primera vez en **1991**. Está diseñado pensando en la legibilidad del código, y su sintaxis permite a los programadores expresar conceptos en menos líneas de **código**.
-
-:::{admonition} ¿Qué es un lenguaje de programación?
-:class: tip
-Un **lenguaje de programación** es un conjunto de reglas y sintaxis que permite a los programadores dar *instrucciones* a una computadora para que realice tareas específicas. Es una forma de comunicarse con las máquinas.
-:::
-
-### Principales características de Python
-
-A continuación se muestran algunas de las características de Python que lo convierten en un lenguaje de programación tan versátil y ampliamente utilizado:
-
-- **Legibilidad**. Python es conocido por su sintaxis clara y legible, que se parece en cierto modo a la inglesa.
-
-    ```python
-    import time
-
-    saludo = "Buenos días"
-
-    def saludar():
-        print(saludo)
-
-    saludo()
-    ```
-- **Fácil de aprender**. La legibilidad de Python hace que sea relativamente fácil para los principiantes entender lo que hace el código.
-- **Versatilidad**. Python no está limitado a un tipo de tarea: Usted puede utilizarlo en muchos campos. Si le interesa el desarrollo web, la automatización de tareas o la ciencia de datos, Python tiene las herramientas necesarias.
-- **Amplia compatibilidad con bibliotecas**. Incluye una gran biblioteca estándar con código pre-escrito para diversas tareas, lo que te ahorra tiempo y esfuerzo. Además, la vibrante comunidad de Python ha desarrollado miles de paquetes de terceros, que amplían aún más la funcionalidad de Python.
-- **Independencia de la plataforma**. Una de las grandes ventajas del lenguaje es que se puede escribir el código una vez y ejecutarlo en cualquier sistema operativo. Esta característica hace que Python sea una gran elección si trabaja en un equipo con diferentes sistemas operativos.
-- **Lenguaje interpretado**. Python es un lenguaje interpretado, lo que significa que el código se ejecuta línea a línea. Esto puede facilitar la depuración, ya que se puede probar pequeños fragmentos de código sin tener que compilar todo el programa.
-- **Código abierto y gratuito**. También es un lenguaje de código abierto, lo que significa que su código fuente está disponible libremente y puede distribuirse y modificarse. Esto ha llevado a una gran comunidad de desarrolladores a contribuir a su desarrollo y crear un vasto ecosistema de bibliotecas Python.
-
-    :::{card} PYTHON GIT
-    :link: https://github.com/python
-    :shadow: lg
-    Acceder al código fuente PYTHON
-    :::
-
-- **Tipado dinámico:** Python está tipado dinámicamente, lo que significa que no es necesario declarar el tipo de datos de una variable. El intérprete de Python infiere el tipo, lo que hace que el código sea más flexible y sea más fácil trabajar con él.
-
-> PYTHON ES UN LENGUAJE DE PROGRAMACIÓN MULTI-PROPÓSITO.
-
----
-## INDICE TIOBE
+## INDICE TIOBE (¿Por qué Python?)
 
 A lo largo de los años, Python se ha convertido en uno de los lenguajes de programación más populares debido a su sencillez, versatilidad y amplia gama de aplicaciones. Esto se comprueba en el **índice TIOBE**.
 
@@ -151,6 +100,51 @@ La siguiente tabla muestra el ranking de lenguajes de programación más usados 
     Ranking lenguajes de programación más usados
     ```
 :::
+
+---
+## PYTHON
+
+:::{card} PYTHON
+:link: https://www.python.org/
+:shadow: lg
+:img-top: ./recursos/G1023/image01.png
+:width: 25%
+Acceder a la web PYTHON
+:::
+
+**Python** es un *lenguaje de programación* interpretado de alto nivel creado por **Guido van Rossum** y publicado por primera vez en **1991**. Está diseñado pensando en la legibilidad del código, y su sintaxis permite a los programadores expresar conceptos en menos líneas de **código**.
+
+:::{admonition} ¿Qué es un lenguaje de programación?
+:class: tip
+Un **lenguaje de programación** es un conjunto de reglas y sintaxis que permite a los programadores dar *instrucciones* a una computadora para que realice tareas específicas. Es una forma de comunicarse con las máquinas.
+:::
+
+### Principales características de Python
+
+A continuación se muestran algunas de las características de Python que lo convierten en un lenguaje de programación tan versátil y ampliamente utilizado:
+
+- **Legibilidad**. Python es conocido por su sintaxis clara y legible, que se parece en cierto modo a la inglesa.
+
+    ```python
+    saludo = "Buenos días"
+    print(saludo)
+    ```
+- **Fácil de aprender**. La legibilidad de Python hace que sea relativamente fácil para los principiantes entender lo que hace el código.
+- **Versatilidad**. Python no está limitado a un tipo de tarea: Usted puede utilizarlo en muchos campos. Si le interesa el desarrollo web, la automatización de tareas o la ciencia de datos, Python tiene las herramientas necesarias.
+- **Amplia compatibilidad con bibliotecas**. Incluye una gran biblioteca estándar con código pre-escrito para diversas tareas, lo que te ahorra tiempo y esfuerzo. Además, la vibrante comunidad de Python ha desarrollado miles de paquetes de terceros, que amplían aún más la funcionalidad de Python.
+- **Independencia de la plataforma**. Una de las grandes ventajas del lenguaje es que se puede escribir el código una vez y ejecutarlo en cualquier sistema operativo. Esta característica hace que Python sea una gran elección si trabaja en un equipo con diferentes sistemas operativos.
+- **Lenguaje interpretado**. Python es un lenguaje interpretado, lo que significa que el código se ejecuta línea a línea. Esto puede facilitar la depuración, ya que se puede probar pequeños fragmentos de código sin tener que compilar todo el programa.
+- **Código abierto y gratuito**. También es un lenguaje de código abierto, lo que significa que su código fuente está disponible libremente y puede distribuirse y modificarse. Esto ha llevado a una gran comunidad de desarrolladores a contribuir a su desarrollo y crear un vasto ecosistema de bibliotecas Python.
+
+    :::{card} PYTHON GIT
+    :link: https://github.com/python
+    :shadow: lg
+    Acceder al código fuente PYTHON
+    :::
+
+- **Tipado dinámico:** Python está tipado dinámicamente, lo que significa que no es necesario declarar el tipo de datos de una variable. El intérprete de Python infiere el tipo, lo que hace que el código sea más flexible y sea más fácil trabajar con él.
+
+> PYTHON ES UN LENGUAJE DE PROGRAMACIÓN MULTI-PROPÓSITO.
 
 ---
 ## Aplicaciones de PYTHON
@@ -249,7 +243,7 @@ Python se usa ampliamente para la manipulación y análisis de grandes cantidade
     :img-alt: Enlace a PANDAS
     :width: 50%
     ```
-- **NumPy** se usa para ejecutar cálculos numéricos. Soporta arreglos multidimensionales y funciones matemáticas de alto rendimiento. También se pueden trabajar sobre aplicaciones estadísticas que requieran analizar altos volúmenes de información.
+- **NumPy** se usa para ejecutar cálculos numéricos. Soporta arreglos multi-dimensionales y funciones matemáticas de alto rendimiento. También se pueden trabajar sobre aplicaciones estadísticas que requieran analizar altos volúmenes de información.
     ```{card} NumPy
     :link: https://numpy.org/
     :img-bottom: ./recursos/G1023/image13.svg
@@ -295,61 +289,31 @@ La consola interactiva de Python inicialmente muestra la siguiente información:
 - Fecha de compilación: `Dec 3 2024, 14:00:22`
 - Herramienta de compilación de la consola PYTHON: `Clang 15.0.0`. 
 
-Los comandos a introducir en esta consola se deben escribir después del prompt el cual son las tres signos mayor que (`>>>`), los cuales se muestran al inicio.
+Los comandos a introducir en esta consola se deben escribir después del prompt el cual son los tres signos mayor que (`>>>`), los cuales se muestran al inicio.
 
 ---
 ## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
-1. En su cuaderno, transcriba la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+1. En su cuaderno transcriba la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
 
-2. En su cuaderno, responda la siguiente pregunta:
+2. Lea el **mensaje del autor** y responda la siguiente pregunta en su cuaderno:
 
-    - ¿Qué es para usted la palabra interactivo?
+    - ¿Por qué es necesario hacer un primer acercamiento a Python por medio de la consola interactiva?
 
 ---
-## A01: Taller (15%)
+## A01: Taller (10%)
 {bdg-info}`Estructuración`
 
-1. En su cuaderno responda las siguientes preguntas:
+En su cuaderno desarrolle los siguientes puntos:
 
-    - ¿En que año fue creado PYTHON, quién lo desarrolló y por qué?
-
-2. Cree un **diagrama de flujo** que explique las **principales características** de PYTHON. **No es necesario escribir la descripción de la característica**. Tenga en cuenta lo siguiente:
-
-    > **INICIO** → PYTHON es legible.
-    > 
-    > 
-    > Verificar si es fácil de aprender. Si “NO” es fácil de aprender entonces: “NO es versátil”. Si “SI” es fácil de aprender entonces tiene amplia compatibilidad con bibliotecas.
-    > 
-    > Al NO ser versátil entonces es dependiente de la plataforma.
-    > 
-    > Al ser dependiente de la plataforma, entonces será necesario volver a identificar si es fácil de aprender.
-    > 
-    > Al tener una amplia compatibilidad con bibliotecas, entonces es necesario verificar si es un lenguaje interpretado. Si “SI” es un lenguaje interpretado entonces es un lenguaje de tipado dinámico. Si “NO” es un lenguaje interpretado entonces será necesario verificar nuevamente Si es un lenguaje fácil de aprender.
-    > 
-    > Al ser un lenguaje de tipado dinámico entonces es necesario verificar que es de código abierto y gratuito. Si “SI” es de código abierto y gratuito, entonces mostrar un mensaje que diga: “EMPEZAR A PROGRAMAR” → **FIN**. Si “NO” es de código abierto, entonces  mostrar un mensaje que diga: “ESTE LENGUAJE NO ES PYTHON” → **FIN**. 
-    >
-
-3. Responda si es **falso**, **verdadero** y **por qué**:
-
-    **a.** PYTHON solo se puede ejecutar en Windows. ___
-
-    **b.** La suscripción anual por el uso de PYTHON en proyectos privados cuesta $1,000,000 COP. ___
-
-    **c.** El aplicativo web a desarrollar necesita cambiar cierta sintaxis del código fuente del lenguaje PYTHON. Lastima que no podamos cambiar nada o nos metemos en problemas legales. ___
-
-    **d.** Con PYTHON podemos trabajar en automatización, creación de videojuegos e inteligencia artificial. ___
-
-    **e.** Aprender PYTHON fue rápido. No sin antes aprender de algoritmia. Eso facilitó las cosas. ___
-
-4. En su cuaderno, responda las siguientes preguntas:
+1. Responda las siguientes preguntas:
 
     - ¿Qué es el índice TIOBE? y ¿Qué es TIOBE?
     - ¿Cada cuanto se actualiza el índice TIOBE?
     - ¿Cuáles son las fuentes del índice TIOBE?
 
-5. Con la gráfica: **Evolución del uso de PYTHON desde el año 2002**, desarrolle la siguiente tabla en su cuaderno (identifique a diciembre del año):
+2. Con la gráfica: **Evolución del uso de PYTHON desde el año 2002**, complete la siguiente tabla (el mes de cada año es diciembre):
 
     :::{table}
     Año|Rating
@@ -369,7 +333,7 @@ Los comandos a introducir en esta consola se deben escribir después del prompt 
     2002|
     :::
 
-6. Con la tabla: **Ranking de los lenguajes de programación más usados en Diciembre de 2024 y 2025**, cree un gráfica así:
+3. Con la tabla: **Ranking de los lenguajes de programación más usados en Diciembre de 2024 y 2025**, cree un gráfica así:
 
     :::{list-table}
     * - ```{figure} ./recursos/G1023/image16.png
@@ -380,14 +344,42 @@ Los comandos a introducir en esta consola se deben escribir después del prompt 
 
     - Los lenguajes de programación con sus fechas van en el eje X (dos fechas por lenguaje Diciembre de 2024 y Diciembre 2025).
     - El Rating (%) va en el eje Y.
-    - Cruce con diagrama de barras.
 
-7. Cree un **mapa conceptual** de herramientas usadas PYTHON. El mapa conceptual debe tener 3 niveles:
+4. Cree un **diagrama de flujo** que explique las **principales características** de PYTHON. **No es necesario escribir la descripción de la característica**. Tenga en cuenta lo siguiente:
+
+    > **INICIO** → Creado en 1991.
+    >
+    > Creador: Guido van Rossum
+    > 
+    > Verificar si es fácil de aprender. Si “NO” es fácil de aprender entonces: “NO es versátil”. Si “SI” es fácil de aprender entonces tiene amplia compatibilidad con bibliotecas.
+    > 
+    > Al NO ser versátil entonces es dependiente de la plataforma.
+    > 
+    > Al ser dependiente de la plataforma, entonces será necesario volver a identificar si es fácil de aprender.
+    > 
+    > Al tener una amplia compatibilidad con bibliotecas, entonces es necesario verificar si es un lenguaje interpretado. Si “SI” es un lenguaje interpretado entonces es un lenguaje de tipado dinámico. Si “NO” es un lenguaje interpretado entonces será necesario verificar nuevamente Si es un lenguaje fácil de aprender.
+    > 
+    > Al ser un lenguaje de tipado dinámico entonces es necesario verificar que es de código abierto y gratuito. Si “SI” es de código abierto y gratuito, entonces mostrar un mensaje que diga: “EMPEZAR A PROGRAMAR” → **FIN**. Si “NO” es de código abierto, entonces  mostrar un mensaje que diga: “ESTE LENGUAJE NO ES PYTHON” → **FIN**. 
+    >
+
+5. Escriba las siguientes frases y responda si es **falso** o **verdadero** y **por qué**:
+
+    **a.** PYTHON solo se puede ejecutar en Windows. ___
+
+    **b.** La suscripción anual por el uso de PYTHON en proyectos privados cuesta $1,000,000 COP. ___
+
+    **c.** El aplicativo web a desarrollar necesita cambiar cierta sintaxis del código fuente del lenguaje PYTHON. Lastima que no podamos cambiar nada o nos metemos en problemas legales. ___
+
+    **d.** Con PYTHON podemos trabajar en automatización, creación de videojuegos e inteligencia artificial. ___
+
+    **e.** Aprender PYTHON fue rápido. No sin antes aprender de algoritmia. Eso facilitó las cosas. ___
+
+6. Cree un **mapa conceptual** de herramientas usadas PYTHON. El mapa conceptual debe tener 3 niveles:
     - 1 NIVEL: Título Aplicaciones de PYTHON
     - 2 NIVEL: 5 aplicaciones concretas
     - 3 NIVEL: Herramientas por cada aplicación concreta.
 
-8. En su cuaderno, COMPLETE la siguiente sopa de letras con 16 términos relacionados con el lenguaje de programación **PYTHON**. En la medida que encuentre un término, realice su descripción.
+7. COMPLETE la siguiente sopa de letras con 16 términos relacionados con el lenguaje de programación **PYTHON**. En la medida que encuentre un término, también realice su descripción.
 
     :::{list-table} 
     * - ```{figure} ./recursos/G1023/image17.png
@@ -397,105 +389,129 @@ Los comandos a introducir en esta consola se deben escribir después del prompt 
     :::
 
 ---
-## A02: Consola interactiva Python (15%)
+## A02: Consola interactiva Python (10%)
 {bdg-warning}`Actividad práctica`
 
-> En esta actividad, el estudiante aprende a usar la **consola interactiva** de PYTHON.
+En esta actividad, el estudiante aprende a usar la **consola interactiva** de PYTHON.
 
-1. En su sistema operativo abra una terminal de sistema.
+1. En su cuaderno:
 
-    - Si es Windows use **CMD** (Command Prompt)
-    - SI es LINUX use la **CLI** (Command Line Interface) de su distribución.
+    :::{admonition} En su cuaderno...
+    :class: note
+    Responda las siguientes preguntas:
+    
+    - ¿Qué es la consola interactiva y cómo se accede en Windows y en Linux?
+    - ¿Cuál es el comando para ejecutar la consola interactiva de Python?
+    - ¿Cómo se pueden identificar la versión de python, la fecha de compilación y la herramienta de compilación en la consola interactiva?
+    - ¿Qué significa el símbolo `>>>`?
+    :::
+
+2. En su sistema operativo abra una terminal de sistema.
+
+    - Si es Windows use **CMD** (Símbolo de sistema)
+    - Si es LINUX use la **CLI** (Command Line Interface) de su distribución.
 
 2. MAXIMIZAR la ventana de la terminal del sistema.
 
 3. En la terminal del sistema, EJECUTE el comando `python3`.
 
-    :::{admonition} ¿Cómo ejecutar comandos?
+    :::{admonition} AYUDA: ¿CÓMO EJECUTAR COMANDOS EN UNA TERMINAL?
     :class: hint
     Dentro de la terminal, usted puede ejecutar comandos.
 
-    Para EJECUTAR un comando; es necesario escribir dicho comando y luego presionar la tecla **ENTER**.
-
-    Por ejemplo, AL EJECUTAR el comando `python3` saldrá lo siguiente:
-
-    ```text
-    usuario@AC115-01:~$ python3
-    Python 3.13.0 (main, Oct 8 2024, 00:00:00) 
-    ```
+    - Para EJECUTAR un comando; es necesario escribir dicho comando y luego presionar la tecla **ENTER**.
+    - Por ejemplo, AL EJECUTAR el comando `python3` saldrá lo siguiente:
+        ```text
+        usuario@AC115-01:~$ python3
+        Python 3.13.0 (main, Oct 8 2024, 00:00:00)
+        >>>
+        ```
     :::
-
-4. AHORA usted puede ejecutar comandos en la consola interactiva de PYTHON.
-
-5. IDENTIFIQUE el **prompt**.
-
-    :::{admonition} ¿Qué es el prompt? (**>>>**)
-    :class: hint
-    - El prompt son tres caracteres de mayor que (>>>).
-    - Los comandos a ejecutar (en la consola de PYTHON) se escriben después del prompt.
-    - Se escribe el comando y luego se PULSA la tecla **ENTER**.
-    :::
-
-6. Con la información mostrada en la consola, en su cuaderno complete la siguiente tabla:
-
-    :::{table}
+    
+    :::{admonition} En su cuaderno...
+    :class: note
+    Con la información mostrada en la consola, complete la siguiente tabla:
+    ```{table}
     Consola interactiva de PYTHON | Descripción
     -|-
     Versión de PYTHON |
     Fecha de compilación |	
     Herramienta de compilación |
+    ```
     :::
 
-7. En la consola interactiva de Python, a continuación escriba los siguientes comandos para obtener más información:
+4. EJECUTE el comando: `copyright`.
+    
+    :::{admonition} En su cuaderno...
+    :class: note
+    Con la información generada, responda la siguiente pregunta:
+    - ¿Cuáles son las cuatro organizaciones relacionadas con derechos reservados en el uso de PYTHON?
+    :::
+      
+5. EJECUTE el comando: `credits`.
+    
+    :::{admonition} En su cuaderno...
+    :class: note
+    Traduzca al español la información generada y luego transcribirla en su cuaderno.
+    :::
 
-    - EJECUTE el comando: `copyright`. Con la información generada, en su cuaderno responda la siguiente pregunta:
-        - ¿Cuáles son las cuatro organizaciones relacionadas con derechos reservados en el uso de PYTHON?
+---
+## A03: Licencia de la consola interactiva (10%)
+{bdg-warning}`Actividad práctica`
 
-    - EJECUTE el comando: `credits`. Traduzca al español la información generada y escríbala en su cuaderno.
+1. ABRA una **terminal de sistema** e ingrese a la **consola interactiva de PYTHON**.
 
-    - EJECUTE el comando: `license()`. Se genera una texto largo en la consola.
+2. EJECUTE el comando: `license()`. Se genera una texto largo en la consola.
 
-        :::{admonition} Navegar en textos largos en consola
-        :class: tip
-        - Cuando se generan textos largos en la consola, para avanzar PULSE la tecla {kbd}`ENTER`.
-        - Si se quiere salir del texto largo, PULSE la tecla {kbd}`Q` y luego PULSE la tecla {kbd}`ENTER`.
-        :::
+    :::{admonition} AYUDA: ¿CÓMO NAVEGAR EN TEXTOS LARGOS EN LA CONSOLA?
+    :class: hint
+    - Para avanzar PULSE la tecla {kbd}`ENTER`.
+    - Si se quiere salir, PULSE la tecla {kbd}`Q` y luego PULSE la tecla {kbd}`ENTER`.
+    :::
 
-8. NAVEGUE por todo el texto generado y en su cuaderno escriba solo los títulos (son 7 títulos). Por ejemplo:
+3. NAVEGUE por todo el texto generado.
 
-    - **A. HISTORY OF THE SOFTWARE**
-
-9. Traduzca la información de solo el primer título **A. HISTORY OF THE SOFTWARE** (no escribir la traducción en su cuaderno!!!) y responda las siguientes preguntas en su cuaderno:
-
-    - ¿En que año fue creado PYTHON?
-    - ¿Cuál es el nombre del creador de PYTHON?
-    - ¿En que lugar fue creado PYTHON?
-    - ¿Qué lenguaje de programación fue antecesor de PYTHON?
-    - ¿Qué eventos acontecieron en las siguientes fechas?:
+    :::{admonition} En su cuaderno...
+    :class: note
+    Desarrolle los siguientes puntos:
+    
+    - Escriba solo los títulos (son 7 títulos). Por ejemplo: **A. HISTORY OF THE SOFTWARE**
+    - Traduzca el contenido de solo el primer título **A. HISTORY OF THE SOFTWARE** (no es necesario escribir la traducción en su cuaderno!!!) y responda las siguientes preguntas:
+      - ¿En que año fue creado PYTHON?
+      - ¿Cuál es el nombre del creador de PYTHON?
+      - ¿En que lugar fue creado PYTHON?
+      - ¿Qué lenguaje de programación fue antecesor de PYTHON?
+      - ¿Qué eventos acontecieron en las siguientes fechas?:
         - 1995
         - Mayo del 2000
         - Octubre del 2000
         - 2001
-    - ¿Qué significan las siguientes siglas?:
+      - ¿Qué significan las siguientes siglas?:
         - CWI
         - CNRI
         - PSF
-
-10. Complete la siguiente tabla relacionada con las versiones de PYTHON:
-
-    :::{table}
+    - Complete la siguiente tabla relacionada con las versiones de PYTHON:
+    ```{table}
     AÑO	| Versión | Versión derivada | Propietario | Compatibilidad con GPL
     -|-|-|-|-
     1991-1995 | 0.9.0 | N/A | CWI | SI
     1995-1999 | 1.3 | 1.2 | CNRI | SI
     2000| | | | 
-
+    2000| | | |
+    2001| | | |
+    2001| | | |
+    2001| | | |
+    2001| | | |
+    2002| | | |
+    2002| | | |
+    2001-now| 2.1.1 and above | | PSF |
+    ```
     :::
 
-11. CIERRE la consola interactiva de PYTHON y la terminal de sistema.
+4.  CIERRE la consola interactiva de PYTHON y la terminal de sistema.
 
 ---
-## A03: Ayuda en la consola interactiva (15%)
+## A04: Ayuda en la consola interactiva (15%)
 {bdg-warning}`Actividad práctica`
 
 1. ABRA una **terminal de sistema** e ingrese a la **consola interactiva de PYTHON**.
@@ -522,34 +538,79 @@ Los comandos a introducir en esta consola se deben escribir después del prompt 
     help>
     ```
 
-    :::{admonition} Tenga en cuenta
+    :::{admonition} TENGA EN CUENTA
     :class: tip
     Tenga en cuenta que usted AHORA está en la ayuda de la consola interactiva de PYTHON. Por tanto el prompt ahora es:
     `help>`
     :::
 
-3. EJECUTE el comando: `topics`. Cuente el número de temas que aparece en la tabla y escriba dicho número en su cuaderno. (Tenga en cuenta que algunos elementos de dicha tabla, están vacíos).
+3. EJECUTE el comando: `topics`.
+    
+    :::{admonition} En su cuaderno...
+    :class: note
+    Cuente el número de temas que aparece en la tabla y escriba dicho número en su cuaderno. (Tenga en cuenta que algunos elementos de dicha tabla, están vacíos).
+    :::
 
 4. En los elementos de la tabla TOPICS, identifique: **BOOLEAN**, **FLOAT**, **INTEGER, NUMBERS** y **STRINGS**. (Guiarse por la primera letra ya que los elementos están organizados en orden alfabético).
 
-5. EJECUTE el comando: `NUMBERS`. Traduzca el contenido que aparece y escríbalo en su cuaderno. 
+    :::{admonition} En su cuaderno...
+    :class: note
+    Describa si están todos los elementos indicados o hizo falta alguno.
+    :::
 
-6. EJECUTE el comando: `INTEGER`. IDENTIFIQUE el tercer párrafo (*There is no limit…*), traducirlo y escribirlo en su cuaderno. IDENTIFIQUE también los diez ejemplos en el sexto párrafo (*Some examples of…*) y escribir dichos ejemplos en el cuaderno. (Para salir, PULSAR la tecla **Q**).
+5. EJECUTE el comando: `NUMBERS`.
 
-7. EJECUTE el comando: `FLOAT`. IDENTIFIQUE los siete ejemplos del cuarto párrafo (*Some examples of…*) y escribirlos en su cuaderno.
+    :::{admonition} En su cuaderno...
+    :class: note
+    Traduzca el contenido y transcribirlo en el cuaderno. 
+    :::
 
-8. EJECUTE el comando: `STRINGS`. IDENTIFIQUE el cuarto párrafo (*In plain English…*), traducirlo y escribirlo en su cuaderno.
+6. EJECUTE el comando: `INTEGER`.
 
-9. EJECUTE el comando: `BOOLEAN`. IDENTIFIQUE el segundo párrafo (*In the context…*), traducirlo y escribirlo en su cuaderno.
+    :::{admonition} En su cuaderno...
+    :class: note
+    IDENTIFIQUE los ejemplos (*Some examples of…*) y escribirlos en su cuaderno. Para salir, PULSAR la tecla **{kbd}`Q`**.
+    :::
 
-10. EJECUTE el comando: `keywords`. En su cuaderno ESCRIBA los elementos que aparecen en la tabla.
+7. EJECUTE el comando: `FLOAT`.
 
-11. EJECUTE el comando: `symbols`. En su cuaderno ESCRIBA los elementos que aparecen en la tabla.
+    :::{admonition} En su cuaderno...
+    :class: note
+    IDENTIFIQUE los ejemplos (*Some examples of…*) y escribirlos en su cuaderno.
+    :::
+
+8. EJECUTE el comando: `STRINGS`.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    IDENTIFIQUE el párrafo (*In plain English…*). Traducirlo y escribirlo en su cuaderno.
+    :::
+
+9.  EJECUTE el comando: `BOOLEAN`.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    IDENTIFIQUE el párrafo (*In the context…*). Traducirlo y escribirlo en su cuaderno.
+    :::
+
+10. EJECUTE el comando: `keywords`.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    ESCRIBA los elementos que aparecen en la tabla.
+    :::
+
+11. EJECUTE el comando: `symbols`.
+
+    :::{admonition} En su cuaderno...
+    :class: note
+    ESCRIBA los elementos que aparecen en la tabla.
+    :::
 
 12. CIERRE la consola interactiva de PYTHON y la terminal de sistema.
 
 ---
-## A04: Codificación (50%)
+## A05: Consola interactiva en vivo (50%)
 {bdg-danger}`Transferencia`
 
 ```{csv-table}
@@ -582,7 +643,7 @@ Los comandos a introducir en esta consola se deben escribir después del prompt 
 
 - ACCEDA a la ayuda de la consola de PYTHON.
 
-- En la ayuda de la consola de PYTHON, ACCEDA a las diferentes temáticas(topics).
+- En la ayuda de la consola de PYTHON, ACCEDA a las diferentes temáticas.
 
 - En la ayuda de la consola de PYTHON, ACCEDA a la temática relacionada con cualquiera de los tipos de variables en PYTHON.
 
