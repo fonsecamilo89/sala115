@@ -54,7 +54,9 @@ el funcionamiento de productos tecnológicos actuales.
 ## Mensaje del autor
 
 :::{pull-quote}
-“En esta guía, el estudiante fortalece sus conocimientos sobre variables y operaciones, habilidades fundamentales para su formación académica y profesional. El objetivo de aprendizaje y la evidencia planteada están diseñados para guiarlo de manera clara y estructurada, permitiéndole aplicar conceptos teóricos en situaciones prácticas que enriquecerán su comprensión y capacidad analítica”.
+"En esta guía, el estudiante fortalece sus conocimientos sobre variables y operaciones, habilidades fundamentales para su formación académica y profesional.
+
+El objetivo de aprendizaje y la evidencia planteada están diseñados para guiarlo de manera clara y estructurada, permitiéndole aplicar conceptos teóricos en situaciones prácticas que enriquecerán su comprensión y capacidad analítica".
 
 -- Camilo Fonseca
 :::
@@ -366,7 +368,7 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
 ## A00: Introducción (5%)
 {bdg-light}`Exploración`
 
-1. Transcriba en su cuaderno el objetivo, las orientaciones curriculares y los criterios de evaluación de la presente guía.
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
 2. Lea el **mensaje del autor** y en su cuaderno responda:
 
    - Para usted, ¿Qué es algo variable?
@@ -375,7 +377,9 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
 ## A01: Taller (5%)
 {bdg-info}`Estructuración`
 
-1. En su cuaderno responda las siguientes preguntas:
+En su cuaderno desarrolle los siguientes puntos:
+
+1. Responda las siguientes preguntas:
 
    - ¿Qué es una **variable**?
    - ¿Qué tiene que ver la **memoria RAM** con las variables?
@@ -387,13 +391,13 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
    - ¿Qué es la **tabla ASCII**?
    - ¿De qué forma se relaciona la **tabla ASCII** con las variables de **tipo carácter**?
 
-2. Consulte la **tabla ASCII** y en su cuaderno escriba el equivalente numérico para los siguientes caracteres:
+2. Consulte la **tabla ASCII** y escriba el equivalente numérico para los siguientes caracteres:
 
    - Abecedario en minúscula de la letra **a** a la letra **z**.
    - Números enteros del **0** al **9**.
    - Caracteres: {kbd}`@`, {kbd}`(`, {kbd}`)`, {kbd}`<`, {kbd}`>`, {kbd}`=`, {kbd}`&`, {kbd}`?`, {kbd}`¿`, {kbd}`%`, {kbd}`+`, {kbd}`-`, {kbd}`*`, {kbd}`/`
 
-3. En su cuaderno responda las siguientes preguntas:
+3. Responda las siguientes preguntas:
 
    - ¿En que se diferencian las variables de **tipo booleano** con otro tipo de variables?
    - ¿Cuáles son los **dos posibles valores** que pueden tener las variables de **tipo booleano**?
@@ -427,17 +431,7 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
 
 1. Para cada una de las **operaciones básicas** (suma, resta, multiplicación, división), en su cuaderno realice 4 operaciones con variables numéricas (enteras o decimales). Tenga en cuenta que cada operación **debe tener información** y **no solo datos**. Son 16 operaciones en total.
 
-  :::{admonition} EJEMPLO 01
-  > $ edadEstudiante01 = 15 $
-  >
-  > $ edadEstudiante02 = 14 $
-  >
-  > $ edadEstudiantes = edadEstudiante01 + edadEstudiante02 $
-  > 
-  > $ edadEstudiantes =  29 $
-  :::
-
-  :::{admonition} EJEMPLO 02
+  :::{admonition} EJEMPLO 01: Peso de productos
   > $ pesoTomates = 1.3 $
   >
   > $ pesoCebollas = 0.8 $
@@ -447,7 +441,7 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
   > $ pesoTotalCompra = 2.1 $
   :::
 
-  :::{admonition} EJEMPLO 03
+  :::{admonition} EJEMPLO 02: Cuentas en el mercado
   > $ totalEfectivo = 150000 $
   >
   > $ costoProducto01  = 50000 $
@@ -463,7 +457,7 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
 ## A04: Ejercicios operaciones (10%)
 {bdg-warning}`Actividad práctica`
 
-- Desarrolle los siguientes ejercicios de operaciones de variables:
+Desarrolle los siguientes ejercicios de operaciones de variables:
 
 1. > Para las siguientes variables iniciales:
    >
@@ -548,13 +542,15 @@ El proceso de decodificación en ASCII es el mismo proceso de codificación solo
 ## A05: Codificación - Decodificación (10%)
 {bdg-warning}`Actividad práctica`
 
-1. Con la tabla ASCII, **CODIFIQUE** los siguientes mensajes en su cuaderno:
+Con la tabla ASCII desarrolle los siguientes puntos: 
+
+1. **CODIFIQUE** los siguientes mensajes en su cuaderno:
 
    - > *La lógica computacional estudia los principios de la algoritmia para dar solución a problemas de diferente tipo*.
    - > *La lógica es la forma más obvia y fácil de hacer algo*
    - > *La tecnología es el conjunto de teorías y técnicas que permiten la aplicación práctica del conocimiento científico, para transformar el medio ambiente y mejorar la calidad de vida de las personas*
 
-2. Con la tabla ASCII, **DECODIFIQUE** los siguientes mensajes en su cuaderno:
+2. **DECODIFIQUE** los siguientes mensajes en su cuaderno:
 
    - > 69 108 32 108 101 110 103 117 97 106 101 32 97 114 116 105 102 105 99 105 97 108 32 101 115 32 116 111 100 111 32 97 113 117 101 108 32 99 114 101 97 100 111 32 100 101 32 109 97 110 101 114 97 32 99 111 110 115 99 105 101 110 116 101 32 121 32 100 101 108 105 98 101 114 97 100 97 44 32 99 111 110 32 117 110 32 102 105 110 32 101 115 112 101 99 195 173 102 105 99 111 46 32 83 101 32 100 105 118 105 100 101 110 32 101 110 32 100 111 115 58 32 76 101 110 103 117 97 106 101 115 32 99 111 110 115 116 114 117 105 100
    - > 76 97 32 106 101 114 97 114 113 117 195 173 97 32 100 101 32 100 97 116 111 115 32 115 101 32 99 111 109 112 111 110 101 32 100 101 58 32 100 64 116 48 115 44 32 99 97 77 112 48 115 44 32 114 42 103 105 53 116 114 111 53 44 32 97 114 67 104 73 118 56 115 32 121 32 98 65 115 51 115 32 100 101 32 100 64 116 48 122 122 122 46

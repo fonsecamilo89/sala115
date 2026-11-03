@@ -55,7 +55,7 @@ el funcionamiento de productos tecnológicos actuales.
 ## Mensaje del autor
 
 :::{pull-quote}
-"En esta guía se aplica el álgebra de Boole para representar, analizar y simplificar circuitos lógicos mediante compuertas y tablas de verdad.
+"En esta guía se aplica el álgebra de Boole para representar, analizar y simplificar circuitos lógicos mediante compuertas y tablas de verdad. 
 
 Las actividades están diseñadas para evaluar la comprensión desde lo teórico hasta la simulación práctica".
 
@@ -125,6 +125,8 @@ Los dispositivos digitales como el celular, tablet o PC solo entienden en sistem
 Las dispositivos digitales **no entienden** directamente **lenguaje humano** ni tampoco entienden directamente el **sistema numérico decimal**.
 :::
 
+### Tabla de conversión Decimal - Binario
+
 Para entender mejor los **números binarios**, se presenta la siguiente tabla la cual muestra los **números decimales** con su **representación binaria**:
 
 :::{csv-table}
@@ -156,6 +158,15 @@ Los **números binarios** también se usan para representar los estados **FALSO*
 **0**: FALSO
 
 **1**: VERDADERO
+:::
+
+### Conversión de decimal a binario
+
+:::{list-table}
+* - ```{figure} ./recursos/G824/image22.png
+    :width: 555
+    Algoritmo de conversión
+    ```
 :::
 
 ---
@@ -210,7 +221,7 @@ Esta compuerta es representada por una multiplicación. Indica que es necesario 
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - > $F=A*B$
+* - > $F=A.B$
   - :::{figure} ./recursos/G824/image03.png
     :width: 111
     :::
@@ -277,7 +288,7 @@ También denominada como **AND negada**, esta compuerta trabaja al contrario de 
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - > $F=\overline{A*B}$
+* - > $F=\overline{A.B}$
   - :::{figure} ./recursos/G824/image06.png
     :width: 111
     :::
@@ -323,7 +334,7 @@ También llamada **OR exclusiva**, esta actúa como una suma binaria de un dígi
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - > $F=A*\bar{B}+\bar{A}*B$
+* - > $F = A \oplus B$
   - :::{figure} ./recursos/G824/image08.png
     :width: 111
     :::
@@ -345,7 +356,7 @@ Esta compuerta es todo lo contrario a la compuerta XOR, ya que cuando las entrad
 * - Fórmula
   - Gráfica
   - Tabla de la verdad
-* - > $F=\overline{A*\bar{B}+\bar{A}*B}$
+* - > $F=\overline{A \oplus B}$
   - :::{figure} ./recursos/G824/image09.png
     :width: 111
     :::
@@ -388,16 +399,16 @@ Ahora se procede a desarrollar la tabla de la verdad. Para esto identificar el v
 
 > Para $A=0$, $B=0$ y $C=0$
 > 
-> $$F=\overline{(A*B)}+C$$
-> $$F=\overline{(0*0)}+0$$
+> $$F=\overline{(A.B)}+C$$
+> $$F=\overline{(0.0)}+0$$
 > $$F=\overline{(0)}+0$$
 > $$F=1+0$$
 > $$F=1$$
 > 
 > Para $A=0$, $B=0$ y $C=1$
 > 
-> $$F=\overline{(A*B)}+C$$
-> $$F=\overline{(0*0)}+1$$
+> $$F=\overline{(A.B)}+C$$
+> $$F=\overline{(0.0)}+1$$
 > $$F=\overline{(0)}+1$$
 > $$F=1+1$$
 > $$F=1$$
@@ -445,38 +456,38 @@ Esto se modela de la siguiente manera:
 
 De estar forma, la formula algebraica que modela el circuito es:
 
-> $$F=\overline{(A*B)+(C+D)}$$
+> $$F=\overline{(A.B)+(C+D)}$$
 
 Con la formula, ahora es posible obtener la tabla de la verdad. Identificar el valor de F para todas las entradas A, B, C y D.
 
 > Para $A=0$, $B=0$, $C=0$ y $D=0$
 > 
-> $$F=\overline{(A*B)+(C+D)}$$
-> $$F=\overline{(0*0)+(0+0)}$$
+> $$F=\overline{(A.B)+(C+D)}$$
+> $$F=\overline{(0.0)+(0+0)}$$
 > $$F=\overline{(0)+(0)}$$
 > $$F=\overline{(0)}$$
 > $$F=1$$
 > 
 > Para $A=0$, $B=0$, $C=0$ y $D=1$
 > 
-> $$F=\overline{(A*B)+(C+D)}$$
-> $$F=\overline{(0*0)+(0+1)}$$
+> $$F=\overline{(A.B)+(C+D)}$$
+> $$F=\overline{(0.0)+(0+1)}$$
 > $$F=\overline{(0)+(1)}$$
 > $$F=\overline{(1)}$$
 > $$F=0$$
 > 
 > Para $A=0$, $B=0$, $C=1$ y $D=0$
 > 
-> $$F=\overline{(A*B)+(C+D)}$$
-> $$F=\overline{(0*0)+(1+0)}$$
+> $$F=\overline{(A.B)+(C+D)}$$
+> $$F=\overline{(0.0)+(1+0)}$$
 > $$F=\overline{(0)+(1)}$$
 > $$F=\overline{(1)}$$
 > $$F=0$$
 > 
 > Para $A=0$, $B=0$, $C=1$ y $D=1$
 > 
-> $$F=\overline{(A*B)+(C+D)}$$
-> $$F=\overline{(0*0)+(1+1)}$$
+> $$F=\overline{(A.B)+(C+D)}$$
+> $$F=\overline{(0.0)+(1+1)}$$
 > $$F=\overline{(0)+(1)}$$
 > $$F=\overline{(1)}$$
 > $$F=0$$
@@ -517,21 +528,37 @@ A|B|C|D|F
 ## A01: Taller (5%)
 {bdg-info}`Estructuración`
 
-1. En su cuaderno responda las siguientes preguntas:
+En su cuaderno desarrolle los siguientes puntos:
 
-    - ¿Por qué los dispositivos digitales no entienden directamente el lenguaje humano ni tampoco entienden directamente el sistema numérico decimal?
-    - ¿Qué valores tiene el sistema numérico binario?
-    - ¿Qué otros significados tienen el 0 y el 1 en el sistema numérico binario?
-    - ¿Por que el matemático George Boole, es considerado fundador de las ciencias de la computación?
-    - ¿Cuál fue la obra de George Boole que establecía las reglas para expresar y simplificar problemas lógicos cuyos argumentos establecían los estados de falso o verdadero?
-    - En qué se basa el álgebra de Boole?
-    - ¿Qué puede representar el álgebra de Boole?
-    - ¿En qué se diferencia el álgebra de Boole con el álgebra tradicional?
-    - ¿Cuál es la diferencia entre una decisión y una condición? (escriba 3 ejemplos de decisiones y 3 ejemplos de condiciones)
+1. Responda las siguientes preguntas:
 
-2. Escriba en su cuaderno **dos ventajas** que se obtienen al momento de simplificar expresiones mediante el álgebra de Boole.
+   - ¿Por que el matemático George Boole, es considerado fundador de las ciencias de la computación?
+   - ¿Cuál fue la obra de George Boole que establecía las reglas para expresar y simplificar problemas lógicos cuyos argumentos establecían los estados de falso o verdadero?
+   - En qué se basa el álgebra de Boole?
+   - ¿Qué puede representar el álgebra de Boole?
+   - ¿En qué se diferencia el álgebra de Boole con el álgebra tradicional?
+   - ¿Cuál es la diferencia entre una decisión y una condición? (escriba 3 ejemplos de decisiones y 3 ejemplos de condiciones)
 
-3. En su cuaderno, escriba los números desde el 0 al 32 en Representación Digital Binaria de 8 bits (Revise la **Tabla de conversión Decimal - Binario**).
+2. Escriba **dos ventajas** que se obtienen al momento de simplificar expresiones mediante el álgebra de Boole.
+
+3. Responda la siguiente pregunta:
+   - ¿Por qué los dispositivos digitales no entienden directamente el lenguaje humano ni tampoco entienden directamente el sistema numérico decimal?
+
+4. Escriba los números desde el 0 al 32 en "representación Digital Binaria de 8 bits" (Revise la **Tabla de conversión Decimal - Binario**).
+
+5. Realice la conversión de los siguientes números decimales a binario:
+   - 233
+   - 189
+   - 79
+   - 88
+   - 63
+
+6. Realice la conversión de los siguientes números binarios a decimal:
+   - 10010011
+   - 01101101
+   - 11001011
+   - 11010101
+   - 00110101
 
 ---
 ## A02: Circuito lógico (5%)
@@ -588,10 +615,10 @@ A|B|C|D|F
 Para las siguientes ecuaciones booleanas, obtenga su circuitos lógicos e identifique su tabla de la verdad:
 
 1. > $F=(A+B)+(\overline{C+D})$
-2. > $F = \overline{(A*\overline{B}+\overline{A}*B)+\overline{C}}$
-3. > $F = \overline{(A*\overline{B}+\overline{A}*B)*(C*\overline{D}+\overline{C}*D)}$
-4. > $F = \overline{((A*C)*(\overline{\overline{B}*C}))+((\overline{A*C})*(\overline{B}*C))}$
-5. > $F = ((A+B)*(\overline{\overline{C}})+(\overline{A+B})*(\overline{C}))+(\overline{C*D})$ 
+2. > $F = \overline{(A.\overline{B}+\overline{A}.B)+\overline{C}}$
+3. > $F = \overline{(A.\overline{B}+\overline{A}.B).(C.\overline{D}+\overline{C}.D)}$
+4. > $F = \overline{((A.C).(\overline{\overline{B}.C}))+((\overline{A.C}).(\overline{B}.C))}$
+5. > $F = ((A+B).(\overline{\overline{C}})+(\overline{A+B}).(\overline{C}))+(\overline{C.D})$ 
 
 ---
 ## A04: Circuitos lógicos (20%)
@@ -632,7 +659,7 @@ Para los siguientes circuitos lógicos, obtenga su ecuación booleana e identifi
     :::
 
 
-5. Circuito lógico 05 (este ejercicio desarróllelo de forma horizontal en su cuaderno):
+5. Circuito lógico 05 (Desarrollar de forma horizontal en su cuaderno):
 
     :::{list-table}
     * - ```{figure} ./recursos/G824/image20.png
@@ -644,7 +671,7 @@ Para los siguientes circuitos lógicos, obtenga su ecuación booleana e identifi
 ## A05: Simulación de circuitos Logic.ly (50%)
 {bdg-danger}`Transferencia`
 
-1. Usando el aplicativo web: logic.ly, modele los cinco circuitos lógicos de la **Actividad 03**. Para acceder al aplicativo, PULSAR clic en la siguiente imagen:
+1. Usando el aplicativo web: logic.ly, modele los circuitos lógicos de la **Actividad 03** y la **Actividad 04**. Para acceder al aplicativo, PULSAR clic en la siguiente imagen:
 
     :::{list-table}
     * - ```{figure} ./recursos/G824/image21.png
