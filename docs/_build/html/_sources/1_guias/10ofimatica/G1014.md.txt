@@ -1068,13 +1068,15 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
 
    - PULSE el botón {guilabel}`Aceptar`
 
-10. En la página de PORTADA “con fondo amarillo” escribir el siguiente párrafo:
+10. En la **barra de herramientas lateral**, en el **menú de estilos de página**, APLICAR el estilo de nombre: **Primera página**. 
+
+11. En la página de PORTADA "con fondo amarillo" escribir el siguiente párrafo:
 
     > Proyecto de Creación de un Escritorio Libre para Clientes Corporativos
 
-11. Para el párrafo recién escrito, en la **barra de herramientas lateral**, en el menú de estilos de párrafo, APLICAR el estilo de nombre: **Adjust**
+12. Para el párrafo recién escrito, en la **barra de herramientas lateral**, en el menú de estilos de párrafo, APLICAR el estilo de nombre: **Adjust**
 
-12. EDITAR el estilo **Adjust** de la siguiente manera:
+13. EDITAR el estilo **Adjust** de la siguiente manera:
 
     - En la pestaña {guilabel}`Efectos tipográficos` configurar:
       - En la sección **Color** de letra:
@@ -1094,9 +1096,9 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
     Describa las características de la portada recién creada.
     :::
 
-13. GUARDE los cambios en el documento.
+14. GUARDE los cambios en el documento.
 
-14. Es necesario agregar una TABLA DE CONTENIDO. Situar el cursor *después* de la **portada** recién creada y *antes* del título **1. Objetivo**
+15. Es necesario agregar una TABLA DE CONTENIDO. Situar el cursor *después* de la **portada** recién creada y *antes* del título **1. Objetivo**
 
     :::{admonition} ¿Por qué es importante una **tabla de contenido**?
     :class: hint
@@ -1107,9 +1109,9 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
     - Aumenta la profesionalidad: Demuestra que el autor se preocupa por la claridad y la organización
     :::
 
-15. En el **menú superior** PULSE {guilabel}`Insertar` > {guilabel}`Sumario e Indice` > {guilabel}`Sumario, índice o bibliografía…`
+16. En el **menú superior** PULSE {guilabel}`Insertar` > {guilabel}`Sumario e Indice` > {guilabel}`Sumario, índice o bibliografía…`
 
-16. En la ventana de **Sumario, índice o bibliografía**, configurar lo siguiente:
+17. En la ventana de **Sumario, índice o bibliografía**, configurar lo siguiente:
 
     - En la pestaña {guilabel}`Tipo` configurar:
       - En la sección Tipo y Título:
@@ -1129,9 +1131,9 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
 
     - PULSE el botón {guilabel}`Aceptar` 
 
-17. En la **barra de herramientas lateral**, en el **menú de estilos de párrafo**, identificar el estilo {guilabel}`Estilo de párrafo predeterminado` > {guilabel}`Indice` > {guilabel}`Sumario 1` y modificar para que la letra sea **negrita**.
+18. En la **barra de herramientas lateral**, en el **menú de estilos de párrafo**, identificar el estilo {guilabel}`Estilo de párrafo predeterminado` > {guilabel}`Indice` > {guilabel}`Sumario 1` y modificar para que la letra sea **negrita**.
 
-18. En la **barra de herramientas lateral**, en el **menú de estilos de párrafo**, identificar el estilo {guilabel}`Sumario 2` y modificar para que la letra sea *itálica*.
+19. En la **barra de herramientas lateral**, en el **menú de estilos de párrafo**, identificar el estilo {guilabel}`Sumario 2` y modificar para que la letra sea *itálica*.
 
     :::{list-table}
     * - ```{figure} ./recursos/G1014/image27.png
@@ -1140,13 +1142,13 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
         ```
     :::
 
-19.  En la **barra de herramientas estándar**, PULSE el botón {guilabel}`Alternar previzualiación de impresión`
+20.  En la **barra de herramientas estándar**, PULSE el botón {guilabel}`Alternar previzualiación de impresión`
 
-20. PREVISUALIZAR a dos hojas. (Realice una captura de pantalla de la interfaz y guárdela en la carpeta de evidencias con el nombre: **G1014A08-proyecto_escritorio_libre.png**)
+21. PREVISUALIZAR a dos hojas. (Realice una captura de pantalla de la interfaz y guárdela en la carpeta de evidencias con el nombre: **G1014A08-proyecto_escritorio_libre.png**)
 
-21. Guarde los cambios hasta el momento.
+22. Guarde los cambios hasta el momento.
 
-22. Es necesario agregar una hoja horizontal al documento. 
+23. Es necesario agregar una hoja horizontal al documento. 
 
     :::{admonition} ¿Por qué es importante saber insertar una hoja horizontal en un documento?
     :class: hint
@@ -1161,7 +1163,7 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
     - **Impresión:** En algunos casos, la orientación horizontal puede ser necesaria para imprimir correctamente un documento, especialmente si contiene elementos que no se ajustan a la orientación vertical.
     :::
 
-23. En la **barra de herramientas lateral**, en el menú de **estilos de página**, edite el estilo **HORIZONTAL** de la siguiente manera:
+24. En la **barra de herramientas lateral**, en el menú de **estilos de página**, edite el estilo **HORIZONTAL** de la siguiente manera:
 
     - En la pestaña {guilabel}`Generales` configurar:
       - En la sección estilo:
@@ -1169,9 +1171,9 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
 
     - PULSE el botón {guilabel}`Aceptar`
 
-24. POSICIONE el cursor en el título: **4. Sistema Operativo**
+25. POSICIONE el cursor en el título: **4. Sistema Operativo**
 
-25. En el **menú superior**, PULSAR {guilabel}`Insertar` > {guilabel}`Más saltos` > {guilabel}`Salto Manual…`
+26. En el **menú superior**, PULSAR {guilabel}`Insertar` > {guilabel}`Más saltos` > {guilabel}`Salto Manual…`
 
     - En la sección **Tipo** configurar:
       - Marcar salto de página.
@@ -1179,9 +1181,9 @@ En esta actividad se usará la herramienta de numeración de títulos. También 
 
     - PULSE el botón {guilabel}`Aceptar`
 
-26. PREVISUALICE el documento a varias páginas (**matriz 3x3**).
+27. PREVISUALICE el documento a varias páginas (**matriz 3x3**).
 
-27. GUARDE los cambios y cierre el software LibreOffice Writer.
+28. GUARDE los cambios y cierre el software LibreOffice Writer.
 
 ---
 ## A09: Presentación de evidencias (50%)

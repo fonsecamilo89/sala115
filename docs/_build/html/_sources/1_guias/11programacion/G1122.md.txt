@@ -150,7 +150,7 @@ el número de caracteres es: 6
 ## A02: Tipos de entrada (10%)
 {bdg-warning}`Actividad práctica`
 
-1. CREE dos archivos en PYTHON con los siguientes nombres y GUÁRDELOS en la carpeta de evidencias del periodo actual:
+1. CREE dos archivos en THONNY con los siguientes nombres y GUÁRDELOS en la carpeta de evidencias del periodo actual:
     - G1122A02-input1.py
     - G1122A02-input2.py
 
@@ -316,7 +316,8 @@ el número de caracteres es: 6
 ## A06: Calculadora simple (50%)
 {bdg-danger}`Transferencia`
 
-1. CREE un programa de nombre: **G1122A06-calculadoraFloat.py** que solicite al usuario dos números. Luego con estos dos números hacer las operaciones de **sumar**, **restar**, **multiplicar**, **dividir** y **exponentes**. El programa debe tener las siguientes características:
+:::{admonition} Evaluación
+1. CREE un programa de nombre: **G1122A06-calculadoraFloat-01.py** que solicite al usuario dos números para realizar operaciones. El programa debe tener las siguientes características:
 
    - Comentarios iniciales de identificación.
    - El programa debe pedir dos números al usuario. Estos números deben ser convertidos de tipo STRING a tipo FLOAT. Posteriormente estos números se deben:
@@ -324,10 +325,16 @@ el número de caracteres es: 6
      - RESTAR (ejemplo: $22 - 8 = 14$)
      - MULTIPLICAR (ejemplo: $22 * 8 = 176$)
      - DIVIDIR (ejemplo: $22 / 8 = 2.75$)
-     - DIVISION ENTERA (ejemplo: $22 // 8 = 2$)
-     - DIVISION RESIDUO (ejemplo: $22 % 8 = 6$)
-     - EXPONENTE (ejemplo: $22 ** 8 = 54,875,873,536$)
 
    - Los resultados deben aparecer en pantalla.
 
-2. Guarde los cambios y cierre el IDE Thonny.
+2. CREE un programa de nombre: **G1122A06-calculadoraFloat-02.py** que solicite al usuario dos números para realizar operaciones. El programa debe tener las siguientes características:
+
+   - Comentarios iniciales de identificación.
+   - El programa debe pedir dos números al usuario. Estos números deben ser convertidos de tipo STRING a tipo FLOAT. Posteriormente estos números se deben:
+     - DIVISION ENTERA (ejemplo: $22 // 8 = 2$)
+     - DIVISION RESIDUO (ejemplo: $22 \% 8 = 6$)
+     - EXPONENTE (ejemplo: $22 ** 8 = 54,875,873,536$)
+
+   - Los resultados deben aparecer en pantalla.
+:::
