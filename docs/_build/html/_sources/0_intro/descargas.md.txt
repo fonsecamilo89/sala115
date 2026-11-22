@@ -15,16 +15,12 @@ Identifique el recurso y PULSE el botón **Descargar**.
   :header-rows: 1
   * - Plantilla
     - Microsoft Office
-    - LibreOffice
   * - Anteproyecto
     - [{bdg-primary}`Descargar`](./recursos/descargas/ANTEPROYECTO.docx)
-    - [{bdg-primary}`Descargar`](./recursos/descargas/ANTEPROYECTO.odt)
   * - Proyecto
     - [{bdg-primary}`Descargar`](./recursos/descargas/PROYECTO.docx)
-    -
   * - Presentación
     - [{bdg-primary}`Descargar`](./recursos/descargas/presentación.pptx)
-    -  
   :::
 
 - Nota aclaratoria Técnicas e Instrumentos [{bdg-primary}`Descargar`](./recursos/descargas/nota_aclaratoria.pdf) (Mg. Yeison J. García Mosso) (Octubre-2026)
