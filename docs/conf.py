@@ -38,7 +38,7 @@ language = 'es'
 
 # -- Options for LaTeX output ------------------------------------------------
 
-latex_engine = "lualatex"
+latex_engine = "pdflatex"
 latex_logo = "./_static/logo_light.png"
 latex_documents = [
     ('index', 'sala115.tex', 'Libro didáctico para el estudiante', 'Julian Camilo Fonseca Romero', 'manual'),
