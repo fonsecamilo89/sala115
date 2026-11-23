@@ -1,0 +1,63 @@
+# Guía 1011: OFIMÁTICA y Software Libre
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Ofimática
+        - **GRADO**: DÉCIMO
+        - **PERIODO:** 01
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Ofimática y software libre.
+- **Objetivo de aprendizaje**: Conocer el concepto de ofimática y entender que la productividad también se logra con el uso de software libre.
+- **DESEMPEÑO**: Comprende qué es la ofimática y reconoce las libertades esenciales del software libre, demostrando el uso básico de las herramientas de LibreOffice para la creación de documentos de texto, hojas de cálculo y presentaciones.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Tecnología, Informática y Sociedad.
+- **Competencia**: Actúo críticamente y de forma argumentada frente a las implicaciones éticas, sociales y ambientales del desarrollo, implementación, uso y disposición final de los productos tecnológicos.
+- **Evidencia de aprendizaje**: Juzgo las implicaciones que la protección a la propiedad intelectual tiene sobre el desarrollo y uso de diversas manifestaciones tecnológicas en el mundo.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+- **Plan de refuerzo 01.pdf** [{bdg-primary}`Descargar`](./recursos/G1011/archivos/planRefuerzo01.pdf)
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"El estudio del **software libre** es esencial porque surge como una alternativa ética y política a los modelos de propiedad intelectual. Esta filosofía no solo garantiza la equidad en el acceso a recursos digitales, sino que permite trascender del saber tecnológico al conocimiento tecnológico profundo. Al permitir el análisis de su funcionamiento interno (posibilidad negada por el software propietario), se faculta al estudiante para adoptar, adaptar y generar soluciones que respondan a necesidades sociales."
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+
+2. Lea el mensaje del autor luego identifique y describa en su cuaderno **5 ejemplos de software gratuitos** que utilice, reflexionando sobre cómo estos facilitan sus actividades cotidianas.

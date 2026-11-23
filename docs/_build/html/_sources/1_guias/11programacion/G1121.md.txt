@@ -1,0 +1,69 @@
+# Guía 1121: IDE
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Programación
+        - **GRADO**: ONCE
+        - **PERIODO**: 01
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Introducción al Entorno de Desarrollo Integrado (IDE) Thonny: funciones, depuración y buenas prácticas de programación.
+- **Objetivo de aprendizaje**: Comprender y utilizar las herramientas del IDE Thonny para escribir, ejecutar y depurar código en Python, aplicando el uso de comentarios y variables para mejorar la calidad y claridad de los programas.
+- **DESEMPEÑO**: Demuestra habilidad para utilizar el entorno de desarrollo Thonny, aplicando correctamente conceptos básicos de programación en Python, como el uso de variables, comentarios y depuración de código, logrando desarrollar programas funcionales y claros.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con T&I.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (2)
+- **Plan de refuerzo 01.pdf** [{bdg-primary}`Descargar`](./recursos/G1121/archivos/planRefuerzo01.pdf)
+- [Instalador THONNY](https://thonny.org)
+- [PYTHON ONLINE](https://www.online-python.com). Ejecutar la consola interactiva PYTHON en el navegador.
+```
+
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"La presente guía tiene como propósito facilitar la comprensión y el uso adecuado del entorno de desarrollo Thonny para la programación en Python. Se espera que, mediante la aplicación de los conceptos y herramientas presentados, los estudiantes desarrollen habilidades sólidas para escribir, depurar y organizar código de manera eficiente y clara, contribuyendo así a su formación integral en el ámbito de la programación".
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+
+2. Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:
+
+    - ¿Por qué es necesario usar otro programa para codificar en PYTHON y no simplemente seguir usando la consola interactiva?

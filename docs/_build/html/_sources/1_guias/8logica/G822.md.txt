@@ -1,0 +1,69 @@
+# Guía 822: Jerarquía de datos
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Lógica computacional
+        - **GRADO**: OCTAVO
+        - **PERIODO**: 02
+        - **TIEMPO**: 10 semanas (1 hora / semana)
+        - **TIEMPO DE TRABAJO**: 10/10 horas
+    ```
+:::
+
+:::{tab-set}
+
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Jerarquía de datos.
+- **Objetivo de aprendizaje**: Comprender la diferencia entre **datos**, **información** e identificar los elementos de la **Jerarquía de datos**.
+- **DESEMPEÑO**: Identifica los elementos que componen la jerarquía de datos (bit, byte, carácter, dato, registro, tabla, base de datos) y reconoce la diferencia fundamental entre datos e información. Aplica estos conceptos correctamente al organizar registros en tablas sencillas.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Naturaleza y Evolución de la T&I.
+- **Competencia**: Relaciono saberes, conocimientos tecnológicos e informáticos con los conocimientos de otras disciplinas.
+- **Evidencia de aprendizaje**: Comprendo los principios y conocimientos tecnológicos e informáticos que hacen posible el funcionamiento de productos tecnológicos actuales.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+
+- **Plan de refuerzo 02.pdf** [{bdg-primary}`Descargar`](./recursos/G822/archivos/planRefuerzo02.pdf)
+
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"En esta guía, el estudiante comprenderá la **diferencia entre datos e información**, entendiendo cómo un conjunto de registros estructurados cobra significado para guiar la toma de decisiones.
+
+Al identificar los elementos de la jerarquía de datos, el estudiante estará dando el primer paso para dominar el lenguaje que emula el pensamiento humano y da vida a la tecnología actual".
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+2. Lea el **mensaje del autor** y en su cuaderno con sus palabras responda:
+    - ¿En que se diferencian los datos de la información?

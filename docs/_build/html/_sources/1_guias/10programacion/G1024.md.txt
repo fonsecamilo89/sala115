@@ -1,0 +1,68 @@
+# Guía 1024: Variables en Python
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Programación
+        - **GRADO**: DÉCIMO
+        - **PERIODO**: 04
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Variables y operaciones en PYTHON.
+- **Objetivo de aprendizaje**: Comprender, modelar y aplicar el concepto de variables y operadores aritméticos en el lenguaje de programación Python.
+- **DESEMPEÑO**: Aplica eficazmente el concepto de variables y operadores matemáticos en Python para resolver ejercicios prácticos, demostrando claridad en la asignación de tipos de datos y ejecutando correctamente instrucciones en la consola interactiva.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con T&I.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Identifico condiciones, especificaciones y restricciones de diseño, utilizadas en una solución tecnológica o del campo de la informática verificando su cumplimiento en diversos contextos.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (3)
+- **Plan de refuerzo 04.pdf** [{bdg-primary}`Descargar`](./recursos/G1024/archivos/planRefuerzo04.pdf)
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com). Libro digital en inglés.
+- [PYTHON ONLINE](https://www.online-python.com). Ejecutar la consola interactiva PYTHON en el navegador.
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"Esta guía didáctica ha sido diseñada para facilitar la comprensión de las variables en Python, enfocándose en su definición, tipos y uso básico. El objetivo es que los estudiantes adquieran una base sólida para manejar datos y operaciones en programación, fomentando un aprendizaje claro y práctico que les permita avanzar con confianza en el mundo de la programación".
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+
+2. LEA el **mensaje del autor** y responda la siguiente pregunta en su cuaderno:
+
+    - ¿Cómo los datos y las operaciones se relacionan con la programación?

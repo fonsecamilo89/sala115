@@ -1,0 +1,70 @@
+# Guía 1002: Tema de proyecto
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Tecnología e Informática
+        - **GRADO**: DÉCIMO
+        - **PERIODO**: 02
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Reflexión sobre la Ofimática y Programación.
+- **Objetivo de aprendizaje**: Identificar el nivel de interés del estudiante sobre las temáticas de Ofimática, Programación, Redes y Mantenimiento.
+- **DESEMPEÑO**: Identifica y reflexiona sobre su interés en las áreas de ofimática, programación, redes y mantenimiento, comprendiendo conceptos fundamentales del software, desarrollo, seguridad en redes y sistemas tecnológicos para la elección de su proyecto de grado.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Uso y apropiación de la Tecnología y la Informática.
+- **Competencia**: Genero propuestas innovadoras para el uso y aprovechamiento de productos tecnológicos. 
+- **Evidencia de aprendizaje**: Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (6)
+- **Plan de refuerzo 02.pdf** [{bdg-primary}`Descargar`](./recursos/G1002/archivos/planRefuerzo02.pdf)
+- Formulario elección TEMA [{bdg-primary}`Descargar`](../../0_intro/recursos/descargas/formularioTema.odt)
+- [RESUMEN OFIMÁTICA](https://app.notion.com/p/Ofim-tica-3862daca769880d3bd7ffb1dd6c939da)
+- [RESUMEN PROGRAMACIÓN](https://app.notion.com/p/Programaci-n-3862daca76988006839fd9c89859f427)
+- [RESUMEN REDES](https://app.notion.com/p/Redes-de-datos-3862daca7698802abf3ee391218d5fec)
+- [RESUMEN MANTENIMIENTO](https://app.notion.com/p/Mantenimiento-3862daca769880abb1a5d6f64421aea6)
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"Esta guía ayuda al estudiante a identificar o descubrir su interés por alguna de las temáticas de Ofimática, Programación, Redes y Mantenimiento. Esto es importante para evitar que el estudiante tenga dificultades en el desarrollo de su **proyecto de grado**".
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+2. En su cuaderno, describa con sus palabras el significado de la siguiente frase:
+   
+   > "En el desarrollo del proyecto de grado, el estudiante entre más intranquilo esté en grado décimo, más tranquilo estará en grado once".

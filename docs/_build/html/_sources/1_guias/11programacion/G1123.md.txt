@@ -1,0 +1,68 @@
+# Guía 1123: Control de flujo
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Programación
+        - **GRADO**: ONCE
+        - **PERIODO**: 03
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Control de flujo y estructuras condicionales en Python.
+- **Objetivo de aprendizaje**: Comprender y aplicar operadores de comparación, operadores lógicos y estructuras de control (if, elif, else) para desarrollar programas capaces de tomar decisiones basadas en condiciones.
+- **DESEMPEÑO**: Demuestra comprensión y aplicación efectiva de estructuras de control de flujo en Python, utilizando operadores lógicos y condicionales para desarrollar programas que toman decisiones basadas en diferentes condiciones, mostrando capacidad para resolver problemas prácticos como cálculos y validaciones.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con T&I.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (2)
+- **Plan de refuerzo 03.pdf** [{bdg-primary}`Descargar`](./recursos/G1123/archivos/planRefuerzo03.pdf)
+- [Instalador THONNY](https://thonny.org)
+- [PYTHON ONLINE](https://www.online-python.com). Ejecutar la consola interactiva PYTHON en el navegador.
+```
+
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"El propósito de esta guía es proporcionar las herramientas fundamentales para que el estudiante supere la ejecución lineal de sus algoritmos y comience a desarrollar soluciones capaces de evaluar condiciones y tomar decisiones autónomas. A través del dominio de los operadores lógicos y las estructuras condicionales, se busca fortalecer el pensamiento computacional y la capacidad de resolución de problemas complejos".
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. En su cuaderno transcriba la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+
+2. Lea el mensaje del autor y en su cuaderno responda:
+    - ¿Qué significa superar la ejecución lineal en el desarrollo de algoritmos?

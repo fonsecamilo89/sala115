@@ -1,0 +1,70 @@
+# Guía 823: Variables y operaciones
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Lógica computacional
+        - **GRADO**: OCTAVO
+        - **PERIODO**: 03
+        - **TIEMPO**: 10 semanas (1 hora / semana)
+        - **TIEMPO DE TRABAJO**: 10/10 horas
+    ```
+:::
+
+:::{tab-set}
+
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Variables y operaciones.
+- **Objetivo de aprendizaje**: Comprender el concepto de variables como contenedores de memoria, identificando sus diferentes tipos (numéricos, cadena y booleanos) y aplicando sus fundamentos matemáticos mediante operaciones básicas, codificación y decodificación, para resolver problemas prácticos dentro del contexto de la lógica computacional.
+- **DESEMPEÑO**: Comprende y aplica el concepto de variables como contenedores de memoria, identificando correctamente sus tipos (numéricos, cadena y booleanos). Demuestra habilidad en la resolución de operaciones matemáticas básicas, así como en los procesos de codificación y decodificación mediante la tabla ASCII, integrando estos conocimientos para resolver problemas lógicos dentro del contexto computacional.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Naturaleza y evolución de la T&I.
+- **Competencia**: Relaciono saberes, conocimientos tecnológicos e informáticos con los conocimientos de otras disciplinas.
+- **Evidencia de aprendizaje**: Comprendo los principios y conocimientos tecnológicos e informáticos que hacen posible
+el funcionamiento de productos tecnológicos actuales.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+
+- **Plan de refuerzo 03.pdf** [{bdg-primary}`Descargar`](./recursos/G823/archivos/planRefuerzo03.pdf)
+
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"En esta guía, el estudiante fortalece sus conocimientos sobre variables y operaciones, habilidades fundamentales para su formación académica y profesional.
+
+El objetivo de aprendizaje y la evidencia planteada están diseñados para guiarlo de manera clara y estructurada, permitiéndole aplicar conceptos teóricos en situaciones prácticas que enriquecerán su comprensión y capacidad analítica".
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+2. Lea el **mensaje del autor** y en su cuaderno responda:
+   - Para usted, ¿Qué es algo variable?

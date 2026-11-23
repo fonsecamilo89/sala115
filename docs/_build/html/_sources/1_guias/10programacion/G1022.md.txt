@@ -1,0 +1,66 @@
+# Guía 1022: Algoritmos
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Programación
+        - **GRADO**: DÉCIMO
+        - **PERIODO**: 02
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Desarrollo de algoritmos.
+- **Objetivo de aprendizaje**: Desarrollar la capacidad de abstracción y lógica algorítmica mediante la representación gráfica de procesos, permitiéndole modelar soluciones secuenciales y ordenadas a problemas de la vida cotidiana.
+- **DESEMPEÑO**: Desarrolla algoritmos coherentes para la solución de problemas propuestos, siguiendo con precisión las fases de análisis y diseño. Logra representar procesos secuenciales mediante diagramas de flujo funcionales y es capaz de transformar eficazmente situaciones de la vida cotidiana en secuencias lógicas estructuradas.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con T&I.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Propongo, analizo y comparo diferentes soluciones a un mismo problema de la tecnología o la informática, explicando su origen, ventajas y dificultades.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+- **Plan de refuerzo 02.pdf** [{bdg-primary}`Descargar`](./recursos/G1022/archivos/planRefuerzo02.pdf)
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"Entender cómo funciona el mundo actual requiere aprender a pensar de forma organizada. Esta guía invita a usar el desarrollo de algoritmos como una herramienta para abstraer y modelar soluciones. Al visualizar sus ideas, usted podrá comparar distintas rutas lógicas para un mismo problema, evaluando sus beneficios y desafíos".
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+
+2. LEA el **mensaje del autor** y en su cuaderno con sus palabras responda:
+    - ¿Qué es abstracción?
+    - ¿Qué es modelar una solución?
