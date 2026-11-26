@@ -41,7 +41,7 @@ language = 'es'
 latex_engine = "pdflatex"
 latex_logo = "./_static/logo_light.png"
 latex_documents = [
-    ('index', 'sala115.tex', 'Libro didáctico para el estudiante', 'Julian Camilo Fonseca Romero', 'manual'),
+    ('index', 'sala115.tex', 'Libro didáctico para el estudiante', 'Docente: Camilo Fonseca', 'manual'),
 ]
 text_add_secnumbers = False
 latex_use_latex_multicolumn = True
