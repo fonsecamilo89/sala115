@@ -1,0 +1,66 @@
+# Guía 1021: PROGRAMACIÓN
+
+:::{list-table}
+:widths: 35 65
+* - ```{list-table}
+    * - ![escudo](../recursos/escudo.png)
+    ```
+  - ```{list-table}
+    :align: left
+    * - **INSTITUCIÓN EDUCATIVA**: John F. Kennedy
+        - **DOCENTE**: Julian Camilo Fonseca Romero
+        - **ASIGNATURA**: Programación
+        - **GRADO**: DÉCIMO
+        - **PERIODO**: 01
+        - **TIEMPO**: 10 semanas (2 horas / semana)
+        - **TIEMPO DE TRABAJO**: 20/20 horas
+    ```
+:::
+
+:::{tab-set}
+```{tab-item} Objetivo
+{bdg-light}`Exploración`
+{bdg-info}`Estructuración`
+{bdg-warning}`Actividad práctica`
+{bdg-danger}`Transferencia`
+- **Temática**: Introducción a la programación.
+- **Objetivo de aprendizaje**: Dar a conocer los conceptos introductorios a la programación.
+- **DESEMPEÑO**: Comprende los fundamentos de la programación y el desarrollo de software, diferenciando entre datos e información, y reconociendo el papel del hardware y software en sistemas computacionales. Aplica estos conocimientos para identificar la estructura y lógica detrás de las tecnologías web, analizando casos prácticos y demostrando habilidades básicas para la resolución de problemas mediante el uso de herramientas tecnológicas.
+```
+
+```{tab-item} Orientaciones curriculares
+- **Componente**: Solución de problemas con Tecnología e Informática.
+- **Competencia**: Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones, condiciones y especificaciones técnicas y contextuales.
+- **Evidencia de aprendizaje**: Represento ideas sobre diseños, innovaciones tecnológicas o informáticas mediante el uso de registros, textos, diagramas, figuras... empleando para ello herramientas informáticas.
+```
+
+```{tab-item} Criterios de evaluación
+- Actividades desarrolladas en su totalidad.
+- Participación en clase.
+- Explicación clara de conceptos.
+- Argumentación de ideas.
+- Cumplimiento de las reglas del aula.
+```
+
+```{tab-item} Recursos (1)
+- **Plan de refuerzo 01.pdf** [{bdg-primary}`Descargar`](./recursos/G1021/archivos/planRefuerzo01.pdf)
+```
+:::
+
+## Mensaje del autor
+
+:::{pull-quote}
+"En esta guía didáctica, se exploraran los fundamentos esenciales en el desarrollo de software. El objetivo es obtener conocimientos básicos, para entender el cómo funciona el mundo digital y que a su vez impulsen la motivación hacia el aprendizaje de la programación".
+
+-- Camilo Fonseca
+:::
+
+---
+## A00: Introducción (5%)
+{bdg-light}`Exploración`
+
+1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+
+2. Lea el mensaje del autor y en su cuaderno responda la siguiente pregunta:
+
+    - ¿En qué se relacionan el mundo digital y el software?
