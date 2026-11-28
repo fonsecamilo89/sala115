@@ -352,14 +352,13 @@ Recursos (1)</label><div class="sd-tab-content docutils" id="sd-tab-item-3-conte
 <section id="mensaje-del-autor">
 <h2>Mensaje del autor<a class="headerlink" href="#mensaje-del-autor" title="Link to this heading">¶</a></h2>
 <blockquote class="pull-quote">
-<div><p>«En esta guía, el estudiante fortalece sus conocimientos sobre variables y operaciones, habilidades fundamentales para su formación académica y profesional.</p>
-<p>El objetivo de aprendizaje y la evidencia planteada están diseñados para guiarlo de manera clara y estructurada, permitiéndole aplicar conceptos teóricos en situaciones prácticas que enriquecerán su comprensión y capacidad analítica».</p>
+<div><p>“En esta guía, el estudiante fortalece sus conocimientos sobre variables y operaciones”.</p>
 <p class="attribution">—Camilo Fonseca</p>
 </div></blockquote>
 </section>
 <hr class="docutils" />
-<section id="a00-introduccion-5">
-<span id="a00-introducción-5"></span><h2>A00: Introducción (5%)<a class="headerlink" href="#a00-introduccion-5" title="Link to this heading">¶</a></h2>
+<section id="a00-introduccion">
+<span id="a00-introducción"></span><h2>A00: Introducción<a class="headerlink" href="#a00-introduccion" title="Link to this heading">¶</a></h2>
 <p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">Exploración</span></p>
 <ol class="arabic simple">
 <li><p>Transcriba en su cuaderno la <strong>temática</strong>, el <strong>objetivo de aprendizaje</strong> y el <strong>desempeño</strong> de la presente guía.</p></li>
@@ -370,7 +369,524 @@ Recursos (1)</label><div class="sd-tab-content docutils" id="sd-tab-item-3-conte
 </li>
 </ol>
 </section>
+<hr class="docutils" />
+<section id="a01-variables">
+<h2>A01: Variables<a class="headerlink" href="#a01-variables" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Estructuración</span></p>
+<ol class="arabic simple">
+<li><p>Lea los siguientes conceptos:</p></li>
+</ol>
+<ul>
+<li><blockquote>
+<div><p><a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> “Una variable es un campo de memoria al que se le puede cambiar su contenido cuantas veces sea necesario”.</p>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>Las variables pueden ser de <strong>diferente tipo</strong> según sea su <strong>contenido</strong>.</p>
+</div></blockquote>
+</li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Concepto de variable</p>
+<p>Un campo de memoria es un espacio de la memoria RAM en donde se puede guardar un dato.</p>
+<p>Las <strong>variables</strong> se pueden representar como <strong>contenedores identificables</strong> que pueden <strong>almacenar un contenido medible</strong>. De esta manera una variable se puede representar de forma <strong>gráfica</strong> y de forma <strong>matemática</strong>.</p>
+<p>Por ejemplo, una representación gráfica de una variable puede ser una caja etiquetada con la palabra <strong>spam</strong>, la cual almacena <strong>42 pliegos</strong> de papel.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/image012.png"><img alt="../_images/image012.png" src="../_images/image012.png" width="210" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Caja</strong> representación gráfica de una variable</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Para la representación matemática, una variable debe cumplir con las siguientes características:</p>
+<ul class="simple">
+<li><p>La variable debe tener un <strong>nombre</strong> que la identifique.</p></li>
+<li><p>La variable debe tener un signo <strong>igual (=)</strong> el cual representa una asignación de valor.</p></li>
+<li><p>La variable debe tener un <strong>contenido</strong> o valor.</p></li>
+</ul>
+<p>De esta manera la <strong>representación matemática</strong> de la variable de la caja se escribe así:</p>
+<blockquote>
+<div><div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[ spam = 42 \]</div>
+</div>
+</div></blockquote>
+</div>
+<section id="variables-de-tipo-numerico-entero-y-decimal">
+<span id="variables-de-tipo-numérico-entero-y-decimal"></span><h3>Variables de tipo numérico (entero y decimal)<a class="headerlink" href="#variables-de-tipo-numerico-entero-y-decimal" title="Link to this heading">¶</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">int, float</p>
+<p>Las variables que almacenan <strong>números enteros</strong> o <strong>decimales</strong>, son variables de <strong>tipo numérico</strong>.</p>
+<p>Una variable de <strong>tipo entero</strong> es una variable cuyo contenido es un <strong>número entero</strong> que <strong>no tiene punto decimal</strong>. Por tanto sus operaciones <strong>jamás van a generar decimales</strong>.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<div><div class="math-wrapper math docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= 12, b = 100
+\\ c &amp;= a + b
+\\ c &amp;= 112\end{split}\]</div>
+</div>
+</div></blockquote>
+<p>Una variable de <strong>tipo decimal</strong> es una variable cuyo contenido es un número que <strong>tiene un punto decimal</strong>. Por tanto sus operaciones <strong>generan decimales</strong>.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<div><div class="math-wrapper math docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= 0.25, b = 0.50
+\\ c &amp;= a + b
+\\ c &amp;= 0.75\end{split}\]</div>
+</div>
+</div></blockquote>
+</div>
 </section>
+<section id="variables-de-tipo-cadena-caracter">
+<span id="variables-de-tipo-cadena-carácter"></span><h3>Variables de tipo cadena (carácter)<a class="headerlink" href="#variables-de-tipo-cadena-caracter" title="Link to this heading">¶</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">String</p>
+<p>Una variable de tipo carácter es cualquier carácter presente en la TABLA ASCII (American Standard Code for Interchange Information).</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/image02.png"><img alt="../_images/image02.png" src="../_images/image02.png" width="720" />
+</a>
+<figcaption>
+<p><span class="caption-text">TABLA ASCII</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La tabla ASCII es un código estándar el cual se usa para intercambiar información en sistemas informáticos. La tabla ASCII contiene equivalencias internas de cada carácter (a, z, 1, &#64;, O) en un número entero que va desde 00 a 255.</p>
+<p><strong>Por ejemplo</strong>: Cuando usted presiona en el teclado la letra <kbd class="kbd docutils literal notranslate">A</kbd>, internamente en la computadora se genera el número <strong>65</strong>. Esto es porque en la <strong>tabla ASCII</strong> el equivalente numérico del carácter <kbd class="kbd docutils literal notranslate">A</kbd> mayúscula es el número <strong>65</strong>. El equivalente <kbd class="kbd docutils literal notranslate">a</kbd> minúscula es el número <strong>97</strong>. Así mismo los demás caracteres.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Carácter</p></th>
+<th class="head"><p>Número ASCII</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">A</kbd></p></td>
+<td><p>65</p></td>
+</tr>
+<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">a</kbd></p></td>
+<td><p>97</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Las variables de <strong>tipo cadena</strong>, son variables que se forman de la unión o combinación de varios caracteres.</p>
+<p><strong>Por ejemplo:</strong> Para los siguientes caracteres: <kbd class="kbd docutils literal notranslate">s</kbd>, <kbd class="kbd docutils literal notranslate">a</kbd>, <kbd class="kbd docutils literal notranslate">l</kbd>, <kbd class="kbd docutils literal notranslate">a</kbd>, <kbd class="kbd docutils literal notranslate">1</kbd>, <kbd class="kbd docutils literal notranslate">1</kbd>, <kbd class="kbd docutils literal notranslate">5</kbd> se forma una variable de tipo cadena con valor: <strong>“sala115”</strong>. Igualmente también tendrá su equivalente numérico ASCII. Por ejemplo:</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Carácter</p></th>
+<th class="head"><p>Número ASCII</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">s</kbd></p></td>
+<td><p>115</p></td>
+</tr>
+<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">a</kbd></p></td>
+<td><p>97</p></td>
+</tr>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">l</kbd></p></td>
+<td><p>108</p></td>
+</tr>
+<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">a</kbd></p></td>
+<td><p>97</p></td>
+</tr>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">1</kbd></p></td>
+<td><p>49</p></td>
+</tr>
+<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">1</kbd></p></td>
+<td><p>49</p></td>
+</tr>
+<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">5</kbd></p></td>
+<td><p>53</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="variables-de-tipo-booleano-true-false">
+<span id="variables-de-tipo-booleano-true-"></span><h3>Variables de tipo booleano (<code class="docutils literal notranslate"><span class="pre">True</span></code>) (<span class="guilabel">False</span>)<a class="headerlink" href="#variables-de-tipo-booleano-true-false" title="Link to this heading">¶</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Boolean</p>
+<p>Una variable de tipo booleano a diferencia de los demás tipos de variables, solo puede tener dos posibles valores: <code class="docutils literal notranslate"><span class="pre">True</span></code> o <span class="guilabel">False</span>.</p>
+<p>Las variables de tipo booleano son usadas para establecer estados. Por ejemplo:</p>
+<ul class="simple">
+<li><p>SOLTERO = <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p>MAYOR_DE_EDAD = <span class="guilabel">False</span></p></li>
+<li><p>RECIPIENTE_VACIO = <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p>DIA_LLOVIENDO = <span class="guilabel">False</span></p></li>
+<li><p>BOMBILLO_PRENDIDO = <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p>APROBACIÓN_EXAMEN = <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+</ul>
+</div>
+<ol class="arabic">
+<li><p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿Qué es una <strong>variable</strong>?</p></li>
+<li><p>¿Qué tiene que ver la <strong>memoria RAM</strong> con las variables?</p></li>
+<li><p>¿Qué características debe tener una variable representada <em>matemáticamente</em>?</p></li>
+<li><p>¿Cómo se diferencias los <strong>tipos de variables</strong>?</p></li>
+<li><p>¿Cuales son las variables de <strong>tipo numérico</strong>?</p></li>
+<li><p>¿En qué se diferencian las variables de <strong>tipo numérico entero</strong> con las variables de <strong>tipo numérico decimal</strong>?</p></li>
+<li><p>¿En qué se diferencian las variables de <strong>tipo carácter</strong> con las variables de <strong>tipo numérico</strong>?</p></li>
+<li><p>¿Qué es la <strong>tabla ASCII</strong>?</p></li>
+<li><p>¿De qué forma se relaciona la <strong>tabla ASCII</strong> con las variables de <strong>tipo carácter</strong>?</p></li>
+</ul>
+</li>
+<li><p>Consulte la <strong>tabla ASCII</strong> y escriba el equivalente numérico para los siguientes caracteres:</p>
+<ul class="simple">
+<li><p>Abecedario en minúscula de la letra <strong>a</strong> a la letra <strong>z</strong>.</p></li>
+<li><p>Números enteros del <strong>0</strong> al <strong>9</strong>.</p></li>
+<li><p>Caracteres: <kbd class="kbd docutils literal notranslate">&#64;</kbd>, <kbd class="kbd docutils literal notranslate">(</kbd>, <kbd class="kbd docutils literal notranslate">)</kbd>, <kbd class="kbd docutils literal notranslate">&lt;</kbd>, <kbd class="kbd docutils literal notranslate">&gt;</kbd>, <kbd class="kbd docutils literal notranslate">=</kbd>, <kbd class="kbd docutils literal notranslate">&amp;</kbd>, <kbd class="kbd docutils literal notranslate">?</kbd>, <kbd class="kbd docutils literal notranslate">¿</kbd>, <kbd class="kbd docutils literal notranslate">%</kbd>, <kbd class="kbd docutils literal notranslate">+</kbd>, <kbd class="kbd docutils literal notranslate">-</kbd>, <kbd class="kbd docutils literal notranslate">*</kbd>, <kbd class="kbd docutils literal notranslate">/</kbd></p></li>
+</ul>
+</li>
+<li><p>Responda las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿En que se diferencian las variables de <strong>tipo booleano</strong> con otro tipo de variables?</p></li>
+<li><p>¿Cuáles son los <strong>dos posibles valores</strong> que pueden tener las variables de <strong>tipo booleano</strong>?</p></li>
+<li><p>¿Para que sirve realizar operaciones con variables dinámicas?</p></li>
+<li><p>Si el valor de las variables dinámicas cambia constantemente, entonces ¿Qué son las variables estáticas?</p></li>
+<li><p>¿Cuál es la diferencia entre <strong>codificar</strong> y <strong>decodificar</strong>?</p></li>
+<li><p>¿Por qué se usan variables de <strong>tipo carácter</strong> al momento de <strong>codificar</strong> o <strong>decodificar</strong>?</p></li>
+</ul>
+</li>
+<li><p>En su cuaderno realice <strong>10 ejemplos</strong> de variables. Tenga en cuenta los siguiente:</p>
+<ul>
+<li><p><strong>5 ejemplos</strong> de variables de tipo entero.</p></li>
+<li><p><strong>5 ejemplos</strong> de variables de tipo decimal.</p></li>
+<li><p>Por cada ejemplo realice un <strong>gráfico</strong> de la variable.</p></li>
+<li><p>Piense en <strong>objetos contenedores</strong> que <strong>almacenen</strong> algún contenido que se pueda <strong>medir</strong>.</p></li>
+<li><div class="admonition-ejemplo admonition">
+<p class="admonition-title">EJEMPLO</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(neveraCarne = 10\)</span></p>
+<ul class="simple">
+<li><p>El <strong>nombre de la variable</strong> es <span class="math notranslate nohighlight">\(neveraCarne\)</span> que representa una nevera contenedora de carne. Son muy usadas en frigoríficos.</p></li>
+<li><p>El <strong>valor de la variable</strong> es <span class="math notranslate nohighlight">\(10\)</span> que representa <em><strong>10Kg de Carne</strong></em></p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/image03.png"><img alt="../_images/image03.png" src="../_images/image03.png" width="345" />
+</a>
+<figcaption>
+<p><span class="caption-text">Nevera contenedora de carne</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></blockquote>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a02-operaciones-numericas">
+<span id="a02-operaciones-numéricas"></span><h2>A02: Operaciones numéricas<a class="headerlink" href="#a02-operaciones-numericas" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<ol class="arabic simple">
+<li><p>Lea el siguiente concepto:</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Operaciones básicas con variables</p>
+<p><a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> Las operaciones con <strong>variables numéricas</strong> permiten entender el <strong>ciclo de vida</strong> de las variables, en especial las <strong>variables dinámicas</strong> (cuyo valor cambia constantemente).</p>
+<p>Para operar se empieza declarando unas variables con unos <strong>valores iniciales los cuales van cambiando</strong> a medida que se realicen <strong>operaciones previamente definidas</strong>. Al ser variables numéricas estas pueden ser de tipo <strong>entero</strong> o <strong>decimal</strong>.</p>
+<p>Después de resolver todas la operaciones, al final se obtienen los <strong>valores finales de las variables</strong>.</p>
+<p>A continuación se muestra un ejemplo de operaciones con variables.</p>
+<blockquote>
+<div><p><strong>EJEMPLO</strong></p>
+<p>Para las siguientes <strong>variables iniciales</strong>:</p>
+<p><span class="math notranslate nohighlight">\(a=10\)</span>, <span class="math notranslate nohighlight">\(b=15\)</span> y <span class="math notranslate nohighlight">\(c=20\)</span></p>
+<p>Desarrollar las siguientes operaciones para hallar: <span class="math notranslate nohighlight">\(af=?\)</span>, <span class="math notranslate nohighlight">\(bf=?\)</span> y <span class="math notranslate nohighlight">\(cf=?\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= a + b
+\\ b &amp;= b + 8
+\\ c &amp;= a + b\end{split}\]</div>
+</div>
+<p><strong>SOLUCIÓN</strong></p>
+<p>Teniendo en cuenta que <span class="math notranslate nohighlight">\(a = 10\)</span>, <span class="math notranslate nohighlight">\(b = 15\)</span> y <span class="math notranslate nohighlight">\(c = 20\)</span> entonces:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= a + b
+\\ a &amp;= 10 + 15
+\\ a &amp;= 25\end{split}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}b &amp;= b + 8
+\\ b &amp;= 15 + 8
+\\ b &amp;= 23\end{split}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}c &amp;= a + b
+\\ c &amp;= 25 + 23
+\\ c &amp;= 48\end{split}\]</div>
+</div>
+<p>Por tanto, <span class="math notranslate nohighlight">\(af = 25\)</span>, <span class="math notranslate nohighlight">\(bf = 23\)</span> y <span class="math notranslate nohighlight">\(cf = 48\)</span></p>
+</div></blockquote>
+</div>
+<ol class="arabic" start="2">
+<li><p>Para cada una de las <strong>operaciones básicas</strong> (suma, resta, multiplicación, división), en su cuaderno realice 3 ejemplos de operaciones con variables numéricas (enteras o decimales).</p>
+<ul>
+<li><p>Tenga en cuenta que cada operación <strong>debe tener información</strong> y <strong>no solo datos</strong>. Son 12 ejemplos en total.</p></li>
+<li><div class="admonition-ejemplo-01-peso-de-productos admonition">
+<p class="admonition-title">EJEMPLO 01: Peso de productos</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\( pesoTomates = 1.3 \)</span></p>
+<p><span class="math notranslate nohighlight">\( pesoCebollas = 0.8 \)</span></p>
+<p><span class="math notranslate nohighlight">\( pesoTotalCompra = pesoTomates + pesoCebollas \)</span></p>
+<p><span class="math notranslate nohighlight">\( pesoTotalCompra = 2.1 \)</span></p>
+</div></blockquote>
+</div>
+</li>
+<li><div class="admonition-ejemplo-02-cuentas-en-el-mercado admonition">
+<p class="admonition-title">EJEMPLO 02: Cuentas en el mercado</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\( totalEfectivo = 150000 \)</span></p>
+<p><span class="math notranslate nohighlight">\( costoProducto01  = 50000 \)</span></p>
+<p><span class="math notranslate nohighlight">\( costoProducto02  = 25000 \)</span></p>
+<p><span class="math notranslate nohighlight">\( totalCompra = totalEfectivo - costoProducto01 - costoProducto02 \)</span></p>
+<p><span class="math notranslate nohighlight">\( totalCompra = 75000 \)</span></p>
+</div></blockquote>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a03-ejercicios-operaciones">
+<h2>A03: Ejercicios operaciones<a class="headerlink" href="#a03-ejercicios-operaciones" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<p>Desarrolle los siguientes ejercicios en su cuaderno:</p>
+<ol class="arabic">
+<li><blockquote>
+<div><p>Para las siguientes variables iniciales:</p>
+<p><span class="math notranslate nohighlight">\(a = 22\)</span>, <span class="math notranslate nohighlight">\(b = 53\)</span>, <span class="math notranslate nohighlight">\(c = -75\)</span>, <span class="math notranslate nohighlight">\(d = 56\)</span></p>
+<p>Desarrollar las siguientes operaciones y obtener: <span class="math notranslate nohighlight">\(af = ?\)</span>, <span class="math notranslate nohighlight">\(bf = ?\)</span>, <span class="math notranslate nohighlight">\(cf = ?\)</span> y <span class="math notranslate nohighlight">\(df = ?\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= b + c + d
+\\ b &amp;= a + c - d
+\\ c &amp;= a - b + d
+\\ d &amp;= a - b - c\end{split}\]</div>
+</div>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>Para las siguientes variables iniciales:</p>
+<p><span class="math notranslate nohighlight">\(a = 5009\)</span>, <span class="math notranslate nohighlight">\(b = 18009\)</span>, <span class="math notranslate nohighlight">\(c = 15009\)</span>, <span class="math notranslate nohighlight">\(d = 25009\)</span></p>
+<p>Desarrollar las siguientes operaciones y obtener: <span class="math notranslate nohighlight">\(af = ?\)</span>, <span class="math notranslate nohighlight">\(bf = ?\)</span>, <span class="math notranslate nohighlight">\(cf = ?\)</span> y <span class="math notranslate nohighlight">\(df=?\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= a - 1009
+\\ b &amp;= b + 5001 - c
+\\ c &amp;= c + 4001 + b
+\\ d &amp;= a + b + c\end{split}\]</div>
+</div>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>Para las siguientes variables iniciales:</p>
+<p><span class="math notranslate nohighlight">\(a = 2\)</span>, <span class="math notranslate nohighlight">\(b = 4\)</span></p>
+<p>Desarrollar las siguientes operaciones y obtener: <span class="math notranslate nohighlight">\(af = ?\)</span> y <span class="math notranslate nohighlight">\(bf = ?\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= a + 3        
+\\ b &amp;= b + 6
+\\ a &amp;= a + 9
+\\ b &amp;= b - 12
+\\ a &amp;= a - 15
+\\ b &amp;= b + 18
+\\ a &amp;= a + 21
+\\ b &amp;= b + 24
+\\ a &amp;= a + 27
+\\ b &amp;= b - 30\end{split}\]</div>
+</div>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>Para las siguientes variables iniciales:</p>
+<p><span class="math notranslate nohighlight">\(a = 18\)</span>, <span class="math notranslate nohighlight">\(b = 18\)</span>, <span class="math notranslate nohighlight">\(c = 18\)</span>, <span class="math notranslate nohighlight">\(d = 18\)</span></p>
+<p>Desarrollar las siguientes operaciones y obtener <span class="math notranslate nohighlight">\(af = ?\)</span>, <span class="math notranslate nohighlight">\(bf = ?\)</span>, <span class="math notranslate nohighlight">\(cf = ?\)</span> y <span class="math notranslate nohighlight">\(df = ?\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= a + b
+\\ b &amp;= a - b
+\\ c &amp;= a + b
+\\ d &amp;= a - b
+\\ a &amp;= a - b
+\\ b &amp;= a + b
+\\ c &amp;= a - b
+\\ d &amp;= a + b\end{split}\]</div>
+</div>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>Para las siguientes variables iniciales:</p>
+<p><span class="math notranslate nohighlight">\(a = 1\)</span>, <span class="math notranslate nohighlight">\(b = 2\)</span>, <span class="math notranslate nohighlight">\(c = 4\)</span>, <span class="math notranslate nohighlight">\(d = 8\)</span></p>
+<p>Desarrollar las siguientes operaciones y obtener <span class="math notranslate nohighlight">\(af = ?\)</span>, <span class="math notranslate nohighlight">\(bf = ?\)</span>, <span class="math notranslate nohighlight">\(cf = ?\)</span> y <span class="math notranslate nohighlight">\(df = ?\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= a + b + c + d
+\\ b &amp;= a + b + c - d
+\\ c &amp;= a + b - c + d
+\\ d &amp;= a + b - c - d
+\\ a &amp;= a - b + c + d
+\\ b &amp;= a - b + c - d
+\\ c &amp;= a - b - c + d
+\\ d &amp;= a - b - c - d\end{split}\]</div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a04-codificacion-decodificacion">
+<span id="a04-codificación---decodificación"></span><h2>A04: Codificación - Decodificación<a class="headerlink" href="#a04-codificacion-decodificacion" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Actividad práctica</span></p>
+<p>Con la tabla ASCII desarrolle los siguientes puntos:</p>
+<ol class="arabic">
+<li><p><strong>CODIFIQUE</strong> los siguientes mensajes en su cuaderno:</p>
+<ul>
+<li><blockquote>
+<div><p>La lógica computacional estudia los principios de la algoritmia para dar solución a problemas de diferente tipo.</p>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>La lógica es la forma más obvia y fácil de hacer algo.</p>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>La tecnología es el conjunto de teorías y técnicas que permiten la aplicación práctica del conocimiento científico, para transformar el medio ambiente y mejorar la calidad de vida de las personas.</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p><strong>DECODIFIQUE</strong> los siguientes mensajes en su cuaderno:</p>
+<ul>
+<li><blockquote>
+<div><p>69 108 32 108 101 110 103 117 97 106 101 32 97 114 116 105 102 105 99 105 97 108 32 101 115 32 116 111 100 111 32 97 113 117 101 108 32 99 114 101 97 100 111 32 100 101 32 109 97 110 101 114 97 32 99 111 110 115 99 105 101 110 116 101 32 121 32 100 101 108 105 98 101 114 97 100 97 44 32 99 111 110 32 117 110 32 102 105 110 32 101 115 112 101 99 195 173 102 105 99 111 46 32 83 101 32 100 105 118 105 100 101 110 32 101 110 32 100 111 115 58 32 76 101 110 103 117 97 106 101 115 32 99 111 110 115 116 114 117 105 100</p>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>76 97 32 106 101 114 97 114 113 117 195 173 97 32 100 101 32 100 97 116 111 115 32 115 101 32 99 111 109 112 111 110 101 32 100 101 58 32 100 64 116 48 115 44 32 99 97 77 112 48 115 44 32 114 42 103 105 53 116 114 111 53 44 32 97 114 67 104 73 118 56 115 32 121 32 98 65 115 51 115 32 100 101 32 100 64 116 48 122 122 122 46</p>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>69 115 116 97 32 101 115 32 108 97 32 109 97 116 101 114 105 97 32 76 195 179 103 105 99 97 32 67 111 109 112 117 116 97 99 105 111 110 97 108 32 100 101 32 108 97 32 73 110 115 116 105 116 117 99 105 195 179 110 32 69 100 117 99 97 116 105 118 97 32 74 111 104 110 32 70 46 32 75 101 110 110 101 100 121 46 32 69 115 116 97 109 111 115 32 116 114 97 98 97 106 97 110 100 111 32 99 111 110 32 108 111 115 32 99 195 179 100 105 103 111 115 32 65 83 67 73 73</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="a05-examen-escrito">
+<h2>A05: Examen escrito<a class="headerlink" href="#a05-examen-escrito" title="Link to this heading">¶</a></h2>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">Transferencia</span></p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>TIEMPO</strong></p></td>
+<td><p>29 minutos</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PREGUNTAS</strong></p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>OBJETIVO</strong></p></td>
+<td><p>Comprobar conocimientos adquiridos.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>INSTRUCCIONES</strong></p></td>
+<td><p>Cuadernos y celulares guardados. Solo se permite hoja, lápiz, borrador y la <strong>tabla ASCII</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-posibles-preguntas admonition">
+<p class="admonition-title">Posibles preguntas</p>
+<ol class="arabic">
+<li><p>¿Qué es una <strong>variable</strong> en el contexto de la <em>lógica computacional</em> y cómo se relaciona con la <strong>memoria RAM</strong>?</p></li>
+<li><p>Explique cómo se representa una variable de <strong>forma gráfica</strong> y dé un ejemplo.</p></li>
+<li><p>Mencione las <strong>tres características</strong> fundamentales que debe tener una variable para su <strong>representación matemática</strong>.</p></li>
+<li><p>¿Qué <strong>diferencia</strong> a una <em>variable</em> de <strong>tipo numérico entero</strong> de una de <strong>tipo numérico decimal</strong>?</p></li>
+<li><p>¿Qué es la <strong>tabla ASCII</strong> y cuál es su <strong>función principal</strong> en los <em>sistemas informáticos</em>?</p></li>
+<li><p>Si presiona la letra <kbd class="kbd docutils literal notranslate">A</kbd> en el teclado, ¿qué número se genera internamente y por qué?</p></li>
+<li><p>¿Cómo se forman las <strong>variables</strong> de tipo <strong>cadena (carácter)</strong> y en qué se <em>diferencian</em> de los <strong>caracteres individuales</strong>?</p></li>
+<li><p>¿Qué características definen a una <strong>variable de tipo booleano</strong>?</p></li>
+<li><p>Dé <strong>tres ejemplos</strong> de <strong>situaciones de la vida real</strong> que podrían representarse mediante <strong>variables booleanas</strong>.</p></li>
+<li><p>¿Por qué se dice que las <strong>variables numéricas</strong> pueden ser <em><strong>dinámicas</strong></em> y cómo se diferencian de las <em><strong>estáticas</strong></em>?</p></li>
+<li><p>¿En qué consiste el proceso de <strong>codificación de información</strong>?</p></li>
+<li><p>¿En qué consiste el proceso de <strong>decodificación de la información</strong> y por qué es el <em>proceso inverso</em> a la <strong>codificación</strong>?</p></li>
+<li><p>¿Por qué es necesario el uso de <em>variables</em> de <strong>tipo carácter</strong> al momento de realizar <strong>procesos de codificación</strong> o <strong>decodificación</strong>?</p></li>
+<li><p>¿Qué significa que una variable sea un “<strong>contenedor identificable</strong>”?</p></li>
+<li><p>¿Qué sucede con el <strong>valor de una variable</strong> cuando se le <em>asigna</em> un <strong>nuevo contenido</strong> a través de una <strong>operación</strong>?</p></li>
+<li><p>¿Qué rol juega el signo igual <strong>(=)</strong> en la <strong>representación matemática</strong> de una <em>variable</em>?</p></li>
+<li><blockquote>
+<div><p>Si tenemos las variables iniciales <span class="math notranslate nohighlight">\(a = 15\)</span>, <span class="math notranslate nohighlight">\(b = 30\)</span> y <span class="math notranslate nohighlight">\(c = 5\)</span>, desarrolle las siguientes operaciones y halle el valor final de cada una:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}a &amp;= a + b
+\\ b &amp;= b - c
+\\ c &amp;= a + b + c\end{split}\]</div>
+</div>
+</div></blockquote>
+</li>
+<li><blockquote>
+<div><p>Si tenemos las variables iniciales <span class="math notranslate nohighlight">\(x = 100\)</span>, <span class="math notranslate nohighlight">\(y = 50\)</span>, desarrolle las siguientes operaciones y halle el valor final de cada una:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}x &amp;= x + 10
+\\ y &amp;= y + x
+\\ x &amp;= x - 20
+\\ y &amp;= y - 5\end{split}\]</div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Utilizando la tabla ASCII, codifique el siguiente mensaje: “<em>HOLA me llamo (su nombre) (su apellido)</em>”</p></li>
+<li><p>Utilizando la tabla ASCII, decodifique el siguiente mensaje: 101, 110, <strong>32</strong>, 101, 108, <strong>32</strong>, 97, 117, 108, 97, <strong>32</strong>, 49, 49, 53, <strong>32</strong>, 101, 115, 116, 117, 100, 105, 97, 109, 111, 115, <strong>32</strong>, 108, 111, 103, 105, 99, 97, <strong>32</strong>, 99, 111, 109, 112, 117, 116, 97, 99, 105, 111, 110, 97, 108</p></li>
+</ol>
+</div>
+</section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Sweigart, A. (2019). Automate the boring stuff with python, 2nd edition: Practical programming for total beginners. No Starch Press.</p>
+</aside>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Trejos Buriticá, O. I. (2017). Lógica de programación. Ediciones de la U.</p>
+</aside>
+</aside>
 
         </article>
       </div>
@@ -429,7 +945,17 @@ Recursos (1)</label><div class="sd-tab-content docutils" id="sd-tab-item-3-conte
             <ul>
 <li><a class="reference internal" href="#">Guía 823: Variables</a><ul>
 <li><a class="reference internal" href="#mensaje-del-autor">Mensaje del autor</a></li>
-<li><a class="reference internal" href="#a00-introduccion-5">A00: Introducción (5%)</a></li>
+<li><a class="reference internal" href="#a00-introduccion">A00: Introducción</a></li>
+<li><a class="reference internal" href="#a01-variables">A01: Variables</a><ul>
+<li><a class="reference internal" href="#variables-de-tipo-numerico-entero-y-decimal">Variables de tipo numérico (entero y decimal)</a></li>
+<li><a class="reference internal" href="#variables-de-tipo-cadena-caracter">Variables de tipo cadena (carácter)</a></li>
+<li><a class="reference internal" href="#variables-de-tipo-booleano-true-false">Variables de tipo booleano (<code class="docutils literal notranslate"><span class="pre">True</span></code>) (<span class="guilabel">False</span>)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a02-operaciones-numericas">A02: Operaciones numéricas</a></li>
+<li><a class="reference internal" href="#a03-ejercicios-operaciones">A03: Ejercicios operaciones</a></li>
+<li><a class="reference internal" href="#a04-codificacion-decodificacion">A04: Codificación - Decodificación</a></li>
+<li><a class="reference internal" href="#a05-examen-escrito">A05: Examen escrito</a></li>
 </ul>
 </li>
 </ul>
@@ -447,5 +973,7 @@ Recursos (1)</label><div class="sd-tab-content docutils" id="sd-tab-item-3-conte
     <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="../_static/translations.js?v=f85f4cfb"></script>
     <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../_static/design-tabs.js?v=fcb327ea"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="../_static/mathjax322/es5/tex-mml-chtml.js?v=cadf963e"></script>
     </body>
 </html>
