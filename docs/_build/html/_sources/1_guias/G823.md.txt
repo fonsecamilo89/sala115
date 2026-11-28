@@ -54,7 +54,7 @@ el funcionamiento de productos tecnológicos actuales.
 ## Mensaje del autor
 
 :::{pull-quote}
-"En esta guía, el estudiante fortalece sus conocimientos sobre variables y operaciones".
+"En esta guía, el estudiante fortalece sus conocimientos en variables y operaciones".
 
 -- Camilo Fonseca
 :::
@@ -70,8 +70,6 @@ el funcionamiento de productos tecnológicos actuales.
 ---
 ## A01: Variables
 {bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos:
 
 - > [^1] “Una variable es un campo de memoria al que se le puede cambiar su contenido cuantas veces sea necesario”.
 
@@ -197,6 +195,10 @@ Las variables de tipo booleano son usadas para establecer estados. Por ejemplo:
 - APROBACIÓN_EXAMEN = `True`
 :::
 
+### **Taller**
+
+En su cuaderno desarrolle los siguientes puntos:
+
 1. Responda las siguientes preguntas:
 
    - ¿Qué es una **variable**?
@@ -248,8 +250,6 @@ Las variables de tipo booleano son usadas para establecer estados. Por ejemplo:
 ## A02: Operaciones numéricas
 {bdg-warning}`Actividad práctica`
 
-1. Lea el siguiente concepto:
-
 :::{admonition} Operaciones básicas con variables
 :class: tip
 [^2] Las operaciones con **variables numéricas** permiten entender el **ciclo de vida** de las variables, en especial las **variables dinámicas** (cuyo valor cambia constantemente).
@@ -257,11 +257,42 @@ Las variables de tipo booleano son usadas para establecer estados. Por ejemplo:
 Para operar se empieza declarando unas variables con unos **valores iniciales los cuales van cambiando** a medida que se realicen **operaciones previamente definidas**. Al ser variables numéricas estas pueden ser de tipo **entero** o **decimal**.
 
 Después de resolver todas la operaciones, al final se obtienen los **valores finales de las variables**.
+:::
 
-A continuación se muestra un ejemplo de operaciones con variables.
+### **Ejercicios**
 
-> **EJEMPLO**
-> 
+1. Para cada una de las **operaciones básicas** (suma, resta, multiplicación, división), en su cuaderno realice 3 ejemplos de operaciones con variables numéricas (enteras o decimales).
+
+   - Tenga en cuenta que cada operación **debe tener información** y **no solo datos**. Son 12 ejemplos en total.
+
+   - :::{admonition} EJEMPLO 01: Peso de productos
+     > $ pesoTomates = 1.3 $
+     >
+     > $ pesoCebollas = 0.8 $
+     >
+     > $ pesoTotalCompra = pesoTomates + pesoCebollas $
+     >
+     > $ pesoTotalCompra = 2.1 $
+     :::
+
+   - :::{admonition} EJEMPLO 02: Cuentas en el mercado
+     > $ totalEfectivo = 150000 $
+     >
+     > $ costoProducto01  = 50000 $
+     >
+     > $ costoProducto02  = 25000 $
+     >
+     > $ totalCompra = totalEfectivo - costoProducto01 - costoProducto02 $
+     >
+     > $ totalCompra = 75000 $
+     :::
+
+---
+## A03: Ejercicios operaciones
+{bdg-warning}`Actividad práctica`
+
+### Ejemplo
+
 > Para las siguientes **variables iniciales**:
 > 
 > $a=10$, $b=15$ y $c=20$
@@ -296,37 +327,8 @@ A continuación se muestra un ejemplo de operaciones con variables.
 > :::
 >
 > Por tanto, $af = 25$, $bf = 23$ y $cf = 48$
-:::
 
-2. Para cada una de las **operaciones básicas** (suma, resta, multiplicación, división), en su cuaderno realice 3 ejemplos de operaciones con variables numéricas (enteras o decimales).
-
-   - Tenga en cuenta que cada operación **debe tener información** y **no solo datos**. Son 12 ejemplos en total.
-
-   - :::{admonition} EJEMPLO 01: Peso de productos
-     > $ pesoTomates = 1.3 $
-     >
-     > $ pesoCebollas = 0.8 $
-     >
-     > $ pesoTotalCompra = pesoTomates + pesoCebollas $
-     >
-     > $ pesoTotalCompra = 2.1 $
-     :::
-
-   - :::{admonition} EJEMPLO 02: Cuentas en el mercado
-     > $ totalEfectivo = 150000 $
-     >
-     > $ costoProducto01  = 50000 $
-     >
-     > $ costoProducto02  = 25000 $
-     >
-     > $ totalCompra = totalEfectivo - costoProducto01 - costoProducto02 $
-     >
-     > $ totalCompra = 75000 $
-     :::
-
----
-## A03: Ejercicios operaciones
-{bdg-warning}`Actividad práctica`
+### **Ejercicios**
 
 Desarrolle los siguientes ejercicios en su cuaderno:
 
@@ -410,18 +412,29 @@ Desarrolle los siguientes ejercicios en su cuaderno:
    > :::
 
 ---
-## A04: Codificación - Decodificación
+## A04: Codifica - Decodifica
 {bdg-warning}`Actividad práctica`
 
-Con la tabla ASCII desarrolle los siguientes puntos: 
+### Tabla ASCII
 
-1. **CODIFIQUE** los siguientes mensajes en su cuaderno:
+```{list-table}
+* - ```{figure} ./recursos/G823/image02.png
+    :width: 720
+    TABLA ASCII
+    ```
+```
+
+### **Ejercicios**
+
+Usando la tabla ASCII, en su cuaderno desarrolle los siguientes puntos: 
+
+1. **CODIFIQUE** los siguientes mensajes:
 
    - > La lógica computacional estudia los principios de la algoritmia para dar solución a problemas de diferente tipo.
    - > La lógica es la forma más obvia y fácil de hacer algo.
    - > La tecnología es el conjunto de teorías y técnicas que permiten la aplicación práctica del conocimiento científico, para transformar el medio ambiente y mejorar la calidad de vida de las personas.
 
-2. **DECODIFIQUE** los siguientes mensajes en su cuaderno:
+2. **DECODIFIQUE** los siguientes mensajes:
 
    - > 69 108 32 108 101 110 103 117 97 106 101 32 97 114 116 105 102 105 99 105 97 108 32 101 115 32 116 111 100 111 32 97 113 117 101 108 32 99 114 101 97 100 111 32 100 101 32 109 97 110 101 114 97 32 99 111 110 115 99 105 101 110 116 101 32 121 32 100 101 108 105 98 101 114 97 100 97 44 32 99 111 110 32 117 110 32 102 105 110 32 101 115 112 101 99 195 173 102 105 99 111 46 32 83 101 32 100 105 118 105 100 101 110 32 101 110 32 100 111 115 58 32 76 101 110 103 117 97 106 101 115 32 99 111 110 115 116 114 117 105 100
    - > 76 97 32 106 101 114 97 114 113 117 195 173 97 32 100 101 32 100 97 116 111 115 32 115 101 32 99 111 109 112 111 110 101 32 100 101 58 32 100 64 116 48 115 44 32 99 97 77 112 48 115 44 32 114 42 103 105 53 116 114 111 53 44 32 97 114 67 104 73 118 56 115 32 121 32 98 65 115 51 115 32 100 101 32 100 64 116 48 122 122 122 46

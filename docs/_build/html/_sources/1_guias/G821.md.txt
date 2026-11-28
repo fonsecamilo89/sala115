@@ -63,14 +63,13 @@
 {bdg-light}`Exploración`
 
 1. Transcriba en su cuaderno la **temática**, el **objetivo de aprendizaje** y el **desempeño** de la presente guía.
+
 2. Lea el **mensaje del autor** y en su cuaderno responda:
     - ¿Qué tienen en común un smartphone, un smartTV y un computador?
 
 ---
 ## A01: CPU y RAM
 {bdg-info}`Estructuración`
-
-1. Lea los siguiente conceptos:
 
 ### HARDWARE
 
@@ -162,7 +161,11 @@ El funcionamiento del software solo puede verse en la pantalla. El software es l
 Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar con dispositivos electrónicos a través de elementos visuales en la pantalla, como iconos, botones y menús. Esto facilita la realización de acciones sin necesidad de conocimientos de programación, haciendo la experiencia más intuitiva y accesible.
 :::
 
-2. Responda las siguientes preguntas en su cuaderno:
+### **Taller**
+
+En su cuaderno desarrolle los siguientes puntos:
+
+1. Responda las siguientes preguntas:
 
     - ¿Qué es el **hardware**?
     - ¿De que se compone el hardware de un **sistema informático**?
@@ -175,13 +178,13 @@ Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar c
     - ¿Por qué los controladores de **HARDWARE** no necesitan *interfaz gráfica*?
     - ¿Por qué la memoria **RAM** y la **CPU** son tan importante al momento de ***procesar la información***?
 
-3. En su cuaderno realice los siguientes mapas conceptuales:
+2. Realice los siguientes mapas conceptuales:
 
    - Un **mapa conceptual** que muestre los *diferentes componentes del hardware* y dos ejemplos por cada componente
    - Un **mapa conceptual** de los tres componentes principales de la **CPU**.
    - Un **mapa conceptual** que presente la **clasificación del software**.
 
-4. En INTERNET, consulte la siguiente información y realice un resumen en su cuaderno.
+3. En INTERNET, consulte la siguiente información y realice un resumen en su cuaderno.
 
     - 3 **marcas de fabricantes de CPU**
     - Las diferentes **generaciones de memoria RAM**. 
@@ -199,8 +202,6 @@ Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar c
 ---
 ## A02: Sistemas computacionales
 {bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos:
 
 ### Sistema computacional
 
@@ -231,14 +232,19 @@ Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar c
 
 :::
 
-2. En su cuaderno responda las siguientes preguntas:
+### **Taller**
+
+Desarrolle los siguientes puntos en su cuaderno:
+
+1. Responda las siguientes preguntas:
+
    - ¿Qué es un **sistema computacional**?
    - ¿De qué manera un *hardware* interactúa con un *software*? (piense en un smartphone, un smart-TV, etc.)
    - ¿Cómo un **sistema computacional** interactúa con la información? (piense en un software como Microsoft EXCEL o WhatsApp)
    - ¿En que se relacionan la *informática* y la *información*?
    - Aparte de la **integridad** y **disponibilidad**, ¿Qué otras reglas pueden ser aplicadas en la *información*?
 
-3. En su cuaderno, escriba los siguientes casos y por cada uno indique si aplica la **regla 01** (*Integridad de la información*) o aplica la **regla 02** (*disponibilidad de la información*) (escribir el por qué)
+2. Escriba los siguientes casos y por cada uno indique si aplica la **regla 01** (*Integridad de la información*) o aplica la **regla 02** (*disponibilidad de la información*) (escribir el por qué)
 
    - **CASO 01**: *“Un banco suele entregar valores de saldo una hora después de ser solicitado. El uso de computadoras permiten que la información este disponible y llegue oportunamente (milésimas de segundo)”*. El Administrador está revisando si el problema es de los PCs o incompetencia laboral.
 
@@ -257,15 +263,13 @@ Una **interfaz gráfica** es un sistema que permite a los usuarios interactuar c
   
     - **CASO 05:** Un estudiante está trabajando en su guía de laboratorio dentro del aula de sistemas. Mientras el archivo se está guardando en el disco duro, otro compañero tropieza accidentalmente con el cable de energía de la torre y el computador se apaga bruscamente. Al reiniciar el equipo e intentar abrir el documento, aparece un mensaje de error que dice: "El archivo está dañado o su formato no es válido".
 
-4. En su cuaderno, con sus palabras escriba **5 ejemplos** de *sistemas computacionales* (no usar IA). Tenga en cuenta el siguiente ejemplo:
+3. Con sus palabras escriba **5 ejemplos** de *sistemas computacionales* (no usar IA). Tenga en cuenta el siguiente ejemplo:
 
     > **EJEMPLO**: Un *portátil* es un ejemplo de **sistema computacional** porque su *hardware* (teclado, pantalla, touchpad) y *software* (OS, aplicaciones de escritorio) permite registrar, almacenar y mostrar información para un usuario”.
 
 ---
 ## A03: Razonamiento y lógica
 {bdg-info}`Estructuración`
-
-1. Lea los siguientes conceptos:
 
 ### Razonar
 
@@ -308,7 +312,11 @@ Para el siguiente razonamiento, verifique si es correcto o no:
 
 :::
 
-2. En su cuaderno responda las siguientes preguntas:
+### **Taller**
+
+Desarrolle los siguientes puntos en su cuaderno:
+
+1. Responda las siguientes preguntas:
 
     - ¿Qué es **razonar** y en qué se diferencia con la **lógica**?
     - ¿Cómo se relacionan los conceptos de *razonar* y *lógica*?
@@ -316,11 +324,11 @@ Para el siguiente razonamiento, verifique si es correcto o no:
     - ¿Qué es *lógica computacional*?
     - ¿Cómo se relaciona la *lógica computacional* y la *informática*?
 
-3. Escriba la siguiente frase en su cuaderno e indique si es FALSO, VERDADERO y explique el por qué:
+2. Escriba la siguiente frase e indique si es FALSO, VERDADERO y explique el por qué:
 
     - “*La **lógica computacional** establece las reglas para programar una persona y modificar su comportamiento*”. ___
 
-4. Razone la siguiente situación y en su cuaderno DEDUZCA que pudo haber pasado (3 conclusiones con temáticas diferentes):
+3. Razone la siguiente situación y DEDUZCA que pudo haber pasado (3 conclusiones con temáticas diferentes):
 
     > - Premisa 01: Una persona escuchó ruidos extraños en su casa.
     > - Premisa 02: Los ruidos fueron en horas de la noche.
